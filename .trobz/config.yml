@@ -1,0 +1,35 @@
+common: 
+
+  modules:
+    - sms_module
+
+  load:
+    - web
+    - dbfilter_from_header
+    - trobz_base
+
+  audit:
+    tms_name: sms
+
+#    # Customize project specific target here
+#    targets:
+#      project_configuration: 90
+#      code_trobz: 10
+#      pep8: 100
+#      tms_forge_no_estimation: 4
+#      tms_forge_qa: 20
+#      tms_forge_ready_staging: 50
+#      tms_forge_ready_integration: 20
+#      tms_forge_very_high: 3
+#      tms_support_very_high: 3
+#      tms_milestone_delay: 0
+#      tms_milestone_size: 30
+
+local:
+  load:
+    - web
+    - dbfilter_from_header
+    - remote_debug
+
+  config: config/dev.conf
+  database: sms

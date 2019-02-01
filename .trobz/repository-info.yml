@@ -1,0 +1,23 @@
+subtrees: !!python/object/new:emoi.config.repo.SubtreeCollection
+    listitems:
+    - !!python/object:emoi.config.repo.Subtree
+        alias: odoo
+        branch: '12.0'
+        prefix: odoo
+        repository: git@gitlab.trobz.com:odoo/odoo.git
+        squash: true
+        watch-contributions: false
+    - !!python/object:emoi.config.repo.Subtree
+        alias: odoo-enterprise
+        branch: '12.0'
+        prefix: addons/odoo-enterprise
+        repository: git@gitlab.trobz.com:odoo-restricted/enterprise.git
+        squash: true
+        watch-contributions: false
+    - !!python/object:emoi.config.repo.Subtree
+        alias: server-ux
+        branch: '12.0'
+        prefix: addons/server-ux
+        repository: git@gitlab.trobz.com:odoo/server-ux.git
+        squash: true
+        watch-contributions: false
