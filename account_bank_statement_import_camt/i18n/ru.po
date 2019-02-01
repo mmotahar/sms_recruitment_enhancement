@@ -1,0 +1,36 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * account_bank_statement_import_camt
+# 
+# Translators:
+# Viktor Pogrebniak <vp@aifil.ru>, 2017
+# Артур Чеботарь <artcha.chebotar@gmail.com>, 2017
+# Max Belyanin <maxbelyanin@gmail.com>, 2018
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server saas~11.4+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-08-02 11:20+0000\n"
+"PO-Revision-Date: 2018-08-02 11:20+0000\n"
+"Last-Translator: Max Belyanin <maxbelyanin@gmail.com>, 2018\n"
+"Language-Team: Russian (https://www.transifex.com/odoo/teams/41243/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#. module: account_bank_statement_import_camt
+#: model:ir.model,name:account_bank_statement_import_camt.model_account_bank_statement_import
+msgid "Import Bank Statement"
+msgstr "Импорт банковской выписки"
+
+#. module: account_bank_statement_import_camt
+#: model:ir.model,name:account_bank_statement_import_camt.model_account_journal
+msgid "Journal"
+msgstr "Журнал"
+
+#. module: account_bank_statement_import_camt
+#: model:ir.ui.view,arch_db:account_bank_statement_import_camt.account_bank_statement_import_camt
+msgid "SEPA recommanded Cash Management format (CAMT.053)"
+msgstr "ЕЗПЕ рекомендует формат управления наличностью (CAMT.053)"
