@@ -1,12 +1,7 @@
 common: 
 
-  modules:
-    - sms_module
-
   load:
     - web
-    - dbfilter_from_header
-    - trobz_base
 
   audit:
     tms_name: sms
@@ -28,8 +23,6 @@ common:
 local:
   load:
     - web
-    - dbfilter_from_header
-    - remote_debug
 
   config: config/dev.conf
   database: sms
