@@ -1606,6 +1606,12 @@ msgid "The signature access you are trying to reach does not exist. Maybe the si
 msgstr ""
 
 #. module: sign
+#: code:addons/sign/models/sign_template.py:79
+#, python-format
+msgid "This file cannot be read. Is it a valid PDF?"
+msgstr ""
+
+#. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.sign_request_view_form
 msgid "This will delete all the already completed documents of this request and disable every sent accesses, are you sure?"
 msgstr ""

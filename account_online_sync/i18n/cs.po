@@ -8,7 +8,7 @@
 # Jakub Lohnisky <jakub@lepremier.cz>, 2018
 # Jan Horzinka <jan.horzinka@centrum.cz>, 2018
 # Michal Veselý <michal@veselyberanek.net>, 2018
-# trendspotter <j.podhorecky@volny.cz>, 2018
+# trendspotter <j.podhorecky@volny.cz>, 2019
 # 
 msgid ""
 msgstr ""
@@ -16,7 +16,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-21 14:06+0000\n"
 "PO-Revision-Date: 2018-08-24 11:36+0000\n"
-"Last-Translator: trendspotter <j.podhorecky@volny.cz>, 2018\n"
+"Last-Translator: trendspotter <j.podhorecky@volny.cz>, 2019\n"
 "Language-Team: Czech (https://www.transifex.com/odoo/teams/41243/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -119,7 +119,7 @@ msgstr ""
 #. module: account_online_sync
 #: model_terms:ir.ui.view,arch_db:account_online_sync.online_provider_account_form_view
 msgid "Additional information"
-msgstr ""
+msgstr "Dodatečné informace"
 
 #. module: account_online_sync
 #: code:addons/account_online_sync/models/online_sync.py:62
@@ -204,7 +204,7 @@ msgstr "Vytvořit bankovní účet"
 #. module: account_online_sync
 #: selection:account.online.link.wizard,action:0
 msgid "Create new journal"
-msgstr ""
+msgstr "Vytvořit nový deník"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal__create_uid
@@ -276,7 +276,7 @@ msgstr ""
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider__message_partner_ids
 msgid "Followers (Partners)"
-msgstr ""
+msgstr "Sledující (Partneři)"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard__hide_table
@@ -321,7 +321,7 @@ msgstr "Pokud je zaškrtnuto, některé zprávy mají chybu při doručení."
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider__name
 msgid "Institution"
-msgstr ""
+msgstr "Instituce"
 
 #. module: account_online_sync
 #: model:ir.model,name:account_online_sync.model_account_online_journal
@@ -363,7 +363,7 @@ msgstr "Naposled změněno"
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider__last_refresh
 msgid "Last Refresh"
-msgstr ""
+msgstr "Poslední aktualizace"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal__write_uid
@@ -384,7 +384,7 @@ msgstr "Naposled upraveno"
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal__last_sync
 msgid "Last synchronization"
-msgstr ""
+msgstr "Poslední synchronizace"
 
 #. module: account_online_sync
 #: model:ir.model,name:account_online_sync.model_account_online_link_wizard
@@ -409,7 +409,7 @@ msgstr "Hlavní příloha"
 #. module: account_online_sync
 #: model_terms:ir.ui.view,arch_db:account_online_sync.online_provider_account_form_view
 msgid "Manual Refresh"
-msgstr ""
+msgstr "Ruční aktualizace"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider__message
@@ -457,7 +457,7 @@ msgstr ""
 #: code:addons/account_online_sync/models/online_sync.py:109
 #, python-format
 msgid "No new transactions have been loaded in the system."
-msgstr ""
+msgstr "Do systému nebyly načteny žádné nové transakce."
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard__number_added
@@ -511,7 +511,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_online_sync.field_res_partner__online_partner_bank_account
 #: model:ir.model.fields,field_description:account_online_sync.field_res_users__online_partner_bank_account
 msgid "Online Partner Bank Account"
-msgstr ""
+msgstr "Online bankovní účet partnera"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_bank_statement_line__online_partner_vendor_name
@@ -545,7 +545,7 @@ msgstr ""
 #: code:addons/account_online_sync/models/online_sync.py:82
 #, python-format
 msgid "Please enter at least a character for the search"
-msgstr ""
+msgstr "Zadejte alespoň jeden znak pro vyhledávání"
 
 #. module: account_online_sync
 #: code:addons/account_online_sync/models/online_sync.py:285
@@ -590,7 +590,7 @@ msgstr "Poskytovatel pro synchronizaci online účtů"
 #: code:addons/account_online_sync/models/online_sync.py:90
 #, python-format
 msgid "Server not reachable, please try again later"
-msgstr ""
+msgstr "Server není dosažitelný, zkuste to prosím později"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard__status
@@ -605,7 +605,7 @@ msgstr ""
 #. module: account_online_sync
 #: selection:account.online.wizard,status:0
 msgid "Success"
-msgstr ""
+msgstr "Úspěch"
 
 #. module: account_online_sync
 #: model:ir.actions.act_window,name:account_online_sync.action_account_online_wizard_form
@@ -616,23 +616,24 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_online_sync.field_account_journal__synchronization_status
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider__status
 msgid "Synchronization status"
-msgstr ""
+msgstr "Stav synchronizace"
 
 #. module: account_online_sync
 #: model_terms:ir.ui.view,arch_db:account_online_sync.account_journal_dashboard_inherit_online_sync
 #: model_terms:ir.ui.view,arch_db:account_online_sync.view_account_online_wizard_form
 msgid "Synchronize now"
-msgstr ""
+msgstr "Synchronizovat nyní"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard__account_ids
 msgid "Synchronized accounts"
-msgstr ""
+msgstr "Synchronizované účty"
 
 #. module: account_online_sync
 #: model:ir.model.fields,help:account_online_sync.field_account_online_provider__message
 msgid "Techhnical message from third party provider that can help debugging"
 msgstr ""
+"Technická zpráva poskytovatele třetí strany, která může pomoci při ladění"
 
 #. module: account_online_sync
 #: model:ir.model.fields,help:account_online_sync.field_account_online_wizard__hide_table
@@ -663,7 +664,7 @@ msgstr ""
 #. module: account_online_sync
 #: model_terms:ir.ui.view,arch_db:account_online_sync.view_account_online_wizard_form
 msgid "The account has been linked to your bank journal."
-msgstr ""
+msgstr "Účet byl propojen s bankovním deníkem."
 
 #. module: account_online_sync
 #: code:addons/account_online_sync/models/online_sync.py:63
@@ -698,13 +699,13 @@ msgstr ""
 #: code:addons/account_online_sync/models/online_sync.py:201
 #, python-format
 msgid "Unimplemented"
-msgstr ""
+msgstr "Nepoužito"
 
 #. module: account_online_sync
 #: code:addons/account_online_sync/models/online_sync.py:117
 #, python-format
 msgid "Unknown reason"
-msgstr ""
+msgstr "Neznámý důvod"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider__message_unread
@@ -730,7 +731,7 @@ msgstr ""
 #. module: account_online_sync
 #: model_terms:ir.ui.view,arch_db:account_online_sync.account_journal_dashboard_inherit_online_sync
 msgid "View problem"
-msgstr ""
+msgstr "Zobrazit problém"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider__website_message_ids
@@ -768,7 +769,7 @@ msgstr ""
 #. module: account_online_sync
 #: selection:account.online.wizard,method:0
 msgid "add"
-msgstr ""
+msgstr "přidat"
 
 #. module: account_online_sync
 #: model:ir.model.fields,help:account_online_sync.field_account_online_journal__balance
@@ -784,7 +785,7 @@ msgstr "upravit"
 #. module: account_online_sync
 #: model:ir.model.fields,help:account_online_sync.field_account_online_journal__online_identifier
 msgid "id use to identify account in provider system"
-msgstr ""
+msgstr "id slouží k identifikaci účtu v systému poskytovatele"
 
 #. module: account_online_sync
 #: model:ir.model.fields,help:account_online_sync.field_account_online_journal__provider_name
@@ -801,13 +802,13 @@ msgstr ""
 #. module: account_online_sync
 #: selection:account.online.wizard,method:0
 msgid "refresh"
-msgstr ""
+msgstr "obnovit"
 
 #. module: account_online_sync
 #: code:addons/account_online_sync/models/online_sync.py:107
 #, python-format
 msgid "transactions loaded"
-msgstr ""
+msgstr "transakce načteny"
 
 #. module: account_online_sync
 #: model_terms:ir.ui.view,arch_db:account_online_sync.view_account_online_wizard_form

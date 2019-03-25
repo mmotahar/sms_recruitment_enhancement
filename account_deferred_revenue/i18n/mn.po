@@ -4,13 +4,15 @@
 # 
 # Translators:
 # Martin Trigaux, 2018
+# Baskhuu Lodoikhuu <baskhuujacara@gmail.com>, 2019
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~11.5+e\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-18 10:05+0000\n"
-"PO-Revision-Date: 2018-09-18 10:05+0000\n"
-"Last-Translator: Martin Trigaux, 2018\n"
+"PO-Revision-Date: 2018-08-24 11:36+0000\n"
+"Last-Translator: Baskhuu Lodoikhuu <baskhuujacara@gmail.com>, 2019\n"
 "Language-Team: Mongolian (https://www.transifex.com/odoo/teams/41243/mn/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,12 +23,12 @@ msgstr ""
 #. module: account_deferred_revenue
 #: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_account_asset_asset_sale_tree
 msgid "Assets"
-msgstr "Хөрөнгүүд"
+msgstr "Хөрөнгө"
 
 #. module: account_deferred_revenue
 #: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_asset_revenue_report_search
 msgid "Assets in running state"
-msgstr "Хэрэглэгдэж байгаа төлөвтэй хөрөнгүүд"
+msgstr "Ашиглаж буй төлөвтэй хөрөнгүүд"
 
 #. module: account_deferred_revenue
 #: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_asset_revenue_report_search
@@ -61,7 +63,7 @@ msgstr "Хуримтлагдсан орлого"
 #. module: account_deferred_revenue
 #: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_account_asset_revenue_form
 msgid "Current Revenue"
-msgstr ""
+msgstr "Одоогийн орлого"
 
 #. module: account_deferred_revenue
 #: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_account_asset_asset_sale_tree
@@ -82,30 +84,30 @@ msgstr "Хөрөнгийн огноо"
 #. module: account_deferred_revenue
 #: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_invoice_revenue_recognition_category
 msgid "Deferred Revenue"
-msgstr ""
+msgstr "Урьдчилсан орлого"
 
 #. module: account_deferred_revenue
 #: model_terms:ir.ui.view,arch_db:account_deferred_revenue.action_account_revenue_report_graph
 #: model_terms:ir.ui.view,arch_db:account_deferred_revenue.action_account_revenue_report_pivot
 #: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_asset_revenue_report_search
 msgid "Deferred Revenue Analysis"
-msgstr "Хойшлогдсон орлогын шинжилгээ"
+msgstr "Урьдчилсан орлогын шинжилгээ"
 
 #. module: account_deferred_revenue
 #: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_account_invoice_asset_form
 msgid "Deferred Revenue Type"
-msgstr "Хойшлогдсон Орлогын Төрөл"
+msgstr "Урьдчилсан орлогын төрөл"
 
 #. module: account_deferred_revenue
 #: model:ir.actions.act_window,name:account_deferred_revenue.action_account_asset_asset_list_normal_sale
 #: model:ir.ui.menu,name:account_deferred_revenue.menu_action_account_asset_asset_list_normal_sale
 msgid "Deferred Revenue Types"
-msgstr ""
+msgstr "Урьдчилсан орлогын төрөл"
 
 #. module: account_deferred_revenue
 #: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_account_asset_revenue_form
 msgid "Deferred Revenue name"
-msgstr "Хойшлогдсон орлогын нэр"
+msgstr "Урьдчилсан орлогын нэр"
 
 #. module: account_deferred_revenue
 #: model:ir.actions.act_window,name:account_deferred_revenue.action_account_revenue_form
@@ -114,7 +116,7 @@ msgstr "Хойшлогдсон орлогын нэр"
 #: model:ir.ui.menu,name:account_deferred_revenue.menu_action_asset_revenue_report
 #: model_terms:ir.ui.view,arch_db:account_deferred_revenue.res_config_settings_view_form
 msgid "Deferred Revenues"
-msgstr "Хойшлогдсон Орлогууд"
+msgstr "Урьдчилсан орлогууд"
 
 #. module: account_deferred_revenue
 #: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_asset_revenue_report_search
@@ -124,7 +126,7 @@ msgstr "Ноорог"
 #. module: account_deferred_revenue
 #: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_asset_revenue_report_search
 msgid "Extended Filters..."
-msgstr "Өргөтгөсөн Шүүлтүүр..."
+msgstr "Нэмэлт шүүлт..."
 
 #. module: account_deferred_revenue
 #: model_terms:ir.actions.act_window,help:account_deferred_revenue.action_asset_revenue_report
@@ -132,18 +134,19 @@ msgid ""
 "From this report, you can have an overview of your deferred revenue. The\n"
 "            search bar can also be used to personalize your revenue recognition reporting."
 msgstr ""
-"Энэ тайлангаас та хойшлогдсон орлогын товчоог авч болно. Мөн тус хайлт нь "
-"тайланд хүлээн зөвшөөрөх орлогоо нарийвчлан тогтооход хэрэглэгддэг."
+"Энэ тайлангаас та урьдчилж тооцсон орлогын товчоог харж болно. Мөн хайлт, "
+"бүлэглэлт ашиглан та өөртөө зориулж урьдчилсөн орлогын тайлан бэлтгэх "
+"боломжтой."
 
 #. module: account_deferred_revenue
 #: model:ir.ui.menu,name:account_deferred_revenue.menu_recognition_depreciation_confirmation_wizard
 msgid "Generate Deferred Revenues Entries"
-msgstr ""
+msgstr "Урьдчилсан орлогын гүйлгээ бүртгэх"
 
 #. module: account_deferred_revenue
 #: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_account_asset_revenue_form
 msgid "Gross value of asset"
-msgstr "Хөрөнгийн нийт үнэ"
+msgstr "Хөрөнгийн анхны өртөг"
 
 #. module: account_deferred_revenue
 #: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_asset_revenue_report_search
@@ -158,27 +161,27 @@ msgstr "Нэхэмжлэл"
 #. module: account_deferred_revenue
 #: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_account_asset_revenue_form
 msgid "Items"
-msgstr "Зүйлс"
+msgstr "Мөрүүд"
 
 #. module: account_deferred_revenue
 #: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_account_asset_revenue_form
 msgid "Modify Revenue"
-msgstr "Орлого засварлах"
+msgstr "Орлого өөрчлөх"
 
 #. module: account_deferred_revenue
 #: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_account_asset_revenue_form
 msgid "Next Period Revenue"
-msgstr ""
+msgstr "Орлогын дараагийн мөчлөг"
 
 #. module: account_deferred_revenue
 #: model_terms:ir.actions.act_window,help:account_deferred_revenue.action_asset_revenue_report
 msgid "No deferred revenue"
-msgstr ""
+msgstr "Урьдчилсан орлого алга"
 
 #. module: account_deferred_revenue
 #: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_account_asset_revenue_form
 msgid "Number of Revenues"
-msgstr "Орлогын тоо"
+msgstr "Орлогын мөрийн тоо"
 
 #. module: account_deferred_revenue
 #: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_account_asset_revenue_form
@@ -188,7 +191,7 @@ msgstr "Харилцагч"
 #. module: account_deferred_revenue
 #: model:ir.actions.act_window,name:account_deferred_revenue.action_recognition_depreciation_confirmation_wizard
 msgid "Post Installment Lines"
-msgstr "Төлбөрийн хугацааг илгээх"
+msgstr "Орлогод тооцох мөрийг батлах"
 
 #. module: account_deferred_revenue
 #: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_asset_revenue_report_search
@@ -198,12 +201,12 @@ msgstr "Батлагдсан"
 #. module: account_deferred_revenue
 #: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_asset_revenue_report_search
 msgid "Posted depreciation lines"
-msgstr "Элэгдлийн илгээгдсэн мөрүүд"
+msgstr "Батлагдсан элэгдлийн мөр"
 
 #. module: account_deferred_revenue
 #: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_asset_revenue_report_search
 msgid "Recognition in draft state"
-msgstr "Ноорог төлөвийг батлах"
+msgstr "Ноорог төлөвтэй урьдчилсан орлого"
 
 #. module: account_deferred_revenue
 #: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_account_asset_revenue_form
@@ -229,7 +232,7 @@ msgstr "Орлогын огноо"
 #. module: account_deferred_revenue
 #: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_account_asset_revenue_form
 msgid "Revenue Entry"
-msgstr ""
+msgstr "Орлогын гүйлгээ"
 
 #. module: account_deferred_revenue
 #: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_account_asset_revenue_form
@@ -239,7 +242,7 @@ msgstr "Орлогын мэдээлэл"
 #. module: account_deferred_revenue
 #: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_account_asset_revenue_form
 msgid "Revenue Lines"
-msgstr ""
+msgstr "Орлогын мөрүүд"
 
 #. module: account_deferred_revenue
 #: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_account_asset_asset_sale_tree
@@ -251,17 +254,17 @@ msgstr "Орлогын нэр"
 #: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_account_asset_revenue_form
 #: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_asset_revenue_report_search
 msgid "Revenue Recognition"
-msgstr "Орлого Таних"
+msgstr "Урьдчилж тооцсон орлого"
 
 #. module: account_deferred_revenue
 #: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_asset_revenue_report_search
 msgid "Running"
-msgstr "Ажиллаж буй"
+msgstr "Ашиглагдаж буй"
 
 #. module: account_deferred_revenue
 #: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_asset_revenue_report_search
 msgid "Sales Date"
-msgstr ""
+msgstr "Борлуулалтын огноо"
 
 #. module: account_deferred_revenue
 #: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_account_asset_revenue_form
@@ -271,4 +274,4 @@ msgstr "Зарах эсвэл Устгах"
 #. module: account_deferred_revenue
 #: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_account_asset_revenue_form
 msgid "Set to Draft"
-msgstr "Ноорог Болгох"
+msgstr "Ноорог болгох"

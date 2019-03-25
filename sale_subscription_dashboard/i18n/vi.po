@@ -3,18 +3,19 @@
 # * sale_subscription_dashboard
 # 
 # Translators:
-# thanh nguyen <thanhnguyen.icsc@gmail.com>, 2018
 # Martin Trigaux, 2018
 # fanha99 <fanha99@hotmail.com>, 2018
 # Duy BQ <duybq86@gmail.com>, 2018
 # Minh Nguyen <ndminh210994@gmail.com>, 2018
+# thanh nguyen <thanhnguyen.icsc@gmail.com>, 2019
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~11.5+e\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-28 12:16+0000\n"
-"PO-Revision-Date: 2018-09-28 12:16+0000\n"
-"Last-Translator: Minh Nguyen <ndminh210994@gmail.com>, 2018\n"
+"PO-Revision-Date: 2018-08-24 11:48+0000\n"
+"Last-Translator: thanh nguyen <thanhnguyen.icsc@gmail.com>, 2019\n"
 "Language-Team: Vietnamese (https://www.transifex.com/odoo/teams/41243/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,53 +28,53 @@ msgstr ""
 #: code:addons/sale_subscription_dashboard/static/src/xml/sale_subscription_dashboard.xml:292
 #, python-format
 msgid "# of Subscriptions"
-msgstr ""
+msgstr "# SL của hợp đồng"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
 #: code:addons/sale_subscription_dashboard/static/src/xml/sale_subscription_dashboard.xml:303
 #, python-format
 msgid "% Complete (success)"
-msgstr ""
+msgstr "% Hoàn tất (thành công)"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
 #: code:addons/sale_subscription_dashboard/static/src/xml/sale_subscription_dashboard.xml:318
 #, python-format
 msgid "1 month ago"
-msgstr ""
+msgstr "1 tháng trước"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
 #: code:addons/sale_subscription_dashboard/static/src/xml/sale_subscription_dashboard.xml:334
 #, python-format
 msgid "12 months ago"
-msgstr ""
+msgstr "12 tháng trước"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
 #: code:addons/sale_subscription_dashboard/static/src/xml/sale_subscription_dashboard.xml:326
 #, python-format
 msgid "3 months ago"
-msgstr ""
+msgstr "3 tháng trước"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
 #: code:addons/sale_subscription_dashboard/static/src/xml/sale_subscription_dashboard.xml:350
 #, python-format
 msgid "30 Days Ago"
-msgstr ""
+msgstr "30 ngày trước"
 
 #. module: sale_subscription_dashboard
 #: model_terms:ir.ui.view,arch_db:sale_subscription_dashboard.invoice_line_entries_report_search
 msgid "Active invoices"
-msgstr ""
+msgstr "Hoá đơn hoạt động"
 
 #. module: sale_subscription_dashboard
 #: code:addons/sale_subscription_dashboard/controllers/stat_types.py:382
 #, python-format
 msgid "Annual Run-Rate"
-msgstr ""
+msgstr "Tỷ lệ vận hành hàng năm"
 
 #. module: sale_subscription_dashboard
 #: model_terms:ir.ui.view,arch_db:sale_subscription_dashboard.invoice_line_entries_report_search
@@ -91,7 +92,7 @@ msgstr "Ngày Bắt đầu Tài sản"
 #: code:addons/sale_subscription_dashboard/static/src/js/sale_subscription_dashboard.js:1106
 #, python-format
 msgid "Churned MRR"
-msgstr ""
+msgstr "MRR đã hủy"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
@@ -105,7 +106,7 @@ msgstr "Hiện tại"
 #: code:addons/sale_subscription_dashboard/static/src/xml/sale_subscription_dashboard.xml:401
 #, python-format
 msgid "Current MRR"
-msgstr ""
+msgstr "MRR hiện tại"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
@@ -113,19 +114,19 @@ msgstr ""
 #: code:addons/sale_subscription_dashboard/static/src/js/sale_subscription_dashboard.js:962
 #, python-format
 msgid "Current Value: "
-msgstr ""
+msgstr "Giá trị hiện tại: "
 
 #. module: sale_subscription_dashboard
 #. openerp-web
 #: code:addons/sale_subscription_dashboard/static/src/xml/sale_subscription_dashboard.xml:29
 #, python-format
 msgid "Detailed Analysis"
-msgstr ""
+msgstr "Chi tiết phân tích"
 
 #. module: sale_subscription_dashboard
 #: model:ir.actions.client,name:sale_subscription_dashboard.action_subscription_dashboard_report_detailed
 msgid "Detailed KPI"
-msgstr ""
+msgstr "Chi tiết KPI"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
@@ -133,7 +134,7 @@ msgstr ""
 #: code:addons/sale_subscription_dashboard/static/src/js/sale_subscription_dashboard.js:1114
 #, python-format
 msgid "Down MRR"
-msgstr ""
+msgstr "Giảm MRR"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
@@ -141,7 +142,7 @@ msgstr ""
 #: code:addons/sale_subscription_dashboard/static/src/js/sale_subscription_dashboard.js:1110
 #, python-format
 msgid "Expansion MRR"
-msgstr ""
+msgstr "Lũy thừa MRR"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
@@ -149,7 +150,7 @@ msgstr ""
 #: code:addons/sale_subscription_dashboard/static/src/xml/sale_subscription_dashboard.xml:127
 #, python-format
 msgid "Exponential"
-msgstr ""
+msgstr "Lũy thừa"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
@@ -163,7 +164,7 @@ msgstr ""
 #: code:addons/sale_subscription_dashboard/static/src/xml/sale_subscription_dashboard.xml:267
 #, python-format
 msgid "Filter on companies"
-msgstr ""
+msgstr "Lọc theo công ty"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
@@ -177,30 +178,32 @@ msgstr ""
 #: code:addons/sale_subscription_dashboard/static/src/xml/sale_subscription_dashboard.xml:247
 #, python-format
 msgid "Filter on subscriptions"
-msgstr ""
+msgstr "Lọc theo hợp đồng"
 
 #. module: sale_subscription_dashboard
 #: code:addons/sale_subscription_dashboard/controllers/stat_types.py:430
 #, python-format
 msgid "Forecasted Annual MRR Growth"
-msgstr ""
+msgstr "Dự báo tăng trưởng MRR hàng năm"
 
 #. module: sale_subscription_dashboard
 #: code:addons/sale_subscription_dashboard/controllers/stat_types.py:436
 #, python-format
 msgid "Forecasted Annual Subscriptions Growth"
-msgstr ""
+msgstr "Dự báo hợp đồng tăng mỗi năm"
 
 #. module: sale_subscription_dashboard
 #: model:ir.actions.client,name:sale_subscription_dashboard.action_subscription_dashboard_report_forecast
 msgid "Forecasted KPIs"
-msgstr ""
+msgstr "KPIs dự kiến"
 
 #. module: sale_subscription_dashboard
 #: model_terms:ir.actions.act_window,help:sale_subscription_dashboard.action_invoice_line_entries_report
 msgid ""
 "From this view, have an analysis of your different invoice line entries."
 msgstr ""
+"Từ dạng xem này, có thể cho bạn phân tích chênh lệch các dòng bút toán hóa "
+"đơn của bạn."
 
 #. module: sale_subscription_dashboard
 #: model_terms:ir.ui.view,arch_db:sale_subscription_dashboard.invoice_line_entries_report_search
@@ -213,7 +216,7 @@ msgstr "Nhóm theo"
 #: code:addons/sale_subscription_dashboard/static/src/xml/sale_subscription_dashboard.xml:123
 #, python-format
 msgid "Growth Type:"
-msgstr ""
+msgstr "Loại tăng trưởng:"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
@@ -228,7 +231,7 @@ msgstr "Trong"
 #: model_terms:ir.ui.view,arch_db:sale_subscription_dashboard.invoice_line_entries_report_pivot
 #: model_terms:ir.ui.view,arch_db:sale_subscription_dashboard.invoice_line_entries_report_search
 msgid "Invoice Line Entries Analysis"
-msgstr ""
+msgstr "Phân tích lên hóa đơn các dòng bút toán"
 
 #. module: sale_subscription_dashboard
 #: code:addons/sale_subscription_dashboard/controllers/revenue_kpis_dashboard.py:63
@@ -237,12 +240,14 @@ msgid ""
 "It makes no sense to sum MRR of different currencies. Please select "
 "companies with the same currency."
 msgstr ""
+"Nó làm cho không có ý nghĩa để tổng MRR của các loại tiền tệ khác nhau. Hãy "
+"chọn các công ty có cùng loại tiền tệ."
 
 #. module: sale_subscription_dashboard
 #: code:addons/sale_subscription_dashboard/controllers/stat_types.py:391
 #, python-format
 msgid "Lifetime Value"
-msgstr ""
+msgstr "Giá trị vòng đời"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
@@ -257,14 +262,14 @@ msgstr "Đường thẳng"
 #: code:addons/sale_subscription_dashboard/static/src/xml/sale_subscription_dashboard.xml:222
 #, python-format
 msgid "List of NRR invoices"
-msgstr ""
+msgstr "Danh sách hóa đơn"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
 #: code:addons/sale_subscription_dashboard/static/src/xml/sale_subscription_dashboard.xml:218
 #, python-format
 msgid "List of subscription modifications"
-msgstr ""
+msgstr "Danh sách các hợp đồng có điều chỉnh"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
@@ -278,21 +283,21 @@ msgstr "Đang nạp..."
 #: code:addons/sale_subscription_dashboard/controllers/stat_types.py:400
 #, python-format
 msgid "Logo Churn"
-msgstr ""
+msgstr "Khách hàng không dùng tiếp"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
 #: code:addons/sale_subscription_dashboard/static/src/xml/sale_subscription_dashboard.xml:380
 #, python-format
 msgid "MRR :"
-msgstr ""
+msgstr "MRR :"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
 #: code:addons/sale_subscription_dashboard/static/src/js/sale_subscription_dashboard.js:1099
 #, python-format
 msgid "MRR Growth"
-msgstr ""
+msgstr "Tăng trưởng MRR"
 
 #. module: sale_subscription_dashboard
 #: code:addons/sale_subscription_dashboard/controllers/stat_types.py:346
@@ -305,7 +310,7 @@ msgstr "Doanh thu định kỳ hàng tháng"
 #: code:addons/sale_subscription_dashboard/static/src/xml/sale_subscription_dashboard.xml:42
 #, python-format
 msgid "Monthly Recurring Revenue Growth"
-msgstr ""
+msgstr "Tăng trưởng doanh thu định kỳ hàng tháng"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
@@ -321,14 +326,14 @@ msgstr "Tháng"
 #: code:addons/sale_subscription_dashboard/static/src/xml/sale_subscription_dashboard.xml:426
 #, python-format
 msgid "NRR"
-msgstr ""
+msgstr "NRR"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
 #: code:addons/sale_subscription_dashboard/static/src/xml/sale_subscription_dashboard.xml:384
 #, python-format
 msgid "NRR :"
-msgstr ""
+msgstr "NRR :"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
@@ -336,13 +341,13 @@ msgstr ""
 #: code:addons/sale_subscription_dashboard/static/src/js/sale_subscription_dashboard.js:1118
 #, python-format
 msgid "Net New MRR"
-msgstr ""
+msgstr "Net MRR mới"
 
 #. module: sale_subscription_dashboard
 #: code:addons/sale_subscription_dashboard/controllers/stat_types.py:355
 #, python-format
 msgid "Net Revenue"
-msgstr ""
+msgstr "Doanh thu thuần"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
@@ -350,24 +355,24 @@ msgstr ""
 #: code:addons/sale_subscription_dashboard/static/src/js/sale_subscription_dashboard.js:1102
 #, python-format
 msgid "New MRR"
-msgstr ""
+msgstr "MRR mới"
 
 #. module: sale_subscription_dashboard
 #: code:addons/sale_subscription_dashboard/controllers/revenue_kpis_dashboard.py:61
 #, python-format
 msgid "No company selected."
-msgstr ""
+msgstr "Không có công ty nào được chọn."
 
 #. module: sale_subscription_dashboard
 #: code:addons/sale_subscription_dashboard/controllers/stat_types.py:364
 #, python-format
 msgid "Non-Recurring Revenue"
-msgstr ""
+msgstr "Doanh thu không thường xuyên"
 
 #. module: sale_subscription_dashboard
 #: model_terms:ir.ui.view,arch_db:sale_subscription_dashboard.invoice_line_entries_report_search
 msgid "OUT invoices"
-msgstr ""
+msgstr "Hóa đơn RA"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
@@ -382,7 +387,7 @@ msgstr "Đối tác"
 #: code:addons/sale_subscription_dashboard/static/src/xml/sale_subscription_dashboard.xml:210
 #, python-format
 msgid "Pick a salesman and a period"
-msgstr ""
+msgstr "Chọn 1 nhân viên kinh doanh và 1 kì"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
@@ -396,7 +401,7 @@ msgstr "Kế hoạch"
 #: code:addons/sale_subscription_dashboard/static/src/xml/sale_subscription_dashboard.xml:400
 #, python-format
 msgid "Previous MRR"
-msgstr ""
+msgstr "MRR Trước"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
@@ -404,52 +409,52 @@ msgstr ""
 #: code:addons/sale_subscription_dashboard/static/src/xml/sale_subscription_dashboard.xml:169
 #, python-format
 msgid "Projection Time:"
-msgstr ""
+msgstr "Thời gian đưa ra:"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
 #: code:addons/sale_subscription_dashboard/static/src/xml/sale_subscription_dashboard.xml:211
 #, python-format
 msgid "Recurring Revenue Dashboard for"
-msgstr ""
+msgstr "Bảng thông tin doanh thu định kỳ cho"
 
 #. module: sale_subscription_dashboard
 #: code:addons/sale_subscription_dashboard/controllers/stat_types.py:409
 #, python-format
 msgid "Revenue Churn"
-msgstr ""
+msgstr "Doanh thu tháng bị mất"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
 #: code:addons/sale_subscription_dashboard/static/src/xml/sale_subscription_dashboard.xml:91
 #, python-format
 msgid "Revenue Churn:"
-msgstr ""
+msgstr "Doanh thu tháng bị mất:"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
 #: code:addons/sale_subscription_dashboard/static/src/xml/sale_subscription_dashboard.xml:74
 #, python-format
 msgid "Revenue Growth:"
-msgstr ""
+msgstr "Tăng trưởng doanh thu:"
 
 #. module: sale_subscription_dashboard
 #: model:ir.actions.client,name:sale_subscription_dashboard.action_subscription_dashboard_report_main
 #: model:ir.ui.menu,name:sale_subscription_dashboard.menu_action_subscription_dashboard_report_main
 msgid "Revenue KPIs"
-msgstr ""
+msgstr "KPIs doanh thu"
 
 #. module: sale_subscription_dashboard
 #: code:addons/sale_subscription_dashboard/controllers/stat_types.py:373
 #, python-format
 msgid "Revenue per Subscription"
-msgstr ""
+msgstr "Doanh thu theo hợp đồng"
 
 #. module: sale_subscription_dashboard
 #: model:ir.actions.client,name:sale_subscription_dashboard.action_subscription_dashboard_report_salesman
 #: model:ir.ui.menu,name:sale_subscription_dashboard.menu_action_subscription_dashboard_report_salesman
 msgid "Salesperson Dashboard"
-msgstr ""
+msgstr "Bảng thông tin nhân viên kinh doanh"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
@@ -457,28 +462,28 @@ msgstr ""
 #: code:addons/sale_subscription_dashboard/static/src/xml/sale_subscription_dashboard.xml:374
 #, python-format
 msgid "Sample data"
-msgstr ""
+msgstr "Dữ liệu mẫu"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
 #: code:addons/sale_subscription_dashboard/static/src/js/sale_subscription_dashboard.js:87
 #, python-format
 msgid "Select at least one company."
-msgstr ""
+msgstr "Chọn ít nhất 1 công ty."
 
 #. module: sale_subscription_dashboard
 #. openerp-web
 #: code:addons/sale_subscription_dashboard/static/src/xml/sale_subscription_dashboard.xml:63
 #, python-format
 msgid "Starting MRR:"
-msgstr ""
+msgstr "Doanh thu tháng bắt đầu:"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
 #: code:addons/sale_subscription_dashboard/static/src/xml/sale_subscription_dashboard.xml:130
 #, python-format
 msgid "Starting Subscription:"
-msgstr ""
+msgstr "Hợp đồng bắt đầu:"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
@@ -502,14 +507,14 @@ msgstr "Hợp đồng"
 #: code:addons/sale_subscription_dashboard/static/src/xml/sale_subscription_dashboard.xml:158
 #, python-format
 msgid "Subscriptions Churn:"
-msgstr ""
+msgstr "Ngưng hợp đồng:"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
 #: code:addons/sale_subscription_dashboard/static/src/xml/sale_subscription_dashboard.xml:141
 #, python-format
 msgid "Subscriptions Growth:"
-msgstr ""
+msgstr "Tăng trưởng hợp đồng:"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
@@ -524,14 +529,14 @@ msgstr "Mẫu"
 #: code:addons/sale_subscription_dashboard/static/src/xml/sale_subscription_dashboard.xml:417
 #, python-format
 msgid "There is no NRR invoice during this period."
-msgstr ""
+msgstr "Không có hóa đơn NRR trong thời gian này."
 
 #. module: sale_subscription_dashboard
 #. openerp-web
 #: code:addons/sale_subscription_dashboard/static/src/xml/sale_subscription_dashboard.xml:390
 #, python-format
 msgid "There is no subscription modification during this period."
-msgstr ""
+msgstr "Không điều chỉnh hợp đồng nào trong khoản thời gian này."
 
 #. module: sale_subscription_dashboard
 #: code:addons/sale_subscription_dashboard/controllers/revenue_kpis_dashboard.py:65
@@ -560,21 +565,21 @@ msgstr "Cảnh báo"
 #: code:addons/sale_subscription_dashboard/static/src/xml/sale_subscription_dashboard.xml:191
 #, python-format
 msgid "churn, your MRR will be"
-msgstr ""
+msgstr "hủy bỏ, doanh thu tháng của bạn sẽ"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
 #: code:addons/sale_subscription_dashboard/static/src/xml/sale_subscription_dashboard.xml:202
 #, python-format
 msgid "churn, your subscription base will be"
-msgstr ""
+msgstr "hủy bỏ, hợp đồng của bạn sẽ"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
 #: code:addons/sale_subscription_dashboard/static/src/xml/sale_subscription_dashboard.xml:189
 #, python-format
 msgid "growth and"
-msgstr ""
+msgstr "tăng trưởng và"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
@@ -582,7 +587,7 @@ msgstr ""
 #: code:addons/sale_subscription_dashboard/static/src/xml/sale_subscription_dashboard.xml:198
 #, python-format
 msgid "months with"
-msgstr ""
+msgstr "tháng với"
 
 #. module: sale_subscription_dashboard
 #: code:addons/sale_subscription_dashboard/controllers/revenue_kpis_dashboard.py:23
@@ -596,7 +601,7 @@ msgstr "tên"
 #: code:addons/sale_subscription_dashboard/static/src/xml/sale_subscription_dashboard.xml:200
 #, python-format
 msgid "subscription growth and"
-msgstr ""
+msgstr "thuê bao tăng trưởng và"
 
 #. module: sale_subscription_dashboard
 #. openerp-web

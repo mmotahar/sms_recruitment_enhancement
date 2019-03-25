@@ -1128,7 +1128,6 @@ class WebStudioController(http.Controller):
 
     @http.route('/web_studio/create_inline_view', type='json', auth='user')
     def create_inline_view(self, model, view_id, field_name, subview_type, subview_xpath):
-        inline_view = request.env[model].load_views([[False, subview_type]])
         view = request.env['ir.ui.view'].browse(view_id)
         studio_view = self._get_studio_view(view)
         if not studio_view:
@@ -1145,7 +1144,8 @@ class WebStudioController(http.Controller):
                 'expr': expr,
                 'position': position
             })
-        view_arch = inline_view['fields_views'][subview_type]['arch']
+        inline_view = request.env[model]._fields_view_get(view_type=subview_type)
+        view_arch = inline_view['arch']
         xml_node = etree.fromstring(view_arch)
         xpath_node.insert(0, xml_node)
         studio_view.arch_db = etree.tostring(arch, encoding='utf-8', pretty_print=True)

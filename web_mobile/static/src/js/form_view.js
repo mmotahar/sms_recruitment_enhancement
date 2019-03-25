@@ -3,6 +3,7 @@ odoo.define('web_mobile.FormView', function (require) {
 
 var config = require('web.config');
 var FormView = require('web.FormView');
+var QuickCreateFormView = require('web.QuickCreateFormView');
 
 /**
  * We don't want to see the keyboard after the opening of a form view.
@@ -23,6 +24,16 @@ FormView.include({
         if (config.device.isMobile) {
             this.controllerParams.disableAutofocus = true;
         }
+    },
+});
+
+QuickCreateFormView.include({
+    /**
+     * @override
+     */
+    init: function () {
+        this._super.apply(this, arguments);
+        this.controllerParams.disableAutofocus = false;
     },
 });
 

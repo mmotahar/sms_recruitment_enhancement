@@ -157,7 +157,7 @@ class ResCompany(models.Model):
     def _parse_fta_data(self, available_currencies):
         ''' Parses the data returned in xml by FTA servers and returns it in a more
         Python-usable form.'''
-        request_url = 'http://www.afd.admin.ch/publicdb/newdb/mwst_kurse/wechselkurse.php'
+        request_url = 'http://www.pwebapps.ezv.admin.ch/apps/rates/rate/getxml?activeSearchType=today'
         try:
             parse_url = requests.request('GET', request_url)
         except:

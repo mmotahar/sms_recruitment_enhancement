@@ -571,7 +571,7 @@ msgstr "Provider"
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider__provider_account_identifier
 msgid "Provider Account Identifier"
-msgstr "Provider rekening indentificatie"
+msgstr "Provider rekening identificatie"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider__provider_identifier

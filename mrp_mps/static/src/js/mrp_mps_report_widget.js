@@ -146,7 +146,11 @@ var mrp_mps_report = AbstractAction.extend(ControlPanelMixin, {
         }
     },
     re_renderElement: function() {
+        var self = this;
         this.$el.html(this.html);
+        this.$searchview_buttons.find('.o_mps_mps_show_line').each(function () {
+            self.mps_show_line({target: this});
+        });
     },
     option_mps_period: function(e){
         var self = this;

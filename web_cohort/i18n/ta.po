@@ -4,20 +4,27 @@
 # 
 # Translators:
 # Bagavathikumar Ramakrishnan <bagavathikumar@gmail.com>, 2019
+# Alagappan Karthikeyan <me@karthik.sg>, 2019
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~11.5+e\n"
+"Project-Id-Version: Odoo Server 12.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-21 14:06+0000\n"
+"POT-Creation-Date: 2019-02-21 16:33+0000\n"
 "PO-Revision-Date: 2018-08-24 11:49+0000\n"
-"Last-Translator: Bagavathikumar Ramakrishnan <bagavathikumar@gmail.com>, 2019\n"
+"Last-Translator: Alagappan Karthikeyan <me@karthik.sg>, 2019\n"
 "Language-Team: Tamil (https://www.transifex.com/odoo/teams/41243/ta/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: ta\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: web_cohort
+#: code:addons/web_cohort/controllers/main.py:36
+#, python-format
+msgid "%s - By %s"
+msgstr ""
 
 #. module: web_cohort
 #. openerp-web
@@ -36,7 +43,7 @@ msgstr ""
 #: selection:ir.actions.act_window.view,view_mode:0
 #: selection:ir.ui.view,type:0
 msgid "Activity"
-msgstr ""
+msgstr "நடவடிக்கை"
 
 #. module: web_cohort
 #. openerp-web
@@ -50,13 +57,13 @@ msgstr ""
 #. module: web_cohort
 #: model:ir.model,name:web_cohort.model_base
 msgid "Base"
-msgstr ""
+msgstr "அடித்தளம்"
 
 #. module: web_cohort
 #: selection:ir.actions.act_window.view,view_mode:0
 #: selection:ir.ui.view,type:0
 msgid "Calendar"
-msgstr ""
+msgstr "நாட்காட்டி"
 
 #. module: web_cohort
 #. openerp-web
@@ -213,7 +220,7 @@ msgstr ""
 #. module: web_cohort
 #: model:ir.model,name:web_cohort.model_ir_ui_view
 msgid "View"
-msgstr ""
+msgstr "காண்க"
 
 #. module: web_cohort
 #: model:ir.model.fields,field_description:web_cohort.field_ir_actions_act_window_view__view_mode

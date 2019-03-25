@@ -297,7 +297,7 @@ class report_account_general_ledger(models.AbstractModel):
             display_name = account.code + " " + account.name
             if options.get('filter_accounts'):
                 #skip all accounts where both the code and the name don't start with the given filtering string
-                if not any([display_name_part.startswith(options.get('filter_accounts')) for display_name_part in display_name.split(' ')]):
+                if not any([display_name_part.lower().startswith(options['filter_accounts'].lower()) for display_name_part in display_name.split(' ')]):
                     continue
             debit = grouped_accounts[account]['debit']
             credit = grouped_accounts[account]['credit']
@@ -472,5 +472,5 @@ class report_account_general_ledger(models.AbstractModel):
 
     def view_all_journal_items(self, options, params):
         if params.get('id'):
-            params['id'] = int(params.get('id').split('_')[1])
+            params['id'] = int(params.get('id').split('_')[-1])
         return self.env['account.report'].open_journal_items(options, params)

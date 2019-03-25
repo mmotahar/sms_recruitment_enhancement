@@ -10,7 +10,7 @@
 # Jean-Charles Drubay <jcdrubay@gmail.com>, 2018
 # Duy BQ <duybq86@gmail.com>, 2018
 # Minh Nguyen <ndminh210994@gmail.com>, 2018
-# thanh nguyen <thanhnguyen.icsc@gmail.com>, 2019
+# Nancy Momoland <thanhnguyen.icsc@gmail.com>, 2019
 # 
 msgid ""
 msgstr ""
@@ -18,7 +18,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-19 09:12+0000\n"
 "PO-Revision-Date: 2018-08-24 11:36+0000\n"
-"Last-Translator: thanh nguyen <thanhnguyen.icsc@gmail.com>, 2019\n"
+"Last-Translator: Nancy Momoland <thanhnguyen.icsc@gmail.com>, 2019\n"
 "Language-Team: Vietnamese (https://www.transifex.com/odoo/teams/41243/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -48,7 +48,7 @@ msgstr "&times;"
 #: code:addons/account_reports/models/account_report.py:582
 #, python-format
 msgid "(No Group)"
-msgstr ""
+msgstr "(Không gom)"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_financial_report.py:355
@@ -61,25 +61,25 @@ msgstr "(sao chép)"
 #: code:addons/account_reports/models/account_aged_partner_balance.py:22
 #, python-format
 msgid "1 - 30"
-msgstr ""
+msgstr "1 - 30"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_aged_partner_balance.py:22
 #, python-format
 msgid "31 - 60"
-msgstr ""
+msgstr "31 - 60"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_aged_partner_balance.py:22
 #, python-format
 msgid "61 - 90"
-msgstr ""
+msgstr "61 - 90"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_aged_partner_balance.py:22
 #, python-format
 msgid "91 - 120"
-msgstr ""
+msgstr "91 - 120"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_analytic
@@ -89,7 +89,7 @@ msgstr "<b>Tài khoản</b><br/>"
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.template_followup_report
 msgid "<b>Next Reminder Date:</b>"
-msgstr ""
+msgstr "<b>Ngày nhắc tiếp theo:</b>"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_analytic
@@ -102,6 +102,8 @@ msgid ""
 "<br/>\n"
 "                <span>You can visualize their impact by activating the option to view unposted entries, or post them to remove this warning.</span>"
 msgstr ""
+"<br/>\n"
+"                <span>You can visualize their impact by activating the option to view unposted entries, or post them to remove this warning.</span>"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.filter_info_template
@@ -109,6 +111,8 @@ msgid ""
 "<br/>\n"
 "                Analytic Accounts:"
 msgstr ""
+"<br/>\n"
+"                Analytic Accounts:"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.filter_info_template
@@ -331,7 +335,7 @@ msgstr ""
 #. module: account_reports
 #: model:ir.model,name:account_reports.model_account_chart_template
 msgid "Account Chart Template"
-msgstr ""
+msgstr "Bảng hệ thống tài khoản"
 
 #. module: account_reports
 #: model:ir.model,name:account_reports.model_account_report
@@ -426,12 +430,12 @@ msgstr "Tuổi nợ phải trả"
 #: model:ir.ui.menu,name:account_reports.menu_action_account_report_aged_receivable
 #, python-format
 msgid "Aged Receivable"
-msgstr "Tuổi nợ khách hàng"
+msgstr "Tuổi nợ phải thu"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.account_reports_journal_dashboard_kanban_view
 msgid "Aged Receivables"
-msgstr "Tuổi nợ khách hàng"
+msgstr "Tuổi nợ phải thu"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_journals
@@ -442,12 +446,12 @@ msgstr "Tất cả"
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report__analytic
 msgid "Allow analytic filters"
-msgstr ""
+msgstr "Cho phép có bộ lọc phân tích"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report__cash_basis
 msgid "Allow cash basis mode"
-msgstr ""
+msgstr "Cho phép chế độ Kế toán dựa trên dòng tiền"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report__comparison
@@ -474,7 +478,7 @@ msgstr "Tổng tiền"
 #: code:addons/account_reports/models/account_partner_ledger.py:40
 #, python-format
 msgid "Amount Currency"
-msgstr "Loại tiền của tài khoản"
+msgstr "Số tiền theo loại tiền"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.filter_info_template
@@ -492,12 +496,12 @@ msgstr "Bút toán quản trị"
 #: model:ir.ui.menu,name:account_reports.menu_action_report_account_analytic
 #, python-format
 msgid "Analytic Report"
-msgstr ""
+msgstr "Báo cáo phân tích"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.filter_info_template
 msgid "Analytic Tags:"
-msgstr ""
+msgstr "Từ khóa phân tích:"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.line_template
@@ -507,7 +511,7 @@ msgstr "Chú thích"
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report__applicable_filters_ids
 msgid "Applicable Filters"
-msgstr ""
+msgstr "Bộ lọc có thể áp dụng"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_comparison
@@ -544,7 +548,7 @@ msgstr "Tự động"
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.view_account_financial_report_form
 msgid "Available Filters & Options"
-msgstr ""
+msgstr "Tùy chọn & Bộ lọc cho phép"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_avgcre0
@@ -559,7 +563,7 @@ msgstr "Ngày nợ trung bình"
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.template_followup_report
 msgid "Bad debtor"
-msgstr ""
+msgstr "Nợ xấu"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_analytic_report.py:25
@@ -591,7 +595,7 @@ msgstr "Đối soát ngân hàng"
 #. module: account_reports
 #: model:ir.model,name:account_reports.model_account_bank_reconciliation_report
 msgid "Bank Reconciliation Report"
-msgstr ""
+msgstr "Báo cáo đối soát ngân hàng"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_bank_view0
@@ -641,7 +645,7 @@ msgstr "Tiền và tương đương tiền, số dư đầu kỳ"
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_closing_balance0
 msgid "Cash and cash equivalents, closing balance"
-msgstr "Tiền và tương đương tiền, số dư cuối kì"
+msgstr "Tiền và tương đương tiền, Số dư cuối kỳ"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_financing0
@@ -680,7 +684,7 @@ msgstr "Tiền ra"
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_cash_spent0
 msgid "Cash paid for operating activities"
-msgstr ""
+msgstr "Tiền được trả cho hoạt động vận hành doanh nghiệp"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_cash_received0
@@ -690,7 +694,7 @@ msgstr "Tiền nhận được"
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_cash_received0
 msgid "Cash received from operating activities"
-msgstr ""
+msgstr "Tiền nhận được từ hoạt động vận hành doanh nghiệp"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_cash_spent0
@@ -705,7 +709,7 @@ msgstr "Số dư quỹ tiền mặt"
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.line_template_followup_report
 msgid "Change expected payment date"
-msgstr ""
+msgstr "Đổi ngày thanh toán dự kiến"
 
 #. module: account_reports
 #: model:ir.model,name:account_reports.model_account_coa_report
@@ -725,7 +729,7 @@ msgstr "Dòng con"
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_closing_bank_balance0
 msgid "Closing bank balance"
-msgstr "Số dư ngân hàng cuối kì"
+msgstr "Số dư ngân hàng cuối kỳ"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line__code
@@ -737,7 +741,7 @@ msgstr "Mã"
 #: code:addons/account_reports/models/account_general_ledger.py:30
 #, python-format
 msgid "Communication"
-msgstr "Thông tin trao đổi"
+msgstr "Thông tin giao dịch"
 
 #. module: account_reports
 #: model:ir.model,name:account_reports.model_res_company
@@ -764,12 +768,12 @@ msgstr "Tính toán"
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_regulator0
 msgid "Computation Error: unexplained difference"
-msgstr ""
+msgstr "Tính bị sai: chênh lệch không giải thích được"
 
 #. module: account_reports
 #: model:ir.model,name:account_reports.model_res_config_settings
 msgid "Config Settings"
-msgstr "Cấu hình thiết lập"
+msgstr "Thiết lập cấu hình"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_consolidated_journals.py:26
@@ -887,13 +891,13 @@ msgstr "Tài sản lưu động đến nợ phải trả"
 #: code:addons/account_reports/models/account_bank_reconciliation_report.py:155
 #, python-format
 msgid "Current balance of account %s"
-msgstr ""
+msgstr "Số dư hiện tại của tài khoản %s"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_bank_reconciliation_report.py:157
 #, python-format
 msgid "Current balance of accounts %s"
-msgstr ""
+msgstr "Số dư hiện tại của các tài khoản %s"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_comparison
@@ -937,6 +941,8 @@ msgid ""
 "Date at which Odoo will remind you to take care of that follow-up if you "
 "choose \"remind me later\" button."
 msgstr ""
+"Ngày hệ thống sẽ nhắc bạn chăm sóc các khoản công nợ của mình nếu bạn chọn "
+"nút \"nhắc tôi sau\"."
 
 #. module: account_reports
 #. openerp-web
@@ -966,7 +972,7 @@ msgstr "Ngày:"
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_res_config_settings__days_between_two_followups
 msgid "Days between two follow-ups"
-msgstr ""
+msgstr "Số ngày giữa 2 lần nhắc nhở công nợ"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_consolidated_journals.py:29
@@ -989,7 +995,7 @@ msgstr "Khấu hao"
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_detailed_net_profit0
 msgid "Detailed Net Profit"
-msgstr ""
+msgstr "Lợi nhuận ròng chi tiết"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_consolidated_journals.py:86
@@ -1000,7 +1006,7 @@ msgstr "Thông tin từng tháng"
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.account_reports_journal_dashboard_kanban_view_account_manager
 msgid "Difference"
-msgstr "Khác biệt"
+msgstr "Chênh lệch"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_bank_reconciliation_report.py:190
@@ -1012,6 +1018,11 @@ msgid ""
 "  1) some bank statements being not yet encoded into Odoo\n"
 "  2) payments double-encoded"
 msgstr ""
+"Khoản chênh lệch giữa Số dư sổ cái ảo và Sao kê ngân hàng cuối kỳ mới nhất.\n"
+"\n"
+"Nếu nó không bằng 0, vậy có thể là do 1 số nguyên nhân sau\n"
+"  1) một khoản sau kê nào đó chưa được đưa vào hệ thống\n"
+"  2) thanh toán được ghi nhận 2 lần"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_aged_partner__display_name
@@ -1091,13 +1102,13 @@ msgstr "Kết thúc của tháng trước"
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_date_filter
 msgid "End of Last Quarter"
-msgstr "Kết thúc của quý trước"
+msgstr "Cuối quý trước"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_followup_report.py:34
 #, python-format
 msgid "Excluded"
-msgstr ""
+msgstr "Không bao gồm"
 
 #. module: account_reports
 #: model:account.financial.html.report,name:account_reports.account_financial_report_executivesummary0
@@ -1124,7 +1135,7 @@ msgstr "Ngày thanh toán dự kiến"
 #: code:addons/account_reports/models/res_partner.py:147
 #, python-format
 msgid "Expected pay date has been changed from %s to %s for invoice %s"
-msgstr ""
+msgstr "Ngày thanh toán dự kiến được chuyển từ %s tới %s của hóa đơn %s"
 
 #. module: account_reports
 #: model:ir.model.fields,help:account_reports.field_account_move_line__expected_pay_date
@@ -1153,12 +1164,12 @@ msgstr "Xuất file (EXCEL)"
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.filter_info_template
 msgid "Filter:"
-msgstr ""
+msgstr "Bộ lọc:"
 
 #. module: account_reports
 #: model:ir.model.fields,help:account_reports.field_account_financial_html_report__applicable_filters_ids
 msgid "Filters that can be used to filter and group lines in this report."
-msgstr ""
+msgstr "Bộ lọc được dùng để lọc và nhóm các chi tiết của báo cáo này."
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line__financial_report_id
@@ -1190,42 +1201,42 @@ msgstr "Đóng vào"
 #. module: account_reports
 #: model:ir.model,name:account_reports.model_account_followup_report
 msgid "Follow-up Report"
-msgstr ""
+msgstr "Báo cáo theo dõi công nợ"
 
 #. module: account_reports
 #: model:ir.actions.act_window,name:account_reports.action_view_list_customer_statements
 #: model:ir.ui.menu,name:account_reports.customer_statements_menu
 msgid "Follow-up Reports"
-msgstr ""
+msgstr "Báo cáo theo dõi công nợ"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.customer_statements_tree_view
 msgid "Follow-up Reports Tree View"
-msgstr ""
+msgstr "Danh sách báo cáo theo dõi công nợ"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_followup_report.py:235
 #, python-format
 msgid "Follow-up email sent to %s"
-msgstr ""
+msgstr "Công nợ đã được gửi email tới %s"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_followup_report.py:257
 #, python-format
 msgid "Follow-up letter printed"
-msgstr ""
+msgstr "Thư nhắc công nợ đã được in"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.account_reports_journal_dashboard_kanban_view
 msgid "Follow-up reports"
-msgstr ""
+msgstr "Báo cáo công nợ"
 
 #. module: account_reports
 #. openerp-web
 #: code:addons/account_reports/static/src/xml/account_report_template.xml:35
 #, python-format
 msgid "Follow-ups Done / Total Follow-ups"
-msgstr "Follow-ups Hoàn thành / Tổng Follow-ups"
+msgstr "Công nợ hoàn thành / Tổng công nợ"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_followup_report.py:180
@@ -1236,7 +1247,7 @@ msgstr "Báo cáo theo dõi"
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_res_partner__followup_status
 msgid "Followup status"
-msgstr ""
+msgstr "Tình trạng theo dõi công nợ"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_report_manager__footnotes_ids
@@ -1260,6 +1271,8 @@ msgid ""
 "From %s \n"
 " to  %s"
 msgstr ""
+"Từ %s \n"
+" tới  %s"
 
 #. module: account_reports
 #: selection:account.financial.html.report.line,special_date_changer:0
@@ -1305,7 +1318,7 @@ msgstr "Báo cáo thuế chung"
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.template_followup_report
 msgid "Good debtor"
-msgstr ""
+msgstr "Nợ tốt"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_gross_profit0
@@ -1385,7 +1398,7 @@ msgstr "Có nhu cầu thực hiện"
 #: model_terms:ir.ui.view,arch_db:account_reports.customer_statements_search_view
 #: selection:res.partner,followup_status:0
 msgid "In need of action"
-msgstr ""
+msgstr "Có nhu cầu thực hiện"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_extra_options
@@ -1450,7 +1463,7 @@ msgstr "Phát sinh"
 #: code:addons/account_reports/models/account_report.py:309
 #, python-format
 msgid "Journal Items (%s)"
-msgstr ""
+msgstr "Bút toán (%s)"
 
 #. module: account_reports
 #: model:ir.actions.server,name:account_reports.action_journal_items
@@ -1488,7 +1501,7 @@ msgstr ""
 #: code:addons/account_reports/models/account_bank_reconciliation_report.py:188
 #, python-format
 msgid "Last Bank Statement Ending Balance"
-msgstr ""
+msgstr "Số dư cuối kỳ sao kê ngân hàng đóng mới nhất"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_date_filter
@@ -1561,7 +1574,7 @@ msgstr "Chi tiết"
 #: code:addons/account_reports/models/account_partner_ledger.py:206
 #, python-format
 msgid "Load more... (%s remaining)"
-msgstr ""
+msgstr "Tải thêm... (còn %s nữa)"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.view_account_financial_report_line_form
@@ -1571,7 +1584,7 @@ msgstr "Thông tin chính"
 #. module: account_reports
 #: model:ir.model,name:account_reports.model_account_report_manager
 msgid "Manage Summary and Footnotes of Reports"
-msgstr ""
+msgstr "Quản lý tổng hợp và Chân trang của các bản in"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_report_footnote__manager_id
@@ -1621,7 +1634,7 @@ msgstr "Tên"
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_net_assets0
 msgid "Net Assets"
-msgstr ""
+msgstr "Tài sản ròng"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_profit0
@@ -1674,7 +1687,7 @@ msgstr "Không"
 #. module: account_reports
 #: selection:res.partner,followup_status:0
 msgid "No action needed"
-msgstr ""
+msgstr "Không có gì cần làm"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_report.py:933
@@ -1685,25 +1698,25 @@ msgstr "Không so sánh"
 #. module: account_reports
 #: model_terms:ir.actions.act_window,help:account_reports.action_view_list_customer_statements
 msgid "No follow-up to send!"
-msgstr ""
+msgstr "Không có công nợ cần gửi!"
 
 #. module: account_reports
 #. openerp-web
 #: code:addons/account_reports/static/src/xml/account_report_template.xml:23
 #, python-format
 msgid "No followup to send!"
-msgstr ""
+msgstr "Không có công nợ cần gửi!"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.template_followup_report
 msgid "Normal debtor"
-msgstr ""
+msgstr "Nợ bình thường"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_aged_partner_balance.py:21
 #, python-format
 msgid "Not due on: %s"
-msgstr ""
+msgstr "Chưa tới hạn: %s"
 
 #. module: account_reports
 #: model:ir.model.fields,help:account_reports.field_account_move_line__internal_note
@@ -1712,7 +1725,7 @@ msgid ""
 "item"
 msgstr ""
 "Ghi chú bạn có thể ghi nhận trong phần sao kê khách hàng ở phần các khoản "
-"phảithu"
+"phải thu"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_res_company__days_between_two_followups
@@ -1732,6 +1745,8 @@ msgid ""
 "Odoo will remind you to take care of this follow-up on the next reminder "
 "date."
 msgstr ""
+"Hệ thống sẽ nhắc nhở bạn chăm sóc các khoản công nợ vào ngày nhắc nhở tiếp "
+"theo."
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_aged_partner_balance.py:22
@@ -1753,7 +1768,7 @@ msgstr "Thu nhập từ kinh doanh"
 #: code:addons/account_reports/models/account_bank_reconciliation_report.py:163
 #, python-format
 msgid "Operations to Process"
-msgstr ""
+msgstr "Hoạt động để xử lý"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_other_income0
@@ -1763,7 +1778,7 @@ msgstr "Doanh thu khác"
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.customer_statements_search_view
 msgid "Overdue Invoices"
-msgstr ""
+msgstr "Hóa đơn quá hạn"
 
 #. module: account_reports
 #: code:addons/account_reports/models/res_partner.py:174
@@ -1774,7 +1789,7 @@ msgstr "Các khoản thanh toán quá hạn của %s"
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line__parent_id
 msgid "Parent"
-msgstr "Dự án cha"
+msgstr "Cha"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report__parent_id
@@ -1797,7 +1812,7 @@ msgstr "Đối tác"
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.filter_info_template
 msgid "Partner Categories:"
-msgstr ""
+msgstr "Nhóm đối tác:"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_partner_ledger.py:228
@@ -1910,12 +1925,12 @@ msgstr "Thu nhập chưa phân bổ của năm hiện tại"
 #. module: account_reports
 #: model:ir.actions.report,name:account_reports.action_report_followup
 msgid "Print Follow-up Letter"
-msgstr ""
+msgstr "In thư thông báo công nợ"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line__print_on_new_page
 msgid "Print On New Page"
-msgstr ""
+msgstr "In trong trang mới"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_report.py:701
@@ -1928,12 +1943,12 @@ msgstr "Xem trước bản in"
 #: code:addons/account_reports/static/src/xml/account_report_template.xml:7
 #, python-format
 msgid "Print letter"
-msgstr ""
+msgstr "In thư"
 
 #. module: account_reports
 #: model:ir.actions.server,name:account_reports.action_account_reports_customer_statements_do_followup
 msgid "Process Follow-ups"
-msgstr ""
+msgstr "Xử lý công nợ"
 
 #. module: account_reports
 #: model:ir.actions.client,name:account_reports.action_account_report_pnl
@@ -1962,7 +1977,7 @@ msgstr "Khoản phải thu"
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_debtors0
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_receivable0
 msgid "Receivables"
-msgstr "Có thể thu"
+msgstr "Các khoản phải thu"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.account_reports_journal_dashboard_kanban_view
@@ -1988,12 +2003,12 @@ msgstr "Tham chiếu"
 #: code:addons/account_reports/static/src/xml/account_report_template.xml:13
 #, python-format
 msgid "Remind me later"
-msgstr ""
+msgstr "Nhắc tôi sau"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.view_account_financial_report_form
 msgid "Report Definition"
-msgstr ""
+msgstr "Định dạng báo cáo"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.view_account_financial_report_line_form
@@ -2019,7 +2034,7 @@ msgstr "Báo cáo"
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_retained_earnings0
 msgid "Retained Earnings"
-msgstr ""
+msgstr "Lợi nhuận giữ lại"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_return_investment0
@@ -2040,7 +2055,7 @@ msgstr "Lưu"
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.main_template
 msgid "Search account"
-msgstr ""
+msgstr "Tìm tài khoản"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line__name
@@ -2052,11 +2067,12 @@ msgstr "Tên phần"
 msgid ""
 "Select this option if you want to manually define the next reminder date."
 msgstr ""
+"Chọn cái này nếu bạn muốn điều chỉnh thủ công ngày nhắc nhở tiếp theo."
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.template_followup_report
 msgid "Send an email"
-msgstr ""
+msgstr "Gửi một email"
 
 #. module: account_reports
 #. openerp-web
@@ -2068,7 +2084,7 @@ msgstr "Gửi qua email"
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line__sequence
 msgid "Sequence"
-msgstr "Trình tự"
+msgstr "Thứ tự"
 
 #. module: account_reports
 #: model:ir.model.fields,help:account_reports.field_account_financial_html_report__tax_report
@@ -2097,13 +2113,13 @@ msgstr "Hiển thị Domain"
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report__unfold_all_filter
 msgid "Show unfold all filter"
-msgstr "Hiển thị tất cả bộ lọc đã mở"
+msgstr "Hiển thị bỏ qua tất cả bộ lọc"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_followup_report.py:31
 #, python-format
 msgid "Source Document"
-msgstr "Tài liệu nguồn"
+msgstr "Tài liệu gốc"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line__special_date_changer
@@ -2119,7 +2135,7 @@ msgstr "Ngày bắt đầu :"
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_report_manager__summary
 msgid "Summary"
-msgstr "Tóm tắt"
+msgstr "Tổng kết"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_generic_tax_report.py:20
@@ -2170,7 +2186,7 @@ msgstr "Ngày trước khi không có hoạt động nào được thực hiện
 #: code:addons/account_reports/static/src/xml/account_report_template.xml:30
 #, python-format
 msgid "The follow-up report was successfully emailed!"
-msgstr ""
+msgstr "Báo cáo theo dõi công nợ đã được gửi email thành công!"
 
 #. module: account_reports
 #: model:ir.model.fields,help:account_reports.field_account_financial_html_report__generated_menu_id
@@ -2185,11 +2201,13 @@ msgid ""
 "The next reminder date is computed based on what you have defined in the "
 "accounting settings."
 msgstr ""
+"Ngày nhắc tiếp theo được tính dựa trên việc bạn quy định ở trong phần thiết "
+"lập kết toán."
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.main_template
 msgid "There are"
-msgstr ""
+msgstr "Đây là"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_date_filter
@@ -2211,6 +2229,7 @@ msgstr "Quý này"
 msgid ""
 "This allows you to choose the position of totals in your financial reports."
 msgstr ""
+"Việc này cho phép bạn chọn vị trí tổng trong báo cáo tài chính của bạn."
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_date_filter
@@ -2258,7 +2277,7 @@ msgstr "Tổng quá hạn"
 #: code:addons/account_reports/models/account_bank_reconciliation_report.py:42
 #, python-format
 msgid "Total Virtual GL Balance"
-msgstr ""
+msgstr "Tổng số dư ảo trong sổ cái"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_report_coa.py:149
@@ -2289,7 +2308,7 @@ msgstr "Không xác định"
 #: code:addons/account_reports/models/account_bank_reconciliation_report.py:189
 #, python-format
 msgid "Unexplained Difference"
-msgstr ""
+msgstr "Khoản chênh lệch chưa được giải thích"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_extra_options
@@ -2304,7 +2323,7 @@ msgstr "Mở tất cả"
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.line_template
 msgid "Unfolded"
-msgstr ""
+msgstr "Đã mở"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_extra_options
@@ -2320,7 +2339,7 @@ msgstr "Mã ami chưa đối soát"
 #: code:addons/account_reports/models/account_bank_reconciliation_report.py:166
 #, python-format
 msgid "Unreconciled Bank Statement Lines"
-msgstr ""
+msgstr "Chi tiết sao kê chưa được đối soát"
 
 #. module: account_reports
 #: selection:account.financial.html.report.line,special_date_changer:0
@@ -2331,13 +2350,13 @@ msgstr "Dùng ngày được cho"
 #: code:addons/account_reports/models/account_bank_reconciliation_report.py:174
 #, python-format
 msgid "Validated Payments not Linked with a Bank Statement Line"
-msgstr ""
+msgstr "Thanh toán đã xác nhận chưa liên kết với sao kê nào"
 
 #. module: account_reports
 #: code:addons/account_reports/models/res_partner.py:85
 #, python-format
 msgid "Vendor Ledger"
-msgstr ""
+msgstr "Sổ cái nhà cung cấp"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.line_caret_options
@@ -2367,7 +2386,7 @@ msgstr "Xem bút toán"
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.line_caret_options
 msgid "View Partner"
-msgstr ""
+msgstr "Xem đối tác"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.line_caret_options
@@ -2378,7 +2397,7 @@ msgstr "Xem thanh toán"
 #: code:addons/account_reports/models/account_bank_reconciliation_report.py:151
 #, python-format
 msgid "Virtual GL Balance"
-msgstr ""
+msgstr "Dư ảo trong sổ cái"
 
 #. module: account_reports
 #: model:ir.model.fields,help:account_reports.field_account_financial_html_report_line__print_on_new_page
@@ -2386,6 +2405,8 @@ msgid ""
 "When checked this line and everything after it will be printed on a new "
 "page."
 msgstr ""
+"Khi chọn cái này thì dòng này và mọi thứ phía sau nó sẽ được in trong một "
+"trang mới."
 
 #. module: account_reports
 #: model:ir.model.fields,help:account_reports.field_res_company__totals_below_sections
@@ -2394,6 +2415,8 @@ msgstr ""
 msgid ""
 "When ticked, totals and subtotals appear below the sections of the report."
 msgstr ""
+"Khi chọn, tổng và thành tiền sẽ xuất hiện ở chỗ dưới mỗi khu vực của báo "
+"cáo."
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.filter_info_template
@@ -2409,20 +2432,20 @@ msgstr "Với các hóa đơn quá hạn"
 #. module: account_reports
 #: selection:res.partner,followup_status:0
 msgid "With overdue invoices"
-msgstr ""
+msgstr "Với các hóa đơn quá hạn"
 
 #. module: account_reports
 #. openerp-web
 #: code:addons/account_reports/static/src/js/followup_form/followup_form_controller.js:69
 #, python-format
 msgid "You are done with the follow-ups!<br/>You have skipped %s partner(s)."
-msgstr ""
+msgstr "Bạn đã hoàn tất theo dõi công nợ!<br/>Bạn đã bỏ qua %s đối tác(s)."
 
 #. module: account_reports
 #: code:addons/account_reports/models/res_partner.py:147
 #, python-format
 msgid "any"
-msgstr ""
+msgstr "bất kỳ"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.res_config_settings_view_form
@@ -2432,7 +2455,7 @@ msgstr "số ngày giữa mỗi lần nhắn nhở"
 #. module: account_reports
 #: model:ir.model.fields,help:account_reports.field_account_financial_html_report__analytic
 msgid "display the analytic filters"
-msgstr ""
+msgstr "hiển thị bộ lọc phân tích"
 
 #. module: account_reports
 #: model:ir.model.fields,help:account_reports.field_account_financial_html_report__comparison
@@ -2447,7 +2470,7 @@ msgstr "hiển thị bộ lọc nhật ký trong báo cáo"
 #. module: account_reports
 #: model:ir.model.fields,help:account_reports.field_account_financial_html_report__cash_basis
 msgid "display the option to switch to cash basis mode"
-msgstr ""
+msgstr "hiển thị tùy chọn chuyển đổi qua chế độ Kế toán dựa trên dòng tiền"
 
 #. module: account_reports
 #: model:ir.model.fields,help:account_reports.field_account_financial_html_report__unfold_all_filter
@@ -2468,7 +2491,7 @@ msgstr "tên của model trong báo cáo"
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.main_template
 msgid "prior or included in this period."
-msgstr ""
+msgstr "ưu tiên hoặc bao gồm trong kỳ này."
 
 #. module: account_reports
 #: model:ir.model.fields,help:account_reports.field_account_financial_html_report__date_range
@@ -2483,9 +2506,9 @@ msgstr "đến:"
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.main_template
 msgid "unposted Journal Entries"
-msgstr ""
+msgstr "bút toán chưa đưa vào sổ"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.line_template_general_ledger_report
 msgid "⇒ journal items"
-msgstr "⇒ mục nhật ký"
+msgstr "⇒ bút toán"

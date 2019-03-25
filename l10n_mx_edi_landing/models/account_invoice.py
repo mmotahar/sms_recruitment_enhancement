@@ -22,7 +22,7 @@ class AccountInvoice(models.Model):
         for line in self.mapped('invoice_line_ids').filtered('sale_line_ids'):
             moves = line.mapped('sale_line_ids.move_ids').filtered(
                 lambda r: r.state == 'done' and not r.scrapped)
-            landed = landed_obj.search(
+            landed = landed_obj.sudo().search(
                 [('picking_ids', 'in',
                     moves.mapped('move_orig_fifo_ids.picking_id').ids),
                     ('l10n_mx_edi_customs_number', '!=', False)])

@@ -7,6 +7,7 @@
 # Audrius Palenskis <audrius.palenskis@gmail.com>, 2018
 # digitouch UAB <digitouchagencyeur@gmail.com>, 2018
 # Linas Versada <linaskrisiukenas@gmail.com>, 2019
+# Rolandas <panauto1@gmail.com>, 2019
 # 
 msgid ""
 msgstr ""
@@ -14,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-21 14:06+0000\n"
 "PO-Revision-Date: 2018-08-24 11:36+0000\n"
-"Last-Translator: Linas Versada <linaskrisiukenas@gmail.com>, 2019\n"
+"Last-Translator: Rolandas <panauto1@gmail.com>, 2019\n"
 "Language-Team: Lithuanian (https://www.transifex.com/odoo/teams/41243/lt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -72,7 +73,7 @@ msgstr "Identifikacija"
 #: model:ir.model.fields,help:account_sepa.field_res_company__sepa_orgid_id
 #: model:ir.model.fields,help:account_sepa.field_res_config_settings__sepa_orgid_id
 msgid "Identification assigned by an institution (eg. VAT number)."
-msgstr ""
+msgstr "Institucijos suteiktas ID (pvz. PVM mokėtojo kodas)"
 
 #. module: account_sepa
 #: code:addons/account_sepa/models/account_batch_payment.py:44
@@ -262,6 +263,8 @@ msgid ""
 "The partner account '%s' requires a Bank Identification Code (BIC) to pay "
 "via SEPA. Please configure it first."
 msgstr ""
+"Jei norite mokėti per SEPA, partnerio sąskaita '%s' turi turėti Bank "
+"Identification Code (BIC)  Įrašykite jį. "
 
 #. module: account_sepa
 #: code:addons/account_sepa/models/account_batch_payment.py:18
@@ -274,6 +277,9 @@ msgid ""
 "0 1 2 3 4 5 6 7 8 9\n"
 "/ - ? : ( ) . , ' + (space)"
 msgstr ""
+"SEPA bylų tekste gali būti tik šie ženklai: a b c d e f g h i j k l m n o p "
+"q r s t u v w x y zA B C D E F G H I J K L M N O P Q R S T U V W X Y Z0 1 2 "
+"3 4 5 6 7 8 9/ - ? : ( ) . , ' + (space) "
 
 #. module: account_sepa
 #: code:addons/account_sepa/models/account_batch_payment.py:88
@@ -299,7 +305,7 @@ msgstr ""
 #: code:addons/account_sepa/models/account_batch_payment.py:189
 #, python-format
 msgid "Too many transactions for a single file."
-msgstr ""
+msgstr "Per daug transakcijų vienai bylai"
 
 #. module: account_sepa
 #: model:ir.model.fields,help:account_sepa.field_res_company__sepa_initiating_party_name
@@ -319,4 +325,4 @@ msgstr "Jūsų įmonės pavadinimas"
 #: code:addons/account_sepa/models/account_batch_payment.py:84
 #, python-format
 msgid "Your bank account is not labelled in EUR"
-msgstr ""
+msgstr "Jūsų banko sąskaita nepažymėta kaip EUR"

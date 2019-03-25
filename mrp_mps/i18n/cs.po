@@ -145,7 +145,7 @@ msgstr "Datum"
 #. module: mrp_mps
 #: model:ir.model.fields,help:mrp_mps.field_sale_forecast__product_uom_id
 msgid "Default unit of measure used for all stock operations."
-msgstr ""
+msgstr "Výchozí měrná jednotka používaná pro všechny akciové operace."
 
 #. module: mrp_mps
 #: model:ir.model.fields,help:mrp_mps.field_res_company__manufacturing_period

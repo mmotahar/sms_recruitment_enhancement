@@ -404,7 +404,7 @@ msgstr "Skladové pravidlo"
 #. module: mrp_mps
 #: model_terms:ir.ui.view,arch_db:mrp_mps.res_config_settings_view_form
 msgid "Time Range"
-msgstr ""
+msgstr "Rozsah času"
 
 #. module: mrp_mps
 #. openerp-web

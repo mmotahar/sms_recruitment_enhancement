@@ -43,7 +43,7 @@ msgstr ""
 #. module: account_invoice_extract
 #: model_terms:ir.ui.view,arch_db:account_invoice_extract.res_config_settings_view_form
 msgid "Autocomplete Vendor Bills (OCR + AI)"
-msgstr ""
+msgstr "Automatiškai pildyti tiekėjų sąskaitas (OCR + AI)"
 
 #. module: account_invoice_extract
 #: model:ir.model.fields,field_description:account_invoice_extract.field_res_config_settings__extract_show_ocr_option_selection
@@ -240,6 +240,9 @@ msgid ""
 "When receiving an email with a bill, or uploading scanned bills, Odoo will "
 "parse them (OCR) and auto-complete (AI) Draft Bills to validate."
 msgstr ""
+"Kai gaunamas laiškas su sąskaita arba įkeliamos skenuotos sąskaitos, "
+"\"Odoo\" išanalizuos jas (OCR) ir automatiškai užpildys (AI) juodraštines "
+"sąskaitas patvirtinimui."
 
 #. module: account_invoice_extract
 #: model:ir.model.fields,field_description:account_invoice_extract.field_account_invoice_extract_words__word_box_angle

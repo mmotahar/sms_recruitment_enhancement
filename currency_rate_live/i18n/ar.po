@@ -7,8 +7,8 @@
 # hoxhe Aits <hoxhe0@gmail.com>, 2018
 # Osoul <baruni@osoul.ly>, 2018
 # Shaima Safar <shaima.safar@open-inside.com>, 2018
-# amrnegm <amrnegm.01@gmail.com>, 2018
 # Ali Alrehawi <alrehawi@hotmail.com>, 2018
+# Mustafa Rawi <mustafa@cubexco.com>, 2019
 # 
 msgid ""
 msgstr ""
@@ -16,7 +16,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-15 15:18+0000\n"
 "PO-Revision-Date: 2018-08-24 11:37+0000\n"
-"Last-Translator: Ali Alrehawi <alrehawi@hotmail.com>, 2018\n"
+"Last-Translator: Mustafa Rawi <mustafa@cubexco.com>, 2019\n"
 "Language-Team: Arabic (https://www.transifex.com/odoo/teams/41243/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -30,11 +30,13 @@ msgid ""
 "<i title=\"Update now\" role=\"img\" aria-label=\"Update now\" class=\"fa "
 "fa-fw fa-refresh\"/>"
 msgstr ""
+"<i title=\"Update now\" role=\"img\" aria-label=\"Update now\" class=\"fa "
+"fa-fw fa-refresh\"/>"
 
 #. module: currency_rate_live
 #: selection:res.company,currency_provider:0
 msgid "Bank Of Canada"
-msgstr ""
+msgstr "بنك كندا"
 
 #. module: currency_rate_live
 #: model:ir.model,name:currency_rate_live.model_res_company
@@ -51,7 +53,7 @@ msgstr "ضبط الإعدادات"
 #: model:ir.cron,cron_name:currency_rate_live.ir_cron_currency_update
 #: model:ir.cron,name:currency_rate_live.ir_cron_currency_update
 msgid "Currency: rate update"
-msgstr ""
+msgstr "العملة: تحديث سعر الصرف"
 
 #. module: currency_rate_live
 #: selection:res.company,currency_interval_unit:0
@@ -71,24 +73,24 @@ msgid ""
 "Thank you in advance for your cooperation.\n"
 "Best Regards,"
 msgstr ""
-"Dear Sir/Madam,\n"
+"عميلنا/عميلتنا العزيزة،\n"
 "\n"
-"Our records indicate that some payments on your account are still due. Please find details below.\n"
-"If the amount has already been paid, please disregard this notice. Otherwise, please forward us the total amount stated below.\n"
-"If you have any queries regarding your account, Please contact us.\n"
+"تشير سجلاتنا إلى أن بعض مدفوعات حسابكم مازالت متأخرة، برجاء مراجعة التفاصيل بالأسفل.\n"
+"إذا كان المبلغ قد تم سداده، يمكنكم تجاهل هذه الرسالة، وإلا، برجاء إرسال المبلغ المذكور بالأسفل بأكمله.\n"
+"إذا كان لديكم أية أسئلة بخصوص حسابكم، برجاء التواصل معنا.\n"
 "\n"
-"Thank you in advance for your cooperation.\n"
-"Best Regards,"
+"شكرًا مقدمًا على تعاونكم.\n"
+"مع أطيب تحياتنا،"
 
 #. module: currency_rate_live
 #: selection:res.company,currency_provider:0
 msgid "European Central Bank"
-msgstr ""
+msgstr "البنك المركزي الأوروبي"
 
 #. module: currency_rate_live
 #: selection:res.company,currency_provider:0
 msgid "Federal Tax Administration (Switzerland)"
-msgstr ""
+msgstr "إدارة الضرائب الاتحادية (سويسرا)"
 
 #. module: currency_rate_live
 #: model_terms:ir.ui.view,arch_db:currency_rate_live.res_config_settings_view_form
@@ -106,17 +108,17 @@ msgstr "وحدة الفترة"
 #: model:ir.model.fields,field_description:currency_rate_live.field_res_config_settings__last_currency_sync_date
 #: model_terms:ir.ui.view,arch_db:currency_rate_live.res_config_settings_view_form
 msgid "Last Sync Date"
-msgstr ""
+msgstr "تاريخ آخر مزامنة"
 
 #. module: currency_rate_live
 #: selection:res.company,currency_interval_unit:0
 msgid "Manually"
-msgstr "يدويا"
+msgstr "يدويًا"
 
 #. module: currency_rate_live
 #: selection:res.company,currency_provider:0
 msgid "Mexican Bank"
-msgstr ""
+msgstr "البنك المكسيكي"
 
 #. module: currency_rate_live
 #: selection:res.company,currency_interval_unit:0
@@ -132,7 +134,7 @@ msgstr "تاريخ التنفيذ القادم"
 #. module: currency_rate_live
 #: model_terms:ir.ui.view,arch_db:currency_rate_live.res_config_settings_view_form
 msgid "Next Run"
-msgstr ""
+msgstr "التشغيل التالي"
 
 #. module: currency_rate_live
 #: model_terms:ir.ui.view,arch_db:currency_rate_live.res_config_settings_view_form
@@ -143,7 +145,7 @@ msgstr "الخدمة"
 #: model:ir.model.fields,field_description:currency_rate_live.field_res_company__currency_provider
 #: model:ir.model.fields,field_description:currency_rate_live.field_res_config_settings__currency_provider
 msgid "Service Provider"
-msgstr ""
+msgstr "مزود الخدمة"
 
 #. module: currency_rate_live
 #: code:addons/currency_rate_live/models/res_config_settings.py:387
@@ -152,6 +154,7 @@ msgid ""
 "The Yahoo currency rate web service has been discontinued. Please select "
 "another currency rate provider."
 msgstr ""
+"لقد توقفت خدمة متابعة أسعار صرف العملات من ياهو. برجاء اختيار مزود خدمة آخر."
 
 #. module: currency_rate_live
 #: code:addons/currency_rate_live/models/res_config_settings.py:103
@@ -160,6 +163,7 @@ msgid ""
 "Unable to connect to the online exchange rate platform %s. The web service "
 "may be temporary down."
 msgstr ""
+"تعذّر الاتصال بمنصة سعر الصرف الإلكتروني %s. ربما تكون الخدمة متوقفة مؤقتًا."
 
 #. module: currency_rate_live
 #: code:addons/currency_rate_live/models/res_config_settings.py:390
@@ -168,6 +172,8 @@ msgid ""
 "Unable to connect to the online exchange rate platform. The web service may "
 "be temporary down. Please try again in a moment."
 msgstr ""
+"تعذّر الاتصال بمنصة سعر الصرف الإلكتروني. ربما تكون الخدمة متوقفة مؤقتًا. "
+"برجاء المحاولة مجددًا بعد لحظات."
 
 #. module: currency_rate_live
 #: selection:res.company,currency_interval_unit:0
@@ -177,7 +183,7 @@ msgstr "أسبوعيًا"
 #. module: currency_rate_live
 #: selection:res.company,currency_provider:0
 msgid "Yahoo (DISCONTINUED)"
-msgstr ""
+msgstr "ياهو (متوقفة)"
 
 #. module: currency_rate_live
 #: code:addons/currency_rate_live/models/res_config_settings.py:143
@@ -185,9 +191,9 @@ msgstr ""
 msgid ""
 "Your main currency (%s) is not supported by this exchange rate provider. "
 "Please choose another one."
-msgstr ""
+msgstr "مزود سعر الصرف لا يدعم عملتك الرئيسية (%s). برجاء اختيار عملة أخرى."
 
 #. module: currency_rate_live
 #: selection:res.company,currency_provider:0
 msgid "xe.com"
-msgstr ""
+msgstr "xe.com"

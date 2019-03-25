@@ -47,7 +47,7 @@ msgstr "контракти 2018"
 #. module: documents
 #: model:documents.tag,name:documents.documents_finance_fiscal_year_2018
 msgid "2019"
-msgstr ""
+msgstr "2019"
 
 #. module: documents
 #. openerp-web
@@ -58,6 +58,9 @@ msgid ""
 "task or vendor bill,</br> create activities for users, etc.</br> Actions can"
 " be customized through the Configuration menu."
 msgstr ""
+"<b>Дії</b> дозволяють призначити теги, автоматизувати дії, такі як створення"
+" завдання або рахунку постачальника,</br> створювати дії для користувачів, і"
+" т.д.</br> Дії можна налаштувати за допомогою меню Налаштування."
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.format_file_size
@@ -70,6 +73,8 @@ msgstr "<b>Байти</b>"
 #, python-format
 msgid "<b>Close the preview</b> to go back to your selection of documents"
 msgstr ""
+"<b>Закрийте попередній перегляд</b>, щоби повернутися до ваших вибраних "
+"документів"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.format_file_size
@@ -94,6 +99,8 @@ msgid ""
 "<b>Use tags</b> to easily filter documents. Tags are defined according to "
 "the folder."
 msgstr ""
+"<b>Використовуйте теги</b>, щоби легко фільтрувати документи. Теги "
+"визначаються відповідно до папки."
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.public_page_layout
@@ -106,6 +113,8 @@ msgid ""
 "<i class=\"fa fa-circle-o-notch fa-spin text-white fa-3x mb8\" role=\"img\" "
 "aria-label=\"Loading\" title=\"Loading\"/>"
 msgstr ""
+"<i class=\"fa fa-circle-o-notch fa-spin text-white fa-3x mb8\" role=\"img\" "
+"aria-label=\"Loading\" title=\"Loading\"/>"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.share_page
@@ -239,7 +248,7 @@ msgstr "Додати Url"
 #. module: documents
 #: model:documents.tag,name:documents.documents_marketing_assets_ads
 msgid "Ads"
-msgstr ""
+msgstr "Оголошення"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__alias_id
@@ -269,17 +278,17 @@ msgstr "Модель псевдоніма"
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.documents_view_search_inherit
 msgid "All locked files"
-msgstr ""
+msgstr "Усі заблоковані файли"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__action
 msgid "Allows to"
-msgstr ""
+msgstr "Дозволяє"
 
 #. module: documents
 #: model:ir.module.category,description:documents.module_category_documents_management
 msgid "Allows you to manage your documents."
-msgstr ""
+msgstr "Дозволяє вам керувати вашими документами."
 
 #. module: documents
 #. openerp-web
@@ -316,27 +325,27 @@ msgstr "Долучення"
 #: code:addons/documents/static/src/js/documents_kanban_view.js:27
 #, python-format
 msgid "Attachments Kanban"
-msgstr ""
+msgstr "Канбан прикріплень"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_ir_attachment__available_rule_ids
 msgid "Available Rules"
-msgstr ""
+msgstr "Доступні правила"
 
 #. module: documents
 #: model:documents.folder,name:documents.documents_marketing_brand1_folder
 msgid "Brand 1"
-msgstr ""
+msgstr "Бренд 1"
 
 #. module: documents
 #: model:documents.folder,name:documents.documents_marketing_brand2_folder
 msgid "Brand 2"
-msgstr ""
+msgstr "Бренд 2"
 
 #. module: documents
 #: model:documents.tag,name:documents.documents_marketing_assets_brochures
 msgid "Brochures"
-msgstr ""
+msgstr "Брошури"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.documents_request_form_view
@@ -355,14 +364,14 @@ msgstr "Категорія"
 #: code:addons/documents/static/src/js/tour.js:45
 #, python-format
 msgid "Click here to <b>close the discussion board</b>"
-msgstr ""
+msgstr "Натисніть тут, щоби <b>закрити панель обговорення</b>"
 
 #. module: documents
 #. openerp-web
 #: code:addons/documents/static/src/js/tour.js:17
 #, python-format
 msgid "Click on a card to <b>view the document</b>."
-msgstr ""
+msgstr "Натисніть на картку, щоби <b>переглянути документ</b>."
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_folder__company_id
@@ -372,7 +381,7 @@ msgstr "Компанія"
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_rule__condition_type
 msgid "Condition type"
-msgstr ""
+msgstr "Тип умови"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.workflow_rule_form_view
@@ -413,12 +422,12 @@ msgstr "Створити"
 #: model:ir.model.fields,field_description:documents.field_documents_share__activity_option
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_rule__activity_option
 msgid "Create a new activity"
-msgstr ""
+msgstr "Створіть нову дію"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.tag_view_tree
 msgid "Create a tag"
-msgstr ""
+msgstr "Створіть тег"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_facet__create_uid
@@ -452,7 +461,7 @@ msgstr "Сторно"
 #. module: documents
 #: selection:documents.workflow.rule,condition_type:0
 msgid "Criteria"
-msgstr ""
+msgstr "Критерій"
 
 #. module: documents
 #: selection:documents.request_wizard,activity_date_deadline_range_type:0
@@ -464,7 +473,7 @@ msgstr "Дні"
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.res_config_settings_view_form
 msgid "Default Folders"
-msgstr ""
+msgstr "Типові папки"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__alias_defaults
@@ -475,7 +484,7 @@ msgstr "Типові значення"
 #: model_terms:ir.ui.view,arch_db:documents.share_view_form
 #: model_terms:ir.ui.view,arch_db:documents.share_view_form_popup
 msgid "Default values for uploaded documents"
-msgstr ""
+msgstr "Типові значення для завантажених документів"
 
 #. module: documents
 #. openerp-web
@@ -487,7 +496,7 @@ msgstr "Видалити"
 #. module: documents
 #: model:documents.workflow.rule,name:documents.documents_Internal_deprecate_doc
 msgid "Deprecate Document(s)"
-msgstr ""
+msgstr "Заборонити документ(и)"
 
 #. module: documents
 #: model:documents.tag,name:documents.documents_internal_status_deprecated
@@ -514,7 +523,7 @@ msgstr "Назва для відображення"
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.documents_view_search_inherit
 msgid "Doc"
-msgstr ""
+msgstr "Док"
 
 #. module: documents
 #: model:ir.model,name:documents.model_ir_attachment
@@ -526,27 +535,27 @@ msgstr "Документ"
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__owner_id
 msgid "Document Owner"
-msgstr ""
+msgstr "Власник документу"
 
 #. module: documents
 #: model:ir.model,name:documents.model_documents_request_wizard
 msgid "Document Request"
-msgstr ""
+msgstr "Запит на документ"
 
 #. module: documents
 #: model:ir.model,name:documents.model_documents_workflow_action
 msgid "Document Workflow Tag Action"
-msgstr ""
+msgstr "Дія тегу робочого процесу документа"
 
 #. module: documents
 #: model:ir.model,name:documents.model_documents_workflow_tag_criteria
 msgid "Document Workflow Tag Criteria"
-msgstr ""
+msgstr "Критерій тегу робочого процесу документа"
 
 #. module: documents
 #: selection:documents.share,type:0
 msgid "Document list"
-msgstr ""
+msgstr "Список документів"
 
 #. module: documents
 #. openerp-web
@@ -563,22 +572,22 @@ msgstr "Документи"
 #. module: documents
 #: model:ir.model,name:documents.model_documents_folder
 msgid "Documents Folder"
-msgstr ""
+msgstr "Папка документів"
 
 #. module: documents
 #: model:ir.model,name:documents.model_documents_share
 msgid "Documents Share"
-msgstr ""
+msgstr "Спільний доступ документів"
 
 #. module: documents
 #: model:ir.module.category,name:documents.module_category_documents_management
 msgid "Documents management"
-msgstr ""
+msgstr "Управління документами"
 
 #. module: documents
 #: selection:documents.workflow.tag.criteria,operator:0
 msgid "Does not contain"
-msgstr ""
+msgstr "Не містить"
 
 #. module: documents
 #: selection:documents.share,type:0
@@ -597,7 +606,7 @@ msgstr "Готово"
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.share_page
 msgid "Downlaod all files"
-msgstr ""
+msgstr "Завантажити усі файли"
 
 #. module: documents
 #. openerp-web
@@ -610,7 +619,7 @@ msgstr "Завантажити"
 #. module: documents
 #: selection:documents.share,action:0
 msgid "Download and Upload"
-msgstr ""
+msgstr "Скачати та заванатажити"
 
 #. module: documents
 #: model:documents.tag,name:documents.documents_internal_status_draft
@@ -622,7 +631,7 @@ msgstr "Чернетка"
 #: code:addons/documents/static/src/js/documents_kanban_controller.js:718
 #, python-format
 msgid "Drop files here to upload"
-msgstr ""
+msgstr "Скиньте файли для завантаження"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_request_wizard__activity_date_deadline_range
@@ -641,27 +650,27 @@ msgstr "Тип виконання"
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.folder_view_form
 msgid "E.g. Finance"
-msgstr ""
+msgstr "Напр., Фінанси"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.documents_request_form_view
 msgid "E.g. Missing Expense"
-msgstr ""
+msgstr "Напр., Відсутні витрати"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.facet_view_form_list
 msgid "E.g. Status"
-msgstr ""
+msgstr "Напр., Статус"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.workflow_rule_form_view
 msgid "E.g. Validate document"
-msgstr ""
+msgstr "Напр., Перевірити документ"
 
 #. module: documents
 #: selection:ir.attachment,type:0
 msgid "Empty"
-msgstr ""
+msgstr "Пустий"
 
 #. module: documents
 #: selection:documents.share,state:0
@@ -672,12 +681,12 @@ msgstr "Протерміновано"
 #: model:ir.model,name:documents.model_documents_facet
 #: model:ir.model.fields,field_description:documents.field_documents_tag__facet_id
 msgid "Facet"
-msgstr ""
+msgstr "Фасет"
 
 #. module: documents
 #: sql_constraint:documents.facet:0
 msgid "Facet already exists in this folder"
-msgstr ""
+msgstr "Фасет вже існує в цій папці"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_ir_attachment__favorited_ids
@@ -692,7 +701,7 @@ msgstr "Файл"
 #. module: documents
 #: model:documents.folder,name:documents.documents_finance_folder
 msgid "Finance"
-msgstr ""
+msgstr "Фінанси"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_facet__folder_id
@@ -702,7 +711,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_rule__domain_folder_id
 #: model:ir.model.fields,field_description:documents.field_ir_attachment__folder_id
 msgid "Folder"
-msgstr ""
+msgstr "Папка"
 
 #. module: documents
 #. openerp-web
@@ -711,7 +720,7 @@ msgstr ""
 #: model:ir.ui.menu,name:documents.folder_menu
 #, python-format
 msgid "Folders"
-msgstr ""
+msgstr "Папки"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__message_follower_ids
@@ -741,16 +750,18 @@ msgid ""
 "Go to the <b>images, videos & PDF viewer</b> by clicking on the preview "
 "area."
 msgstr ""
+"Перейдіть на <b>зображення, відео & PDF перегляди</b> натискаючи на "
+"попередній перегляд."
 
 #. module: documents
 #: model:documents.folder,name:documents.documents_hr_folder
 msgid "HR"
-msgstr ""
+msgstr "HR"
 
 #. module: documents
 #: model:documents.tag,name:documents.documents_internal_knowledge_hr_policies
 msgid "HR policies"
-msgstr ""
+msgstr "Умови HR"
 
 #. module: documents
 #: model:ir.model,name:documents.model_ir_http
@@ -830,7 +841,7 @@ msgstr "Стежить"
 #: code:addons/documents/static/src/js/tour.js:40
 #, python-format
 msgid "It will be sent to the followers of this document"
-msgstr ""
+msgstr "Це буде надіслано підписникам цього документа"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_facet____last_update
@@ -876,12 +887,12 @@ msgstr "Останні дії"
 #. module: documents
 #: model:documents.tag,name:documents.documents_finance_documents_legal
 msgid "Legal statements"
-msgstr ""
+msgstr "Офіційні звіти"
 
 #. module: documents
 #: selection:documents.share,state:0
 msgid "Live"
-msgstr ""
+msgstr "Онлайн"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.share_single
@@ -898,7 +909,7 @@ msgstr "Заблокувати"
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_ir_attachment__lock_uid
 msgid "Locked by"
-msgstr ""
+msgstr "Заблоковано"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.share_view_form
@@ -915,7 +926,7 @@ msgstr "Логін"
 #. module: documents
 #: model:documents.tag,name:documents.documents_marketing_assets_logos
 msgid "Logos"
-msgstr ""
+msgstr "Логотипи"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.public_page_layout
@@ -927,7 +938,7 @@ msgstr "Вийти"
 #: code:addons/documents/static/src/xml/documents_inspector.xml:69
 #, python-format
 msgid "MB"
-msgstr ""
+msgstr "MB"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__message_main_attachment_id
@@ -938,12 +949,12 @@ msgstr "Основне прикріплення"
 #: model:ir.actions.act_window,name:documents.tag_action
 #: model:ir.actions.act_window,name:documents.tree_tag_action
 msgid "Manage document tags"
-msgstr ""
+msgstr "Керувати тегами документа"
 
 #. module: documents
 #: model:ir.actions.act_window,name:documents.facet_action
 msgid "Manage tag categories"
-msgstr ""
+msgstr "Керувати категоріями тегів"
 
 #. module: documents
 #: model:res.groups,name:documents.group_documents_manager
@@ -953,7 +964,7 @@ msgstr "Керівник"
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_rule__remove_activities
 msgid "Mark all Activities as done"
-msgstr ""
+msgstr "Позначити усі дії як виконано"
 
 #. module: documents
 #: model:documents.folder,name:documents.documents_marketing_folder
@@ -985,14 +996,14 @@ msgstr "Місяці"
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_rule__folder_id
 msgid "Move to Folder"
-msgstr ""
+msgstr "Перемістити до папки"
 
 #. module: documents
 #. openerp-web
 #: code:addons/documents/static/src/js/documents_inspector.js:143
 #, python-format
 msgid "Multiple values"
-msgstr ""
+msgstr "Кілька значень"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.documents_view_search_inherit
@@ -1002,7 +1013,7 @@ msgstr "Мої дії"
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.documents_view_search_inherit
 msgid "My Documents"
-msgstr ""
+msgstr "Мої документи"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.documents_view_search_inherit
@@ -1012,7 +1023,7 @@ msgstr "Мої закладки"
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.documents_view_search_inherit
 msgid "My locked files"
-msgstr ""
+msgstr "Мої заблоковані файли"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_facet__name
@@ -1027,14 +1038,14 @@ msgstr "Назва"
 #: model_terms:ir.ui.view,arch_db:documents.share_view_form
 #: model_terms:ir.ui.view,arch_db:documents.share_view_form_popup
 msgid "Name of the share link"
-msgstr ""
+msgstr "Назва спільного посилання"
 
 #. module: documents
 #. openerp-web
 #: code:addons/documents/static/src/js/documents_kanban_model.js:227
 #, python-format
 msgid "No Source"
-msgstr ""
+msgstr "Немає джерела"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_request_wizard__activity_note
@@ -1075,7 +1086,7 @@ msgstr "Логотип Odoo"
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.public_page_layout
 msgid "Odoo Website"
-msgstr ""
+msgstr "Веб-сайт Odoo"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_tag_criteria__operator
@@ -1109,7 +1120,7 @@ msgstr "Власник"
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.share_page
 msgid "Owner: #{attachment.create_uid.name}"
-msgstr ""
+msgstr "Власник: #{attachment.create_uid.name}"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.documents_view_search_inherit
@@ -1120,7 +1131,7 @@ msgstr "PDF"
 #: model:ir.model.fields,field_description:documents.field_documents_folder__parent_folder_id
 #: model_terms:ir.ui.view,arch_db:documents.folder_view_search
 msgid "Parent Folder"
-msgstr ""
+msgstr "Батьківська папка"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__alias_parent_model_id
@@ -1186,12 +1197,12 @@ msgstr "Вилучити"
 #: code:addons/documents/static/src/xml/documents_inspector.xml:153
 #, python-format
 msgid "Replace"
-msgstr ""
+msgstr "Замінити"
 
 #. module: documents
 #: selection:documents.workflow.action,action:0
 msgid "Replace by"
-msgstr ""
+msgstr "Замінити на"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.documents_request_form_view
@@ -1203,29 +1214,29 @@ msgstr "Запит"
 #: code:addons/documents/static/src/xml/documents_kanban.xml:11
 #, python-format
 msgid "Request Document"
-msgstr ""
+msgstr "Запит на документ"
 
 #. module: documents
 #. openerp-web
 #: code:addons/documents/static/src/xml/systray.xml:7
 #, python-format
 msgid "Request a Document"
-msgstr ""
+msgstr "Подати запит на документ"
 
 #. module: documents
 #: model:ir.actions.act_window,name:documents.action_request_form
 msgid "Request a file"
-msgstr ""
+msgstr "Подати запит на файл"
 
 #. module: documents
 #: model:mail.activity.type,name:documents.mail_documents_activity_data_md
 msgid "Requested Document"
-msgstr ""
+msgstr "Запитуваний документ"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.documents_view_search_inherit
 msgid "Requested files"
-msgstr ""
+msgstr "Запитувані файли"
 
 #. module: documents
 #: model:documents.workflow.rule,name:documents.documents_Internal_to_draft
@@ -1249,12 +1260,12 @@ msgstr "Відновлення"
 #: model:documents.workflow.rule,name:documents.documents_Finance_validate_tr
 #: model:documents.workflow.rule,name:documents.documents_Internal_to_review
 msgid "Review Document(s)"
-msgstr ""
+msgstr "Попередній перегляд документа(ів)"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_rule__name
 msgid "Rule name"
-msgstr ""
+msgstr "Назва правила"
 
 #. module: documents
 #: model:documents.tag,name:documents.documents_internal_knowledge_Sales
@@ -1264,7 +1275,7 @@ msgstr "Продажі"
 #. module: documents
 #: model:ir.model.fields,help:documents.field_documents_folder__facet_ids
 msgid "Select the tag categories to be used"
-msgstr ""
+msgstr "Виберіть категорії тегів, які потрібно використовувати"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_facet__sequence
@@ -1276,17 +1287,17 @@ msgstr "Послідовність"
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_rule__partner_id
 msgid "Set Contact"
-msgstr ""
+msgstr "Встановіть контакт"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_rule__user_id
 msgid "Set Owner"
-msgstr ""
+msgstr "Встановіть власника"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_rule__tag_action_ids
 msgid "Set Tags"
-msgstr ""
+msgstr "Встановіть теги"
 
 #. module: documents
 #: model:ir.actions.act_window,name:documents.configuration
@@ -1307,32 +1318,32 @@ msgstr "Поділитися"
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_folder__share_link_ids
 msgid "Share Links"
-msgstr ""
+msgstr "Поділитися посиланнями"
 
 #. module: documents
 #: model:ir.actions.act_window,name:documents.share_action
 msgid "Share links"
-msgstr ""
+msgstr "Поділитися посиланнями"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__type
 msgid "Share type"
-msgstr ""
+msgstr "Поділитися типом"
 
 #. module: documents
 #: model:ir.ui.menu,name:documents.share_menu
 msgid "Shared Links"
-msgstr ""
+msgstr "Посилання, якими поділилися"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__tag_ids
 msgid "Shared Tags"
-msgstr ""
+msgstr "Теги, якими поділилися"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__attachment_ids
 msgid "Shared attachments"
-msgstr ""
+msgstr "Прикріплення, якими поділилися"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.documents_view_search_inherit
@@ -1364,7 +1375,7 @@ msgstr "Статус"
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_folder__children_folder_ids
 msgid "Sub folders"
-msgstr ""
+msgstr "Підпапки"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__activity_summary
@@ -1384,17 +1395,19 @@ msgstr "Тег"
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_folder__facet_ids
 msgid "Tag Categories"
-msgstr ""
+msgstr "Категорії тегів"
 
 #. module: documents
 #: sql_constraint:documents.tag:0
 msgid "Tag already exists for this facet"
-msgstr ""
+msgstr "Тег вже існує для цього фасету"
 
 #. module: documents
 #: model:ir.model.fields,help:documents.field_documents_folder__parent_folder_id
 msgid "Tag categories from parent folders will be shared to their sub folders"
 msgstr ""
+"Категорії тегів з батьківських папок будуть спільно використовуватися у "
+"їхніх папках"
 
 #. module: documents
 #. openerp-web
@@ -1450,17 +1463,17 @@ msgstr ""
 #. module: documents
 #: sql_constraint:documents.share:0
 msgid "This access token already exists"
-msgstr ""
+msgstr "Цей токен доступу вже існує"
 
 #. module: documents
 #: model:ir.model.fields,help:documents.field_documents_folder__company_id
 msgid "This folder will only be available for the selected company"
-msgstr ""
+msgstr "Ця папка буде доступна лише для вибраної компанії"
 
 #. module: documents
 #: model:ir.model.fields,help:documents.field_documents_folder__group_ids
 msgid "This folder will only be available for the selected user groups"
-msgstr ""
+msgstr "Ця папка буде доступна лише для вибраних груп користувачів"
 
 #. module: documents
 #. openerp-web
@@ -1470,11 +1483,13 @@ msgid ""
 "This icons gets you to the <b>discussion board</b>, to chat with followers "
 "of this document"
 msgstr ""
+"Ця іконка перенесе вас на <b>панель обговорення</b>, для чату з підписниками"
+" цього документу"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.not_available
 msgid "This link has expired"
-msgstr ""
+msgstr "Термін дії цього посилання закінчився"
 
 #. module: documents
 #: model:documents.tag,name:documents.documents_finance_status_tc
@@ -1491,11 +1506,14 @@ msgid ""
 "To delete files, archive them first. </br>Archived documents can still be "
 "accessed using the Archive option in the Filters top menu."
 msgstr ""
+"Щоб видалити файли, спочатку архівуйте їх. </br>Доступ до архівних "
+"документів можна отримати за допомогою параметра Архів у верхньому меню "
+"фільтрів."
 
 #. module: documents
 #: model:mail.activity.type,name:documents.mail_documents_activity_data_tv
 msgid "To validate"
-msgstr ""
+msgstr "Перевірити"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.documents_view_search_inherit
@@ -1513,7 +1531,7 @@ msgstr "Падказка"
 #: code:addons/documents/static/src/js/tour.js:35
 #, python-format
 msgid "Try to <b>post a message</b>"
-msgstr ""
+msgstr "Спробуйте <b>опублікувати повідомлення</b>"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_ir_attachment__type
@@ -1534,7 +1552,7 @@ msgstr "URL"
 #: code:addons/documents/static/src/xml/documents_inspector.xml:162
 #, python-format
 msgid "Un-archive"
-msgstr ""
+msgstr "Розархівувати"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__message_unread
@@ -1552,7 +1570,7 @@ msgstr "Кількість непрочитаних повідомлень"
 #: model_terms:ir.ui.view,arch_db:documents.share_page
 #, python-format
 msgid "Upload"
-msgstr ""
+msgstr "Завантажити"
 
 #. module: documents
 #: model_terms:ir.actions.act_window,help:documents.document_action
@@ -1560,11 +1578,13 @@ msgid ""
 "Upload <span class=\"font-weight-normal\">a file or</span> drag <span class"
 "=\"font-weight-normal\">it here.</span>"
 msgstr ""
+"Завантажте <span class=\"font-weight-normal\">файл або</span> перетягніть "
+"<span class=\"font-weight-normal\">його сюди.</span>"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__email_drop
 msgid "Upload by Email"
-msgstr ""
+msgstr "Завантажити через Email"
 
 #. module: documents
 #. openerp-web
@@ -1574,6 +1594,8 @@ msgid ""
 "Use <b>folders</b> to organize documents by departments, or group of "
 "interests"
 msgstr ""
+"Використовуйте <b>папки</b>, щоби впорядкувати документи за відділами, "
+"групами за інтересами"
 
 #. module: documents
 #: model:res.groups,name:documents.group_documents_user
@@ -1594,7 +1616,7 @@ msgstr "Дійсний до"
 #: model:documents.workflow.rule,name:documents.documents_Finance_validate_review
 #: model:documents.workflow.rule,name:documents.documents_Internal_validate_review
 msgid "Validate Document(s)"
-msgstr ""
+msgstr "Перевірити документ(и)"
 
 #. module: documents
 #: model:documents.tag,name:documents.documents_finance_status_validated
@@ -1629,6 +1651,8 @@ msgstr "Відео"
 #, python-format
 msgid "Want to become a <b>paperless company</b>? Let's discover Odoo DMS."
 msgstr ""
+"Хочете стати <b>безпаперовою компанією</b>? Відкрийте для себе Документообіг"
+" Odoo."
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__website_message_ids
@@ -1655,22 +1679,24 @@ msgid ""
 "When you <b>upload documents</b>, they appear in the selected folder and "
 "tags."
 msgstr ""
+"Коли ви <b>завантажуєте документи</b>, вони відображаються у вибраній папці "
+"та тегах."
 
 #. module: documents
 #: model:ir.actions.act_window,name:documents.workflow_rule_action
 msgid "Workflow Actions"
-msgstr ""
+msgstr "Дії робочого процесу"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_action__workflow_rule_id
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_tag_criteria__workflow_rule_id
 msgid "Workflow Rule"
-msgstr ""
+msgstr "Правило робочого процесу"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.workflow_rule_form_view
 msgid "Write a tooltip for the action here"
-msgstr ""
+msgstr "Напишіть тут підказку для дії"
 
 #. module: documents
 #: model:ir.model.fields,help:documents.field_ir_attachment__type
@@ -1686,12 +1712,12 @@ msgstr ""
 #: code:addons/documents/static/src/xml/documents_inspector.xml:54
 #, python-format
 msgid "documents selected"
-msgstr ""
+msgstr "вибрані документи"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.share_page
 msgid "documents shared by"
-msgstr ""
+msgstr "документами поділився"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.share_view_form
@@ -1703,9 +1729,9 @@ msgstr "наприклад: Пропозиція обговорити"
 #. module: documents
 #: model:ir.model.fields,help:documents.field_documents_facet__tooltip
 msgid "hover text description"
-msgstr ""
+msgstr "опис наведеного тексту"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.public_page_layout
 msgid "shared by"
-msgstr ""
+msgstr "поділився"

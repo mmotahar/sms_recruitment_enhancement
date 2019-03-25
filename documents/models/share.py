@@ -9,7 +9,7 @@ class DocumentShare(models.Model):
     _inherit = ['mail.thread', 'mail.alias.mixin']
     _description = 'Documents Share'
 
-    folder_id = fields.Many2one('documents.folder', requried=True)
+    folder_id = fields.Many2one('documents.folder', required=True)
     name = fields.Char(string="Name")
 
     access_token = fields.Char(default=lambda x: str(uuid.uuid4()), groups="documents.group_documents_user")

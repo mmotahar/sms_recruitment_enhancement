@@ -4,6 +4,7 @@
 # 
 # Translators:
 # Bagavathikumar Ramakrishnan <bagavathikumar@gmail.com>, 2019
+# Alagappan Karthikeyan <me@karthik.sg>, 2019
 # 
 msgid ""
 msgstr ""
@@ -11,7 +12,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-02 10:31+0000\n"
 "PO-Revision-Date: 2018-08-24 11:50+0000\n"
-"Last-Translator: Bagavathikumar Ramakrishnan <bagavathikumar@gmail.com>, 2019\n"
+"Last-Translator: Alagappan Karthikeyan <me@karthik.sg>, 2019\n"
 "Language-Team: Tamil (https://www.transifex.com/odoo/teams/41243/ta/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -53,7 +54,7 @@ msgstr ""
 #. module: website_sale_dashboard
 #: model_terms:ir.ui.view,arch_db:website_sale_dashboard.res_config_settings_view_form
 msgid "Client ID"
-msgstr ""
+msgstr "கிளையன்ட் ஐடி"
 
 #. module: website_sale_dashboard
 #: model_terms:ir.ui.view,arch_db:website_sale_dashboard.res_config_settings_view_form
@@ -63,7 +64,7 @@ msgstr ""
 #. module: website_sale_dashboard
 #: selection:res.company,website_sale_dashboard_onboarding_state:0
 msgid "Closed"
-msgstr ""
+msgstr "மூடப்பட்ட"
 
 #. module: website_sale_dashboard
 #: model:ir.model,name:website_sale_dashboard.model_res_company
@@ -78,12 +79,12 @@ msgstr ""
 #. module: website_sale_dashboard
 #: model:ir.model,name:website_sale_dashboard.model_digest_digest
 msgid "Digest"
-msgstr ""
+msgstr "டைஜஸ்ட்"
 
 #. module: website_sale_dashboard
 #: selection:res.company,website_sale_dashboard_onboarding_state:0
 msgid "Done"
-msgstr ""
+msgstr "முடிந்தது"
 
 #. module: website_sale_dashboard
 #: model_terms:ir.ui.view,arch_db:website_sale_dashboard.res_config_settings_view_form

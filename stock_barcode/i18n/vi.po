@@ -3,17 +3,18 @@
 # * stock_barcode
 # 
 # Translators:
-# thanh nguyen <thanhnguyen.icsc@gmail.com>, 2018
 # Martin Trigaux, 2018
 # fanha99 <fanha99@hotmail.com>, 2018
 # Duy BQ <duybq86@gmail.com>, 2018
+# thanh nguyen <thanhnguyen.icsc@gmail.com>, 2019
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~11.5+e\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-02 10:32+0000\n"
-"PO-Revision-Date: 2018-10-02 10:32+0000\n"
-"Last-Translator: Duy BQ <duybq86@gmail.com>, 2018\n"
+"PO-Revision-Date: 2018-08-24 11:48+0000\n"
+"Last-Translator: thanh nguyen <thanhnguyen.icsc@gmail.com>, 2019\n"
 "Language-Team: Vietnamese (https://www.transifex.com/odoo/teams/41243/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,14 +25,14 @@ msgstr ""
 #. module: stock_barcode
 #: model_terms:ir.ui.view,arch_db:stock_barcode.res_config_settings_view_form
 msgid "<i class=\"fa fa-print\"/> Print barcode commands"
-msgstr ""
+msgstr "<i class=\"fa fa-print\"/> In câu lệnh quét mã vạch"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/qweb_templates.xml:44
 #, python-format
 msgid "Add product"
-msgstr ""
+msgstr "Thêm sản phẩm"
 
 #. module: stock_barcode
 #. openerp-web
@@ -50,12 +51,12 @@ msgstr "Mã vạch"
 #. module: stock_barcode
 #: model:ir.actions.client,name:stock_barcode.stock_barcode_inventory_client_action
 msgid "Barcode Inventory Adjustment Client Action"
-msgstr ""
+msgstr "Mã hoạt động điều chỉnh kho máy khách"
 
 #. module: stock_barcode
 #: model:ir.actions.client,name:stock_barcode.stock_barcode_picking_client_action
 msgid "Barcode Picking Client Action"
-msgstr ""
+msgstr "Mã hoạt động chuyển kho máy khách"
 
 #. module: stock_barcode
 #: model:ir.model.fields,field_description:stock_barcode.field_stock_barcode_lot___barcode_scanned
@@ -188,14 +189,14 @@ msgstr "ID"
 #. module: stock_barcode
 #: model_terms:ir.ui.view,arch_db:stock_barcode.stock_picking_type_kanban
 msgid "In #{kanban_getcolorname(record.color.raw_value)}"
-msgstr ""
+msgstr "Trong #{kanban_getcolorname(record.color.raw_value)}"
 
 #. module: stock_barcode
 #: model:ir.model.fields,help:stock_barcode.field_stock_inventory_line__product_barcode
 #: model:ir.model.fields,help:stock_barcode.field_stock_move_line__product_barcode
 #: model:ir.model.fields,help:stock_barcode.field_stock_scrap__product_barcode
 msgid "International Article Number used for product identification."
-msgstr "Mã số quốc tế được sử dụng để xác định sản phẩm"
+msgstr "Mã số quốc tế được sử dụng để xác định sản phẩm."
 
 #. module: stock_barcode
 #: model:ir.model,name:stock_barcode.model_stock_inventory
@@ -208,7 +209,7 @@ msgstr "Kho"
 #: model_terms:ir.ui.view,arch_db:stock_barcode.stock_inventory_barcode2
 #, python-format
 msgid "Inventory Adjustments"
-msgstr "Điều chỉnh Tồn kho"
+msgstr "Điều chỉnh tồn kho"
 
 #. module: stock_barcode
 #: model_terms:ir.ui.view,arch_db:stock_barcode.stock_inventory_barcode2
@@ -228,7 +229,7 @@ msgstr "Địa điểm Kiểm kê"
 #. module: stock_barcode
 #: model:ir.model,name:stock_barcode.model_stock_barcode_lot_line
 msgid "LN/SN Product Lines"
-msgstr ""
+msgstr "Chi tiết số lô/serial sản phẩm"
 
 #. module: stock_barcode
 #: model:ir.model.fields,field_description:stock_barcode.field_stock_barcode_lot____last_update
@@ -269,7 +270,7 @@ msgstr "Lô hàng"
 #: code:addons/stock_barcode/models/stock_picking.py:109
 #, python-format
 msgid "Lot/Serial Number Details"
-msgstr "Thông tin Lô/số Sơ-ri"
+msgstr "Thông tin Lô/số sê-ri"
 
 #. module: stock_barcode
 #: model:ir.model.fields,field_description:stock_barcode.field_stock_barcode_lot_line__move_line_id
@@ -310,7 +311,7 @@ msgstr "Không có giao nhận hoặc địa điểm tương ứng với mã v�
 #. module: stock_barcode
 #: model:ir.actions.act_window,name:stock_barcode.open_picking
 msgid "Open a picking"
-msgstr ""
+msgstr "Mở phiếu chuyển hàng"
 
 #. module: stock_barcode
 #: code:addons/stock_barcode/controllers/main.py:106
@@ -318,7 +319,7 @@ msgstr ""
 #: code:addons/stock_barcode/models/stock_picking.py:331
 #, python-format
 msgid "Open picking form"
-msgstr ""
+msgstr "Mở mẫu chuyển hàng"
 
 #. module: stock_barcode
 #. openerp-web
@@ -345,7 +346,7 @@ msgstr "Giao nhận %s"
 #. module: stock_barcode
 #: model_terms:ir.ui.view,arch_db:stock_barcode.stock_picking_barcode
 msgid "Picking Details"
-msgstr ""
+msgstr "Chi tiết chuyển hàng"
 
 #. module: stock_barcode
 #: model:ir.model,name:stock_barcode.model_stock_picking_type
@@ -364,21 +365,21 @@ msgstr "Trước đó"
 #: code:addons/stock_barcode/static/src/xml/qweb_templates.xml:21
 #, python-format
 msgid "Print Delivery Slip"
-msgstr ""
+msgstr "In phiếu giao hàng"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/qweb_templates.xml:23
 #, python-format
 msgid "Print Inventory"
-msgstr ""
+msgstr "In kho"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/qweb_templates.xml:20
 #, python-format
 msgid "Print Picking Operations"
-msgstr ""
+msgstr "In hoạt động kho"
 
 #. module: stock_barcode
 #: model:ir.model,name:stock_barcode.model_product_product
@@ -395,14 +396,14 @@ msgstr "Mã vạch sản phẩm"
 #. module: stock_barcode
 #: model:ir.model,name:stock_barcode.model_stock_move_line
 msgid "Product Moves (Stock Move Line)"
-msgstr ""
+msgstr "Chuyển sản phẩm (Chi tiết phiếu kho)"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/qweb_templates.xml:45
 #, python-format
 msgid "Put In Pack"
-msgstr ""
+msgstr "Đóng gói/thùng"
 
 #. module: stock_barcode
 #: model:ir.model.fields,field_description:stock_barcode.field_stock_barcode_lot__qty_done
@@ -449,49 +450,49 @@ msgstr "Xóa nó"
 #: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:27
 #, python-format
 msgid "Scan a"
-msgstr ""
+msgstr "Quét một"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:25
 #, python-format
 msgid "Scan an"
-msgstr ""
+msgstr "Quét một"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/qweb_templates.xml:33
 #, python-format
 msgid "Scan more products, or scan a new source location"
-msgstr ""
+msgstr "Quét sản phẩm, hoặc quét mã địa điểm đi"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/qweb_templates.xml:32
 #, python-format
 msgid "Scan more products, or scan the destination location"
-msgstr ""
+msgstr "Quét sản phẩm, hoặc quét mã địa điểm đến"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/qweb_templates.xml:31
 #, python-format
 msgid "Scan products"
-msgstr ""
+msgstr "Quét sản phẩm"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/qweb_templates.xml:34
 #, python-format
 msgid "Scan the serial or lot number of the product"
-msgstr ""
+msgstr "Quét lô hoặc số serial của sản phẩm"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/qweb_templates.xml:35
 #, python-format
 msgid "Scan the source location"
-msgstr ""
+msgstr "Quét điểm đi"
 
 #. module: stock_barcode
 #: model:ir.model.fields,field_description:stock_barcode.field_stock_inventory__scan_location_id
@@ -503,7 +504,7 @@ msgstr "Quét địa điểm"
 #: code:addons/stock_barcode/static/src/js/client_action/abstract_client_action.js:1327
 #, python-format
 msgid "Scanning is disabled in this state."
-msgstr ""
+msgstr "Việc quét bị tắt khi ở trạng thái này."
 
 #. module: stock_barcode
 #. openerp-web
@@ -516,7 +517,7 @@ msgstr "Phế liệu"
 #. module: stock_barcode
 #: model_terms:ir.ui.view,arch_db:stock_barcode.stock_move_line_product_selector
 msgid "Select a Product"
-msgstr ""
+msgstr "Chọn 1 sản phẩm"
 
 #. module: stock_barcode
 #: model:ir.model.fields,field_description:stock_barcode.field_stock_barcode_lot_line__stock_barcode_lot_id
@@ -544,63 +545,63 @@ msgid ""
 "or location."
 msgstr ""
 "Mã vạch \"%(barcode)s\" không tương ứng với một sản phẩm, gói hàng hoặc địa "
-"điểm."
+"điểm nào."
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/js/client_action/inventory_client_action.js:226
 #, python-format
 msgid "The inventory adjustment has been cancelled"
-msgstr ""
+msgstr "Điều chỉnh tồn kho này đã bị hủy"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/js/client_action/inventory_client_action.js:205
 #, python-format
 msgid "The inventory adjustment has been validated"
-msgstr ""
+msgstr "Điều chỉnh tồn kho này đã được xác nhận"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/js/forms/picking_barcode_handler.js:87
 #, python-format
 msgid "The picking is %s and cannot be edited."
-msgstr "Giao nhận này thì %s và không thể chỉnh sửa"
+msgstr "Giao nhận này %s và không thể chỉnh sửa."
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/js/client_action/abstract_client_action.js:1113
 #, python-format
 msgid "The scanned lot does not match an existing one."
-msgstr ""
+msgstr "Số lô mới được quét không khớp với số lô nào hiện có."
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/js/client_action/abstract_client_action.js:1160
 #, python-format
 msgid "The scanned serial number is already used."
-msgstr ""
+msgstr "Số serial mới được quét đã được dùng rồi."
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/js/client_action/picking_client_action.js:202
 #, python-format
 msgid "The transfer has been cancelled"
-msgstr ""
+msgstr "Chuyển kho đã bị hủy"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/js/client_action/picking_client_action.js:165
 #, python-format
 msgid "The transfer has been validated"
-msgstr ""
+msgstr "Dịch chuyển này đã được xác nhận"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/qweb_templates.xml:38
 #, python-format
 msgid "This inventory adjustment is already done"
-msgstr ""
+msgstr "Điều chỉnh tồn kho đã xong"
 
 #. module: stock_barcode
 #. openerp-web
@@ -608,28 +609,28 @@ msgstr ""
 #: code:addons/stock_barcode/static/src/js/client_action/abstract_client_action.js:1198
 #, python-format
 msgid "This location is not a child of the main location."
-msgstr ""
+msgstr "Địa điểm này không phải là địa điểm con của địa điểm chính."
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/js/client_action/abstract_client_action.js:964
 #, python-format
 msgid "This package is already scanned."
-msgstr ""
+msgstr "Gói/Thùng này đã được quét rồi."
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/qweb_templates.xml:37
 #, python-format
 msgid "This picking is already cancelled"
-msgstr ""
+msgstr "Phiếu kho này đã bị hủy"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/qweb_templates.xml:36
 #, python-format
 msgid "This picking is already done"
-msgstr ""
+msgstr "Phiếu kho này đã làm xong"
 
 #. module: stock_barcode
 #: model_terms:ir.ui.view,arch_db:stock_barcode.stock_inventory_barcode2
@@ -639,7 +640,7 @@ msgstr "Đến"
 #. module: stock_barcode
 #: model_terms:ir.ui.view,arch_db:stock_barcode.stock_picking_type_kanban
 msgid "To Process"
-msgstr ""
+msgstr "Để xử lý"
 
 #. module: stock_barcode
 #. openerp-web
@@ -698,7 +699,7 @@ msgstr ""
 #. module: stock_barcode
 #: model:ir.model,name:stock_barcode.model_stock_barcode_lot
 msgid "Wizard to scan SN/LN for specific product"
-msgstr "Thuật sĩ để quét SN/LN cho sản phẩm cụ thể"
+msgstr "Tính năng để quét SN/LN cho sản phẩm cụ thể"
 
 #. module: stock_barcode
 #: code:addons/stock_barcode/models/stock_picking.py:302
@@ -711,14 +712,14 @@ msgstr "Mã vạch không đúng"
 #: code:addons/stock_barcode/static/src/js/client_action/abstract_client_action.js:819
 #, python-format
 msgid "You are expected to scan a source location."
-msgstr ""
+msgstr "Bạn sẽ quét một điểm đi."
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/js/client_action/abstract_client_action.js:892
 #, python-format
 msgid "You are expected to scan more products or a destination location."
-msgstr ""
+msgstr "Bạn sẽ quét nhiều sản phẩm hơn hoặc một điểm đến."
 
 #. module: stock_barcode
 #. openerp-web
@@ -729,6 +730,7 @@ msgid ""
 "You are expected to scan one or more products or a package available at the "
 "picking's location"
 msgstr ""
+"Bạn sẽ quét một hoặc nhiều sản phẩm hoặc gói/thùng có sẵn tạiđiểm lấy hàng"
 
 #. module: stock_barcode
 #. openerp-web
@@ -736,42 +738,42 @@ msgstr ""
 #: code:addons/stock_barcode/static/src/js/client_action/abstract_client_action.js:1205
 #, python-format
 msgid "You are expected to scan one or more products."
-msgstr ""
+msgstr "Bạn sẽ quét một hoặc nhiều sản phẩm."
 
 #. module: stock_barcode
 #: code:addons/stock_barcode/wizard/stock_barcode_lot.py:58
 #: code:addons/stock_barcode/wizard/stock_barcode_lot.py:133
 #, python-format
 msgid "You cannot scan two times the same serial number"
-msgstr "Bạn không thể quét hai lần với cùng một số sơ-ri"
+msgstr "Bạn không thể quét hai lần với cùng một số sê-ri"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:16
 #, python-format
 msgid "commands for Inventory"
-msgstr ""
+msgstr "câu lệnh cho Kho"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:27
 #, python-format
 msgid "document"
-msgstr "tài liệu"
+msgstr "chứng từ"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:26
 #, python-format
 msgid "location"
-msgstr ""
+msgstr "địa điểm"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:25
 #, python-format
 msgid "operation type"
-msgstr ""
+msgstr "loại hoạt động"
 
 #. module: stock_barcode
 #. openerp-web
@@ -786,24 +788,26 @@ msgstr "bảng mã vạch kho"
 #, python-format
 msgid "to check out what this module can do! You can also print the barcode"
 msgstr ""
+"để có thể biết những gì module này có thể làm! Bạn có thể tiến hành in mã "
+"vạch"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:26
 #, python-format
 msgid "to create a new transfer from this location."
-msgstr ""
+msgstr "để tạo phiếu chuyển kho mới từ địa điểm này."
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:25
 #, python-format
 msgid "to create a new transfer."
-msgstr ""
+msgstr "để tạo phiếu chuyển kho mới."
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:27
 #, python-format
 msgid "to open it."
-msgstr ""
+msgstr "để mở nó."

@@ -61,7 +61,7 @@ msgstr "Client ID"
 #. module: website_sale_dashboard
 #: model_terms:ir.ui.view,arch_db:website_sale_dashboard.res_config_settings_view_form
 msgid "Client Secret"
-msgstr ""
+msgstr "Klientské tajemství"
 
 #. module: website_sale_dashboard
 #: selection:res.company,website_sale_dashboard_onboarding_state:0
@@ -91,17 +91,17 @@ msgstr "Hotovo"
 #. module: website_sale_dashboard
 #: model_terms:ir.ui.view,arch_db:website_sale_dashboard.res_config_settings_view_form
 msgid "Follow your website traffic in Odoo."
-msgstr ""
+msgstr "Sledovat provoz webových stránek v Odoo."
 
 #. module: website_sale_dashboard
 #: selection:sale.report,invoice_status:0
 msgid "Fully Invoiced"
-msgstr ""
+msgstr "Plně fakturováno"
 
 #. module: website_sale_dashboard
 #: model_terms:ir.ui.view,arch_db:website_sale_dashboard.res_config_settings_view_form
 msgid "How to get my Client ID"
-msgstr ""
+msgstr "Jak získat moje Client ID"
 
 #. module: website_sale_dashboard
 #: model:ir.model.fields,field_description:website_sale_dashboard.field_sale_report__invoice_status
@@ -121,7 +121,7 @@ msgstr "Není dokončeno"
 #. module: website_sale_dashboard
 #: selection:sale.report,invoice_status:0
 msgid "Nothing to Invoice"
-msgstr ""
+msgstr "Nic k fakturaci"
 
 #. module: website_sale_dashboard
 #: model_terms:ir.ui.view,arch_db:website_sale_dashboard.sale_dashboard_view
@@ -147,7 +147,7 @@ msgstr ""
 #. module: website_sale_dashboard
 #: model_terms:ir.ui.view,arch_db:website_sale_dashboard.website_sale_dashboard_onboarding_panel
 msgid "The configuration is done. Happy selling!"
-msgstr ""
+msgstr "Konfigurace je hotová. Šťastný prodej!"
 
 #. module: website_sale_dashboard
 #: selection:sale.report,invoice_status:0
@@ -177,7 +177,7 @@ msgstr ""
 #. module: website_sale_dashboard
 #: selection:sale.report,invoice_status:0
 msgid "Upselling Opportunity"
-msgstr ""
+msgstr "Výhodná příležitost"
 
 #. module: website_sale_dashboard
 #: model:ir.model,name:website_sale_dashboard.model_website
@@ -187,7 +187,7 @@ msgstr "Webová strana"
 #. module: website_sale_dashboard
 #: model_terms:ir.ui.view,arch_db:website_sale_dashboard.website_sale_dashboard_onboarding_panel
 msgid "action_close_website_sale_dashboard_onboarding"
-msgstr ""
+msgstr "action_close_website_sale_dashboard_onboarding"
 
 #. module: website_sale_dashboard
 #: model:ir.actions.act_window,name:website_sale_dashboard.sale_dashboard

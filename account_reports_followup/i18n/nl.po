@@ -137,7 +137,7 @@ msgstr "Betalingsherinneringen"
 #. module: account_reports_followup
 #: model:ir.model.fields,field_description:account_reports_followup.field_account_followup_followup_line__manual_action_note
 msgid "Action To Do"
-msgstr "Actie Te doen"
+msgstr "Uit te voeren actie"
 
 #. module: account_reports_followup
 #: model_terms:ir.ui.view,arch_db:account_reports_followup.view_account_followup_followup_line_form
@@ -343,7 +343,7 @@ msgid ""
 "Odoo will remind you to take care of this follow-up on the next reminder "
 "date."
 msgstr ""
-"Odoo helpt u eraan herinneren om de volgende opvolging te doen om de "
+"Odoo helpt u eraan herinneren om de volgende opvolging te doen op de "
 "volgende herinneringsdatum."
 
 #. module: account_reports_followup

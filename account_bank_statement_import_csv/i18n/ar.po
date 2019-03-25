@@ -3,16 +3,15 @@
 # * account_bank_statement_import_csv
 # 
 # Translators:
-# Mustafa Rawi <mustafa@cubexco.com>, 2018
-# Fahad Alqahtani <fahad@cloudland.sa>, 2018
-# Islam Eldeeb <islameldeb@gmail.com>, 2018
+# Mustafa Rawi <mustafa@cubexco.com>, 2019
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~11.5+e\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-21 14:06+0000\n"
-"PO-Revision-Date: 2018-09-21 14:06+0000\n"
-"Last-Translator: Islam Eldeeb <islameldeb@gmail.com>, 2018\n"
+"PO-Revision-Date: 2018-08-24 11:36+0000\n"
+"Last-Translator: Mustafa Rawi <mustafa@cubexco.com>, 2019\n"
 "Language-Team: Arabic (https://www.transifex.com/odoo/teams/41243/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,17 +22,17 @@ msgstr ""
 #. module: account_bank_statement_import_csv
 #: model_terms:ir.ui.view,arch_db:account_bank_statement_import_csv.account_bank_statement_import_csv
 msgid "<i class=\"fa fa-download mr4\"/>Import Sample Template"
-msgstr ""
+msgstr "<i class=\"fa fa-download mr4\"/>استيراد قالب عينة"
 
 #. module: account_bank_statement_import_csv
 #: model:ir.model,name:account_bank_statement_import_csv.model_base_import_import
 msgid "Base Import"
-msgstr ""
+msgstr "استيراد بسيط"
 
 #. module: account_bank_statement_import_csv
 #: model_terms:ir.ui.view,arch_db:account_bank_statement_import_csv.account_bank_statement_import_csv
 msgid "Comma Separated values (.CSV)"
-msgstr "قيم مفصوله بفواصل (CSV.)"
+msgstr "قيم مفصولة بفواصل (CSV.)"
 
 #. module: account_bank_statement_import_csv
 #. openerp-web
@@ -41,7 +40,7 @@ msgstr "قيم مفصوله بفواصل (CSV.)"
 #: model:ir.model,name:account_bank_statement_import_csv.model_account_bank_statement_import
 #, python-format
 msgid "Import Bank Statement"
-msgstr "استيراد كشف الحساب"
+msgstr "استيراد كشف الحساب البنكي"
 
 #. module: account_bank_statement_import_csv
 #: model:ir.model,name:account_bank_statement_import_csv.model_account_journal

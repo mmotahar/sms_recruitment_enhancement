@@ -5,12 +5,13 @@
 # Translators:
 # Paolo Valier, 2018
 # Léonie Bouchat <lbo@odoo.com>, 2018
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~11.5+e\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-18 10:05+0000\n"
-"PO-Revision-Date: 2018-09-18 10:05+0000\n"
+"PO-Revision-Date: 2018-08-24 11:50+0000\n"
 "Last-Translator: Léonie Bouchat <lbo@odoo.com>, 2018\n"
 "Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +25,7 @@ msgstr ""
 #: code:addons/website_studio/static/src/xml/form_manager.xml:9
 #, python-format
 msgid "App icon"
-msgstr "Icona di applicazione"
+msgstr "Icona applicazione"
 
 #. module: website_studio
 #. openerp-web
@@ -60,14 +61,14 @@ msgid ""
 "do that: 'Website/Editor and Designer'"
 msgstr ""
 "Siamo spiacenti, solo gli utenti con il seguente livello di accesso sono "
-"attualmente autorizzati a fare questo: \"Sito Web/Editor e Designer\""
+"attualmente autorizzati a fare questo: \"sito web/editor e designer\""
 
 #. module: website_studio
 #. openerp-web
 #: code:addons/website_studio/static/src/xml/form_manager.xml:15
 #, python-format
 msgid "View form"
-msgstr "Vedi il modulo"
+msgstr "Vedere il modulo"
 
 #. module: website_studio
 #. openerp-web
@@ -79,7 +80,7 @@ msgstr "Sito Web"
 #. module: website_studio
 #: model:ir.actions.client,name:website_studio.action_web_studio_form
 msgid "Website Studio Form Manager"
-msgstr "Responsabile dei moduli Studio del sito Web"
+msgstr "Responsabile dei moduli Studio del sito web"
 
 #. module: website_studio
 #. openerp-web

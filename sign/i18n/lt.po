@@ -538,7 +538,7 @@ msgstr "Redaguoti"
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.sign_template_view_kanban
 msgid "Edit Fields"
-msgstr ""
+msgstr "Redaguoti laukus"
 
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.sign_template_view_form
@@ -850,7 +850,7 @@ msgstr "Vadovas"
 #: code:addons/sign/static/src/xml/sign_backend.xml:21
 #, python-format
 msgid "Mandatory field"
-msgstr ""
+msgstr "Būtinas laukas"
 
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_sign_send_request__message
@@ -907,7 +907,7 @@ msgstr "Mano mėgstamiausi"
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.sign_template_view_search
 msgid "My Templates"
-msgstr ""
+msgstr "Mano šablonai"
 
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_sign_item_role__name
@@ -1298,7 +1298,7 @@ msgstr ""
 #: code:addons/sign/static/src/js/sign_backend.js:73
 #, python-format
 msgid "Send a Request"
-msgstr ""
+msgstr "Siųsti užklausą"
 
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_sign_request_send_copy__partner_ids
@@ -1344,7 +1344,7 @@ msgstr ""
 #: model:ir.ui.menu,name:sign.menu_document
 #, python-format
 msgid "Sign"
-msgstr "Ženklas"
+msgstr "Pasirašymas"
 
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.sign_send_request_view_form
@@ -1635,7 +1635,7 @@ msgstr "Ačiū!"
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.sign_template_mail_completed
 msgid "The document"
-msgstr ""
+msgstr "Dokumentas"
 
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.deleted_sign_request

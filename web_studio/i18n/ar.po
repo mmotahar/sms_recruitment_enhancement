@@ -15,12 +15,12 @@
 # Zuhair Hammadi <zuhair12@gmail.com>, 2018
 # Majeed Alsamarraie <majeed.hatim@gmail.com>, 2018
 # Mostafa Hanafy <mostafa.s.hanafy@gmail.com>, 2018
-# Mustafa Rawi <mustafa@cubexco.com>, 2018
 # Martin Trigaux, 2018
 # Shaima Safar <shaima.safar@open-inside.com>, 2018
 # Yihya Hugirat <hugirat@gmail.com>, 2018
 # Amer Hazaa <eng.amer.it@gmail.com>, 2018
 # Abdulmajeed Alomar <majeeed87@gmail.com>, 2018
+# Mustafa Rawi <mustafa@cubexco.com>, 2019
 # 
 msgid ""
 msgstr ""
@@ -28,7 +28,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-19 09:13+0000\n"
 "PO-Revision-Date: 2018-08-24 11:49+0000\n"
-"Last-Translator: Abdulmajeed Alomar <majeeed87@gmail.com>, 2018\n"
+"Last-Translator: Mustafa Rawi <mustafa@cubexco.com>, 2019\n"
 "Language-Team: Arabic (https://www.transifex.com/odoo/teams/41243/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -300,7 +300,7 @@ msgstr ""
 #. module: web_studio
 #: model:ir.model,name:web_studio.model_base_automation
 msgid "Automated Action"
-msgstr ""
+msgstr "إجراء آلي"
 
 #. module: web_studio
 #: code:addons/web_studio/controllers/main.py:58
@@ -445,7 +445,7 @@ msgstr ""
 #: code:addons/web_studio/static/src/js/views/view_components.js:124
 #, python-format
 msgid "Checkbox"
-msgstr ""
+msgstr "مربع الاختيار"
 
 #. module: web_studio
 #: model:ir.model.fields,help:web_studio.field_ir_model_data__studio
@@ -1222,7 +1222,7 @@ msgstr "تجميع حسب"
 #. module: web_studio
 #: model:ir.model,name:web_studio.model_ir_http
 msgid "HTTP Routing"
-msgstr ""
+msgstr "مسار HTTP"
 
 #. module: web_studio
 #. openerp-web
@@ -1640,7 +1640,7 @@ msgstr "أكثر"
 #: code:addons/web_studio/static/src/js/views/view_components.js:89
 #, python-format
 msgid "Multiline Text"
-msgstr ""
+msgstr "نص متعدد الأسطر"
 
 #. module: web_studio
 #. openerp-web
@@ -1820,7 +1820,7 @@ msgstr ""
 #: code:addons/web_studio/static/src/xml/view_editor_sidebar.xml:426
 #, python-format
 msgid "Placeholder"
-msgstr ""
+msgstr "النائب"
 
 #. module: web_studio
 #. openerp-web
@@ -1854,7 +1854,7 @@ msgstr ""
 #: code:addons/web_studio/static/src/xml/app_creator.xml:10
 #, python-format
 msgid "Previous"
-msgstr ""
+msgstr "السابق"
 
 #. module: web_studio
 #. openerp-web
@@ -2060,7 +2060,7 @@ msgstr ""
 #: code:addons/web_studio/static/src/js/common/abstract_editor_manager.js:172
 #, python-format
 msgid "Saved"
-msgstr ""
+msgstr "مُخزن"
 
 #. module: web_studio
 #. openerp-web
@@ -2660,7 +2660,7 @@ msgstr ""
 #: code:addons/web_studio/static/src/xml/view_editor_sidebar.xml:441
 #, python-format
 msgid "Widget"
-msgstr ""
+msgstr "الأداة"
 
 #. module: web_studio
 #. openerp-web

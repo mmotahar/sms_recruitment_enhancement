@@ -4,9 +4,9 @@
 # 
 # Translators:
 # Sergio Zanchetta <primes2h@gmail.com>, 2018
-# Paolo Valier, 2018
 # Martin Trigaux, 2018
-# Léonie Bouchat <lbo@odoo.com>, 2018
+# Paolo Valier, 2019
+# Léonie Bouchat <lbo@odoo.com>, 2019
 # 
 msgid ""
 msgstr ""
@@ -14,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-19 09:12+0000\n"
 "PO-Revision-Date: 2018-08-24 11:38+0000\n"
-"Last-Translator: Léonie Bouchat <lbo@odoo.com>, 2018\n"
+"Last-Translator: Léonie Bouchat <lbo@odoo.com>, 2019\n"
 "Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -30,22 +30,22 @@ msgstr ", da"
 #. module: mrp_account
 #: model_terms:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
 msgid "<span>Code</span>"
-msgstr ""
+msgstr "<span>Codice</span>"
 
 #. module: mrp_account
 #: model_terms:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
 msgid "<span>Cost/hour</span>"
-msgstr ""
+msgstr "<span>Costo/ora</span>"
 
 #. module: mrp_account
 #: model_terms:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
 msgid "<span>Operation</span>"
-msgstr ""
+msgstr "<span>Operazione</span>"
 
 #. module: mrp_account
 #: model_terms:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
 msgid "<span>Operator</span>"
-msgstr ""
+msgstr "<span>Operatore</span>"
 
 #. module: mrp_account
 #: model_terms:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
@@ -55,27 +55,27 @@ msgstr "<span>Quantità</span>"
 #. module: mrp_account
 #: model_terms:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
 msgid "<span>Raw Materials</span>"
-msgstr ""
+msgstr "<span>Materie prime</span>"
 
 #. module: mrp_account
 #: model_terms:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
 msgid "<span>Scraps</span>"
-msgstr ""
+msgstr "<span>Scarto</span>"
 
 #. module: mrp_account
 #: model_terms:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
 msgid "<span>Total Cost</span>"
-msgstr ""
+msgstr "<span>Costo totale</span>"
 
 #. module: mrp_account
 #: model_terms:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
 msgid "<span>Unit Cost</span>"
-msgstr ""
+msgstr "<span>Costo unitario</span>"
 
 #. module: mrp_account
 #: model_terms:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
 msgid "<span>Working Time</span>"
-msgstr ""
+msgstr "<span>Tempo di lavoro</span>"
 
 #. module: mrp_account
 #: model_terms:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
@@ -85,7 +85,7 @@ msgstr ""
 #. module: mrp_account
 #: model_terms:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
 msgid "<strong>Total Cost of Raw Materials</strong>"
-msgstr ""
+msgstr "<strong>Costo totale delle materie prime</strong>"
 
 #. module: mrp_account
 #: model_terms:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
@@ -95,7 +95,7 @@ msgstr "<strong>Costo Totale degli Scarti</strong>"
 #. module: mrp_account
 #: model_terms:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
 msgid "<strong>Unit Cost</strong>"
-msgstr ""
+msgstr "<strong>Costo unitario</strong>"
 
 #. module: mrp_account
 #: model:ir.model.fields,field_description:mrp_account.field_mrp_workcenter__costs_hour_account_id
@@ -105,19 +105,19 @@ msgstr "Conto analitico"
 #. module: mrp_account
 #: model_terms:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
 msgid "By product(s)"
-msgstr ""
+msgstr "Per prodotto/i"
 
 #. module: mrp_account
 #: model:ir.actions.report,name:mrp_account.action_cost_struct_mrp_production
 #: model_terms:ir.ui.view,arch_db:mrp_account.mrp_production_form_inherit_view6
 #: model_terms:ir.ui.view,arch_db:mrp_account.product_product_inherit_form_view_cost_structure
 msgid "Cost Analysis"
-msgstr ""
+msgstr "Analisi costi"
 
 #. module: mrp_account
 #: model:ir.model.fields,field_description:mrp_account.field_mrp_workcenter_productivity__cost_already_recorded
 msgid "Cost Recorded"
-msgstr ""
+msgstr "Costo registrato"
 
 #. module: mrp_account
 #: model_terms:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
@@ -127,12 +127,12 @@ msgstr "Struttura dei costi"
 #. module: mrp_account
 #: model:ir.actions.report,name:mrp_account.action_cost_struct_product_template
 msgid "Cost Structure Analysis"
-msgstr ""
+msgstr "Analisi struttura dei costi"
 
 #. module: mrp_account
 #: model_terms:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
 msgid "Cost for"
-msgstr ""
+msgstr "Costo per "
 
 #. module: mrp_account
 #: model_terms:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
@@ -184,7 +184,7 @@ msgstr "Data di ultima modifica"
 #. module: mrp_account
 #: model:ir.model,name:mrp_account.model_report_mrp_account_mrp_cost_structure
 msgid "MRP Cost Structure Report"
-msgstr ""
+msgstr "Rendiconto struttura dei costi di produzione"
 
 #. module: mrp_account
 #: model:ir.model,name:mrp_account.model_product_product
@@ -210,6 +210,8 @@ msgstr "Ordine di Produzione"
 #: model_terms:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
 msgid "Some of the Manufacturing Order(s) selected are not done yet"
 msgstr ""
+"Alcuni degli ordini di produzione selezionati non sono ancora stati "
+"completati"
 
 #. module: mrp_account
 #: model:ir.model.fields,help:mrp_account.field_mrp_workcenter_productivity__cost_already_recorded
@@ -219,6 +221,11 @@ msgid ""
 " multiple times and only consider new entries in the work centers time "
 "lines."
 msgstr ""
+"Campo tecnico automaticamente controllato quando una produzione in corso "
+"pubblica le registrazioni contabili per i suoi costi. In questo modo, il "
+"sistema può registrare più volte il costo di una produzione e prendere in "
+"considerazione solo le nuove registrazioni nel calendario dei centri di "
+"lavoro. "
 
 #. module: mrp_account
 #: model:ir.model,name:mrp_account.model_mrp_workcenter
@@ -228,7 +235,7 @@ msgstr "Centro di Lavoro"
 #. module: mrp_account
 #: model:ir.model,name:mrp_account.model_mrp_workcenter_productivity
 msgid "Workcenter Productivity Log"
-msgstr ""
+msgstr "Registro produttività del centro di lavoro"
 
 #. module: mrp_account
 #: model_terms:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
@@ -238,4 +245,4 @@ msgstr "ore"
 #. module: mrp_account
 #: model_terms:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
 msgid "manufacturing order(s)."
-msgstr ""
+msgstr "ordine(i) di produzione."

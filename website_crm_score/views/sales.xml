@@ -216,6 +216,22 @@
                                     </t>
                                 </templates>
                             </kanban>
+                            <form>
+                                <sheet>
+                                    <h1>
+                                        <field name="user_id"/>
+                                        <field name="leads_count" invisible="1"/>
+                                    </h1>
+                                    <group>
+                                        <label for="maximum_user_leads" string="Maximum Leads / 30 days"/>
+                                        <div>
+                                            <field name="maximum_user_leads" class="oe_inline"/>
+                                        </div>
+                                        <!--<field name="team_user_domain" widget="domain" options="{'model': 'crm.lead'}"/>-->
+                                        <field name="team_user_domain"/>
+                                    </group>
+                                </sheet>
+                            </form>
                         </field>
                     </page>
                </xpath>

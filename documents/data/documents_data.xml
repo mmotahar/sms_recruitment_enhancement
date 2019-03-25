@@ -30,7 +30,7 @@
             <field name="name">Finance</field>
             <field name="description" type="html">
                 <center>
-                    forward bills to <strong>finance-inbox@yourcompany.com</strong> to import them automatically.
+                    forward bills to <strong>inbox-financial</strong> email alias to import them automatically.
                 </center>
             </field>
             <field name="sequence">11</field>

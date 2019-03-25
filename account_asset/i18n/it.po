@@ -5,29 +5,30 @@
 # Translators:
 # Sergio Zanchetta <primes2h@gmail.com>, 2018
 # Francesco Garganese <francesco.garganese@aeromnia.aero>, 2018
-# Martin Trigaux, 2018
 # Davide Corio <enlightx@gmail.com>, 2018
 # Lorenzo Battistini <lorenzo.battistini@agilebg.com>, 2018
 # Luigi Di Naro <gigidn@gmail.com>, 2018
 # Simone Bernini <simone@aperturelabs.it>, 2018
-# Giacomo Grasso <giacomo.grasso.82@gmail.com>, 2018
 # Luca Tralli, 2018
 # Sebastiano Pistore <SebastianoPistore.info@protonmail.ch>, 2018
 # Christian <chris@effeci.info>, 2018
 # Massimo Bianchi <bianchi.massimo@gmail.com>, 2018
-# Paolo Valier, 2018
 # Alessandro Forte <a.forte1010@gmail.com>, 2018
 # Alessandro Camilli <alessandrocamilli@openforce.it>, 2018
 # David Minneci <david@numeko.it>, 2018
+# Martin Trigaux, 2018
+# Giacomo Grasso <giacomo.grasso.82@gmail.com>, 2018
+# Paolo Valier, 2018
 # Federico Castellano <castellano.federico@outlook.com>, 2018
-# Léonie Bouchat <lbo@odoo.com>, 2018
+# Léonie Bouchat <lbo@odoo.com>, 2019
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~11.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-21 13:17+0000\n"
-"PO-Revision-Date: 2018-09-21 13:17+0000\n"
-"Last-Translator: Léonie Bouchat <lbo@odoo.com>, 2018\n"
+"PO-Revision-Date: 2018-08-24 09:15+0000\n"
+"Last-Translator: Léonie Bouchat <lbo@odoo.com>, 2019\n"
 "Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -75,19 +76,23 @@ msgid ""
 "Account used in the periodical entries, to record a part of the asset as "
 "expense."
 msgstr ""
+"Conto usato nelle registrazioni periodiche, per registrare una parte "
+"dell'ammortamento come spesa. "
 
 #. module: account_asset
 #: model:ir.model.fields,help:account_asset.field_account_asset_category__account_asset_id
 msgid ""
 "Account used to record the purchase of the asset at its original price."
 msgstr ""
+"Conto usato per registrare l'acquisto di immobilizzazioni al loro prezzo "
+"originale."
 
 #. module: account_asset
 #. openerp-web
 #: code:addons/account_asset/static/src/js/account_asset.js:52
 #, python-format
 msgid "Accounting entries waiting for manual verification"
-msgstr ""
+msgstr "Registrazioni contabili in attesa di verifica manuale"
 
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_asset__message_needaction
@@ -254,7 +259,7 @@ msgstr ""
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_move__asset_depreciation_ids
 msgid "Assets Depreciation Lines"
-msgstr ""
+msgstr "Riga di ammortamento delle immobilizzazioni"
 
 #. module: account_asset
 #: model:ir.ui.menu,name:account_asset.menu_finance_config_assets
@@ -289,13 +294,13 @@ msgstr "Numero di allegati"
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_category__open_asset
 msgid "Auto-Confirm Assets"
-msgstr ""
+msgstr "Beni confermati automaticamente"
 
 #. module: account_asset
 #: selection:account.asset.asset,date_first_depreciation:0
 #: selection:account.asset.category,date_first_depreciation:0
 msgid "Based on Last Day of Purchase Period"
-msgstr ""
+msgstr "Sulla base dell'ultimo giorno del periodo di acquisto"
 
 #. module: account_asset
 #: model_terms:ir.ui.view,arch_db:account_asset.asset_modify_form
@@ -327,6 +332,8 @@ msgstr ""
 #: model:ir.model.fields,help:account_asset.field_account_asset_category__group_entries
 msgid "Check this if you want to group the generated entries by categories."
 msgstr ""
+"Seleziona questa casella per raggruppare le registrazioni contabili per "
+"categoria."
 
 #. module: account_asset
 #: model:ir.model.fields,help:account_asset.field_account_asset_asset__method
@@ -348,6 +355,9 @@ msgid ""
 "  * Number of Entries: Fix the number of entries and the time between 2 depreciations.\n"
 "  * Ending Date: Choose the time between 2 depreciations and the date the depreciations won't go beyond."
 msgstr ""
+"Selezionare il metodo da usare per calcolare le date e il numero di ammortamenti.\n"
+"  *Numero di ammortamenti: definire il numero di ammortamenti e il periodo tra 2 ammortamenti.\n"
+"  *Data di fine: Selezionare il periodo tra 2 ammortamenti e la data di fine degli ammortamenti. "
 
 #. module: account_asset
 #: model:ir.model.fields,help:account_asset.field_asset_depreciation_confirmation_wizard__date
@@ -513,7 +523,7 @@ msgstr "Piano d'Ammortamento"
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_asset_asset_report__depreciation_nbr
 msgid "Depreciation Count"
-msgstr ""
+msgstr "Numero di ammortamenti"
 
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_depreciation_line__depreciation_date
@@ -525,7 +535,7 @@ msgstr "Data Ammortamento"
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_asset__date_first_depreciation
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_category__date_first_depreciation
 msgid "Depreciation Dates"
-msgstr ""
+msgstr "Date di ammortamento"
 
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_category__account_depreciation_id
@@ -635,7 +645,7 @@ msgstr "Filtri estesi..."
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_asset__first_depreciation_manual_date
 msgid "First Depreciation Date"
-msgstr ""
+msgstr "Prima data di ammortamento"
 
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_asset__message_follower_ids
@@ -701,7 +711,7 @@ msgstr "Raggruppa per..."
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_category__group_entries
 msgid "Group Journal Entries"
-msgstr ""
+msgstr "Raggruppare le registrazioni contabili"
 
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_asset__id
@@ -735,6 +745,9 @@ msgid ""
 "from the asset date (purchase date) instead of the first January / Start "
 "date of fiscal year"
 msgstr ""
+"Indica che il primo ammortamento di questa immobilizzazione deve essere "
+"calcolato dalla data di acquisto e non dal primo gennaio/dalla data di "
+"inizio dell'anno fiscale."
 
 #. module: account_asset
 #: model:ir.model.fields,help:account_asset.field_account_asset_category__prorata
@@ -884,7 +897,7 @@ msgstr "Prossimo Periodo di Ammortamento"
 #. module: account_asset
 #: model_terms:ir.actions.act_window,help:account_asset.action_asset_asset_report
 msgid "No content"
-msgstr ""
+msgstr "Nessun contenuto"
 
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_asset__note
@@ -898,6 +911,9 @@ msgid ""
 "entry in case of prorata temporis assets. It simply changes its accounting "
 "date"
 msgstr ""
+"Questa data non modifica il calcolo della prima registrazione contabile in "
+"caso di immobilizzazione prorata temporis; cambia semplicemente la data di "
+"contabilità."
 
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_asset__message_needaction_counter
@@ -946,7 +962,7 @@ msgstr "Numero di messaggi non letti"
 #. module: account_asset
 #: model_terms:ir.ui.view,arch_db:account_asset.view_account_asset_category_form
 msgid "One Entry Every"
-msgstr ""
+msgstr "Una registrazione ogni"
 
 #. module: account_asset
 #: code:addons/account_asset/models/account_asset.py:641
@@ -1010,6 +1026,8 @@ msgid ""
 "Prorata temporis can be applied only for the \"number of depreciations\" "
 "time method."
 msgstr ""
+"Prorata temporis può essere applicato solo per il metodo temporale \"numero "
+"di ammortamenti\"."
 
 #. module: account_asset
 #: model_terms:ir.ui.view,arch_db:account_asset.view_account_asset_category_search
@@ -1132,6 +1150,8 @@ msgid ""
 "The number of depreciations or the period length of your asset category "
 "cannot be 0."
 msgstr ""
+"Il numero di ammortamenti o la durata del periodo della categoria di "
+"immobilizzazione non può essere pari a 0."
 
 #. module: account_asset
 #: model:ir.model.fields,help:account_asset.field_account_asset_category__date_first_depreciation
@@ -1140,6 +1160,9 @@ msgid ""
 "  * Based on last day of purchase period: The depreciation dates will be based on the last day of the purchase month or the purchase year (depending on the periodicity of the depreciations).\n"
 "  * Based on purchase date: The depreciation dates will be based on the purchase date."
 msgstr ""
+"Metodo di calcolo della data del primo ammortamento.\n"
+"  * In base all'ultimo giorno del periodo di acquisto: le date di ammortamento saranno definite sulla base dell'ultimo giorno del mese o dell'anno di acquisto (a seconda della periodicità degli ammortamenti).\n"
+"  * In base alla data di acquisto: le date di ammortamento saranno definite sulla base della data di acquisto."
 
 #. module: account_asset
 #: model:ir.model.fields,help:account_asset.field_account_asset_asset__date_first_depreciation
@@ -1148,6 +1171,9 @@ msgid ""
 "  * Based on last day of purchase period: The depreciation dates will be based on the last day of the purchase month or the purchase year (depending on the periodicity of the depreciations).\n"
 "  * Based on purchase date: The depreciation dates will be based on the purchase date.\n"
 msgstr ""
+"Metodo di calcolo della data del primo ammortamento.\n"
+"  * In base all'ultimo giorno del periodo di acquisto: le date di ammortamento saranno definite sulla base dell'ultimo giorno del mese o dell'anno di acquisto (a seconda della periodicità degli ammortamenti).\n"
+"  * In base alla data di acquisto: le date di ammortamento saranno definite sulla base della data di acquisto.\n"
 
 #. module: account_asset
 #: code:addons/account_asset/models/account_asset.py:506
@@ -1251,7 +1277,7 @@ msgstr ""
 #: code:addons/account_asset/models/account_asset.py:133
 #, python-format
 msgid "You cannot delete a document that is in %s state."
-msgstr ""
+msgstr "Impossibile eliminare un documento in stato %s."
 
 #. module: account_asset
 #: code:addons/account_asset/models/account_asset.py:650

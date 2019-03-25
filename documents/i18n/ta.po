@@ -5,6 +5,7 @@
 # Translators:
 # Abul Hassan M I <miabulhassan@gmail.com>, 2019
 # Bagavathikumar Ramakrishnan <bagavathikumar@gmail.com>, 2019
+# Alagappan Karthikeyan <me@karthik.sg>, 2019
 # 
 msgid ""
 msgstr ""
@@ -12,7 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-15 15:18+0000\n"
 "PO-Revision-Date: 2018-08-24 11:37+0000\n"
-"Last-Translator: Bagavathikumar Ramakrishnan <bagavathikumar@gmail.com>, 2019\n"
+"Last-Translator: Alagappan Karthikeyan <me@karthik.sg>, 2019\n"
 "Language-Team: Tamil (https://www.transifex.com/odoo/teams/41243/ta/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -120,7 +121,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:documents.share_view_form_popup
 msgid ""
 "<i class=\"fa fa-fw o_button_icon fa-arrow-right\"/> Configure Email Servers"
-msgstr ""
+msgstr "மின்னஞ்சல் சேவையகங்களை கட்டமைக்கவும்"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.share_single
@@ -175,12 +176,12 @@ msgstr ""
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_action__action
 msgid "Action"
-msgstr ""
+msgstr "அதிரடி"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__message_needaction
 msgid "Action Needed"
-msgstr ""
+msgstr "செயல் தேவை"
 
 #. module: documents
 #. openerp-web
@@ -196,7 +197,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:documents.share_view_form_popup
 #: model_terms:ir.ui.view,arch_db:documents.workflow_rule_form_view
 msgid "Activity"
-msgstr ""
+msgstr "நடவடிக்கை"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_rule__activity_note
@@ -236,7 +237,7 @@ msgstr ""
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__alias_id
 msgid "Alias"
-msgstr ""
+msgstr "அலைஸ்"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__alias_contact
@@ -251,7 +252,7 @@ msgstr ""
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__alias_domain
 msgid "Alias domain"
-msgstr ""
+msgstr "அலிஸ் டொமைன்"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__alias_model_id
@@ -283,7 +284,7 @@ msgstr ""
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.documents_view_search_inherit
 msgid "Archived"
-msgstr ""
+msgstr "காப்பகப்படுத்தியவை"
 
 #. module: documents
 #. openerp-web
@@ -295,7 +296,7 @@ msgstr ""
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__message_attachment_count
 msgid "Attachment Count"
-msgstr ""
+msgstr "இணைப்பு எண்ணிக்கை"
 
 #. module: documents
 #: model:ir.actions.act_window,name:documents.document_debug_action
@@ -340,7 +341,7 @@ msgstr "ரத்து"
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_action__facet_id
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_tag_criteria__facet_id
 msgid "Category"
-msgstr ""
+msgstr "வகை"
 
 #. module: documents
 #. openerp-web
@@ -451,7 +452,7 @@ msgstr ""
 #: selection:documents.share,activity_date_deadline_range_type:0
 #: selection:documents.workflow.rule,activity_date_deadline_range_type:0
 msgid "Days"
-msgstr ""
+msgstr "நாட்களில்"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.res_config_settings_view_form
@@ -474,7 +475,7 @@ msgstr ""
 #: code:addons/documents/static/src/xml/documents_inspector.xml:161
 #, python-format
 msgid "Delete"
-msgstr ""
+msgstr "அழி"
 
 #. module: documents
 #: model:documents.workflow.rule,name:documents.documents_Internal_deprecate_doc
@@ -513,7 +514,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:documents.documents_view_kanban
 #: model_terms:ir.ui.view,arch_db:documents.documents_view_search_inherit
 msgid "Document"
-msgstr ""
+msgstr "ஆவணம்"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__owner_id
@@ -579,12 +580,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_rule__domain
 #: model_terms:ir.ui.view,arch_db:documents.workflow_rule_form_view
 msgid "Domain"
-msgstr ""
+msgstr "டொமைன்"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.share_view_form_popup
 msgid "Done"
-msgstr ""
+msgstr "முடிந்தது"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.share_page
@@ -597,7 +598,7 @@ msgstr ""
 #: selection:documents.share,action:0
 #, python-format
 msgid "Download"
-msgstr ""
+msgstr "பதிவிறக்க"
 
 #. module: documents
 #: selection:documents.share,action:0
@@ -607,7 +608,7 @@ msgstr ""
 #. module: documents
 #: model:documents.tag,name:documents.documents_internal_status_draft
 msgid "Draft"
-msgstr ""
+msgstr "வரைவு"
 
 #. module: documents
 #. openerp-web
@@ -621,14 +622,14 @@ msgstr ""
 #: model:ir.model.fields,field_description:documents.field_documents_share__activity_date_deadline_range
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_rule__activity_date_deadline_range
 msgid "Due Date In"
-msgstr ""
+msgstr "தேதி தேதி"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_request_wizard__activity_date_deadline_range_type
 #: model:ir.model.fields,field_description:documents.field_documents_share__activity_date_deadline_range_type
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_rule__activity_date_deadline_range_type
 msgid "Due type"
-msgstr ""
+msgstr "காரணமாக வகை"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.folder_view_form
@@ -679,7 +680,7 @@ msgstr ""
 #. module: documents
 #: selection:ir.attachment,type:0
 msgid "File"
-msgstr ""
+msgstr "கோப்பு"
 
 #. module: documents
 #: model:documents.folder,name:documents.documents_finance_folder
@@ -708,22 +709,22 @@ msgstr ""
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__message_follower_ids
 msgid "Followers"
-msgstr ""
+msgstr "பின்பற்றுபவர்கள்"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__message_channel_ids
 msgid "Followers (Channels)"
-msgstr ""
+msgstr "பின்தொடர்பவர்கள் (சேனல்கள்)"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__message_partner_ids
 msgid "Followers (Partners)"
-msgstr ""
+msgstr "பின்பற்றுபவர்கள் (பங்குதாரர்கள்)"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.documents_view_search_inherit
 msgid "Future Activities"
-msgstr ""
+msgstr "எதிர்கால செயல்பாடுகள்"
 
 #. module: documents
 #. openerp-web
@@ -747,7 +748,7 @@ msgstr ""
 #. module: documents
 #: model:ir.model,name:documents.model_ir_http
 msgid "HTTP Routing"
-msgstr ""
+msgstr "HTTP ரவுட்டிங்"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_rule__has_business_option
@@ -776,17 +777,17 @@ msgstr ""
 #. module: documents
 #: model:ir.model.fields,help:documents.field_documents_share__message_unread
 msgid "If checked new messages require your attention."
-msgstr ""
+msgstr "சோதனை செய்தால் புதிய செய்திகளுக்கு உங்கள் கவனம் தேவை."
 
 #. module: documents
 #: model:ir.model.fields,help:documents.field_documents_share__message_needaction
 msgid "If checked, new messages require your attention."
-msgstr ""
+msgstr "சரிபார்க்கப்பட்டால், புதிய செய்திகளுக்கு உங்கள் கவனம் தேவை."
 
 #. module: documents
 #: model:ir.model.fields,help:documents.field_documents_share__message_has_error
 msgid "If checked, some messages have a delivery error."
-msgstr ""
+msgstr "சரிபார்க்கப்பட்டால், சில செய்திகளுக்கு ஒரு பிழை ஏற்பட்டது."
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.documents_view_search_inherit
@@ -813,7 +814,7 @@ msgstr ""
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__message_is_follower
 msgid "Is Follower"
-msgstr ""
+msgstr "பின்பற்றுபவர்"
 
 #. module: documents
 #. openerp-web
@@ -861,7 +862,7 @@ msgstr "கடைசியாக புதுப்பிக்கப்பட�
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.documents_view_search_inherit
 msgid "Late Activities"
-msgstr ""
+msgstr "தாமதமான செயல்பாடுகள்"
 
 #. module: documents
 #: model:documents.tag,name:documents.documents_finance_documents_legal
@@ -922,7 +923,7 @@ msgstr ""
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__message_main_attachment_id
 msgid "Main Attachment"
-msgstr ""
+msgstr "முக்கிய இணைப்பு"
 
 #. module: documents
 #: model:ir.actions.act_window,name:documents.tag_action
@@ -948,29 +949,29 @@ msgstr ""
 #. module: documents
 #: model:documents.folder,name:documents.documents_marketing_folder
 msgid "Marketing"
-msgstr ""
+msgstr "சந்தைப்படுத்தல்"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__message_has_error
 msgid "Message Delivery error"
-msgstr ""
+msgstr "செய்தி வழங்கல் பிழை"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__message_ids
 msgid "Messages"
-msgstr ""
+msgstr "செய்திகள்"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.documents_view_search_inherit
 msgid "Model"
-msgstr ""
+msgstr "மாதிரி"
 
 #. module: documents
 #: selection:documents.request_wizard,activity_date_deadline_range_type:0
 #: selection:documents.share,activity_date_deadline_range_type:0
 #: selection:documents.workflow.rule,activity_date_deadline_range_type:0
 msgid "Months"
-msgstr ""
+msgstr "மாதங்கள்"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_rule__folder_id
@@ -987,7 +988,7 @@ msgstr ""
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.documents_view_search_inherit
 msgid "My Activities"
-msgstr ""
+msgstr "எனது செயல்பாடுகள்"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.documents_view_search_inherit
@@ -1030,32 +1031,32 @@ msgstr ""
 #: model:ir.model.fields,field_description:documents.field_documents_request_wizard__activity_note
 #: model:ir.model.fields,field_description:documents.field_documents_share__activity_note
 msgid "Note"
-msgstr ""
+msgstr "குறிப்பு"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__message_needaction_counter
 msgid "Number of Actions"
-msgstr ""
+msgstr "செயல்கள் எண்ணிக்கை"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__message_has_error_counter
 msgid "Number of error"
-msgstr ""
+msgstr "பிழை எண்ணிக்கை"
 
 #. module: documents
 #: model:ir.model.fields,help:documents.field_documents_share__message_needaction_counter
 msgid "Number of messages which requires an action"
-msgstr ""
+msgstr "நடவடிக்கை தேவைப்படும் செய்திகளின் எண்ணிக்கை"
 
 #. module: documents
 #: model:ir.model.fields,help:documents.field_documents_share__message_has_error_counter
 msgid "Number of messages with delivery error"
-msgstr ""
+msgstr "விநியோக பிழை கொண்ட செய்திகளின் எண்ணிக்கை"
 
 #. module: documents
 #: model:ir.model.fields,help:documents.field_documents_share__message_unread_counter
 msgid "Number of unread messages"
-msgstr ""
+msgstr "படிக்காத செய்திகளின் எண்ணிக்கை"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.public_page_layout
@@ -1083,7 +1084,7 @@ msgstr ""
 #. module: documents
 #: model:documents.tag,name:documents.documents_internal_knowledge_other
 msgid "Other"
-msgstr ""
+msgstr "மற்ற"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_request_wizard__owner_id
@@ -1091,7 +1092,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_rule__criteria_owner_id
 #: model:ir.model.fields,field_description:documents.field_ir_attachment__owner_id
 msgid "Owner"
-msgstr ""
+msgstr "உரிமையாளர்"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.share_page
@@ -1210,20 +1211,20 @@ msgstr ""
 #. module: documents
 #: model:documents.workflow.rule,name:documents.documents_Internal_to_draft
 msgid "Reset to Draft"
-msgstr ""
+msgstr "வரைவை மீட்டமை"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__activity_user_id
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_rule__activity_user_id
 msgid "Responsible"
-msgstr ""
+msgstr "பொறுப்பான"
 
 #. module: documents
 #. openerp-web
 #: code:addons/documents/static/src/xml/documents_inspector.xml:162
 #, python-format
 msgid "Restore"
-msgstr ""
+msgstr "மீட்டமை"
 
 #. module: documents
 #: model:documents.workflow.rule,name:documents.documents_Finance_validate_tr
@@ -1239,7 +1240,7 @@ msgstr ""
 #. module: documents
 #: model:documents.tag,name:documents.documents_internal_knowledge_Sales
 msgid "Sales"
-msgstr ""
+msgstr "விற்பனை"
 
 #. module: documents
 #: model:ir.model.fields,help:documents.field_documents_folder__facet_ids
@@ -1273,7 +1274,7 @@ msgstr ""
 #: model:ir.actions.act_window,name:documents.documents_settings_action
 #: model:ir.ui.menu,name:documents.Settings_menu
 msgid "Settings"
-msgstr ""
+msgstr "அமைப்புகள்"
 
 #. module: documents
 #. openerp-web
@@ -1318,6 +1319,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:documents.documents_view_search_inherit
 msgid "Show all records which has next action date is before today"
 msgstr ""
+"அடுத்த நடவடிக்கை தேதி இன்றைய தினம் கொண்டிருக்கும் எல்லா பதிவுகளையும் காட்டுக"
 
 #. module: documents
 #: model:documents.tag,name:documents.documents_internal_template_sign
@@ -1339,7 +1341,7 @@ msgstr ""
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__state
 msgid "Status"
-msgstr ""
+msgstr "நிலைமை"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_folder__children_folder_ids
@@ -1350,7 +1352,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:documents.field_documents_share__activity_summary
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_rule__activity_summary
 msgid "Summary"
-msgstr ""
+msgstr "சுருக்கம்"
 
 #. module: documents
 #: model:ir.model,name:documents.model_documents_tag
@@ -1451,7 +1453,7 @@ msgstr ""
 #: model:documents.tag,name:documents.documents_hr_status_tc
 #: model:documents.tag,name:documents.documents_internal_status_tc
 msgid "To Review"
-msgstr ""
+msgstr "பரிசீலிக்க"
 
 #. module: documents
 #. openerp-web
@@ -1509,12 +1511,12 @@ msgstr ""
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__message_unread
 msgid "Unread Messages"
-msgstr ""
+msgstr "படிக்காத செய்திகள்"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__message_unread_counter
 msgid "Unread Messages Counter"
-msgstr ""
+msgstr "படிக்காத செய்திகள்"
 
 #. module: documents
 #. openerp-web
@@ -1571,7 +1573,7 @@ msgstr ""
 #: model:documents.tag,name:documents.documents_hr_status_validated
 #: model:documents.tag,name:documents.documents_internal_status_validated
 msgid "Validated"
-msgstr ""
+msgstr "சரிபார்க்கப்பட்டது"
 
 #. module: documents
 #: model:documents.tag,name:documents.documents_finance_documents_vendor_bill
@@ -1603,12 +1605,12 @@ msgstr ""
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__website_message_ids
 msgid "Website Messages"
-msgstr ""
+msgstr "இணைய செய்திகள்"
 
 #. module: documents
 #: model:ir.model.fields,help:documents.field_documents_share__website_message_ids
 msgid "Website communication history"
-msgstr ""
+msgstr "வலைத்தள தகவல்தொடர்பு வரலாறு"
 
 #. module: documents
 #: selection:documents.request_wizard,activity_date_deadline_range_type:0

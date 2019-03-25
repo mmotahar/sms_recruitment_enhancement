@@ -3,16 +3,16 @@
 # * base_automation_hr_contract
 # 
 # Translators:
-# Mustafa Rawi <mustafa@cubexco.com>, 2018
-# Sadig Adam <sadig41@gmail.com>, 2018
 # Abdulmajeed Alomar <majeeed87@gmail.com>, 2018
+# Mustafa Rawi <mustafa@cubexco.com>, 2019
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~11.5+e\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-18 10:05+0000\n"
-"PO-Revision-Date: 2018-09-18 10:05+0000\n"
-"Last-Translator: Abdulmajeed Alomar <majeeed87@gmail.com>, 2018\n"
+"PO-Revision-Date: 2018-08-24 11:37+0000\n"
+"Last-Translator: Mustafa Rawi <mustafa@cubexco.com>, 2019\n"
 "Language-Team: Arabic (https://www.transifex.com/odoo/teams/41243/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,11 +28,15 @@ msgid ""
 "field as True to allow users to run this action. If it is set to False the "
 "action cannot be run through the website."
 msgstr ""
+"يمكن تنفيذ إجراء سيرفر من نوع كود من الموقع، باستخدام متحكم مخصص لهذا. "
+"العنوان هو <base>/website/action/<website_path>. اجعل قيمة هذا الحقل 'صحيح' "
+"للسماح للمستخدمين بتنفيذ هذا الإجراء. إذا كانت قيمته 'خطأ' لا يمكن تنفيذ هذا"
+" الإجراء من خلال الموقع."
 
 #. module: base_automation_hr_contract
 #: model:ir.model,name:base_automation_hr_contract.model_base_automation
 msgid "Automated Action"
-msgstr ""
+msgstr "إجراء آلي"
 
 #. module: base_automation_hr_contract
 #: model:ir.model.fields,field_description:base_automation_hr_contract.field_base_automation__website_published
@@ -42,17 +46,17 @@ msgstr "متوفر في الموقع"
 #. module: base_automation_hr_contract
 #: model:ir.model.fields,help:base_automation_hr_contract.field_base_automation__website_url
 msgid "The full URL to access the server action through the website."
-msgstr ""
+msgstr "الرابط الكامل المستخدم للوصول لإجراءات السيرفر من خلال الموقع."
 
 #. module: base_automation_hr_contract
 #: model:ir.model.fields,field_description:base_automation_hr_contract.field_base_automation__trg_date_resource_field_id
 msgid "Use employee work schedule"
-msgstr "استخدم جدول عمل العامل"
+msgstr "استخدم جدول عمل الموظف"
 
 #. module: base_automation_hr_contract
 #: model:ir.model.fields,help:base_automation_hr_contract.field_base_automation__trg_date_resource_field_id
 msgid "Use the user's working schedule."
-msgstr "استخدم جدول عمل المستخدم"
+msgstr "استخدم جدول عمل المستخدم."
 
 #. module: base_automation_hr_contract
 #: model:ir.model.fields,field_description:base_automation_hr_contract.field_base_automation__website_path

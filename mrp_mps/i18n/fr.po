@@ -5,6 +5,7 @@
 # Translators:
 # Martin Trigaux, 2018
 # Eloïse Stilmant <est@odoo.com>, 2018
+# Léonie Bouchat <lbo@odoo.com>, 2018
 # Thomas Dobbelsteyn <tdo@odoo.com>, 2018
 # Marie Willemyns <mwi@odoo.com>, 2018
 # 
@@ -227,7 +228,7 @@ msgstr "Quantité indirecte"
 #. module: mrp_mps
 #: model:ir.model,name:mrp_mps.model_sale_forecast_indirect
 msgid "Indirect Sales Forecast"
-msgstr "Prévision des Ventes Indirecte"
+msgstr "Prévision des ventes indirectes"
 
 #. module: mrp_mps
 #: model:ir.model.fields,field_description:mrp_mps.field_mrp_mps_report____last_update

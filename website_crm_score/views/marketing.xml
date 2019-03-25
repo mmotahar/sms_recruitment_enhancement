@@ -117,7 +117,7 @@
                                     </div>
                                     <div class="col-4">
                                         <span class="float-right text-right">
-                                            <field name="rule_type" widget="kanban_label_selection" options="{'classes': {'score': 'info', 'active': 'default',
+                                            <field name="rule_type" widget="label_selection" options="{'classes': {'score': 'info', 'active': 'default',
                                             'unlink': 'warning'}}"/>
                                         </span>
                                     </div>

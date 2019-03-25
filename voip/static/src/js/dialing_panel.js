@@ -295,6 +295,12 @@ var DialingPanel = Widget.extend({
             this.do_notify(_t('You are already in a call'));
         }
     },
+    /**
+     * Function called when a phone number is clicked
+     */
+    getPbxConfiguration: function () {
+        return this.userAgent.getPbxConfiguration();
+    },
 
     //--------------------------------------------------------------------------
     // Handlers
@@ -626,9 +632,25 @@ Phone.include({
      */
     _onClick: function (e) {
         if (this.mode === 'readonly') {
-            e.preventDefault();
-            var phoneNumber = this.value;
-            this._call(phoneNumber);
+            var pbxConfiguration;
+            this.trigger_up('get_pbx_configuration', {
+                callback: function (output) {
+                    pbxConfiguration = output.pbxConfiguration;
+                },
+            });
+            if (
+                pbxConfiguration.mode !== "prod" ||
+                (
+                    pbxConfiguration.pbx_ip &&
+                    pbxConfiguration.wsServer &&
+                    pbxConfiguration.login &&
+                    pbxConfiguration.password
+                )
+            ) {
+                e.preventDefault();
+                var phoneNumber = this.value;
+                this._call(phoneNumber);
+            }
         }
     },
 });
@@ -649,6 +671,7 @@ WebClient.include({
             self.dialingPanel.appendTo(self.$el);
             self.on('voip_call', self, self.proxy('_onVoipCall'));
             self.on('voip_activity_call', self, self.proxy('_onVoipActivityCall'));
+            self.on('get_pbx_configuration', self, self.proxy('_onGetPbxConfiguration'));
         });
     },
 
@@ -669,6 +692,13 @@ WebClient.include({
      */
     _onVoipCall: function (event) {
         this.dialingPanel.callFromPhoneWidget(event.data);
+    },
+    /**
+     * @private
+     * @param {OdooEvent} event
+     */
+    _onGetPbxConfiguration: function (event) {
+        event.data.callback({ pbxConfiguration: this.dialingPanel.getPbxConfiguration() });
     },
 });
 

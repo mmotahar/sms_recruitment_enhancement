@@ -3,21 +3,21 @@
 # * account_sepa
 # 
 # Translators:
-# Mustafa Rawi <mustafa@cubexco.com>, 2018
 # Mustafa J. Kadhem <safi2266@gmail.com>, 2018
 # Martin Trigaux, 2018
 # Osoul <baruni@osoul.ly>, 2018
-# morheb bek <morhebbek@gmail.com>, 2018
 # Shaima Safar <shaima.safar@open-inside.com>, 2018
 # Islam Eldeeb <islameldeb@gmail.com>, 2018
 # Ali Alrehawi <alrehawi@hotmail.com>, 2018
+# Mustafa Rawi <mustafa@cubexco.com>, 2019
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~11.5+e\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-21 14:06+0000\n"
-"PO-Revision-Date: 2018-09-21 14:06+0000\n"
-"Last-Translator: Ali Alrehawi <alrehawi@hotmail.com>, 2018\n"
+"PO-Revision-Date: 2018-08-24 11:36+0000\n"
+"Last-Translator: Mustafa Rawi <mustafa@cubexco.com>, 2019\n"
 "Language-Team: Arabic (https://www.transifex.com/odoo/teams/41243/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,7 +28,7 @@ msgstr ""
 #. module: account_sepa
 #: model:ir.model,name:account_sepa.model_account_batch_payment
 msgid "Batch Payment"
-msgstr ""
+msgstr "دفعة سداد"
 
 #. module: account_sepa
 #: model:ir.model,name:account_sepa.model_res_company
@@ -44,7 +44,7 @@ msgstr "ضبط الإعدادات"
 #: model:ir.model,name:account_sepa.model_account_abstract_payment
 msgid ""
 "Contains the logic shared between models which allows to register payments"
-msgstr "يحتوي علي المنطق المشترك بين الموديلات مما يسمح بتسجيل الدفع"
+msgstr "يحتوي علي المنطق المشترك بين النماذج مما يسمح بتسجيل المدفوعات"
 
 #. module: account_sepa
 #: model:ir.model.fields,help:account_sepa.field_res_company__sepa_orgid_issr
@@ -52,6 +52,7 @@ msgid ""
 "Entity that assigns the identification (eg. KBE-BCO or Finanzamt Muenchen "
 "IV)."
 msgstr ""
+"الهيئة المسئولة عن تحديد الهوية (مثلًا: KBE-BCO أو Finanzamt Muenchen IV)."
 
 #. module: account_sepa
 #: selection:res.company,sepa_pain_version:0
@@ -61,7 +62,7 @@ msgstr "عام"
 #. module: account_sepa
 #: selection:res.company,sepa_pain_version:0
 msgid "German Version"
-msgstr "الاصدار اللالمانى"
+msgstr "الإصدار الألماني"
 
 #. module: account_sepa
 #: model:ir.model.fields,field_description:account_sepa.field_res_company__sepa_orgid_id
@@ -73,8 +74,7 @@ msgstr "الهوية"
 #: model:ir.model.fields,help:account_sepa.field_res_company__sepa_orgid_id
 #: model:ir.model.fields,help:account_sepa.field_res_config_settings__sepa_orgid_id
 msgid "Identification assigned by an institution (eg. VAT number)."
-msgstr ""
-"تحديد الهوية من قبل مؤسسة (على سبيل المثال، رقم ضريبة القيمة المضافة)."
+msgstr "الهوية المحددة من قبل مؤسسة (مثلًا: رقم ضريبة القيمة المضافة)."
 
 #. module: account_sepa
 #: code:addons/account_sepa/models/account_batch_payment.py:44
@@ -83,7 +83,7 @@ msgstr ""
 msgid ""
 "In result, the file might not be accepted by all bank as a valid SEPA Credit"
 " Transfer file"
-msgstr ""
+msgstr "كنتيجة، قد لا تقبل كل البنوك الملف كملف نقل خصم مباشر بـSEPA"
 
 #. module: account_sepa
 #: model:ir.model.fields,field_description:account_sepa.field_res_company__sepa_orgid_issr
@@ -101,12 +101,12 @@ msgstr "دفتر اليومية"
 msgid ""
 "Name of the Creditor Reference Party. Usage Rule: Limited to 70 characters "
 "in length."
-msgstr "اسم الطرف المرجعي الدائن. قاعدة الاستخدام: تقتصر على 70 حرفا."
+msgstr "اسم الطرف المرجعي الدائن. قاعدة الاستخدام: تقتصر على 70 حرفًا."
 
 #. module: account_sepa
 #: model_terms:ir.ui.view,arch_db:account_sepa.account_journal_dashboard_kanban_view_inherited
 msgid "Payment to send via SEPA"
-msgstr "الدفع لإرسال عبر سيبا"
+msgstr "إرسال المدفوعات من خلال SEPA"
 
 #. module: account_sepa
 #: model:ir.model,name:account_sepa.model_account_payment
@@ -116,25 +116,25 @@ msgstr "المدفوعات"
 #. module: account_sepa
 #: model_terms:ir.ui.view,arch_db:account_sepa.account_journal_dashboard_kanban_view_inherited
 msgid "Payments to send via SEPA"
-msgstr "دفعات لإرسال عبر سيبا"
+msgstr "إرسال المدفوعات من خلال SEPA"
 
 #. module: account_sepa
 #: code:addons/account_sepa/models/account_batch_payment.py:42
 #, python-format
 msgid "Please note that the following warning has been raised:"
-msgstr ""
+msgstr "يرجى ملاحظة الخطأ التالي:"
 
 #. module: account_sepa
 #: code:addons/account_sepa/models/account_batch_payment.py:46
 #, python-format
 msgid "Please note that the following warnings have been raised:"
-msgstr ""
+msgstr "يرجى ملاحظة الأخطاء التالية:"
 
 #. module: account_sepa
 #: model:ir.model.fields,field_description:account_sepa.field_account_payment__partner_bank_account_id
 #: model:ir.model.fields,field_description:account_sepa.field_account_register_payments__partner_bank_account_id
 msgid "Recipient Bank Account"
-msgstr "حساب مصرفي مستلم"
+msgstr "حساب بنكي مستلم"
 
 #. module: account_sepa
 #: model:ir.model,name:account_sepa.model_account_register_payments
@@ -144,12 +144,12 @@ msgstr "تسجيل المدفوعات"
 #. module: account_sepa
 #: model:account.payment.method,name:account_sepa.account_payment_method_sepa_ct
 msgid "SEPA Credit Transfer"
-msgstr ""
+msgstr "تحويل رصيد بـSEPA"
 
 #. module: account_sepa
 #: model_terms:ir.ui.view,arch_db:account_sepa.view_sepa_credit_transfer_search
 msgid "SEPA Credit Transfer Payments To Send"
-msgstr ""
+msgstr "مدفوعات الخصم المباشر بـSEPA المُراد إرسالها"
 
 #. module: account_sepa
 #: code:addons/account_sepa/models/account_journal_dashboard.py:23
@@ -161,7 +161,7 @@ msgstr "سيبا التحويلات الائتمانية إلى إرسال"
 #: model:ir.model.fields,field_description:account_sepa.field_res_company__sepa_pain_version
 #: model:ir.model.fields,field_description:account_sepa.field_res_config_settings__sepa_pain_version
 msgid "SEPA Pain Version"
-msgstr ""
+msgstr "نسخة Pain من SEPA"
 
 #. module: account_sepa
 #: model:ir.model.fields,help:account_sepa.field_res_company__sepa_pain_version
@@ -171,6 +171,8 @@ msgid ""
 "recommandations made by the EPC (European Payment Councile) and thus the XML"
 " created need some tweakenings."
 msgstr ""
+"قد تكون SEPA صيغة عامة، قد تختلف بعض الدول عن توصيات SEPA التي وضعها مجلس "
+"المدفوعات الأوروبية EPC ولهذا يحتاج ملف XML الناتج لبعض التعديلات."
 
 #. module: account_sepa
 #: model:ir.model.fields,field_description:account_sepa.field_account_batch_payment__sct_generic
@@ -185,7 +187,7 @@ msgstr ""
 #. module: account_sepa
 #: selection:res.company,sepa_pain_version:0
 msgid "Swiss Version"
-msgstr ""
+msgstr "الإصدار السويسري"
 
 #. module: account_sepa
 #: model:ir.model.fields,help:account_sepa.field_account_batch_payment__sct_generic
@@ -195,6 +197,10 @@ msgid ""
 "transfer. That is if the bank journal is not in €, a transaction is not in €"
 " or a payee is not identified by an IBAN account number and a bank BIC."
 msgstr ""
+"خاصية تقنية تُستخدم خلال إنشاء الملف. تُسمى رسالة SEPA رسالة عامة إذا لم يكن"
+" من الممكن اعتبارها عملية نقل رصيد أوروبية اعتيادية. هذا إن لم يكن اليورو هو"
+" عملة دفتر يومية البنك، أو لم تكن المعاملة باليورو، أو لم يكن المستفيد "
+"معرفًا برقم IBAN بنكي ورقم BIC بنكي."
 
 #. module: account_sepa
 #: code:addons/account_sepa/models/account_batch_payment.py:353
@@ -203,6 +209,8 @@ msgid ""
 "The account %s, linked to partner '%s', is not of type IBAN.\n"
 "A valid IBAN account is required to use SEPA features."
 msgstr ""
+"الحساب %s,المرتبط بالشريك %s، لا يملك كود IBAN.\n"
+"لاستعمال خصائص SEPA، تحتاج لحساب يملك كود IBAN صحيح."
 
 #. module: account_sepa
 #: code:addons/account_sepa/models/account_batch_payment.py:103
@@ -211,6 +219,8 @@ msgid ""
 "The account %s, of journal '%s', is not of type IBAN.\n"
 "A valid IBAN account is required to use SEPA features."
 msgstr ""
+"الحساب %s,بدفتر اليومية %s، لا يملك كود IBAN.\n"
+"لاستعمال خصائص SEPA، تحتاج لحساب يملك كود IBAN صحيح."
 
 #. module: account_sepa
 #: code:addons/account_sepa/models/account_payment.py:47
@@ -219,6 +229,8 @@ msgid ""
 "The account '%s' (journal %s) requires a Bank Identification Code (BIC) to "
 "pay via SEPA. Please configure it first."
 msgstr ""
+"الحساب '%s' (مالك دفتر اليومية %s) يحتاج لكود تعريف بنكي BIC ليتمكن من الدفع"
+" من خلال SEPA. برجاء ضبطه أولًا."
 
 #. module: account_sepa
 #: code:addons/account_sepa/models/account_batch_payment.py:317
@@ -232,14 +244,14 @@ msgstr "مبلغ الدفعة '%s'مرتفع جدا. الحد الأقصى ال�
 #, python-format
 msgid ""
 "The creditor bank account %s used in payment %s is not identified by a BIC"
-msgstr ""
+msgstr "حساب المدين %s المستخدم في عملية السداد %s غير مُعرف برقم BIC"
 
 #. module: account_sepa
 #: code:addons/account_sepa/models/account_batch_payment.py:92
 #, python-format
 msgid ""
 "The creditor bank account %s used in payment %s is not identified by an IBAN"
-msgstr ""
+msgstr "حساب المدين %s المستخدم في عملية السداد %s غير مُعرف برقم IBAN"
 
 #. module: account_sepa
 #: code:addons/account_sepa/models/account_batch_payment.py:111
@@ -248,6 +260,8 @@ msgid ""
 "The following payments have no recipient bank account set: %s. \n"
 "\n"
 msgstr ""
+"لم يتم تحديد حساب بنكي مستلم لعمليات السداد التالية: %s. \n"
+"\n"
 
 #. module: account_sepa
 #: code:addons/account_sepa/models/account_payment.py:45
@@ -256,6 +270,8 @@ msgid ""
 "The journal '%s' requires a proper IBAN account to pay via SEPA. Please "
 "configure it first."
 msgstr ""
+"دفتر اليومية '%s' يحتاج لحساب يمتلك رقم IBAN مناسب ليستطيع السداد من خلال "
+"SEPA. برجاء ضبطه أولًا."
 
 #. module: account_sepa
 #: code:addons/account_sepa/models/account_payment.py:56
@@ -264,6 +280,8 @@ msgid ""
 "The partner account '%s' requires a Bank Identification Code (BIC) to pay "
 "via SEPA. Please configure it first."
 msgstr ""
+"حساب الشريك '%s' يحتاج لكود تعريف بنكي BIC ليتمكن من الدفع من خلال SEPA. "
+"برجاء ضبطه أولًا."
 
 #. module: account_sepa
 #: code:addons/account_sepa/models/account_batch_payment.py:18
@@ -276,12 +294,18 @@ msgid ""
 "0 1 2 3 4 5 6 7 8 9\n"
 "/ - ? : ( ) . , ' + (space)"
 msgstr ""
+"يمكن أن يحتوي النص المستخدم في ملفات SEPA الأحرف التالية فقط:\n"
+"\n"
+"a b c d e f g h i j k l m n o p q r s t u v w x y z\n"
+"A B C D E F G H I J K L M N O P Q R S T U V W X Y Z\n"
+"0 1 2 3 4 5 6 7 8 9\n"
+"/ - ? : ( ) . , ' + (space)"
 
 #. module: account_sepa
 #: code:addons/account_sepa/models/account_batch_payment.py:88
 #, python-format
 msgid "The transaction %s is instructed in another currency than EUR"
-msgstr ""
+msgstr "المعاملة %s مسجلة بعملة أخرى غير اليورو"
 
 #. module: account_sepa
 #: code:addons/account_sepa/models/account_batch_payment.py:347
@@ -310,12 +334,13 @@ msgid ""
 "Will appear in SEPA payments as the name of the party initiating the "
 "payment. Limited to 70 characters."
 msgstr ""
+"سيظهر على مدفوعات SEPA كاسم الطرف المبادر بعملية السداد. أقصى حد له 70 حرف."
 
 #. module: account_sepa
 #: model:ir.model.fields,field_description:account_sepa.field_res_company__sepa_initiating_party_name
 #: model:ir.model.fields,field_description:account_sepa.field_res_config_settings__sepa_initiating_party_name
 msgid "Your Company Name"
-msgstr "اسم الشركة الخاصة بك"
+msgstr "اسم مؤسستك"
 
 #. module: account_sepa
 #: code:addons/account_sepa/models/account_batch_payment.py:84

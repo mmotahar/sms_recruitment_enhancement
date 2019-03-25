@@ -96,7 +96,7 @@ msgstr "Aangemaakt op"
 #. module: account_invoice_extract
 #: model:ir.model.fields,field_description:account_invoice_extract.field_account_invoice_extract_words__display_name
 msgid "Display Name"
-msgstr "Weergave naam"
+msgstr "Weergavenaam"
 
 #. module: account_invoice_extract
 #: selection:res.company,extract_show_ocr_option_selection:0
@@ -197,7 +197,7 @@ msgstr "Verstuur opnieuw met OCR"
 #. module: account_invoice_extract
 #: model_terms:ir.ui.view,arch_db:account_invoice_extract.invoice_supplier_form_inherit_ocr
 msgid "Send File through OCR"
-msgstr "Verstuur bestajnd met OCR"
+msgstr "Verstuur bestand met OCR"
 
 #. module: account_invoice_extract
 #: model:ir.model.fields,field_description:account_invoice_extract.field_res_company__extract_show_ocr_option_selection

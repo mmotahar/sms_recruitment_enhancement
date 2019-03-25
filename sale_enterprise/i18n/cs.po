@@ -5,8 +5,8 @@
 # Translators:
 # Michal Veselý <michal@veselyberanek.net>, 2018
 # Martin Trigaux, 2018
-# trendspotter <j.podhorecky@volny.cz>, 2018
 # Jan Horzinka <jan.horzinka@centrum.cz>, 2019
+# trendspotter <j.podhorecky@volny.cz>, 2019
 # 
 msgid ""
 msgstr ""
@@ -14,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-02 10:32+0000\n"
 "PO-Revision-Date: 2018-08-24 11:48+0000\n"
-"Last-Translator: Jan Horzinka <jan.horzinka@centrum.cz>, 2019\n"
+"Last-Translator: trendspotter <j.podhorecky@volny.cz>, 2019\n"
 "Language-Team: Czech (https://www.transifex.com/odoo/teams/41243/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -51,7 +51,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:sale_enterprise.view_order_product_search_inherit
 #: selection:sale.report,invoice_status:0
 msgid "Fully Invoiced"
-msgstr ""
+msgstr "Plně fakturováno"
 
 #. module: sale_enterprise
 #: model:ir.model.fields,field_description:sale_enterprise.field_sale_report__invoice_status
@@ -61,7 +61,7 @@ msgstr "Stav faktury"
 #. module: sale_enterprise
 #: selection:sale.report,invoice_status:0
 msgid "Nothing to Invoice"
-msgstr ""
+msgstr "Nic k fakturaci"
 
 #. module: sale_enterprise
 #: model_terms:ir.ui.view,arch_db:sale_enterprise.sale_report_view_dashboard
@@ -108,9 +108,9 @@ msgstr ""
 #. module: sale_enterprise
 #: selection:sale.report,invoice_status:0
 msgid "Upselling Opportunity"
-msgstr ""
+msgstr "Výhodná příležitost"
 
 #. module: sale_enterprise
 #: model_terms:ir.ui.view,arch_db:sale_enterprise.sale_report_view_dashboard
 msgid "day(s)"
-msgstr ""
+msgstr "den(dní)"

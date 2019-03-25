@@ -39,7 +39,7 @@ msgstr "&amp;nbsp;"
 #: code:addons/account_reports/static/src/xml/account_report_template.xml:30
 #, python-format
 msgid "&times;"
-msgstr "&keer;"
+msgstr "&times;"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_report.py:582
@@ -100,7 +100,7 @@ msgid ""
 "                <span>You can visualize their impact by activating the option to view unposted entries, or post them to remove this warning.</span>"
 msgstr ""
 "<br/>\n"
-"                <span>U kunt hun impact visualiseren door de optie om niet-geposte vermeldingen te bekijken, te activeren of door ze te plaatsen om deze waarschuwing te verwijderen.</span>"
+"                <span>U kunt hun impact visualiseren door de optie om niet-geboekte boekingen te bekijken te activeren of door de niet-geboekte boekingen door te boeken om deze waarschuwing te verwijderen.</span>"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.filter_info_template
@@ -278,8 +278,8 @@ msgid ""
 "<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
 "specific.\" groups=\"base.group_multi_company\"/>"
 msgstr ""
-"<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
-"specific.\" groups=\"base.group_multi_company\"/>"
+"<span class=\"fa fa-lg fa-building-o\" title=\"De waarden die hier worden "
+"ingesteld, zijn bedrijfsspecifiek.\" groups=\"base.group_multi_company\"/>"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_account_type
@@ -306,7 +306,7 @@ msgid ""
 "                        <span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-specific.\" role=\"img\" aria-label=\"Values set here are company-specific.\" groups=\"base.group_multi_company\"/>"
 msgstr ""
 "<span class=\"o_form_label\">Betaalherinnering</span>\n"
-"                        <span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-specific.\" role=\"img\" aria-label=\"Values set here are company-specific.\" groups=\"base.group_multi_company\"/>"
+"                        <span class=\"fa fa-lg fa-building-o\" title=\"De waarden die hier worden ingesteld, zijn bedrijfsspecifiek.\" role=\"img\" aria-label=\"De waarden die hier worden ingesteld, zijn bedrijfsspecifiek.\" groups=\"base.group_multi_company\"/>"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.res_partner_view_form
@@ -325,7 +325,7 @@ msgstr ""
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.account_reports_journal_dashboard_kanban_view_account_manager
 msgid "<span title=\"Latest Statement\">Latest Statement</span>"
-msgstr "<span title=\"Latest Statement\">Laatste afschrift</span>"
+msgstr "<span title=\"Laatste afschrift\">Laatste afschrift</span>"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.template_followup_report
@@ -1127,7 +1127,7 @@ msgstr "Einde van de vorige maand"
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_date_filter
 msgid "End of Last Quarter"
-msgstr "Einde van het vorig kwartaal"
+msgstr "Einde van het vorige kwartaal"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_followup_report.py:34
@@ -1425,7 +1425,7 @@ msgstr "Vereist actie"
 #: model_terms:ir.ui.view,arch_db:account_reports.customer_statements_search_view
 #: selection:res.partner,followup_status:0
 msgid "In need of action"
-msgstr "vereist actie"
+msgstr "Vereist actie"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_extra_options
@@ -1528,7 +1528,7 @@ msgstr "PASSIVA + EIGEN VERMOGEN"
 #: code:addons/account_reports/models/account_bank_reconciliation_report.py:188
 #, python-format
 msgid "Last Bank Statement Ending Balance"
-msgstr "Laatste Bankafschrift eindsaldo"
+msgstr "Eindsaldo laatste bankafschrift"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_date_filter
@@ -1563,7 +1563,7 @@ msgstr " Vorige maand"
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_date_filter
 msgid "Last Quarter"
-msgstr "Vorig kwartaal"
+msgstr "Vorige kwartaal"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report__write_uid
@@ -1770,7 +1770,7 @@ msgid ""
 "Odoo will remind you to take care of this follow-up on the next reminder "
 "date."
 msgstr ""
-"Odoo helpt u eraan herinneren om de volgende opvolging te doen om de "
+"Odoo helpt u eraan herinneren om de volgende opvolging te doen op de "
 "volgende herinneringsdatum."
 
 #. module: account_reports
@@ -2223,8 +2223,8 @@ msgid ""
 "The next reminder date is computed based on what you have defined in the "
 "accounting settings."
 msgstr ""
-"De volgende reminder datum is berekend, gebaseerd op wat u heeft "
-"gedefinieerd in de boekhoud instellingen."
+"De volgende herinneringsdatum is berekend, gebaseerd op wat u heeft "
+"gedefinieerd in de boekhoudinstellingen."
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.main_template
@@ -2388,7 +2388,7 @@ msgstr "Bankafschrift bekijken"
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.line_caret_options
 msgid "View Bill"
-msgstr "Rekening bekijken"
+msgstr "Factuur bekijken"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.line_caret_options

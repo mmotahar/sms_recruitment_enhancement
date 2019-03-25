@@ -16,7 +16,7 @@ class AccountFollowupReport(models.AbstractModel):
         if partner.followup_status == 'in_need_of_action':
             level = partner.get_followup_level()
             followup_line = self.env['account_followup.followup.line'].browse(level[0])
-            if followup_line.send_email:
+            if followup_line.send_letter:
                 letter = self.env['snailmail.letter'].create({
                     'state': 'pending',
                     'partner_id': partner.id,

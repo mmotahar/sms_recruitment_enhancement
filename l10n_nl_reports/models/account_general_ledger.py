@@ -129,7 +129,7 @@ class ReportAccountGeneralLedger(models.AbstractModel):
             'fiscal_year': date_from[0:4],
             'date_from': date_from,
             'date_to': date_to,
-            'date_created': fields.Date.context_today(),
+            'date_created': fields.Date.context_today(self),
             'software_version': release.version,
             'moves_count': moves_count,
             'moves_debit': moves_debit,

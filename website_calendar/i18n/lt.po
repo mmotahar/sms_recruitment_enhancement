@@ -176,7 +176,7 @@ msgstr "Reikia atlikti veiksmą"
 #: model:ir.actions.act_window,name:website_calendar.website_calendar_report
 #: model:ir.ui.menu,name:website_calendar.menu_schedule_report_online
 msgid "All Appointments"
-msgstr ""
+msgstr "Visi susitikimai"
 
 #. module: website_calendar
 #: model_terms:ir.ui.view,arch_db:website_calendar.calendar_appointment_type_view_form
@@ -249,7 +249,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:website_calendar.calendar_event_view_graph
 #: model_terms:ir.ui.view,arch_db:website_calendar.calendar_event_view_pivot
 msgid "Appointments"
-msgstr ""
+msgstr "Susitikimai"
 
 #. module: website_calendar
 #: model:ir.model.fields,field_description:website_calendar.field_calendar_appointment_type__assignation_method
@@ -528,7 +528,7 @@ msgstr "Vieta"
 #. module: website_calendar
 #: model:ir.model.fields,help:website_calendar.field_calendar_appointment_type__location
 msgid "Location of the appointments"
-msgstr ""
+msgstr "Susitikimų vieta"
 
 #. module: website_calendar
 #: model_terms:ir.ui.view,arch_db:website_calendar.appointment_validated
@@ -588,7 +588,7 @@ msgstr ""
 #. module: website_calendar
 #: model_terms:ir.ui.view,arch_db:website_calendar.setup
 msgid "No appointments available!"
-msgstr ""
+msgstr "Nėra galimų susitikimų!"
 
 #. module: website_calendar
 #: model_terms:ir.actions.act_window,help:website_calendar.calendar_event_action_reporting
@@ -654,7 +654,7 @@ msgstr ""
 #: model:ir.ui.menu,name:website_calendar.website_appointment_type_menu
 #: model_terms:ir.ui.view,arch_db:website_calendar.calendar_event_view_search_inherit_website_calendar
 msgid "Online Appointments"
-msgstr ""
+msgstr "Internetiniai susitikimai"
 
 #. module: website_calendar
 #: model:ir.model.fields,field_description:website_calendar.field_calendar_appointment_question__placeholder
@@ -947,7 +947,7 @@ msgstr ""
 #: model_terms:ir.actions.act_window,help:website_calendar.calendar_event_action_reporting
 #: model_terms:ir.actions.act_window,help:website_calendar.website_calendar_report
 msgid "You should schedule appointments to get statistics."
-msgstr ""
+msgstr "Norėdami gauti statistiką, turėtumėte suplanuoti susitikimų."
 
 #. module: website_calendar
 #: model_terms:ir.ui.view,arch_db:website_calendar.appointment_form

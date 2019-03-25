@@ -340,6 +340,11 @@ def compute_mrr_growth_values(start_date, end_date, filters):
         'net_new_mrr': net_new_mrr,
     }
 
+# HACK: STAT_TYPES and FORECAST_STAT_TYPES are to be imported in other files.
+# We do want to identify the strings to be translated but we do not want to
+# translate them yet.
+# We then hack the definition of _() so that it does nothing.
+_ = lambda x: x
 
 STAT_TYPES = {
     'mrr': {
@@ -439,3 +444,5 @@ FORECAST_STAT_TYPES = {
         'add_symbol': '',
     },
 }
+
+del _

@@ -50,7 +50,7 @@ msgstr "Attivo"
 #: model:ir.model.fields,help:website_crm_score.field_ir_ui_view__track
 #: model:ir.model.fields,help:website_crm_score.field_website_page__track
 msgid "Allow to specify for one page of the website to be trackable or not"
-msgstr "Consente di specificare se una pagina del sito Web è tracciabile o no"
+msgstr "Consente di specificare se una pagina del sito web è tracciabile o no"
 
 #. module: website_crm_score
 #: selection:website.crm.score,rule_type:0
@@ -65,12 +65,12 @@ msgstr "Assegnamento"
 #. module: website_crm_score
 #: model:ir.model.fields,field_description:website_crm_score.field_team_user__leads_count
 msgid "Assigned Leads"
-msgstr "Lead Assegnati"
+msgstr "Lead assegnati"
 
 #. module: website_crm_score
 #: model:ir.model.fields,field_description:website_crm_score.field_crm_team__assigned_leads_count
 msgid "Assigned Leads Count"
-msgstr "Numero di Lead Assegnati"
+msgstr "Numero di lead assegnati"
 
 #. module: website_crm_score
 #: model:ir.model.fields,help:website_crm_score.field_team_user__leads_count
@@ -153,7 +153,7 @@ msgstr ""
 #. module: website_crm_score
 #: model_terms:ir.actions.act_window,help:website_crm_score.team_action
 msgid "Define a new sales channel"
-msgstr "Definisci un nuovo canale di vendita"
+msgstr "Definire un nuovo canale di vendita"
 
 #. module: website_crm_score
 #: selection:website.crm.score,rule_type:0
@@ -200,7 +200,7 @@ msgstr "Followers (Partner)"
 #. module: website_crm_score
 #: model:ir.model,name:website_crm_score.model_ir_http
 msgid "HTTP Routing"
-msgstr "Routing HTTP"
+msgstr "Instradamento HTTP"
 
 #. module: website_crm_score
 #: model:ir.model.fields,field_description:website_crm_score.field_team_user__id
@@ -241,7 +241,7 @@ msgstr "Lingua"
 #. module: website_crm_score
 #: model:ir.model.fields,help:website_crm_score.field_crm_lead__lang_id
 msgid "Language from the website when lead has been created"
-msgstr "Lingua del sito Web quando il lead è stato creato"
+msgstr "Lingua del sito web quando il lead è stato creato"
 
 #. module: website_crm_score
 #: model:ir.model.fields,field_description:website_crm_score.field_team_user____last_update
@@ -294,18 +294,18 @@ msgstr "Leads"
 #. module: website_crm_score
 #: model:ir.ui.menu,name:website_crm_score.team_user
 msgid "Leads Assignation"
-msgstr "Assegnazione dei Lead"
+msgstr "Assegnazione lead"
 
 #. module: website_crm_score
 #: model:ir.model.fields,field_description:website_crm_score.field_crm_team__leads_count
 #: model:ir.model.fields,field_description:website_crm_score.field_website_crm_score__leads_count
 msgid "Leads Count"
-msgstr "Numero di Lead"
+msgstr "Numero di lead"
 
 #. module: website_crm_score
 #: model:ir.model.fields,field_description:website_crm_score.field_team_user__maximum_user_leads
 msgid "Leads Per Month"
-msgstr "Lead per Mese"
+msgstr "Lead per mese"
 
 #. module: website_crm_score
 #: model_terms:ir.actions.act_window,help:website_crm_score.team_user_action
@@ -338,7 +338,7 @@ msgstr "Allegato principale"
 #. module: website_crm_score
 #: model_terms:ir.ui.view,arch_db:website_crm_score.view_crm_team_user_form
 msgid "Maximum Leads / 30 days"
-msgstr "Numero massimo di Lead / 30 giorni"
+msgstr "Numero massimo di lead / 30 giorni"
 
 #. module: website_crm_score
 #: model:ir.model.fields,field_description:website_crm_score.field_team_user__message_has_error
@@ -437,7 +437,7 @@ msgstr "Rapporto"
 #. module: website_crm_score
 #: model:ir.model.fields,field_description:website_crm_score.field_website_crm_score__rule_type
 msgid "Rule Type"
-msgstr "Tipo di Regola"
+msgstr "Tipo regola"
 
 #. module: website_crm_score
 #: model:ir.model.fields,field_description:website_crm_score.field_team_user__running
@@ -447,7 +447,7 @@ msgstr "In esecuzione"
 #. module: website_crm_score
 #: model:ir.model.fields,field_description:website_crm_score.field_team_user__team_id
 msgid "SaleTeam"
-msgstr "Team di Vendita"
+msgstr "Team di vendita"
 
 #. module: website_crm_score
 #: model:ir.model.fields,field_description:website_crm_score.field_team_user__user_id
@@ -470,7 +470,7 @@ msgstr "Venditori"
 #. module: website_crm_score
 #: model:ir.model.fields,field_description:website_crm_score.field_res_users__team_user_ids
 msgid "Sales Records"
-msgstr "Record delle Vendite"
+msgstr "Record vendite"
 
 #. module: website_crm_score
 #: model:ir.model.fields,help:website_crm_score.field_res_users__sale_team_id
@@ -479,7 +479,7 @@ msgid ""
 "Team through the inverse one2many"
 msgstr ""
 "Team di vendita di cui l'utente è membro. Usato per ottenere l'elenco dei "
-"membri di un team di vendita attraverso il campo one2many inverso"
+"membri di un team di vendita attraverso il campo inverso uno a molti"
 
 #. module: website_crm_score
 #: model:ir.model.fields,field_description:website_crm_score.field_crm_team__team_user_ids
@@ -515,7 +515,7 @@ msgstr "Registrazione dei punteggi"
 #: model:ir.model.fields,field_description:website_crm_score.field_crm_lead__score_ids
 #: model:ir.ui.menu,name:website_crm_score.scores_menu
 msgid "Scoring Rules"
-msgstr "Regole di Registrazione dei Punteggi"
+msgstr "Regole di registrazione dei punteggi"
 
 #. module: website_crm_score
 #: model:ir.model.fields,help:website_crm_score.field_website_crm_score__rule_type
@@ -530,12 +530,12 @@ msgstr ""
 #. module: website_crm_score
 #: model_terms:ir.ui.view,arch_db:website_crm_score.crm_score_pageview_filter
 msgid "Search PageViews"
-msgstr "Cerca il numero di volte che una pagina è stata visualizzata"
+msgstr "Cercare il numero di volte che una pagina è stata visualizzata"
 
 #. module: website_crm_score
 #: model:ir.ui.menu,name:website_crm_score.team
 msgid "Teams Assignation"
-msgstr "Assegnazione di Team"
+msgstr "Assegnazione di team"
 
 #. module: website_crm_score
 #: model:ir.model.fields,field_description:website_crm_score.field_ir_ui_view__track
@@ -602,7 +602,7 @@ msgstr "Vista"
 #. module: website_crm_score
 #: model:ir.model.fields,field_description:website_crm_score.field_website_crm_pageview__view_date
 msgid "Viewing Date"
-msgstr "Data di Visualizzazione"
+msgstr "Data di visualizzazione"
 
 #. module: website_crm_score
 #: model:ir.model,name:website_crm_score.model_website_crm_pageview
@@ -623,7 +623,7 @@ msgstr "Messaggi sito web"
 #. module: website_crm_score
 #: model_terms:ir.ui.view,arch_db:website_crm_score.website_crm_pageview_pivot
 msgid "Website Pages"
-msgstr "Pagine del Sito Web"
+msgstr "Pagine del sito web"
 
 #. module: website_crm_score
 #: model:ir.model.fields,help:website_crm_score.field_team_user__website_message_ids

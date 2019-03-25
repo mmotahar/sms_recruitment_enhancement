@@ -66,4 +66,7 @@ var DataImportStmt = BaseImport.DataImport.extend({
 });
 core.action_registry.add('import_bank_stmt', DataImportStmt);
 
+return {
+    DataImportStmt: DataImportStmt,
+};
 });

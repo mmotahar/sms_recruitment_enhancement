@@ -9,6 +9,7 @@
 # Yihya Hugirat <hugirat@gmail.com>, 2018
 # שהאב חוסיין <shhab89@gmail.com>, 2018
 # hed shefetr <hed@laylinetech.com>, 2019
+# דודי מלכה <Dudimalka6@gmail.com>, 2019
 # 
 msgid ""
 msgstr ""
@@ -16,7 +17,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-02 10:32+0000\n"
 "PO-Revision-Date: 2018-08-24 11:48+0000\n"
-"Last-Translator: hed shefetr <hed@laylinetech.com>, 2019\n"
+"Last-Translator: דודי מלכה <Dudimalka6@gmail.com>, 2019\n"
 "Language-Team: Hebrew (https://www.transifex.com/odoo/teams/41243/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,14 +28,14 @@ msgstr ""
 #. module: stock_barcode
 #: model_terms:ir.ui.view,arch_db:stock_barcode.res_config_settings_view_form
 msgid "<i class=\"fa fa-print\"/> Print barcode commands"
-msgstr ""
+msgstr "<i class=\"fa fa-print\"/> הדפס פקודות ברקוד"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/qweb_templates.xml:44
 #, python-format
 msgid "Add product"
-msgstr ""
+msgstr "הוסף מוצר "
 
 #. module: stock_barcode
 #. openerp-web
@@ -48,12 +49,12 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:stock_barcode.stock_inventory_form_view_inherit
 #, python-format
 msgid "Barcode"
-msgstr "ברקוד"
+msgstr "בר-קוד"
 
 #. module: stock_barcode
 #: model:ir.actions.client,name:stock_barcode.stock_barcode_inventory_client_action
 msgid "Barcode Inventory Adjustment Client Action"
-msgstr ""
+msgstr "מלאי ברקוד התאמת פעולת הלקוח"
 
 #. module: stock_barcode
 #: model:ir.actions.client,name:stock_barcode.stock_barcode_picking_client_action
@@ -70,7 +71,7 @@ msgstr "ברקוד סרוק"
 #: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:9
 #, python-format
 msgid "Barcode Scanning"
-msgstr ""
+msgstr "סריקת ברקוד"
 
 #. module: stock_barcode
 #. openerp-web
@@ -92,7 +93,7 @@ msgstr "סגור"
 #. module: stock_barcode
 #: model_terms:ir.ui.view,arch_db:stock_barcode.res_config_settings_view_form
 msgid "Configure Product Barcodes"
-msgstr ""
+msgstr "הגדר ברקודים של מוצרים"
 
 #. module: stock_barcode
 #. openerp-web
@@ -116,7 +117,7 @@ msgstr "נוצר ב-"
 #. module: stock_barcode
 #: model:ir.model.fields,field_description:stock_barcode.field_stock_barcode_lot__default_move_id
 msgid "Default Move"
-msgstr ""
+msgstr "הזזת ברירת מחדל"
 
 #. module: stock_barcode
 #. openerp-web
@@ -129,7 +130,7 @@ msgstr "בטל"
 #: model:ir.model.fields,field_description:stock_barcode.field_stock_barcode_lot__display_name
 #: model:ir.model.fields,field_description:stock_barcode.field_stock_barcode_lot_line__display_name
 msgid "Display Name"
-msgstr "השם המוצג"
+msgstr "הצג שם"
 
 #. module: stock_barcode
 #. openerp-web
@@ -139,13 +140,15 @@ msgid ""
 "Do you want to permanently remove this message ?\n"
 "                It won't appear anymore, so make sure you don't need the barcodes sheet or you have a copy."
 msgstr ""
+"האם ברצונך להסיר את ההודעה הזו לצמיתות?\n"
+"זה לא יופיע יותר, אז ודא שאתה לא צריך את גיליון ברקודים או שיש לך עותק."
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/js/stock_barcode.js:64
 #, python-format
 msgid "Don't show this message again"
-msgstr ""
+msgstr "אל תציג הודעה זו שוב"
 
 #. module: stock_barcode
 #. openerp-web
@@ -178,13 +181,13 @@ msgstr "מאת"
 #: code:addons/stock_barcode/static/src/xml/qweb_templates.xml:59
 #, python-format
 msgid "From:"
-msgstr ""
+msgstr "מאת:"
 
 #. module: stock_barcode
 #: model:ir.model.fields,field_description:stock_barcode.field_stock_barcode_lot__id
 #: model:ir.model.fields,field_description:stock_barcode.field_stock_barcode_lot_line__id
 msgid "ID"
-msgstr "מזהה"
+msgstr "תעודה מזהה"
 
 #. module: stock_barcode
 #: model_terms:ir.ui.view,arch_db:stock_barcode.stock_picking_type_kanban
@@ -219,7 +222,7 @@ msgstr "פרטי מלאי"
 #. module: stock_barcode
 #: model:ir.model,name:stock_barcode.model_stock_inventory_line
 msgid "Inventory Line"
-msgstr "קוו מלאי"
+msgstr "קוי מלאי"
 
 #. module: stock_barcode
 #: model:ir.model,name:stock_barcode.model_stock_location
@@ -254,12 +257,12 @@ msgstr "תאריך עדכון אחרון"
 #: code:addons/stock_barcode/static/src/js/stock_barcode.js:70
 #, python-format
 msgid "Leave it"
-msgstr ""
+msgstr "עזוב את זה"
 
 #. module: stock_barcode
 #: model:ir.model.fields,field_description:stock_barcode.field_stock_move_line__location_processed
 msgid "Location Processed"
-msgstr ""
+msgstr "מיקום העיבוד"
 
 #. module: stock_barcode
 #: model:ir.model.fields,field_description:stock_barcode.field_stock_barcode_lot_line__lot_name
@@ -275,12 +278,12 @@ msgstr ""
 #. module: stock_barcode
 #: model:ir.model.fields,field_description:stock_barcode.field_stock_barcode_lot_line__move_line_id
 msgid "Move Line"
-msgstr ""
+msgstr "להזיז קו"
 
 #. module: stock_barcode
 #: model:ir.actions.act_window,name:stock_barcode.stock_inventory_action_new_inventory
 msgid "New Inventory"
-msgstr ""
+msgstr "מלאי חדש"
 
 #. module: stock_barcode
 #. openerp-web
@@ -358,21 +361,21 @@ msgstr "סוג בחירה"
 #: code:addons/stock_barcode/static/src/xml/qweb_templates.xml:48
 #, python-format
 msgid "Previous"
-msgstr ""
+msgstr "קודם"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/qweb_templates.xml:21
 #, python-format
 msgid "Print Delivery Slip"
-msgstr ""
+msgstr "הדפיס שובר משלוח"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/qweb_templates.xml:23
 #, python-format
 msgid "Print Inventory"
-msgstr ""
+msgstr "הדפס רשימת מלאי"
 
 #. module: stock_barcode
 #. openerp-web
@@ -385,18 +388,18 @@ msgstr ""
 #: model:ir.model,name:stock_barcode.model_product_product
 #: model:ir.model.fields,field_description:stock_barcode.field_stock_barcode_lot__product_id
 msgid "Product"
-msgstr "פריט"
+msgstr "מוצר "
 
 #. module: stock_barcode
 #: model:ir.actions.act_window,name:stock_barcode.product_action_barcodes
 #: model_terms:ir.ui.view,arch_db:stock_barcode.product_view_list_barcodes
 msgid "Product Barcodes"
-msgstr ""
+msgstr "ברקודי מוצר "
 
 #. module: stock_barcode
 #: model:ir.model,name:stock_barcode.model_stock_move_line
 msgid "Product Moves (Stock Move Line)"
-msgstr ""
+msgstr "תנועות המוצר (תנועת קו האחסון)"
 
 #. module: stock_barcode
 #. openerp-web
@@ -413,7 +416,7 @@ msgstr ""
 #. module: stock_barcode
 #: model:ir.model.fields,field_description:stock_barcode.field_stock_barcode_lot__qty_reserved
 msgid "Qty Reserved"
-msgstr ""
+msgstr "כמות שמורה"
 
 #. module: stock_barcode
 #: model_terms:ir.ui.view,arch_db:stock_barcode.stock_move_line_product_selector
@@ -425,24 +428,24 @@ msgstr "כמות"
 #: model_terms:ir.ui.view,arch_db:stock_barcode.stock_quant_barcode_kanban
 #: model_terms:ir.ui.view,arch_db:stock_barcode.view_barcode_lot_form
 msgid "Quantity Done"
-msgstr ""
+msgstr "כמות גמורה "
 
 #. module: stock_barcode
 #: model:ir.model.fields,field_description:stock_barcode.field_stock_barcode_lot_line__qty_reserved
 msgid "Quantity Reserved"
-msgstr ""
+msgstr "כמות שמורה "
 
 #. module: stock_barcode
 #: model_terms:ir.ui.view,arch_db:stock_barcode.stock_inventory_line_barcode
 msgid "Real Quantity"
-msgstr ""
+msgstr "כמות אמיתית"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/js/stock_barcode.js:67
 #, python-format
 msgid "Remove it"
-msgstr ""
+msgstr "הסר זאת"
 
 #. module: stock_barcode
 #. openerp-web
@@ -450,61 +453,61 @@ msgstr ""
 #: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:27
 #, python-format
 msgid "Scan a"
-msgstr ""
+msgstr "סרוק "
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:25
 #, python-format
 msgid "Scan an"
-msgstr ""
+msgstr "סרוק "
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/qweb_templates.xml:33
 #, python-format
 msgid "Scan more products, or scan a new source location"
-msgstr ""
+msgstr "סרוק מוצרים נוספים או סרוק מיקום מקור חדש"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/qweb_templates.xml:32
 #, python-format
 msgid "Scan more products, or scan the destination location"
-msgstr ""
+msgstr "סרוק מוצרים נוספים או סרוק את מיקום היעד"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/qweb_templates.xml:31
 #, python-format
 msgid "Scan products"
-msgstr ""
+msgstr "סרוק מוצרים"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/qweb_templates.xml:34
 #, python-format
 msgid "Scan the serial or lot number of the product"
-msgstr ""
+msgstr "סרוק את המספר הסידורי או אצווה של המוצר"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/qweb_templates.xml:35
 #, python-format
 msgid "Scan the source location"
-msgstr ""
+msgstr "סרוק את מיקום המקור"
 
 #. module: stock_barcode
 #: model:ir.model.fields,field_description:stock_barcode.field_stock_inventory__scan_location_id
 msgid "Scanned Location"
-msgstr ""
+msgstr "סרוק  מיקום"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/js/client_action/abstract_client_action.js:1327
 #, python-format
 msgid "Scanning is disabled in this state."
-msgstr ""
+msgstr "סריקה אינה זמינה במצב זה"
 
 #. module: stock_barcode
 #. openerp-web
@@ -512,12 +515,12 @@ msgstr ""
 #: model:ir.model,name:stock_barcode.model_stock_scrap
 #, python-format
 msgid "Scrap"
-msgstr ""
+msgstr "בלאי"
 
 #. module: stock_barcode
 #: model_terms:ir.ui.view,arch_db:stock_barcode.stock_move_line_product_selector
 msgid "Select a Product"
-msgstr ""
+msgstr "בחר מוצר "
 
 #. module: stock_barcode
 #: model:ir.model.fields,field_description:stock_barcode.field_stock_barcode_lot_line__stock_barcode_lot_id
@@ -543,21 +546,21 @@ msgstr "הצלחה"
 msgid ""
 "The barcode \"%(barcode)s\" doesn't correspond to a proper product, package "
 "or location."
-msgstr ""
+msgstr "הברקוד \"%(barcode)s\" אינו מתאים למוצר, חבילה או מיקום ."
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/js/client_action/inventory_client_action.js:226
 #, python-format
 msgid "The inventory adjustment has been cancelled"
-msgstr ""
+msgstr "התאמת המלאי בוטלה"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/js/client_action/inventory_client_action.js:205
 #, python-format
 msgid "The inventory adjustment has been validated"
-msgstr ""
+msgstr "התאמת המלאי אומתה"
 
 #. module: stock_barcode
 #. openerp-web
@@ -571,35 +574,35 @@ msgstr ""
 #: code:addons/stock_barcode/static/src/js/client_action/abstract_client_action.js:1113
 #, python-format
 msgid "The scanned lot does not match an existing one."
-msgstr ""
+msgstr "סריקה אינו תואם למיקום קיים."
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/js/client_action/abstract_client_action.js:1160
 #, python-format
 msgid "The scanned serial number is already used."
-msgstr ""
+msgstr "המספר הסידורי הסרוק כבר נמצא בשימוש."
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/js/client_action/picking_client_action.js:202
 #, python-format
 msgid "The transfer has been cancelled"
-msgstr ""
+msgstr "ההעברה בוטלה"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/js/client_action/picking_client_action.js:165
 #, python-format
 msgid "The transfer has been validated"
-msgstr ""
+msgstr "ההעברה אומתה"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/qweb_templates.xml:38
 #, python-format
 msgid "This inventory adjustment is already done"
-msgstr ""
+msgstr "התאמת מלאי זו כבר בוצעה"
 
 #. module: stock_barcode
 #. openerp-web
@@ -607,28 +610,28 @@ msgstr ""
 #: code:addons/stock_barcode/static/src/js/client_action/abstract_client_action.js:1198
 #, python-format
 msgid "This location is not a child of the main location."
-msgstr ""
+msgstr "מיקום זה אינו צאצא של המיקום המרכזי"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/js/client_action/abstract_client_action.js:964
 #, python-format
 msgid "This package is already scanned."
-msgstr ""
+msgstr "חבילה זו כבר סרוקה."
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/qweb_templates.xml:37
 #, python-format
 msgid "This picking is already cancelled"
-msgstr ""
+msgstr "הבחירה הזו כבר בוטלה"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/qweb_templates.xml:36
 #, python-format
 msgid "This picking is already done"
-msgstr ""
+msgstr "הבחירה הזו כבר בוצע"
 
 #. module: stock_barcode
 #: model_terms:ir.ui.view,arch_db:stock_barcode.stock_inventory_barcode2
@@ -638,7 +641,7 @@ msgstr "אל"
 #. module: stock_barcode
 #: model_terms:ir.ui.view,arch_db:stock_barcode.stock_picking_type_kanban
 msgid "To Process"
-msgstr ""
+msgstr "לעבד"
 
 #. module: stock_barcode
 #. openerp-web
@@ -663,7 +666,7 @@ msgstr "יחידת מידה"
 #: code:addons/stock_barcode/static/src/xml/qweb_templates.xml:50
 #, python-format
 msgid "Validate"
-msgstr "אשר"
+msgstr "לאמת"
 
 #. module: stock_barcode
 #: model_terms:ir.ui.view,arch_db:stock_barcode.view_barcode_lot_form
@@ -701,21 +704,21 @@ msgstr ""
 #: code:addons/stock_barcode/models/stock_picking.py:302
 #, python-format
 msgid "Wrong barcode"
-msgstr ""
+msgstr "ברקוד שגוי"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/js/client_action/abstract_client_action.js:819
 #, python-format
 msgid "You are expected to scan a source location."
-msgstr ""
+msgstr "אתה צפוי לסרוק את מיקום המקור."
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/js/client_action/abstract_client_action.js:892
 #, python-format
 msgid "You are expected to scan more products or a destination location."
-msgstr ""
+msgstr "אתה צפוי לסרוק מוצרים נוספים או מיקום יעד."
 
 #. module: stock_barcode
 #. openerp-web
@@ -733,74 +736,74 @@ msgstr ""
 #: code:addons/stock_barcode/static/src/js/client_action/abstract_client_action.js:1205
 #, python-format
 msgid "You are expected to scan one or more products."
-msgstr ""
+msgstr "אתה צפוי לסרוק מוצר אחד או יותר."
 
 #. module: stock_barcode
 #: code:addons/stock_barcode/wizard/stock_barcode_lot.py:58
 #: code:addons/stock_barcode/wizard/stock_barcode_lot.py:133
 #, python-format
 msgid "You cannot scan two times the same serial number"
-msgstr ""
+msgstr "לא ניתן לסרוק פעמיים את אותו מספר סידורי"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:16
 #, python-format
 msgid "commands for Inventory"
-msgstr ""
+msgstr "פקודות מלאי "
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:27
 #, python-format
 msgid "document"
-msgstr ""
+msgstr "מסמך"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:26
 #, python-format
 msgid "location"
-msgstr ""
+msgstr "מיקום"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:25
 #, python-format
 msgid "operation type"
-msgstr ""
+msgstr "סוג פעולה "
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:14
 #, python-format
 msgid "stock barcodes sheet"
-msgstr ""
+msgstr "גיליון ברקודים"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:14
 #, python-format
 msgid "to check out what this module can do! You can also print the barcode"
-msgstr ""
+msgstr "כדי לבדוק מה מודול זה יכול לעשות! ניתן גם להדפיס את הברקוד"
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:26
 #, python-format
 msgid "to create a new transfer from this location."
-msgstr ""
+msgstr "כדי ליצור העברה חדשה ממיקום זה."
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:25
 #, python-format
 msgid "to create a new transfer."
-msgstr ""
+msgstr "ליצור העברה חדשה."
 
 #. module: stock_barcode
 #. openerp-web
 #: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:27
 #, python-format
 msgid "to open it."
-msgstr ""
+msgstr "לפתוח את זה.."

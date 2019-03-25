@@ -22,12 +22,12 @@ msgstr ""
 #. module: account_bank_statement_import_csv
 #: model_terms:ir.ui.view,arch_db:account_bank_statement_import_csv.account_bank_statement_import_csv
 msgid "<i class=\"fa fa-download mr4\"/>Import Sample Template"
-msgstr ""
+msgstr "<i class=\"fa fa-download mr4\"/>Uvoz probnog predloška"
 
 #. module: account_bank_statement_import_csv
 #: model:ir.model,name:account_bank_statement_import_csv.model_base_import_import
 msgid "Base Import"
-msgstr ""
+msgstr "Osnova uvoza"
 
 #. module: account_bank_statement_import_csv
 #: model_terms:ir.ui.view,arch_db:account_bank_statement_import_csv.account_bank_statement_import_csv

@@ -33,7 +33,7 @@ msgstr "IoT Box"
 #. module: pos_restaurant_iot
 #: model:ir.model,name:pos_restaurant_iot.model_restaurant_printer
 msgid "Restaurant Printer"
-msgstr ""
+msgstr "Restorano spausdintuvas"
 
 #. module: pos_restaurant_iot
 #: model:ir.model.fields,help:pos_restaurant_iot.field_restaurant_printer__proxy_ip

@@ -641,7 +641,9 @@ class AccountInvoice(models.Model):
             # To avoid this problem, we read the 'datas' directly on the disk.
             datas = attachment_id._file_read(attachment_id.store_fname)
             inv.l10n_mx_edi_cfdi = datas
-            tree = inv.l10n_mx_edi_get_xml_etree(base64.decodestring(datas))
+            cfdi = base64.decodestring(datas).replace(
+                b'xmlns:schemaLocation', b'xsi:schemaLocation')
+            tree = inv.l10n_mx_edi_get_xml_etree(cfdi)
             # if already signed, extract uuid
             tfd_node = inv.l10n_mx_edi_get_tfd_etree(tree)
             if tfd_node is not None:
@@ -669,15 +671,20 @@ class AccountInvoice(models.Model):
         taxes = {}
         for line in self.invoice_line_ids.filtered('price_subtotal'):
             price = line.price_unit * (1.0 - (line.discount or 0.0) / 100.0)
-            tax_line = {tax['id']: tax for tax in line.invoice_line_tax_ids.compute_all(
+            taxes_line = line.invoice_line_tax_ids
+            taxes_line = taxes_line.filtered(
+                lambda tax: tax.amount_type != 'group') + taxes_line.filtered(
+                    lambda tax: tax.amount_type == 'group').mapped(
+                        'children_tax_ids')
+            tax_line = {tax['id']: tax for tax in taxes_line.compute_all(
                 price, line.currency_id, line.quantity, line.product_id, line.partner_id)['taxes']}
-            for tax in line.invoice_line_tax_ids.filtered(lambda r: r.l10n_mx_cfdi_tax_type != 'Exento'):
+            for tax in taxes_line.filtered(lambda r: r.l10n_mx_cfdi_tax_type != 'Exento'):
                 tax_dict = tax_line.get(tax.id, {})
                 amount = round(abs(tax_dict.get(
                     'amount', tax.amount / 100 * float("%.2f" % line.price_subtotal))), 2)
                 rate = round(abs(tax.amount), 2)
-                if tax.amount not in taxes:
-                    taxes.update({tax.amount: {
+                if tax.id not in taxes:
+                    taxes.update({tax.id: {
                         'name': (tax.tag_ids[0].name
                                  if tax.tag_ids else tax.name).upper(),
                         'amount': amount,
@@ -686,8 +693,8 @@ class AccountInvoice(models.Model):
                         'tax_amount': tax_dict.get('amount', tax.amount),
                     }})
                 else:
-                    taxes[tax.amount].update({
-                        'amount': taxes[tax.amount]['amount'] + amount
+                    taxes[tax.id].update({
+                        'amount': taxes[tax.id]['amount'] + amount
                     })
                 if tax.amount >= 0:
                     values['total_transferred'] += amount
@@ -997,7 +1004,7 @@ class AccountInvoice(models.Model):
             if not record.l10n_mx_edi_time_invoice:
                 record.l10n_mx_edi_time_invoice = date_mx.strftime(
                     DEFAULT_SERVER_TIME_FORMAT)
-        self._l10n_mx_edi_update_hour_timezone()
+                record._l10n_mx_edi_update_hour_timezone()
         return super(AccountInvoice, self).action_date_assign()
 
     @api.multi

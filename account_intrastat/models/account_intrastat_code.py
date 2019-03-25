@@ -2,6 +2,7 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 from odoo import fields, models, api
+from odoo.osv import expression
 
 
 class AccountIntrastatCode(models.Model):
@@ -39,10 +40,12 @@ class AccountIntrastatCode(models.Model):
 
     @api.model
     def _name_search(self, name='', args=None, operator='ilike', limit=100):
-        if args is None:
-            args = []
-        domain = args + ['|', '|', ('code', operator, name), ('name', operator, name), ('description', operator, name)]
-        return super(AccountIntrastatCode, self).search(domain, limit=limit).name_get()
+        args = args or []
+        if operator == 'ilike' and not (name or '').strip():
+            domain = []
+        else:
+            domain = ['|', '|', ('code', operator, name), ('name', operator, name), ('description', operator, name)]
+        return super(AccountIntrastatCode, self).search(expression.AND([args, domain]), limit=limit).name_get()
 
     _sql_constraints = [
         ('intrastat_region_code_unique', 'UNIQUE (code, type, country_id)', 'Triplet code/type/country_id must be unique.'),

@@ -377,7 +377,7 @@ msgstr ""
 #: code:addons/web_studio/static/src/xml/submenu.xml:50
 #, python-format
 msgid "Calendar View"
-msgstr "Kalendoriaus vaizdas"
+msgstr "Kalendoriaus peržiūra"
 
 #. module: web_studio
 #. openerp-web
@@ -1490,7 +1490,7 @@ msgstr ""
 #: code:addons/web_studio/static/src/xml/submenu.xml:44
 #, python-format
 msgid "List View"
-msgstr ""
+msgstr "Sąrašo peržiūra"
 
 #. module: web_studio
 #. openerp-web
@@ -2464,7 +2464,7 @@ msgstr ""
 #: code:addons/web_studio/static/src/js/reports/sidebar_components/report_building_blocks.js:398
 #, python-format
 msgid "Three Columns"
-msgstr ""
+msgstr "Trys stulpeliai"
 
 #. module: web_studio
 #. openerp-web

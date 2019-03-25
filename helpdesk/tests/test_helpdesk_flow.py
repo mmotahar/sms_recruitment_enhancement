@@ -180,3 +180,110 @@ class TestHelpdeskFlow(HelpdeskTransactionCase):
         # ensure both members have the same amount of tickets assigned
         self.assertEqual(self.env['helpdesk.ticket'].search_count([('user_id', '=', self.helpdesk_user.id), ('close_date', '=', False)]), 3)
         self.assertEqual(self.env['helpdesk.ticket'].search_count([('user_id', '=', self.helpdesk_manager.id), ('close_date', '=', False)]), 3)
+
+    def test_create_from_email_multicompany(self):
+        company0 = self.env.user.company_id
+        company1 = self.env['res.company'].create({'name': 'new_company0'})
+        Partner = self.env['res.partner']
+
+        self.env.user.write({
+            'company_ids': [(4, company0.id, False), (4, company1.id, False)],
+        })
+
+        helpdesk_team_model = self.env['ir.model'].search([('model', '=', 'helpdesk_team')])
+        ticket_model = self.env['ir.model'].search([('model', '=', 'helpdesk.ticket')])
+        self.env["ir.config_parameter"].sudo().set_param("mail.catchall.domain", 'aqualung.com')
+
+        helpdesk_team0 = self.env['helpdesk.team'].create({
+            'name': 'helpdesk team 0',
+            'company_id': company0.id,
+        })
+        helpdesk_team1 = self.env['helpdesk.team'].create({
+            'name': 'helpdesk team 1',
+            'company_id': company1.id,
+        })
+
+        mail_alias0 = self.env['mail.alias'].create({
+            'alias_name': 'helpdesk_team_0',
+            'alias_model_id': ticket_model.id,
+            'alias_parent_model_id': helpdesk_team_model.id,
+            'alias_parent_thread_id': helpdesk_team0.id,
+            'alias_defaults': "{'team_id': %s}" % helpdesk_team0.id,
+        })
+        mail_alias1 = self.env['mail.alias'].create({
+            'alias_name': 'helpdesk_team_1',
+            'alias_model_id': ticket_model.id,
+            'alias_parent_model_id': helpdesk_team_model.id,
+            'alias_parent_thread_id': helpdesk_team1.id,
+            'alias_defaults': "{'team_id': %s}" % helpdesk_team1.id,
+        })
+
+        new_message0 = """MIME-Version: 1.0
+Date: Thu, 27 Dec 2018 16:27:45 +0100
+Message-ID: blablabla0
+Subject: helpdesk team 0 in company 0
+From:  A client <client_a@someprovider.com>
+To: helpdesk_team_0@aqualung.com
+Content-Type: multipart/alternative; boundary="000000000000a47519057e029630"
+
+--000000000000a47519057e029630
+Content-Type: text/plain; charset="UTF-8"
+
+
+--000000000000a47519057e029630
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div>A good message</div>
+
+--000000000000a47519057e029630--
+"""
+
+        new_message1 = """MIME-Version: 1.0
+Date: Thu, 27 Dec 2018 16:27:45 +0100
+Message-ID: blablabla1
+Subject: helpdesk team 1 in company 1
+From:  B client <client_b@someprovider.com>
+To: helpdesk_team_1@aqualung.com
+Content-Type: multipart/alternative; boundary="000000000000a47519057e029630"
+
+--000000000000a47519057e029630
+Content-Type: text/plain; charset="UTF-8"
+
+
+--000000000000a47519057e029630
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div>A good message bis</div>
+
+--000000000000a47519057e029630--
+"""
+        partners_exist = Partner.search([('email', 'in', ['client_a@someprovider.com', 'client_b@someprovider.com'])])
+        self.assertFalse(partners_exist)
+
+        helpdesk_ticket0_id = self.env['mail.thread'].message_process('helpdesk.ticket', new_message0)
+        helpdesk_ticket1_id = self.env['mail.thread'].message_process('helpdesk.ticket', new_message1)
+
+        helpdesk_ticket0 = self.env['helpdesk.ticket'].browse(helpdesk_ticket0_id)
+        helpdesk_ticket1 = self.env['helpdesk.ticket'].browse(helpdesk_ticket1_id)
+
+        self.assertEqual(helpdesk_ticket0.team_id, helpdesk_team0)
+        self.assertEqual(helpdesk_ticket1.team_id, helpdesk_team1)
+
+        self.assertEqual(helpdesk_ticket0.company_id, company0)
+        self.assertEqual(helpdesk_ticket1.company_id, company1)
+
+        partner0 = Partner.search([('email', '=', 'client_a@someprovider.com')])
+        partner1 = Partner.search([('email', '=', 'client_b@someprovider.com')])
+        self.assertTrue(partner0)
+        self.assertTrue(partner1)
+
+        self.assertEqual(partner0.company_id, company0)
+        self.assertEqual(partner1.company_id, company1)
+
+        self.assertEqual(helpdesk_ticket0.partner_id, partner0)
+        self.assertEqual(helpdesk_ticket1.partner_id, partner1)
+
+        self.assertTrue(partner0 in helpdesk_ticket0.message_follower_ids.mapped('partner_id'))
+        self.assertTrue(partner1 in helpdesk_ticket1.message_follower_ids.mapped('partner_id'))

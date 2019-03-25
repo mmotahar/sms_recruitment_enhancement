@@ -42,8 +42,8 @@ class TestStockReport(common.TransactionCase):
             value = self.env['stock.report'].read_group([('picking_type_code', '=', 'incoming')], ['valuation:avg(valuation)'], '')
 
     def test_stock_value(self):
-        def get_now_minus_one_day():
-            return fields.Datetime.to_string(fields.Datetime.from_string(fields.Datetime.now()) - timedelta(days=1))
+        def get_test_date():
+            return fields.Datetime.to_string(fields.Datetime.from_string(fields.Datetime.now()) - timedelta(days=5))
 
         # without domain
         value = self.env['stock.report'].read_group([], ['stock_value:sum(stock_value)'], '')
@@ -52,12 +52,12 @@ class TestStockReport(common.TransactionCase):
                          "Calling read group with stock_value should give the total inventory value to this date")
 
         # Takes date_done into account when in domain but doesn't care about the operator
-        value = self.env['stock.report'].read_group([('date_done', '=', get_now_minus_one_day())], ['stock_value:sum(stock_value)'], '')
+        value = self.env['stock.report'].read_group([('date_done', '=', get_test_date())], ['stock_value:sum(stock_value)'], '')
 
         self.assertEqual(value[0]['stock_value'], 0,
                          "Read group on stock_value should take date_done into account in domain")
 
-        value = self.env['stock.report'].read_group([('date_done', '<', get_now_minus_one_day())], ['stock_value:sum(stock_value)'], '')
+        value = self.env['stock.report'].read_group([('date_done', '<', get_test_date())], ['stock_value:sum(stock_value)'], '')
 
         self.assertEqual(value[0]['stock_value'], 0,
                          "Read group on stock_value should take date_done into account in domain in the same manner whatever the operator is")

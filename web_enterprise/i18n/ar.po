@@ -3,7 +3,6 @@
 # * web_enterprise
 # 
 # Translators:
-# Mustafa Rawi <mustafa@cubexco.com>, 2018
 # Akram Alfusayal <akram_ma@hotmail.com>, 2018
 # Martin Trigaux, 2018
 # hoxhe Aits <hoxhe0@gmail.com>, 2018
@@ -11,13 +10,15 @@
 # Osama Ahmaro <osamaahmaro@gmail.com>, 2018
 # Ahmed AL-Haddad <ahmed@utech-sa.com>, 2018
 # Shaima Safar <shaima.safar@open-inside.com>, 2018
+# Mustafa Rawi <mustafa@cubexco.com>, 2019
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~11.5+e\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-21 14:06+0000\n"
-"PO-Revision-Date: 2018-09-21 14:06+0000\n"
-"Last-Translator: Shaima Safar <shaima.safar@open-inside.com>, 2018\n"
+"PO-Revision-Date: 2018-08-24 11:49+0000\n"
+"Last-Translator: Mustafa Rawi <mustafa@cubexco.com>, 2019\n"
 "Language-Team: Arabic (https://www.transifex.com/odoo/teams/41243/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -68,7 +69,7 @@ msgstr "الإجراء"
 #: code:addons/web_enterprise/static/src/xml/base.xml:327
 #, python-format
 msgid "Alt"
-msgstr ""
+msgstr "Alt"
 
 #. module: web_enterprise
 #. openerp-web
@@ -118,7 +119,7 @@ msgstr "التحكم"
 #: code:addons/web_enterprise/static/src/xml/base.xml:277
 #, python-format
 msgid "Create a new record"
-msgstr ""
+msgstr "إنشاء سجل جديد"
 
 #. module: web_enterprise
 #. openerp-web
@@ -139,26 +140,26 @@ msgstr "الوصف"
 #: code:addons/web_enterprise/static/src/xml/base.xml:268
 #, python-format
 msgid "Discard a record modification"
-msgstr ""
+msgstr "تجاهل تعديل سجل"
 
 #. module: web_enterprise
 #. openerp-web
 #: code:addons/web_enterprise/static/src/xml/base.xml:259
 #, python-format
 msgid "Edit a record"
-msgstr ""
+msgstr "تحرير سجل"
 
 #. module: web_enterprise
 #: model:ir.model,name:web_enterprise.model_ir_http
 msgid "HTTP Routing"
-msgstr ""
+msgstr "مسار HTTP"
 
 #. module: web_enterprise
 #. openerp-web
 #: code:addons/web_enterprise/static/src/js/widgets/user_menu.js:57
 #, python-format
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "اختصارات لوحة المفاتيح"
 
 #. module: web_enterprise
 #. openerp-web
@@ -179,7 +180,7 @@ msgstr "الشعار"
 #: code:addons/web_enterprise/static/src/xml/base.xml:245
 #, python-format
 msgid "Mac"
-msgstr ""
+msgstr "ماك"
 
 #. module: web_enterprise
 #. openerp-web
@@ -214,28 +215,28 @@ msgstr ""
 #: code:addons/web_enterprise/static/src/xml/base.xml:313
 #, python-format
 msgid "Open the next record"
-msgstr ""
+msgstr "فتح السجل التالي"
 
 #. module: web_enterprise
 #. openerp-web
 #: code:addons/web_enterprise/static/src/xml/base.xml:304
 #, python-format
 msgid "Open the previous record"
-msgstr ""
+msgstr "فتح السجل السابق"
 
 #. module: web_enterprise
 #. openerp-web
 #: code:addons/web_enterprise/static/src/xml/base.xml:295
 #, python-format
 msgid "Open to kanban view"
-msgstr ""
+msgstr "فتح في عرض كانبان"
 
 #. module: web_enterprise
 #. openerp-web
 #: code:addons/web_enterprise/static/src/xml/base.xml:286
 #, python-format
 msgid "Open to list view"
-msgstr ""
+msgstr "فتح في عرض القائمة"
 
 #. module: web_enterprise
 #. openerp-web
@@ -278,7 +279,7 @@ msgstr "تجديد الاشتراك"
 #: code:addons/web_enterprise/static/src/xml/base.xml:250
 #, python-format
 msgid "Save a record"
-msgstr ""
+msgstr "حفظ سجل"
 
 #. module: web_enterprise
 #. openerp-web
@@ -299,7 +300,7 @@ msgstr "بحث ..."
 #: code:addons/web_enterprise/static/src/xml/base.xml:232
 #, python-format
 msgid "Shortcuts"
-msgstr ""
+msgstr "اختصارات"
 
 #. module: web_enterprise
 #. openerp-web
@@ -372,7 +373,7 @@ msgstr ""
 #: code:addons/web_enterprise/static/src/xml/base.xml:244
 #, python-format
 msgid "Windows/Linux"
-msgstr ""
+msgstr "ويندوز/لينكس"
 
 #. module: web_enterprise
 #. openerp-web

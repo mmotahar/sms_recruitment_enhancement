@@ -4,13 +4,15 @@
 # 
 # Translators:
 # Martin Trigaux, 2018
+# Ying Chang <acc.tou@gmail.com>, 2019
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~11.5+e\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-18 10:05+0000\n"
-"PO-Revision-Date: 2018-09-18 10:05+0000\n"
-"Last-Translator: Martin Trigaux, 2018\n"
+"PO-Revision-Date: 2018-08-24 11:49+0000\n"
+"Last-Translator: Ying Chang <acc.tou@gmail.com>, 2019\n"
 "Language-Team: Chinese (Taiwan) (https://www.transifex.com/odoo/teams/41243/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -30,14 +32,14 @@ msgstr "添加"
 #: code:addons/web_mobile/static/src/xml/contact_sync.xml:9
 #, python-format
 msgid "Add to"
-msgstr ""
+msgstr "加至"
 
 #. module: web_mobile
 #. openerp-web
 #: code:addons/web_mobile/static/src/xml/user_menu.xml:6
 #, python-format
 msgid "Add to Home Screen"
-msgstr ""
+msgstr "加至主畫面"
 
 #. module: web_mobile
 #. openerp-web

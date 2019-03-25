@@ -6,13 +6,15 @@
 # Martin Trigaux, 2018
 # sejun huang <sejun.huang@gmail.com>, 2018
 # 敬雲 林 <chingyun@yuanchih-consult.com>, 2018
+# Ying Chang <acc.tou@gmail.com>, 2019
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~11.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-21 13:17+0000\n"
-"PO-Revision-Date: 2018-09-21 13:17+0000\n"
-"Last-Translator: 敬雲 林 <chingyun@yuanchih-consult.com>, 2018\n"
+"PO-Revision-Date: 2018-08-24 09:15+0000\n"
+"Last-Translator: Ying Chang <acc.tou@gmail.com>, 2019\n"
 "Language-Team: Chinese (Taiwan) (https://www.transifex.com/odoo/teams/41243/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -147,7 +149,7 @@ msgstr "資產類別"
 #. module: account_asset
 #: model:ir.model,name:account_asset.model_account_asset_depreciation_line
 msgid "Asset Depreciation Line"
-msgstr ""
+msgstr "資產折舊行"
 
 #. module: account_asset
 #: model_terms:ir.ui.view,arch_db:account_asset.asset_modify_form
@@ -280,7 +282,7 @@ msgstr "自動確認資產"
 #: selection:account.asset.asset,date_first_depreciation:0
 #: selection:account.asset.category,date_first_depreciation:0
 msgid "Based on Last Day of Purchase Period"
-msgstr ""
+msgstr "基於採購期的最後一日"
 
 #. module: account_asset
 #: model_terms:ir.ui.view,arch_db:account_asset.asset_modify_form
@@ -717,7 +719,7 @@ msgid ""
 "Indicates that the first depreciation entry for this asset have to be done "
 "from the asset date (purchase date) instead of the first January / Start "
 "date of fiscal year"
-msgstr ""
+msgstr "資產折舊的第一個憑證是從 資產日(購買日)開始而不是年初開始。"
 
 #. module: account_asset
 #: model:ir.model.fields,help:account_asset.field_account_asset_category__prorata
@@ -865,7 +867,7 @@ msgstr "下個期間的折舊"
 #. module: account_asset
 #: model_terms:ir.actions.act_window,help:account_asset.action_asset_asset_report
 msgid "No content"
-msgstr ""
+msgstr "沒有內容"
 
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_asset__note
@@ -1111,7 +1113,7 @@ msgstr "需要折舊您的資產的折舊數量"
 msgid ""
 "The number of depreciations or the period length of your asset category "
 "cannot be 0."
-msgstr ""
+msgstr "您的資產類別的折舊次數或期間長度不能為0。"
 
 #. module: account_asset
 #: model:ir.model.fields,help:account_asset.field_account_asset_category__date_first_depreciation
@@ -1120,6 +1122,9 @@ msgid ""
 "  * Based on last day of purchase period: The depreciation dates will be based on the last day of the purchase month or the purchase year (depending on the periodicity of the depreciations).\n"
 "  * Based on purchase date: The depreciation dates will be based on the purchase date."
 msgstr ""
+"計算第一次折舊的方式\n"
+"* 基於採購期的最後一日：折舊日期將會基於採購月或採購年的最後一日(根據折舊的週期)\n"
+"* 基於採購日期：折舊日期將會基於採購日期。"
 
 #. module: account_asset
 #: model:ir.model.fields,help:account_asset.field_account_asset_asset__date_first_depreciation
@@ -1128,6 +1133,9 @@ msgid ""
 "  * Based on last day of purchase period: The depreciation dates will be based on the last day of the purchase month or the purchase year (depending on the periodicity of the depreciations).\n"
 "  * Based on purchase date: The depreciation dates will be based on the purchase date.\n"
 msgstr ""
+"計算第一次折舊的方式\n"
+"* 基於採購期的最後一日：折舊日期將會基於採購月或採購年的最後一日(根據折舊的週期)\n"
+"* 基於採購日期：折舊日期將會基於採購日期。\n"
 
 #. module: account_asset
 #: code:addons/account_asset/models/account_asset.py:506
@@ -1135,7 +1143,7 @@ msgstr ""
 msgid ""
 "This depreciation is already linked to a journal entry. Please post or "
 "delete it."
-msgstr ""
+msgstr "此折舊已連接到相應日記帳條目！請提交或刪除該條目。"
 
 #. module: account_asset
 #: model_terms:ir.ui.view,arch_db:account_asset.view_asset_depreciation_confirmation_wizard
@@ -1228,7 +1236,7 @@ msgstr "您不能刪除包含已過帳分錄的文檔。"
 #: code:addons/account_asset/models/account_asset.py:133
 #, python-format
 msgid "You cannot delete a document that is in %s state."
-msgstr ""
+msgstr "在 %s狀態, 您不能刪除文檔。"
 
 #. module: account_asset
 #: code:addons/account_asset/models/account_asset.py:650

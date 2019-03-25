@@ -31,7 +31,7 @@ msgstr ""
 #: code:addons/website_helpdesk_slides/wizard/slide_slide.py:72
 #, python-format
 msgid "Already exists in %s : <a href=\"%s\">click here to view it.</a>"
-msgstr "Esiste già in %s : <a href=\"%s\">clicca qui per visualizzarlo</a>"
+msgstr "Esiste già in %s : <a href=\"%s\">cliccare qui per visualizzarlo</a>"
 
 #. module: website_helpdesk_slides
 #: model_terms:ir.ui.view,arch_db:website_helpdesk_slides.slide_upload_wizard_view_form
@@ -139,7 +139,7 @@ msgstr "Tipo di file non valido. Seleziona un PDF o una immagine"
 #, python-format
 msgid "Invalid slide type. Please select document or presentation type."
 msgstr ""
-"Tipo di diapositiva non valido. Seleziona un tipo di documento o di "
+"Tipo di diapositiva non valido. Selezionare un tipo di documento o di "
 "presentazione. "
 
 #. module: website_helpdesk_slides
@@ -211,12 +211,12 @@ msgstr "Invio di diapositive"
 #. module: website_helpdesk_slides
 #: model:ir.model,name:website_helpdesk_slides.model_slide_upload_wizard
 msgid "Slide Upload Wizard"
-msgstr "Wizard di invio di diapositive"
+msgstr "Procedura guidata di invio di diapositive"
 
 #. module: website_helpdesk_slides
 #: model_terms:ir.ui.view,arch_db:website_helpdesk_slides.slides_page
 msgid "Slide image"
-msgstr "Immagine della diapositiva"
+msgstr "Immagine diapositiva"
 
 #. module: website_helpdesk_slides
 #: model:ir.model.fields,field_description:website_helpdesk_slides.field_slide_upload_wizard__tag_ids
@@ -234,8 +234,8 @@ msgid ""
 "The document type will be set automatically based on the document URL and "
 "properties (e.g. height and width for presentation and document)."
 msgstr ""
-"Il tipo di documento sarà definito automaticamente in base al suo URL e alle"
-" sue proprietà (es: altezza e larghezza per una presentazione o un "
+"Il tipo di documento verrà definito automaticamente in base al suo URL e "
+"alle sue proprietà (es: altezza e larghezza per una presentazione o un "
 "documento)."
 
 #. module: website_helpdesk_slides
@@ -262,7 +262,9 @@ msgstr "Tipo"
 #: code:addons/website_helpdesk_slides/wizard/slide_slide.py:87
 #, python-format
 msgid "Uploded new slide : <a href=\"%s\">click here to view it.</a>"
-msgstr "Nuova slide caricata: <a href=\"%s\">clicca qui per visualizzarla.</a>"
+msgstr ""
+"Nuova diapositiva caricata: <a href=\"%s\">cliccare qui per "
+"visualizzarla.</a>"
 
 #. module: website_helpdesk_slides
 #: selection:slide.upload.wizard,slide_type:0
@@ -272,7 +274,7 @@ msgstr "Video"
 #. module: website_helpdesk_slides
 #: model_terms:ir.ui.view,arch_db:website_helpdesk_slides.helpdesk_team_view_form_inherit_website_helpdesk_slides
 msgid "View the presentations:<br/>"
-msgstr "Visualizza le presentazioni"
+msgstr "Visualizzare le presentazioni:<br/>"
 
 #. module: website_helpdesk_slides
 #: model_terms:ir.ui.view,arch_db:website_helpdesk_slides.slides_page

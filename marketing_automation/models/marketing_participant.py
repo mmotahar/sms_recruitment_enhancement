@@ -181,20 +181,20 @@ class MarketingTrace(models.Model):
 
         opened_child = self.child_ids.filtered(lambda trace: trace.state == 'scheduled')
 
-        if action in ['mail_reply', 'mail_click', 'mail_open']:
-            for next_trace in opened_child.filtered(lambda trace: trace.activity_id.trigger_type == action):
-                if next_trace.activity_id.interval_number == 0:
-                    next_trace.write({
-                        'schedule_date': now,
-                    })
-                    next_trace.activity_id.execute_on_traces(next_trace)
-                else:
-                    next_trace.write({
-                        'schedule_date': now + relativedelta(**{
-                            next_trace.activity_id.interval_type: next_trace.activity_id.interval_number
-                        }),
-                    })
+        for next_trace in opened_child.filtered(lambda trace: trace.activity_id.trigger_type == action):
+            if next_trace.activity_id.interval_number == 0:
+                next_trace.write({
+                    'schedule_date': now,
+                })
+                next_trace.activity_id.execute_on_traces(next_trace)
+            else:
+                next_trace.write({
+                    'schedule_date': now + relativedelta(**{
+                        next_trace.activity_id.interval_type: next_trace.activity_id.interval_number
+                    }),
+                })
 
+        if action in ['mail_reply', 'mail_click', 'mail_open']:
             opposite_trigger = action.replace('_', '_not_')
             opened_child.filtered(
                 lambda trace: trace.activity_id.trigger_type == opposite_trigger

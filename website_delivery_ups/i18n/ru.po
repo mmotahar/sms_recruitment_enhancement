@@ -4,13 +4,15 @@
 # 
 # Translators:
 # Martin Trigaux, 2018
+# Oleg Kuryan <oleg@ventor.tech>, 2019
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~11.5+e\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-21 14:07+0000\n"
-"PO-Revision-Date: 2018-09-21 14:07+0000\n"
-"Last-Translator: Martin Trigaux, 2018\n"
+"PO-Revision-Date: 2018-08-24 11:49+0000\n"
+"Last-Translator: Oleg Kuryan <oleg@ventor.tech>, 2019\n"
 "Language-Team: Russian (https://www.transifex.com/odoo/teams/41243/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -95,12 +97,12 @@ msgstr ""
 #. module: website_delivery_ups
 #: model_terms:payment.acquirer,post_msg:website_delivery_ups.payment_acquirer_ups_cod
 msgid "Please use the following transfer details"
-msgstr ""
+msgstr "Пожалуйста, используйте следующую информацию для платежа"
 
 #. module: website_delivery_ups
 #: model_terms:payment.acquirer,post_msg:website_delivery_ups.payment_acquirer_ups_cod
 msgid "Please use the order name as communication reference."
-msgstr ""
+msgstr "Пожалуйста, используйте номер заказа в деталях платежа"
 
 #. module: website_delivery_ups
 #: model:ir.model,name:website_delivery_ups.model_sale_order

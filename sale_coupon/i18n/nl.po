@@ -421,7 +421,7 @@ msgid ""
 "                You can share promotion codes or grant the promotions automatically if some conditions are met."
 msgstr ""
 "Stel promotieprogramma's op om meer klanten aan te trekken met kortingen, gratis producten, gratis bezorging, enz.\n"
-"                 U kunt promotiecodes delen of de promoties automatisch toestaan als aan een aantal voorwaarden is voldaan."
+"U kunt promotiecodes delen of de promoties automatisch toestaan als aan een aantal voorwaarden is voldaan."
 
 #. module: sale_coupon
 #: model:sale.coupon.program,name:sale_coupon.3_ipad_plus_1_free
@@ -663,7 +663,7 @@ msgstr "Korting:"
 #: model:ir.model.fields,field_description:sale_coupon.field_sale_coupon_reward__display_name
 #: model:ir.model.fields,field_description:sale_coupon.field_sale_coupon_rule__display_name
 msgid "Display Name"
-msgstr "Weergave naam"
+msgstr "Weergavenaam"
 
 #. module: sale_coupon
 #: model:ir.model.fields,field_description:sale_coupon.field_sale_coupon_program__rule_date_to
@@ -964,13 +964,13 @@ msgstr "Op specifiek product"
 #: code:addons/sale_coupon/models/sale_order.py:179
 #, python-format
 msgid "On product with following tax: "
-msgstr "Op product met volgende belasting:"
+msgstr "Op product met volgende BTW:"
 
 #. module: sale_coupon
 #: code:addons/sale_coupon/models/sale_order.py:181
 #, python-format
 msgid "On product with following taxes: "
-msgstr "Op product met volgende belastingen:"
+msgstr "Op product met volgende BTW's:"
 
 #. module: sale_coupon
 #: model_terms:ir.ui.view,arch_db:sale_coupon.sale_coupon_program_view_promo_program_search

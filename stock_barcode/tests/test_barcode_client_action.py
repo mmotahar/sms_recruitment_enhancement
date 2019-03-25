@@ -432,6 +432,105 @@ class TestPickingBarcodeClientAction(TestBarcodeClientAction):
             )
             self.assertEqual(CALL_COUNT, 1)
 
+    def test_delivery_reserved_2(self):
+        clean_access_rights(self.env)
+        delivery_picking = self.env['stock.picking'].create({
+            'location_id': self.stock_location.id,
+            'location_dest_id': self.customer_location.id,
+            'picking_type_id': self.picking_type_out.id,
+        })
+        picking_write_orig = delivery_picking.write
+        url = self._get_client_action_url(delivery_picking.id)
+
+        pg_1 = self.env['procurement.group'].create({'name': 'ProcurementGroup1'})
+        pg_2 = self.env['procurement.group'].create({'name': 'ProcurementGroup2'})
+        partner_1 = self.env['res.partner'].create({'name': 'Parter1'})
+        partner_2 = self.env['res.partner'].create({'name': 'Partner2'})
+        self.env['stock.move'].create({
+            'name': 'test_delivery_reserved_2_1',
+            'location_id': self.stock_location.id,
+            'location_dest_id': self.customer_location.id,
+            'product_id': self.product1.id,
+            'product_uom': self.uom_unit.id,
+            'product_uom_qty': 2,
+            'picking_id': delivery_picking.id,
+            'group_id': pg_1.id,
+            'restrict_partner_id': partner_1.id
+        })
+        self.env['stock.move'].create({
+            'name': 'test_delivery_reserved_2_2',
+            'location_id': self.stock_location.id,
+            'location_dest_id': self.customer_location.id,
+            'product_id': self.product1.id,
+            'product_uom': self.uom_unit.id,
+            'product_uom_qty': 2,
+            'picking_id': delivery_picking.id,
+            'group_id': pg_2.id,
+            'restrict_partner_id': partner_2.id
+        })
+
+        self.env['stock.quant']._update_available_quantity(self.product1, self.stock_location, 4)
+        self.env['stock.quant']._update_available_quantity(self.product2, self.stock_location, 4)
+
+        delivery_picking.action_confirm()
+        delivery_picking.action_assign()
+        self.assertEquals(len(delivery_picking.move_lines), 2)
+
+        def picking_write_mock(self, vals):
+            global CALL_COUNT
+            CALL_COUNT += 1
+            return picking_write_orig(vals)
+
+        with patch('odoo.addons.stock.models.stock_picking.Picking.write', new=picking_write_mock):
+            self.phantom_js(
+                url,
+                "odoo.__DEBUG__.services['web_tour.tour'].run('test_delivery_reserved_2')",
+                "odoo.__DEBUG__.services['web_tour.tour'].tours.test_delivery_reserved_2.ready",
+                login='admin',
+                timeout=180,
+            )
+            self.assertEqual(CALL_COUNT, 0)
+
+    def test_delivery_reserved_3(self):
+        clean_access_rights(self.env)
+        delivery_picking = self.env['stock.picking'].create({
+            'location_id': self.stock_location.id,
+            'location_dest_id': self.customer_location.id,
+            'picking_type_id': self.picking_type_out.id,
+        })
+        picking_write_orig = delivery_picking.write
+        url = self._get_client_action_url(delivery_picking.id)
+
+        self.env['stock.move'].create({
+            'name': 'test_delivery_reserved_2_1',
+            'location_id': self.stock_location.id,
+            'location_dest_id': self.customer_location.id,
+            'product_id': self.product1.id,
+            'product_uom': self.uom_unit.id,
+            'product_uom_qty': 1,
+            'picking_id': delivery_picking.id,
+        })
+
+        self.env['stock.quant']._update_available_quantity(self.product1, self.stock_location, 2)
+
+        delivery_picking.action_confirm()
+        delivery_picking.action_assign()
+
+        def picking_write_mock(self, vals):
+            global CALL_COUNT
+            CALL_COUNT += 1
+            return picking_write_orig(vals)
+
+        with patch('odoo.addons.stock.models.stock_picking.Picking.write', new=picking_write_mock):
+            self.phantom_js(
+                url,
+                "odoo.__DEBUG__.services['web_tour.tour'].run('test_delivery_reserved_3')",
+                "odoo.__DEBUG__.services['web_tour.tour'].tours.test_delivery_reserved_3.ready",
+                login='admin',
+                timeout=180,
+            )
+            self.assertEqual(CALL_COUNT, 0)
+
     def test_delivery_from_scratch_1(self):
         """ Scan unreserved lots on a delivery order.
         """

@@ -58,7 +58,7 @@ msgstr "Kalendár"
 #: code:addons/web_grid/models/models.py:233
 #, python-format
 msgid "Can not use fields of type %s as grid columns"
-msgstr ""
+msgstr "Polia typu %s nemožno použiť ako stĺpce mriežky"
 
 #. module: web_grid
 #: selection:ir.actions.act_window.view,view_mode:0
@@ -145,7 +145,7 @@ msgstr "Hľadať"
 #: code:addons/web_grid/static/src/js/grid_renderer.js:244
 #, python-format
 msgid "See all the records aggregated in this cell"
-msgstr ""
+msgstr "Zobraz všetky záznamy agregované v tejto bunke"
 
 #. module: web_grid
 #. openerp-web
@@ -154,6 +154,8 @@ msgstr ""
 msgid ""
 "The sectioned grid view can't handle groups with different columns sets"
 msgstr ""
+"Pohľad mriežky so sekciami neumožňuje zobraziť skupiny s rozdielnymi sadami "
+"stĺpcov "
 
 #. module: web_grid
 #. openerp-web
@@ -174,7 +176,7 @@ msgstr "Celkom"
 #: code:addons/web_grid/static/src/js/grid_renderer.js:393
 #, python-format
 msgid "Total (%s)"
-msgstr ""
+msgstr "Celkom (%s)"
 
 #. module: web_grid
 #: selection:ir.actions.act_window.view,view_mode:0
@@ -216,3 +218,5 @@ msgid ""
 "Week %(weeknumber)s\n"
 "%(week_start)s - %(week_end)s"
 msgstr ""
+"Týždeň %(weeknumber)s\n"
+"%(week_start)s - %(week_end)s"

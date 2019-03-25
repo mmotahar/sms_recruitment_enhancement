@@ -85,7 +85,7 @@ msgstr "Omschrijving...."
 #. module: website_helpdesk_slides
 #: model:ir.model.fields,field_description:website_helpdesk_slides.field_slide_upload_wizard__display_name
 msgid "Display Name"
-msgstr "Weergave naam"
+msgstr "Weergavenaam"
 
 #. module: website_helpdesk_slides
 #: selection:slide.upload.wizard,slide_type:0

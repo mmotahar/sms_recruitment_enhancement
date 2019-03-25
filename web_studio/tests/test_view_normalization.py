@@ -1127,7 +1127,7 @@ class TestViewNormalization(TransactionCase):
             ''',
             '''
                <data>
-                <xpath expr="//form[1]/sheet[1]/div[1]" position="before">
+                <xpath expr="//form[1]/sheet[1]/div[not(@name)][1]" position="before">
                   <div class="oe_button_box" name="button_box">
                   </div>
                 </xpath>
@@ -1164,7 +1164,7 @@ class TestViewNormalization(TransactionCase):
             ''',
             '''
                <data>
-                <xpath expr="//form[1]/sheet[1]/div[1]" position="before">
+                <xpath expr="//form[1]/sheet[1]/div[not(@name)][1]" position="before">
                   <div name="x_path_2"/>
                   <div name="x_path_1"/>
                 </xpath>
@@ -1211,15 +1211,62 @@ class TestViewNormalization(TransactionCase):
             ''',
             '''
                <data>
-                <xpath expr="//form[1]/sheet[1]/div[1]" position="before">
+                <xpath expr="//form[1]/sheet[1]/div[not(@name)][1]" position="before">
                   <div name="x_path_1"/>
                   <div name="x_path_2"/>
                 </xpath>
-                <xpath expr="//form[1]/sheet[1]/div[1]" position="after">
+                <xpath expr="//form[1]/sheet[1]/div[not(@name)][1]" position="after">
                   <div name="x_path_3"/>
                 </xpath>
-                <xpath expr="//form[1]/sheet[1]/div[2]" position="after">
+                <xpath expr="//form[1]/sheet[1]/div[not(@name)][2]" position="after">
                   <div name="x_path_4"/>
+                </xpath>
+              </data>
+            ''')
+
+    # Removed line can be adjacent to added xpath with [not(@name)]
+    def test_view_normalization_35(self):
+        self.view = self.base_view.create({
+            'arch_base':
+            '''
+              <form string="Partner">
+                <sheet>
+                  <div class="block1">hello</div>
+                  <div class="block2">world</div>
+                  <div class="block3">!</div>
+                </sheet>
+              </form>
+            ''',
+            'model': 'res.partner',
+            'type': 'form'})
+
+        # end result: orator:/hello/cruel/world/!?
+        self._test_view_normalization(
+            '''
+              <data>
+                <xpath expr="//sheet/*[2]" position="before">
+                  <div name="x_path_1">cruel</div>
+                </xpath>
+                <xpath expr="//sheet/*[1]" position="before">
+                  <div name="x_path_2">orator:</div>
+                </xpath>
+                <xpath expr="//sheet/*[5]" position="replace">
+                  <div name="x_path_3"/>
+                  <div name="x_path_4">!?</div>
+                </xpath>
+              </data>
+            ''',
+            '''
+               <data>
+                <xpath expr="//form[1]/sheet[1]/div[3]" position="replace">
+                  <div name="x_path_3"/>
+                  <div name="x_path_4">!?</div>
+                </xpath>
+                <xpath expr="//form[1]/sheet[1]/div[not(@name)][1]" position="before">
+                  <div name="x_path_2">orator:</div>
+                </xpath>
+                <xpath expr="//form[1]/sheet[1]/div[not(@name)][1]" position="after">
+                  <div name="x_path_1">cruel</div>
                 </xpath>
               </data>
             ''')

@@ -83,9 +83,19 @@ class AccountInvoice(models.Model):
             l.l10n_mx_edi_price_unit_umt, u)
         values['amount_usd'] = lambda origin, dest, amount: origin.compute(
             amount, dest, round=False)
-        values['total_usd'] = lambda i, u, c: sum([
-            round(l.l10n_mx_edi_qty_umt * c.compute(
-                l.l10n_mx_edi_price_unit_umt, u), 2) for l in i])
+        # http://omawww.sat.gob.mx/informacion_fiscal/factura_electronica/Documents/Complementoscfdi/GuiaComercioExterior3_3.pdf
+        # ValorDolares : it depends of the currency  (p. 62-63):
+        #   - if currency is MXN: ValorDolares = Importe (subtotal without discounts) / TipoCambioUSD
+        #   - if currency is USD: ValorDolares = Importe
+        #   - if currency is anoter: ValorDolares = Importe x TipoCambio / TipoCambioUSD
+        # There is a common mistake to mutiply the Qty UMT with the unit price UMT. (p. 76)
+        #
+        # TotalUSD : must be the sum of all the Valor Dolares fields (p. 48)
+        values['valor_usd'] = lambda l, u, c : c.compute(
+            l.price_subtotal / (1 - l.discount/100) if l.discount != 100 else
+            l.price_unit * l.quantity, u)
+        values['total_usd'] = lambda i, u, c: sum([values['valor_usd'](l, u, c)
+            for l in i])
 
         return values
 
@@ -132,10 +142,6 @@ class AccountInvoiceLine(models.Model):
                 res.quantity * res.price_unit / res.l10n_mx_edi_qty_umt
                 if res.l10n_mx_edi_qty_umt else
                 res.l10n_mx_edi_price_unit_umt, 2)
-            res.l10n_mx_edi_qty_umt = round(
-                res.quantity * res.price_unit/res.l10n_mx_edi_price_unit_umt
-                if res.l10n_mx_edi_price_unit_umt else
-                res.l10n_mx_edi_qty_umt, 3)
 
     @api.onchange('quantity', 'product_id', 'l10n_mx_edi_umt_aduana_id')
     @api.multi

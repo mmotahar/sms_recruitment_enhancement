@@ -3,16 +3,19 @@
 # * account_invoice_extract
 # 
 # Translators:
-# Martin Trigaux, 2018
 # José Vicente <txusev@gmail.com>, 2018
 # Cristopher Cravioto <ccr@odoo.com>, 2018
+# Martin Trigaux, 2018
+# Luis Marin <marin.guadarrama@gmail.com>, 2019
+# Edilianny Sánchez <esanchez@vauxoo.com>, 2019
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~11.5+e\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-25 12:42+0000\n"
-"PO-Revision-Date: 2018-09-25 12:42+0000\n"
-"Last-Translator: Cristopher Cravioto <ccr@odoo.com>, 2018\n"
+"PO-Revision-Date: 2018-08-24 11:36+0000\n"
+"Last-Translator: Edilianny Sánchez <esanchez@vauxoo.com>, 2019\n"
 "Language-Team: Spanish (https://www.transifex.com/odoo/teams/41243/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -30,7 +33,7 @@ msgstr ""
 #. module: account_invoice_extract
 #: selection:account.invoice,extract_state:0
 msgid "An error occured"
-msgstr ""
+msgstr "Ha ocurrido un error"
 
 #. module: account_invoice_extract
 #: model_terms:ir.ui.view,arch_db:account_invoice_extract.invoice_supplier_form_inherit_ocr
@@ -40,12 +43,12 @@ msgstr ""
 #. module: account_invoice_extract
 #: model_terms:ir.ui.view,arch_db:account_invoice_extract.res_config_settings_view_form
 msgid "Autocomplete Vendor Bills (OCR + AI)"
-msgstr ""
+msgstr "Auto-completar facturas de proveedor (OCR + IA)"
 
 #. module: account_invoice_extract
 #: model:ir.model.fields,field_description:account_invoice_extract.field_res_config_settings__extract_show_ocr_option_selection
 msgid "Automatic Bills Processing"
-msgstr ""
+msgstr "Procesamiento automático de facturas"
 
 #. module: account_invoice_extract
 #: model_terms:ir.ui.view,arch_db:account_invoice_extract.invoice_supplier_form_inherit_ocr
@@ -105,7 +108,7 @@ msgstr ""
 #. module: account_invoice_extract
 #: model:ir.model.fields,field_description:account_invoice_extract.field_account_invoice__extract_state
 msgid "Extract state"
-msgstr ""
+msgstr "Estado del extracto"
 
 #. module: account_invoice_extract
 #: model:ir.model,name:account_invoice_extract.model_account_invoice_extract_words

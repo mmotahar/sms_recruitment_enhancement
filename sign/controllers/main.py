@@ -17,7 +17,7 @@ _logger = logging.getLogger()
 class Sign(http.Controller):
 
     def get_document_qweb_context(self, id, token):
-        sign_request = http.request.env['sign.request'].sudo().search([('id', '=', id)])
+        sign_request = http.request.env['sign.request'].sudo().browse(id)
         if not sign_request:
             if token:
                 return http.request.render('sign.deleted_sign_request')
@@ -83,8 +83,8 @@ class Sign(http.Controller):
 
     @http.route(['/sign/download/<int:id>/<token>/<type>'], type='http', auth='public')
     def download_document(self, id, token, type, **post):
-        sign_request = http.request.env['sign.request'].sudo().search([('id', '=', id), ('access_token', '=', token)])
-        if not sign_request:
+        sign_request = http.request.env['sign.request'].sudo().browse(id)
+        if sign_request.access_token != token or not sign_request:
             return http.request.not_found()
 
         document = None

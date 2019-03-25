@@ -5,6 +5,7 @@
 # Translators:
 # Cozmin Candea <office@terrabit.ro>, 2018
 # Martin Trigaux, 2018
+# sharkutz <sharkutz4life@yahoo.com>, 2019
 # Dorin Hongu <dhongu@gmail.com>, 2019
 # 
 msgid ""
@@ -162,6 +163,8 @@ msgid ""
 "Add a <b>chatter widget</b> to allow discussions on your document: by email "
 "or inline."
 msgstr ""
+"Adăugați un <b>widget chatter</b> pentru a permite discuții pe document: "
+"prin e-mail sau în linie."
 
 #. module: web_studio
 #. openerp-web
@@ -1116,7 +1119,7 @@ msgstr ""
 #: code:addons/web_studio/static/src/xml/submenu.xml:41
 #, python-format
 msgid "Form View"
-msgstr ""
+msgstr "Vizualizare formular"
 
 #. module: web_studio
 #. openerp-web
@@ -1180,7 +1183,7 @@ msgstr ""
 #: code:addons/web_studio/static/src/xml/submenu.xml:53
 #, python-format
 msgid "Graph View"
-msgstr ""
+msgstr "Vizualizare grafică"
 
 #. module: web_studio
 #. openerp-web
@@ -1195,7 +1198,7 @@ msgstr ""
 #: code:addons/web_studio/static/src/xml/submenu.xml:59
 #, python-format
 msgid "Grid View"
-msgstr ""
+msgstr "Vizualizare tabel"
 
 #. module: web_studio
 #. openerp-web
@@ -1207,7 +1210,7 @@ msgstr "Grupează după"
 #. module: web_studio
 #: model:ir.model,name:web_studio.model_ir_http
 msgid "HTTP Routing"
-msgstr ""
+msgstr "Rutare HTTP"
 
 #. module: web_studio
 #. openerp-web
@@ -1415,7 +1418,7 @@ msgstr "Înclinat"
 #: code:addons/web_studio/static/src/xml/submenu.xml:47
 #, python-format
 msgid "Kanban View"
-msgstr ""
+msgstr "Vizualizare Kanban"
 
 #. module: web_studio
 #. openerp-web
@@ -1784,7 +1787,7 @@ msgstr "Opțiuni"
 #. module: web_studio
 #: model_terms:ir.ui.view,arch_db:web_studio.act_report_xml_view_kanban
 msgid "PDF file"
-msgstr ""
+msgstr "Fișier PDF"
 
 #. module: web_studio
 #. openerp-web
@@ -1798,7 +1801,7 @@ msgstr "Format hârtie"
 #: code:addons/web_studio/static/src/xml/submenu.xml:56
 #, python-format
 msgid "Pivot View"
-msgstr ""
+msgstr "Vizualizare pivot"
 
 #. module: web_studio
 #. openerp-web
@@ -1839,7 +1842,7 @@ msgstr ""
 #: code:addons/web_studio/static/src/xml/app_creator.xml:10
 #, python-format
 msgid "Previous"
-msgstr ""
+msgstr "Anterior"
 
 #. module: web_studio
 #. openerp-web

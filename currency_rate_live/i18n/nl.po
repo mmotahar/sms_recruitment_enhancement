@@ -3,10 +3,10 @@
 # * currency_rate_live
 # 
 # Translators:
-# Erwin van der Ploeg <erwin@odooexperts.nl>, 2018
+# Martin Trigaux, 2018
 # Gunther Clauwaert <gclauwae@hotmail.com>, 2018
 # Thomas Pot <thomas@open2bizz.nl>, 2018
-# Martin Trigaux, 2018
+# Erwin van der Ploeg <erwin@odooexperts.nl>, 2018
 # Yenthe Van Ginneken <yenthespam@gmail.com>, 2019
 # 
 msgid ""
@@ -74,7 +74,7 @@ msgid ""
 msgstr ""
 "Geachte heer / mevrouw,\n"
 "\n"
-"Uit onze gegevens blijkt dat sommige rekeningen nog niet zijn betaald. Hieronder vindt u meer informatie.\n"
+"Uit onze gegevens blijkt dat sommige facturen nog niet zijn betaald. Hieronder vindt u meer informatie.\n"
 "Indien het bedrag reeds is betaald, dan kunt u dit bericht negeren. Anders willen wij u vragen om het onderstaande totaal bedrag over te maken.\n"
 "\n"
 "Als u vragen heeft over uw facturen, neem dan contact met ons op.\n"

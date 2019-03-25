@@ -4,14 +4,16 @@
 # 
 # Translators:
 # Martin Trigaux, 2018
+# Léonie Bouchat <lbo@odoo.com>, 2018
 # Eloïse Stilmant <est@odoo.com>, 2018
 # Thomas Dobbelsteyn <tdo@odoo.com>, 2018
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~11.5+e\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-21 14:06+0000\n"
-"PO-Revision-Date: 2018-09-21 14:06+0000\n"
+"PO-Revision-Date: 2018-08-24 11:39+0000\n"
 "Last-Translator: Thomas Dobbelsteyn <tdo@odoo.com>, 2018\n"
 "Language-Team: French (https://www.transifex.com/odoo/teams/41243/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -28,7 +30,7 @@ msgstr "Etiquette de Produit Fini (ZPL)"
 #. module: mrp_zebra
 #: model_terms:ir.ui.view,arch_db:mrp_zebra.mrp_workorder_view_form_tablet_printers
 msgid "Print Labels"
-msgstr "Imprimers les Etiquettes"
+msgstr "Imprimer les étiquettes"
 
 #. module: mrp_zebra
 #: model:ir.model,name:mrp_zebra.model_quality_point

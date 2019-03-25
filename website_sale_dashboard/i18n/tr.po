@@ -8,7 +8,7 @@
 # cagri erarslan <cagri.erarslan@mechsoft.com.tr>, 2018
 # Umur Akın <umura@projetgrup.com>, 2018
 # Murat Kaplan <muratk@projetgrup.com>, 2018
-# Ediz Duman <neps1192@gmail.com>, 2018
+# Ediz Duman <neps1192@gmail.com>, 2019
 # 
 msgid ""
 msgstr ""
@@ -16,7 +16,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-02 10:31+0000\n"
 "PO-Revision-Date: 2018-08-24 11:50+0000\n"
-"Last-Translator: Ediz Duman <neps1192@gmail.com>, 2018\n"
+"Last-Translator: Ediz Duman <neps1192@gmail.com>, 2019\n"
 "Language-Team: Turkish (https://www.transifex.com/odoo/teams/41243/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -113,12 +113,12 @@ msgstr "Fatura Durumu"
 #. module: website_sale_dashboard
 #: selection:res.company,website_sale_dashboard_onboarding_state:0
 msgid "Just done"
-msgstr ""
+msgstr "Yeni bitti"
 
 #. module: website_sale_dashboard
 #: selection:res.company,website_sale_dashboard_onboarding_state:0
 msgid "Not done"
-msgstr ""
+msgstr "Yapılmadı"
 
 #. module: website_sale_dashboard
 #: selection:sale.report,invoice_status:0

@@ -6,12 +6,13 @@
 # Paolo Valier, 2018
 # Paolo Caruccio <paolo.caruccio66@gmail.com>, 2018
 # Léonie Bouchat <lbo@odoo.com>, 2018
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~11.5+e\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-21 14:07+0000\n"
-"PO-Revision-Date: 2018-09-21 14:07+0000\n"
+"PO-Revision-Date: 2018-08-24 11:49+0000\n"
 "Last-Translator: Léonie Bouchat <lbo@odoo.com>, 2018\n"
 "Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
 "MIME-Version: 1.0\n"
@@ -30,7 +31,7 @@ msgstr ""
 #: model:ir.ui.menu,name:website_sale_coupon.menu_coupon_type_config
 #: model_terms:ir.ui.view,arch_db:website_sale_coupon.res_config_settings_view_form
 msgid "Coupon Programs"
-msgstr "Programmi di coupon"
+msgstr "Programmi buono sconto"
 
 #. module: website_sale_coupon
 #: model_terms:ir.ui.view,arch_db:website_sale_coupon.cart_discount
@@ -51,7 +52,7 @@ msgstr "Programmi promozionali"
 #. module: website_sale_coupon
 #: model:ir.model.fields,help:website_sale_coupon.field_sale_coupon_program__website_id
 msgid "Restrict publishing to this website."
-msgstr "Limitare la pubblicazione su questo sito Web."
+msgstr "Limitare la pubblicazione su questo sito web."
 
 #. module: website_sale_coupon
 #: model:ir.model,name:website_sale_coupon.model_sale_order
@@ -61,13 +62,13 @@ msgstr "Ordini di Vendita"
 #. module: website_sale_coupon
 #: model:ir.model,name:website_sale_coupon.model_sale_coupon_program
 msgid "Sales Coupon Program"
-msgstr "Programma coupon di vendita"
+msgstr "Programma buono sconto vendita"
 
 #. module: website_sale_coupon
 #: code:addons/website_sale_coupon/models/sale_coupon_program.py:23
 #, python-format
 msgid "The program code must be unique by website!"
-msgstr "Il codice del programma deve essere unico per ogni sito Web."
+msgstr "Il codice del programma deve essere unico per ogni sito web."
 
 #. module: website_sale_coupon
 #: model:ir.model.fields,field_description:website_sale_coupon.field_sale_coupon_program__website_id

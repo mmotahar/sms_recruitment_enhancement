@@ -216,7 +216,7 @@ msgstr "Перше нагадування електронною поштою"
 #. module: account_reports_followup
 #: model:ir.model.fields,field_description:account_reports_followup.field_account_followup_followup_line__followup_id
 msgid "Follow Ups"
-msgstr "Послідовності дій"
+msgstr "Нагадування"
 
 #. module: account_reports_followup
 #: model:ir.model.fields,field_description:account_reports_followup.field_account_followup_followup_line__name

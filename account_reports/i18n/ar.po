@@ -4,23 +4,22 @@
 # 
 # Translators:
 # Ali zuaby <ali@zuaby.net>, 2018
-# AMAAL RU <Fabu1410@yahoo.com>, 2018
+# Abdulaziz Ayed <aalayed@kacst.edu.sa>, 2018
 # Akram Alfusayal <akram_ma@hotmail.com>, 2018
 # amrnegm <amrnegm.01@gmail.com>, 2018
 # Martin Trigaux, 2018
 # hoxhe Aits <hoxhe0@gmail.com>, 2018
 # nle_odoo, 2018
+# Osoul <baruni@osoul.ly>, 2018
 # Mohammed Albasha <m.albasha.ma@gmail.com>, 2018
 # Ghaith Gammar <g.gammar@saharaifs.net>, 2018
 # Osama Ahmaro <osamaahmaro@gmail.com>, 2018
 # Yihya Hugirat <hugirat@gmail.com>, 2018
-# Abdulaziz Ayed <aalayed@kacst.edu.sa>, 2018
 # Abdulmajeed Alomar <majeeed87@gmail.com>, 2018
 # Ali Alrehawi <alrehawi@hotmail.com>, 2018
-# Osoul <baruni@osoul.ly>, 2018
-# Mustafa Rawi <mustafa@cubexco.com>, 2018
 # Shaima Safar <shaima.safar@open-inside.com>, 2018
 # jahzar <jahzar@gmail.com>, 2019
+# Mustafa Rawi <mustafa@cubexco.com>, 2019
 # 
 msgid ""
 msgstr ""
@@ -28,7 +27,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-19 09:12+0000\n"
 "PO-Revision-Date: 2018-08-24 11:36+0000\n"
-"Last-Translator: jahzar <jahzar@gmail.com>, 2019\n"
+"Last-Translator: Mustafa Rawi <mustafa@cubexco.com>, 2019\n"
 "Language-Team: Arabic (https://www.transifex.com/odoo/teams/41243/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -40,7 +39,7 @@ msgstr ""
 #: code:addons/account_reports/models/account_followup_report.py:240
 #, python-format
 msgid "%s Payment Reminder"
-msgstr "%s تذكير الدفع"
+msgstr "%s تذكير السداد"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.line_template_general_ledger_report
@@ -58,7 +57,7 @@ msgstr "&times;"
 #: code:addons/account_reports/models/account_report.py:582
 #, python-format
 msgid "(No Group)"
-msgstr ""
+msgstr "(بلا تجميع)"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_financial_report.py:355
@@ -71,40 +70,40 @@ msgstr "(نسخ)"
 #: code:addons/account_reports/models/account_aged_partner_balance.py:22
 #, python-format
 msgid "1 - 30"
-msgstr ""
+msgstr "1 - 30"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_aged_partner_balance.py:22
 #, python-format
 msgid "31 - 60"
-msgstr ""
+msgstr "31 - 60"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_aged_partner_balance.py:22
 #, python-format
 msgid "61 - 90"
-msgstr ""
+msgstr "61 - 90"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_aged_partner_balance.py:22
 #, python-format
 msgid "91 - 120"
-msgstr ""
+msgstr "91 - 120"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_analytic
 msgid "<b>Accounts</b><br/>"
-msgstr ""
+msgstr "<b>حسابات</b><br/>"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.template_followup_report
 msgid "<b>Next Reminder Date:</b>"
-msgstr ""
+msgstr "<b>تاريخ التذكير القادم:</b>"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_analytic
 msgid "<b>Tags</b><br/>"
-msgstr ""
+msgstr "<b>وسوم</b><br/>"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.main_template
@@ -112,6 +111,8 @@ msgid ""
 "<br/>\n"
 "                <span>You can visualize their impact by activating the option to view unposted entries, or post them to remove this warning.</span>"
 msgstr ""
+"<br/>\n"
+"                <span>يمكنك عرض تأثيرهم بتفعيل خيار عرض القيود غير المُرحلة، أو قم بترحيلهم للتخلص من هذا التحذير.</span>"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.filter_info_template
@@ -119,11 +120,13 @@ msgid ""
 "<br/>\n"
 "                Analytic Accounts:"
 msgstr ""
+"<br/>\n"
+"                حسابات تحليلية:"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.filter_info_template
 msgid "<br/>Companies:"
-msgstr ""
+msgstr "<br/>مؤسسات:"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.template_followup_report
@@ -143,7 +146,7 @@ msgstr "<i class=\"fa fa-circle\" style=\"color: red;\"/> مدين سيئ"
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.template_followup_report
 msgid "<i class=\"fa fa-envelope\" role=\"img\" aria-label=\"Email\"/>"
-msgstr ""
+msgstr "<i class=\"fa fa-envelope\" role=\"img\" aria-label=\"Email\"/>"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.main_template
@@ -151,21 +154,23 @@ msgid ""
 "<i class=\"fa fa-fw fa-pencil o_account_reports_edit_summary_pencil\" "
 "role=\"img\" aria-label=\"Edit Summary\" title=\"Edit Summary\"/>"
 msgstr ""
+"<i class=\"fa fa-fw fa-pencil o_account_reports_edit_summary_pencil\" "
+"role=\"img\" aria-label=\"Edit Summary\" title=\"Edit Summary\"/>"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.template_followup_report
 msgid "<i class=\"fa fa-mobile fa-fw\" role=\"img\" aria-label=\"Mobile\" title=\"Mobile\"/>"
-msgstr ""
+msgstr "<i class=\"fa fa-mobile fa-fw\" role=\"img\" aria-label=\"Mobile\" title=\"Mobile\"/>"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.template_followup_report
 msgid "<i class=\"fa fa-phone fa-fw\" role=\"img\" aria-label=\"Phone\" title=\"Phone\"/>"
-msgstr ""
+msgstr "<i class=\"fa fa-phone fa-fw\" role=\"img\" aria-label=\"Phone\" title=\"Phone\"/>"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_comparison
 msgid "<span class=\"fa fa-bar-chart\"/> Comparison:"
-msgstr ""
+msgstr "<span class=\"fa fa-bar-chart\"/> مقارنة:"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_journals
@@ -173,11 +178,13 @@ msgid ""
 "<span class=\"fa fa-book\"/>\n"
 "            Journals:"
 msgstr ""
+"<span class=\"fa fa-book\"/>\n"
+"            دفاتر اليومية:"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_date_filter
 msgid "<span class=\"fa fa-calendar\" title=\"Dates\" role=\"img\" aria-label=\"Dates\"/>"
-msgstr ""
+msgstr "<span class=\"fa fa-calendar\" title=\"Dates\" role=\"img\" aria-label=\"Dates\"/>"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.template_aged_partner_balance_line_report
@@ -185,6 +192,8 @@ msgid ""
 "<span class=\"fa fa-circle color-green trust-partner\" role=\"img\" aria-"
 "label=\"Balance is good\" title=\"Balance is good\"/>"
 msgstr ""
+"<span class=\"fa fa-circle color-green trust-partner\" role=\"img\" aria-"
+"label=\"Balance is good\" title=\"Balance is good\"/>"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.line_template_partner_ledger_report
@@ -192,6 +201,8 @@ msgid ""
 "<span class=\"fa fa-circle color-green trust-partner\" role=\"img\" aria-"
 "label=\"Partner ledger is good\" title=\"Partner ledger is good\"/>"
 msgstr ""
+"<span class=\"fa fa-circle color-green trust-partner\" role=\"img\" aria-"
+"label=\"Partner ledger is good\" title=\"Partner ledger is good\"/>"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.template_aged_partner_balance_line_report
@@ -199,6 +210,8 @@ msgid ""
 "<span class=\"fa fa-circle color-red trust-partner\" role=\"img\" aria-"
 "label=\"Balance is bad\" title=\"Balance is bad\"/>"
 msgstr ""
+"<span class=\"fa fa-circle color-red trust-partner\" role=\"img\" aria-"
+"label=\"Balance is bad\" title=\"Balance is bad\"/>"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.line_template_partner_ledger_report
@@ -206,6 +219,8 @@ msgid ""
 "<span class=\"fa fa-circle color-red trust-partner\" role=\"img\" aria-"
 "label=\"Partner ledger is bad\" title=\"Partner ledger is bad\"/>"
 msgstr ""
+"<span class=\"fa fa-circle color-red trust-partner\" role=\"img\" aria-"
+"label=\"Partner ledger is bad\" title=\"Partner ledger is bad\"/>"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.template_aged_partner_balance_line_report
@@ -213,6 +228,8 @@ msgid ""
 "<span class=\"fa fa-circle color-transparent trust-partner\" role=\"img\" "
 "aria-label=\"Balance is normal\" title=\"Balance is normal\"/>"
 msgstr ""
+"<span class=\"fa fa-circle color-transparent trust-partner\" role=\"img\" "
+"aria-label=\"Balance is normal\" title=\"Balance is normal\"/>"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.line_template_partner_ledger_report
@@ -220,6 +237,8 @@ msgid ""
 "<span class=\"fa fa-circle color-transparent trust-partner\" role=\"img\" "
 "aria-label=\"Partner ledger is normal\" title=\"Partner ledger is normal\"/>"
 msgstr ""
+"<span class=\"fa fa-circle color-transparent trust-partner\" role=\"img\" "
+"aria-label=\"Partner ledger is normal\" title=\"Partner ledger is normal\"/>"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_multi_company
@@ -227,6 +246,8 @@ msgid ""
 "<span class=\"fa fa-filter\"/>\n"
 "            Companies:"
 msgstr ""
+"<span class=\"fa fa-filter\"/>\n"
+"            المؤسسات:"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_ir_filters
@@ -234,26 +255,28 @@ msgid ""
 "<span class=\"fa fa-filter\"/>\n"
 "            Filters:"
 msgstr ""
+"<span class=\"fa fa-filter\"/>\n"
+"            الفلاتر:"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_extra_options
 msgid "<span class=\"fa fa-filter\"/> Options:"
-msgstr ""
+msgstr "<span class=\"fa fa-filter\"/> الخيارات:"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.followup_search_template
 msgid "<span class=\"fa fa-filter\"/> Partners:"
-msgstr ""
+msgstr "<span class=\"fa fa-filter\"/> الشركاء:"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_analytic
 msgid "<span class=\"fa fa-folder-open\"/> Analytic"
-msgstr ""
+msgstr "<span class=\"fa fa-folder-open\"/> تحليلي"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_partner
 msgid "<span class=\"fa fa-folder-open\"/> Partners"
-msgstr ""
+msgstr "<span class=\"fa fa-folder-open\"/> الشركاء"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.res_config_settings_view_form
@@ -261,6 +284,8 @@ msgid ""
 "<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
 "specific.\" groups=\"base.group_multi_company\"/>"
 msgstr ""
+"<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
+"specific.\" groups=\"base.group_multi_company\"/>"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_account_type
@@ -268,6 +293,8 @@ msgid ""
 "<span class=\"fa fa-user\"/>\n"
 "            Account:"
 msgstr ""
+"<span class=\"fa fa-user\"/>\n"
+"            الحساب:"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.footnotes_template
@@ -275,6 +302,8 @@ msgid ""
 "<span class=\"o_account_reports_footnote_icons\"><i class=\"fa fa-fw fa-"
 "trash-o\" role=\"img\" aria-label=\"Delete\" title=\"Delete\"/></span>"
 msgstr ""
+"<span class=\"o_account_reports_footnote_icons\"><i class=\"fa fa-fw fa-"
+"trash-o\" role=\"img\" aria-label=\"Delete\" title=\"Delete\"/></span>"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.res_config_settings_view_form
@@ -282,11 +311,13 @@ msgid ""
 "<span class=\"o_form_label\">Payment Follow-up</span>\n"
 "                        <span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-specific.\" role=\"img\" aria-label=\"Values set here are company-specific.\" groups=\"base.group_multi_company\"/>"
 msgstr ""
+"<span class=\"o_form_label\">متابعة المدفوعات</span>\n"
+"                        <span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-specific.\" role=\"img\" aria-label=\"Values set here are company-specific.\" groups=\"base.group_multi_company\"/>"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.res_partner_view_form
 msgid "<span class=\"o_stat_text\">Due</span>"
-msgstr ""
+msgstr "<span class=\"o_stat_text\">المستحق</span>"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.main_template
@@ -294,6 +325,8 @@ msgid ""
 "<span class=\"searchIcon\"><i class=\"fa fa-search\" role=\"img\" aria-"
 "label=\"Search\" title=\"Search\"/></span>"
 msgstr ""
+"<span class=\"searchIcon\"><i class=\"fa fa-search\" role=\"img\" aria-"
+"label=\"Search\" title=\"Search\"/></span>"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.account_reports_journal_dashboard_kanban_view_account_manager
@@ -304,12 +337,12 @@ msgstr "<span title=\"Latest Statement\">أحدث كشف</span>"
 #: model_terms:ir.ui.view,arch_db:account_reports.template_followup_report
 msgid ""
 "<strong>Warning!</strong> No action needs to be taken for this partner."
-msgstr "<strong>تحذير!</strong>لا توجد إجراءات مطلوب اتخاذها مع هذا الشريك."
+msgstr "<strong>تحذير!</strong>لا يوجد إجراءات مطلوب اتخاذها لهذا الشريك."
 
 #. module: account_reports
 #: sql_constraint:account.financial.html.report.line:0
 msgid "A report line with the same code already exists."
-msgstr ""
+msgstr "يوجد بند في التقرير يحتوي نفس الكود."
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_total_assets0
@@ -326,7 +359,7 @@ msgstr "الحساب"
 #. module: account_reports
 #: model:ir.model,name:account_reports.model_account_analytic_report
 msgid "Account Analytic Report"
-msgstr ""
+msgstr "تقرير الحساب التحليلي"
 
 #. module: account_reports
 #: model:ir.model,name:account_reports.model_account_chart_template
@@ -343,23 +376,23 @@ msgstr "تقرير الحساب"
 #. module: account_reports
 #: model:ir.model,name:account_reports.model_account_financial_html_report_line
 msgid "Account Report (HTML Line)"
-msgstr ""
+msgstr "تقرير الحساب (HTML Line)"
 
 #. module: account_reports
 #: model:ir.model,name:account_reports.model_account_financial_html_report
 msgid "Account Report (HTML)"
-msgstr ""
+msgstr "تقرير الحساب (HTML)"
 
 #. module: account_reports
 #: model:ir.model,name:account_reports.model_account_report_footnote
 msgid "Account Report Footnote"
-msgstr ""
+msgstr "ذيل تقرير الحساب"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_analytic_report.py:79
 #, python-format
 msgid "Accounts without a group"
-msgstr ""
+msgstr "حسابات غير مجمعة"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_extra_options
@@ -369,12 +402,12 @@ msgstr "أساس الاستحقاق"
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.filter_info_template
 msgid "Accrual Basis<br/>"
-msgstr ""
+msgstr "أساس الاستحقاق<br/>"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line__action_id
 msgid "Action"
-msgstr "الإجراء"
+msgstr "إجراء"
 
 #. module: account_reports
 #. openerp-web
@@ -382,23 +415,23 @@ msgstr "الإجراء"
 #: model_terms:ir.ui.view,arch_db:account_reports.main_template
 #, python-format
 msgid "Add a note"
-msgstr "أضف ملاحظة"
+msgstr "إضافة ملاحظة"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_res_company__totals_below_sections
 #: model:ir.model.fields,field_description:account_reports.field_res_config_settings__totals_below_sections
 msgid "Add totals below sections"
-msgstr ""
+msgstr "إضافة إجمالي تحت الأقسام"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_prepayments_received0
 msgid "Advance Payments received from customers"
-msgstr "الدفعات المقدمة من العملاء"
+msgstr "الإيرادات المدفوعة مقدمًا من العملاء"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_cash_paid0
 msgid "Advance payments made to suppliers"
-msgstr "دفعات مقدمة إلى الموردين"
+msgstr "المدفوعات المدفوعة مقدمًا للموردين"
 
 #. module: account_reports
 #: model:ir.model,name:account_reports.model_account_aged_partner
@@ -412,12 +445,12 @@ msgstr "متأخرات أرصدة الشركاء"
 #: model:ir.ui.menu,name:account_reports.menu_action_account_report_aged_payable
 #, python-format
 msgid "Aged Payable"
-msgstr "المتاخرات المستحقة"
+msgstr "المتأخر المستحق"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.account_reports_journal_dashboard_kanban_view
 msgid "Aged Payables"
-msgstr "ذمم دائنة"
+msgstr "المتأخرات المستحقة"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_aged_partner_balance.py:98
@@ -426,12 +459,12 @@ msgstr "ذمم دائنة"
 #: model:ir.ui.menu,name:account_reports.menu_action_account_report_aged_receivable
 #, python-format
 msgid "Aged Receivable"
-msgstr "الدين المشكوك في تحصيله"
+msgstr "المتأخر المدين"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.account_reports_journal_dashboard_kanban_view
 msgid "Aged Receivables"
-msgstr "ذمم مدينة"
+msgstr "المتأخرات المدينة"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_journals
@@ -442,33 +475,33 @@ msgstr "الكل"
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report__analytic
 msgid "Allow analytic filters"
-msgstr ""
+msgstr "السماح بالفلاتر التحليلية"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report__cash_basis
 msgid "Allow cash basis mode"
-msgstr ""
+msgstr "السماح بنظام الأساس النقدي"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report__comparison
 msgid "Allow comparison"
-msgstr ""
+msgstr "السماح بالمقارنة"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report__show_journal_filter
 msgid "Allow filtering by journals"
-msgstr ""
+msgstr "السماح بالفلترة من خلال دفاتر اليومية"
 
 #. module: account_reports
 #: selection:account.financial.html.report.line,show_domain:0
 msgid "Always"
-msgstr "دائماً"
+msgstr "دائمًا"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_bank_reconciliation_report.py:24
 #, python-format
 msgid "Amount"
-msgstr "القيمة"
+msgstr "المبلغ"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_partner_ledger.py:40
@@ -479,7 +512,7 @@ msgstr "المبلغ بالعملة"
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.filter_info_template
 msgid "Analytic Accounts:"
-msgstr ""
+msgstr "الحسابات التحليلية:"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.line_caret_options
@@ -492,12 +525,12 @@ msgstr "قيود تحليلية"
 #: model:ir.ui.menu,name:account_reports.menu_action_report_account_analytic
 #, python-format
 msgid "Analytic Report"
-msgstr ""
+msgstr "تقرير تحليلي"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.filter_info_template
 msgid "Analytic Tags:"
-msgstr ""
+msgstr "الوسوم التحليلية:"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.line_template
@@ -507,7 +540,7 @@ msgstr "تعليق"
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report__applicable_filters_ids
 msgid "Applicable Filters"
-msgstr ""
+msgstr "الفلاتر القابلة للتطبيق"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_comparison
@@ -519,7 +552,7 @@ msgstr "تطبيق"
 #: code:addons/account_reports/models/account_report.py:770
 #, python-format
 msgid "As of %s"
-msgstr "اعتبارا من %s"
+msgstr "اعتبارًا من %s"
 
 #. module: account_reports
 #: selection:account.financial.html.report.line,special_date_changer:0
@@ -529,37 +562,37 @@ msgstr "في بداية الفترة"
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.line_caret_options
 msgid "Audit"
-msgstr ""
+msgstr "تدقيق"
 
 #. module: account_reports
 #: model:ir.ui.menu,name:account_reports.account_reports_audit_reports_menu
 msgid "Audit Reports"
-msgstr ""
+msgstr "تقارير التدقيق"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.template_followup_report
 msgid "Auto"
-msgstr "آلي"
+msgstr "تلقائي"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.view_account_financial_report_form
 msgid "Available Filters & Options"
-msgstr ""
+msgstr "الفلاتر والخيارات المتاحة"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_avgcre0
 msgid "Average creditors days"
-msgstr "متوسط أيام الدائنين "
+msgstr "متوسط أيام الدائنين"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_avdebt0
 msgid "Average debtors days"
-msgstr "متوسط أيام المدينين "
+msgstr "متوسط أيام المدينين"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.template_followup_report
 msgid "Bad debtor"
-msgstr ""
+msgstr "مدين سيئ"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_analytic_report.py:25
@@ -577,7 +610,7 @@ msgstr "الرصيد"
 #: model:ir.actions.client,name:account_reports.action_account_report_bs
 #: model:ir.ui.menu,name:account_reports.account_financial_html_report_menu_2
 msgid "Balance Sheet"
-msgstr "الميزانية العمومية"
+msgstr "ميزان المراجعة"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_bank_reconciliation_report.py:211
@@ -586,12 +619,12 @@ msgstr "الميزانية العمومية"
 #: model:ir.actions.client,name:account_reports.action_account_report_bank_reconciliation_with_journal
 #, python-format
 msgid "Bank Reconciliation"
-msgstr "تسوية البنك"
+msgstr "التسوية البنكية"
 
 #. module: account_reports
 #: model:ir.model,name:account_reports.model_account_bank_reconciliation_report
 msgid "Bank Reconciliation Report"
-msgstr ""
+msgstr "تقرير التسوية البنكية"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_bank_view0
@@ -607,7 +640,7 @@ msgstr "المبلغ الأساسي"
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report__date_range
 msgid "Based on date ranges"
-msgstr "ارتكازاً لفترة زمنية"
+msgstr "ارتكازًا لفترة زمنية"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_cash0
@@ -636,12 +669,12 @@ msgstr "كشف التدفقات النقدية"
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_opening_balance0
 msgid "Cash and cash equivalents, beginning of period"
-msgstr "النقد وما في حكمها، بداية الفترة"
+msgstr "النقد والنقد المعادل، بداية الفترة"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_closing_balance0
 msgid "Cash and cash equivalents, closing balance"
-msgstr "النقد وما في حكمه، والتوازن إغلاق"
+msgstr "النقد والنقد المعادل، الرصيد الختامي"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_financing0
@@ -651,7 +684,7 @@ msgstr "التدفقات النقدية من الأنشطة التمويلية"
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_investing0
 msgid "Cash flows from investing & extraordinary activities"
-msgstr "التدفقات النقدية من الأنشطة الاستثمارية وغير عادية"
+msgstr "التدفقات النقدية من الأنشطة الاستثمارية وغير العادية"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_operating0
@@ -668,29 +701,29 @@ msgstr "التدفقات النقدية من الأنشطة غير المصنف�
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_investing_in0
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_unclassified_in0
 msgid "Cash in"
-msgstr "النقدية في"
+msgstr "إيرادات"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_financing_out0
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_investing_out0
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_unclassified_out0
 msgid "Cash out"
-msgstr "المصروفات"
+msgstr "مصروفات"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_cash_spent0
 msgid "Cash paid for operating activities"
-msgstr ""
+msgstr "مصروفات الأنشطة التشغيلية"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_cash_received0
 msgid "Cash received"
-msgstr "المبلغ المستلم"
+msgstr "أرباح"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_cash_received0
 msgid "Cash received from operating activities"
-msgstr ""
+msgstr "أرباح الأنشطة التشغيلية"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_cash_spent0
@@ -705,7 +738,7 @@ msgstr "الفائض النقدي"
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.line_template_followup_report
 msgid "Change expected payment date"
-msgstr ""
+msgstr "تغيير تاريخ السداد المتوقع"
 
 #. module: account_reports
 #: model:ir.model,name:account_reports.model_account_coa_report
@@ -737,7 +770,7 @@ msgstr "الكود"
 #: code:addons/account_reports/models/account_general_ledger.py:30
 #, python-format
 msgid "Communication"
-msgstr "إتصالات"
+msgstr "اتصالات"
 
 #. module: account_reports
 #: model:ir.model,name:account_reports.model_res_company
@@ -759,12 +792,12 @@ msgstr "المؤسسة"
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.view_account_financial_report_line_form
 msgid "Computation"
-msgstr "أحسب/حساب"
+msgstr "احتساب"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_regulator0
 msgid "Computation Error: unexplained difference"
-msgstr ""
+msgstr "خطأ حسابي: فرق غير مبرر"
 
 #. module: account_reports
 #: model:ir.model,name:account_reports.model_res_config_settings
@@ -777,12 +810,12 @@ msgstr "ضبط الإعدادات"
 #: model:ir.ui.menu,name:account_reports.menu_action_account_report_cj
 #, python-format
 msgid "Consolidated Journals"
-msgstr ""
+msgstr "دفاتر اليومية الموحدة"
 
 #. module: account_reports
 #: model:ir.model,name:account_reports.model_account_consolidated_journal
 msgid "Consolidated Journals Report"
-msgstr ""
+msgstr "تقرير دفاتر اليومية الموحدة"
 
 #. module: account_reports
 #: model:ir.model,name:account_reports.model_res_partner
@@ -806,7 +839,7 @@ msgstr "تكاليف الدخل"
 msgid ""
 "Could not send mail to partner because it does not have any email address "
 "defined"
-msgstr ""
+msgstr "لم نستطع إرسال الرسالة للشريك، لا يوجد بريد إلكتروني محدد"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report__create_uid
@@ -828,7 +861,7 @@ msgstr "أنشئ في"
 #: code:addons/account_reports/models/account_financial_report.py:93
 #, python-format
 msgid "Crebit"
-msgstr ""
+msgstr "الدائن"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_consolidated_journals.py:50
@@ -859,39 +892,39 @@ msgstr "الأصول المتداولة"
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_current_liabilities0
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_current_liabilities1
 msgid "Current Liabilities"
-msgstr "الخصوم المتداولة"
+msgstr "التزامات جارية"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_current_year_earnings_line_2
 msgid "Current Year Allocated Earnings"
-msgstr ""
+msgstr "أرباح السنة الجارية المخصصة"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_current_year_earnings_line_1
 msgid "Current Year Earnings"
-msgstr "أرباح السنة الحالية"
+msgstr "أرباح السنة الجارية"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_current_year_earnings0
 msgid "Current Year Unallocated Earnings"
-msgstr ""
+msgstr "أرباح السنة الجارية غير المخصصة"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_ca_to_l0
 msgid "Current assets to liabilities"
-msgstr "الأصول الحالية إلى الخصوم"
+msgstr "نسبة الأصول المتداولة إلى الالتزامات"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_bank_reconciliation_report.py:155
 #, python-format
 msgid "Current balance of account %s"
-msgstr ""
+msgstr "الرصيد الحالي للحساب %s"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_bank_reconciliation_report.py:157
 #, python-format
 msgid "Current balance of accounts %s"
-msgstr ""
+msgstr "الرصيد الحالي للحسابات %s"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_comparison
@@ -903,7 +936,7 @@ msgstr "مُخصص"
 #: code:addons/account_reports/models/res_partner.py:87
 #, python-format
 msgid "Customer Ledger"
-msgstr ""
+msgstr "دفتر الأستاذ العام للعميل"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.followup_filter_info_template
@@ -913,7 +946,7 @@ msgstr "إشارة العميل:"
 #. module: account_reports
 #: model:ir.actions.client,name:account_reports.action_account_followup
 msgid "Customers Statement"
-msgstr "كشوف حساب العملاء"
+msgstr "كشوف حسابات العملاء"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_bank_reconciliation_report.py:22
@@ -927,14 +960,14 @@ msgstr "التاريخ"
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_comparison
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_date_filter
 msgid "Date :"
-msgstr "تاريخ :"
+msgstr "تاريخ:"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.template_followup_report
 msgid ""
 "Date at which Odoo will remind you to take care of that follow-up if you "
 "choose \"remind me later\" button."
-msgstr ""
+msgstr "تاريخ تذكير أودو لك بالانتهاء من المتابعة إذا اخترت زر \"ذكرني لاحقًا\"."
 
 #. module: account_reports
 #. openerp-web
@@ -942,7 +975,7 @@ msgstr ""
 #: code:addons/account_reports/static/src/js/account_reports.js:275
 #, python-format
 msgid "Date cannot be empty"
-msgstr ""
+msgstr "لا يمكن ترك خانة التاريخ فارغة"
 
 #. module: account_reports
 #: model:ir.model.fields,help:account_reports.field_account_move_line__next_action_date
@@ -950,8 +983,8 @@ msgid ""
 "Date where the next action should be taken for a receivable item. Usually, "
 "automatically set when sending reminders through the customer statement."
 msgstr ""
-"التاريخ الذي ينبغي فيه اتخاذ الإجراء التالي للبند المستحق. عادة، يتم تعيينه "
-"تلقائيا عند إرسال تذكير من خلال بيان العملاء."
+"التاريخ الذي ينبغي فيه اتخاذ الإجراء التالي للبند المستحق. عادةً، يتم تعيينه"
+" تلقائيا عند إرسال تذكير من خلال كشف حساب العميل."
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.followup_filter_info_template
@@ -963,7 +996,7 @@ msgstr "التاريخ:"
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_res_config_settings__days_between_two_followups
 msgid "Days between two follow-ups"
-msgstr ""
+msgstr "عدد الأيام بين كل مرتي متابعة"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_consolidated_journals.py:29
@@ -981,18 +1014,18 @@ msgstr "المدين"
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_depreciation0
 msgid "Depreciation"
-msgstr "إستهلاك"
+msgstr "إهلاك"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_detailed_net_profit0
 msgid "Detailed Net Profit"
-msgstr ""
+msgstr "صافي الربح بالتفصيل"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_consolidated_journals.py:86
 #, python-format
 msgid "Details per month"
-msgstr ""
+msgstr "التفاصيل في الشهر"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.account_reports_journal_dashboard_kanban_view_account_manager
@@ -1009,6 +1042,11 @@ msgid ""
 "  1) some bank statements being not yet encoded into Odoo\n"
 "  2) payments double-encoded"
 msgstr ""
+"الفرق بين الرصيد الدفتري الافتراضي والرصيد الختامي بآخر كشف حساب.\n"
+"\n"
+"إن لم يكن صفرًا، فقد يكون هذا لأن\n"
+"  1) بعض كشوفات حساب البنك لم تُدخل إلى أودو بعد\n"
+"  2) مدفوعات أُدخلت مرتين"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_aged_partner__display_name
@@ -1028,12 +1066,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_reports.field_account_report_footnote__display_name
 #: model:ir.model.fields,field_description:account_reports.field_account_report_manager__display_name
 msgid "Display Name"
-msgstr "اسم العرض"
+msgstr "الاسم المعروض"
 
 #. module: account_reports
 #: model:ir.model.fields,help:account_reports.field_account_financial_html_report__hierarchy_option
 msgid "Display the hierarchy choice in the report options"
-msgstr ""
+msgstr "عرض خيار التسلسل الهرمي في خيارات التقرير"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line__domain
@@ -1057,23 +1095,23 @@ msgstr "تاريخ الاستحقاق"
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.res_config_settings_view_form
 msgid "Duration between two reminders"
-msgstr ""
+msgstr "الفترة الزمنية بين تذكيرين"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_equity0
 msgid "EQUITY"
-msgstr "القيمة الراسمالية"
+msgstr "الملكية"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report__hierarchy_option
 msgid "Enable the hierarchy option"
-msgstr ""
+msgstr "تفعيل خيار التسلسل الهرمي"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_comparison
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_date_filter
 msgid "End Date :"
-msgstr "تاريخ النهاية :"
+msgstr "تاريخ النهاية:"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_date_filter
@@ -1094,7 +1132,7 @@ msgstr "نهاية الربع الماضي"
 #: code:addons/account_reports/models/account_followup_report.py:34
 #, python-format
 msgid "Excluded"
-msgstr ""
+msgstr "مستبعد"
 
 #. module: account_reports
 #: model:account.financial.html.report,name:account_reports.account_financial_report_executivesummary0
@@ -1121,7 +1159,7 @@ msgstr "تاريخ السداد المتوقع"
 #: code:addons/account_reports/models/res_partner.py:147
 #, python-format
 msgid "Expected pay date has been changed from %s to %s for invoice %s"
-msgstr ""
+msgstr "تم تغيير تاريخ السداد المتوقع من %s إلى %s للفاتورة %s"
 
 #. module: account_reports
 #: model:ir.model.fields,help:account_reports.field_account_move_line__expected_pay_date
@@ -1130,9 +1168,9 @@ msgid ""
 "if you had the customer on the phone and want to remember the date he "
 "promised he would pay)"
 msgstr ""
-"تاريخ الدفع المتوقع كما تم تعيينه يدويا من خلال بيان العميل (على سبيل "
-"المثال: إذا كان لديك العميل على الهاتف وتريد أن تتذكر التاريخ الذي وعد بأنه "
-"سيدفع)"
+"تاريخ السداد المتوقع كما تم تعيينه يدويًا من خلال كشف حساب العميل (على سبيل "
+"المثال: إذا كان العميل معك هاتفيًا وتريد أن تتذكر التاريخ الذي وعد بأنه "
+"سيدفع فيه)"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_expenses0
@@ -1145,17 +1183,17 @@ msgstr "المصروفات"
 #: code:addons/account_reports/models/account_report.py:701
 #, python-format
 msgid "Export (XLSX)"
-msgstr ""
+msgstr "تصدير (XLSX)"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.filter_info_template
 msgid "Filter:"
-msgstr ""
+msgstr "فلتر:"
 
 #. module: account_reports
 #: model:ir.model.fields,help:account_reports.field_account_financial_html_report__applicable_filters_ids
 msgid "Filters that can be used to filter and group lines in this report."
-msgstr ""
+msgstr "الفلاتر الممكن استخدامها لفلترة وتجميع البنود في هذا التقرير."
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line__financial_report_id
@@ -1187,53 +1225,53 @@ msgstr "مطوي"
 #. module: account_reports
 #: model:ir.model,name:account_reports.model_account_followup_report
 msgid "Follow-up Report"
-msgstr ""
+msgstr "تقرير المتابعة"
 
 #. module: account_reports
 #: model:ir.actions.act_window,name:account_reports.action_view_list_customer_statements
 #: model:ir.ui.menu,name:account_reports.customer_statements_menu
 msgid "Follow-up Reports"
-msgstr ""
+msgstr "تقارير المتابعة"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.customer_statements_tree_view
 msgid "Follow-up Reports Tree View"
-msgstr ""
+msgstr "عرض تقارير المتابعة بطريقة شجرية"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_followup_report.py:235
 #, python-format
 msgid "Follow-up email sent to %s"
-msgstr ""
+msgstr "تم إرسال رسالة المتابعة إلى %s"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_followup_report.py:257
 #, python-format
 msgid "Follow-up letter printed"
-msgstr ""
+msgstr "تم طباعة رسالة المتابعة"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.account_reports_journal_dashboard_kanban_view
 msgid "Follow-up reports"
-msgstr ""
+msgstr "تقارير المتابعة"
 
 #. module: account_reports
 #. openerp-web
 #: code:addons/account_reports/static/src/xml/account_report_template.xml:35
 #, python-format
 msgid "Follow-ups Done / Total Follow-ups"
-msgstr "المتابعات تم/مجموع المتابعة"
+msgstr "تمت المتابعات/مجموع المتابعات"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_followup_report.py:180
 #, python-format
 msgid "Followup Report"
-msgstr "متابعة التقرير"
+msgstr "تقرير المتابعة"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_res_partner__followup_status
 msgid "Followup status"
-msgstr ""
+msgstr "حالة المتابعة"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_report_manager__footnotes_ids
@@ -1243,7 +1281,7 @@ msgstr "التذييل"
 #. module: account_reports
 #: selection:account.financial.html.report.line,special_date_changer:0
 msgid "Force given dates for all accounts and account types"
-msgstr "التنفيذ نظرا مواعيد جميع الحسابات وأنواع الحسابات"
+msgstr "إعطاء قيمة إجبارية لمواعيد جميع الحسابات وأنواع الحسابات"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line__formulas
@@ -1257,21 +1295,23 @@ msgid ""
 "From %s \n"
 " to  %s"
 msgstr ""
+"من %s \n"
+" إلى  %s"
 
 #. module: account_reports
 #: selection:account.financial.html.report.line,special_date_changer:0
 msgid "From the beginning"
-msgstr "منذ البداية"
+msgstr "من البداية"
 
 #. module: account_reports
 #: selection:account.financial.html.report.line,special_date_changer:0
 msgid "From the beginning of the fiscal year"
-msgstr ""
+msgstr "من بداية السنة المالية"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_date_filter
 msgid "From:"
-msgstr ""
+msgstr "من:"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_general_ledger.py:453
@@ -1280,7 +1320,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:account_reports.line_caret_options
 #, python-format
 msgid "General Ledger"
-msgstr "دفتر الحسابات العام "
+msgstr "دفتر الأستاذ العام"
 
 #. module: account_reports
 #: model:ir.model,name:account_reports.model_account_general_ledger
@@ -1291,7 +1331,7 @@ msgstr "تقرير دفتر الحسابات العام"
 #: code:addons/account_reports/models/account_report.py:160
 #, python-format
 msgid "General Report"
-msgstr ""
+msgstr "التقرير العام"
 
 #. module: account_reports
 #: model:ir.actions.client,name:account_reports.action_account_report_gt
@@ -1302,7 +1342,7 @@ msgstr "تقرير الضرائب المبسط"
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.template_followup_report
 msgid "Good debtor"
-msgstr ""
+msgstr "مدين جيد"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_gross_profit0
@@ -1330,18 +1370,18 @@ msgstr "تجميع حسب"
 #: code:addons/account_reports/models/account_financial_report.py:981
 #, python-format
 msgid "Groupby should be a field from account.move.line"
-msgstr ""
+msgstr "ينبغي أن يكون \"التجميع حسب\" حقلًا من account.move.line"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_financial_report.py:831
 #, python-format
 msgid "Groupby should be a journal item field"
-msgstr ""
+msgstr "ينبغي أن يكون \"التجميع حسب\" حقلًا يتبع عناصر اليومية"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line__hide_if_zero
 msgid "Hide If Zero"
-msgstr ""
+msgstr "أخفها إن كانت صفرًا"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_extra_options
@@ -1376,13 +1416,13 @@ msgstr "المعرف"
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.followup_search_template
 msgid "In Need of Action"
-msgstr "في الحاجة إلى العمل"
+msgstr "بحاجة لإجراء"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.customer_statements_search_view
 #: selection:res.partner,followup_status:0
 msgid "In need of action"
-msgstr ""
+msgstr "بحاجة لإجراء"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_extra_options
@@ -1414,7 +1454,7 @@ msgstr "الرصيد الافتتاحي"
 #: code:addons/account_reports/static/src/xml/account_report_template.xml:43
 #, python-format
 msgid "Insert foot note here"
-msgstr "إدراج التذييل هنا"
+msgstr "إدراج ذيل هنا"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_move_line__internal_note
@@ -1424,14 +1464,14 @@ msgstr "ملاحظة داخلية"
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line__green_on_positive
 msgid "Is growth good when positive"
-msgstr "هو نمو جيد عندما يكون إيجابية"
+msgstr "هو نمو جيد عندما يكون إيجابيًا"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_aged_partner_balance.py:21
 #: code:addons/account_reports/models/account_partner_ledger.py:30
 #, python-format
 msgid "JRNL"
-msgstr "اليومية"
+msgstr "JRNL"
 
 #. module: account_reports
 #: model:ir.model,name:account_reports.model_account_move_line
@@ -1447,7 +1487,7 @@ msgstr "عناصر اليومية"
 #: code:addons/account_reports/models/account_report.py:309
 #, python-format
 msgid "Journal Items (%s)"
-msgstr ""
+msgstr "عناصر اليومية (%s)"
 
 #. module: account_reports
 #: model:ir.actions.server,name:account_reports.action_journal_items
@@ -1458,7 +1498,7 @@ msgstr "يومية البنود حسب الضرائب"
 #: code:addons/account_reports/models/account_consolidated_journals.py:29
 #, python-format
 msgid "Journal Name (Code)"
-msgstr ""
+msgstr "اسم اليومية (الكود)"
 
 #. module: account_reports
 #: model:ir.actions.act_window,name:account_reports.action_account_print_journal_menu
@@ -1474,18 +1514,18 @@ msgstr "دفاتر اليومية:"
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_liabilities_view0
 msgid "LIABILITIES"
-msgstr "الخصوم"
+msgstr "التزامات"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_liabilities_and_equity_view0
 msgid "LIABILITIES + EQUITY"
-msgstr ""
+msgstr "الالتزامات + الملكية"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_bank_reconciliation_report.py:188
 #, python-format
 msgid "Last Bank Statement Ending Balance"
-msgstr ""
+msgstr "آخر رصيد إقفال لكشف الحساب البنكي"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_date_filter
@@ -1541,7 +1581,7 @@ msgstr "آخر تحديث في"
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line__level
 msgid "Level"
-msgstr "المستوى"
+msgstr "مستوى"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_report_footnote__line
@@ -1558,17 +1598,17 @@ msgstr "البنود"
 #: code:addons/account_reports/models/account_partner_ledger.py:206
 #, python-format
 msgid "Load more... (%s remaining)"
-msgstr ""
+msgstr "تحميل المزيد... (متبقي %s("
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.view_account_financial_report_line_form
 msgid "Main Info"
-msgstr "معلومات الرئيسية"
+msgstr "المعلومات الرئيسية"
 
 #. module: account_reports
 #: model:ir.model,name:account_reports.model_account_report_manager
 msgid "Manage Summary and Footnotes of Reports"
-msgstr ""
+msgstr "إدارة الملخص وذيول التقارير"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_report_footnote__manager_id
@@ -1578,7 +1618,7 @@ msgstr "المدير"
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.template_followup_report
 msgid "Manual"
-msgstr "يدوى"
+msgstr "يدوي"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_partner_ledger.py:34
@@ -1589,12 +1629,12 @@ msgstr "رقم التطابق"
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report__generated_menu_id
 msgid "Menu Item"
-msgstr ""
+msgstr "عنصر في القائمة"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.res_config_settings_view_form
 msgid "Minimum"
-msgstr ""
+msgstr "الحد الأدنى"
 
 #. module: account_reports
 #: model:ir.model,name:account_reports.model_ir_module_module
@@ -1606,7 +1646,7 @@ msgstr "الوحدة البرمجية"
 #: code:addons/account_reports/models/account_generic_tax_report.py:22
 #, python-format
 msgid "NET"
-msgstr ""
+msgstr "صافي"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_general_ledger.py:431
@@ -1618,7 +1658,7 @@ msgstr "الاسم"
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_net_assets0
 msgid "Net Assets"
-msgstr ""
+msgstr "صافي الأصول"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_profit0
@@ -1634,7 +1674,7 @@ msgstr "صافي الأصول"
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_net_increase0
 msgid "Net increase in cash and cash equivalents"
-msgstr "صافي الزيادة في النقدية وما يكافئها"
+msgstr "صافي الزيادة في النقد والنقد المعادل"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_npmargin0
@@ -1644,7 +1684,7 @@ msgstr "صافي هامش الربح (صافي الربح / الدخل)"
 #. module: account_reports
 #: selection:account.financial.html.report.line,show_domain:0
 msgid "Never"
-msgstr "مطلقاً"
+msgstr "مطلقًا"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_move_line__next_action_date
@@ -1656,7 +1696,7 @@ msgstr "تاريخ الإجراء التالي"
 #: code:addons/account_reports/models/res_partner.py:154
 #, python-format
 msgid "Next action date: "
-msgstr "تاريخ الإجراء التالي"
+msgstr "تاريخ الإجراء التالي: "
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_comparison
@@ -1671,43 +1711,43 @@ msgstr "بلا وحدة"
 #. module: account_reports
 #: selection:res.partner,followup_status:0
 msgid "No action needed"
-msgstr ""
+msgstr "لا يوجد إجراء مطلوب"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_report.py:933
 #, python-format
 msgid "No comparison"
-msgstr ""
+msgstr "لا مقارنة"
 
 #. module: account_reports
 #: model_terms:ir.actions.act_window,help:account_reports.action_view_list_customer_statements
 msgid "No follow-up to send!"
-msgstr ""
+msgstr "لا يوجد متابعة تُرسل!"
 
 #. module: account_reports
 #. openerp-web
 #: code:addons/account_reports/static/src/xml/account_report_template.xml:23
 #, python-format
 msgid "No followup to send!"
-msgstr ""
+msgstr "لا يوجد متابعة تُرسل!"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.template_followup_report
 msgid "Normal debtor"
-msgstr ""
+msgstr "المدين العادي"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_aged_partner_balance.py:21
 #, python-format
 msgid "Not due on: %s"
-msgstr ""
+msgstr "لن يكون مستحقًا في:%s"
 
 #. module: account_reports
 #: model:ir.model.fields,help:account_reports.field_account_move_line__internal_note
 msgid ""
 "Note you can set through the customer statement about a receivable journal "
 "item"
-msgstr "لاحظ أنه يمكنك تعيين من خلال بيان العميل حول بند دفتر اليومية المستحق"
+msgstr "لاحظ أن بإمكانك من خلال كشف حساب العميل تشريع عنصر يومية مستحق"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_res_company__days_between_two_followups
@@ -1726,18 +1766,18 @@ msgstr "عدد الفترات:"
 msgid ""
 "Odoo will remind you to take care of this follow-up on the next reminder "
 "date."
-msgstr ""
+msgstr "سوف تذكرك أودو لكي تنهي هذه المتابعة في تاريخ التذكير القادم."
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_aged_partner_balance.py:22
 #, python-format
 msgid "Older"
-msgstr "اقدم"
+msgstr "أقدم"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_extra_options
 msgid "Only Show Unreconciled Entries"
-msgstr ""
+msgstr "عرض القيود غير المسواة فقط"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_income0
@@ -1748,7 +1788,7 @@ msgstr "الدخل التشغيلي"
 #: code:addons/account_reports/models/account_bank_reconciliation_report.py:163
 #, python-format
 msgid "Operations to Process"
-msgstr ""
+msgstr "العمليات المُراد إجراؤها"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_other_income0
@@ -1758,13 +1798,13 @@ msgstr "دخل آخر"
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.customer_statements_search_view
 msgid "Overdue Invoices"
-msgstr ""
+msgstr "فواتير متأخرة"
 
 #. module: account_reports
 #: code:addons/account_reports/models/res_partner.py:174
 #, python-format
 msgid "Overdue Payments for %s"
-msgstr ""
+msgstr "مدفوعات متأخرة لـ %s"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line__parent_id
@@ -1774,12 +1814,12 @@ msgstr "الأصل"
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report__parent_id
 msgid "Parent Menu"
-msgstr "القائمة الأصل"
+msgstr "القائمة الأصلية"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line__parent_path
 msgid "Parent Path"
-msgstr ""
+msgstr "المسار الأصلي"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_analytic_report.py:24
@@ -1792,7 +1832,7 @@ msgstr "الشريك"
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.filter_info_template
 msgid "Partner Categories:"
-msgstr ""
+msgstr "فئات الشركاء:"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_partner_ledger.py:228
@@ -1803,17 +1843,17 @@ msgstr ""
 #: model:ir.ui.menu,name:account_reports.menu_action_account_report_partner_ledger
 #, python-format
 msgid "Partner Ledger"
-msgstr "دفتر الشركاء"
+msgstr "دفتر الأستاذ العام للشركاء"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_res_partner__partner_ledger_label
 msgid "Partner Ledger Label"
-msgstr ""
+msgstr "عنوان دفتر الأستاذ العام للشركاء"
 
 #. module: account_reports
 #: model:ir.ui.menu,name:account_reports.account_reports_partners_reports_menu
 msgid "Partner Reports"
-msgstr ""
+msgstr "تقارير الشركاء"
 
 #. module: account_reports
 #. openerp-web
@@ -1837,7 +1877,7 @@ msgstr "الدائن"
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_current_liabilities_payable
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_creditors0
 msgid "Payables"
-msgstr "دائن"
+msgstr "الدائنون"
 
 #. module: account_reports
 #: selection:account.financial.html.report.line,figure_type:0
@@ -1853,13 +1893,13 @@ msgstr "الأداء"
 #: code:addons/account_reports/models/account_report.py:886
 #, python-format
 msgid "Please specify a start and end date."
-msgstr ""
+msgstr "برجاء تحديد تاريخ بدء وتاريخ انتهاء."
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_report.py:884
 #, python-format
 msgid "Please specify an end date."
-msgstr ""
+msgstr "برجاء تحديد تاريخ انتهاء."
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_fixed_assets_view0
@@ -1869,12 +1909,12 @@ msgstr "بالإضافة الى الأصول الثابتة"
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_non_current_assets_view0
 msgid "Plus Non-current Assets"
-msgstr ""
+msgstr "بالإضافة للأصول غير المتداولة"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_non_current_liabilities0
 msgid "Plus Non-current Liabilities"
-msgstr ""
+msgstr "بالإضافة للالتزامات غير الجارية"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_position0
@@ -1890,7 +1930,7 @@ msgstr "القيود المُرحلة فقط"
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_prepayements0
 msgid "Prepayments"
-msgstr "الدفعات المسبقة"
+msgstr "المصاريف المدفوعة مقدمًا"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_comparison
@@ -1900,52 +1940,52 @@ msgstr "الفترة السابقة"
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_previous_year_earnings0
 msgid "Previous Years Unallocated Earnings"
-msgstr ""
+msgstr "أرباح السنين الماضية غير المخصصة"
 
 #. module: account_reports
 #: model:ir.actions.report,name:account_reports.action_report_followup
 msgid "Print Follow-up Letter"
-msgstr ""
+msgstr "طباعة رسالة المتابعة"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line__print_on_new_page
 msgid "Print On New Page"
-msgstr ""
+msgstr "طباعة في صفحة جديدة"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_report.py:701
 #, python-format
 msgid "Print Preview"
-msgstr ""
+msgstr "طباعة المعاينة"
 
 #. module: account_reports
 #. openerp-web
 #: code:addons/account_reports/static/src/xml/account_report_template.xml:7
 #, python-format
 msgid "Print letter"
-msgstr ""
+msgstr "طباعة الرسالة"
 
 #. module: account_reports
 #: model:ir.actions.server,name:account_reports.action_account_reports_customer_statements_do_followup
 msgid "Process Follow-ups"
-msgstr ""
+msgstr "متابعات العملية"
 
 #. module: account_reports
 #: model:ir.actions.client,name:account_reports.action_account_report_pnl
 msgid "Profit And Loss"
-msgstr "الربح و الخسارة"
+msgstr "الربح والخسارة"
 
 #. module: account_reports
 #: model:account.financial.html.report,name:account_reports.account_financial_report_profitandloss0
 #: model:ir.actions.client,name:account_reports.account_financial_html_report_action_1
 #: model:ir.ui.menu,name:account_reports.account_financial_html_report_menu_1
 msgid "Profit and Loss"
-msgstr "الأرباح و الخسائر"
+msgstr "الأرباح والخسائر"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_profitability0
 msgid "Profitability"
-msgstr ""
+msgstr "ربحية"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_partner_ledger.py:18
@@ -1983,12 +2023,12 @@ msgstr "المرجع"
 #: code:addons/account_reports/static/src/xml/account_report_template.xml:13
 #, python-format
 msgid "Remind me later"
-msgstr ""
+msgstr "ذكرني لاحقًا"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.view_account_financial_report_form
 msgid "Report Definition"
-msgstr ""
+msgstr "تعريف التقرير"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.view_account_financial_report_line_form
@@ -2014,7 +2054,7 @@ msgstr "التقارير"
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_retained_earnings0
 msgid "Retained Earnings"
-msgstr ""
+msgstr "الأرباح المحتجزة"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_return_investment0
@@ -2024,7 +2064,7 @@ msgstr "العائد على الاستثمار (صافي الربح / الأصو
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_comparison
 msgid "Same Period Last Year"
-msgstr ""
+msgstr "نفس الفترة العام الماضي"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.main_template
@@ -2035,7 +2075,7 @@ msgstr "حفظ"
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.main_template
 msgid "Search account"
-msgstr ""
+msgstr "ابحث في الحساب"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line__name
@@ -2046,19 +2086,19 @@ msgstr "اسم القسم"
 #: model_terms:ir.ui.view,arch_db:account_reports.template_followup_report
 msgid ""
 "Select this option if you want to manually define the next reminder date."
-msgstr ""
+msgstr "اختر هذا الخيار إذا أردت تحديد تاريخ التذكير التالي يدويًا."
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.template_followup_report
 msgid "Send an email"
-msgstr ""
+msgstr "إرسال رسالة البريد الإلكتروني"
 
 #. module: account_reports
 #. openerp-web
 #: code:addons/account_reports/static/src/xml/account_report_template.xml:10
 #, python-format
 msgid "Send by email"
-msgstr "إرسال بالبريد"
+msgstr "إرسال بالبريد الإلكتروني"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line__sequence
@@ -2071,6 +2111,8 @@ msgid ""
 "Set to True to automatically filter out journal items that have the boolean "
 "field 'tax_exigible' set to False"
 msgstr ""
+"اجعل هذه القيمة صحيحة لتُستبعد تلقائيًا عناصر اليومية ذات القيمة المنطقية "
+"'tax_exigible' خطأ"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_st_cash_forecast0
@@ -2085,29 +2127,29 @@ msgstr "عرض أعمدة الدائن والمدين"
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line__show_domain
 msgid "Show Domain"
-msgstr ""
+msgstr "عرض النطاق"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report__unfold_all_filter
 msgid "Show unfold all filter"
-msgstr ""
+msgstr "عرض فلتر كشف الكل"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_followup_report.py:31
 #, python-format
 msgid "Source Document"
-msgstr "مستند المصدر"
+msgstr "المستند المصدر"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line__special_date_changer
 msgid "Special Date Changer"
-msgstr ""
+msgstr "مغير خاص للتاريخ"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_comparison
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_date_filter
 msgid "Start Date :"
-msgstr "تاريخ البداية :"
+msgstr "تاريخ البداية:"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_report_manager__summary
@@ -2119,7 +2161,7 @@ msgstr "الملخص"
 #: code:addons/account_reports/models/account_generic_tax_report.py:23
 #, python-format
 msgid "TAX"
-msgstr ""
+msgstr "الضريبة"
 
 #. module: account_reports
 #. openerp-web
@@ -2156,31 +2198,31 @@ msgstr "النص"
 #. module: account_reports
 #: model:ir.model.fields,help:account_reports.field_res_partner__payment_next_action_date
 msgid "The date before which no action should be taken."
-msgstr ""
+msgstr "التاريخ الذي لا تحتاج للقيام بأي إجراء قبله."
 
 #. module: account_reports
 #. openerp-web
 #: code:addons/account_reports/static/src/xml/account_report_template.xml:30
 #, python-format
 msgid "The follow-up report was successfully emailed!"
-msgstr ""
+msgstr "تم إرسال تقرير المتابعة بنجاح!"
 
 #. module: account_reports
 #: model:ir.model.fields,help:account_reports.field_account_financial_html_report__generated_menu_id
 msgid "The menu item generated for this report, or None if there isn't any."
-msgstr ""
+msgstr "عنصر القائمة المنشأ لهذا التقرير، ولا يأخذ قيمة إن لم توجد عناصر."
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.template_followup_report
 msgid ""
 "The next reminder date is computed based on what you have defined in the "
 "accounting settings."
-msgstr ""
+msgstr "يتم احتساب تاريخ التذكير القادم حسب اختياراتك في إعدادات المحاسبة."
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.main_template
 msgid "There are"
-msgstr ""
+msgstr "هناك"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_date_filter
@@ -2195,13 +2237,13 @@ msgstr "هذا الشهر"
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_date_filter
 msgid "This Quarter"
-msgstr ""
+msgstr "ربع السنة الجاري"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.res_config_settings_view_form
 msgid ""
 "This allows you to choose the position of totals in your financial reports."
-msgstr ""
+msgstr "يسمح لك هذا باختيار مكان الإجمالي في تقاريرك المالية."
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_date_filter
@@ -2228,7 +2270,7 @@ msgstr "الإجمالي"
 #: code:addons/account_reports/models/account_general_ledger.py:394
 #, python-format
 msgid "Total "
-msgstr "الإجمالي"
+msgstr "الإجمالي "
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_followup_report.py:35
@@ -2249,7 +2291,7 @@ msgstr "الإجمالي المتأخر"
 #: code:addons/account_reports/models/account_bank_reconciliation_report.py:42
 #, python-format
 msgid "Total Virtual GL Balance"
-msgstr ""
+msgstr "إجمالي الرصيد الدفتري الافتراضي"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_report_coa.py:149
@@ -2267,7 +2309,7 @@ msgstr "النوع"
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_unaffected_earnings0
 msgid "Unallocated Earnings"
-msgstr ""
+msgstr "أرباح غير مخصصة"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_financial_report.py:45
@@ -2280,22 +2322,22 @@ msgstr "غير محدد"
 #: code:addons/account_reports/models/account_bank_reconciliation_report.py:189
 #, python-format
 msgid "Unexplained Difference"
-msgstr ""
+msgstr "فرق غير مبرر"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_extra_options
 msgid "Unfold"
-msgstr ""
+msgstr "كشف"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_extra_options
 msgid "Unfold All"
-msgstr ""
+msgstr "كشف الكل"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.line_template
 msgid "Unfolded"
-msgstr ""
+msgstr "مكشوف"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_extra_options
@@ -2311,7 +2353,7 @@ msgstr ""
 #: code:addons/account_reports/models/account_bank_reconciliation_report.py:166
 #, python-format
 msgid "Unreconciled Bank Statement Lines"
-msgstr ""
+msgstr "بنود كشف الحساب غير المُسوى"
 
 #. module: account_reports
 #: selection:account.financial.html.report.line,special_date_changer:0
@@ -2322,13 +2364,13 @@ msgstr "استخدم التواريخ المحددة"
 #: code:addons/account_reports/models/account_bank_reconciliation_report.py:174
 #, python-format
 msgid "Validated Payments not Linked with a Bank Statement Line"
-msgstr ""
+msgstr "المدفوعات المعتمدة غير المرتبطة ببند كشف حساب بنكي"
 
 #. module: account_reports
 #: code:addons/account_reports/models/res_partner.py:85
 #, python-format
 msgid "Vendor Ledger"
-msgstr ""
+msgstr "دفتر الأستاذ العام للمورد"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.line_caret_options
@@ -2338,7 +2380,7 @@ msgstr "عرض كشف الحساب"
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.line_caret_options
 msgid "View Bill"
-msgstr ""
+msgstr "عرض الفاتورة"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.line_caret_options
@@ -2358,7 +2400,7 @@ msgstr "عرض قيد اليومية"
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.line_caret_options
 msgid "View Partner"
-msgstr ""
+msgstr "عرض الشريك"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.line_caret_options
@@ -2369,14 +2411,14 @@ msgstr "عرض السداد"
 #: code:addons/account_reports/models/account_bank_reconciliation_report.py:151
 #, python-format
 msgid "Virtual GL Balance"
-msgstr ""
+msgstr "الرصيد الدفتري الافتراضي"
 
 #. module: account_reports
 #: model:ir.model.fields,help:account_reports.field_account_financial_html_report_line__print_on_new_page
 msgid ""
 "When checked this line and everything after it will be printed on a new "
 "page."
-msgstr ""
+msgstr "عند تحديد هذا، ستمم طباعة هذا السطر وكل ما يليه في صفحة جديدة."
 
 #. module: account_reports
 #: model:ir.model.fields,help:account_reports.field_res_company__totals_below_sections
@@ -2384,7 +2426,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:account_reports.res_config_settings_view_form
 msgid ""
 "When ticked, totals and subtotals appear below the sections of the report."
-msgstr ""
+msgstr "عند تحديد هذا، ستُعرض المجاميع والمجاميع الفرعية تحت أقسام التقرير."
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.filter_info_template
@@ -2400,83 +2442,83 @@ msgstr "مع الفواتير المتأخرة"
 #. module: account_reports
 #: selection:res.partner,followup_status:0
 msgid "With overdue invoices"
-msgstr ""
+msgstr "مع الفواتير المتأخرة"
 
 #. module: account_reports
 #. openerp-web
 #: code:addons/account_reports/static/src/js/followup_form/followup_form_controller.js:69
 #, python-format
 msgid "You are done with the follow-ups!<br/>You have skipped %s partner(s)."
-msgstr ""
+msgstr "لقد أنهيت المتابعة! <br/>لقد تجاوزت الشركاء %s."
 
 #. module: account_reports
 #: code:addons/account_reports/models/res_partner.py:147
 #, python-format
 msgid "any"
-msgstr ""
+msgstr "أي"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.res_config_settings_view_form
 msgid "days between each reminder"
-msgstr ""
+msgstr "أيام بين كل مرتي تذكير"
 
 #. module: account_reports
 #: model:ir.model.fields,help:account_reports.field_account_financial_html_report__analytic
 msgid "display the analytic filters"
-msgstr ""
+msgstr "عرض الفلاتر التحليلية"
 
 #. module: account_reports
 #: model:ir.model.fields,help:account_reports.field_account_financial_html_report__comparison
 msgid "display the comparison filter"
-msgstr ""
+msgstr "عرض فلتر المقارنة"
 
 #. module: account_reports
 #: model:ir.model.fields,help:account_reports.field_account_financial_html_report__show_journal_filter
 msgid "display the journal filter in the report"
-msgstr ""
+msgstr "عرض فلتر دفتر اليوميات في التقرير"
 
 #. module: account_reports
 #: model:ir.model.fields,help:account_reports.field_account_financial_html_report__cash_basis
 msgid "display the option to switch to cash basis mode"
-msgstr ""
+msgstr "عرض خيار الانتقال لنظام الأساس النقدي"
 
 #. module: account_reports
 #: model:ir.model.fields,help:account_reports.field_account_financial_html_report__unfold_all_filter
 msgid "display the unfold all options in report"
-msgstr ""
+msgstr "عرض خيارات كشف الكل في التقرير"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_financial_report.py:923
 #, python-format
 msgid "n/a"
-msgstr "غير ممكن"
+msgstr "غير محدد"
 
 #. module: account_reports
 #: model:ir.model.fields,help:account_reports.field_account_report_manager__report_name
 msgid "name of the model of the report"
-msgstr ""
+msgstr "اسم كائن التقرير"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.main_template
 msgid "prior or included in this period."
-msgstr ""
+msgstr "قبل أو أثناء هذه الفترة."
 
 #. module: account_reports
 #: model:ir.model.fields,help:account_reports.field_account_financial_html_report__date_range
 msgid "specify if the report use date_range or single date"
-msgstr ""
+msgstr "يحدد ما إن كان التقرير يستخدم date_range أم تاريخ منفرد"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_date_filter
 msgid "to:"
-msgstr ""
+msgstr "إلى:"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.main_template
 msgid "unposted Journal Entries"
-msgstr ""
+msgstr "قيود يومية غير مُرحلة"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.line_template_general_ledger_report
 msgid "⇒ journal items"
-msgstr ""
+msgstr "-> عناصر دفتر اليومية"

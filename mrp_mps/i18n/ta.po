@@ -5,6 +5,7 @@
 # Translators:
 # Bagavathikumar Ramakrishnan <bagavathikumar@gmail.com>, 2019
 # Abul Hassan M I <miabulhassan@gmail.com>, 2019
+# Alagappan Karthikeyan <me@karthik.sg>, 2019
 # 
 msgid ""
 msgstr ""
@@ -12,7 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-15 15:18+0000\n"
 "PO-Revision-Date: 2018-08-24 11:38+0000\n"
-"Last-Translator: Abul Hassan M I <miabulhassan@gmail.com>, 2019\n"
+"Last-Translator: Alagappan Karthikeyan <me@karthik.sg>, 2019\n"
 "Language-Team: Tamil (https://www.transifex.com/odoo/teams/41243/ta/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -106,7 +107,7 @@ msgstr "நிறுவனம்"
 #. module: mrp_mps
 #: model:ir.model,name:mrp_mps.model_res_config_settings
 msgid "Config Settings"
-msgstr ""
+msgstr "கட்டமைப்பு அமைப்புகள்"
 
 #. module: mrp_mps
 #: model:ir.model.fields,field_description:mrp_mps.field_mrp_mps_report__create_uid
@@ -168,7 +169,7 @@ msgstr "காட்சி பெயர்"
 #. module: mrp_mps
 #: selection:sale.forecast,state:0
 msgid "Done"
-msgstr ""
+msgstr "முடிந்தது"
 
 #. module: mrp_mps
 #: selection:sale.forecast,state:0
@@ -280,7 +281,7 @@ msgstr ""
 #. module: mrp_mps
 #: selection:sale.forecast,mode:0
 msgid "Manual"
-msgstr ""
+msgstr "கையேடு"
 
 #. module: mrp_mps
 #: model:ir.model.fields,field_description:mrp_mps.field_res_company__manufacturing_period
@@ -327,7 +328,7 @@ msgstr ""
 #. module: mrp_mps
 #: model:ir.model.fields,field_description:mrp_mps.field_mrp_mps_report__period
 msgid "Period"
-msgstr ""
+msgstr "காலம்"
 
 #. module: mrp_mps
 #. openerp-web
@@ -376,7 +377,7 @@ msgstr ""
 #. module: mrp_mps
 #: model_terms:ir.ui.view,arch_db:mrp_mps.product_product_view_form_mps
 msgid "Save"
-msgstr ""
+msgstr "சேமி"
 
 #. module: mrp_mps
 #. openerp-web
@@ -389,7 +390,7 @@ msgstr ""
 #. module: mrp_mps
 #: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast__state
 msgid "State"
-msgstr ""
+msgstr "நிலை"
 
 #. module: mrp_mps
 #: model:ir.model,name:mrp_mps.model_stock_rule

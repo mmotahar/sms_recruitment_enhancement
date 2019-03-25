@@ -5,6 +5,7 @@
 # Translators:
 # Bagavathikumar Ramakrishnan <bagavathikumar@gmail.com>, 2019
 # Abul Hassan M I <miabulhassan@gmail.com>, 2019
+# Alagappan Karthikeyan <me@karthik.sg>, 2019
 # 
 msgid ""
 msgstr ""
@@ -12,7 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-21 14:06+0000\n"
 "PO-Revision-Date: 2018-08-24 11:36+0000\n"
-"Last-Translator: Abul Hassan M I <miabulhassan@gmail.com>, 2019\n"
+"Last-Translator: Alagappan Karthikeyan <me@karthik.sg>, 2019\n"
 "Language-Team: Tamil (https://www.transifex.com/odoo/teams/41243/ta/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,137 +24,137 @@ msgstr ""
 #. module: account_online_sync
 #: model_terms:ir.ui.view,arch_db:account_online_sync.view_account_online_wizard_form
 msgid "\" bank accounts have been retrieved."
-msgstr ""
+msgstr "வங்கி கணக்குகள் மீட்டெடுக்கப்பட்டுள்ளன."
 
 #. module: account_online_sync
 #: model_terms:ir.ui.view,arch_db:account_online_sync.view_account_online_wizard_form
 msgid "<strong>Ooops</strong> It would seems that the process to"
-msgstr ""
+msgstr "  இது செயல்முறை என்று தெரிகிறது"
 
 #. module: account_online_sync
 #: model_terms:ir.ui.view,arch_db:account_online_sync.view_account_online_wizard_form
 msgid "<strong>Ooops</strong> We could not"
-msgstr ""
+msgstr "நாம் முடியவில்லை"
 
 #. module: account_online_sync
 #: model_terms:ir.ui.view,arch_db:account_online_sync.view_account_online_wizard_form
 msgid "<strong>Success!</strong> Your account has been succesfully refreshed."
-msgstr ""
+msgstr "  உங்கள் கணக்கு வெற்றிகரமாக புதுப்பிக்கப்பட்டது."
 
 #. module: account_online_sync
 #: model_terms:ir.ui.view,arch_db:account_online_sync.view_account_online_wizard_form
 msgid "<strong>Success!</strong> Your account has been succesfully updated."
-msgstr ""
+msgstr "  உங்கள் கணக்கு வெற்றிகரமாக புதுப்பிக்கப்பட்டது"
 
 #. module: account_online_sync
 #: model_terms:ir.ui.view,arch_db:account_online_sync.view_account_online_wizard_form
 msgid ""
 "<strong>Well done!</strong> Your banking institution is now connected to "
 "Odoo."
-msgstr ""
+msgstr "உங்கள் வங்கி நிறுவனம் இப்போது Odoo உடன் இணைக்கப்பட்டுள்ளது."
 
 #. module: account_online_sync
 #: model_terms:ir.ui.view,arch_db:account_online_sync.view_account_online_wizard_form
 msgid "A total of \""
-msgstr ""
+msgstr "மொத்தம் \""
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal__account_number
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_link_wizard__account_number
 msgid "Account Number"
-msgstr ""
+msgstr "கணக்கு எண்"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider__account_online_journal_ids
 msgid "Account Online Journal"
-msgstr ""
+msgstr "கணக்கு ஆன்லைன் ஜர்னல்"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_journal__account_online_provider_id
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal__account_online_provider_id
 msgid "Account Online Provider"
-msgstr ""
+msgstr "கணக்கு ஆன்லைன் வழங்குநர்"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_link_wizard__account_online_wizard_id
 msgid "Account Online Wizard"
-msgstr ""
+msgstr "கணக்கு ஆன்லைன் வழிகாட்டி"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_link_wizard__name
 msgid "Account name"
-msgstr ""
+msgstr "கணக்கின் பெயர்"
 
 #. module: account_online_sync
 #: model:ir.actions.server,name:account_online_sync.online_sync_cron_ir_actions_server
 #: model:ir.cron,cron_name:account_online_sync.online_sync_cron
 #: model:ir.cron,name:account_online_sync.online_sync_cron
 msgid "Account: Journal online sync"
-msgstr ""
+msgstr "கணக்கு: ஜர்னல் ஆன்லைன் ஒத்திசைவு"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_link_wizard__action
 msgid "Action"
-msgstr ""
+msgstr "அதிரடி"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider__message_needaction
 msgid "Action Needed"
-msgstr ""
+msgstr "செயல் தேவை"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider__action_required
 msgid "Action Required"
-msgstr ""
+msgstr "செயல் தேவை"
 
 #. module: account_online_sync
 #: code:addons/account_online_sync/models/online_sync.py:360
 #, python-format
 msgid "Add a Bank Account"
-msgstr ""
+msgstr "வங்கி கணக்கைச் சேர்க்கவும்"
 
 #. module: account_online_sync
 #: model_terms:ir.ui.view,arch_db:account_online_sync.online_provider_account_form_view
 msgid "Additional information"
-msgstr ""
+msgstr "கூடுதல் தகவல்"
 
 #. module: account_online_sync
 #: code:addons/account_online_sync/models/online_sync.py:62
 #, python-format
 msgid "An error occurred during online synchronization"
-msgstr ""
+msgstr "ஆன்லைன் ஒத்திசைவின் போது பிழை ஏற்பட்டது"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider__message_attachment_count
 msgid "Attachment Count"
-msgstr ""
+msgstr "இணைப்பு எண்ணிக்கை"
 
 #. module: account_online_sync
 #: code:addons/account_online_sync/models/online_sync.py:317
 #, python-format
 msgid "Automated Bank Synchronization"
-msgstr ""
+msgstr "தானியங்கி வங்கி ஒருங்கிணைப்பு"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal__balance
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_link_wizard__balance
 msgid "Balance"
-msgstr ""
+msgstr "இருப்பு"
 
 #. module: account_online_sync
 #: model_terms:ir.ui.view,arch_db:account_online_sync.online_provider_account_form_view
 msgid "Bank Accounts"
-msgstr ""
+msgstr "வங்கி கணக்குகள்"
 
 #. module: account_online_sync
 #: model:ir.model,name:account_online_sync.model_account_bank_statement
 msgid "Bank Statement"
-msgstr ""
+msgstr "வங்கி அறிக்கை"
 
 #. module: account_online_sync
 #: model:ir.model,name:account_online_sync.model_account_bank_statement_line
 msgid "Bank Statement Line"
-msgstr ""
+msgstr "வங்கி அறிக்கை வரி"
 
 #. module: account_online_sync
 #: model_terms:ir.ui.view,arch_db:account_online_sync.view_account_online_wizard_form
@@ -163,12 +164,12 @@ msgstr "ரத்து"
 #. module: account_online_sync
 #: selection:account.online.wizard,status:0
 msgid "Cancelled"
-msgstr ""
+msgstr "ரத்து"
 
 #. module: account_online_sync
 #: model:ir.model.fields,help:account_online_sync.field_account_online_provider__status_code
 msgid "Code to identify problem"
-msgstr ""
+msgstr "சிக்கலை அடையாளம் காண கோட்"
 
 #. module: account_online_sync
 #: model:ir.model,name:account_online_sync.model_res_company
@@ -184,7 +185,7 @@ msgstr "நிறுவனம்"
 #: model_terms:ir.ui.view,arch_db:account_online_sync.account_bank_journal_form_inherit_online_sync
 #: model_terms:ir.ui.view,arch_db:account_online_sync.account_journal_form_inherit_online_sync
 msgid "Configure"
-msgstr ""
+msgstr "கட்டமைக்கவும்"
 
 #. module: account_online_sync
 #: model:ir.model,name:account_online_sync.model_res_partner
@@ -195,12 +196,12 @@ msgstr "தொடர்பு"
 #: code:addons/account_online_sync/models/online_sync.py:161
 #, python-format
 msgid "Create a Bank Account"
-msgstr ""
+msgstr "ஒரு வங்கி கணக்கு உருவாக்கவும்"
 
 #. module: account_online_sync
 #: selection:account.online.link.wizard,action:0
 msgid "Create new journal"
-msgstr ""
+msgstr "புதிய பத்திரிகை உருவாக்கவும்"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal__create_uid
@@ -221,7 +222,7 @@ msgstr "உருவாக்கப்பட்ட தேதி"
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_journal__bank_statement_creation
 msgid "Creation of Bank Statements"
-msgstr ""
+msgstr "வங்கி அறிக்கைகளை உருவாக்குதல்"
 
 #. module: account_online_sync
 #: model:ir.model.fields,help:account_online_sync.field_account_journal__bank_statement_creation
@@ -230,6 +231,9 @@ msgid ""
 "                                               will be created when fetching new transactions\n"
 "                                               from your bank account."
 msgstr ""
+"ஒரு புதிய வங்கி அறிக்கை போது வரையறுக்கிறது\n"
+"புதிய பரிமாற்றங்களைப் பெறும்போது உருவாக்கப்படும்\n"
+"உங்கள் வங்கிக் கணக்கிலிருந்து."
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal__display_name
@@ -242,42 +246,42 @@ msgstr "காட்சி பெயர்"
 #. module: account_online_sync
 #: selection:account.online.link.wizard,action:0
 msgid "Do not link"
-msgstr ""
+msgstr "இணைக்க வேண்டாம்"
 
 #. module: account_online_sync
 #: model_terms:ir.ui.view,arch_db:account_online_sync.view_account_online_wizard_form
 msgid "Done"
-msgstr ""
+msgstr "முடிந்தது"
 
 #. module: account_online_sync
 #: selection:account.online.wizard,status:0
 msgid "Failed"
-msgstr ""
+msgstr "தோல்வி"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard__sync_date
 msgid "Fetch transaction from"
-msgstr ""
+msgstr "இருந்து பரிவர்த்தனை எடு"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider__message_follower_ids
 msgid "Followers"
-msgstr ""
+msgstr "பின்பற்றுபவர்கள்"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider__message_channel_ids
 msgid "Followers (Channels)"
-msgstr ""
+msgstr "பின்தொடர்பவர்கள் (சேனல்கள்)"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider__message_partner_ids
 msgid "Followers (Partners)"
-msgstr ""
+msgstr "பின்பற்றுபவர்கள் (பங்குதாரர்கள்)"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard__hide_table
 msgid "Hide Table"
-msgstr ""
+msgstr "அட்டவணையை மறை"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal__id
@@ -293,41 +297,45 @@ msgid ""
 "ID of the banking institution in third party server used for debugging "
 "purpose"
 msgstr ""
+"மூன்றாம் தரப்பு சர்வரில் வங்கி நிறுவனத்தின் ஐடியைக் குறிக்க "
+"பயன்படுத்தப்படுகிறது"
 
 #. module: account_online_sync
 #: model:ir.model.fields,help:account_online_sync.field_account_online_provider__provider_account_identifier
 msgid "ID used to identify provider account in third party server"
 msgstr ""
+"மூன்றாம் தரப்பு சேவையகத்தில் வழங்குநர் கணக்கை அடையாளம் காண பயன்படுத்தப்படும்"
+" ஐடி"
 
 #. module: account_online_sync
 #: model:ir.model.fields,help:account_online_sync.field_account_online_provider__message_unread
 msgid "If checked new messages require your attention."
-msgstr ""
+msgstr "சோதனை செய்தால் புதிய செய்திகளுக்கு உங்கள் கவனம் தேவை."
 
 #. module: account_online_sync
 #: model:ir.model.fields,help:account_online_sync.field_account_online_provider__message_needaction
 msgid "If checked, new messages require your attention."
-msgstr ""
+msgstr "சரிபார்க்கப்பட்டால், புதிய செய்திகளுக்கு உங்கள் கவனம் தேவை."
 
 #. module: account_online_sync
 #: model:ir.model.fields,help:account_online_sync.field_account_online_provider__message_has_error
 msgid "If checked, some messages have a delivery error."
-msgstr ""
+msgstr "சரிபார்க்கப்பட்டால், சில செய்திகளுக்கு ஒரு பிழை ஏற்பட்டது."
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider__name
 msgid "Institution"
-msgstr ""
+msgstr "நிறுவனம்"
 
 #. module: account_online_sync
 #: model:ir.model,name:account_online_sync.model_account_online_journal
 msgid "Interface for Online Account Journal"
-msgstr ""
+msgstr "ஆன்லைன் கணக்கு ஜர்னலுக்கான இடைமுகம்"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider__message_is_follower
 msgid "Is Follower"
-msgstr ""
+msgstr "பின்பற்றுபவர்"
 
 #. module: account_online_sync
 #: code:addons/account_online_sync/models/online_sync.py:107
@@ -336,17 +344,17 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_link_wizard__journal_id
 #, python-format
 msgid "Journal"
-msgstr ""
+msgstr "ஜர்னல்"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal__name
 msgid "Journal Name"
-msgstr ""
+msgstr "பத்திரிகை பெயர்"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_link_wizard__journal_statements_creation
 msgid "Journal Statements Creation"
-msgstr ""
+msgstr "ஜர்னல் அறிக்கைகள் உருவாக்கம்"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal____last_update
@@ -359,7 +367,7 @@ msgstr "கடைசியாக திருத்திய"
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider__last_refresh
 msgid "Last Refresh"
-msgstr ""
+msgstr "கடைசி புதுப்பிப்பு"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal__write_uid
@@ -380,64 +388,64 @@ msgstr "கடைசியாக புதுப்பிக்கப்பட�
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal__last_sync
 msgid "Last synchronization"
-msgstr ""
+msgstr "கடைசி ஒத்திசைவு"
 
 #. module: account_online_sync
 #: model:ir.model,name:account_online_sync.model_account_online_link_wizard
 msgid "Link synchronized account to a journal"
-msgstr ""
+msgstr "ஒரு பத்திரிகைக்கு ஒத்திசைக்கப்பட்ட கணக்கை இணைக்கவும்"
 
 #. module: account_online_sync
 #: selection:account.online.link.wizard,action:0
 msgid "Link to existing journal"
-msgstr ""
+msgstr "ஏற்கனவே இருக்கும் பத்திரிகைக்கு இணைப்பு"
 
 #. module: account_online_sync
 #: model_terms:ir.actions.act_window,help:account_online_sync.action_online_provider_account
 msgid "List of bank(s) providing online synchronization"
-msgstr ""
+msgstr "ஆன்லைன் ஒத்திசைவு வழங்கும் வங்கி (கள்) பட்டியல்"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider__message_main_attachment_id
 msgid "Main Attachment"
-msgstr ""
+msgstr "முக்கிய இணைப்பு"
 
 #. module: account_online_sync
 #: model_terms:ir.ui.view,arch_db:account_online_sync.online_provider_account_form_view
 msgid "Manual Refresh"
-msgstr ""
+msgstr "கையேடு புதுப்பிப்பு"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider__message
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard__message
 msgid "Message"
-msgstr ""
+msgstr "செய்தி"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider__message_has_error
 msgid "Message Delivery error"
-msgstr ""
+msgstr "செய்தி வழங்கல் பிழை"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider__message_ids
 msgid "Messages"
-msgstr ""
+msgstr "செய்திகள்"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard__method
 msgid "Method"
-msgstr ""
+msgstr "செய்முறை"
 
 #. module: account_online_sync
 #: model_terms:ir.ui.view,arch_db:account_online_sync.account_journal_dashboard_inherit_online_sync
 msgid "Next sync:"
-msgstr ""
+msgstr "அடுத்த ஒத்திசைவு:"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_journal__next_synchronization
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider__next_refresh
 msgid "Next synchronization"
-msgstr ""
+msgstr "அடுத்த ஒத்திசைவு"
 
 #. module: account_online_sync
 #: code:addons/account_online_sync/models/company.py:21
@@ -446,73 +454,75 @@ msgid ""
 "No bank journal could be found! Please install a chart of accounts first, in"
 " order to create one."
 msgstr ""
+"இல்லை வங்கி பத்திரிகை காணப்படவில்லை! ஒன்றை உருவாக்க, முதலில் கணக்குகளின் "
+"விளக்கப்படம் ஒன்றை நிறுவவும்."
 
 #. module: account_online_sync
 #: code:addons/account_online_sync/models/online_sync.py:109
 #, python-format
 msgid "No new transactions have been loaded in the system."
-msgstr ""
+msgstr "கணினியில் புதிய பரிமாற்றங்கள் ஏதும் இல்லை."
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard__number_added
 msgid "Number Added"
-msgstr ""
+msgstr "எண் சேர்க்கப்பட்டது"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider__message_needaction_counter
 msgid "Number of Actions"
-msgstr ""
+msgstr "செயல்கள் எண்ணிக்கை"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider__message_has_error_counter
 msgid "Number of error"
-msgstr ""
+msgstr "பிழை எண்ணிக்கை"
 
 #. module: account_online_sync
 #: model:ir.model.fields,help:account_online_sync.field_account_online_provider__message_needaction_counter
 msgid "Number of messages which requires an action"
-msgstr ""
+msgstr "நடவடிக்கை தேவைப்படும் செய்திகளின் எண்ணிக்கை"
 
 #. module: account_online_sync
 #: model:ir.model.fields,help:account_online_sync.field_account_online_provider__message_has_error_counter
 msgid "Number of messages with delivery error"
-msgstr ""
+msgstr "விநியோக பிழை கொண்ட செய்திகளின் எண்ணிக்கை"
 
 #. module: account_online_sync
 #: model:ir.model.fields,help:account_online_sync.field_account_online_provider__message_unread_counter
 msgid "Number of unread messages"
-msgstr ""
+msgstr "படிக்காத செய்திகளின் எண்ணிக்கை"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_journal__account_online_journal_id
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_link_wizard__online_account_id
 msgid "Online Account"
-msgstr ""
+msgstr "ஆன்லைன் கணக்கு"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_bank_statement_line__online_identifier
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal__online_identifier
 msgid "Online Identifier"
-msgstr ""
+msgstr "ஆன்லைன் அடையாளங்காட்டி"
 
 #. module: account_online_sync
 #: model:ir.actions.act_window,name:account_online_sync.action_online_provider_account
 msgid "Online Institution Accounts"
-msgstr ""
+msgstr "ஆன்லைன் நிறுவன கணக்குகள்"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_bank_statement_line__online_partner_bank_account
 #: model:ir.model.fields,field_description:account_online_sync.field_res_partner__online_partner_bank_account
 #: model:ir.model.fields,field_description:account_online_sync.field_res_users__online_partner_bank_account
 msgid "Online Partner Bank Account"
-msgstr ""
+msgstr "ஆன்லைன் பார்ட்னர் வங்கி கணக்கு"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_bank_statement_line__online_partner_vendor_name
 #: model:ir.model.fields,field_description:account_online_sync.field_res_partner__online_partner_vendor_name
 #: model:ir.model.fields,field_description:account_online_sync.field_res_users__online_partner_vendor_name
 msgid "Online Partner Vendor Name"
-msgstr ""
+msgstr "ஆன்லைன் பார்ட்னர் விற்பனையாளர் பெயர்"
 
 #. module: account_online_sync
 #: code:addons/account_online_sync/models/online_sync.py:375
@@ -522,24 +532,24 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:account_online_sync.view_account_online_wizard_form
 #, python-format
 msgid "Online Synchronization"
-msgstr ""
+msgstr "ஆன்லைன் ஒருங்கிணைப்பு"
 
 #. module: account_online_sync
 #: code:addons/account_online_sync/models/online_sync.py:461
 #, python-format
 msgid "Opening statement: first synchronization"
-msgstr ""
+msgstr "திறக்கும் அறிக்கை: முதல் ஒத்திசைவு"
 
 #. module: account_online_sync
 #: selection:account.online.provider,provider_type:0
 msgid "Plaid"
-msgstr ""
+msgstr "பிளேசிட்"
 
 #. module: account_online_sync
 #: code:addons/account_online_sync/models/online_sync.py:82
 #, python-format
 msgid "Please enter at least a character for the search"
-msgstr ""
+msgstr "தேடலுக்கான குறைந்தது எழுத்தை உள்ளிடவும்"
 
 #. module: account_online_sync
 #: code:addons/account_online_sync/models/online_sync.py:285
@@ -548,90 +558,94 @@ msgid ""
 "Please link your accounts to a journal or select \"do not link\" as action "
 "to do"
 msgstr ""
+"தயவுசெய்து உங்கள் கணக்குகளை ஒரு பத்திரிகைக்கு இணைக்கவும் அல்லது செய்ய "
+"நடவடிக்கை \"இணைக்க வேண்டாம்\" என்பதைத் தேர்ந்தெடுக்கவும்"
 
 #. module: account_online_sync
 #: model_terms:ir.ui.view,arch_db:account_online_sync.account_journal_dashboard_inherit_online_sync
 msgid "Problem during synchronization"
-msgstr ""
+msgstr "ஒத்திசைவின் போது சிக்கல்"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal__provider_name
 msgid "Provider"
-msgstr ""
+msgstr "வழங்குநர்"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider__provider_account_identifier
 msgid "Provider Account Identifier"
-msgstr ""
+msgstr "கணக்கு அடையாளங்காட்டி வழங்குதல்"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider__provider_identifier
 msgid "Provider Identifier"
-msgstr ""
+msgstr "வழங்குநர் அடையாளங்காட்டி"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider__provider_type
 msgid "Provider Type"
-msgstr ""
+msgstr "வழங்குபவர் வகை"
 
 #. module: account_online_sync
 #: model:ir.model,name:account_online_sync.model_account_online_provider
 msgid "Provider for online account synchronization"
-msgstr ""
+msgstr "ஆன்லைன் கணக்கு ஒத்திசைவு வழங்குபவர்"
 
 #. module: account_online_sync
 #: code:addons/account_online_sync/models/online_sync.py:76
 #: code:addons/account_online_sync/models/online_sync.py:90
 #, python-format
 msgid "Server not reachable, please try again later"
-msgstr ""
+msgstr "சேவையகத்தை அணுக முடியவில்லை, பிறகு மீண்டும் முயற்சிக்கவும்"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard__status
 msgid "Status"
-msgstr ""
+msgstr "நிலைமை"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider__status_code
 msgid "Status Code"
-msgstr ""
+msgstr "நிலை கோட்"
 
 #. module: account_online_sync
 #: selection:account.online.wizard,status:0
 msgid "Success"
-msgstr ""
+msgstr "வெற்றி"
 
 #. module: account_online_sync
 #: model:ir.actions.act_window,name:account_online_sync.action_account_online_wizard_form
 msgid "Synchronization result"
-msgstr ""
+msgstr "ஒத்திசைவு முடிவு"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_journal__synchronization_status
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider__status
 msgid "Synchronization status"
-msgstr ""
+msgstr "ஒத்திசைவு நிலை"
 
 #. module: account_online_sync
 #: model_terms:ir.ui.view,arch_db:account_online_sync.account_journal_dashboard_inherit_online_sync
 #: model_terms:ir.ui.view,arch_db:account_online_sync.view_account_online_wizard_form
 msgid "Synchronize now"
-msgstr ""
+msgstr "இப்போது ஒத்திசை"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard__account_ids
 msgid "Synchronized accounts"
-msgstr ""
+msgstr "ஒத்திசைக்கப்பட்ட கணக்குகள்"
 
 #. module: account_online_sync
 #: model:ir.model.fields,help:account_online_sync.field_account_online_provider__message
 msgid "Techhnical message from third party provider that can help debugging"
 msgstr ""
+"பிழைதிருத்தம் செய்ய உதவும் மூன்றாம் தரப்பு வழங்குனரிடமிருந்து தொழில்நுட்ப "
+"செய்தி"
 
 #. module: account_online_sync
 #: model:ir.model.fields,help:account_online_sync.field_account_online_wizard__hide_table
 msgid "Technical field to hide table in view"
-msgstr ""
+msgstr "அட்டவணையை மறைக்க தொழில்நுட்ப துறை"
 
 #. module: account_online_sync
 #: model:ir.model.fields,help:account_online_sync.field_account_bank_statement_line__online_partner_bank_account
@@ -640,6 +654,8 @@ msgstr ""
 msgid ""
 "Technical field used to store information from plaid/yodlee to match partner"
 msgstr ""
+"பங்குதாரருடன் பொருந்தும் வகையில் திட்டமிடப்பட்ட / தகவல்களிடமிருந்து தகவலை "
+"சேமிக்க தொழில்நுட்பத் தொழில்நுட்பம் பயன்படுத்தப்படுகிறது"
 
 #. module: account_online_sync
 #: model:ir.model.fields,help:account_online_sync.field_account_bank_statement_line__online_partner_vendor_name
@@ -649,93 +665,96 @@ msgid ""
 "Technical field used to store information from plaid/yodlee to match partner"
 " (used when a purchase is made)"
 msgstr ""
+"பங்குதாரருடன் பொருந்தக் கூடிய தகவலை (கொள்முதல் செய்யப்படும் போது "
+"பயன்படுத்தப்படுகிறது) தகவலை சேமிக்க தொழில்நுட்ப தொழில்நுட்பம் "
+"பயன்படுத்தப்படுகிறது"
 
 #. module: account_online_sync
 #: model_terms:ir.ui.view,arch_db:account_online_sync.view_account_online_wizard_form
 msgid "The account has been linked to your bank journal."
-msgstr ""
+msgstr "கணக்கு உங்கள் வங்கிக் இதழுடன் இணைக்கப்பட்டுள்ளது."
 
 #. module: account_online_sync
 #: code:addons/account_online_sync/models/online_sync.py:63
 #, python-format
 msgid "The following error happened during the synchronization: %s"
-msgstr ""
+msgstr "ஒத்திசைவின் போது பின்வரும் பிழை நேர்ந்தது:"
 
 #. module: account_online_sync
 #: code:addons/account_online_sync/models/online_sync.py:105
 #, python-format
 msgid "The following transactions have been loaded in the system."
-msgstr ""
+msgstr "பின்வரும் பரிவர்த்தனைகள் கணினியில் ஏற்றப்பட்டுள்ளன."
 
 #. module: account_online_sync
 #: code:addons/account_online_sync/models/online_sync.py:74
 #: code:addons/account_online_sync/models/online_sync.py:88
 #, python-format
 msgid "Timeout: the server did not reply within 60s"
-msgstr ""
+msgstr "காலாவதியானது: 60 களில் சேவையகம் பதிலளிக்கவில்லை"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard__transactions
 msgid "Transactions"
-msgstr ""
+msgstr "பரிவர்த்தனைகள்"
 
 #. module: account_online_sync
 #: model:ir.model.fields,help:account_online_sync.field_account_online_provider__action_required
 msgid "True if user needs to take action by updating account"
-msgstr ""
+msgstr "கணக்கை புதுப்பிப்பதன் மூலம் பயனர் நடவடிக்கை எடுக்க வேண்டியது உண்மை"
 
 #. module: account_online_sync
 #: code:addons/account_online_sync/models/online_sync.py:201
 #, python-format
 msgid "Unimplemented"
-msgstr ""
+msgstr "செயல்படுத்தப்பட்டது"
 
 #. module: account_online_sync
 #: code:addons/account_online_sync/models/online_sync.py:117
 #, python-format
 msgid "Unknown reason"
-msgstr ""
+msgstr "தெரியாத காரணம்"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider__message_unread
 msgid "Unread Messages"
-msgstr ""
+msgstr "படிக்காத செய்திகள்"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider__message_unread_counter
 msgid "Unread Messages Counter"
-msgstr ""
+msgstr "படிக்காத செய்திகள்"
 
 #. module: account_online_sync
 #: model_terms:ir.ui.view,arch_db:account_online_sync.online_provider_account_form_view
 msgid "Update Credentials"
-msgstr ""
+msgstr "புதுப்பிப்புகளை புதுப்பி"
 
 #. module: account_online_sync
 #: model:ir.model.fields,help:account_online_sync.field_account_journal__synchronization_status
 #: model:ir.model.fields,help:account_online_sync.field_account_online_provider__status
 msgid "Update status of provider account"
-msgstr ""
+msgstr "வழங்குநர் கணக்கின் நிலையை புதுப்பிக்கவும்"
 
 #. module: account_online_sync
 #: model_terms:ir.ui.view,arch_db:account_online_sync.account_journal_dashboard_inherit_online_sync
 msgid "View problem"
-msgstr ""
+msgstr "சிக்கலைக் காண்க"
 
 #. module: account_online_sync
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider__website_message_ids
 msgid "Website Messages"
-msgstr ""
+msgstr "இணைய செய்திகள்"
 
 #. module: account_online_sync
 #: model:ir.model.fields,help:account_online_sync.field_account_online_provider__website_message_ids
 msgid "Website communication history"
-msgstr ""
+msgstr "வலைத்தள தகவல்தொடர்பு வரலாறு"
 
 #. module: account_online_sync
 #: model:ir.model,name:account_online_sync.model_account_online_wizard
 msgid "Wizard to link synchronized accounts to journal"
-msgstr ""
+msgstr "ஒத்திவைக்கப்பட்ட கணக்குகளை பத்திரிகையில் இணைக்க வழிகாட்டி"
 
 #. module: account_online_sync
 #: selection:account.online.provider,provider_type:0
@@ -748,63 +767,65 @@ msgid ""
 "You can associate those bank accounts to a journal in order to automatically"
 " retrieve the latest statements from your bank."
 msgstr ""
+"உங்கள் வங்கியிலிருந்து சமீபத்திய அறிக்கைகளை தானாக மீட்டெடுக்க, அந்த வங்கிக் "
+"கணக்குகளை ஒரு பத்திரிகைக்கு நீங்கள் தொடர்புபடுத்தலாம்."
 
 #. module: account_online_sync
 #: code:addons/account_online_sync/models/online_sync.py:287
 #, python-format
 msgid "You can not link two accounts to the same journal"
-msgstr ""
+msgstr "இரண்டு கணக்குகளை அதே பத்திரிகையில் இணைக்க முடியாது"
 
 #. module: account_online_sync
 #: selection:account.online.wizard,method:0
 msgid "add"
-msgstr ""
+msgstr "கூட்டு"
 
 #. module: account_online_sync
 #: model:ir.model.fields,help:account_online_sync.field_account_online_journal__balance
 #: model:ir.model.fields,help:account_online_sync.field_account_online_link_wizard__balance
 msgid "balance of the account sent by the third party provider"
-msgstr ""
+msgstr "மூன்றாம் தரப்பு வழங்குநரால் அனுப்பப்பட்ட கணக்கின் சமநிலை"
 
 #. module: account_online_sync
 #: selection:account.online.wizard,method:0
 msgid "edit"
-msgstr ""
+msgstr "தொகு"
 
 #. module: account_online_sync
 #: model:ir.model.fields,help:account_online_sync.field_account_online_journal__online_identifier
 msgid "id use to identify account in provider system"
-msgstr ""
+msgstr "வழங்குநர் அமைப்பில் கணக்கை அடையாளம் காண ஐடி பயன்பாடு"
 
 #. module: account_online_sync
 #: model:ir.model.fields,help:account_online_sync.field_account_online_journal__provider_name
 #: model:ir.model.fields,help:account_online_sync.field_account_online_provider__name
 msgid "name of the banking institution"
-msgstr ""
+msgstr "வங்கி நிறுவனங்களின் பெயர்"
 
 #. module: account_online_sync
 #: code:addons/account_online_sync/models/online_sync.py:507
 #, python-format
 msgid "online sync"
-msgstr ""
+msgstr "ஆன்லைன் ஒத்திசைவு"
 
 #. module: account_online_sync
 #: selection:account.online.wizard,method:0
 msgid "refresh"
-msgstr ""
+msgstr "புதுப்பிப்பு"
 
 #. module: account_online_sync
 #: code:addons/account_online_sync/models/online_sync.py:107
 #, python-format
 msgid "transactions loaded"
-msgstr ""
+msgstr "பரிமாற்றங்கள் ஏற்றப்பட்டன"
 
 #. module: account_online_sync
 #: model_terms:ir.ui.view,arch_db:account_online_sync.view_account_online_wizard_form
 msgid ""
 "your account because of the following\n"
 "                    error during the process:"
-msgstr ""
+msgstr "செயல்முறையின் போது பின்வரும் பிழை காரணமாக உங்கள் கணக்கு:"
 
 #. module: account_online_sync
 #: model_terms:ir.ui.view,arch_db:account_online_sync.view_account_online_wizard_form
@@ -813,3 +834,6 @@ msgid ""
 "                    thoroughly completed. You can try to manually update your account by clicking the refresh button on the dashboard\n"
 "                    or in the online synchronization menu."
 msgstr ""
+"உங்கள் கணக்கு முழுமையாக முடிக்கப்படவில்லை. டாஷ்போர்டு அல்லது ஆன்லைன் "
+"ஒத்திசைவு மெனுவில் புதுப்பிக்கப்பட்ட பொத்தானைக் கிளிக் செய்வதன் மூலம் உங்கள்"
+" கணக்கை கைமுறையாக புதுப்பிக்க முயற்சி செய்யலாம்."

@@ -82,6 +82,11 @@ var DocumentsInspector = Widget.extend({
             });
             return rule.data;
         });
+
+        // we have to lock some actions (like opening the record preview) when
+        // there are pending 'multiSave' requests
+        this.savingDef = null;
+        this.pendingSavingRequests = 0;
     },
     /**
      * @override
@@ -299,9 +304,18 @@ var DocumentsInspector = Widget.extend({
      * @param {Object} changes
      */
     _saveMulti: function (changes) {
+        var self = this;
+        this.savingDef = this.savingDef || $.Deferred();
+        this.pendingSavingRequests++;
         this.trigger_up('save_multi', {
             changes: changes,
             dataPointIDs: _.pluck(this.records, 'id'),
+            callback: function () {
+                self.pendingSavingRequests--;
+                if (self.pendingSavingRequests === 0) {
+                    self.savingDef.resolve();
+                }
+            },
         });
     },
     /**
@@ -445,11 +459,14 @@ var DocumentsInspector = Widget.extend({
      */
     _onOpenPreview: function (ev) {
         ev.stopPropagation();
+        var self = this;
         var activeID = $(ev.currentTarget).data('id');
         if (activeID) {
-            var records = _.pluck(this.records, 'data');
-            var documentViewer = new DocumentViewer(this, records, activeID);
-            documentViewer.appendTo($('.o_documents_kanban_view'));
+            $.when(this.savingDef).then(function () {
+                var records = _.pluck(self.records, 'data');
+                var documentViewer = new DocumentViewer(self, records, activeID);
+                documentViewer.appendTo($('.o_documents_kanban_view'));
+            });
         }
     },
     /**

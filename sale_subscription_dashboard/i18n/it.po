@@ -11,7 +11,7 @@
 # Paolo Valier, 2018
 # Maurizio Schiavo <inactive+MaurizioSchiavo@transifex.com>, 2018
 # David Minneci <david@numeko.it>, 2018
-# Léonie Bouchat <lbo@odoo.com>, 2018
+# Léonie Bouchat <lbo@odoo.com>, 2019
 # 
 msgid ""
 msgstr ""
@@ -19,7 +19,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-28 12:16+0000\n"
 "PO-Revision-Date: 2018-08-24 11:48+0000\n"
-"Last-Translator: Léonie Bouchat <lbo@odoo.com>, 2018\n"
+"Last-Translator: Léonie Bouchat <lbo@odoo.com>, 2019\n"
 "Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -138,7 +138,7 @@ msgstr "Indicatore chiave di prestazione dettagliato"
 #: code:addons/sale_subscription_dashboard/static/src/js/sale_subscription_dashboard.js:1114
 #, python-format
 msgid "Down MRR"
-msgstr "Diminuzione delle entrate mensili ricorrenti"
+msgstr "Diminuzione dei ricavi mensili ricorrenti"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
@@ -146,7 +146,7 @@ msgstr "Diminuzione delle entrate mensili ricorrenti"
 #: code:addons/sale_subscription_dashboard/static/src/js/sale_subscription_dashboard.js:1110
 #, python-format
 msgid "Expansion MRR"
-msgstr "Incremento delle entrate mensili ricorrenti"
+msgstr "Incremento dei ricavi mensili ricorrenti"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
@@ -244,8 +244,8 @@ msgid ""
 "It makes no sense to sum MRR of different currencies. Please select "
 "companies with the same currency."
 msgstr ""
-"Non ha senso sommare le entrate mensili ricorrenti che non hanno la stessa "
-"valuta. Seleziona aziende con la stessa valuta. "
+"Non ha senso sommare i ricavi mensili ricorrenti che non hanno la stessa "
+"valuta. Selezionare aziende con la stessa valuta. "
 
 #. module: sale_subscription_dashboard
 #: code:addons/sale_subscription_dashboard/controllers/stat_types.py:391
@@ -301,7 +301,7 @@ msgstr "Entrate mensili ricorrenti :"
 #: code:addons/sale_subscription_dashboard/static/src/js/sale_subscription_dashboard.js:1099
 #, python-format
 msgid "MRR Growth"
-msgstr "Crescita delle entrate mensili ricorrenti"
+msgstr "Crescita dei ricavi mensili ricorrenti"
 
 #. module: sale_subscription_dashboard
 #: code:addons/sale_subscription_dashboard/controllers/stat_types.py:346
@@ -351,7 +351,7 @@ msgstr ""
 #: code:addons/sale_subscription_dashboard/controllers/stat_types.py:355
 #, python-format
 msgid "Net Revenue"
-msgstr ""
+msgstr "Ricavi netti"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
@@ -359,7 +359,7 @@ msgstr ""
 #: code:addons/sale_subscription_dashboard/static/src/js/sale_subscription_dashboard.js:1102
 #, python-format
 msgid "New MRR"
-msgstr "Nuove entrate  mensili ricorrenti"
+msgstr "Nuovi ricavi  mensili ricorrenti"
 
 #. module: sale_subscription_dashboard
 #: code:addons/sale_subscription_dashboard/controllers/revenue_kpis_dashboard.py:61
@@ -371,7 +371,7 @@ msgstr "Nessuna azienda selezionata"
 #: code:addons/sale_subscription_dashboard/controllers/stat_types.py:364
 #, python-format
 msgid "Non-Recurring Revenue"
-msgstr "Entrate non ricorrenti"
+msgstr "Ricavi non ricorrenti"
 
 #. module: sale_subscription_dashboard
 #: model_terms:ir.ui.view,arch_db:sale_subscription_dashboard.invoice_line_entries_report_search
@@ -458,7 +458,7 @@ msgstr "Ricavo per abbonamento"
 #: model:ir.actions.client,name:sale_subscription_dashboard.action_subscription_dashboard_report_salesman
 #: model:ir.ui.menu,name:sale_subscription_dashboard.menu_action_subscription_dashboard_report_salesman
 msgid "Salesperson Dashboard"
-msgstr "Dashboard venditore"
+msgstr "Bacheca venditore"
 
 #. module: sale_subscription_dashboard
 #. openerp-web
@@ -473,7 +473,7 @@ msgstr "Dati d'esempio"
 #: code:addons/sale_subscription_dashboard/static/src/js/sale_subscription_dashboard.js:87
 #, python-format
 msgid "Select at least one company."
-msgstr "Seleziona almeno un'azienda"
+msgstr "Selezionare almeno un'azienda"
 
 #. module: sale_subscription_dashboard
 #. openerp-web

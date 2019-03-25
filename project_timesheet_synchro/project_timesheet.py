@@ -54,7 +54,7 @@ class account_analytic_line(models.Model):
             "project_id/id",
         ]
 
-        aals = aal_ids.export_data(aals_fields)
+        aals = aal_ids.with_context(tz='UTC').export_data(aals_fields)
 
         # /!\ COMPATIBILITY HACK /!\
         # With hr_timesheet_sheet removal, the sheet concept (and its state) are obsolete. To avoid
@@ -83,7 +83,7 @@ class account_analytic_line(models.Model):
             "project_id.id",
             "name",
         ]
-        tasks = task_ids.export_data(tasks_fields)
+        tasks = task_ids.with_context(tz='UTC').export_data(tasks_fields)
 
         project_ids_from_tasks_list = list(set([int(tasks['datas'][x][2]) for x in range(len(tasks['datas'])) if len(tasks['datas'][x][2]) > 0]))
         project_ids_list = list(set(project_ids_from_tasks_list + project_ids_list))
@@ -100,7 +100,7 @@ class account_analytic_line(models.Model):
             "id",
             "name",
         ]
-        projects = projects_ids.export_data(projects_fields)
+        projects = projects_ids.with_context(tz='UTC').export_data(projects_fields)
 
         return {
             'aals': aals,

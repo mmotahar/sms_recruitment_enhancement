@@ -300,7 +300,10 @@ class DHLProvider():
             etree.SubElement(billing_node, "DutyPaymentType").text = "S"
 
         consignee_node = etree.SubElement(root, "Consignee")
-        etree.SubElement(consignee_node, "CompanyName").text = param["recipient_partner"].name
+        if param["recipient_partner"].parent_id:
+            etree.SubElement(consignee_node, "CompanyName").text = param["recipient_partner"].parent_id.name
+        else:
+            etree.SubElement(consignee_node, "CompanyName").text = param["recipient_partner"].name
         etree.SubElement(consignee_node, "AddressLine").text = param["recipient_streetLines"]
         etree.SubElement(consignee_node, "City").text = param["recipient_partner"].city
 

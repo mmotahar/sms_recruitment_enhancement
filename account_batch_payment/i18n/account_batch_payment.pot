@@ -433,6 +433,12 @@ msgid "Whether or not this batch payment should display the 'Generate File' butt
 msgstr ""
 
 #. module: account_batch_payment
+#: code:addons/account_batch_payment/models/account_payment.py:38
+#, python-format
+msgid "You cannot make a batch payment with internal transfers. Internal transfers ids: %s"
+msgstr ""
+
+#. module: account_batch_payment
 #: model_terms:ir.ui.view,arch_db:account_batch_payment.view_batch_payment_form
 msgid "auto ..."
 msgstr ""

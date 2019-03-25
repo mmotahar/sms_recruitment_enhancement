@@ -3,6 +3,7 @@
 # * delivery_fedex
 # 
 # Translators:
+# Léonie Bouchat <lbo@odoo.com>, 2018
 # Eloïse Stilmant <est@odoo.com>, 2018
 # Martin Trigaux, 2018
 # fr rev <e2ffr02@hotmail.com>, 2018
@@ -458,7 +459,7 @@ msgid ""
 "These certifications usually require that you contact the FedEx support team"
 " by email."
 msgstr ""
-"Ces certifications demande habituellement que vous contactiez l'équipe "
+"Ces certifications demandent habituellement que vous contactiez l'équipe "
 "support de FedEx par courriel."
 
 #. module: delivery_fedex

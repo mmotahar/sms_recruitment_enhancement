@@ -133,12 +133,12 @@ msgstr ""
 #. module: mail_github
 #: model:ir.model.fields,field_description:mail_github.field_mail_channel_github__message_partner_ids
 msgid "Followers (Partners)"
-msgstr ""
+msgstr "Sledující (Partneři)"
 
 #. module: mail_github
 #: model:ir.model.fields,field_description:mail_github.field_res_users__github_login
 msgid "GitHub Login"
-msgstr ""
+msgstr "GitHub Login"
 
 #. module: mail_github
 #: model_terms:ir.ui.view,arch_db:mail_github.mail_channel_view_form
@@ -149,7 +149,7 @@ msgstr "Github"
 #: model:ir.actions.act_window,name:mail_github.mail_channel_github_action
 #: model:ir.ui.menu,name:mail_github.mail_channel_menu_github
 msgid "Github Repositories"
-msgstr ""
+msgstr "Github Repozitáře"
 
 #. module: mail_github
 #: model:ir.model.fields,field_description:mail_github.field_mail_channel_github__id
@@ -246,7 +246,7 @@ msgstr ""
 #. module: mail_github
 #: model_terms:ir.ui.view,arch_db:mail_github.message_github_notification
 msgid "PR"
-msgstr ""
+msgstr "PR"
 
 #. module: mail_github
 #: model:ir.model.fields,field_description:mail_github.field_mail_channel_github__url_token
@@ -328,7 +328,7 @@ msgstr "Historie komunikace Webové stránky"
 #. module: mail_github
 #: model_terms:ir.ui.view,arch_db:mail_github.message_github_notification
 msgid "commented"
-msgstr ""
+msgstr "okomentováno"
 
 #. module: mail_github
 #: code:addons/mail_github/controllers/main.py:174
@@ -344,7 +344,7 @@ msgstr ""
 #. module: mail_github
 #: model_terms:ir.ui.view,arch_db:mail_github.message_github_notification
 msgid "created a new"
-msgstr ""
+msgstr "vytvořit nový"
 
 #. module: mail_github
 #: code:addons/mail_github/controllers/main.py:197

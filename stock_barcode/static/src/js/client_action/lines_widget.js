@@ -46,8 +46,9 @@ var LinesWidget = Widget.extend({
     incrementProduct: function(id_or_virtual_id, qty, model, doNotClearLineHighlight) {
         var $line = this.$("[data-id='" + id_or_virtual_id + "']");
         var incrementClass = model === 'stock.picking' ? '.qty-done' : '.product_qty';
-        var qtyDone = parseInt($line.find(incrementClass).text(), 10);
-        $line.find(incrementClass).text(qtyDone + qty);
+        var qtyDone = parseFloat($line.find(incrementClass).text());
+        // increment quantity and avoid insignificant digits
+        $line.find(incrementClass).text(parseFloat((qtyDone + qty).toPrecision(15)));
         this._highlightLine($line, doNotClearLineHighlight);
 
         this._handleControlButtons();

@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import api, fields, models, _
+from odoo.osv import expression
 
 
 class ProductTicCategory(models.Model):
@@ -15,10 +16,11 @@ class ProductTicCategory(models.Model):
     def _name_search(self, name, args=None, operator='ilike', limit=100, name_get_uid=None):
         args = args or []
         tic_category_ids = []
-        if name:
-            tic_category_ids = self._search([('description', operator, name)] + args, limit=limit, access_rights_uid=name_get_uid)
-        if not tic_category_ids:
-            tic_category_ids = self._search([('code', operator, name)] + args, limit=limit, access_rights_uid=name_get_uid)
+        if operator == 'ilike' and not (name or '').strip():
+            domain = []
+        else:
+            domain = ['|', ('description', operator, name), ('code', operator, name)]
+        tic_category_ids = self._search(expression.AND([domain, args]), limit=limit, access_rights_uid=name_get_uid)
         return self.browse(tic_category_ids).name_get()
 
     @api.multi

@@ -16,6 +16,26 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: l10n_mx_edi
+#: code:addons/l10n_mx_edi/models/account_payment.py:456
+#, python-format
+msgid "<b>The amount paid is bigger than the sum of the invoices.</b><br/><br/>Which actions can you take?\n"
+"<ul><ol>If the customer has more invoices, go to those invoices and reconcile them with this payment.</ol><ol>If the customer <b>has not</b> more invoices to be paid You need to create a new invoice with a product that will represent the payment in advance and reconcile such invoice with this payment.</ol></ul><p>If you follow this steps once you finish them and the paid amount is bellow the sum of invoices the payment will be automatically signed</p><blockquote>For more information please read <a href=\"http://omawww.sat.gob.mx/informacion_fiscal/factura_electronica/Documents/Complementoscfdi/Guia_comple_pagos.pdf\"> this SAT reference </a>, Pag. 22</blockquote>"
+msgstr ""
+
+#. module: l10n_mx_edi
+#: code:addons/l10n_mx_edi/models/account_payment.py:245
+#, python-format
+msgid "<b>The invoices related with this payment have the payment method as <b>PUE</b>.</b><br/><br/>When an invoice has the payment method <b>PUE</b> do not requires generate a payment complement. For more information please read <a href=\"http://omawww.sat.gob.mx/informacion_fiscal/factura_electronica/Documents/Complementoscfdi/Guia_comple_pagos.pdf\">this SAT reference.</a>, Pag. 3. Or read the <a href=\"https://www.odoo.com/documentation/user/11.0/es/accounting/localizations/mexico.html#payments-just-available-for-cfdi-3-3\">Odoo documentation</a> to know how to indicate the payment method in the invoice CFDI."
+msgstr ""
+
+#. module: l10n_mx_edi
+#: code:addons/l10n_mx_edi/models/account_payment.py:222
+#, python-format
+msgid "<b>This payment <b>has not</b> invoices related.</b><br/><br/>Which actions can you take?\n"
+"<ul><ol>If this is an payment advance, you need to create a new invoice with a product that will represent the payment in advance and reconcile such invoice with this payment. For more information please read <a href=\"http://omawww.sat.gob.mx/informacion_fiscal/factura_electronica/Documents/Complementoscfdi/Caso_uso_Anticipo.pdf\">this SAT reference.</a></ol><ol>If you already have the invoices that are paid make the payment matching of them.</ol></ul><p>If you follow this steps once you finish them and the paid amount is bellow the sum of invoices the payment will be automatically signed</p>"
+msgstr ""
+
+#. module: l10n_mx_edi
 #: model:ir.model.fields,help:l10n_mx_edi.field_account_invoice__state
 msgid " * The 'Draft' status is used when a user is encoding a new and unconfirmed Invoice.\n"
 " * The 'Open' status is used when user creates invoice, an invoice number is generated. It stays in the open status till the user pays the invoice.\n"
@@ -4147,11 +4167,6 @@ msgid "Payment Move Lines"
 msgstr ""
 
 #. module: l10n_mx_edi
-#: model:ir.model.fields,field_description:l10n_mx_edi.field_account_invoice__reference
-msgid "Payment Ref."
-msgstr ""
-
-#. module: l10n_mx_edi
 #: model:ir.model.fields,field_description:l10n_mx_edi.field_account_payment__payment_reference
 msgid "Payment Reference"
 msgstr ""
@@ -4431,11 +4446,6 @@ msgstr ""
 #. module: l10n_mx_edi
 #: model:ir.model.fields,help:l10n_mx_edi.field_product_template__subscription_template_id
 msgid "Product will be included in a selected template"
-msgstr ""
-
-#. module: l10n_mx_edi
-#: model:ir.model.fields,field_description:l10n_mx_edi.field_product_template__product_variant_ids
-msgid "Products"
 msgstr ""
 
 #. module: l10n_mx_edi

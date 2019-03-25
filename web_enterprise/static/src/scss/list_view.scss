@@ -55,6 +55,11 @@
     // We need this to be collapse because we want to add a border on the rows
     // for sale order/invoice lines of type section.
     border-collapse: collapse;
+
+    .o_column_sortable:not(:empty)::after {
+        position: absolute;
+    }
+
     @include o-list-view-sortable-caret-padding;
 
     // ------- Force empty cells' padding -------

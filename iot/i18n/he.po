@@ -7,6 +7,7 @@
 # Leandro Noijovich <eliel.sorcerer@gmail.com>, 2018
 # שהאב חוסיין <shhab89@gmail.com>, 2018
 # Yihya Hugirat <hugirat@gmail.com>, 2018
+# דודי מלכה <Dudimalka6@gmail.com>, 2019
 # 
 msgid ""
 msgstr ""
@@ -14,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-19 09:12+0000\n"
 "PO-Revision-Date: 2018-08-24 09:20+0000\n"
-"Last-Translator: Yihya Hugirat <hugirat@gmail.com>, 2018\n"
+"Last-Translator: דודי מלכה <Dudimalka6@gmail.com>, 2019\n"
 "Language-Team: Hebrew (https://www.transifex.com/odoo/teams/41243/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -154,7 +155,7 @@ msgstr "השם המוצג"
 #. module: iot
 #: selection:iot.trigger,action:0
 msgid "Fail"
-msgstr ""
+msgstr "נכשל"
 
 #. module: iot
 #: selection:iot.trigger,action:0
@@ -187,7 +188,7 @@ msgstr ""
 #. module: iot
 #: model:ir.model,name:iot.model_iot_trigger
 msgid "IOT Trigger"
-msgstr ""
+msgstr "IOT טריגר"
 
 #. module: iot
 #: model:ir.model.fields,field_description:iot.field_iot_box__ip
@@ -197,7 +198,7 @@ msgstr "כתובת IP"
 #. module: iot
 #: model:ir.model.fields,field_description:iot.field_iot_device__identifier
 msgid "Identifier"
-msgstr ""
+msgstr "מזהה"
 
 #. module: iot
 #: model:ir.model.fields,field_description:iot.field_iot_box__identifier
@@ -291,12 +292,12 @@ msgstr "אוקי"
 #. module: iot
 #: selection:iot.trigger,action:0
 msgid "Pack"
-msgstr ""
+msgstr "חבילה"
 
 #. module: iot
 #: selection:iot.trigger,action:0
 msgid "Pass"
-msgstr ""
+msgstr "לעבור"
 
 #. module: iot
 #: selection:iot.trigger,action:0
@@ -306,17 +307,17 @@ msgstr ""
 #. module: iot
 #: selection:iot.trigger,action:0
 msgid "Previous"
-msgstr ""
+msgstr "הקודם"
 
 #. module: iot
 #: selection:iot.trigger,action:0
 msgid "Print Delivery Slip"
-msgstr ""
+msgstr "הדפיס שובר משלוח"
 
 #. module: iot
 #: selection:iot.trigger,action:0
 msgid "Print Labels"
-msgstr ""
+msgstr "הדפס תוויות"
 
 #. module: iot
 #: selection:iot.trigger,action:0
@@ -341,7 +342,7 @@ msgstr ""
 #. module: iot
 #: selection:iot.trigger,action:0
 msgid "Record Production"
-msgstr ""
+msgstr "תיעוד הייצור "
 
 #. module: iot
 #: model:ir.model,name:iot.model_ir_actions_report
@@ -373,7 +374,7 @@ msgstr ""
 #. module: iot
 #: selection:iot.trigger,action:0
 msgid "Scrap"
-msgstr ""
+msgstr "בלאי"
 
 #. module: iot
 #: model:ir.model.fields,field_description:iot.field_iot_box__screen_url

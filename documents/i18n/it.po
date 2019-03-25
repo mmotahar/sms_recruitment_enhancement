@@ -12,13 +12,13 @@
 # Federico Castellano <castellano.federico@outlook.com>, 2018
 # Pietro Della Notte <pdellanotte@gmail.com>, 2018
 # efraimbiffi <eab@odoo.com>, 2018
-# Léonie Bouchat <lbo@odoo.com>, 2018
 # Sergio Zanchetta <primes2h@gmail.com>, 2018
 # Francesco Garganese <francesco.garganese@aeromnia.aero>, 2018
 # Martin Trigaux, 2018
 # Luigi Di Naro <gigidn@gmail.com>, 2018
 # Paolo Valier, 2018
 # David Minneci <david@numeko.it>, 2018
+# Léonie Bouchat <lbo@odoo.com>, 2019
 # 
 msgid ""
 msgstr ""
@@ -26,7 +26,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-15 15:18+0000\n"
 "PO-Revision-Date: 2018-08-24 11:37+0000\n"
-"Last-Translator: David Minneci <david@numeko.it>, 2018\n"
+"Last-Translator: Léonie Bouchat <lbo@odoo.com>, 2019\n"
 "Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -39,27 +39,27 @@ msgstr ""
 #: code:addons/documents/static/src/js/documents_inspector.js:271
 #, python-format
 msgid "+ Add a tag "
-msgstr ""
+msgstr "+ Aggiungi un'etichetta"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.public_page_layout
 msgid ", expired on"
-msgstr ""
+msgstr ", scaduto il"
 
 #. module: documents
 #: model:documents.tag,name:documents.documents_finance_fiscal_year_2017
 msgid "2018"
-msgstr ""
+msgstr "2018"
 
 #. module: documents
 #: model:documents.workflow.rule,name:documents.documents_Finance_validate_inbox_contracts
 msgid "2018 contracts"
-msgstr ""
+msgstr "2018 contratti"
 
 #. module: documents
 #: model:documents.tag,name:documents.documents_finance_fiscal_year_2018
 msgid "2019"
-msgstr ""
+msgstr "2019"
 
 #. module: documents
 #. openerp-web
@@ -70,33 +70,37 @@ msgid ""
 "task or vendor bill,</br> create activities for users, etc.</br> Actions can"
 " be customized through the Configuration menu."
 msgstr ""
+"<b>Le azioni</b> permettono di assegnare etichette, automatizzare azioni "
+"come la creazione di un'attività o di una fatture fornitore,</br> creare "
+"attività per gli utenti, ecc.</br> Le azioni possono essere personalizzate "
+"nel menu di configurazione."
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.format_file_size
 msgid "<b>Bytes</b>"
-msgstr ""
+msgstr "<b>Byte</b>"
 
 #. module: documents
 #. openerp-web
 #: code:addons/documents/static/src/js/tour.js:26
 #, python-format
 msgid "<b>Close the preview</b> to go back to your selection of documents"
-msgstr ""
+msgstr "<b>Chiudere l'anteprima</b> per tornare alla selezione di documenti"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.format_file_size
 msgid "<b>Gb</b>"
-msgstr ""
+msgstr "<b>GB</b>"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.format_file_size
 msgid "<b>Kb</b>"
-msgstr ""
+msgstr "<b>KB</b>"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.format_file_size
 msgid "<b>Mb</b>"
-msgstr ""
+msgstr "<b>MB</b>"
 
 #. module: documents
 #. openerp-web
@@ -106,11 +110,13 @@ msgid ""
 "<b>Use tags</b> to easily filter documents. Tags are defined according to "
 "the folder."
 msgstr ""
+"<b>Utilizzare etichette</b> per filtrare facilmente i documenti. Le "
+"etichette sono definite in base alla cartella."
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.public_page_layout
 msgid "<br/>Powered by"
-msgstr ""
+msgstr "<br/>Powered by"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.share_single
@@ -118,16 +124,18 @@ msgid ""
 "<i class=\"fa fa-circle-o-notch fa-spin text-white fa-3x mb8\" role=\"img\" "
 "aria-label=\"Loading\" title=\"Loading\"/>"
 msgstr ""
+"<i class=\"fa fa-circle-o-notch fa-spin text-white fa-3x mb8\" role=\"img\" "
+"aria-label=\"Loading\" title=\"Loading\"/>"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.share_page
 msgid "<i class=\"fa fa-download fa-fw\"/>  Download All"
-msgstr ""
+msgstr "<i class=\"fa fa-download fa-fw\"/>  Scaricare tutto"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.share_single
 msgid "<i class=\"fa fa-download fa-fw\"/> Download"
-msgstr ""
+msgstr "<i class=\"fa fa-download fa-fw\"/> Scaricare"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.share_view_form
@@ -139,23 +147,23 @@ msgstr "Configura Server Email"
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.share_single
 msgid "<i class=\"fa fa-link\"/> Go to URL"
-msgstr ""
+msgstr "<i class=\"fa fa-link\"/> Accedere all'URL"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.share_page
 msgid "<i class=\"fa fa-upload\"/>  Upload"
-msgstr ""
+msgstr "<i class=\"fa fa-upload\"/>  Caricare"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.public_page_layout
 msgid "<span style=\"color:white;\">&amp;nbsp;Documents.</span>"
-msgstr ""
+msgstr "<span style=\"color:white;\">&amp;nbsp;Documenti.</span>"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.documents_view_kanban
 #: model_terms:ir.ui.view,arch_db:documents.inherit_mail_attachment_view_kanban
 msgid "<span><b>Requested Document</b></span>"
-msgstr ""
+msgstr "<span><b>Documenti richiesti</b></span>"
 
 #. module: documents
 #: model:ir.model.fields,help:documents.field_documents_share__alias_defaults
@@ -178,7 +186,7 @@ msgstr ""
 #. module: documents
 #: model:documents.tag,name:documents.documents_hr_documents_absences
 msgid "Absences"
-msgstr ""
+msgstr "Assenze"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_folder__group_ids
@@ -219,7 +227,7 @@ msgstr "Attività"
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_rule__activity_note
 msgid "Activity Note"
-msgstr ""
+msgstr "Nota attività"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_request_wizard__activity_type_id
@@ -239,17 +247,17 @@ msgstr "Aggiungi"
 #: code:addons/documents/static/src/xml/documents_kanban.xml:8
 #, python-format
 msgid "Add URL"
-msgstr ""
+msgstr "Aggiungere URL"
 
 #. module: documents
 #: model:ir.actions.act_window,name:documents.action_url_form
 msgid "Add Url"
-msgstr ""
+msgstr "Aggiungere URL"
 
 #. module: documents
 #: model:documents.tag,name:documents.documents_marketing_assets_ads
 msgid "Ads"
-msgstr ""
+msgstr "Pubblicità"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__alias_id
@@ -279,17 +287,17 @@ msgstr "Modello Alias"
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.documents_view_search_inherit
 msgid "All locked files"
-msgstr ""
+msgstr "Tutti i file bloccati"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__action
 msgid "Allows to"
-msgstr ""
+msgstr "Consente di"
 
 #. module: documents
 #: model:ir.module.category,description:documents.module_category_documents_management
 msgid "Allows you to manage your documents."
-msgstr ""
+msgstr "Consente di gestire i documenti"
 
 #. module: documents
 #. openerp-web
@@ -326,27 +334,27 @@ msgstr "Allegati"
 #: code:addons/documents/static/src/js/documents_kanban_view.js:27
 #, python-format
 msgid "Attachments Kanban"
-msgstr ""
+msgstr "Allegati Kanban"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_ir_attachment__available_rule_ids
 msgid "Available Rules"
-msgstr ""
+msgstr "Regole disponibili"
 
 #. module: documents
 #: model:documents.folder,name:documents.documents_marketing_brand1_folder
 msgid "Brand 1"
-msgstr ""
+msgstr "Marca 1"
 
 #. module: documents
 #: model:documents.folder,name:documents.documents_marketing_brand2_folder
 msgid "Brand 2"
-msgstr ""
+msgstr "Marca 2"
 
 #. module: documents
 #: model:documents.tag,name:documents.documents_marketing_assets_brochures
 msgid "Brochures"
-msgstr ""
+msgstr "Opuscoli"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.documents_request_form_view
@@ -365,14 +373,14 @@ msgstr "Categoria"
 #: code:addons/documents/static/src/js/tour.js:45
 #, python-format
 msgid "Click here to <b>close the discussion board</b>"
-msgstr ""
+msgstr "Fare clic qui <b>per chiudere il forum di discussione</b>"
 
 #. module: documents
 #. openerp-web
 #: code:addons/documents/static/src/js/tour.js:17
 #, python-format
 msgid "Click on a card to <b>view the document</b>."
-msgstr ""
+msgstr "Fare clic su una scheda per <b>visualizzare il documento</b>."
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_folder__company_id
@@ -382,7 +390,7 @@ msgstr "Azienda"
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_rule__condition_type
 msgid "Condition type"
-msgstr ""
+msgstr "Tipo di condizione"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.workflow_rule_form_view
@@ -423,12 +431,12 @@ msgstr "Crea"
 #: model:ir.model.fields,field_description:documents.field_documents_share__activity_option
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_rule__activity_option
 msgid "Create a new activity"
-msgstr ""
+msgstr "Creare una nuova attività"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.tag_view_tree
 msgid "Create a tag"
-msgstr ""
+msgstr "Creare un'etichetta"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_facet__create_uid
@@ -462,7 +470,7 @@ msgstr "Nota di credito"
 #. module: documents
 #: selection:documents.workflow.rule,condition_type:0
 msgid "Criteria"
-msgstr ""
+msgstr "Criteri"
 
 #. module: documents
 #: selection:documents.request_wizard,activity_date_deadline_range_type:0
@@ -474,7 +482,7 @@ msgstr "Giorni"
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.res_config_settings_view_form
 msgid "Default Folders"
-msgstr ""
+msgstr "Cartelle predefinite"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__alias_defaults
@@ -485,7 +493,7 @@ msgstr "Prezzo Standard"
 #: model_terms:ir.ui.view,arch_db:documents.share_view_form
 #: model_terms:ir.ui.view,arch_db:documents.share_view_form_popup
 msgid "Default values for uploaded documents"
-msgstr ""
+msgstr "Valori predefiniti per i documenti caricati"
 
 #. module: documents
 #. openerp-web
@@ -497,7 +505,7 @@ msgstr "Elimina"
 #. module: documents
 #: model:documents.workflow.rule,name:documents.documents_Internal_deprecate_doc
 msgid "Deprecate Document(s)"
-msgstr ""
+msgstr "Documenti disattivati"
 
 #. module: documents
 #: model:documents.tag,name:documents.documents_internal_status_deprecated
@@ -524,7 +532,7 @@ msgstr "Nome visualizzato"
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.documents_view_search_inherit
 msgid "Doc"
-msgstr ""
+msgstr "Doc"
 
 #. module: documents
 #: model:ir.model,name:documents.model_ir_attachment
@@ -536,27 +544,27 @@ msgstr "Documento"
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__owner_id
 msgid "Document Owner"
-msgstr ""
+msgstr "Proprietario del documento"
 
 #. module: documents
 #: model:ir.model,name:documents.model_documents_request_wizard
 msgid "Document Request"
-msgstr ""
+msgstr "Richiedere documento"
 
 #. module: documents
 #: model:ir.model,name:documents.model_documents_workflow_action
 msgid "Document Workflow Tag Action"
-msgstr ""
+msgstr "Azione di etichettatura di documenti"
 
 #. module: documents
 #: model:ir.model,name:documents.model_documents_workflow_tag_criteria
 msgid "Document Workflow Tag Criteria"
-msgstr ""
+msgstr "Criteri di etichettatura di documenti"
 
 #. module: documents
 #: selection:documents.share,type:0
 msgid "Document list"
-msgstr ""
+msgstr "Elenco documenti"
 
 #. module: documents
 #. openerp-web
@@ -573,22 +581,22 @@ msgstr "Documenti"
 #. module: documents
 #: model:ir.model,name:documents.model_documents_folder
 msgid "Documents Folder"
-msgstr ""
+msgstr "Cartella dei documenti"
 
 #. module: documents
 #: model:ir.model,name:documents.model_documents_share
 msgid "Documents Share"
-msgstr ""
+msgstr "Condividere dei documenti"
 
 #. module: documents
 #: model:ir.module.category,name:documents.module_category_documents_management
 msgid "Documents management"
-msgstr ""
+msgstr "Gestione documenti"
 
 #. module: documents
 #: selection:documents.workflow.tag.criteria,operator:0
 msgid "Does not contain"
-msgstr ""
+msgstr "non contiene"
 
 #. module: documents
 #: selection:documents.share,type:0
@@ -607,7 +615,7 @@ msgstr "Completato"
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.share_page
 msgid "Downlaod all files"
-msgstr ""
+msgstr "Caricare tutti i file"
 
 #. module: documents
 #. openerp-web
@@ -620,7 +628,7 @@ msgstr "Download"
 #. module: documents
 #: selection:documents.share,action:0
 msgid "Download and Upload"
-msgstr ""
+msgstr "Scarica e carica"
 
 #. module: documents
 #: model:documents.tag,name:documents.documents_internal_status_draft
@@ -632,7 +640,7 @@ msgstr "Bozza"
 #: code:addons/documents/static/src/js/documents_kanban_controller.js:718
 #, python-format
 msgid "Drop files here to upload"
-msgstr ""
+msgstr "Lasciare qui i file da caricare"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_request_wizard__activity_date_deadline_range
@@ -651,7 +659,7 @@ msgstr "Tipo di scadenza"
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.folder_view_form
 msgid "E.g. Finance"
-msgstr ""
+msgstr "Es. Finanza"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.documents_request_form_view
@@ -661,17 +669,17 @@ msgstr ""
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.facet_view_form_list
 msgid "E.g. Status"
-msgstr ""
+msgstr "Es. Stati"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.workflow_rule_form_view
 msgid "E.g. Validate document"
-msgstr ""
+msgstr "Es. Convalidare documento"
 
 #. module: documents
 #: selection:ir.attachment,type:0
 msgid "Empty"
-msgstr ""
+msgstr "Vuoto"
 
 #. module: documents
 #: selection:documents.share,state:0
@@ -682,12 +690,12 @@ msgstr "Scaduto"
 #: model:ir.model,name:documents.model_documents_facet
 #: model:ir.model.fields,field_description:documents.field_documents_tag__facet_id
 msgid "Facet"
-msgstr ""
+msgstr "Etichetta"
 
 #. module: documents
 #: sql_constraint:documents.facet:0
 msgid "Facet already exists in this folder"
-msgstr ""
+msgstr "L'etichetta esiste già in questa cartella"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_ir_attachment__favorited_ids
@@ -702,7 +710,7 @@ msgstr "File"
 #. module: documents
 #: model:documents.folder,name:documents.documents_finance_folder
 msgid "Finance"
-msgstr ""
+msgstr "Finanza"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_facet__folder_id
@@ -712,7 +720,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_rule__domain_folder_id
 #: model:ir.model.fields,field_description:documents.field_ir_attachment__folder_id
 msgid "Folder"
-msgstr ""
+msgstr "Cartella"
 
 #. module: documents
 #. openerp-web
@@ -721,7 +729,7 @@ msgstr ""
 #: model:ir.ui.menu,name:documents.folder_menu
 #, python-format
 msgid "Folders"
-msgstr ""
+msgstr "Cartelle"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__message_follower_ids
@@ -755,22 +763,22 @@ msgstr ""
 #. module: documents
 #: model:documents.folder,name:documents.documents_hr_folder
 msgid "HR"
-msgstr ""
+msgstr "HR"
 
 #. module: documents
 #: model:documents.tag,name:documents.documents_internal_knowledge_hr_policies
 msgid "HR policies"
-msgstr ""
+msgstr "Politica HR"
 
 #. module: documents
 #: model:ir.model,name:documents.model_ir_http
 msgid "HTTP Routing"
-msgstr "Routing HTTP"
+msgstr "Instradamento HTTP"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_rule__has_business_option
 msgid "Has Business Option"
-msgstr ""
+msgstr "Ha un'opzione business"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_facet__id
@@ -840,7 +848,7 @@ msgstr "È Follower"
 #: code:addons/documents/static/src/js/tour.js:40
 #, python-format
 msgid "It will be sent to the followers of this document"
-msgstr ""
+msgstr "Sarà inviato ai follower di questo documento"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_facet____last_update
@@ -891,7 +899,7 @@ msgstr ""
 #. module: documents
 #: selection:documents.share,state:0
 msgid "Live"
-msgstr ""
+msgstr "Live"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.share_single
@@ -908,7 +916,7 @@ msgstr "Blocca"
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_ir_attachment__lock_uid
 msgid "Locked by"
-msgstr ""
+msgstr "Bloccato da"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.share_view_form
@@ -925,7 +933,7 @@ msgstr "Accedi"
 #. module: documents
 #: model:documents.tag,name:documents.documents_marketing_assets_logos
 msgid "Logos"
-msgstr ""
+msgstr "Logo"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.public_page_layout
@@ -937,7 +945,7 @@ msgstr "Esci"
 #: code:addons/documents/static/src/xml/documents_inspector.xml:69
 #, python-format
 msgid "MB"
-msgstr ""
+msgstr "MB"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__message_main_attachment_id
@@ -948,12 +956,12 @@ msgstr "Allegato principale"
 #: model:ir.actions.act_window,name:documents.tag_action
 #: model:ir.actions.act_window,name:documents.tree_tag_action
 msgid "Manage document tags"
-msgstr ""
+msgstr "Gestione etichette documento"
 
 #. module: documents
 #: model:ir.actions.act_window,name:documents.facet_action
 msgid "Manage tag categories"
-msgstr ""
+msgstr "Gestione categorie etichette"
 
 #. module: documents
 #: model:res.groups,name:documents.group_documents_manager
@@ -963,7 +971,7 @@ msgstr "Manager"
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_rule__remove_activities
 msgid "Mark all Activities as done"
-msgstr ""
+msgstr "Segnare tutte le attività come completate"
 
 #. module: documents
 #: model:documents.folder,name:documents.documents_marketing_folder
@@ -1002,7 +1010,7 @@ msgstr ""
 #: code:addons/documents/static/src/js/documents_inspector.js:143
 #, python-format
 msgid "Multiple values"
-msgstr ""
+msgstr "Valori multipli"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.documents_view_search_inherit
@@ -1012,7 +1020,7 @@ msgstr "Le mie attività"
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.documents_view_search_inherit
 msgid "My Documents"
-msgstr ""
+msgstr "Documenti"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.documents_view_search_inherit
@@ -1022,7 +1030,7 @@ msgstr "I miei Preferiti"
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.documents_view_search_inherit
 msgid "My locked files"
-msgstr ""
+msgstr "File bloccati"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_facet__name
@@ -1037,7 +1045,7 @@ msgstr "Nome"
 #: model_terms:ir.ui.view,arch_db:documents.share_view_form
 #: model_terms:ir.ui.view,arch_db:documents.share_view_form_popup
 msgid "Name of the share link"
-msgstr ""
+msgstr "Nome del link di condivisione"
 
 #. module: documents
 #. openerp-web
@@ -1085,7 +1093,7 @@ msgstr "Logo Odoo"
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.public_page_layout
 msgid "Odoo Website"
-msgstr ""
+msgstr "Sito web Odoo"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_tag_criteria__operator
@@ -1119,7 +1127,7 @@ msgstr "Proprietario"
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.share_page
 msgid "Owner: #{attachment.create_uid.name}"
-msgstr ""
+msgstr "Proprietario: #{attachment.create_uid.name}"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.documents_view_search_inherit
@@ -1130,7 +1138,7 @@ msgstr "PDF"
 #: model:ir.model.fields,field_description:documents.field_documents_folder__parent_folder_id
 #: model_terms:ir.ui.view,arch_db:documents.folder_view_search
 msgid "Parent Folder"
-msgstr ""
+msgstr "Cartella genitore"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__alias_parent_model_id
@@ -1179,7 +1187,7 @@ msgstr "Presentazioni"
 #. module: documents
 #: selection:documents.workflow.rule,create_model:0
 msgid "Product template"
-msgstr ""
+msgstr "Modello prodotto"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__alias_force_thread_id
@@ -1196,12 +1204,12 @@ msgstr "Rimuovi"
 #: code:addons/documents/static/src/xml/documents_inspector.xml:153
 #, python-format
 msgid "Replace"
-msgstr ""
+msgstr "Sostituire"
 
 #. module: documents
 #: selection:documents.workflow.action,action:0
 msgid "Replace by"
-msgstr ""
+msgstr "Sostituire da"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.documents_request_form_view
@@ -1213,29 +1221,29 @@ msgstr "Richiesta"
 #: code:addons/documents/static/src/xml/documents_kanban.xml:11
 #, python-format
 msgid "Request Document"
-msgstr ""
+msgstr "Richiedere documento"
 
 #. module: documents
 #. openerp-web
 #: code:addons/documents/static/src/xml/systray.xml:7
 #, python-format
 msgid "Request a Document"
-msgstr ""
+msgstr "Richiedere un documento"
 
 #. module: documents
 #: model:ir.actions.act_window,name:documents.action_request_form
 msgid "Request a file"
-msgstr ""
+msgstr "Richiedere un file"
 
 #. module: documents
 #: model:mail.activity.type,name:documents.mail_documents_activity_data_md
 msgid "Requested Document"
-msgstr ""
+msgstr "Documento richiesto"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.documents_view_search_inherit
 msgid "Requested files"
-msgstr ""
+msgstr "File richiesti"
 
 #. module: documents
 #: model:documents.workflow.rule,name:documents.documents_Internal_to_draft
@@ -1259,12 +1267,12 @@ msgstr "Ripristina"
 #: model:documents.workflow.rule,name:documents.documents_Finance_validate_tr
 #: model:documents.workflow.rule,name:documents.documents_Internal_to_review
 msgid "Review Document(s)"
-msgstr ""
+msgstr "Esaminare documento/i"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_rule__name
 msgid "Rule name"
-msgstr ""
+msgstr "Nome regola"
 
 #. module: documents
 #: model:documents.tag,name:documents.documents_internal_knowledge_Sales
@@ -1274,7 +1282,7 @@ msgstr "Vendite"
 #. module: documents
 #: model:ir.model.fields,help:documents.field_documents_folder__facet_ids
 msgid "Select the tag categories to be used"
-msgstr ""
+msgstr "Selezionare le categorie di etichetta da utilizzare"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_facet__sequence
@@ -1286,17 +1294,17 @@ msgstr "Sequenza"
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_rule__partner_id
 msgid "Set Contact"
-msgstr ""
+msgstr "Definire contatto"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_rule__user_id
 msgid "Set Owner"
-msgstr ""
+msgstr "Definire proprietario"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_rule__tag_action_ids
 msgid "Set Tags"
-msgstr ""
+msgstr "Definire etichette"
 
 #. module: documents
 #: model:ir.actions.act_window,name:documents.configuration
@@ -1317,32 +1325,32 @@ msgstr "Condivisione"
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_folder__share_link_ids
 msgid "Share Links"
-msgstr ""
+msgstr "Condividere link"
 
 #. module: documents
 #: model:ir.actions.act_window,name:documents.share_action
 msgid "Share links"
-msgstr ""
+msgstr "Condividere link"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__type
 msgid "Share type"
-msgstr ""
+msgstr "Condividere tipo"
 
 #. module: documents
 #: model:ir.ui.menu,name:documents.share_menu
 msgid "Shared Links"
-msgstr ""
+msgstr "Link condivisi"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__tag_ids
 msgid "Shared Tags"
-msgstr ""
+msgstr "Etichette condivise"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__attachment_ids
 msgid "Shared attachments"
-msgstr ""
+msgstr "Allegati condivisi"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.documents_view_search_inherit
@@ -1375,7 +1383,7 @@ msgstr "Stato"
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_folder__children_folder_ids
 msgid "Sub folders"
-msgstr ""
+msgstr "Sottocartelle"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__activity_summary
@@ -1406,6 +1414,8 @@ msgstr ""
 #: model:ir.model.fields,help:documents.field_documents_folder__parent_folder_id
 msgid "Tag categories from parent folders will be shared to their sub folders"
 msgstr ""
+"Le categorie di etichette delle cartelle genitori saranno condivise nelle "
+"loro sottocartelle"
 
 #. module: documents
 #. openerp-web
@@ -1462,17 +1472,18 @@ msgstr ""
 #. module: documents
 #: sql_constraint:documents.share:0
 msgid "This access token already exists"
-msgstr ""
+msgstr "Questo token di accesso esiste già "
 
 #. module: documents
 #: model:ir.model.fields,help:documents.field_documents_folder__company_id
 msgid "This folder will only be available for the selected company"
-msgstr ""
+msgstr "Questa cartella sarà disponibile solo per l'azienda selezionata"
 
 #. module: documents
 #: model:ir.model.fields,help:documents.field_documents_folder__group_ids
 msgid "This folder will only be available for the selected user groups"
 msgstr ""
+"Questa cartella sarà disponibile solo per i gruppi di utenti selezionati"
 
 #. module: documents
 #. openerp-web
@@ -1482,11 +1493,13 @@ msgid ""
 "This icons gets you to the <b>discussion board</b>, to chat with followers "
 "of this document"
 msgstr ""
+"Questa icona porta al <b>forum di discussione</b>, per chattare con i "
+"follower di questo documento"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.not_available
 msgid "This link has expired"
-msgstr ""
+msgstr "Questo link è scaduto"
 
 #. module: documents
 #: model:documents.tag,name:documents.documents_finance_status_tc
@@ -1503,11 +1516,14 @@ msgid ""
 "To delete files, archive them first. </br>Archived documents can still be "
 "accessed using the Archive option in the Filters top menu."
 msgstr ""
+"I file devono essere archiviati per essere eliminato. </br> I documenti "
+"archiviati sono ancora accessibili con l'opzione Archivio nel menu superiore"
+" Filtri."
 
 #. module: documents
 #: model:mail.activity.type,name:documents.mail_documents_activity_data_tv
 msgid "To validate"
-msgstr ""
+msgstr "Da convalidare"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.documents_view_search_inherit
@@ -1518,14 +1534,14 @@ msgstr "Attività di Oggi"
 #: model:ir.model.fields,field_description:documents.field_documents_facet__tooltip
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_rule__note
 msgid "Tooltip"
-msgstr ""
+msgstr "Tooltip"
 
 #. module: documents
 #. openerp-web
 #: code:addons/documents/static/src/js/tour.js:35
 #, python-format
 msgid "Try to <b>post a message</b>"
-msgstr ""
+msgstr "Prova a <b>pubblicare un messaggio</b>"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_ir_attachment__type
@@ -1546,7 +1562,7 @@ msgstr "URL"
 #: code:addons/documents/static/src/xml/documents_inspector.xml:162
 #, python-format
 msgid "Un-archive"
-msgstr ""
+msgstr "Ripristinare l'archivio"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__message_unread
@@ -1572,11 +1588,13 @@ msgid ""
 "Upload <span class=\"font-weight-normal\">a file or</span> drag <span class"
 "=\"font-weight-normal\">it here.</span>"
 msgstr ""
+"Carica <span class=\"font-weight-normal\">un file o</span> trascinalo <span "
+"class=\"font-weight-normal\">qui.</span>"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__email_drop
 msgid "Upload by Email"
-msgstr ""
+msgstr "Caricare per email"
 
 #. module: documents
 #. openerp-web
@@ -1586,6 +1604,8 @@ msgid ""
 "Use <b>folders</b> to organize documents by departments, or group of "
 "interests"
 msgstr ""
+"Utilizzare <b>cartelle</b> per organizzare i documenti per dipartimenti o "
+"gruppi di interesse"
 
 #. module: documents
 #: model:res.groups,name:documents.group_documents_user
@@ -1606,7 +1626,7 @@ msgstr "Valido fino"
 #: model:documents.workflow.rule,name:documents.documents_Finance_validate_review
 #: model:documents.workflow.rule,name:documents.documents_Internal_validate_review
 msgid "Validate Document(s)"
-msgstr ""
+msgstr "Convalidare documento/i"
 
 #. module: documents
 #: model:documents.tag,name:documents.documents_finance_status_validated
@@ -1640,7 +1660,7 @@ msgstr "Videos"
 #: code:addons/documents/static/src/js/tour.js:13
 #, python-format
 msgid "Want to become a <b>paperless company</b>? Let's discover Odoo DMS."
-msgstr ""
+msgstr "Vuoi diventare un'<b>azienda senza carta</b>? Scopri Odoo DMS."
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__website_message_ids
@@ -1667,22 +1687,24 @@ msgid ""
 "When you <b>upload documents</b>, they appear in the selected folder and "
 "tags."
 msgstr ""
+"Quando <b>si caricano documenti</b>, appaiono nella cartella e nelle "
+"etichette selezionati."
 
 #. module: documents
 #: model:ir.actions.act_window,name:documents.workflow_rule_action
 msgid "Workflow Actions"
-msgstr ""
+msgstr "Azioni del flusso di lavoro"
 
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_action__workflow_rule_id
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_tag_criteria__workflow_rule_id
 msgid "Workflow Rule"
-msgstr ""
+msgstr "Regola flusso di lavoro"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.workflow_rule_form_view
 msgid "Write a tooltip for the action here"
-msgstr ""
+msgstr "Scrivere un tooltip per l'azione qui"
 
 #. module: documents
 #: model:ir.model.fields,help:documents.field_ir_attachment__type
@@ -1698,12 +1720,12 @@ msgstr ""
 #: code:addons/documents/static/src/xml/documents_inspector.xml:54
 #, python-format
 msgid "documents selected"
-msgstr ""
+msgstr "documenti selezionati"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.share_page
 msgid "documents shared by"
-msgstr ""
+msgstr "documenti condivisi da"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.share_view_form
@@ -1715,9 +1737,9 @@ msgstr "es. Discussione proposta"
 #. module: documents
 #: model:ir.model.fields,help:documents.field_documents_facet__tooltip
 msgid "hover text description"
-msgstr ""
+msgstr "Passare con il mouse sopra la descrizione del testo"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.public_page_layout
 msgid "shared by"
-msgstr ""
+msgstr "condiviso da"

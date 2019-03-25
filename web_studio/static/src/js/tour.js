@@ -346,6 +346,8 @@ tour.register('web_studio_new_report_tour', {
 }, {
     trigger: '.o_control_panel .o_form_button_save',
 }, {
+    // wait for the record to be saved
+    extra_trigger: '.o_form_view.o_form_readonly',
     // open studio
     trigger: '.o_main_navbar .o_web_studio_navbar_item',
 }, {

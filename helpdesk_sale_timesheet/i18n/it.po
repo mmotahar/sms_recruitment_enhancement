@@ -4,13 +4,15 @@
 # 
 # Translators:
 # Sebastiano Pistore <SebastianoPistore.info@protonmail.ch>, 2018
+# Léonie Bouchat <lbo@odoo.com>, 2019
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~11.5+e\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-21 14:06+0000\n"
-"PO-Revision-Date: 2018-09-21 14:06+0000\n"
-"Last-Translator: Sebastiano Pistore <SebastianoPistore.info@protonmail.ch>, 2018\n"
+"PO-Revision-Date: 2018-08-24 11:38+0000\n"
+"Last-Translator: Léonie Bouchat <lbo@odoo.com>, 2019\n"
 "Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,8 +30,10 @@ msgstr "Ticket helpdesk"
 msgid ""
 "Indicates more support time has been delivered thant the ordered quantity"
 msgstr ""
+"Indica che è stato consegnato più tempo di supporto rispetto alla quantità "
+"ordinata."
 
 #. module: helpdesk_sale_timesheet
 #: model:ir.model.fields,field_description:helpdesk_sale_timesheet.field_helpdesk_ticket__is_overdue
 msgid "Is overdue"
-msgstr ""
+msgstr "È in ritardo"

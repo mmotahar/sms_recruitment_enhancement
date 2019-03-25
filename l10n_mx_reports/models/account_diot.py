@@ -32,11 +32,12 @@ class MxReportPartnerLedger(models.AbstractModel):
             {'name': _('Country')},
             {'name': _('Nationality')},
             {'name': _('Paid 16%'), 'class': 'number'},
+            {'name': _('Paid 16% - Non-Creditable'), 'class': 'number'},
+            {'name': _('Paid 8 %'), 'class': 'number'},
             {'name': _('Importation 16%'), 'class': 'number'},
             {'name': _('Paid 0%'), 'class': 'number'},
             {'name': _('Exempt'), 'class': 'number'},
             {'name': _('Withheld'), 'class': 'number'},
-            {'name': _('Paid 16% - Non-Creditable'), 'class': 'number'},
         ]
 
     def _do_query_group_by_account(self, options, line_id):
@@ -152,8 +153,9 @@ class MxReportPartnerLedger(models.AbstractModel):
         sorted_partners = sorted(grouped_partners, key=lambda p: p.name or '')
         unfold_all = context.get('print_mode') and not options.get('unfolded_lines')
         tag_16 = self.env.ref('l10n_mx.tag_diot_16')
-        tag_imp = self.env.ref('l10n_mx.tag_diot_16_imp')
         tag_non_cre = self.env.ref('l10n_mx.tag_diot_16_non_cre', raise_if_not_found=False) or self.env['account.account.tag']
+        tag_8 = self.env.ref('l10n_mx.tag_diot_8', raise_if_not_found=False) or self.env['account.account.tag']
+        tag_imp = self.env.ref('l10n_mx.tag_diot_16_imp')
         tag_0 = self.env.ref('l10n_mx.tag_diot_0')
         tag_ret = self.env.ref('l10n_mx.tag_diot_ret')
         tag_exe = self.env.ref('l10n_mx.tag_diot_exento')
@@ -162,6 +164,9 @@ class MxReportPartnerLedger(models.AbstractModel):
         tax16 = tax_ids.search([('id', 'in', tax_ids.ids),
                                 ('tag_ids', 'in', tag_16.ids)])
         taxnoncre = tax_ids.search([('id', 'in', tax_ids.ids), ('tag_ids', 'in', tag_non_cre.ids)]) if tag_non_cre else self.env['account.tax']
+        tax8 = tax_ids.search(
+            [('id', 'in', tax_ids.ids), ('tag_ids', 'in', tag_8.ids)]
+        ) if tag_8 else tag_8
         taximp = tax_ids.search([('id', 'in', tax_ids.ids),
                                 ('tag_ids', 'in', tag_imp.ids)])
         tax0 = tax_ids.search([('id', 'in', tax_ids.ids),
@@ -189,13 +194,19 @@ class MxReportPartnerLedger(models.AbstractModel):
                 partner.vat or '', partner.country_id.code or '',
                 self.str_format(partner.l10n_mx_nationality, True)]
             partner_data = grouped_partners[partner]
-            total_tax16 = total_taximp = 0
+            total_tax16 = total_taximp = total_tax8 = 0
             total_tax0 = total_taxnoncre = 0
             exempt = 0
             withh = 0
             for tax in tax16.ids:
                 total_tax16 += partner_data.get(tax, 0)
             p_columns.append(total_tax16)
+            for tax in taxnoncre.ids:
+                total_taxnoncre += partner_data.get(tax, 0)
+            p_columns.append(total_taxnoncre)
+            for tax in tax8.ids:
+                total_tax8 += partner_data.get(tax, 0)
+            p_columns.append(total_tax8)
             for tax in taximp.ids:
                 total_taximp += partner_data.get(tax, 0)
             p_columns.append(int(round(total_taximp, 0)))
@@ -207,9 +218,6 @@ class MxReportPartnerLedger(models.AbstractModel):
             withh += sum([abs(partner_data.get(ret.id, 0) / (100 / ret.amount))
                           for ret in tax_ret])
             p_columns.append(withh)
-            for tax in taxnoncre.ids:
-                total_taxnoncre += partner_data.get(tax, 0)
-            p_columns.append(total_taxnoncre)
             unfolded = 'partner_' + str(partner.id) in options.get('unfolded_lines') or unfold_all
             lines.append({
                 'id': 'partner_' + str(partner.id),
@@ -240,7 +248,7 @@ class MxReportPartnerLedger(models.AbstractModel):
                 name = name[:32] + "..." if len(name) > 35 else name
                 columns = ['', '', '', '']
                 columns.append('')
-                total_tax16 = total_taximp = 0
+                total_tax16 = total_taximp = total_tax8 = 0
                 total_tax0 = total_taxnoncre = 0
                 exempt = 0
                 withh = 0
@@ -248,10 +256,18 @@ class MxReportPartnerLedger(models.AbstractModel):
                     line.debit or line.credit * -1
                     for tax in tax16.ids if tax in line.tax_ids.ids])
                 columns.append(self.format_value(total_tax16))
+                total_taxnoncre += sum([
+                    line.debit or line.credit * -1
+                    for tax in taxnoncre.ids if tax in line.tax_ids.ids])
+                columns.append(self.format_value(total_taxnoncre))
+                total_tax8 += sum([
+                    line.debit or line.credit * -1
+                    for tax in tax8.ids if tax in line.tax_ids.ids])
+                columns.append(self.format_value(total_tax8))
                 total_taximp += sum([
                     line.debit or line.credit * -1
                     for tax in taximp.ids if tax in line.tax_ids.ids])
-                columns.append(int(round(total_taximp, 0)))
+                columns.append(self.format_value(int(round(total_taximp, 0))))
                 total_tax0 += sum([
                     line.debit or line.credit * -1
                     for tax in tax0.ids if tax in line.tax_ids.ids])
@@ -265,10 +281,6 @@ class MxReportPartnerLedger(models.AbstractModel):
                     for ret in tax_ret
                     if ret.id in line.tax_ids.ids])
                 columns.append(self.format_value(withh))
-                total_taxnoncre += sum([
-                    line.debit or line.credit * -1
-                    for tax in taxnoncre.ids if tax in line.tax_ids.ids])
-                columns.append(self.format_value(total_taxnoncre))
                 caret_type = 'account.move'
                 if line.invoice_id:
                     caret_type = 'account.invoice.in' if line.invoice_id.type in ('in_refund', 'in_invoice') else 'account.invoice.out'
@@ -367,7 +379,7 @@ class MxReportPartnerLedger(models.AbstractModel):
             locale.setlocale(locale.LC_TIME, old_locale)
 
     def _l10n_mx_dpiva_txt_export(self, options):
-        txt_data = self.get_lines(options)
+        txt_data = self._get_lines(options)
         lines = ''
         date = fields.datetime.strptime(
             self.env.context['date_from'], DEFAULT_SERVER_DATE_FORMAT)
@@ -400,10 +412,10 @@ class MxReportPartnerLedger(models.AbstractModel):
             data[31] = columns[3]['name'] if columns[0]['name'] != '04' else ''
             data[32] = u''.join(columns[4]['name']).encode('utf-8').strip().decode('utf-8') if columns[0]['name'] != '04' else ''
             data[33] = int(columns[5]['name']) if columns[5]['name'] else ''
-            data[39] = int(columns[6]['name']) if columns[6]['name'] else ''
-            data[44] = int(columns[7]['name']) if columns[7]['name'] else ''
-            data[45] = int(columns[8]['name']) if columns[8]['name'] else ''
-            data[46] = int(columns[9]['name']) if columns[9]['name'] else ''
+            data[39] = int(columns[8]['name']) if columns[7]['name'] else ''
+            data[44] = int(columns[9]['name']) if columns[9]['name'] else ''
+            data[45] = int(columns[10]['name']) if columns[10]['name'] else ''
+            data[46] = int(columns[11]['name']) if columns[11]['name'] else ''
             lines += '|%s|\n' % '|'.join(str(d) for d in data)
         return lines
 
@@ -416,7 +428,7 @@ class MxReportPartnerLedger(models.AbstractModel):
             columns = line.get('columns', [])
             if not sum([c.get('name', 0) for c in columns[5:]]):
                 continue
-            data = [''] * 23
+            data = [''] * 24
             data[0] = columns[0]['name']
             data[1] = columns[1]['name']
             data[2] = columns[2]['name'] if columns[0]['name'] == '04' else ''
@@ -425,9 +437,11 @@ class MxReportPartnerLedger(models.AbstractModel):
             data[5] = columns[3]['name'] if columns[0]['name'] != '04' else ''
             data[6] = u''.join(columns[4]['name']).encode('utf-8').strip().decode('utf-8') if columns[0]['name'] != '04' else ''
             data[7] = int(columns[5]['name']) if columns[5]['name'] else ''
-            data[13] = int(columns[6]['name']) if columns[6]['name'] else ''
-            data[18] = int(columns[7]['name']) if columns[7]['name'] else ''
-            data[19] = int(columns[8]['name']) if columns[8]['name'] else ''
-            data[20] = int(columns[9]['name']) if columns[9]['name'] else ''
+            data[9] = int(columns[6]['name']) if columns[6]['name'] else ''
+            data[12] = int(columns[7]['name']) if columns[7]['name'] else ''
+            data[14] = int(columns[8]['name']) if columns[8]['name'] else ''
+            data[19] = int(columns[9]['name']) if columns[9]['name'] else ''
+            data[20] = int(columns[10]['name']) if columns[10]['name'] else ''
+            data[21] = int(columns[11]['name']) if columns[11]['name'] else ''
             lines += '|'.join(str(d) for d in data) + '\n'
         return lines

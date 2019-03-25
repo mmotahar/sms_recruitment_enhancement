@@ -140,7 +140,7 @@ msgstr ""
 #. module: account_deferred_revenue
 #: model:ir.ui.menu,name:account_deferred_revenue.menu_recognition_depreciation_confirmation_wizard
 msgid "Generate Deferred Revenues Entries"
-msgstr "Genereer uitgestelde omzet boekingen"
+msgstr "Genereer uitgestelde omzetboekingen"
 
 #. module: account_deferred_revenue
 #: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_account_asset_revenue_form

@@ -321,7 +321,7 @@ msgstr "Abonnementscode:"
 #, python-format
 msgid ""
 "Thank you, your registration was successful! Your database is valid until"
-msgstr "Dankcu, uw registratie was succesvol! Uw database is geldig tot"
+msgstr "Dank u, uw registratie was succesvol! Uw database is geldig tot"
 
 #. module: web_enterprise
 #. openerp-web

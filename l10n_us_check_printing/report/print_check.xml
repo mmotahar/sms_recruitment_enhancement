@@ -49,7 +49,7 @@
                 <th class="text-right">Payment</th>
             </tr></thead>
             <tbody>
-                <t t-foreach="page['stub_lines']" t-as="stub_line">
+                <t t-foreach="page['stub_lines'][:5]" t-as="stub_line">
                     <t t-if="stub_line.get('header')">
                         <tr><th colspan="6"><t t-esc="stub_line['name']"/></th></tr>
                     </t>
@@ -63,7 +63,7 @@
                         <td class="text-right"><t t-esc="stub_line['amount_paid']"/></td>
                     </tr></t>
                 </t>
-                <tr t-if="page['stub_cropped']"><td colspan="6" class="text-right">...</td></tr>
+                <tr t-if="len(page['stub_lines']) > 5"><td colspan="6" class="text-right">...</td></tr>
             </tbody>
         </table>
         <div class="stub_total_amount">Check Amount:

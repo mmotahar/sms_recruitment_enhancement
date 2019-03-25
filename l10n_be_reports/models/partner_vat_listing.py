@@ -27,9 +27,8 @@ class ReportL10nBePartnerVatListing(models.AbstractModel):
         tag_ids = [self.env['ir.model.data'].xmlid_to_res_id(k) for k in ['l10n_be.tax_tag_00', 'l10n_be.tax_tag_01', 'l10n_be.tax_tag_02', 'l10n_be.tax_tag_03', 'l10n_be.tax_tag_45', 'l10n_be.tax_tag_49']]
         tag_ids_2 = [self.env['ir.model.data'].xmlid_to_res_id(k) for k in ['l10n_be.tax_tag_54', 'l10n_be.tax_tag_64']]
         query = """
-            WITH out_invoice_table AS (SELECT id FROM account_invoice WHERE type in ('out_invoice', 'out_refund') AND state in ('open', 'in_payment', 'paid'))
-            SELECT sub1.partner_id, sub1.name, sub1.vat, sub1.turnover, sub1.refund_base, sub2.vat_amount, sub2.refund_vat_amount
-            FROM (SELECT l.partner_id, p.name, p.vat, SUM(l.credit - l.debit) as turnover, SUM(l.debit) as refund_base
+            SELECT turnover_sub.partner_id, turnover_sub.name, turnover_sub.vat, turnover_sub.turnover, refund_vat_sub.refund_base, refund_base_sub.vat_amount, refund_base_sub.refund_vat_amount
+              FROM (SELECT l.partner_id, p.name, p.vat, SUM(l.credit - l.debit) as turnover
                   FROM account_move_line l
                   LEFT JOIN res_partner p ON l.partner_id = p.id AND p.customer = true
                   RIGHT JOIN (
@@ -38,26 +37,47 @@ class ReportL10nBePartnerVatListing(models.AbstractModel):
                       LEFT JOIN account_tax_account_tag tt on amlt.account_tax_id = tt.account_tax_id
                       WHERE tt.account_account_tag_id IN %(tags)s
                   ) AS x ON x.account_move_line_id = l.id
+                          LEFT JOIN account_invoice inv ON l.invoice_id = inv.id
                   WHERE p.vat IS NOT NULL
                   AND l.partner_id IN %(partner_ids)s
                   AND l.date >= %(date_from)s
                   AND l.date <= %(date_to)s
                   AND l.company_id IN %(company_ids)s
                   AND ((l.invoice_id IS NULL AND l.credit > 0)
-                    OR (l.invoice_id IN (SELECT id from out_invoice_table)))
-                  GROUP BY l.partner_id, p.name, p.vat) AS sub1
+                    OR (inv.type IN ('out_refund', 'out_invoice') AND inv.state IN ('open', 'in_payment', 'paid')))
+                  GROUP BY l.partner_id, p.name, p.vat) AS turnover_sub
+                    FULL JOIN (SELECT l.partner_id, SUM(l.debit-l.credit) AS refund_base
+                        FROM account_move_line l
+                        LEFT JOIN res_partner p ON l.partner_id = p.id AND p.customer = true
+                         RIGHT JOIN (
+                              SELECT DISTINCT amlt.account_move_line_id
+                              FROM account_move_line_account_tax_rel amlt
+                              LEFT JOIN account_tax_account_tag tt on amlt.account_tax_id = tt.account_tax_id
+                              WHERE tt.account_account_tag_id IN %(tags)s
+                          ) AS x ON x.account_move_line_id = l.id
+                          LEFT JOIN account_invoice inv ON l.invoice_id = inv.id
+                          WHERE p.vat IS NOT NULL
+                          AND l.partner_id IN %(partner_ids)s
+                          AND l.date >= %(date_from)s
+                          AND l.date <= %(date_to)s
+                          AND l.company_id IN %(company_ids)s
+                          AND ((l.invoice_id IS NULL AND l.credit > 0)
+                            OR (inv.type = 'out_refund' AND inv.state IN ('open', 'in_payment', 'paid')))
+                          GROUP BY l.partner_id, p.name, p.vat) AS refund_vat_sub
+                    ON turnover_sub.partner_id = refund_vat_sub.partner_id
             LEFT JOIN (SELECT l2.partner_id, SUM(l2.credit - l2.debit) as vat_amount, SUM(l2.debit) AS refund_vat_amount
                   FROM account_move_line l2
                   LEFT JOIN account_tax tax2 on l2.tax_line_id = tax2.id
+                          LEFT JOIN account_invoice inv ON l2.invoice_id = inv.id
                   WHERE tax2.id IN (SELECT DISTINCT(account_tax_id) from account_tax_account_tag WHERE account_account_tag_id IN %(tags2)s)
                   AND l2.partner_id IN %(partner_ids)s
                   AND l2.date >= %(date_from)s
                   AND l2.date <= %(date_to)s
                   AND l2.company_id IN %(company_ids)s
                   AND ((l2.invoice_id IS NULL AND l2.credit > 0)
-                    OR (l2.invoice_id IN (SELECT id from out_invoice_table)))
-                  GROUP BY l2.partner_id) AS sub2
-            ON sub1.partner_id = sub2.partner_id
+                   OR (inv.type IN ('out_refund', 'out_invoice') AND inv.state IN ('open', 'in_payment', 'paid')))
+                GROUP BY l2.partner_id) AS refund_base_sub
+              ON turnover_sub.partner_id = refund_base_sub.partner_id
            WHERE turnover > 250 OR refund_base > 0 OR refund_vat_amount > 0
         """
         params = {

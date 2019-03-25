@@ -32,7 +32,8 @@ class WebCohort(http.Controller):
                 header_sign = '+'
                 col_range = range(columns_length)
 
-            worksheet.write_merge(row, row, col + 2, columns_length + 1, '%s - By %s' % (result['date_stop_string'], result['interval_string']), style_highlight)
+            worksheet.write_merge(row, row, col + 2, columns_length + 1,
+                _('%s - By %s') % (result['date_stop_string'], result['interval_string']), style_highlight)
             row += 1
             worksheet.write(row, col, result['date_start_string'], style_highlight)
             col += 1

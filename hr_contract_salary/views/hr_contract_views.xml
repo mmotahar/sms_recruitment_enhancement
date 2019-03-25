@@ -40,8 +40,8 @@
             </field>
             <group name="duration_group" position="inside">
                 <field name="hr_responsible_id"/>
-                <field name="sign_template_id"/>
-                <field name="contract_update_template_id"/>
+                <field name="sign_template_id" options="{'no_create': True}"/>
+                <field name="contract_update_template_id" options="{'no_create': True}"/>
             </group>
             <field name="type_id" position="before">
                 <field name="contract_type"/>

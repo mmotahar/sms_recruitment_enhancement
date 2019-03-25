@@ -5,6 +5,7 @@
 # Translators:
 # Bagavathikumar Ramakrishnan <bagavathikumar@gmail.com>, 2019
 # Abul Hassan M I <miabulhassan@gmail.com>, 2019
+# Alagappan Karthikeyan <me@karthik.sg>, 2019
 # 
 msgid ""
 msgstr ""
@@ -12,7 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-21 14:06+0000\n"
 "PO-Revision-Date: 2018-08-24 11:37+0000\n"
-"Last-Translator: Abul Hassan M I <miabulhassan@gmail.com>, 2019\n"
+"Last-Translator: Alagappan Karthikeyan <me@karthik.sg>, 2019\n"
 "Language-Team: Tamil (https://www.transifex.com/odoo/teams/41243/ta/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,12 +24,12 @@ msgstr ""
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "(if applicable)"
-msgstr ""
+msgstr "(பொருந்தினால்)"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "(optional)"
-msgstr ""
+msgstr "(விரும்பினால்)"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_account_payment_form
@@ -38,27 +39,27 @@ msgid ""
 "('sdd_mandate_usable', '!=', True), ('payment_type', '!=', 'inbound'), "
 "('state', '!=', 'draft')]}\" role=\"status\">Direct Debit collecting method "
 "available</span>"
-msgstr ""
+msgstr "நேரடி டெபிட் சேகரிப்பு முறை"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "<strong>Address:</strong>"
-msgstr ""
+msgstr "முகவரி:"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "<strong>City:</strong>"
-msgstr ""
+msgstr "பெருநகரம்:"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "<strong>Country:</strong>"
-msgstr ""
+msgstr "<strong>நாடு:</strong>"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "<strong>Creditor identifier:</strong>"
-msgstr ""
+msgstr "கடனாளர் அடையாளங்காட்டி:"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
@@ -66,28 +67,29 @@ msgid ""
 "<strong>Date and place of signature:</strong> "
 "......................................"
 msgstr ""
+"கையொப்பத்தின் தேதி மற்றும் இடம்: ......................................"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "<strong>IBAN account number:</strong>"
-msgstr ""
+msgstr "IBAN கணக்கு எண்:"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "<strong>Mail address:</strong>"
-msgstr ""
+msgstr "அஞ்சல் முகவரி:"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "<strong>Mandate identifier:</strong>"
-msgstr ""
+msgstr "கட்டளை அடையாளங்காட்டி:"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid ""
 "<strong>Name of the reference party:</strong> "
 "......................................"
-msgstr ""
+msgstr "குறிப்புக் கட்சியின் பெயர்: ......................................"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
@@ -97,22 +99,22 @@ msgstr "<strong>பெயர்:</strong>"
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "<strong>Phone number:</strong>"
-msgstr ""
+msgstr "தொலைபேசி எண்"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "<strong>Signature:</strong>"
-msgstr ""
+msgstr "கையொப்பம்:"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "<strong>Start date:</strong>"
-msgstr ""
+msgstr "தொடக்க தேதி:"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "<strong>Transaction type:</strong> recurrent"
-msgstr ""
+msgstr "பரிவர்த்தனை வகை: மீண்டும் மீண்டும்"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
@@ -123,7 +125,7 @@ msgstr ""
 #: code:addons/account_sepa_direct_debit/models/sdd_mandate.py:80
 #, python-format
 msgid "A debtor account is required to validate a SEPA Direct Debit mandate."
-msgstr ""
+msgstr "ஒரு கடனாளர் கணக்கை SEPA நேரடி டெபிட் ஆணை மதிப்பீடு செய்ய வேண்டும்."
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.actions.act_window,help:account_sepa_direct_debit.account_sepa_direct_debit_mandate_tree_act
@@ -131,26 +133,28 @@ msgid ""
 "A mandate represents the authorization you receive from a customer\n"
 "                    to automatically collect money on her account."
 msgstr ""
+"நீங்கள் ஒரு வாடிக்கையாளரிடமிருந்து பெறும் அங்கீகாரத்தை ஒரு ஆணை குறிப்பிடுகிறது\n"
+"                     தனது கணக்கில் தானாக பணம் சேகரிக்க."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_sdd_mandate__partner_bank_id
 msgid "Account of the customer to collect payments from."
-msgstr ""
+msgstr "வாடிக்கையாளர் கணக்கிலிருந்து பணம் சேகரிக்க."
 
 #. module: account_sepa_direct_debit
 #: selection:sdd.mandate,state:0
 msgid "Active"
-msgstr ""
+msgstr "செயலில்"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.account_sdd_mandate_search_view
 msgid "Active Mandates"
-msgstr ""
+msgstr "செயலில் உள்ள சட்டங்கள்"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model,name:account_sepa_direct_debit.model_account_batch_payment
 msgid "Batch Payment"
-msgstr ""
+msgstr "பேட்ச் செலுத்துதல்"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.account_sepa_direct_debit_mandate_form
@@ -160,17 +164,17 @@ msgstr "ரத்து"
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.account_sepa_direct_debit_mandate_form
 msgid "Close"
-msgstr ""
+msgstr "நெருக்கமான"
 
 #. module: account_sepa_direct_debit
 #: selection:sdd.mandate,state:0
 msgid "Closed"
-msgstr ""
+msgstr "மூடப்பட்ட"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.account_sdd_mandate_search_view
 msgid "Closed Mandates"
-msgstr ""
+msgstr "மூடப்பட்ட மண்டேல்கள்"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model,name:account_sepa_direct_debit.model_res_company
@@ -185,12 +189,12 @@ msgstr "நிறுவனம்"
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_sdd_mandate__company_id
 msgid "Company for whose invoices the mandate can be used."
-msgstr ""
+msgstr "யாருடைய பொருள் உத்தரவுகளை பயன்படுத்த முடியும் நிறுவனத்தின்."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model,name:account_sepa_direct_debit.model_res_config_settings
 msgid "Config Settings"
-msgstr ""
+msgstr "கட்டமைப்பு அமைப்புகள்"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model,name:account_sepa_direct_debit.model_res_partner
@@ -200,12 +204,12 @@ msgstr "தொடர்பு"
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_account_payment__sdd_mandate_usable
 msgid "Could a SDD mandate be used?"
-msgstr ""
+msgstr "SDD கட்டளை பயன்படுத்தப்பட முடியுமா?"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.actions.act_window,help:account_sepa_direct_debit.account_sepa_direct_debit_mandate_tree_act
 msgid "Create a new direct debit customer mandate"
-msgstr ""
+msgstr "ஒரு புதிய நேரடி டெபிட் வாடிக்கையாளர் ஆணையை உருவாக்கவும்"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_sdd_mandate__create_uid
@@ -220,32 +224,32 @@ msgstr "உருவாக்கப்பட்ட தேதி"
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_res_config_settings__sdd_creditor_identifier
 msgid "Creditor Identifier"
-msgstr ""
+msgstr "கடன் வழங்குனர் அடையாளங்காட்டி"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_res_config_settings__sdd_creditor_identifier
 msgid "Creditor identifier of your company within SEPA scheme."
-msgstr ""
+msgstr "SEPA திட்டத்தின்கீழ் உங்கள் நிறுவனத்தின் கடன் வழங்குநரின் அடையாளம்."
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "Creditor information"
-msgstr ""
+msgstr "கடனாளர் தகவல்"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.account_sepa_direct_debit_mandate_form
 msgid "Customer mandate"
-msgstr ""
+msgstr "வாடிக்கையாளர் ஆணை"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_sdd_mandate__partner_id
 msgid "Customer whose payments are to be managed by this mandate."
-msgstr ""
+msgstr "இந்த கட்டளையால் நிர்வகிக்கப்படும் வாடிக்கையாளரின் வாடிக்கையாளர்."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_sdd_mandate__start_date
 msgid "Date from which the mandate can be used (inclusive)."
-msgstr ""
+msgstr "கட்டளையைப் பயன்படுத்தும் தேதி (உள்ளடக்கியது)."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_sdd_mandate__end_date
@@ -253,31 +257,33 @@ msgid ""
 "Date until which the mandate can be used. It will automatically be closed "
 "after this date."
 msgstr ""
+"கட்டளையைப் பயன்படுத்தும் வரை தேதி. இந்த தேதிக்குப் பிறகு இது தானாக "
+"மூடப்படும்."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_account_batch_payment__sdd_required_collection_date
 msgid "Date when the company expects to receive the payments of this batch."
-msgstr ""
+msgstr "நிறுவனம் இந்தத் தொகுப்பின் பணம் பெறுவதற்கு எதிர்பார்க்கும் தேதி."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_sdd_mandate__partner_id
 msgid "Debtor"
-msgstr ""
+msgstr "கடன்பட்டவரின்"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_sdd_mandate__partner_bank_id
 msgid "Debtor Account"
-msgstr ""
+msgstr "கடனாளர் கணக்கு"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_sdd_mandate__debtor_id_code
 msgid "Debtor Identifier"
-msgstr ""
+msgstr "கடனாளர் அடையாளங்காட்டி"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "Debtor information"
-msgstr ""
+msgstr "கடனாளர் தகவல்"
 
 #. module: account_sepa_direct_debit
 #: model:ir.actions.act_window,name:account_sepa_direct_debit.account_sepa_direct_debit_mandate_tree_act
@@ -285,28 +291,28 @@ msgstr ""
 #: model:ir.ui.menu,name:account_sepa_direct_debit.account_sepa_direct_debit_customer_mandates_menu
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.account_sdd_res_partner_view
 msgid "Direct Debit Mandates"
-msgstr ""
+msgstr "நேரடி பற்று உத்தரவு"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_account_journal_dashboard_kanban_view
 msgid "Direct Debit Payment to Collect"
-msgstr ""
+msgstr "சேகரிக்க நேரடி டெபிட் கட்டணம்"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_view_account_payment_search
 msgid "Direct Debit Payments To Collect"
-msgstr ""
+msgstr "நேரடி டெபிட் கொடுப்பனவுகளை சேகரிக்க"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_sdd_mandate__payments_to_collect_nber
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_account_journal_dashboard_kanban_view
 msgid "Direct Debit Payments to Collect"
-msgstr ""
+msgstr "சேகரிப்பதற்கு நேரடி டெபிட் கொடுப்பனவுகள்"
 
 #. module: account_sepa_direct_debit
 #: model:ir.actions.act_window,name:account_sepa_direct_debit.action_sdd_payments_to_collect
 msgid "Direct debit payments to collect"
-msgstr ""
+msgstr "நேரடி டெபிட் பணம் சேகரிக்க"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_sdd_mandate__display_name
@@ -316,12 +322,12 @@ msgstr "காட்சி பெயர்"
 #. module: account_sepa_direct_debit
 #: selection:sdd.mandate,state:0
 msgid "Draft"
-msgstr ""
+msgstr "வரைவு"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.account_sdd_mandate_search_view
 msgid "Draft Mandates"
-msgstr ""
+msgstr "வரைவு கட்டளைகள்"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_sdd_mandate__end_date
@@ -331,23 +337,23 @@ msgstr "கடைசி தேதி"
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "End date"
-msgstr ""
+msgstr "கடைசி தேதி"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_res_partner__sdd_mandate_ids
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_res_users__sdd_mandate_ids
 msgid "Every mandate belonging to this partner."
-msgstr ""
+msgstr "இந்த பங்குதாரர் சொந்தமான ஒவ்வொரு கட்டளை."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_sdd_mandate__original_doc_filename
 msgid "File name of original_doc."
-msgstr ""
+msgstr "அசல்_டாக் கோப்பு பெயர்."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_sdd_mandate__debtor_id_code
 msgid "Free reference identifying the debtor in your company."
-msgstr ""
+msgstr "உங்கள் நிறுவனத்தில் கடனாளர் அடையாளம் காணும் இலவச குறிப்பு."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_sdd_mandate__id
@@ -357,24 +363,26 @@ msgstr "ID"
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "Identification code"
-msgstr ""
+msgstr "அடையாளக் குறியீடு"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_sdd_mandate__name
 msgid "Identifier"
-msgstr ""
+msgstr "அடையாளங்காட்டியால்"
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/res_company.py:38
 #, python-format
 msgid "Invalid creditor identifier. Make sure you made no typo."
 msgstr ""
+"தவறான கடன் அடையாளங்காட்டி. நீங்கள் டைபோ செய்யவில்லை என்பதை உறுதிப்படுத்திக் "
+"கொள்ளுங்கள்."
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/res_company.py:40
 #, python-format
 msgid "Invalid creditor identifier. Wrong format."
-msgstr ""
+msgstr "தவறான கடன் அடையாளங்காட்டி. தவறான வடிவம்."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model,name:account_sepa_direct_debit.model_account_invoice
@@ -384,39 +392,41 @@ msgstr "விலைப்பட்டியல்"
 #. module: account_sepa_direct_debit
 #: model:mail.message.subtype,description:account_sepa_direct_debit.sdd_mt_invoice_paid_with_mandate
 msgid "Invoice paid via direct debit."
-msgstr ""
+msgstr "நேரடி பற்று வழியாக செலுத்துதல்."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_sdd_mandate__paid_invoice_ids
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.account_sepa_direct_debit_mandate_form
 msgid "Invoices Paid"
-msgstr ""
+msgstr "பணம் செலுத்தும் பங்குகள்"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_sdd_mandate__paid_invoice_ids
 msgid "Invoices paid using this mandate."
-msgstr ""
+msgstr "இந்த கட்டளையைப் பயன்படுத்தி பணம் செலுத்துவது."
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.account_sepa_direct_debit_mandate_form
 msgid "Invoices paid with this mandate."
-msgstr ""
+msgstr "இந்த கட்டளையுடன் கூடிய பணம்."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model,name:account_sepa_direct_debit.model_account_journal
 msgid "Journal"
-msgstr ""
+msgstr "ஜர்னல்"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_sdd_mandate__payment_journal_id
 msgid "Journal for Direct Debit Payments"
-msgstr ""
+msgstr "நேரடி டெபிட் கொடுப்பனவுகளுக்கு ஜர்னல்"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_sdd_mandate__payment_journal_id
 msgid ""
 "Journal to use to receive SEPA Direct Debit payments from this mandate."
 msgstr ""
+"இந்த கட்டளையிலிருந்து SEPA நேரடி டெபிட் செலுத்துகைகளைப் பெற ஜர்னல் "
+"பயன்படுத்த வேண்டும்."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_sdd_mandate____last_update
@@ -436,39 +446,41 @@ msgstr "கடைசியாக புதுப்பிக்கப்பட�
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_view_account_payment_search
 msgid "Linked to a revoked direct debit mandate"
-msgstr ""
+msgstr "திரும்பப்பெறப்பட்ட நேரடி பற்று உத்தரவு இணைக்கப்பட்டுள்ளது"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_view_account_invoice_search
 msgid "Linked to revoked mandate"
-msgstr ""
+msgstr "திரும்பப்பெறப்பட்ட கட்டளைக்கு இணைக்கப்பட்டது"
 
 #. module: account_sepa_direct_debit
 #: model:ir.actions.report,name:account_sepa_direct_debit.sdd_mandate_form_report_main
 msgid "Mandate form"
-msgstr ""
+msgstr "கட்டளை வடிவம்"
 
 #. module: account_sepa_direct_debit
 #: sql_constraint:sdd.mandate:0
 msgid "Mandate identifier must be unique ! Please choose another one."
 msgstr ""
+"கட்டளை அடையாளங்காட்டி தனிப்பட்டதாக இருக்க வேண்டும்! தயவுசெய்து வேறொரு "
+"ஒன்றைத் தேர்ந்தெடுக்கவும்."
 
 #. module: account_sepa_direct_debit
 #: model:ir.actions.server,name:account_sepa_direct_debit.sdd_mandate_state_cron_ir_actions_server
 #: model:ir.cron,cron_name:account_sepa_direct_debit.sdd_mandate_state_cron
 #: model:ir.cron,name:account_sepa_direct_debit.sdd_mandate_state_cron
 msgid "Mandate state updater"
-msgstr ""
+msgstr "கட்டாய மாநில புதுப்பித்தல்"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "Mandate validity"
-msgstr ""
+msgstr "கட்டளை செல்லுபடியாகும்"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.actions.act_window,help:account_sepa_direct_debit.action_sdd_payments_to_collect
 msgid "No direct debit payment to collect"
-msgstr ""
+msgstr "சேகரிக்க நேரடியான டெபிட் கட்டணம் இல்லை"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_sdd_mandate__payments_to_collect_nber
@@ -478,11 +490,15 @@ msgid ""
 "mandate and still needs their XML file to be generated and sent to the bank "
 "to debit the customer's account."
 msgstr ""
+"இந்த கட்டளையைப் பெறுவதற்கு நேரடி டெபிட் செலுத்துதல்கள் எண்ணிக்கை, அதாவது, "
+"இந்த கட்டளையை உருவாக்கி, இடுகையிடப்பட்ட பணம் செலுத்தும் எண்ணிக்கை மற்றும் "
+"இன்னும் அவற்றின் எக்ஸ்எம்எல் கோப்பினை உருவாக்க வேண்டும் மற்றும் "
+"வாடிக்கையாளரின் கணக்கை பற்று வைக்க வங்கிக்கு அனுப்ப வேண்டும்."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_sdd_mandate__paid_invoices_nber
 msgid "Number of invoices paid with thid mandate."
-msgstr ""
+msgstr "இந்த கட்டளையுடன் பணம் செலுத்தும் பொருட்களின் எண்ணிக்கை."
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.actions.act_window,help:account_sepa_direct_debit.account_sepa_direct_debit_mandate_tree_act
@@ -493,6 +509,11 @@ msgid ""
 "                    then only have to generate a SEPA Direct Debit (SDD) XML file containing this operation\n"
 "                    and send it to your bank to effectively get paid."
 msgstr ""
+"ஒரு விலைப்பட்டியல் தயாரிக்கப்பட்டது\n"
+"                     விலைப்பட்டியல் தேதி ஒரு செயலில் ஒரு கட்டளை கொண்ட வாடிக்கையாளர் Odoo உள்ள,\n"
+"                     அதன் சரிபார்ப்பு அதன் தானியங்கி செலுத்துதலைத் தூண்டும், மற்றும் நீங்கள் விரும்பும்\n"
+"                     பின் மட்டுமே இந்த SEPA நேரடி டெபிட் (SDD) எக்ஸ்எம்எல் கோப்பை உருவாக்க வேண்டும்\n"
+"                     பணம் செலுத்துவதற்கு உங்கள் வங்கிக்கு அனுப்பவும்."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_account_invoice__sdd_paying_mandate_id
@@ -500,11 +521,13 @@ msgid ""
 "Once this invoice has been paid with Direct Debit, contains the mandate that"
 " allowed the payment."
 msgstr ""
+"நேரடி பற்றுடன் இந்த விலைப்பட்டியல் செலுத்தியவுடன், பணம் செலுத்தும் அனுமதி "
+"கட்டளையை கொண்டுள்ளது."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_sdd_mandate__one_off
 msgid "One-off Mandate"
-msgstr ""
+msgstr "ஒரு ஆஃப் மேன்ட்"
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/sdd_mandate.py:143
@@ -513,6 +536,8 @@ msgid ""
 "Only IBAN account numbers can receive SEPA Direct Debit payments. Please "
 "select a journal associated to one."
 msgstr ""
+"IBPA கணக்கு எண்கள் மட்டுமே SEPA நேரடி டெபிட் செலுத்துகைகளை பெற முடியும். "
+"ஒன்று தொடர்புடைய பத்திரிகை ஒன்றைத் தேர்ந்தெடுக்கவும்."
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/sdd_mandate.py:94
@@ -520,21 +545,23 @@ msgstr ""
 msgid ""
 "Only mandates in draft state can be deleted from database when cancelled."
 msgstr ""
+"இரத்து செய்யப்படும்போது தரவுத்தளத்தில் இருந்து கட்டளைகளை மட்டுமே நீக்க "
+"முடியும்."
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.account_sdd_res_partner_view
 msgid "Open this partner's mandates"
-msgstr ""
+msgstr "இந்த கூட்டாளியின் கட்டளைகளை திறக்கவும்"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_sdd_mandate__original_doc
 msgid "Original Document"
-msgstr ""
+msgstr "அசல் ஆவணம்"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_sdd_mandate__original_doc_filename
 msgid "Original Document File Name"
-msgstr ""
+msgstr "அசல் ஆவண கோப்பு பெயர்"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_sdd_mandate__original_doc
@@ -542,55 +569,57 @@ msgid ""
 "Original document into which the customer authorises the use of Direct Debit"
 " for his invoices."
 msgstr ""
+"அசல் ஆவணம், வாடிக்கையாளர் தனது பொருள்களுக்கான நேரடி டெப்ட்டின் பயன்பாட்டை "
+"அனுமதிக்கிறார்."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_account_payment__sdd_mandate_id
 msgid "Originating SEPA mandate"
-msgstr ""
+msgstr "SEPA கட்டளை பிறப்பித்தல்"
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/sdd_mandate.py:116
 #, python-format
 msgid "Paid Invoices"
-msgstr ""
+msgstr "பணம் பற்றுச்சீட்டுகள்"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_sdd_mandate__paid_invoices_nber
 msgid "Paid Invoices Number"
-msgstr ""
+msgstr "பணம் பற்றுச்சீட்டு எண்"
 
 #. module: account_sepa_direct_debit
 #: model:mail.message.subtype,name:account_sepa_direct_debit.sdd_mt_invoice_paid_with_mandate
 msgid "Paid via direct debit"
-msgstr ""
+msgstr "நேரடி பற்று வழியாக செலுத்தப்பட்டது"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model,name:account_sepa_direct_debit.model_account_payment
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_sdd_mandate__payment_ids
 msgid "Payments"
-msgstr ""
+msgstr "கொடுப்பனவு"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.account_sepa_direct_debit_mandate_form
 msgid "Payments generated for this mandate that have not yet been collected."
-msgstr ""
+msgstr "இந்த கட்டளையைப் பெறாத கொடுப்பனவுகள் இன்னும் சேகரிக்கப்படவில்லை."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_sdd_mandate__payment_ids
 msgid "Payments generated thanks to this mandate."
-msgstr ""
+msgstr "இந்த கட்டளைக்கு நன்றி செலுத்தியது நன்றி."
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/sdd_mandate.py:126
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.account_sepa_direct_debit_mandate_form
 #, python-format
 msgid "Payments to Collect"
-msgstr ""
+msgstr "சேகரிப்பதற்கு செலுத்தும்"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "Please complete your coordinates."
-msgstr ""
+msgstr "தயவுசெய்து உங்கள் ஆய அச்சுக்களை நிறைவு செய்யவும்."
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_report_invoice_document
@@ -598,63 +627,67 @@ msgid ""
 "Please do not pay it manually, the payment will be asked to your bank to be processed\n"
 "                        automatically."
 msgstr ""
+"தயவுசெய்து கைமுறையாக பணம் செலுத்தாதீர்கள், உங்கள் வங்கியிடம் செயலாக்கப்பட வேண்டும் என்று கேட்கப்படும்\n"
+"                         தானாக."
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.account_sepa_direct_debit_mandate_form
 msgid "Print"
-msgstr ""
+msgstr "அச்சு"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model,name:account_sepa_direct_debit.model_account_register_payments
 msgid "Register Payments"
-msgstr ""
+msgstr "கட்டணம் செலுத்துங்கள்"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_account_batch_payment__sdd_required_collection_date
 msgid "Required collection date"
-msgstr ""
+msgstr "தேவையான சேகரிப்பு தேதி"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.account_sepa_direct_debit_mandate_form
 msgid "Revoke"
-msgstr ""
+msgstr "திரும்பப்பெறு"
 
 #. module: account_sepa_direct_debit
 #: selection:sdd.mandate,state:0
 msgid "Revoked"
-msgstr ""
+msgstr "திரும்பப்பெறப்பட்டது"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model,name:account_sepa_direct_debit.model_sdd_mandate
 msgid "SDD Mandate"
-msgstr ""
+msgstr "SDD கட்டளை"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_res_partner__sdd_count
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_res_users__sdd_count
 msgid "SDD count"
-msgstr ""
+msgstr "SDD எண்ணிக்கை"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_res_company__sdd_creditor_identifier
 msgid "SDD creditor identifier"
-msgstr ""
+msgstr "SDD கடனாளர் அடையாளங்காட்டி"
 
 #. module: account_sepa_direct_debit
 #: model:account.payment.method,name:account_sepa_direct_debit.payment_method_sdd
 msgid "SEPA Direct Debit"
-msgstr ""
+msgstr "SEPA நேரடி டெபிட்"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "SEPA Direct Debit Mandate"
-msgstr ""
+msgstr "SEPA நேரடி பற்று உத்தரவு"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_res_company__sdd_creditor_identifier
 msgid ""
 "SEPA Direct Debit creditor identifier of the company, given by the bank."
 msgstr ""
+"வங்கியால் வழங்கப்பட்ட நிறுவனத்தின் SEPA நேரடி பற்று கடன் வழங்குநரின் "
+"அடையாளம்."
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/sdd_mandate.py:82
@@ -663,22 +696,24 @@ msgid ""
 "SEPA Direct Debit scheme only accepts IBAN account numbers. Please select an"
 " IBAN-compliant debtor account for this mandate."
 msgstr ""
+"SEPA நேரடி டெபிட் திட்டம் IBAN கணக்கு எண்களை மட்டுமே ஏற்றுக்கொள்கிறது. இந்த "
+"கட்டளைக்கு IBAN- இணக்கமான கடனாளர் கணக்கைத் தேர்ந்தெடுக்கவும்."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_res_partner__sdd_mandate_ids
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_res_users__sdd_mandate_ids
 msgid "Sdd Mandate"
-msgstr ""
+msgstr "எஸ்.டி.டி மண்டே"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_account_invoice__sdd_paying_mandate_id
 msgid "Sdd Paying Mandate"
-msgstr ""
+msgstr "ஒற்றை பணம் செலுத்துதல் கட்டளை"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "Signature"
-msgstr ""
+msgstr "கையொப்பம்"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_sdd_mandate__start_date
@@ -688,7 +723,7 @@ msgstr "தொடக்க தேதி"
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_sdd_mandate__state
 msgid "State"
-msgstr ""
+msgstr "நிலை"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_account_payment__sdd_mandate_usable
@@ -696,6 +731,8 @@ msgid ""
 "Technical field used to inform the end user there is a SDD mandate that "
 "could be used to register that payment"
 msgstr ""
+"இறுதிப் பயனருக்கு தெரிவிக்க பயன்படுத்தப்படும் தொழில்நுட்பத் துறை ஒரு SDD ஆணை"
+" உள்ளது, அது அந்த கட்டணத்தை பதிவு செய்ய பயன்படுத்தப்படலாம்"
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/sdd_mandate.py:145
@@ -704,6 +741,8 @@ msgid ""
 "The bank account you select for payment must be related to a bank. Please "
 "fix it first."
 msgstr ""
+"நீங்கள் பணம் செலுத்தத் தேர்ந்தெடுக்கும் வங்கிக் கணக்கு ஒரு வங்கியுடன் "
+"தொடர்புடையதாக இருக்க வேண்டும். முதலில் அதை சரிசெய்யவும்."
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/sdd_mandate.py:147
@@ -712,12 +751,14 @@ msgid ""
 "The bank your payment account is related to must have a BIC number. Please "
 "define one."
 msgstr ""
+"உங்கள் கட்டணக் கணக்கு தொடர்பான வங்கிக்கு பி.ஐ.சி எண் இருக்க வேண்டும். "
+"தயவுசெய்து ஒன்றை வரையறுக்கவும்."
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/res_company.py:26
 #, python-format
 msgid "The creditor identifier exceeds the maximum length of 35 characters."
-msgstr ""
+msgstr "கடன் அடையாளங்காட்டி அதிகபட்ச நீளம் 35 எழுத்துகளை மீறுகிறது."
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/sdd_mandate.py:84
@@ -726,6 +767,8 @@ msgid ""
 "The debtor account must have a bank with a bic number in order to validate a"
 " SEPA Direct Debit mandate."
 msgstr ""
+"SEPA நேரடி டெபிட் கட்டளைச் சரிபார்ப்பதற்காக கடனாளர் கணக்கில் ஒரு பைக் எண்ணை "
+"வைத்திருக்க வேண்டும்."
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/sdd_mandate.py:153
@@ -734,6 +777,8 @@ msgid ""
 "The debtor identifier you specified exceeds the limitation of 35 characters "
 "imposed by SEPA regulation"
 msgstr ""
+"நீங்கள் குறிப்பிட்டுள்ள கடனாளி அடையாளங்காட்டி SEPA கட்டுப்பாட்டினால் "
+"சுமத்தப்பட்ட 35 எழுத்துகளின் வரம்பை மீறுகிறது"
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/sdd_mandate.py:137
@@ -741,11 +786,14 @@ msgstr ""
 msgid ""
 "The end date of the mandate must be posterior or equal to its start date."
 msgstr ""
+"கட்டளையின் இறுதி தேதி அதன் ஆரம்ப தேதியில் பிந்தைய அல்லது சமமாக இருக்க "
+"வேண்டும்."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_account_payment__sdd_mandate_id
 msgid "The mandate used to generate this payment, if any."
 msgstr ""
+"இந்த பணம் செலுத்தும் கட்டளை, ஏதேனும் ஏதேனும் உள்ளதா என்று கட்டளையிடப்பட்டது."
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
@@ -754,6 +802,9 @@ msgid ""
 "                    specified time range. If no end date is specified,\n"
 "                    you will have to contact us to stop its use."
 msgstr ""
+"கட்டளைகளுக்குள் பணம் செலுத்துவதற்கு மட்டுமே கட்டளை பயன்படுத்தப்படும்\n"
+"                     குறிப்பிட்ட நேர வரம்பு. முடிவு தேதி குறிப்பிடப்படவில்லை என்றால்,\n"
+"                     அதன் பயன்பாடு நிறுத்த நீங்கள் எங்களை தொடர்பு கொள்ள வேண்டும்."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_sdd_mandate__state
@@ -767,7 +818,7 @@ msgstr ""
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_sdd_mandate__name
 msgid "The unique identifier of this mandate."
-msgstr ""
+msgstr "இந்த கட்டளையின் தனிப்பட்ட அடையாளங்காட்டி."
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
@@ -775,6 +826,8 @@ msgid ""
 "This form grants our company the authorization to\n"
 "                    use direct debit to pay the invoices we send to you."
 msgstr ""
+"இந்த படிவம் எங்கள் நிறுவனத்திற்கு அங்கீகாரம் அளிக்கிறது\n"
+"                     நாங்கள் உங்களுக்கு அனுப்பும் பொருட்களுக்கு நேரடி டெபிட் பயன்படுத்த."
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/account_payment.py:219
@@ -784,6 +837,9 @@ msgid ""
 "This invoice cannot be paid via SEPA Direct Debit, as there is no valid "
 "mandate available for its customer at its creation date."
 msgstr ""
+"SEA நேரடி டெபிட் வழியாக இந்த விலைப்பட்டியல் செலுத்தப்பட முடியாது, ஏனெனில் "
+"அதன் வாடிக்கையாளருக்கு அதன் உருவாக்கும் தேதியில் எந்தவிதமான செல்லுபடியாகும் "
+"உத்தரவு இல்லை."
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_report_invoice_document
@@ -791,6 +847,8 @@ msgid ""
 "This invoice will be paid using direct debit and is only\n"
 "                        sent for informative purposes."
 msgstr ""
+"இந்த விலைப்பட்டியல் நேரடி டெப்ட்டைப் பயன்படுத்தி மட்டுமே செலுத்தப்படும்\n"
+"                         தகவல் நோக்கங்களுக்காக அனுப்பப்பட்டது."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_sdd_mandate__one_off
@@ -807,6 +865,8 @@ msgid ""
 "Trying to generate a Direct Debit XML file containing payments from another "
 "company than that file's creditor."
 msgstr ""
+"அந்த கோப்பினுடைய கடனாளரைவிட மற்றொரு நிறுவனத்திலிருந்து பணம் செலுத்தும் நேரடி"
+" டெபிட் எக்ஸ்எம்எல் கோப்பை உருவாக்குவதற்கு முயற்சிக்கிறது."
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/account_payment.py:153
@@ -815,6 +875,8 @@ msgid ""
 "Trying to generate a Direct Debit XML for payments coming from another "
 "payment method than SEPA Direct Debit."
 msgstr ""
+"SEPA நேரடி டெபிட் விட மற்றொரு கட்டண முறையிலிருந்து வரும் நேரடி டெபிட் "
+"எக்ஸ்எம்எல் உருவாக்க முயற்சிக்கிறது."
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/account_payment.py:201
@@ -822,6 +884,8 @@ msgstr ""
 msgid ""
 "Trying to register a payment on a mandate belonging to a different partner."
 msgstr ""
+"வேறு பங்குதாரர் சொந்தமான ஒரு கட்டளை மீது பணம் செலுத்துவதற்கு "
+"முயற்சிக்கிறீர்கள்."
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/account_payment.py:66
@@ -831,11 +895,14 @@ msgid ""
 " %s for partner '%s'. Please create one before encoding a SEPA Direct Debit "
 "payment."
 msgstr ""
+"பங்காளிக்கான தேதிகளில் கிடைக்கக்கூடிய உத்தரவு இல்லை என்பதால், கட்டணத்தை "
+"இடுகையிட முடியவில்லை. SEPA நேரடி டெப்ட் செலுத்துதல் குறியீட்டிற்கு முன் "
+"ஒருவரை உருவாக்கவும்."
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.account_sepa_direct_debit_mandate_form
 msgid "Validate"
-msgstr ""
+msgstr "சரிபார்க்கவும்"
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/account_batch_payment.py:32
@@ -844,6 +911,8 @@ msgid ""
 "You cannot generate a SEPA Direct Debit file with a required collection date"
 " in the past."
 msgstr ""
+"கடந்த காலத்தில் தேவையான சேகரிப்பு தேதியுடன் நீங்கள் ஒரு SEPA நேரடி டெபிட் "
+"கோப்பை உருவாக்க முடியாது."
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/account_invoice.py:35
@@ -852,6 +921,8 @@ msgid ""
 "You cannot pay an invoice with a mandate that does not cover the moment when"
 " it was issued."
 msgstr ""
+"இது வழங்கப்பட்ட தருணத்தை மறைக்காத கட்டளை மூலம் ஒரு விலைப்பட்டியல் செலுத்த "
+"முடியாது."
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/sdd_mandate.py:86
@@ -859,6 +930,7 @@ msgstr ""
 msgid ""
 "You must register this mandate's original document before validating it."
 msgstr ""
+"அதை உறுதிப்படுத்தும் முன் இந்த கட்டளையின் அசல் ஆவணத்தை பதிவு செய்ய வேண்டும்."
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/account_batch_payment.py:28
@@ -867,3 +939,6 @@ msgid ""
 "Your company must have a creditor identifier in order to issue SEPA Direct "
 "Debit payments requests. It can be defined in accounting module's settings."
 msgstr ""
+"SEPA நேரடி டெபிட் செலுத்துதல் கோரிக்கைகளை வழங்குவதற்காக உங்கள் நிறுவனம் ஒரு "
+"கடனளிப்பவரை அடையாளங்காட்டி வைத்திருக்க வேண்டும். கணக்கியல் தொகுதிகளின் "
+"அமைப்புகளில் இது வரையறுக்கப்படுகிறது."
