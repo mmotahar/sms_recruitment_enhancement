@@ -10,8 +10,8 @@
 # Murat Kaplan <muratk@projetgrup.com>, 2018
 # Güven YILMAZ <guvenyilmaz@outlook.com.tr>, 2018
 # Gökhan Erdoğdu <gokhan.erdogdu@mechsoft.com.tr>, 2018
-# Umur Akın <umura@projetgrup.com>, 2018
 # Buket Şeker <buket_skr@hotmail.com>, 2018
+# Umur Akın <umura@projetgrup.com>, 2019
 # 
 msgid ""
 msgstr ""
@@ -19,7 +19,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-19 09:13+0000\n"
 "PO-Revision-Date: 2018-08-24 11:48+0000\n"
-"Last-Translator: Buket Şeker <buket_skr@hotmail.com>, 2018\n"
+"Last-Translator: Umur Akın <umura@projetgrup.com>, 2019\n"
 "Language-Team: Turkish (https://www.transifex.com/odoo/teams/41243/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -203,11 +203,15 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:timesheet_grid.res_config_settings_view_form
 msgid "Activate a periodical email reminder for timesheet managers"
 msgstr ""
+"Zaman çizelgesi yöneticileri için dönemsel bir email hatırlatıcı "
+"etkinleştirin."
 
 #. module: timesheet_grid
 #: model_terms:ir.ui.view,arch_db:timesheet_grid.res_config_settings_view_form
 msgid "Activate a periodical email reminder for timesheet users"
 msgstr ""
+"Zaman çizelgesi kullanıcıları için dönemsel bir email hatırlatıcı "
+"etkinleştirin."
 
 #. module: timesheet_grid
 #: model_terms:ir.ui.view,arch_db:timesheet_grid.timesheet_view_form
@@ -218,7 +222,7 @@ msgstr ""
 #: code:addons/timesheet_grid/models/analytic.py:81
 #, python-format
 msgid "All selected timesheets are already validated"
-msgstr ""
+msgstr "Tüm seçili timesheetler çoktan doğrulandı"
 
 #. module: timesheet_grid
 #: model:ir.model.fields,field_description:timesheet_grid.field_account_analytic_line__amount
@@ -240,7 +244,7 @@ msgstr "İptal"
 #: code:addons/timesheet_grid/static/src/js/tour.js:21
 #, python-format
 msgid "Choose a <b>project name</b>. (e.g. name of a customer, or product)"
-msgstr ""
+msgstr "Bir proje <b>adı seçiniz. (örn. bir müşteri yada ürün adı )"
 
 #. module: timesheet_grid
 #: model:ir.model,name:timesheet_grid.model_res_company
@@ -267,7 +271,7 @@ msgstr "Oluşturulma"
 #. module: timesheet_grid
 #: model:ir.model.fields,help:timesheet_grid.field_hr_employee__timesheet_validated
 msgid "Date until which the employee's timesheets have been validated"
-msgstr ""
+msgstr "Personelin zaman çizelgelerinin doğrulanma tarihi"
 
 #. module: timesheet_grid
 #: model:ir.model.fields,field_description:timesheet_grid.field_res_config_settings__reminder_manager_delay
@@ -300,7 +304,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:timesheet_grid.field_res_company__timesheet_mail_employee_allow
 #: model:ir.model.fields,field_description:timesheet_grid.field_res_config_settings__reminder_user_allow
 msgid "Employee Reminder"
-msgstr ""
+msgstr "Personel Hatırlatıcı"
 
 #. module: timesheet_grid
 #: model:ir.model.fields,field_description:timesheet_grid.field_res_company__timesheet_mail_employee_delay
@@ -321,7 +325,7 @@ msgstr "ID"
 #. module: timesheet_grid
 #: model:ir.model.fields,help:timesheet_grid.field_res_config_settings__reminder_manager_allow
 msgid "If checked, send an email to all manager"
-msgstr ""
+msgstr "İşaretliyse, tüm yöneticilere bir mail gönder"
 
 #. module: timesheet_grid
 #: model:ir.model.fields,help:timesheet_grid.field_res_company__timesheet_mail_manager_allow
@@ -329,6 +333,8 @@ msgid ""
 "If checked, send an email to all managers who have not validated their "
 "timesheet"
 msgstr ""
+"İşaretliyse, zaman çizelgesini doğrulamayan tüm yöneticilere bir e-posta "
+"gönderin"
 
 #. module: timesheet_grid
 #: model:ir.model.fields,help:timesheet_grid.field_res_company__timesheet_mail_employee_allow
@@ -336,6 +342,8 @@ msgstr ""
 msgid ""
 "If checked, send an email to all users who have not recorded their timesheet"
 msgstr ""
+"İşaretliyse, zaman çizelgelerini kaydetmemiş olan tüm kullanıcılara bir "
+"e-posta gönderin"
 
 #. module: timesheet_grid
 #: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_validation____last_update
@@ -369,7 +377,7 @@ msgstr "Son Hafta"
 #: model:ir.model.fields,field_description:timesheet_grid.field_res_company__timesheet_mail_manager_allow
 #: model:ir.model.fields,field_description:timesheet_grid.field_res_config_settings__reminder_manager_allow
 msgid "Manager Reminder"
-msgstr ""
+msgstr "Yönetici Hatırlatıcı"
 
 #. module: timesheet_grid
 #: model:ir.model.fields,field_description:timesheet_grid.field_res_company__timesheet_mail_manager_delay
@@ -407,7 +415,7 @@ msgstr "Yönetici hatırlatıcısı için sonraki planlanan tarih"
 #. module: timesheet_grid
 #: model_terms:ir.ui.view,arch_db:timesheet_grid.timesheet_view_search
 msgid "Non Validated"
-msgstr ""
+msgstr "Doğrulanmamış"
 
 #. module: timesheet_grid
 #: code:addons/timesheet_grid/models/analytic.py:106
@@ -443,6 +451,8 @@ msgstr ""
 #: model:ir.model.fields,help:timesheet_grid.field_account_analytic_line__is_timesheet
 msgid "Set if this analytic line represents a line of timesheet."
 msgstr ""
+"Bu analitik satırın bir zaman çizelgesi satırını karşılayıp karşılamadığını "
+"ayarlayın."
 
 #. module: timesheet_grid
 #. openerp-web
@@ -462,7 +472,7 @@ msgstr "Görev"
 #: code:addons/timesheet_grid/models/analytic.py:76
 #, python-format
 msgid "There aren't any timesheet to validate"
-msgstr ""
+msgstr "Doğrulanacak zaman çizelgesi yok"
 
 #. module: timesheet_grid
 #: model_terms:ir.ui.view,arch_db:timesheet_grid.timesheet_view_form
@@ -479,7 +489,7 @@ msgstr ""
 #. module: timesheet_grid
 #: model_terms:ir.ui.view,arch_db:timesheet_grid.res_config_settings_view_form
 msgid "Timesheet Control"
-msgstr ""
+msgstr "Zaman Çizelgesi Kontrolü"
 
 #. module: timesheet_grid
 #: model:ir.model.fields,field_description:timesheet_grid.field_account_analytic_line__is_timesheet
@@ -489,7 +499,7 @@ msgstr "Zaman Çizelgesi Satırı"
 #. module: timesheet_grid
 #: model:ir.model.fields,field_description:timesheet_grid.field_hr_employee__timesheet_manager_id
 msgid "Timesheet Responsible"
-msgstr ""
+msgstr "Zaman Çizelgesi Sorumlusu"
 
 #. module: timesheet_grid
 #: model:ir.model,name:timesheet_grid.model_timesheet_validation
@@ -506,14 +516,14 @@ msgstr ""
 #: model:ir.cron,cron_name:timesheet_grid.timesheet_reminder_user
 #: model:ir.cron,name:timesheet_grid.timesheet_reminder_user
 msgid "Timesheet: Employees Email Reminder"
-msgstr ""
+msgstr "Zaman Çizelgesi: Personel E-mail Hatırlatıcı"
 
 #. module: timesheet_grid
 #: model:ir.actions.server,name:timesheet_grid.timesheet_reminder_manager_ir_actions_server
 #: model:ir.cron,cron_name:timesheet_grid.timesheet_reminder_manager
 #: model:ir.cron,name:timesheet_grid.timesheet_reminder_manager
 msgid "Timesheet: Managers Email Reminder"
-msgstr ""
+msgstr "Zaman Çizelgesi: Yönetici E-mail Hatırlatıcı"
 
 #. module: timesheet_grid
 #: model_terms:ir.ui.view,arch_db:timesheet_grid.timesheet_view_grid_by_employee
@@ -525,7 +535,7 @@ msgstr "Zaman Çizelgeleri"
 #. module: timesheet_grid
 #: model:ir.model.fields,field_description:timesheet_grid.field_hr_employee__timesheet_validated
 msgid "Timesheets Validation Date"
-msgstr ""
+msgstr "Zaman Çizelgesi Doğrulama Tarihi"
 
 #. module: timesheet_grid
 #. openerp-web
@@ -554,6 +564,8 @@ msgid ""
 "Use tasks to track the different type of activities. (e.g. Graphic Design, "
 "Programming, Project Management)"
 msgstr ""
+"Farklı türdeki etkinlikleri takip etmek için görevleri kullanın. (örn, "
+"Grafik Dizayn, Programlama, Proje Yönetimi)"
 
 #. module: timesheet_grid
 #: model:ir.model.fields,field_description:timesheet_grid.field_res_config_settings__reminder_user_interval
@@ -564,6 +576,8 @@ msgstr ""
 #: model:ir.model.fields,help:timesheet_grid.field_hr_employee__timesheet_manager_id
 msgid "User responsible of timesheet validation. Should be Timesheet Manager."
 msgstr ""
+"Zaman çizelgesi doğrulamasından sorumlu kullanıcı. Zaman Çizelgesi "
+"Yöneticisi olmalı."
 
 #. module: timesheet_grid
 #: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_validation_line__validate
@@ -575,22 +589,22 @@ msgstr "Doğrula"
 #. module: timesheet_grid
 #: model_terms:ir.ui.view,arch_db:timesheet_grid.timesheet_validation_view_form
 msgid "Validate Timesheets"
-msgstr ""
+msgstr "Zaman Çizelgelerini Doğrula"
 
 #. module: timesheet_grid
 #: model_terms:ir.ui.view,arch_db:timesheet_grid.timesheet_validation_view_form
 msgid "Validate the timesheets of the selected employees up to"
-msgstr ""
+msgstr "Seçilen çalışanların zaman çizelgelerini tarihine kadar doğrula"
 
 #. module: timesheet_grid
 #: model:ir.model.fields,help:timesheet_grid.field_timesheet_validation_line__validate
 msgid "Validate this employee's timesheet up to the chosen date"
-msgstr ""
+msgstr "Bu personelin zaman çizelgesini seçilen tarihe kadar doğrulayın"
 
 #. module: timesheet_grid
 #: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_validation__validation_date
 msgid "Validate up to"
-msgstr ""
+msgstr "Tarihine kadar doğrula"
 
 #. module: timesheet_grid
 #: model_terms:ir.ui.view,arch_db:timesheet_grid.timesheet_view_search
@@ -601,12 +615,12 @@ msgstr "Doğrulanmış"
 #: model:ir.actions.act_window,name:timesheet_grid.action_timesheet_previous_month
 #: model:ir.actions.act_window,name:timesheet_grid.action_timesheet_previous_week
 msgid "Validated Timesheets"
-msgstr ""
+msgstr "Doğrulanmış Zaman Çizelgeleri"
 
 #. module: timesheet_grid
 #: model:ir.model.fields,field_description:timesheet_grid.field_account_analytic_line__validated
 msgid "Validated line"
-msgstr ""
+msgstr "Doğrulanmış satırlar"
 
 #. module: timesheet_grid
 #: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_validation_line__validation_id
@@ -616,7 +630,7 @@ msgstr "Doğrulama"
 #. module: timesheet_grid
 #: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_validation__validation_line_ids
 msgid "Validation Line"
-msgstr ""
+msgstr "Doğrulama Satırı"
 
 #. module: timesheet_grid
 #: model_terms:ir.ui.view,arch_db:timesheet_grid.timesheet_view_grid_by_employee
@@ -629,13 +643,13 @@ msgstr "Hafta"
 #: selection:res.company,timesheet_mail_employee_interval:0
 #: selection:res.company,timesheet_mail_manager_interval:0
 msgid "after end of month"
-msgstr ""
+msgstr "ay sonundan sonra"
 
 #. module: timesheet_grid
 #: selection:res.company,timesheet_mail_employee_interval:0
 #: selection:res.company,timesheet_mail_manager_interval:0
 msgid "after end of week"
-msgstr ""
+msgstr "hafta sonundan sonra"
 
 #. module: timesheet_grid
 #: model_terms:ir.ui.view,arch_db:timesheet_grid.res_config_settings_view_form

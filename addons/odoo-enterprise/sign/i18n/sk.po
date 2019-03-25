@@ -1197,7 +1197,7 @@ msgstr "Zodpovedný používateľ"
 #: model_terms:ir.ui.view,arch_db:sign.sign_request_view_kanban
 #: model_terms:ir.ui.view,arch_db:sign.sign_template_view_kanban
 msgid "Restore"
-msgstr ""
+msgstr "Obnoviť"
 
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_sign_request_item__role_id
@@ -1343,7 +1343,7 @@ msgstr "Zobraz všetky záznamy ktorých následná aktivita je pred dnešným d
 #: model:ir.ui.menu,name:sign.menu_document
 #, python-format
 msgid "Sign"
-msgstr ""
+msgstr "Podpísať"
 
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.sign_send_request_view_form

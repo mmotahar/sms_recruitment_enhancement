@@ -4,6 +4,7 @@
 # 
 # Translators:
 # Martin Trigaux, 2018
+# Marius Stedjan <marius@stedjan.com>, 2018
 # Jorunn D. Newth, 2018
 # 
 msgid ""
@@ -674,7 +675,7 @@ msgstr "Markedsføringsaktivitet"
 #: model:ir.module.category,name:marketing_automation.module_marketing_automation_category
 #: model:ir.ui.menu,name:marketing_automation.marketing_automation_menu
 msgid "Marketing Automation"
-msgstr "Markedsføringsautomatisering"
+msgstr "Markedsføring"
 
 #. module: marketing_automation
 #: code:addons/marketing_automation/models/marketing_campaign.py:537
@@ -693,14 +694,14 @@ msgstr ""
 #: model:ir.cron,cron_name:marketing_automation.ir_cron_campaign_execute_activities
 #: model:ir.cron,name:marketing_automation.ir_cron_campaign_execute_activities
 msgid "Marketing Automation: execute activities"
-msgstr "Markedsføringsautomatisering: Utfør aktiviteter"
+msgstr "Markedsføring: Utfør aktiviteter"
 
 #. module: marketing_automation
 #: model:ir.actions.server,name:marketing_automation.ir_cron_campaign_sync_participants_ir_actions_server
 #: model:ir.cron,cron_name:marketing_automation.ir_cron_campaign_sync_participants
 #: model:ir.cron,name:marketing_automation.ir_cron_campaign_sync_participants
 msgid "Marketing Automation: sync participants"
-msgstr "Markedsføringsautomasjon: Synkroniser deltakere"
+msgstr "Markedsføring: Synkroniser deltakere"
 
 #. module: marketing_automation
 #: model:ir.model,name:marketing_automation.model_marketing_campaign

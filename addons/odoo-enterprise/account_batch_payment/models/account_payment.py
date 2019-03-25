@@ -33,6 +33,11 @@ class AccountPayment(models.Model):
     def create_batch_payment(self):
         # We use self[0] to create the batch; the constrains on the model ensure
         # the consistency of the generated data (same journal, same payment method, ...)
+        if any([p.payment_type == 'transfer' for p in self]):
+            raise UserError(
+                _('You cannot make a batch payment with internal transfers. Internal transfers ids: %s')
+                % ([p.id for p in self if p.payment_type == 'transfer'])
+            )
 
         batch = self.env['account.batch.payment'].create({
             'journal_id': self[0].journal_id.id,

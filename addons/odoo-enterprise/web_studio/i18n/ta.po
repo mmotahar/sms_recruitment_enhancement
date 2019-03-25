@@ -4,6 +4,7 @@
 # 
 # Translators:
 # Bagavathikumar Ramakrishnan <bagavathikumar@gmail.com>, 2019
+# Alagappan Karthikeyan <me@karthik.sg>, 2019
 # 
 msgid ""
 msgstr ""
@@ -11,7 +12,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-19 09:13+0000\n"
 "PO-Revision-Date: 2018-08-24 11:49+0000\n"
-"Last-Translator: Bagavathikumar Ramakrishnan <bagavathikumar@gmail.com>, 2019\n"
+"Last-Translator: Alagappan Karthikeyan <me@karthik.sg>, 2019\n"
 "Language-Team: Tamil (https://www.transifex.com/odoo/teams/41243/ta/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -222,7 +223,7 @@ msgstr ""
 #: code:addons/web_studio/static/src/xml/view_editor_sidebar.xml:152
 #, python-format
 msgid "All Day"
-msgstr ""
+msgstr "நாள் முழுவதும்"
 
 #. module: web_studio
 #. openerp-web
@@ -283,13 +284,13 @@ msgstr ""
 #. module: web_studio
 #: model:ir.model,name:web_studio.model_base_automation
 msgid "Automated Action"
-msgstr ""
+msgstr "தானியங்கி செயல்"
 
 #. module: web_studio
 #: code:addons/web_studio/controllers/main.py:58
 #, python-format
 msgid "Automated Actions"
-msgstr ""
+msgstr "தானியங்கி செயல்கள்"
 
 #. module: web_studio
 #. openerp-web
@@ -315,7 +316,7 @@ msgstr ""
 #. module: web_studio
 #: model:ir.model,name:web_studio.model_base
 msgid "Base"
-msgstr ""
+msgstr "அடித்தளம்"
 
 #. module: web_studio
 #. openerp-web
@@ -484,7 +485,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:web_studio.simplified_form_view_import_module
 #, python-format
 msgid "Close"
-msgstr ""
+msgstr "நெருக்கமான"
 
 #. module: web_studio
 #. openerp-web
@@ -560,7 +561,7 @@ msgstr ""
 #: code:addons/web_studio/static/src/js/views/view_editors/new_buttonbox_dialog.js:30
 #, python-format
 msgid "Confirm"
-msgstr ""
+msgstr "உறுதிப்படுத்தவும்"
 
 #. module: web_studio
 #. openerp-web
@@ -727,7 +728,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:web_studio.act_report_xml_view_kanban
 #, python-format
 msgid "Delete"
-msgstr ""
+msgstr "அழி"
 
 #. module: web_studio
 #. openerp-web
@@ -784,7 +785,7 @@ msgstr ""
 #: code:addons/web_studio/static/src/xml/view_editor_sidebar.xml:478
 #, python-format
 msgid "Domain"
-msgstr ""
+msgstr "டொமைன்"
 
 #. module: web_studio
 #. openerp-web
@@ -814,7 +815,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:web_studio.act_report_xml_view_kanban
 #, python-format
 msgid "Dropdown menu"
-msgstr ""
+msgstr "துளி மெனு"
 
 #. module: web_studio
 #: model_terms:ir.ui.view,arch_db:web_studio.act_report_xml_view_kanban
@@ -904,7 +905,7 @@ msgstr ""
 #: code:addons/web_studio/static/src/xml/view_editor_sidebar.xml:566
 #, python-format
 msgid "Email Alias"
-msgstr ""
+msgstr "மின்னஞ்சல் அலிஸ்"
 
 #. module: web_studio
 #: model:ir.model,name:web_studio.model_mail_template
@@ -995,7 +996,7 @@ msgstr ""
 #: code:addons/web_studio/static/src/xml/kanban_editor.xml:5
 #, python-format
 msgid "Field"
-msgstr ""
+msgstr "களம்"
 
 #. module: web_studio
 #. openerp-web
@@ -1035,7 +1036,7 @@ msgstr ""
 #. module: web_studio
 #: model:ir.model,name:web_studio.model_ir_model_fields
 msgid "Fields"
-msgstr ""
+msgstr "புலங்கள்"
 
 #. module: web_studio
 #. openerp-web
@@ -1043,7 +1044,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:web_studio.act_report_xml_view_kanban
 #, python-format
 msgid "File"
-msgstr ""
+msgstr "கோப்பு"
 
 #. module: web_studio
 #: code:addons/web_studio/controllers/main.py:444
@@ -1200,12 +1201,12 @@ msgstr ""
 #: code:addons/web_studio/static/src/xml/search_renderer.xml:40
 #, python-format
 msgid "Group by"
-msgstr ""
+msgstr "குழு மூலம்"
 
 #. module: web_studio
 #: model:ir.model,name:web_studio.model_ir_http
 msgid "HTTP Routing"
-msgstr ""
+msgstr "HTTP ரவுட்டிங்"
 
 #. module: web_studio
 #. openerp-web
@@ -1533,7 +1534,7 @@ msgstr ""
 #: code:addons/web_studio/static/src/xml/view_editor_sidebar.xml:601
 #, python-format
 msgid "Message"
-msgstr ""
+msgstr "செய்தி"
 
 #. module: web_studio
 #. openerp-web
@@ -1569,7 +1570,7 @@ msgstr ""
 #: code:addons/web_studio/static/src/xml/edit_menu.xml:63
 #, python-format
 msgid "Model"
-msgstr ""
+msgstr "மாதிரி"
 
 #. module: web_studio
 #: model:ir.model,name:web_studio.model_ir_model_access
@@ -1589,7 +1590,7 @@ msgstr ""
 #. module: web_studio
 #: model:ir.model,name:web_studio.model_ir_module_module
 msgid "Module"
-msgstr ""
+msgstr "தொகுதி"
 
 #. module: web_studio
 #: model_terms:ir.ui.view,arch_db:web_studio.simplified_form_view_import_module
@@ -1706,7 +1707,7 @@ msgstr ""
 #: code:addons/web_studio/static/src/xml/view_editor_sidebar.xml:610
 #, python-format
 msgid "No"
-msgstr ""
+msgstr "இல்லை"
 
 #. module: web_studio
 #. openerp-web
@@ -1720,7 +1721,7 @@ msgstr ""
 #: code:addons/web_studio/static/src/js/menu.js:115
 #, python-format
 msgid "Notes"
-msgstr ""
+msgstr "குறிப்புக்கள்"
 
 #. module: web_studio
 #. openerp-web
@@ -1777,7 +1778,7 @@ msgstr ""
 #: code:addons/web_studio/static/src/xml/report_editor_sidebar.xml:14
 #, python-format
 msgid "Options"
-msgstr ""
+msgstr "விருப்பங்கள்"
 
 #. module: web_studio
 #: model_terms:ir.ui.view,arch_db:web_studio.act_report_xml_view_kanban
@@ -1789,7 +1790,7 @@ msgstr ""
 #: code:addons/web_studio/static/src/xml/report_editor_sidebar.xml:32
 #, python-format
 msgid "Paper format"
-msgstr ""
+msgstr "காகித வடிவமைப்பு"
 
 #. module: web_studio
 #. openerp-web
@@ -1844,7 +1845,7 @@ msgstr ""
 #: code:addons/web_studio/static/src/xml/report_editor_manager.xml:4
 #, python-format
 msgid "Print"
-msgstr ""
+msgstr "அச்சு"
 
 #. module: web_studio
 #. openerp-web
@@ -1858,7 +1859,7 @@ msgstr ""
 #: code:addons/web_studio/static/src/js/views/view_components.js:207
 #, python-format
 msgid "Priority"
-msgstr ""
+msgstr "முன்னுரிமை"
 
 #. module: web_studio
 #. openerp-web
@@ -2099,7 +2100,7 @@ msgstr ""
 #: code:addons/web_studio/static/src/js/views/view_components.js:129
 #, python-format
 msgid "Selection"
-msgstr ""
+msgstr "தேர்வு"
 
 #. module: web_studio
 #. openerp-web
@@ -2118,7 +2119,7 @@ msgstr ""
 #. module: web_studio
 #: model:ir.model,name:web_studio.model_ir_actions_server
 msgid "Server Action"
-msgstr ""
+msgstr "சர்வர் அதிரடி"
 
 #. module: web_studio
 #. openerp-web
@@ -2336,7 +2337,7 @@ msgstr ""
 #: code:addons/web_studio/static/src/js/views/view_components.js:84
 #, python-format
 msgid "Text"
-msgstr ""
+msgstr "உரை"
 
 #. module: web_studio
 #. openerp-web
@@ -2558,7 +2559,7 @@ msgstr ""
 #: model:ir.model,name:web_studio.model_ir_ui_view
 #, python-format
 msgid "View"
-msgstr ""
+msgstr "காண்க"
 
 #. module: web_studio
 #. openerp-web
@@ -2601,7 +2602,7 @@ msgstr ""
 #: code:addons/web_studio/static/src/js/common/new_field_dialog.js:220
 #, python-format
 msgid "Warning"
-msgstr ""
+msgstr "எச்சரிக்கை"
 
 #. module: web_studio
 #. openerp-web
@@ -2799,7 +2800,7 @@ msgstr "மாதம்"
 #: code:addons/web_studio/static/src/xml/icon_creator.xml:36
 #, python-format
 msgid "or"
-msgstr ""
+msgstr "அல்லது"
 
 #. module: web_studio
 #. openerp-web

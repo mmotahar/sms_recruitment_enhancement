@@ -439,7 +439,7 @@ class YodleeAccount(models.Model):
                             vals['partner_id'] = self._find_partner([('online_partner_vendor_name', '=', tr['merchant']['id'])])
 
                     transactions.append(vals)
-            if len(resp_json.get('transactions', [])) <= 500:
+            if len(resp_json.get('transaction', [])) < 500:
                 break
             else:
                 offset += 500

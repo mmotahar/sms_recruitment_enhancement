@@ -1007,7 +1007,7 @@ msgstr "遅れた活動"
 #: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco__message_main_attachment_id
 #: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_type__message_main_attachment_id
 msgid "Main Attachment"
-msgstr ""
+msgstr "主な添付"
 
 #. module: mrp_plm
 #: model:res.groups,name:mrp_plm.group_plm_manager

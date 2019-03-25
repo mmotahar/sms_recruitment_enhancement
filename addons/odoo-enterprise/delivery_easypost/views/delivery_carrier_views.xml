@@ -62,6 +62,27 @@
       <xpath expr="//field[@name='package_carrier_type']" position='after'>
         <field name="easypost_carrier" attrs="{'invisible': [('package_carrier_type', '!=', 'easypost')]}"/>
       </xpath>
+      <xpath expr="//field[@name='height']" position='replace'>
+        <label for="height"/>
+        <div class="o_row">
+          <field name="height" nolabel="1"/>
+          <span attrs="{'invisible': [('package_carrier_type', '!=', 'easypost')]}">Inches</span>
+        </div>
+      </xpath>
+      <xpath expr="//field[@name='width']" position='replace'>
+        <label for="width"/>
+        <div class="o_row">
+          <field name="width" nolabel="1"/>
+          <span attrs="{'invisible': [('package_carrier_type', '!=', 'easypost')]}">Inches</span>
+        </div>
+      </xpath>
+      <xpath expr="//field[@name='length']" position='replace'>
+        <label for="length"/>
+        <div class="o_row">
+          <field name="length" nolabel="1"/>
+          <span attrs="{'invisible': [('package_carrier_type', '!=', 'easypost')]}">Inches</span>
+        </div>
+      </xpath>
     </field>
   </record>
 </odoo>

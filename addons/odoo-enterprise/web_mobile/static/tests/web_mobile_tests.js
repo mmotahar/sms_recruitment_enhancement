@@ -2,6 +2,7 @@ odoo.define('web_mobile.tests', function (require) {
 "use strict";
 
 var FormView = require('web.FormView');
+var KanbanView = require('web.KanbanView');
 var testUtils = require('web.test_utils');
 
 var mobile = require('web_mobile.rpc');
@@ -13,7 +14,7 @@ QUnit.module('web_mobile', {
         this.data = {
             partner: {
                 fields: {
-                    name: {},
+                    name: {string: "name", type: "char"},
                     image: {},
                     parent_id: {string: "Parent", type: "many2one", relation: 'partner'},
                     sibling_ids: {string: "Sibling", type: "many2many", relation: 'partner'},
@@ -272,6 +273,31 @@ QUnit.module('web_mobile', {
         mobile.methods.many2oneDialog = __many2oneDialog;
 
         form.destroy();
+    });
+
+    QUnit.test('autofocus quick create form', function (assert) {
+        assert.expect(2);
+
+        var kanban = createView({
+            View: KanbanView,
+            model: 'partner',
+            data: this.data,
+            arch: '<kanban on_create="quick_create">' +
+                    '<templates><t t-name="kanban-box">' +
+                        '<div><field name="name"/></div>' +
+                    '</t></templates>' +
+                '</kanban>',
+            groupBy: ['parent_id'],
+        });
+
+        // quick create in first column
+        kanban.$buttons.find('.o-kanban-button-new').click();
+        assert.ok(kanban.$('.o_kanban_group:nth(0) > div:nth(1)').hasClass('o_kanban_quick_create'),
+            "clicking on create should open the quick_create in the first column");
+        assert.strictEqual(document.activeElement, kanban.$('.o_kanban_quick_create .o_input:first')[0],
+            "the first input field should get the focus when the quick_create is opened");
+
+        kanban.destroy();
     });
 });
 });

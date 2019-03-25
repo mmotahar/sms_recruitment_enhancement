@@ -32,7 +32,7 @@ msgstr "# Handtekeningen"
 #: code:addons/sign/models/sign_request.py:249
 #, python-format
 msgid "%s : Signature request"
-msgstr "%s : Handtekeningsverzoek"
+msgstr "%s : Handtekening verzoek"
 
 #. module: sign
 #: code:addons/sign/controllers/main.py:200
@@ -93,7 +93,7 @@ msgstr "<span class=\"o_stat_text\">Getekend</span>"
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.res_partner_view_form
 msgid "<span class=\"o_stat_text\">Signature Requests</span>"
-msgstr "<span class=\"o_stat_text\">Handtekeningsverzoek</span>"
+msgstr "<span class=\"o_stat_text\">Handtekening verzoek</span>"
 
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.sign_request_view_form
@@ -126,7 +126,7 @@ msgid ""
 "            They will be able to access this document and sign it as yourself."
 msgstr ""
 "<strong>Waarschuwing</strong> stuur deze e-mail niet door naar andere mensen!<br/>\n"
-"             Zij kunnen dit document openen en ondertekenen als uzelf."
+"Zij kunnen dit document openen en ondertekenen als uzelf."
 
 #. module: sign
 #. openerp-web
@@ -341,7 +341,7 @@ msgstr "Contact"
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_sign_send_request__follower_ids
 msgid "Copy to"
-msgstr "Kopieer naar"
+msgstr "Kopie naar"
 
 #. module: sign
 #. openerp-web
@@ -879,7 +879,7 @@ msgstr "Berichten"
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.deleted_sign_request
 msgid "Missing signature request"
-msgstr "Ontbrekende handtekeningsverzoek"
+msgstr "Ontbrekende handtekening verzoek"
 
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_sign_request_item__sms_number
@@ -1160,7 +1160,7 @@ msgstr ""
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_sign_request__nb_total
 msgid "Requested Signatures"
-msgstr "Handtekeningsverzoeken"
+msgstr "Handtekening verzoeken"
 
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_sign_item__required
@@ -1296,7 +1296,7 @@ msgstr "Verstuur SMS"
 #: model:ir.actions.act_window,name:sign.action_sign_send_request
 #: model_terms:ir.ui.view,arch_db:sign.sign_send_request_view_form
 msgid "Send Signature Request"
-msgstr "Verzend handtekeningsverzoek"
+msgstr "Verzend handtekening verzoek"
 
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_sign_send_request__signer_id
@@ -1396,17 +1396,17 @@ msgstr "Teken document nu"
 #. module: sign
 #: model:ir.model,name:sign.model_sign_send_request
 msgid "Sign send request"
-msgstr "Verstuurd handtekeningsverzoek"
+msgstr "Verstuurd handtekening verzoek"
 
 #. module: sign
 #: model:ir.model,name:sign.model_sign_request_send_copy
 msgid "Sign send request copy"
-msgstr "Verstuur handtekeningsverzoek kopie"
+msgstr "Verstuur handtekening verzoek kopie"
 
 #. module: sign
 #: model:ir.model,name:sign.model_sign_send_request_signer
 msgid "Sign send request signer"
-msgstr "Verstuurd handtekeningsverzoek ondertekenaar "
+msgstr "Onderteken verzoek verstuurt"
 
 #. module: sign
 #. openerp-web
@@ -1444,7 +1444,7 @@ msgstr "Handtekening item soort"
 #. module: sign
 #: model:ir.model,name:sign.model_sign_item_value
 msgid "Signature Item Value"
-msgstr "Handtekeningsverzoek waarde"
+msgstr "Handtekening verzoek waarde"
 
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_sign_template__sign_item_ids
@@ -1457,7 +1457,7 @@ msgstr "Handtekening items"
 #: model:ir.model.fields,field_description:sign.field_sign_request_item__sign_request_id
 #: model_terms:ir.ui.view,arch_db:sign.sign_send_request_view_form
 msgid "Signature Request"
-msgstr "Handtekeningsverzoek"
+msgstr "Handtekening verzoek"
 
 #. module: sign
 #: code:addons/sign/models/sign_request.py:160
@@ -1465,22 +1465,22 @@ msgstr "Handtekeningsverzoek"
 #: code:addons/sign/wizard/sign_send_request.py:17
 #, python-format
 msgid "Signature Request - %s"
-msgstr "Handtekeningsverzoek - %s"
+msgstr "Handtekening verzoek - %s"
 
 #. module: sign
 #: model:ir.model,name:sign.model_sign_request_item
 msgid "Signature Request Item"
-msgstr "Handtekeningsverzoek item"
+msgstr "Handtekening verzoek item"
 
 #. module: sign
 #: model:ir.actions.act_window,name:sign.sign_request_item_action
 msgid "Signature Request Items"
-msgstr "Handtekeningsverzoekregels"
+msgstr "Handtekening verzoekregels"
 
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_sign_template__sign_request_ids
 msgid "Signature Requests"
-msgstr "Handtekeningsverzoek"
+msgstr "Handtekening verzoek"
 
 #. module: sign
 #: model:ir.ui.menu,name:sign.sign_request_item_menu
@@ -1659,7 +1659,7 @@ msgid ""
 "                    If there still exists a signature request for this document, check your inbox to get your access!"
 msgstr ""
 "De handtekening toegang die u wilt bereiken bestaat niet. Misschien is de aanvraag verwijderd of gewijzigd. <br/>\n"
-"Controleer uw inbox als er nog een handtekeningsverzoek is voor dit document."
+"Controleer uw inbox als er nog een handtekening verzoek is voor dit document."
 
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.sign_request_view_form
@@ -1734,7 +1734,7 @@ msgstr "Upload een PDF"
 #: code:addons/sign/static/src/xml/sign_backend.xml:44
 #, python-format
 msgid "Used by a signature request."
-msgstr "Gebruikt door een handtekeningsverzoek."
+msgstr "Gebruikt door een handtekening verzoek."
 
 #. module: sign
 #: model:ir.model,name:sign.model_res_users
@@ -1794,7 +1794,7 @@ msgstr "Bekijk document nu"
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.sign_template_mail_follower
 msgid "View signature request"
-msgstr "Bekijk handtekeningsverzoek"
+msgstr "Bekijk handtekening verzoek"
 
 #. module: sign
 #: selection:sign.request.item,state:0

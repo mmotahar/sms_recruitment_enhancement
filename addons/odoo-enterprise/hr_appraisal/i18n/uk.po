@@ -1102,7 +1102,7 @@ msgstr "Цілі"
 #. module: hr_appraisal
 #: model:res.groups,name:hr_appraisal.group_hr_appraisal_user
 msgid "Officer"
-msgstr "Начальник"
+msgstr "Керівник"
 
 #. module: hr_appraisal
 #: model:survey.question,question:hr_appraisal.opinion_2_5

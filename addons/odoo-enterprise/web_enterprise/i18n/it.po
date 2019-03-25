@@ -152,7 +152,7 @@ msgstr "Modifica un record"
 #. module: web_enterprise
 #: model:ir.model,name:web_enterprise.model_ir_http
 msgid "HTTP Routing"
-msgstr "Routing HTTP"
+msgstr "Instradamento HTTP"
 
 #. module: web_enterprise
 #. openerp-web

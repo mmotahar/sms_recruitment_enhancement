@@ -13,6 +13,7 @@
 # Pedro M. Baeza <pedro.baeza@gmail.com>, 2018
 # Nicolás Broggi <rnbroggi@gmail.com>, 2018
 # Gustavo Valverde, 2019
+# Edilianny Sánchez <esanchez@vauxoo.com>, 2019
 # 
 msgid ""
 msgstr ""
@@ -20,7 +21,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-19 09:12+0000\n"
 "PO-Revision-Date: 2018-08-24 11:36+0000\n"
-"Last-Translator: Gustavo Valverde, 2019\n"
+"Last-Translator: Edilianny Sánchez <esanchez@vauxoo.com>, 2019\n"
 "Language-Team: Spanish (https://www.transifex.com/odoo/teams/41243/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -91,7 +92,7 @@ msgstr "<b>Cuentas</b><br/>"
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.template_followup_report
 msgid "<b>Next Reminder Date:</b>"
-msgstr ""
+msgstr "<b>Fecha de recordatorio siguiente:</b>"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_analytic
@@ -411,12 +412,12 @@ msgstr "Saldos vencidos de empresa"
 #: model:ir.ui.menu,name:account_reports.menu_action_account_report_aged_payable
 #, python-format
 msgid "Aged Payable"
-msgstr "Historial de pagos"
+msgstr "Vencida por Pagar"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.account_reports_journal_dashboard_kanban_view
 msgid "Aged Payables"
-msgstr "Historial de pagos"
+msgstr "Vencidas por Pagar"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_aged_partner_balance.py:98
@@ -425,12 +426,12 @@ msgstr "Historial de pagos"
 #: model:ir.ui.menu,name:account_reports.menu_action_account_report_aged_receivable
 #, python-format
 msgid "Aged Receivable"
-msgstr "A cobrar vencido"
+msgstr "Vencida por Cobrar"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.account_reports_journal_dashboard_kanban_view
 msgid "Aged Receivables"
-msgstr "Historial de cobros"
+msgstr "Vencidas por Cobrar"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.search_template_journals
@@ -567,7 +568,7 @@ msgstr ""
 #: code:addons/account_reports/models/account_partner_ledger.py:42
 #, python-format
 msgid "Balance"
-msgstr "Saldo pendiente"
+msgstr "Balance"
 
 #. module: account_reports
 #: model:account.financial.html.report,name:account_reports.account_financial_report_balancesheet0
@@ -576,7 +577,7 @@ msgstr "Saldo pendiente"
 #: model:ir.actions.client,name:account_reports.action_account_report_bs
 #: model:ir.ui.menu,name:account_reports.account_financial_html_report_menu_2
 msgid "Balance Sheet"
-msgstr "Balance de situación"
+msgstr "Balance de Situación"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_bank_reconciliation_report.py:211
@@ -585,7 +586,7 @@ msgstr "Balance de situación"
 #: model:ir.actions.client,name:account_reports.action_account_report_bank_reconciliation_with_journal
 #, python-format
 msgid "Bank Reconciliation"
-msgstr "Reconciliación bancaria"
+msgstr "Conciliación Bancaria"
 
 #. module: account_reports
 #: model:ir.model,name:account_reports.model_account_bank_reconciliation_report
@@ -595,7 +596,7 @@ msgstr ""
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_bank_view0
 msgid "Bank and Cash Accounts"
-msgstr "Cuentas bancarias y de caja"
+msgstr "Cuentas de Banco y Caja"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_general_ledger.py:432
@@ -1096,7 +1097,7 @@ msgstr "Fecha del último trimestre"
 #: code:addons/account_reports/models/account_followup_report.py:34
 #, python-format
 msgid "Excluded"
-msgstr ""
+msgstr "Excluido"
 
 #. module: account_reports
 #: model:account.financial.html.report,name:account_reports.account_financial_report_executivesummary0
@@ -1189,7 +1190,7 @@ msgstr "Replegado"
 #. module: account_reports
 #: model:ir.model,name:account_reports.model_account_followup_report
 msgid "Follow-up Report"
-msgstr ""
+msgstr "Reporte de Seguimiento"
 
 #. module: account_reports
 #: model:ir.actions.act_window,name:account_reports.action_view_list_customer_statements
@@ -1235,7 +1236,7 @@ msgstr "Reporte de Seguimientos"
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_res_partner__followup_status
 msgid "Followup status"
-msgstr ""
+msgstr "Estatus de seguimiento"
 
 #. module: account_reports
 #: model:ir.model.fields,field_description:account_reports.field_account_report_manager__footnotes_ids
@@ -1731,6 +1732,8 @@ msgid ""
 "Odoo will remind you to take care of this follow-up on the next reminder "
 "date."
 msgstr ""
+"Odoo le recordará que debe hacerse cargo de este seguimiento en la próxima "
+"fecha de recordatorio."
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_aged_partner_balance.py:22
@@ -1927,7 +1930,7 @@ msgstr "Vista previa de impresión"
 #: code:addons/account_reports/static/src/xml/account_report_template.xml:7
 #, python-format
 msgid "Print letter"
-msgstr ""
+msgstr "Imprimir Carta"
 
 #. module: account_reports
 #: model:ir.actions.server,name:account_reports.action_account_reports_customer_statements_do_followup
@@ -1937,14 +1940,14 @@ msgstr ""
 #. module: account_reports
 #: model:ir.actions.client,name:account_reports.action_account_report_pnl
 msgid "Profit And Loss"
-msgstr "Pérdidas y ganancias"
+msgstr "Ganancias y Pérdidas"
 
 #. module: account_reports
 #: model:account.financial.html.report,name:account_reports.account_financial_report_profitandloss0
 #: model:ir.actions.client,name:account_reports.account_financial_html_report_action_1
 #: model:ir.ui.menu,name:account_reports.account_financial_html_report_menu_1
 msgid "Profit and Loss"
-msgstr "Pérdidas y ganancias"
+msgstr "Ganancias y Pérdidas"
 
 #. module: account_reports
 #: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_profitability0
@@ -1987,7 +1990,7 @@ msgstr "Referencia"
 #: code:addons/account_reports/static/src/xml/account_report_template.xml:13
 #, python-format
 msgid "Remind me later"
-msgstr ""
+msgstr "Recuérdame más tarde"
 
 #. module: account_reports
 #: model_terms:ir.ui.view,arch_db:account_reports.view_account_financial_report_form

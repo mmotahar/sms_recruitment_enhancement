@@ -47,7 +47,7 @@
                     </div>
                 </div>
                 <p style="margin-top: 35px;">
-                    Date: <span t-esc="today"/><br/>
+                    Date: <span t-esc="today" t-options="{'widget': 'date'}"/><br/>
                     <t t-if='partner_addr.ref'>Customer ref: <span t-field="partner_addr.ref"/></t>
                 </p>
             </div>

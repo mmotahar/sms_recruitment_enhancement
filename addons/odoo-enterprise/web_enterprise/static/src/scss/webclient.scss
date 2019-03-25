@@ -73,7 +73,7 @@ select { // FIXME buggy 'padding-left'
     // By default, act like a .btn-link
     color: $primary;
 
-    &.fa {
+    &.fa:not(.fa-search) {
         // For button icons, act like '.btn-link.text-muted'
         color: $secondary;
     }

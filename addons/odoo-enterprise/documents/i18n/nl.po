@@ -144,7 +144,7 @@ msgstr "<i class=\"fa fa-link\"/> Ga naar URL"
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.share_page
 msgid "<i class=\"fa fa-upload\"/>  Upload"
-msgstr "<i class=\"fa fa-upload\"/>  Opladen"
+msgstr "<i class=\"fa fa-upload\"/>  Uploaden"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.public_page_layout
@@ -519,7 +519,7 @@ msgstr "Omschrijving"
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_rule__display_name
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_tag_criteria__display_name
 msgid "Display Name"
-msgstr "Weergave naam"
+msgstr "Weergavenaam"
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.documents_view_search_inherit

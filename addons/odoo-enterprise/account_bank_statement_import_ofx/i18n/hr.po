@@ -22,7 +22,7 @@ msgstr ""
 #. module: account_bank_statement_import_ofx
 #: model_terms:ir.ui.view,arch_db:account_bank_statement_import_ofx.account_bank_statement_import_ofx
 msgid "<i class=\"fa fa-download mr4\"/>Import Sample Template"
-msgstr ""
+msgstr "<i class=\"fa fa-download mr4\"/>Uvoz probnog predloška"
 
 #. module: account_bank_statement_import_ofx
 #: model:ir.model,name:account_bank_statement_import_ofx.model_account_bank_statement_import

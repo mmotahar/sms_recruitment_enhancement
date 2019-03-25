@@ -205,7 +205,7 @@ msgid ""
 "Allow your customers to book an appointment on your website\n"
 "                by creating appointment types here."
 msgstr ""
-"Offri ai tuoi clienti la possibilità di prenotare appuntamenti sul tuo sito Web\n"
+"Offri ai tuoi clienti la possibilità di prenotare appuntamenti sul tuo sito web\n"
 "                creando qui tipi di appuntamenti. "
 
 #. module: website_calendar
@@ -225,7 +225,7 @@ msgstr "Appuntamento"
 #. module: website_calendar
 #: model_terms:ir.ui.view,arch_db:website_calendar.calendar_appointment_type_view_form
 msgid "Appointment Confirmation"
-msgstr "Conferma dell'appuntamento"
+msgstr "Conferma appuntamento"
 
 #. module: website_calendar
 #: model:ir.model.fields,field_description:website_calendar.field_calendar_appointment_type__appointment_duration
@@ -458,7 +458,7 @@ msgid ""
 "How employees will be assigned to meetings customers book on your website."
 msgstr ""
 "Come i dipendenti saranno assegnati alle riunioni che i clienti prenotano "
-"sul tuo sito Web. "
+"sul tuo sito web. "
 
 #. module: website_calendar
 #: model:ir.model.fields,field_description:website_calendar.field_calendar_appointment_answer__id
@@ -656,17 +656,17 @@ msgstr "Appuntamento online"
 #. module: website_calendar
 #: model:ir.model,name:website_calendar.model_calendar_appointment_answer
 msgid "Online Appointment : Answers"
-msgstr "Appuntamento online: Risposte"
+msgstr "Appuntamento online: risposte"
 
 #. module: website_calendar
 #: model:ir.model,name:website_calendar.model_calendar_appointment_question
 msgid "Online Appointment : Questions"
-msgstr "Appuntamento online: Domande"
+msgstr "Appuntamento online: domande"
 
 #. module: website_calendar
 #: model:ir.model,name:website_calendar.model_calendar_appointment_slot
 msgid "Online Appointment : Time Slot"
-msgstr "Appuntamento online: Fascia oraria"
+msgstr "Appuntamento online: fascia oraria"
 
 #. module: website_calendar
 #: model:ir.model,name:website_calendar.model_calendar_appointment_type
@@ -770,7 +770,7 @@ msgstr "Fissare un appuntamento"
 #. module: website_calendar
 #: model:calendar.appointment.type,name:website_calendar.calendar_appointment
 msgid "Schedule a Demo"
-msgstr "Pianifica una dimostrazione "
+msgstr "Pianificare una dimostrazione "
 
 #. module: website_calendar
 #: model_terms:ir.ui.view,arch_db:website_calendar.index
@@ -902,7 +902,7 @@ msgstr "Vedi le disponibilità <span class=\"fa fa-arrow-right\"/>"
 #. module: website_calendar
 #: model:ir.model.fields,field_description:website_calendar.field_calendar_appointment_type__website_published
 msgid "Visible on current website"
-msgstr "Visibile sul sito Web attuale"
+msgstr "Visibile sul sito web attuale"
 
 #. module: website_calendar
 #: model_terms:calendar.appointment.type,message_confirmation:website_calendar.calendar_appointment
@@ -977,7 +977,7 @@ msgstr "Con:"
 #: model_terms:ir.actions.act_window,help:website_calendar.calendar_event_action_reporting
 #: model_terms:ir.actions.act_window,help:website_calendar.website_calendar_report
 msgid "You should schedule appointments to get statistics."
-msgstr "Dovresti fissare appuntamenti per ottenere statistiche."
+msgstr "Devi fissare appuntamenti per ottenere statistiche."
 
 #. module: website_calendar
 #: model_terms:ir.ui.view,arch_db:website_calendar.appointment_form
@@ -1007,7 +1007,7 @@ msgstr "Il tuo appuntamento è in meno di"
 #. module: website_calendar
 #: model_terms:ir.ui.view,arch_db:website_calendar.calendar_appointment_type_view_form
 msgid "e.g. Schedule a demo"
-msgstr "ad esempio: Pianifica una dimostrazione"
+msgstr "es. Pianifica una dimostrazione"
 
 #. module: website_calendar
 #: model_terms:ir.ui.view,arch_db:website_calendar.appointment_validated

@@ -34,41 +34,41 @@ var KanbanRecordEditor = KanbanRecord.extend(EditorMixin, {
      */
     _render: function () {
         var self = this;
-        this._super.apply(this, arguments);
+        return this._super.apply(this, arguments).then(function () {
+            // prevent the click on the record and remove the corresponding style
+            self.$el.removeClass('oe_kanban_global_click oe_kanban_global_click_edit');
 
-        // prevent the click on the record and remove the corresponding style
-        this.$el.removeClass('oe_kanban_global_click oe_kanban_global_click_edit');
+            // prevent the color dropdown to be displayed
+            self.$('.o_dropdown_kanban > a')
+                .removeAttr('data-toggle')
+                .click(function (event) {
+                    event.preventDefault();
+                });
 
-        // prevent the color dropdown to be displayed
-        this.$('.o_dropdown_kanban > a')
-            .removeAttr('data-toggle')
-            .click(function (event) {
-                event.preventDefault();
+            self.$el.droppable({
+                accept: ".o_web_studio_component",
+                drop: function (event, ui) {
+                    var $hook = self.$('.o_web_studio_nearest_hook');
+                    if ($hook.length) {
+                        var hook_id = $hook.data('hook_id');
+                        var hook = self.hook_nodes[hook_id];
+
+                        var values = {
+                            type: 'add',
+                            structure: ui.draggable.data('structure'),
+                            field_description: ui.draggable.data('field_description'),
+                            node: hook.node,
+                            new_attrs: _.defaults(ui.draggable.data('new_attrs'), {
+                                display: 'full',
+                            }),
+                            position: hook.position,
+                        };
+                        ui.helper.removeClass('ui-draggable-helper-ready');
+                        self.trigger_up('on_hook_selected');
+                        self.trigger_up('view_change', values);
+                    }
+                },
             });
-
-        this.$el.droppable({
-            accept: ".o_web_studio_component",
-            drop: function (event, ui) {
-                var $hook = self.$('.o_web_studio_nearest_hook');
-                if ($hook.length) {
-                    var hook_id = $hook.data('hook_id');
-                    var hook = self.hook_nodes[hook_id];
-
-                    var values = {
-                        type: 'add',
-                        structure: ui.draggable.data('structure'),
-                        field_description: ui.draggable.data('field_description'),
-                        node: hook.node,
-                        new_attrs: _.defaults(ui.draggable.data('new_attrs'), {
-                            display: 'full',
-                        }),
-                        position: hook.position,
-                    };
-                    ui.helper.removeClass('ui-draggable-helper-ready');
-                    self.trigger_up('on_hook_selected');
-                    self.trigger_up('view_change', values);
-                }
-            },
         });
     },
     /**
@@ -327,32 +327,42 @@ var KanbanRecordEditor = KanbanRecord.extend(EditorMixin, {
      */
     _processWidget: function ($field, field_name) {
         var self = this;
+        // '_processWidget' in KanbanRecord adds a deferred to this.defs only if
+        // the widget is async. Here, we need to hook on this def to access the
+        // widget's $el (it doesn't exist until the def is resolved). As calling
+        // '_super' may or may not push a deferred in this.defs, we store the
+        // length of this.defs as index before calling '_super'. Note that if
+        // it doesn't push a deferred, this.defs[currentDefIndex] is undefined.
+        // FIXME: get rid of this hack in master with a small refactoring
+        var currentDefIndex = this.defs.length;
         var widget = this._super.apply(this, arguments);
-        widget.$el.off();
+        $.when(this.defs[currentDefIndex]).then(function () {
+            widget.$el.off();
 
-        // make empty widgets appear
-        if (this._isEmpty(widget.value)) {
-            widget.$el.addClass('o_web_studio_widget_empty');
-            widget.$el.text(widget.string);
-        }
-        widget.$el.attr('data-node-id', this.node_id++);
+            // make empty widgets appear
+            if (self._isEmpty(widget.value)) {
+                widget.$el.addClass('o_web_studio_widget_empty');
+                widget.$el.text(widget.string);
+            }
+            widget.$el.attr('data-node-id', self.node_id++);
 
-        // bind handler on field clicked to edit field's attributes
-        var node = {
-            tag: 'field',
-            attrs: {name: field_name}
-        };
-        this.setSelectable(widget.$el);
-        widget.$el.click(function (event) {
-            event.preventDefault();
-            event.stopPropagation();
-            self.selected_node_id = widget.$el.data('node-id');
-            self.trigger_up('node_clicked', {node: node});
+            // bind handler on field clicked to edit field's attributes
+            var node = {
+                tag: 'field',
+                attrs: {name: field_name}
+            };
+            self.setSelectable(widget.$el);
+            widget.$el.click(function (event) {
+                event.preventDefault();
+                event.stopPropagation();
+                self.selected_node_id = widget.$el.data('node-id');
+                self.trigger_up('node_clicked', {node: node});
+            });
+
+            // insert a hook to add new fields
+            var $hook = self._renderHook(node);
+            $hook.insertAfter(widget.$el);
         });
-
-        // insert a hook to add new fields
-        var $hook = this._renderHook(node);
-        $hook.insertAfter(widget.$el);
 
         return widget;
     },

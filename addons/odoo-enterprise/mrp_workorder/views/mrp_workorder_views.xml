@@ -121,7 +121,7 @@
                         <field name="product_uom_id" options="{'no_open': True}" class="oe_inline"/>
                     </h3>
                     <field name="finished_product_check_ids" options="{'no_open': True}" attrs="{'invisible': ['|', '|', ('current_quality_check_id', '!=', False), ('check_ids', '=', []), ('qty_producing', '=', 0)]}" readonly="1">
-                        <tree decoration-success="quality_state == 'pass'" decoration-danger="quality_state == 'fail'">
+                        <tree decoration-success="quality_state == 'pass'" decoration-danger="quality_state == 'fail'" default_order="control_date">
                             <field name="quality_state" invisible="1"/>
                             <field name="test_type" invisible="1"/>
                             <field name="control_date" string="Date"/>

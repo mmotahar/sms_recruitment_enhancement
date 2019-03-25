@@ -59,7 +59,9 @@ class AccountInvoice(models.Model):
                     tax = self.env['account.tax'].sudo().search([
                         ('amount', '=', tax_rate),
                         ('amount_type', '=', 'percent'),
-                        ('type_tax_use', '=', 'sale')], limit=1)
+                        ('type_tax_use', '=', 'sale'),
+                        ('company_id', '=', company.id),
+                    ], limit=1)
                     if not tax:
                         tax = self.env['account.tax'].sudo().create({
                             'name': 'Tax %.3f %%' % (tax_rate),
@@ -67,6 +69,7 @@ class AccountInvoice(models.Model):
                             'amount_type': 'percent',
                             'type_tax_use': 'sale',
                             'description': 'Sales Tax',
+                            'company_id': company.id,
                         })
                     line.invoice_line_tax_ids = tax
 

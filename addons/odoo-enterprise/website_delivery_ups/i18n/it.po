@@ -8,12 +8,13 @@
 # David Minneci <david@numeko.it>, 2018
 # Léonie Bouchat <lbo@odoo.com>, 2018
 # Paolo Caruccio <paolo.caruccio66@gmail.com>, 2018
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~11.5+e\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-21 14:07+0000\n"
-"PO-Revision-Date: 2018-09-21 14:07+0000\n"
+"PO-Revision-Date: 2018-08-24 11:49+0000\n"
 "Last-Translator: Paolo Caruccio <paolo.caruccio66@gmail.com>, 2018\n"
 "Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
 "MIME-Version: 1.0\n"
@@ -97,7 +98,7 @@ msgstr "Comunicazione"
 #. module: website_delivery_ups
 #: model_terms:ir.ui.view,arch_db:website_delivery_ups.ups_bill_my_account_dialog
 msgid "Enter your Carrier Account #"
-msgstr "Inserisci il numero di conto del trasportatore"
+msgstr "Inserisci il numero di conto del vettore"
 
 #. module: website_delivery_ups
 #: model_terms:payment.acquirer,post_msg:website_delivery_ups.payment_acquirer_ups_cod
@@ -122,7 +123,7 @@ msgstr "Seleziona il metodo di ritiro delle merci"
 #. module: website_delivery_ups
 #: model_terms:ir.ui.view,arch_db:website_delivery_ups.ups_bill_my_account_dialog
 msgid "UPS Bill My Account"
-msgstr "UPS Fatturare il mio Conto"
+msgstr "UPS Fatturare il mio conto"
 
 #. module: website_delivery_ups
 #: model_terms:ir.ui.view,arch_db:website_delivery_ups.res_config_settings_view_form_inherit_website_delivery_ups

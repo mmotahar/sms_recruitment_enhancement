@@ -1551,7 +1551,7 @@ msgstr "Viso"
 #. module: hr_contract_salary
 #: model_terms:ir.ui.view,arch_db:hr_contract_salary.res_config_settings_view_form
 msgid "Validity duration for salary package requests for new applicants"
-msgstr ""
+msgstr "Atlyginimo rinkinio užklausų galiojimo trukmė naujiems kandidatams"
 
 #. module: hr_contract_salary
 #: model:ir.model.fields,field_description:hr_contract_salary.field_generate_simulation_link__vehicle_id

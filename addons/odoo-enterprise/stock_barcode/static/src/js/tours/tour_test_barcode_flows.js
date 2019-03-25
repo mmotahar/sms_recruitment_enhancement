@@ -1198,6 +1198,186 @@ tour.register('test_delivery_reserved_1', {test: true}, [
     },
 ]);
 
+tour.register('test_delivery_reserved_2', {test: true}, [
+    {
+        trigger: '.o_barcode_client_action',
+        run: function() {
+            assertPageSummary(false);
+            assertPreviousVisible(true);
+            assertPreviousEnabled(false);
+            assertNextVisible(false);
+            assertNextEnabled(false);
+            assertNextIsHighlighted(false);
+            assertLinesCount(2);
+            assertScanMessage('scan_src');
+            assertLocationHighlight(false);
+            // not relevant in delivery mode
+            // assertDestinationLocationHighlight(false);
+            assertPager('1/1');
+            assertValidateVisible(true);
+            assertValidateIsHighlighted(false);
+            assertValidateEnabled(true);
+        }
+    },
+
+    {
+        trigger: '.o_barcode_client_action',
+        run: 'scan product1'
+    },
+
+    {
+        trigger: '.o_barcode_client_action',
+        run: 'scan product1'
+    },
+
+    {
+        trigger: '.o_barcode_client_action',
+        run: 'scan product2'
+    },
+
+    {
+        trigger: '.o_barcode_line_title:contains("product2")',
+        run: function() {
+            assertPageSummary(false);
+            assertPreviousVisible(true);
+            assertPreviousEnabled(true);
+            assertNextVisible(false);
+            assertNextEnabled(false);
+            assertNextIsHighlighted(false);
+            assertLinesCount(3);
+            assertScanMessage('scan_products');
+            assertLocationHighlight(true);
+            // not relevant in delivery mode
+            // assertDestinationLocationHighlight(false);
+            assertPager('1/1');
+            assertValidateVisible(true);
+            assertValidateIsHighlighted(false);
+            assertValidateEnabled(false);
+        }
+    },
+
+    {
+        trigger: '.o_barcode_client_action',
+        run: 'scan product1'
+    },
+
+    {
+        trigger: '.o_barcode_client_action',
+        run: 'scan product1'
+    },
+
+    {
+        trigger: '.o_barcode_line_title:contains("product2")',
+        run: function() {
+            assertPageSummary(false);
+            assertPreviousVisible(true);
+            assertPreviousEnabled(true);
+            assertNextVisible(false);
+            assertNextEnabled(false);
+            assertNextIsHighlighted(false);
+            assertLinesCount(3);
+            assertScanMessage('scan_products');
+            assertLocationHighlight(true);
+            // not relevant in delivery mode
+            // assertDestinationLocationHighlight(false);
+            assertPager('1/1');
+            assertValidateVisible(true);
+            assertValidateIsHighlighted(false);
+            assertValidateEnabled(false);
+             var $lines = getLine({barcode: 'product1'});
+             for (i = 0; i < $lines.length; i++) {
+                 assertLineQty($lines[i], "2");
+             }
+
+        }
+    },
+
+    {
+        trigger: '.o_barcode_client_action',
+        run: 'scan product1'
+    },
+
+    {
+        trigger: '.o_barcode_client_action',
+        run: function () {
+            assertPageSummary(false);
+            assertPreviousVisible(true);
+            assertPreviousEnabled(true);
+            assertNextVisible(false);
+            assertNextEnabled(false);
+            assertNextIsHighlighted(false);
+            assertLinesCount(4);
+            assertScanMessage('scan_products');
+            assertLocationHighlight(true);
+            // not relevant in delivery mode
+            // assertDestinationLocationHighlight(false);
+            assertPager('1/1');
+            assertValidateVisible(true);
+            assertValidateIsHighlighted(false);
+            assertValidateEnabled(false);
+        }
+    },
+]);
+
+
+tour.register('test_delivery_reserved_3', {test: true}, [
+    {
+        trigger: '.o_barcode_client_action',
+        run: function() {
+            assertPageSummary(false);
+            assertPreviousVisible(true);
+            assertPreviousEnabled(false);
+            assertNextVisible(false);
+            assertNextEnabled(false);
+            assertNextIsHighlighted(false);
+            assertLinesCount(1);
+            assertScanMessage('scan_src');
+            assertLocationHighlight(false);
+            // not relevant in delivery mode
+            // assertDestinationLocationHighlight(false);
+            assertPager('1/1');
+            assertValidateVisible(true);
+            assertValidateIsHighlighted(false);
+            assertValidateEnabled(true);
+        }
+    },
+
+    {
+        trigger: '.o_barcode_client_action',
+        run: 'scan product1'
+    },
+
+    {
+        trigger: '.o_barcode_client_action',
+        run: 'scan this_is_not_a_barcode_dude'
+    },
+
+    {
+        trigger: '.o_barcode_client_action',
+        run: function() {
+            assertPageSummary(false);
+            assertPreviousVisible(true);
+            assertPreviousEnabled(true);
+            assertNextVisible(false);
+            assertNextEnabled(false);
+            assertNextIsHighlighted(false);
+            assertLinesCount(1);
+            assertScanMessage('scan_products');
+            assertLocationHighlight(true);
+            // not relevant in delivery mode
+            // assertDestinationLocationHighlight(false);
+            assertPager('1/1');
+            assertValidateVisible(true);
+            assertValidateIsHighlighted(false);
+            assertValidateEnabled(false);
+             var $line = getLine({barcode: 'product1'});
+            assertLineIsHighlighted($line, true);
+            assertLineQty($line, "1");
+        }
+    },
+]);
+
+
 tour.register('test_receipt_from_scratch_with_lots_1', {test: true}, [
     {
         trigger: '.o_barcode_client_action',

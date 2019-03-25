@@ -19,8 +19,12 @@ return ListRenderer.extend(EditorMixin, {
     init: function (parent, state, params) {
         this._super.apply(this, arguments);
         if (params.show_invisible) {
-            this.invisible_columns = _.difference(this.arch.children, this.columns);
-            this.columns = this.arch.children;
+            var validChildren = _.filter(this.arch.children, function(child) {
+                // Editing controls is not supported in studio
+                return child.tag !== 'control';
+            });
+            this.invisible_columns = _.difference(validChildren, this.columns);
+            this.columns = validChildren;
         } else {
             this.invisible_columns = [];
         }

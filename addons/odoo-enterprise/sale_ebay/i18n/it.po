@@ -7,16 +7,17 @@
 # Martin Trigaux, 2018
 # Luigi Di Naro <gigidn@gmail.com>, 2018
 # Matteo Boscolo <matteo.boscolo.76@gmail.com>, 2018
-# Paolo Valier, 2018
 # Manuela Feliciani <mfeliciani@alice.it>, 2018
 # David Minneci <david@numeko.it>, 2018
+# Paolo Valier, 2018
 # Léonie Bouchat <lbo@odoo.com>, 2018
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~11.5+e\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-21 14:06+0000\n"
-"PO-Revision-Date: 2018-09-21 14:06+0000\n"
+"PO-Revision-Date: 2018-08-24 11:48+0000\n"
 "Last-Translator: Léonie Bouchat <lbo@odoo.com>, 2018\n"
 "Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
 "MIME-Version: 1.0\n"
@@ -47,7 +48,7 @@ msgid ""
 " If you want to set quantity to 0, the Out Of Stock option should be enabled"
 " and the listing duration should set to Good 'Til Canceled"
 msgstr ""
-"Se desideri impostare la quantità a 0, l'opzione \"Esaurito\" deve essere "
+"Per impostare la quantità a 0, l'opzione \"Esaurito\" deve essere "
 "autorizzata e la durata dell'elenco deve essere \"Valida fino alla "
 "cancellazione\"."
 
@@ -169,7 +170,7 @@ msgstr "ID Categoria"
 #. module: sale_ebay
 #: model:ir.model.fields,field_description:sale_ebay.field_ebay_category__category_parent_id
 msgid "Category Parent ID"
-msgstr "ID categoria Parent"
+msgstr "Categoria di identificazione del genitore"
 
 #. module: sale_ebay
 #: model:ir.model.fields,field_description:sale_ebay.field_ebay_category__category_type
@@ -600,7 +601,7 @@ msgstr "Quantità venduta"
 #. module: sale_ebay
 #: model_terms:ir.ui.view,arch_db:sale_ebay.product_template_sale_ebay_form_view
 msgid "Relist Item"
-msgstr "Rimettere in vendita l'articolo"
+msgstr "Rimettere l'articolo in vendita"
 
 #. module: sale_ebay
 #: model:ir.model.fields,field_description:sale_ebay.field_product_product__ebay_seller_return_policy_id
@@ -651,7 +652,7 @@ msgstr "Sandbox Cert Key"
 #. module: sale_ebay
 #: model:ir.model.fields,field_description:sale_ebay.field_res_config_settings__ebay_sandbox_token
 msgid "Sandbox Token"
-msgstr "Sandbox Token"
+msgstr "Token Sandbox "
 
 #. module: sale_ebay
 #: model_terms:ir.ui.view,arch_db:sale_ebay.product_template_sale_ebay_form_view
@@ -784,13 +785,13 @@ msgstr "Tipo"
 #. module: sale_ebay
 #: model:ir.actions.server,name:sale_ebay.action_ebay_update_carrier
 msgid "Update eBay Carrier Information"
-msgstr "Aggiornare l'informazione del trasportatore di eBay"
+msgstr "Aggiornare l'informazione del vettore di eBay"
 
 #. module: sale_ebay
 #: model:ir.model.fields,field_description:sale_ebay.field_product_product__ebay_sync_stock
 #: model:ir.model.fields,field_description:sale_ebay.field_product_template__ebay_sync_stock
 msgid "Use Stock Quantity"
-msgstr "Utilizza la quantità dello stock"
+msgstr "Utilizzare la quantità dello stock"
 
 #. module: sale_ebay
 #: model:ir.model.fields,field_description:sale_ebay.field_product_template__ebay_use
@@ -899,7 +900,7 @@ msgstr "URL della variante eBay"
 #. module: sale_ebay
 #: model:ir.model.fields,field_description:sale_ebay.field_res_config_settings__ebay_site
 msgid "eBay Website"
-msgstr "Sito internet eBay"
+msgstr "Sito web eBay"
 
 #. module: sale_ebay
 #: code:addons/sale_ebay/models/sale_ebay.py:54
@@ -926,7 +927,7 @@ msgstr ""
 #: code:addons/sale_ebay/models/product.py:379
 #, python-format
 msgid "eBay is unreachable. Please try again later."
-msgstr "eBay è irraggiungibile. Riprova più tardi."
+msgstr "eBay non raggiungibile. Riprovare più tardi."
 
 #. module: sale_ebay
 #: model_terms:ir.ui.view,arch_db:sale_ebay.res_config_settings_view_form

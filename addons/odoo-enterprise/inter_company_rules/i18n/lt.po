@@ -101,7 +101,7 @@ msgid ""
 "Settings/Users/Companies"
 msgstr ""
 "Parinkite tinkamą sandėlį įmonei (%s) per meniu nuėję į: "
-"Nustatymai/Naudotojai/Įmonės"
+"Nustatymai/vartotojai/Įmonės"
 
 #. module: inter_company_rules
 #: model:ir.model.fields,help:inter_company_rules.field_res_config_settings__warehouse_id

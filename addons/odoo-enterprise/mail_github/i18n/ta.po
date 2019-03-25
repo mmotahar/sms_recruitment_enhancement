@@ -5,6 +5,7 @@
 # Translators:
 # Bagavathikumar Ramakrishnan <bagavathikumar@gmail.com>, 2019
 # Abul Hassan M I <miabulhassan@gmail.com>, 2019
+# Alagappan Karthikeyan <me@karthik.sg>, 2019
 # 
 msgid ""
 msgstr ""
@@ -12,7 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-19 09:12+0000\n"
 "PO-Revision-Date: 2018-08-24 11:38+0000\n"
-"Last-Translator: Abul Hassan M I <miabulhassan@gmail.com>, 2019\n"
+"Last-Translator: Alagappan Karthikeyan <me@karthik.sg>, 2019\n"
 "Language-Team: Tamil (https://www.transifex.com/odoo/teams/41243/ta/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -48,7 +49,7 @@ msgstr ""
 #. module: mail_github
 #: model:ir.model.fields,field_description:mail_github.field_mail_channel_github__message_needaction
 msgid "Action Needed"
-msgstr ""
+msgstr "செயல் தேவை"
 
 #. module: mail_github
 #: model_terms:ir.ui.view,arch_db:mail_github.mail_channel_github_view_form
@@ -62,7 +63,7 @@ msgstr ""
 #. module: mail_github
 #: model:ir.model.fields,field_description:mail_github.field_mail_channel_github__message_attachment_count
 msgid "Attachment Count"
-msgstr ""
+msgstr "இணைப்பு எண்ணிக்கை"
 
 #. module: mail_github
 #: model:ir.model.fields,field_description:mail_github.field_mail_channel_github__channel_ids
@@ -118,17 +119,17 @@ msgstr ""
 #. module: mail_github
 #: model:ir.model.fields,field_description:mail_github.field_mail_channel_github__message_follower_ids
 msgid "Followers"
-msgstr ""
+msgstr "பின்பற்றுபவர்கள்"
 
 #. module: mail_github
 #: model:ir.model.fields,field_description:mail_github.field_mail_channel_github__message_channel_ids
 msgid "Followers (Channels)"
-msgstr ""
+msgstr "பின்தொடர்பவர்கள் (சேனல்கள்)"
 
 #. module: mail_github
 #: model:ir.model.fields,field_description:mail_github.field_mail_channel_github__message_partner_ids
 msgid "Followers (Partners)"
-msgstr ""
+msgstr "பின்பற்றுபவர்கள் (பங்குதாரர்கள்)"
 
 #. module: mail_github
 #: model:ir.model.fields,field_description:mail_github.field_res_users__github_login
@@ -154,22 +155,22 @@ msgstr "ID"
 #. module: mail_github
 #: model:ir.model.fields,help:mail_github.field_mail_channel_github__message_unread
 msgid "If checked new messages require your attention."
-msgstr ""
+msgstr "சோதனை செய்தால் புதிய செய்திகளுக்கு உங்கள் கவனம் தேவை."
 
 #. module: mail_github
 #: model:ir.model.fields,help:mail_github.field_mail_channel_github__message_needaction
 msgid "If checked, new messages require your attention."
-msgstr ""
+msgstr "சரிபார்க்கப்பட்டால், புதிய செய்திகளுக்கு உங்கள் கவனம் தேவை."
 
 #. module: mail_github
 #: model:ir.model.fields,help:mail_github.field_mail_channel_github__message_has_error
 msgid "If checked, some messages have a delivery error."
-msgstr ""
+msgstr "சரிபார்க்கப்பட்டால், சில செய்திகளுக்கு ஒரு பிழை ஏற்பட்டது."
 
 #. module: mail_github
 #: model:ir.model.fields,field_description:mail_github.field_mail_channel_github__message_is_follower
 msgid "Is Follower"
-msgstr ""
+msgstr "பின்பற்றுபவர்"
 
 #. module: mail_github
 #: model_terms:ir.ui.view,arch_db:mail_github.message_github_notification
@@ -194,42 +195,42 @@ msgstr "கடைசியாக புதுப்பிக்கப்பட�
 #. module: mail_github
 #: model:ir.model.fields,field_description:mail_github.field_mail_channel_github__message_main_attachment_id
 msgid "Main Attachment"
-msgstr ""
+msgstr "முக்கிய இணைப்பு"
 
 #. module: mail_github
 #: model:ir.model.fields,field_description:mail_github.field_mail_channel_github__message_has_error
 msgid "Message Delivery error"
-msgstr ""
+msgstr "செய்தி வழங்கல் பிழை"
 
 #. module: mail_github
 #: model:ir.model.fields,field_description:mail_github.field_mail_channel_github__message_ids
 msgid "Messages"
-msgstr ""
+msgstr "செய்திகள்"
 
 #. module: mail_github
 #: model:ir.model.fields,field_description:mail_github.field_mail_channel_github__message_needaction_counter
 msgid "Number of Actions"
-msgstr ""
+msgstr "செயல்கள் எண்ணிக்கை"
 
 #. module: mail_github
 #: model:ir.model.fields,field_description:mail_github.field_mail_channel_github__message_has_error_counter
 msgid "Number of error"
-msgstr ""
+msgstr "பிழை எண்ணிக்கை"
 
 #. module: mail_github
 #: model:ir.model.fields,help:mail_github.field_mail_channel_github__message_needaction_counter
 msgid "Number of messages which requires an action"
-msgstr ""
+msgstr "நடவடிக்கை தேவைப்படும் செய்திகளின் எண்ணிக்கை"
 
 #. module: mail_github
 #: model:ir.model.fields,help:mail_github.field_mail_channel_github__message_has_error_counter
 msgid "Number of messages with delivery error"
-msgstr ""
+msgstr "விநியோக பிழை கொண்ட செய்திகளின் எண்ணிக்கை"
 
 #. module: mail_github
 #: model:ir.model.fields,help:mail_github.field_mail_channel_github__message_unread_counter
 msgid "Number of unread messages"
-msgstr ""
+msgstr "படிக்காத செய்திகளின் எண்ணிக்கை"
 
 #. module: mail_github
 #: model_terms:ir.ui.view,arch_db:mail_github.mail_channel_github_view_form
@@ -298,12 +299,12 @@ msgstr ""
 #. module: mail_github
 #: model:ir.model.fields,field_description:mail_github.field_mail_channel_github__message_unread
 msgid "Unread Messages"
-msgstr ""
+msgstr "படிக்காத செய்திகள்"
 
 #. module: mail_github
 #: model:ir.model.fields,field_description:mail_github.field_mail_channel_github__message_unread_counter
 msgid "Unread Messages Counter"
-msgstr ""
+msgstr "படிக்காத செய்திகள்"
 
 #. module: mail_github
 #: model:ir.model,name:mail_github.model_res_users
@@ -313,12 +314,12 @@ msgstr "பயனர்கள்"
 #. module: mail_github
 #: model:ir.model.fields,field_description:mail_github.field_mail_channel_github__website_message_ids
 msgid "Website Messages"
-msgstr ""
+msgstr "இணைய செய்திகள்"
 
 #. module: mail_github
 #: model:ir.model.fields,help:mail_github.field_mail_channel_github__website_message_ids
 msgid "Website communication history"
-msgstr ""
+msgstr "வலைத்தள தகவல்தொடர்பு வரலாறு"
 
 #. module: mail_github
 #: model_terms:ir.ui.view,arch_db:mail_github.message_github_notification

@@ -21,14 +21,8 @@ class IrActionsReport(models.Model):
             ('key', '=', new.report_name),
         ])
         view.ensure_one()
-        new_view = view.copy_qweb_template()
-
-        domain = [
-            ('report_name', '!=', new.report_name),
-            ('report_name', 'like', '%s_copy_%%' % new.report_name),
-            ('report_name', 'not like', '%s_copy_%%_copy_%%' % new.report_name)]
-        old_copy = self.search(domain, order='report_name desc', limit=1)
-        copy_no = int(old_copy and old_copy.report_name.split('_copy_').pop() or 0) + 1
+        new_view = view.with_context(lang=None).copy_qweb_template()
+        copy_no = int(new_view.key.split('_copy_').pop())
 
         new.write({
             'xml_id': '%s_copy_%s' % (new.xml_id, copy_no),

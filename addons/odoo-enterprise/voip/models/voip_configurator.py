@@ -18,6 +18,7 @@ class VoipConfigurator(models.Model):
                 'wsServer': get_param('voip.wsServer', default='ws://localhost'),
                 'login': self.env.user[0].sip_login,
                 'password': self.env.user[0].sip_password,
+                'debug': self.user_has_groups('base.group_no_one'),
                 'external_phone': self.env.user[0].sip_external_phone,
                 'always_transfer': self.env.user[0].sip_always_transfer,
                 'ignore_incoming': self.env.user[0].sip_ignore_incoming,

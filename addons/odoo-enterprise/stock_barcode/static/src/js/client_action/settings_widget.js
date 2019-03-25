@@ -14,11 +14,12 @@ var SettingsWidget = Widget.extend({
         'click .o_scrap': '_onClickScrap',
     },
 
-    init: function (parent, model, mode) {
+    init: function (parent, model, mode, allow_scrap) {
         this._super.apply(this, arguments);
         // Set the model. According to the model, some buttons will be displayed or hidden.
         this.model = model;
         this.mode = mode;
+        this.allow_scrap = allow_scrap
     },
 
     //--------------------------------------------------------------------------

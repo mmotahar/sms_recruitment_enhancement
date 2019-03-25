@@ -5,11 +5,9 @@
 # Translators:
 # Amer Hazaa <eng.amer.it@gmail.com>, 2018
 # Martin Trigaux, 2018
-# Fahad Alqahtani <fahad@cloudland.sa>, 2018
-# Mohammed Ibrahim <m.ibrahim@mussder.com>, 2018
 # Osama Ahmaro <osamaahmaro@gmail.com>, 2018
 # Shaima Safar <shaima.safar@open-inside.com>, 2018
-# Mustafa Rawi <mustafa@cubexco.com>, 2018
+# Mustafa Rawi <mustafa@cubexco.com>, 2019
 # 
 msgid ""
 msgstr ""
@@ -17,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-19 09:12+0000\n"
 "PO-Revision-Date: 2018-08-24 11:37+0000\n"
-"Last-Translator: Mustafa Rawi <mustafa@cubexco.com>, 2018\n"
+"Last-Translator: Mustafa Rawi <mustafa@cubexco.com>, 2019\n"
 "Language-Team: Arabic (https://www.transifex.com/odoo/teams/41243/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -35,7 +33,7 @@ msgstr "، اضغط على \"الحصول على مفتاح الإنتاج \" و
 msgid ""
 "<br/>According to your needs, you will need to contact different "
 "certifications :"
-msgstr ""
+msgstr "<br/>حسب احتياجاتك، ستحتاج لتوفير شهادات مختلفة:"
 
 #. module: delivery_fedex
 #: model_terms:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
@@ -55,7 +53,7 @@ msgstr "خدمات متقدمة من دون مسمى الشهادة"
 #. module: delivery_fedex
 #: selection:delivery.carrier,fedex_droppoff_type:0
 msgid "BUSINESS_SERVICE_CENTER"
-msgstr "مركز_خدمة_تجارة"
+msgstr "BUSINESS_SERVICE_CENTER"
 
 #. module: delivery_fedex
 #: selection:delivery.carrier,delivery_type:0
@@ -76,22 +74,22 @@ msgstr "عملية إصدار الشهادات"
 #: selection:delivery.carrier,delivery_type:0
 #: selection:product.packaging,package_carrier_type:0
 msgid "DHL"
-msgstr ""
+msgstr "DHL"
 
 #. module: delivery_fedex
 #: selection:delivery.carrier,fedex_droppoff_type:0
 msgid "DROP_BOX"
-msgstr ""
+msgstr "DROP_BOX"
 
 #. module: delivery_fedex
 #: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier__fedex_default_packaging_id
 msgid "Default Package Type"
-msgstr ""
+msgstr "نوع التعبئة الافتراضي"
 
 #. module: delivery_fedex
 #: model:ir.model,name:delivery_fedex.model_delivery_carrier
 msgid "Delivery Methods"
-msgstr "طرق الشحن"
+msgstr "طرق التسليم"
 
 #. module: delivery_fedex
 #: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier__fedex_developer_key
@@ -101,13 +99,13 @@ msgstr "مفتاح المبرمج"
 #. module: delivery_fedex
 #: selection:delivery.carrier,fedex_label_file_type:0
 msgid "EPL2"
-msgstr ""
+msgstr "EPL2"
 
 #. module: delivery_fedex
 #: selection:delivery.carrier,delivery_type:0
 #: selection:product.packaging,package_carrier_type:0
 msgid "Easypost"
-msgstr ""
+msgstr "Easypost"
 
 #. module: delivery_fedex
 #: code:addons/delivery_fedex/models/delivery_fedex.py:233
@@ -115,133 +113,133 @@ msgstr ""
 msgid ""
 "Error:\n"
 "%s"
-msgstr ""
+msgstr "خطأ: %s"
 
 #. module: delivery_fedex
 #: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier__fedex_label_file_type
 msgid "FEDEX Label File Type"
-msgstr ""
+msgstr "نوع ملف بطاقة عنوان FEDEX"
 
 #. module: delivery_fedex
 #: selection:delivery.carrier,fedex_service_type:0
 msgid "FEDEX_2_DAY"
-msgstr ""
+msgstr "FEDEX_2_DAY"
 
 #. module: delivery_fedex
 #: selection:delivery.carrier,fedex_service_type:0
 msgid "FEDEX_2_DAY_AM"
-msgstr ""
+msgstr "FEDEX_2_DAY_AM"
 
 #. module: delivery_fedex
 #: selection:delivery.carrier,fedex_service_type:0
 msgid "FEDEX_3_DAY_FREIGHT"
-msgstr ""
+msgstr "FEDEX_3_DAY_FREIGHT"
 
 #. module: delivery_fedex
 #: selection:delivery.carrier,fedex_service_type:0
 msgid "FEDEX_GROUND"
-msgstr ""
+msgstr "FEDEX_GROUND"
 
 #. module: delivery_fedex
 #: selection:delivery.carrier,fedex_service_type:0
 msgid "FIRST_OVERNIGHT"
-msgstr ""
+msgstr "FIRST_OVERNIGHT"
 
 #. module: delivery_fedex
 #: selection:delivery.carrier,delivery_type:0
 #: selection:product.packaging,package_carrier_type:0
 msgid "FedEx"
-msgstr "فيدكس"
+msgstr "FedEx"
 
 #. module: delivery_fedex
 #: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier__fedex_account_number
 msgid "FedEx Account Number"
-msgstr ""
+msgstr "رقم حساب FedEx"
 
 #. module: delivery_fedex
 #: model_terms:ir.ui.view,arch_db:delivery_fedex.res_config_settings_view_form_sale
 #: model_terms:ir.ui.view,arch_db:delivery_fedex.res_config_settings_view_form_stock
 msgid "FedEx Delivery Methods"
-msgstr ""
+msgstr "طرق تسليم FedEx"
 
 #. module: delivery_fedex
 #: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier__fedex_saturday_delivery
 msgid "FedEx Saturday Delivery"
-msgstr ""
+msgstr "تسليم FedEx يوم السبت"
 
 #. module: delivery_fedex
 #: model_terms:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
 msgid "FedEx Web Services \"Move to Production\""
-msgstr ""
+msgstr "خدمات FedEx الإلكترونية \"النقل للإنتاجية\""
 
 #. module: delivery_fedex
 #: model_terms:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
 msgid "Fedex Configuration"
-msgstr "إعدادات فيديكس"
+msgstr "إعدادات FedEx"
 
 #. module: delivery_fedex
 #: model:delivery.carrier,name:delivery_fedex.delivery_carrier_fedex_inter
 #: model:product.product,name:delivery_fedex.product_product_delivery_fedex_inter
 #: model:product.template,name:delivery_fedex.product_product_delivery_fedex_inter_product_template
 msgid "Fedex International"
-msgstr "فيديكس الدولية"
+msgstr "FedEx الدولية"
 
 #. module: delivery_fedex
 #: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier__fedex_label_stock_type
 msgid "Fedex Label Stock Type"
-msgstr ""
+msgstr "نوع مخزون بطاقة عنوان Fedex"
 
 #. module: delivery_fedex
 #: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier__fedex_service_type
 msgid "Fedex Service Type"
-msgstr ""
+msgstr "نوع خدمة FedEx"
 
 #. module: delivery_fedex
 #: model_terms:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
 msgid "Fedex Tutorial"
-msgstr "درس فيديكس"
+msgstr "درس FedEx التدريبي"
 
 #. module: delivery_fedex
 #: model:delivery.carrier,name:delivery_fedex.delivery_carrier_fedex_us
 #: model:product.product,name:delivery_fedex.product_product_delivery_fedex_us
 #: model:product.template,name:delivery_fedex.product_product_delivery_fedex_us_product_template
 msgid "Fedex US"
-msgstr "فيديكس الولايات المتحدة"
+msgstr "FedEx الولايات المتحدة"
 
 #. module: delivery_fedex
 #: model_terms:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
 msgid "Fedex Website"
-msgstr "موقع الكتروني لفيديكس"
+msgstr "موقع FedEx الإلكتروني"
 
 #. module: delivery_fedex
 #: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier__fedex_weight_unit
 msgid "Fedex Weight Unit"
-msgstr ""
+msgstr "وحدة وزن FedEx"
 
 #. module: delivery_fedex
 #: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier__fedex_droppoff_type
 msgid "Fedex drop-off type"
-msgstr ""
+msgstr "نوع توصيل Fedex"
 
 #. module: delivery_fedex
 #: selection:delivery.carrier,delivery_type:0
 msgid "Fixed Price"
-msgstr "الاسعار الثابته"
+msgstr "سعر ثابت"
 
 #. module: delivery_fedex
 #: model_terms:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
 msgid "Go to"
-msgstr "اذهب الى"
+msgstr "اذهب إلى"
 
 #. module: delivery_fedex
 #: selection:delivery.carrier,fedex_service_type:0
 msgid "INTERNATIONAL_ECONOMY"
-msgstr ""
+msgstr "INTERNATIONAL_ECONOMY"
 
 #. module: delivery_fedex
 #: selection:delivery.carrier,fedex_service_type:0
 msgid "INTERNATIONAL_PRIORITY"
-msgstr ""
+msgstr "INTERNATIONAL_PRIORITY"
 
 #. module: delivery_fedex
 #: selection:delivery.carrier,fedex_weight_unit:0
@@ -256,18 +254,18 @@ msgstr "رطل"
 #. module: delivery_fedex
 #: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier__fedex_meter_number
 msgid "Meter Number"
-msgstr "كم متر"
+msgstr "الرقم المتري"
 
 #. module: delivery_fedex
 #: selection:product.packaging,package_carrier_type:0
 msgid "No carrier integration"
-msgstr ""
+msgstr "لم يتم اختيار شركة شحن"
 
 #. module: delivery_fedex
 #: code:addons/delivery_fedex/models/delivery_fedex.py:440
 #, python-format
 msgid "No packages for this picking"
-msgstr ""
+msgstr "لا يوجد حزم لاستلامها"
 
 #. module: delivery_fedex
 #: model_terms:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
@@ -277,37 +275,37 @@ msgstr "بعد إنشاء حسابك، انتقل إلى"
 #. module: delivery_fedex
 #: selection:delivery.carrier,fedex_label_stock_type:0
 msgid "PAPER_4X6"
-msgstr ""
+msgstr "PAPER_4X6"
 
 #. module: delivery_fedex
 #: selection:delivery.carrier,fedex_label_stock_type:0
 msgid "PAPER_4X8"
-msgstr ""
+msgstr "PAPER_4X8"
 
 #. module: delivery_fedex
 #: selection:delivery.carrier,fedex_label_stock_type:0
 msgid "PAPER_4X9"
-msgstr ""
+msgstr "PAPER_4X9"
 
 #. module: delivery_fedex
 #: selection:delivery.carrier,fedex_label_stock_type:0
 msgid "PAPER_7X4.75"
-msgstr ""
+msgstr "PAPER_7X4.75"
 
 #. module: delivery_fedex
 #: selection:delivery.carrier,fedex_label_stock_type:0
 msgid "PAPER_8.5X11_BOTTOM_HALF_LABEL"
-msgstr ""
+msgstr "PAPER_8.5X11_BOTTOM_HALF_LABEL"
 
 #. module: delivery_fedex
 #: selection:delivery.carrier,fedex_label_stock_type:0
 msgid "PAPER_8.5X11_TOP_HALF_LABEL"
-msgstr ""
+msgstr "PAPER_8.5X11_TOP_HALF_LABEL"
 
 #. module: delivery_fedex
 #: selection:delivery.carrier,fedex_label_stock_type:0
 msgid "PAPER_LETTER"
-msgstr ""
+msgstr "PAPER_LETTER"
 
 #. module: delivery_fedex
 #: selection:delivery.carrier,fedex_label_file_type:0
@@ -317,12 +315,12 @@ msgstr "PDF"
 #. module: delivery_fedex
 #: selection:delivery.carrier,fedex_label_file_type:0
 msgid "PNG"
-msgstr ""
+msgstr "PNG"
 
 #. module: delivery_fedex
 #: selection:delivery.carrier,fedex_service_type:0
 msgid "PRIORITY_OVERNIGHT"
-msgstr ""
+msgstr "PRIORITY_OVERNIGHT"
 
 #. module: delivery_fedex
 #: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier__fedex_developer_password
@@ -332,7 +330,7 @@ msgstr "كلمة المرور"
 #. module: delivery_fedex
 #: model:ir.model,name:delivery_fedex.model_product_packaging
 msgid "Product Packaging"
-msgstr ""
+msgstr "تعبئة المنتج"
 
 #. module: delivery_fedex
 #: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier__delivery_type
@@ -342,17 +340,17 @@ msgstr "المزود"
 #. module: delivery_fedex
 #: selection:delivery.carrier,fedex_droppoff_type:0
 msgid "REGULAR_PICKUP"
-msgstr ""
+msgstr "REGULAR_PICKUP"
 
 #. module: delivery_fedex
 #: selection:delivery.carrier,fedex_droppoff_type:0
 msgid "REQUEST_COURIER"
-msgstr ""
+msgstr "REQUEST_COURIER"
 
 #. module: delivery_fedex
 #: selection:delivery.carrier,fedex_service_type:0
 msgid "STANDARD_OVERNIGHT"
-msgstr ""
+msgstr "STANDARD_OVERNIGHT"
 
 #. module: delivery_fedex
 #: selection:delivery.carrier,fedex_droppoff_type:0
@@ -362,42 +360,42 @@ msgstr "محطة"
 #. module: delivery_fedex
 #: selection:delivery.carrier,fedex_label_stock_type:0
 msgid "STOCK_4X6"
-msgstr ""
+msgstr "STOCK_4X6"
 
 #. module: delivery_fedex
 #: selection:delivery.carrier,fedex_label_stock_type:0
 msgid "STOCK_4X6.75_LEADING_DOC_TAB"
-msgstr ""
+msgstr "STOCK_4X6.75_LEADING_DOC_TAB"
 
 #. module: delivery_fedex
 #: selection:delivery.carrier,fedex_label_stock_type:0
 msgid "STOCK_4X6.75_TRAILING_DOC_TAB"
-msgstr ""
+msgstr "STOCK_4X6.75_TRAILING_DOC_TAB"
 
 #. module: delivery_fedex
 #: selection:delivery.carrier,fedex_label_stock_type:0
 msgid "STOCK_4X8"
-msgstr ""
+msgstr "STOCK_4X8"
 
 #. module: delivery_fedex
 #: selection:delivery.carrier,fedex_label_stock_type:0
 msgid "STOCK_4X9_LEADING_DOC_TAB"
-msgstr ""
+msgstr "STOCK_4X9_LEADING_DOC_TAB"
 
 #. module: delivery_fedex
 #: selection:delivery.carrier,fedex_label_stock_type:0
 msgid "STOCK_4X9_TRAILING_DOC_TAB"
-msgstr ""
+msgstr "STOCK_4X9_TRAILING_DOC_TAB"
 
 #. module: delivery_fedex
 #: model_terms:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
 msgid "Saturday Delivery"
-msgstr ""
+msgstr "التسليم يوم السبت"
 
 #. module: delivery_fedex
 #: model_terms:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
 msgid "Screenshot"
-msgstr ""
+msgstr "لقطة للشاشة"
 
 #. module: delivery_fedex
 #: code:addons/delivery_fedex/models/delivery_fedex.py:463
@@ -409,7 +407,7 @@ msgstr "تم إلغاء الشحنة N° %s"
 #: code:addons/delivery_fedex/models/delivery_fedex.py:424
 #, python-format
 msgid "Shipment created into Fedex <br/> <b>Tracking Number : </b>%s"
-msgstr ""
+msgstr "تم إنشاء الشحنة في FedEx <br/> <b>رقم التتبع: </b>%s"
 
 #. module: delivery_fedex
 #: code:addons/delivery_fedex/models/delivery_fedex.py:370
@@ -418,6 +416,7 @@ msgid ""
 "Shipment created into Fedex<br/><b>Tracking Numbers:</b> "
 "%s<br/><b>Packages:</b> %s"
 msgstr ""
+"تم إنشاء الشحنة في FedEx <br/> <b>رقم التتبع:</b> %s<br/><b>الحزم:</b> %s"
 
 #. module: delivery_fedex
 #: model:ir.model.fields,help:delivery_fedex.field_delivery_carrier__fedex_saturday_delivery
@@ -431,6 +430,14 @@ msgid ""
 "                                                                                 3.INTERNATIONAL_PRIORITY.\n"
 "(To Select Countries)"
 msgstr ""
+"خدمة خاصة: التسليم يوم السبت، يمكن طلبها في الأيام التالية:\n"
+"                                                                                 الخميس:\n"
+"1.FEDEX_2_DAY.\n"
+"الجمعة:\n"
+"1.PRIORITY_OVERNIGHT.\n"
+"2.FIRST_OVERNIGHT.\n"
+"                                                                                 3.INTERNATIONAL_PRIORITY.\n"
+"(لاختيار الدول)"
 
 #. module: delivery_fedex
 #: model_terms:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
@@ -440,7 +447,7 @@ msgstr "مستوى الخدمة"
 #. module: delivery_fedex
 #: model_terms:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
 msgid "The last step is the"
-msgstr "الخطوة الاخيرة هي"
+msgstr "الخطوة الأخيرة هي"
 
 #. module: delivery_fedex
 #: model_terms:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
@@ -448,6 +455,8 @@ msgid ""
 "These certifications usually require that you contact the FedEx support team"
 " by email."
 msgstr ""
+"غالبًا ما يتطلب اعتماد هذه الشهادات أن تتواصل مع فريق دعم FedEx بالبريد "
+"الإلكتروني."
 
 #. module: delivery_fedex
 #: selection:delivery.carrier,delivery_type:0
@@ -466,7 +475,7 @@ msgstr "USPS"
 #: model:product.template,uom_name:delivery_fedex.product_product_delivery_fedex_inter_product_template
 #: model:product.template,uom_name:delivery_fedex.product_product_delivery_fedex_us_product_template
 msgid "Unit(s)"
-msgstr "وحدة(ات)"
+msgstr "وحدة"
 
 #. module: delivery_fedex
 #: code:addons/delivery_fedex/models/delivery_fedex.py:239
@@ -475,11 +484,13 @@ msgid ""
 "Warning:\n"
 "%s"
 msgstr ""
+"تحذير:\n"
+"%s"
 
 #. module: delivery_fedex
 #: selection:delivery.carrier,fedex_label_file_type:0
 msgid "ZPLII"
-msgstr ""
+msgstr "ZPLII"
 
 #. module: delivery_fedex
 #: selection:delivery.carrier,delivery_type:0
@@ -498,4 +509,4 @@ msgstr "كجم"
 #. module: delivery_fedex
 #: model_terms:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
 msgid "to create a FedEx account of the following type:"
-msgstr "لإنشاء حساب فيديكس من النوع التالي:"
+msgstr "لإنشاء حساب FedEx من النوع التالي:"

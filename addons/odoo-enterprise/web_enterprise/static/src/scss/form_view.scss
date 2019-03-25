@@ -324,7 +324,6 @@
             border-bottom: 1px solid gray('400');
 
             > .tab-pane {
-                padding: $o-horizontal-padding 0;
 
                 > :first-child {
                     // Reset margin to 0 and use tab-pane's padding

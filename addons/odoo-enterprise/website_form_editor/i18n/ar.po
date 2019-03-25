@@ -3,16 +3,17 @@
 # * website_form_editor
 # 
 # Translators:
-# Mustafa Rawi <mustafa@cubexco.com>, 2018
 # Ghaith Gammar <g.gammar@saharaifs.net>, 2018
 # Shaima Safar <shaima.safar@open-inside.com>, 2018
+# Mustafa Rawi <mustafa@cubexco.com>, 2019
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~11.5+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-24 11:29+0000\n"
-"PO-Revision-Date: 2018-08-24 11:29+0000\n"
-"Last-Translator: Shaima Safar <shaima.safar@open-inside.com>, 2018\n"
+"POT-Creation-Date: 2018-09-18 10:05+0000\n"
+"PO-Revision-Date: 2018-08-24 11:49+0000\n"
+"Last-Translator: Mustafa Rawi <mustafa@cubexco.com>, 2019\n"
 "Language-Team: Arabic (https://www.transifex.com/odoo/teams/41243/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,24 +29,24 @@ msgid "&times;"
 msgstr "&times;"
 
 #. module: website_form_editor
-#: model:ir.ui.view,arch_db:website_form_editor.snippet_options
+#: model_terms:ir.ui.view,arch_db:website_form_editor.snippet_options
 msgid "Add a custom field"
 msgstr ""
 
 #. module: website_form_editor
-#: model:ir.ui.view,arch_db:website_form_editor.snippet_options
+#: model_terms:ir.ui.view,arch_db:website_form_editor.snippet_options
 msgid "Add an existing field"
 msgstr ""
 
 #. module: website_form_editor
-#: model:ir.ui.view,arch_db:website_form_editor.snippet_options
+#: model_terms:ir.ui.view,arch_db:website_form_editor.snippet_options
 msgid "Change Form Parameters"
 msgstr ""
 
 #. module: website_form_editor
-#: model:ir.ui.view,arch_db:website_form_editor.snippet_options
+#: model_terms:ir.ui.view,arch_db:website_form_editor.snippet_options
 msgid "Checkbox"
-msgstr ""
+msgstr "مربع الاختيار"
 
 #. module: website_form_editor
 #. openerp-web
@@ -55,37 +56,37 @@ msgid "Close"
 msgstr "إقفال"
 
 #. module: website_form_editor
-#: model:ir.ui.view,arch_db:website_form_editor.snippet_options
+#: model_terms:ir.ui.view,arch_db:website_form_editor.snippet_options
 msgid "Date"
 msgstr "التاريخ"
 
 #. module: website_form_editor
-#: model:ir.ui.view,arch_db:website_form_editor.snippet_options
+#: model_terms:ir.ui.view,arch_db:website_form_editor.snippet_options
 msgid "Date &amp; Time"
 msgstr ""
 
 #. module: website_form_editor
-#: model:ir.ui.view,arch_db:website_form_editor.snippet_options
+#: model_terms:ir.ui.view,arch_db:website_form_editor.snippet_options
 msgid "Decimal Number"
 msgstr ""
 
 #. module: website_form_editor
-#: model:ir.ui.view,arch_db:website_form_editor.snippet_options
+#: model_terms:ir.ui.view,arch_db:website_form_editor.snippet_options
 msgid "File Upload"
 msgstr "رفع الملف"
 
 #. module: website_form_editor
-#: model:ir.ui.view,arch_db:website_form_editor.snippet_options
+#: model_terms:ir.ui.view,arch_db:website_form_editor.snippet_options
 msgid "Hidden"
 msgstr "خفي"
 
 #. module: website_form_editor
-#: model:ir.ui.view,arch_db:website_form_editor.snippet_options
+#: model_terms:ir.ui.view,arch_db:website_form_editor.snippet_options
 msgid "Long Text"
 msgstr ""
 
 #. module: website_form_editor
-#: model:ir.ui.view,arch_db:website_form_editor.snippet_options
+#: model_terms:ir.ui.view,arch_db:website_form_editor.snippet_options
 msgid "Multiple Checkboxes"
 msgstr ""
 
@@ -97,17 +98,17 @@ msgid "No matching record !"
 msgstr ""
 
 #. module: website_form_editor
-#: model:ir.ui.view,arch_db:website_form_editor.snippet_options
+#: model_terms:ir.ui.view,arch_db:website_form_editor.snippet_options
 msgid "Number"
 msgstr "الرقم"
 
 #. module: website_form_editor
-#: model:ir.ui.view,arch_db:website_form_editor.snippet_options
+#: model_terms:ir.ui.view,arch_db:website_form_editor.snippet_options
 msgid "Radio Buttons"
 msgstr ""
 
 #. module: website_form_editor
-#: model:ir.ui.view,arch_db:website_form_editor.snippet_options
+#: model_terms:ir.ui.view,arch_db:website_form_editor.snippet_options
 msgid "Required"
 msgstr "مطلوب"
 
@@ -119,21 +120,21 @@ msgid "Save"
 msgstr "حفظ"
 
 #. module: website_form_editor
-#: model:ir.ui.view,arch_db:website_form_editor.snippet_options
+#: model_terms:ir.ui.view,arch_db:website_form_editor.snippet_options
 msgid "Selection"
 msgstr "الاختيار"
 
 #. module: website_form_editor
-#: model:ir.ui.view,arch_db:website_form_editor.s_website_form
+#: model_terms:ir.ui.view,arch_db:website_form_editor.s_website_form
 msgid "Send"
 msgstr "إرسال"
 
 #. module: website_form_editor
-#: model:ir.ui.view,arch_db:website_form_editor.snippet_options
+#: model_terms:ir.ui.view,arch_db:website_form_editor.snippet_options
 msgid "Text"
 msgstr "النص"
 
 #. module: website_form_editor
-#: model:ir.ui.view,arch_db:website_form_editor.ir_model_view
+#: model_terms:ir.ui.view,arch_db:website_form_editor.ir_model_view
 msgid "Website Forms"
 msgstr ""

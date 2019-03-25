@@ -4,7 +4,7 @@
 # 
 # Translators:
 # Martin Trigaux, 2018
-# trendspotter <j.podhorecky@volny.cz>, 2018
+# trendspotter <j.podhorecky@volny.cz>, 2019
 # 
 msgid ""
 msgstr ""
@@ -12,7 +12,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-21 14:06+0000\n"
 "PO-Revision-Date: 2018-08-24 11:37+0000\n"
-"Last-Translator: trendspotter <j.podhorecky@volny.cz>, 2018\n"
+"Last-Translator: trendspotter <j.podhorecky@volny.cz>, 2019\n"
 "Language-Team: Czech (https://www.transifex.com/odoo/teams/41243/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -33,12 +33,12 @@ msgstr ""
 #. module: delivery_dhl
 #: selection:delivery.carrier,dhl_product_code:0
 msgid "2 - B2C"
-msgstr ""
+msgstr "2 - B2C"
 
 #. module: delivery_dhl
 #: selection:delivery.carrier,dhl_product_code:0
 msgid "3 - B2C"
-msgstr ""
+msgstr "3 - B2C"
 
 #. module: delivery_dhl
 #: selection:delivery.carrier,dhl_product_code:0
@@ -58,12 +58,12 @@ msgstr ""
 #. module: delivery_dhl
 #: selection:delivery.carrier,dhl_label_template:0
 msgid "6X4_A4_PDF"
-msgstr ""
+msgstr "6X4_A4_PDF"
 
 #. module: delivery_dhl
 #: selection:delivery.carrier,dhl_label_template:0
 msgid "6X4_PDF"
-msgstr ""
+msgstr "6X4_PDF"
 
 #. module: delivery_dhl
 #: selection:delivery.carrier,dhl_label_template:0
@@ -88,22 +88,22 @@ msgstr ""
 #. module: delivery_dhl
 #: selection:delivery.carrier,dhl_label_template:0
 msgid "8X4_A4_TC_PDF"
-msgstr ""
+msgstr "8X4_A4_TC_PDF"
 
 #. module: delivery_dhl
 #: selection:delivery.carrier,dhl_label_template:0
 msgid "8X4_CI_PDF"
-msgstr ""
+msgstr "8X4_CI_PDF"
 
 #. module: delivery_dhl
 #: selection:delivery.carrier,dhl_label_template:0
 msgid "8X4_CI_thermal"
-msgstr ""
+msgstr "8X4_CI_thermal"
 
 #. module: delivery_dhl
 #: selection:delivery.carrier,dhl_label_template:0
 msgid "8X4_PDF"
-msgstr ""
+msgstr "8X4_PDF"
 
 #. module: delivery_dhl
 #: selection:delivery.carrier,dhl_label_template:0
@@ -113,7 +113,7 @@ msgstr ""
 #. module: delivery_dhl
 #: selection:delivery.carrier,dhl_label_template:0
 msgid "8X4_thermal"
-msgstr ""
+msgstr "8X4_thermal"
 
 #. module: delivery_dhl
 #: selection:delivery.carrier,dhl_product_code:0
@@ -158,7 +158,7 @@ msgstr "Přepravce"
 #. module: delivery_dhl
 #: selection:delivery.carrier,dhl_package_dimension_unit:0
 msgid "Centimeters"
-msgstr ""
+msgstr "Centimetry"
 
 #. module: delivery_dhl
 #: model:ir.model.fields,help:delivery_dhl.field_delivery_carrier__dhl_dutiable
@@ -168,7 +168,7 @@ msgstr ""
 #. module: delivery_dhl
 #: selection:delivery.carrier,dhl_product_code:0
 msgid "D - Express Worldwide"
-msgstr ""
+msgstr "D - Express Worldwide"
 
 #. module: delivery_dhl
 #: selection:delivery.carrier,delivery_type:0
@@ -184,7 +184,7 @@ msgstr ""
 #. module: delivery_dhl
 #: model_terms:ir.ui.view,arch_db:delivery_dhl.view_delivery_carrier_form_with_provider_dhl
 msgid "DHL Configuration"
-msgstr ""
+msgstr "DHL konfigurace"
 
 #. module: delivery_dhl
 #: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier__dhl_default_packaging_id
@@ -216,7 +216,7 @@ msgstr ""
 #. module: delivery_dhl
 #: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier__dhl_SiteID
 msgid "DHL SiteID"
-msgstr ""
+msgstr "DHL SiteID"
 
 #. module: delivery_dhl
 #: model:delivery.carrier,name:delivery_dhl.delivery_carrier_dhl_dom
@@ -258,7 +258,7 @@ msgstr ""
 #. module: delivery_dhl
 #: selection:delivery.carrier,dhl_product_code:0
 msgid "E - Express 9:00"
-msgstr ""
+msgstr "E - Express 9:00"
 
 #. module: delivery_dhl
 #: selection:delivery.carrier,dhl_label_image_format:0
@@ -269,7 +269,7 @@ msgstr "EPL2"
 #: selection:delivery.carrier,delivery_type:0
 #: selection:product.packaging,package_carrier_type:0
 msgid "Easypost"
-msgstr ""
+msgstr "Easypost"
 
 #. module: delivery_dhl
 #: selection:delivery.carrier,dhl_region_code:0
@@ -320,17 +320,17 @@ msgstr ""
 #. module: delivery_dhl
 #: selection:delivery.carrier,dhl_product_code:0
 msgid "K - Express 9:00"
-msgstr ""
+msgstr "K - Express 9:00"
 
 #. module: delivery_dhl
 #: selection:delivery.carrier,dhl_package_weight_unit:0
 msgid "Kilograms"
-msgstr ""
+msgstr "Kilogramy"
 
 #. module: delivery_dhl
 #: selection:delivery.carrier,dhl_product_code:0
 msgid "L - Express 10:30"
-msgstr ""
+msgstr "L - Express 10:30"
 
 #. module: delivery_dhl
 #: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier__dhl_label_image_format
@@ -345,12 +345,12 @@ msgstr ""
 #. module: delivery_dhl
 #: selection:delivery.carrier,dhl_product_code:0
 msgid "M - Express 10:30"
-msgstr ""
+msgstr "M - Express do 10:30"
 
 #. module: delivery_dhl
 #: selection:delivery.carrier,dhl_product_code:0
 msgid "N - Domestic Express"
-msgstr ""
+msgstr "N - Domestic Express"
 
 #. module: delivery_dhl
 #: selection:product.packaging,package_carrier_type:0
@@ -433,7 +433,7 @@ msgstr "Region"
 #. module: delivery_dhl
 #: selection:delivery.carrier,dhl_product_code:0
 msgid "S - Same Day"
-msgstr ""
+msgstr "S - stejný den"
 
 #. module: delivery_dhl
 #: code:addons/delivery_dhl/models/delivery_dhl.py:131
@@ -444,7 +444,7 @@ msgstr ""
 #. module: delivery_dhl
 #: selection:delivery.carrier,dhl_product_code:0
 msgid "T - Express 12:00"
-msgstr ""
+msgstr "T - Express 12:00"
 
 #. module: delivery_dhl
 #: code:addons/delivery_dhl/models/dhl_request.py:385

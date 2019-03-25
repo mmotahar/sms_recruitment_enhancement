@@ -208,18 +208,6 @@ class View(models.Model):
         old_view_iterator = old_view_tree.iter()
         new_view_iterator = new_view_tree.iter()
 
-        # To compute the xpath of a node, we need to give some context
-        # @key added_nodes: nodes that were added to the new view
-        # Example: for the 'before' position, we need to place ourselves
-        # at the next sibling and compute what are the siblings of this sibling
-        # which *include* the current node. The context will help determine
-        # what is the real absolute position of the 'next' sibling of the current node
-        # Forward port Notice: other helpers have been added, I suggest everything must
-        # go in there
-        node_context = {
-            'added_nodes': set()
-        }
-
         # Determine which fields have moved. This information will be used to
         # compute the second diff because the moved nodes must appear in the
         # diff (see @stringify_node).
@@ -347,7 +335,7 @@ class View(models.Model):
                     if xpath.get('expr'):
                         # Maybe we are already removing the parent of this
                         # node so this one will be removed automatically
-                        current_xpath_target = old_view_tree.find('.' + xpath.get('expr'))
+                        current_xpath_target = next(iter(old_view_tree.xpath('.' + xpath.get('expr'))), None)
                         if xpath.get('position') == 'replace' and \
                                 current_xpath_target in node.iterancestors():
                             continue
@@ -370,7 +358,6 @@ class View(models.Model):
 
                 elif line.startswith('+'):
                     node = next(new_view_iterator)
-                    node_context['added_nodes'].add(node)
 
                     # if there is more than one element with this tag and it doesn't have a way
                     # to identify itself, give it a name
@@ -401,7 +388,7 @@ class View(models.Model):
                         # If the current xpath was not compatible, it has been
                         # closed and a new one has been generated
                         xpath = anchor_node
-                        xpath.attrib['expr'], xpath.attrib['position'] = self._closest_node_to_xpath(node, old_view_tree, moved_fields, node_context)
+                        xpath.attrib['expr'], xpath.attrib['position'] = self._closest_node_to_xpath(node, old_view_tree, moved_fields)
 
                     if node.tag == 'field' and node.get('name') in moved_fields:
                         # manually replace the node by the `move` xpath
@@ -564,7 +551,6 @@ class View(models.Model):
         """
         Creates and returns a relative xpath that points to target_node
         """
-        node_context = node_context or {}
         if target_node.tag == 'attribute':
             target_node = target_node.getparent().getparent()
         elif target_node.tag == 'attributes':
@@ -601,20 +587,22 @@ class View(models.Model):
         its name attribute (relative identifier) or by getting the number of preceding
         sibling elements (absolute identifier)
         """
-        node_context = node_context or {}
         if node.get('name'):
             node_str = '%s[@name=\'%s\']' % (node.tag, node.get('name'))
         else:
-            seen_nodes = node_context.get('encountered_nodes', set())
-            same_tag_prev_siblings = [
-                sibling
-                for sibling in node.itersiblings(tag=node.tag, preceding=True)
-                if sibling not in seen_nodes
-            ]
+            same_tag_prev_siblings = list(node.itersiblings(tag=node.tag, preceding=True))
+            num_prev_noname_node = sum(
+                1 for sibling in same_tag_prev_siblings
+                if 'name' not in sibling.attrib
+            )
 
+            node_str = node.tag
+            # Only count no name node to avoid conflict with other studio change
+            if num_prev_noname_node != len(same_tag_prev_siblings):
+                node_str += '[not(@name)]'
             # We need to add 1 to the number of previous siblings to get the
             # position index of the node because these indices start at 1 in an xpath context.
-            node_str = '%s[%s]' % (node.tag, len(same_tag_prev_siblings) + 1)
+            node_str += '[%s]' % (num_prev_noname_node + 1,)
 
         return node_str
 
@@ -629,13 +617,6 @@ class View(models.Model):
         If none is found, the method will fallback to next/previous sibling or parent even if they
         don't have an identifiable name, in which case an absolute xpath expr will be generated
         """
-        node_context = node_context or {}
-
-        # To compute the anchor for the current node we need
-        # 1. All the nodes that have been really added
-        # 2. Nodes that have been discovered while traversing siblings downwards
-        # 3. Be able to differentiate between the two so we need to clone added_nodes
-        node_context['encountered_nodes'] = set(node_context.get('added_nodes', set()))
 
         def _is_valid_anchor(target_node):
             if (target_node is None) or (target_node.tag in ['attribute', 'attributes']):
@@ -644,7 +625,7 @@ class View(models.Model):
                 # a moved field cannot be used as anchor
                 return None
             target_node_expr = '.' + self._node_to_xpath(target_node, node_context)
-            return old_view.find(target_node_expr) is not None
+            return bool(old_view.xpath(target_node_expr))
 
         nxt = node.getnext()
         prev = node.getprevious()
@@ -660,7 +641,6 @@ class View(models.Model):
         else:
             # Visible element
             while prev is not None or nxt is not None:
-                node_context['encountered_nodes'].add(nxt)
                 # Try to anchor onto the closest adjacent element
                 if _is_valid_anchor(prev):
                     target_node = prev

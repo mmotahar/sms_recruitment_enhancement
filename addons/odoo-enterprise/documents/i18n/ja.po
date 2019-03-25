@@ -929,7 +929,7 @@ msgstr ""
 #. module: documents
 #: model:ir.model.fields,field_description:documents.field_documents_share__message_main_attachment_id
 msgid "Main Attachment"
-msgstr ""
+msgstr "主な添付"
 
 #. module: documents
 #: model:ir.actions.act_window,name:documents.tag_action
@@ -1536,7 +1536,7 @@ msgstr "未読メッセージカウンター"
 #: model_terms:ir.ui.view,arch_db:documents.share_page
 #, python-format
 msgid "Upload"
-msgstr ""
+msgstr "アップロード"
 
 #. module: documents
 #: model_terms:ir.actions.act_window,help:documents.document_action

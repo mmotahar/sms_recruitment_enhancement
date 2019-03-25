@@ -162,7 +162,7 @@ msgstr "Apparaten"
 #: model:ir.model.fields,field_description:iot.field_iot_device__display_name
 #: model:ir.model.fields,field_description:iot.field_iot_trigger__display_name
 msgid "Display Name"
-msgstr "Weergave naam"
+msgstr "Weergavenaam"
 
 #. module: iot
 #: selection:iot.trigger,action:0

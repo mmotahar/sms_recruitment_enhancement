@@ -116,6 +116,14 @@ var UserAgent = Class.extend(mixins.EventDispatcherMixin, ServicesMixin, {
             this._toggleMute(false);
         }
     },
+    /**
+     * Returns PBX Configuration.
+     *
+     * @return {Object} result user and pbx configuration return by the rpc
+     */
+    getPbxConfiguration: function() {
+        return this.infoPbxConfiguration;
+    },
     //--------------------------------------------------------------------------
     // Private
     //--------------------------------------------------------------------------
@@ -276,6 +284,7 @@ var UserAgent = Class.extend(mixins.EventDispatcherMixin, ServicesMixin, {
      * @param {Object} result user and pbx configuration return by the rpc
      */
     _initUa: function (result) {
+        this.infoPbxConfiguration = result;
         this.mode = result.mode;
         if (this.mode === "prod") {
             this.trigger_up('sip_error', {msg: _t("Connecting..."), connecting: true});

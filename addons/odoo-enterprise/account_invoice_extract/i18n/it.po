@@ -3,18 +3,19 @@
 # * account_invoice_extract
 # 
 # Translators:
-# Sergio Zanchetta <primes2h@gmail.com>, 2018
 # Martin Trigaux, 2018
 # Giacomo Grasso <giacomo.grasso.82@gmail.com>, 2018
-# Léonie Bouchat <lbo@odoo.com>, 2018
 # Sebastiano Pistore <SebastianoPistore.info@protonmail.ch>, 2018
+# Sergio Zanchetta <primes2h@gmail.com>, 2018
+# Léonie Bouchat <lbo@odoo.com>, 2019
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~11.5+e\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-25 12:42+0000\n"
-"PO-Revision-Date: 2018-09-25 12:42+0000\n"
-"Last-Translator: Sebastiano Pistore <SebastianoPistore.info@protonmail.ch>, 2018\n"
+"PO-Revision-Date: 2018-08-24 11:36+0000\n"
+"Last-Translator: Léonie Bouchat <lbo@odoo.com>, 2019\n"
 "Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,16 +29,18 @@ msgid ""
 "0 for 'not selected', 1 for ocr choosed and 2 for ocr selected but not "
 "choosed by user"
 msgstr ""
+"0 per \"non selezionato\", 1 per OCR scelto e 2 per OCR selezionato ma non "
+"scelto dall'utente"
 
 #. module: account_invoice_extract
 #: selection:account.invoice,extract_state:0
 msgid "An error occured"
-msgstr ""
+msgstr "Si è verificato un errore"
 
 #. module: account_invoice_extract
 #: model_terms:ir.ui.view,arch_db:account_invoice_extract.invoice_supplier_form_inherit_ocr
 msgid "An error occured during the ocr process."
-msgstr ""
+msgstr "Si è verificato un errore durante il processo OCR."
 
 #. module: account_invoice_extract
 #: model_terms:ir.ui.view,arch_db:account_invoice_extract.res_config_settings_view_form
@@ -47,22 +50,22 @@ msgstr "Compilazione automatica fatture fornitori (OCR + AI)"
 #. module: account_invoice_extract
 #: model:ir.model.fields,field_description:account_invoice_extract.field_res_config_settings__extract_show_ocr_option_selection
 msgid "Automatic Bills Processing"
-msgstr ""
+msgstr "Elaborazione automatica delle fatture"
 
 #. module: account_invoice_extract
 #: model_terms:ir.ui.view,arch_db:account_invoice_extract.invoice_supplier_form_inherit_ocr
 msgid "Buy credits"
-msgstr ""
+msgstr "Comprare crediti"
 
 #. module: account_invoice_extract
 #: model:ir.model.fields,field_description:account_invoice_extract.field_account_invoice__extract_can_show_resend_button
 msgid "Can show the ocr resend button"
-msgstr ""
+msgstr "Può mostrare il tasto reinvio OCR"
 
 #. module: account_invoice_extract
 #: model:ir.model.fields,field_description:account_invoice_extract.field_account_invoice__extract_can_show_send_button
 msgid "Can show the ocr send button"
-msgstr ""
+msgstr "Può mostrare il tasto invio OCR"
 
 #. module: account_invoice_extract
 #: model:ir.model,name:account_invoice_extract.model_res_company
@@ -72,7 +75,7 @@ msgstr "Aziende"
 #. module: account_invoice_extract
 #: selection:account.invoice,extract_state:0
 msgid "Completed flow"
-msgstr ""
+msgstr "Flusso completato"
 
 #. module: account_invoice_extract
 #: model:ir.model,name:account_invoice_extract.model_res_config_settings
@@ -97,7 +100,7 @@ msgstr "Nome visualizzato"
 #. module: account_invoice_extract
 #: selection:res.company,extract_show_ocr_option_selection:0
 msgid "Do not process bills"
-msgstr ""
+msgstr "Non elaborare le fatture"
 
 #. module: account_invoice_extract
 #: model:ir.model.fields,field_description:account_invoice_extract.field_account_invoice__extract_word_ids
@@ -112,7 +115,7 @@ msgstr ""
 #. module: account_invoice_extract
 #: model:ir.model,name:account_invoice_extract.model_account_invoice_extract_words
 msgid "Extracted words from invoice scan"
-msgstr ""
+msgstr "Parole estratte dalla scansione delle fatture"
 
 #. module: account_invoice_extract
 #: model:ir.model.fields,field_description:account_invoice_extract.field_account_invoice_extract_words__field
@@ -168,32 +171,32 @@ msgstr "Ultima modifica il"
 #. module: account_invoice_extract
 #: selection:account.invoice,extract_state:0
 msgid "No extract requested"
-msgstr ""
+msgstr "Nessuna richiesta di estrazione"
 
 #. module: account_invoice_extract
 #: selection:account.invoice,extract_state:0
 msgid "Not enough credit"
-msgstr ""
+msgstr "Credito non sufficiente"
 
 #. module: account_invoice_extract
 #: selection:res.company,extract_show_ocr_option_selection:0
 msgid "Process all bills automatically"
-msgstr ""
+msgstr "Elaborare automaticamente tutte le fatture"
 
 #. module: account_invoice_extract
 #: selection:res.company,extract_show_ocr_option_selection:0
 msgid "Process bills on demand only"
-msgstr ""
+msgstr "Elaborare le fatture solo su richiesta"
 
 #. module: account_invoice_extract
 #: model_terms:ir.ui.view,arch_db:account_invoice_extract.invoice_supplier_form_inherit_ocr
 msgid "Resend File through OCR"
-msgstr ""
+msgstr "Rinviare il file via OCR"
 
 #. module: account_invoice_extract
 #: model_terms:ir.ui.view,arch_db:account_invoice_extract.invoice_supplier_form_inherit_ocr
 msgid "Send File through OCR"
-msgstr ""
+msgstr "Inviare il file via OCR"
 
 #. module: account_invoice_extract
 #: model:ir.model.fields,field_description:account_invoice_extract.field_res_company__extract_show_ocr_option_selection
@@ -206,32 +209,36 @@ msgid ""
 "The data extraction is not finished yet. The extraction usually takes "
 "between 5 and 60 seconds."
 msgstr ""
+"L'estrazione dei dati non è ancora terminata. L'estrazione richiede "
+"solitamente tra i 5 e i 60 secondi."
 
 #. module: account_invoice_extract
 #: model_terms:ir.ui.view,arch_db:account_invoice_extract.invoice_supplier_form_inherit_ocr
 msgid ""
 "The data extraction started. It takes usually between 5 and 60 seconds."
 msgstr ""
+"L'estrazione dei dati è iniziata. L'estrazione richiede solitamente tra i 5 "
+"e i 60 secondi."
 
 #. module: account_invoice_extract
 #: model_terms:ir.ui.view,arch_db:account_invoice_extract.invoice_supplier_form_inherit_ocr
 msgid "Update status"
-msgstr ""
+msgstr "Aggiornare lo stato"
 
 #. module: account_invoice_extract
 #: model:ir.model.fields,field_description:account_invoice_extract.field_account_invoice_extract_words__user_selected
 msgid "User Selected"
-msgstr ""
+msgstr "Utente selezionato"
 
 #. module: account_invoice_extract
 #: selection:account.invoice,extract_state:0
 msgid "Waiting extraction"
-msgstr ""
+msgstr "In attesa di estrazione"
 
 #. module: account_invoice_extract
 #: selection:account.invoice,extract_state:0
 msgid "Waiting validation"
-msgstr ""
+msgstr "In attesa di convalida"
 
 #. module: account_invoice_extract
 #: model_terms:ir.ui.view,arch_db:account_invoice_extract.res_config_settings_view_form
@@ -281,8 +288,10 @@ msgid ""
 "You don't have enough credit to extract datas from your invoice. You can buy"
 " new credits here:"
 msgstr ""
+"Credito insufficiente per estrarre i dati dalla fattura. È possibile "
+"acquistare nuovi crediti qui:"
 
 #. module: account_invoice_extract
 #: selection:account.invoice,extract_state:0
 msgid "waiting extraction, but it is not ready"
-msgstr ""
+msgstr "in attesa di estrazione, ma non è pronta"

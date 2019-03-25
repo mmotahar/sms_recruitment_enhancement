@@ -5,7 +5,7 @@
 # Translators:
 # Ladislav Tomm <tomm@helemik.cz>, 2018
 # Martin Trigaux, 2018
-# trendspotter <j.podhorecky@volny.cz>, 2018
+# trendspotter <j.podhorecky@volny.cz>, 2019
 # 
 msgid ""
 msgstr ""
@@ -13,7 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-15 15:18+0000\n"
 "PO-Revision-Date: 2018-08-24 11:37+0000\n"
-"Last-Translator: trendspotter <j.podhorecky@volny.cz>, 2018\n"
+"Last-Translator: trendspotter <j.podhorecky@volny.cz>, 2019\n"
 "Language-Team: Czech (https://www.transifex.com/odoo/teams/41243/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -80,7 +80,7 @@ msgstr ""
 #. module: delivery_usps
 #: selection:delivery.carrier,delivery_type:0
 msgid "Easypost"
-msgstr ""
+msgstr "Easypost"
 
 #. module: delivery_usps
 #: code:addons/delivery_usps/models/delivery_usps.py:104
@@ -141,17 +141,17 @@ msgstr "Dárek"
 #. module: delivery_usps
 #: selection:delivery.carrier,usps_delivery_nature:0
 msgid "International"
-msgstr ""
+msgstr "Mezinárodní"
 
 #. module: delivery_usps
 #: selection:delivery.carrier,usps_size_container:0
 msgid "Large"
-msgstr ""
+msgstr "Velký"
 
 #. module: delivery_usps
 #: selection:delivery.carrier,usps_mail_type:0
 msgid "Large Envelope"
-msgstr ""
+msgstr "Velká obálka"
 
 #. module: delivery_usps
 #: selection:delivery.carrier,usps_domestic_regular_container:0
@@ -168,7 +168,7 @@ msgstr ""
 #: selection:delivery.carrier,usps_first_class_mail_type:0
 #: selection:delivery.carrier,usps_mail_type:0
 msgid "Letter"
-msgstr ""
+msgstr "Dopis"
 
 #. module: delivery_usps
 #: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier__usps_machinable
@@ -218,7 +218,7 @@ msgstr "obvod obalu (v palcích)"
 #. module: delivery_usps
 #: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier__usps_custom_container_height
 msgid "Package height (in inches)"
-msgstr ""
+msgstr "Výška balení (v palcích)"
 
 #. module: delivery_usps
 #: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier__usps_custom_container_length
@@ -239,7 +239,7 @@ msgstr ""
 #. module: delivery_usps
 #: selection:delivery.carrier,usps_first_class_mail_type:0
 msgid "Parcel"
-msgstr ""
+msgstr "Balíček"
 
 #. module: delivery_usps
 #: model:ir.model.fields,help:delivery_usps.field_delivery_carrier__usps_machinable
@@ -283,7 +283,7 @@ msgstr ""
 #. module: delivery_usps
 #: selection:delivery.carrier,usps_first_class_mail_type:0
 msgid "Postcard"
-msgstr ""
+msgstr "Pohlednice"
 
 #. module: delivery_usps
 #: selection:delivery.carrier,usps_service:0
@@ -310,7 +310,7 @@ msgstr "Obdélníkový"
 #. module: delivery_usps
 #: selection:delivery.carrier,usps_intl_non_delivery_option:0
 msgid "Redirect"
-msgstr ""
+msgstr "Přesměrování"
 
 #. module: delivery_usps
 #: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier__usps_redirect_partner_id
@@ -363,7 +363,7 @@ msgstr ""
 #. module: delivery_usps
 #: selection:delivery.carrier,usps_label_file_type:0
 msgid "TIF"
-msgstr ""
+msgstr "TIF"
 
 #. module: delivery_usps
 #: code:addons/delivery_usps/models/usps_request.py:46
@@ -408,7 +408,7 @@ msgstr ""
 #. module: delivery_usps
 #: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier__usps_container
 msgid "Type of container"
-msgstr ""
+msgstr "Typ kontejneru"
 
 #. module: delivery_usps
 #: selection:delivery.carrier,delivery_type:0

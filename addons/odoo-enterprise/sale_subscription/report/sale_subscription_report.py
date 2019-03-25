@@ -43,9 +43,15 @@ class sale_subscription_report(models.Model):
                     l.product_id as product_id,
                     l.uom_id as product_uom,
                     sub.analytic_account_id as analytic_account_id,
-                    sub.recurring_monthly as recurring_monthly,
-                    (sub.recurring_monthly * 12) as recurring_yearly,
-                    sub.recurring_total as recurring_total,
+                    sum(
+                        coalesce(l.price_subtotal / nullif(sub.recurring_total, 0), 0)
+                        * sub.recurring_monthly
+                    ) as recurring_monthly,
+                    sum(
+                        coalesce(l.price_subtotal / nullif(sub.recurring_total, 0), 0)
+                        * sub.recurring_monthly * 12
+                    ) as recurring_yearly,
+                    sum(l.price_subtotal) as recurring_total,
                     sum(l.quantity) as quantity,
                     sub.date_start as date_start,
                     sub.date as date_end,
@@ -87,7 +93,6 @@ class sale_subscription_report(models.Model):
                     t.categ_id,
                     sub.analytic_account_id,
                     sub.recurring_monthly,
-                    recurring_yearly,
                     sub.recurring_total,
                     sub.date_start,
                     sub.date,

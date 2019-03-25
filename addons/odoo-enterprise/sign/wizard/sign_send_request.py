@@ -38,7 +38,10 @@ class SignSendRequest(models.TransientModel):
     @api.depends('template_id.attachment_id.datas_fname')
     def _compute_extension(self):
         for wizard in self.filtered(lambda w: w.template_id):
-            wizard.extension = '.' + self.template_id.attachment_id.datas_fname.split('.')[-1]
+            if wizard.template_id.attachment_id.datas_fname:
+                wizard.extension = '.' + wizard.template_id.attachment_id.datas_fname.split('.')[-1]
+            else:
+                wizard.extension = ''
 
     @api.depends('signer_ids.partner_id', 'signer_id', 'signers_count')
     def _compute_is_user_signer(self):

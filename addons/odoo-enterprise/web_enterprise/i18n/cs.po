@@ -64,7 +64,7 @@ msgstr "Akce"
 #: code:addons/web_enterprise/static/src/xml/base.xml:327
 #, python-format
 msgid "Alt"
-msgstr ""
+msgstr "Alt"
 
 #. module: web_enterprise
 #. openerp-web
@@ -114,7 +114,7 @@ msgstr ""
 #: code:addons/web_enterprise/static/src/xml/base.xml:277
 #, python-format
 msgid "Create a new record"
-msgstr ""
+msgstr "Vytvořit nový záznam"
 
 #. module: web_enterprise
 #. openerp-web
@@ -142,7 +142,7 @@ msgstr "Zrušit změnu záznamu"
 #: code:addons/web_enterprise/static/src/xml/base.xml:259
 #, python-format
 msgid "Edit a record"
-msgstr ""
+msgstr "Upravit záznam"
 
 #. module: web_enterprise
 #: model:ir.model,name:web_enterprise.model_ir_http
@@ -210,21 +210,21 @@ msgstr "Odoo Nápověda"
 #: code:addons/web_enterprise/static/src/xml/base.xml:313
 #, python-format
 msgid "Open the next record"
-msgstr ""
+msgstr "Otevřít další záznam"
 
 #. module: web_enterprise
 #. openerp-web
 #: code:addons/web_enterprise/static/src/xml/base.xml:304
 #, python-format
 msgid "Open the previous record"
-msgstr ""
+msgstr "Otevřít předchozí záznam"
 
 #. module: web_enterprise
 #. openerp-web
 #: code:addons/web_enterprise/static/src/xml/base.xml:295
 #, python-format
 msgid "Open to kanban view"
-msgstr ""
+msgstr "Otevřít zobrazení kanban"
 
 #. module: web_enterprise
 #. openerp-web
@@ -274,7 +274,7 @@ msgstr ""
 #: code:addons/web_enterprise/static/src/xml/base.xml:250
 #, python-format
 msgid "Save a record"
-msgstr ""
+msgstr "Uložit záznam"
 
 #. module: web_enterprise
 #. openerp-web

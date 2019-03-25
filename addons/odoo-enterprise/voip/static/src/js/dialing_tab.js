@@ -323,10 +323,11 @@ var ActivitiesTab = PhonecallTab.extend({
      * @override
      */
     searchPhonecall: function (search) {
+        // regular expression used to do a case insensitive search
+        var escSearch = this.escapeRegExp(search)
+        var expr = new RegExp(escSearch, 'i');
         // for each phonecall, check if the search is in phonecall name or the partner name
         _.each(this.phonecalls, function (phonecall) {
-            // regular expression used to do a case insensitive search
-            var expr = new RegExp(search, 'i');
             var flagPartner = phonecall.partner_name &&
                 phonecall.partner_name.search(expr) > -1;
             var flagName = false;
@@ -336,6 +337,15 @@ var ActivitiesTab = PhonecallTab.extend({
             phonecall.$el.toggle(flagPartner || flagName);
         });
     },
+    /**
+     * Escape string in order to use it in a regex
+     * source: https://stackoverflow.com/questions/3446170/escape-string-for-use-in-javascript-regex
+     * 
+     * @param {String} string
+     */
+    escapeRegExp: function (string) {
+        return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
+      }
 });
 
 var RecentTab = PhonecallTab.extend({

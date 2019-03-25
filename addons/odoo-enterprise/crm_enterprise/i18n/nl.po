@@ -172,7 +172,7 @@ msgstr "Mijn pijplijn"
 #: model_terms:ir.ui.view,arch_db:crm_enterprise.crm_opportunity_view_graph
 #: model_terms:ir.ui.view,arch_db:crm_enterprise.crm_opportunity_view_search
 msgid "Opportunities"
-msgstr "prospects"
+msgstr "Prospects"
 
 #. module: crm_enterprise
 #: model_terms:ir.ui.view,arch_db:crm_enterprise.crm_opportunity_view_search

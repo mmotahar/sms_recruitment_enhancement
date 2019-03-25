@@ -18,6 +18,7 @@ from . import account_invoice
 
 CFDI_TEMPLATE = 'l10n_mx_edi.payment10'
 CFDI_XSLT_CADENA = 'l10n_mx_edi/data/3.3/cadenaoriginal.xslt'
+CFDI_XSLT_CADENA_TFD = 'l10n_mx_edi/data/xslt/3.3/cadenaoriginal_TFD_1_1.xslt'
 CFDI_SAT_QR_STATE = {
     'No Encontrado': 'not_found',
     'Cancelado': 'cancelled',
@@ -194,10 +195,11 @@ class AccountPayment(models.Model):
     def _get_l10n_mx_edi_cadena(self):
         self.ensure_one()
         #get the xslt path
-        xslt_path = CFDI_XSLT_CADENA
+        xslt_path = CFDI_XSLT_CADENA_TFD
         #get the cfdi as eTree
         cfdi = base64.decodestring(self.l10n_mx_edi_cfdi)
         cfdi = self.l10n_mx_edi_get_xml_etree(cfdi)
+        cfdi = self.l10n_mx_edi_get_tfd_etree(cfdi)
         #return the cadena
         return self.env['account.invoice'].l10n_mx_edi_generate_cadena(xslt_path, cfdi)
 

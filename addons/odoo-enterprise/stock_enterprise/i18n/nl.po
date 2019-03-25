@@ -102,7 +102,7 @@ msgstr "Leveringen vertraging"
 #. module: stock_enterprise
 #: model:ir.model.fields,field_description:stock_enterprise.field_stock_report__display_name
 msgid "Display Name"
-msgstr "Weergave naam"
+msgstr "Weergavenaam"
 
 #. module: stock_enterprise
 #: selection:stock.report,state:0

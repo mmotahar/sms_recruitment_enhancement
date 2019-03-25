@@ -10,8 +10,8 @@
 # Cécile Collart <cco@odoo.com>, 2018
 # maiolif <maiolif@mgftools.com>, 2018
 # David Minneci <david@numeko.it>, 2018
-# Léonie Bouchat <lbo@odoo.com>, 2018
 # Francesco Garganese <francesco.garganese@aeromnia.aero>, 2018
+# Léonie Bouchat <lbo@odoo.com>, 2019
 # 
 msgid ""
 msgstr ""
@@ -19,7 +19,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-19 09:12+0000\n"
 "PO-Revision-Date: 2018-08-24 11:36+0000\n"
-"Last-Translator: Francesco Garganese <francesco.garganese@aeromnia.aero>, 2018\n"
+"Last-Translator: Léonie Bouchat <lbo@odoo.com>, 2019\n"
 "Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -117,7 +117,7 @@ msgstr "Modo di trasporto predefinito"
 #: model:ir.model.fields,field_description:account_intrastat.field_res_company__incoterm_id
 #: model:ir.model.fields,field_description:account_intrastat.field_res_config_settings__incoterm_id
 msgid "Default incoterm for Intrastat"
-msgstr ""
+msgstr "Incoterm predefinito per Intrastat"
 
 #. module: account_intrastat
 #: code:addons/account_intrastat/models/account_intrastat_report.py:17
@@ -153,7 +153,7 @@ msgstr "Esteso"
 #. module: account_intrastat
 #: model_terms:ir.ui.view,arch_db:account_intrastat.search_template_intrastat_extended
 msgid "Extended Mode"
-msgstr ""
+msgstr "Modo esteso"
 
 #. module: account_intrastat
 #: model:ir.model.fields,field_description:account_intrastat.field_account_intrastat_report__id
@@ -165,7 +165,7 @@ msgstr "ID"
 #: code:addons/account_intrastat/models/account_intrastat_report.py:39
 #, python-format
 msgid "Incoterm Code"
-msgstr ""
+msgstr "Codice Incoterm"
 
 #. module: account_intrastat
 #: model:ir.model.fields,help:account_intrastat.field_res_company__incoterm_id
@@ -313,7 +313,7 @@ msgstr "Trasporto"
 #: code:addons/account_intrastat/models/account_intrastat_report.py:38
 #, python-format
 msgid "Transport Code"
-msgstr "Codice di trasporto"
+msgstr "Codice trasporto"
 
 #. module: account_intrastat
 #: sql_constraint:account.intrastat.code:0

@@ -3,16 +3,14 @@
 # * account_reports_followup
 # 
 # Translators:
-# Mustafa Rawi <mustafa@cubexco.com>, 2018
 # amrnegm <amrnegm.01@gmail.com>, 2018
 # Martin Trigaux, 2018
-# nle_odoo, 2018
 # Osoul <baruni@osoul.ly>, 2018
 # Ghaith Gammar <g.gammar@saharaifs.net>, 2018
 # Osama Ahmaro <osamaahmaro@gmail.com>, 2018
-# Islam Eldeeb <islameldeb@gmail.com>, 2018
 # Shaima Safar <shaima.safar@open-inside.com>, 2018
 # Ali Alrehawi <alrehawi@hotmail.com>, 2018
+# Mustafa Rawi <mustafa@cubexco.com>, 2019
 # 
 msgid ""
 msgstr ""
@@ -20,7 +18,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-15 15:18+0000\n"
 "PO-Revision-Date: 2018-08-24 11:36+0000\n"
-"Last-Translator: Ali Alrehawi <alrehawi@hotmail.com>, 2018\n"
+"Last-Translator: Mustafa Rawi <mustafa@cubexco.com>, 2019\n"
 "Language-Team: Arabic (https://www.transifex.com/odoo/teams/41243/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -47,13 +45,17 @@ msgid ""
 "Best Regards,\n"
 msgstr ""
 "\n"
-"عزيزى %(partner_name)s,\n"
-"نشعر بخيبة أمل لمعرفة أنه على الرغم من إرسال تذكير، أن حسابك الآن أصبح متأخر فعلياً .\n"
-"فمن الضروري أن يتم الدفع الفوري، وإلا سيكون لدينا نظرة أخرى لوضع حد على حسابك وهو ما يعني أننا لن نكون قادريين على تزويد شركتك مع (السلع / الخدمات). \n"
-"يرجى، واتخاذ التدابير المناسبة من أجل تنفيذ هذا الدفع في الأيام 8 القادمة . \n"
-"إذا كان هناك مشكلة مع دفع فاتورة فأننا لسنا على علم، لا تترددوا في الاتصال قسم المحاسبة لدينا، حتى نتمكن من حل هذه المسألة بسرعة. \n"
-"طبعت أدناه تفاصيل المدفوعات المستحقة. \n"
-"مع أطيب التحيات،\n"
+"عميلنا العزيز %(partner_name)s،\n"
+"\n"
+"بالرغم من إرسال عدة تذكيرات، لم تتم تسوية مستحقات حسابكم بعد.\n"
+"\n"
+"إن لم يتم سداد المبلغ المطلوب كاملًا خلال الـ8 أيام القادمة، سنقوم باتخاذ الإجراءات القانونية المطلوبة لاسترداد قيمة الدين دون إشعار آخر.\n"
+"\n"
+"أثق أننا لن نضطر للقيام بهذا، طُبعت أدناه تفاصيل المدفوعات المستحقة.\n"
+"\n"
+"في حال كان لديكم أي استفسارات بخصوص هذه المشكلة، لا تترددوا في التواصل مع قسم حساباتنا.\n"
+"\n"
+"مع أطيب تحياتنا،\n"
 
 #. module: account_reports_followup
 #: model:account_followup.followup.line,description:account_reports_followup.demo_followup_line1
@@ -68,10 +70,13 @@ msgid ""
 "Best Regards,\n"
 msgstr ""
 "\n"
-"عزيزى %(partner_name)s,\n"
-"الاستثناءات جعلت إذا كان هناك خطأ من جانبنا، ويبدو أن المبلغ التالية يبقى غير المدفوعة. من فضلك، تأخذالتدابير المناسبة من أجل تنفيذ هذا الدفع في الأيام القادمة 8.\n"
-"هل قد تم خروج مدفوعاتك بعد أن تم إرسال هذا البريد . لا تترددوا في اتصل بقسم المحاسبة لدينا.\n"
-"مع أطيب التحيات،\n"
+"عميلنا العزيز %(partner_name)s،\n"
+"\n"
+"نعتذر إليكم إن كنا قد ارتكبنا خطأ، يبدو أن المبلغ الموضح أدناه لم يُسدد بعد. برجاء اتخاذ الإجراءات المناسبة لتسديد قيمة المستحقات خلال الـ8 أيام القادمة.\n"
+"\n"
+"إن كنتم قد قمتم بالفعل بسداد القيمة المطلوبة بعد إرسالنا هذه الرسالة، فبرجاء تجاهلها. ولا تترددوا في التواصل مع قسم حساباتنا.\n"
+"\n"
+"مع أطيب تحياتنا،\n"
 
 #. module: account_reports_followup
 #: model:account_followup.followup.line,description:account_reports_followup.demo_followup_line2
@@ -91,38 +96,43 @@ msgid ""
 "Best Regards,\n"
 msgstr ""
 "\n"
-"عزيزى %(partner_name)s,\n"
-"نشعر بخيبة أمل لمعرفة أنه على الرغم من إرسال تذكير، أن حسابك الآن أصبح متأخر فعلياً .\n"
-"فمن الضروري أن يتم الدفع الفوري، وإلا سيكون لدينا نظرة أخرى لوضع حد على حسابك وهو ما يعني أننا لن نكون قادريين على تزويد شركتك مع (السلع / الخدمات). \n"
-"يرجى، واتخاذ التدابير المناسبة من أجل تنفيذ هذا الدفع في الأيام القادمة 8. \n"
-"إذا كان هناك مشكلة مع دفع فاتورة فأننا لسنا على علم، لا تترددوا في الاتصال قسم المحاسبة لدينا، حتى نتمكن من حل هذه المسألة بسرعة. \n"
-"طبعت أدناه تفاصيل المدفوعات المستحقة. \n"
-"مع أطيب التحيات،\n"
+"عميلنا العزيز %(partner_name)s،\n"
+"\n"
+"يؤسفنا تجاوز مستحقات حسابكم موعدها بالرغم من إرسالنا تذكير مسبق.\n"
+"\n"
+"يجب أن يتم سداد المدفوعات فورًا، وإلا سنضطر للأخذ بعين الاعتبار أن نوقف حسابكم مما يعني أننا لن نستطيع الاستمرار في تزويد مؤسستكم بالسلع أو الخدمات.\n"
+"برجاء اتخاذ الإجراءات المطلوبة للسداد خلال الـ8 أيام القادمة.\n"
+"\n"
+"في حال واجهتكم مشكلة نجهلها تمنعكم من سداد قيمة الفواتير، لا تترددوا في التواصل مع قسم حساباتنا، لكي نستطيع حل هذه المشكلة في أسرع وقت.\n"
+"\n"
+"طُبعت أدناه تفاصيل المدفوعات المستحقة. \n"
+"\n"
+"مع أطيب تحياتنا،\n"
 
 #. module: account_reports_followup
 #: model_terms:ir.ui.view,arch_db:account_reports_followup.view_account_followup_followup_line_form
 msgid ": Current Date"
-msgstr ""
+msgstr ": التاريخ الحالي"
 
 #. module: account_reports_followup
 #: model_terms:ir.ui.view,arch_db:account_reports_followup.view_account_followup_followup_line_form
 msgid ": Partner Name"
-msgstr ""
+msgstr ": اسم الشريك"
 
 #. module: account_reports_followup
 #: model_terms:ir.ui.view,arch_db:account_reports_followup.view_account_followup_followup_line_form
 msgid ": User Name"
-msgstr ""
+msgstr ": اسم المستخدم"
 
 #. module: account_reports_followup
 #: model_terms:ir.ui.view,arch_db:account_reports_followup.view_account_followup_followup_line_form
 msgid ": User's Company Name"
-msgstr ""
+msgstr ": اسم مؤسسة المستخدم"
 
 #. module: account_reports_followup
 #: model_terms:ir.ui.view,arch_db:account_reports_followup.view_account_followup_followup_kanban
 msgid "<i class=\"fa fa-building\" role=\"img\" aria-label=\"Enterprise\"/>"
-msgstr ""
+msgstr "<i class=\"fa fa-building\" role=\"img\" aria-label=\"Enterprise\"/>"
 
 #. module: account_reports_followup
 #: model:ir.model,name:account_reports_followup.model_account_followup_followup
@@ -132,7 +142,7 @@ msgstr "متابعة الحساب"
 #. module: account_reports_followup
 #: model:ir.model.fields,field_description:account_reports_followup.field_account_followup_followup_line__manual_action_note
 msgid "Action To Do"
-msgstr "إجراءات للتنفيذ"
+msgstr "إجراء مطلوب"
 
 #. module: account_reports_followup
 #: model_terms:ir.ui.view,arch_db:account_reports_followup.view_account_followup_followup_line_form
@@ -152,7 +162,7 @@ msgstr "المؤسسة"
 #. module: account_reports_followup
 #: model:ir.model.fields,field_description:account_reports_followup.field_account_followup_followup__name
 msgid "Company Name"
-msgstr "اسم الشركة"
+msgstr "اسم المؤسسة"
 
 #. module: account_reports_followup
 #: model:ir.model,name:account_reports_followup.model_res_config_settings
@@ -184,13 +194,13 @@ msgstr "يجب أن تكون أيام مستويات المتابعة مختلف
 #. module: account_reports_followup
 #: model_terms:ir.actions.act_window,help:account_reports_followup.action_account_followup_definition_form
 msgid "Define follow-up levels and their related actions"
-msgstr ""
+msgstr "تحديد مستويات المتابعة والإجراءات المرتبطة بها"
 
 #. module: account_reports_followup
 #: model:ir.model.fields,field_description:account_reports_followup.field_account_followup_followup__display_name
 #: model:ir.model.fields,field_description:account_reports_followup.field_account_followup_followup_line__display_name
 msgid "Display Name"
-msgstr "اسم العرض"
+msgstr "الاسم المعروض"
 
 #. module: account_reports_followup
 #. openerp-web
@@ -207,7 +217,7 @@ msgstr "أيام الاستحقاق"
 #. module: account_reports_followup
 #: model:account_followup.followup.line,name:account_reports_followup.demo_followup_line1
 msgid "First reminder email"
-msgstr "اول تذكير بريد الالكترونى"
+msgstr "اول تذكير بالبريد الإلكتروني"
 
 #. module: account_reports_followup
 #: model:ir.model.fields,field_description:account_reports_followup.field_account_followup_followup_line__followup_id
@@ -245,13 +255,13 @@ msgstr "مستويات المتابعة"
 #. module: account_reports_followup
 #: model:ir.model,name:account_reports_followup.model_account_followup_report
 msgid "Follow-up Report"
-msgstr ""
+msgstr "تقرير المتابعة"
 
 #. module: account_reports_followup
 #: model:ir.model.fields,field_description:account_reports_followup.field_res_partner__payment_responsible_id
 #: model:ir.model.fields,field_description:account_reports_followup.field_res_users__payment_responsible_id
 msgid "Follow-up Responsible"
-msgstr "مسؤل المتابعة"
+msgstr "مسئول المتابعة"
 
 #. module: account_reports_followup
 #: model_terms:ir.ui.view,arch_db:account_reports_followup.view_account_followup_followup_line_form
@@ -266,14 +276,14 @@ msgid ""
 "                possible to use print and e-mail templates to send specific messages to\n"
 "                the customer."
 msgstr ""
-"لكل خطوة، حدد الإجراءات التي يجب اتخاذها والتأخير في الأيام. أنه\n"
-"من الممكن استخدام قوالب الطباعة والبريد الإلكتروني لإرسال رسائل محددة ل\n"
-"الزبون."
+"لكل خطوة، حدد الإجراءات التي يجب اتخاذها ومهلة التأخير بالأيام.\n"
+"                من الممكن استخدام قوالب الطباعة والبريد الإلكتروني لإرسال رسائل محددة\n"
+"                للعميل."
 
 #. module: account_reports_followup
 #: model:ir.model.fields,help:account_reports_followup.field_account_followup_followup_line__sequence
 msgid "Gives the sequence order when displaying a list of follow-up lines."
-msgstr "تضع ترتيباً مسلسلاً عند عرض قائمة بنود المتابعات."
+msgstr "تضع ترتيبًا مسلسلًا عند عرض قائمة بنود المتابعات."
 
 #. module: account_reports_followup
 #: model:ir.model.fields,field_description:account_reports_followup.field_account_followup_followup__id
@@ -321,13 +331,13 @@ msgstr "إجراء يدوي"
 #. module: account_reports_followup
 #: model:ir.model.fields,field_description:account_reports_followup.field_account_followup_followup_line__manual_action_type_id
 msgid "Manual Action Type"
-msgstr ""
+msgstr "نوع الإجراء اليدوي"
 
 #. module: account_reports_followup
 #: code:addons/account_reports_followup/models/account_followup_report.py:86
 #, python-format
 msgid "Manual action done"
-msgstr ""
+msgstr "إتمام الإجراء اليدوي"
 
 #. module: account_reports_followup
 #. openerp-web
@@ -336,7 +346,7 @@ msgstr ""
 msgid ""
 "Odoo will remind you to take care of this follow-up on the next reminder "
 "date."
-msgstr ""
+msgstr "سوف تذكرك أودو لكي تنهي هذه المتابعة في تاريخ التذكير القادم."
 
 #. module: account_reports_followup
 #: sql_constraint:account_followup.followup:0
@@ -350,7 +360,7 @@ msgid ""
 "Optionally you can assign a user to this field, which will make him "
 "responsible for the action."
 msgstr ""
-"يمكنك اختيارياً إسناد مستخدم في هذا الحقل، وجعله مسئولاً عن هذا الإجراء."
+"يمكنك اختياريًا إسناد مستخدم لهذا الحقل، وجعله مسئولًا عن هذا الإجراء."
 
 #. module: account_reports_followup
 #: model_terms:ir.ui.view,arch_db:account_reports_followup.account_move_line_partner_tree
@@ -365,14 +375,14 @@ msgstr "متابعة التحصيلات"
 #. module: account_reports_followup
 #: model:ir.model.fields,field_description:account_reports_followup.field_account_followup_followup_line__print_letter
 msgid "Print a Letter"
-msgstr ""
+msgstr "طباعة رسالة"
 
 #. module: account_reports_followup
 #. openerp-web
 #: code:addons/account_reports_followup/static/src/xml/account_reports_followup_template.xml:7
 #, python-format
 msgid "Print letter"
-msgstr ""
+msgstr "طباعة الرسالة"
 
 #. module: account_reports_followup
 #: model:ir.model.fields,field_description:account_reports_followup.field_account_followup_followup_line__description
@@ -384,7 +394,7 @@ msgstr "الرسالة المطبوعة"
 #: code:addons/account_reports_followup/static/src/xml/account_reports_followup_template.xml:16
 #, python-format
 msgid "Remind me later"
-msgstr ""
+msgstr "ذكرني لاحقًا"
 
 #. module: account_reports_followup
 #: model_terms:ir.ui.view,arch_db:account_reports_followup.view_account_followup_filter
@@ -394,12 +404,12 @@ msgstr "بحث المتابعات"
 #. module: account_reports_followup
 #: model:account_followup.followup.line,name:account_reports_followup.demo_followup_line2
 msgid "Second reminder letter and email"
-msgstr "ثانى تذكير خطاب ورسالة الكترونية"
+msgstr "خطاب ورسالة بريد إلكتروني بثاني تذكير"
 
 #. module: account_reports_followup
 #: model_terms:ir.ui.view,arch_db:account_reports_followup.view_account_followup_followup_line_form
 msgid "Send a Letter or Email"
-msgstr "إرسال رسالة أو البريد الإلكتروني"
+msgstr "إرسال رسالة أو بريد إلكتروني"
 
 #. module: account_reports_followup
 #: model:ir.model.fields,field_description:account_reports_followup.field_account_followup_followup_line__send_email
@@ -411,7 +421,7 @@ msgstr "إرسال بريد إلكتروني"
 #: code:addons/account_reports_followup/static/src/xml/account_reports_followup_template.xml:10
 #, python-format
 msgid "Send by email"
-msgstr "إرسال بالبريد"
+msgstr "إرسال بالبريد الإلكتروني"
 
 #. module: account_reports_followup
 #: model:ir.model.fields,field_description:account_reports_followup.field_account_followup_followup_line__sequence
@@ -425,13 +435,13 @@ msgid ""
 "the reminder.  Could be negative if you want to send a polite alert "
 "beforehand."
 msgstr ""
-"أقصى عدد من الأيام بعد تاريخ استحقاق الفاتورة سيتم انتظاره قبل إرسال رسالة "
-"التذكير. يمكنك استخدام رقم سالب لإرسال تنبيه قبل تاريخ الاستحقاق."
+"أقصى مهلة من الأيام بعد تاريخ استحقاق الفاتورة قبل إرسال رسالة التذكير. "
+"يمكنك استخدام رقم سالب لإرسال تنبيه مهذب قبل تاريخ الاستحقاق."
 
 #. module: account_reports_followup
 #: model:account_followup.followup.line,name:account_reports_followup.demo_followup_line3
 msgid "Third reminder: phone the customer"
-msgstr "ثالث تذكير : الاتصال بالعميل"
+msgstr "التذكير الثالث: الاتصال بالعميل"
 
 #. module: account_reports_followup
 #: model_terms:ir.ui.view,arch_db:account_reports_followup.view_account_followup_followup_form
@@ -445,14 +455,14 @@ msgid ""
 "                        same customer, the actions of the most \n"
 "                        overdue invoice will be executed."
 msgstr ""
-"لتذكير العملاء لدفع فواتيرهم، يمكنك \n"
-"تحديد إجراءات مختلفة اعتمادا على مدى \n"
-"خطورة متأخرات هذا العميل . هذه الإجراءات يتم تجميعها \n"
-"فى مستويات المتابعة  التى يتم تشغيلها عندما يتجاوز \n"
-"تاريخ الإستحقاق للفاتورة \n"
-"عدد أيام معين . إذا كان هناك غيرها من الفواتير المتأخرة \n"
-"لنفس العميل، وسيتم تنفيذ الإجراءات على الفواتير \n"
-"الأكثر تأخراً ."
+"لتذكير العملاء بدفع فواتيرهم، يمكنك \n"
+"                        تحديد إجراءات مختلفة حسب فترة\n"
+"                        تأخر هذا العميل . هذه الإجراءات يتم تجميعها\n"
+"                        فى مستويات المتابعة التى يتم إتباعها عندتجاوز\n"
+"                        تاريخ استحقاق فاتورة عدد أيام معين.\n"
+"                        إذا كان هناك فواتير أخرى متأخرة السداد\n"
+"                        لنفس العميل، يتم اتخاذ الإجراءات على الفاتورة\n"
+"                        الأكثر تأخرًا."
 
 #. module: account_reports_followup
 #: model_terms:ir.ui.view,arch_db:account_reports_followup.account_move_line_partner_tree
@@ -467,7 +477,7 @@ msgstr "إجمالي المدين"
 #. module: account_reports_followup
 #: model:account_followup.followup.line,name:account_reports_followup.demo_followup_line4
 msgid "Urging reminder email"
-msgstr "حث تذكير البريد الإلكتروني "
+msgstr "حث تذكير البريد الإلكتروني"
 
 #. module: account_reports_followup
 #: model:account_followup.followup.line,name:account_reports_followup.demo_followup_line5
@@ -477,7 +487,7 @@ msgstr "تحث رسالة تذكير"
 #. module: account_reports_followup
 #: model:ir.model.fields,help:account_reports_followup.field_account_followup_followup_line__print_letter
 msgid "When processing, it will print a PDF"
-msgstr ""
+msgstr "عند إجراء المعالجة، ستقوم بطباعة ملف PDF"
 
 #. module: account_reports_followup
 #: model:ir.model.fields,help:account_reports_followup.field_account_followup_followup_line__send_email
@@ -490,7 +500,7 @@ msgid ""
 "When processing, it will set the manual action to be taken for that "
 "customer. "
 msgstr ""
-"عند إجراء المعالجة، سيقوم بتحديد الإجراء اليدوي اللازم اتخاذه مع العميل."
+"عند إجراء المعالجة، سيقوم بتحديد الإجراء اليدوي اللازم اتخاذه مع العميل. "
 
 #. module: account_reports_followup
 #: model_terms:ir.ui.view,arch_db:account_reports_followup.view_account_followup_followup_line_form
@@ -514,7 +524,7 @@ msgid ""
 "Your description is invalid, use the right legend or %% if you want to use "
 "the percent character."
 msgstr ""
-"وصفك غير صالح، استخدام حق وسيلة الإيضاح أو٪٪ إذا كنت ترغب في استخدام الحرف "
+"وصفك غير صالح، استخدام حق وسيلة الإيضاح أو ٪٪ إذا كنت ترغب في استخدام الحرف "
 "في المئة."
 
 #. module: account_reports_followup

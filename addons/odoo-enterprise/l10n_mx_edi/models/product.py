@@ -2,6 +2,7 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 from odoo import fields, models, api
+from odoo.osv import expression
 
 
 class ProductTemplate(models.Model):
@@ -66,6 +67,9 @@ class ProductSatCode(models.Model):
     @api.model
     def _name_search(self, name, args=None, operator='ilike', limit=100, name_get_uid=None):
         args = args or []
-        domain_name = ['|', ('name', 'ilike', name), ('code', 'ilike', name)]
-        sat_code_ids = self._search(domain_name + args, limit=limit, access_rights_uid=name_get_uid)
+        if operator == 'ilike' and not (name or '').strip():
+            domain = []
+        else:
+            domain = ['|', ('name', 'ilike', name), ('code', 'ilike', name)]
+        sat_code_ids = self._search(expression.AND([domain, args]), limit=limit, access_rights_uid=name_get_uid)
         return self.browse(sat_code_ids).name_get()

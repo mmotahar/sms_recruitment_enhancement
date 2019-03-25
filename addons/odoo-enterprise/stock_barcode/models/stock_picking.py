@@ -29,15 +29,8 @@ class StockPicking(models.Model):
     def get_barcode_view_state(self):
         """ Return the initial state of the barcode view as a dict.
         """
-        pickings = self.read([
-            'move_line_ids',
-            'picking_type_id',
-            'location_id',
-            'location_dest_id',
-            'name',
-            'state',
-            'picking_type_code',
-        ])
+        fields_to_read = self._get_picking_fields_to_read()
+        pickings = self.read(fields_to_read)
         for picking in pickings:
             picking['move_line_ids'] = self.env['stock.move.line'].browse(picking.pop('move_line_ids')).read([
                 'product_id',
@@ -91,6 +84,19 @@ class StockPicking(models.Model):
             if self.env.user.company_id.nomenclature_id:
                 picking['nomenclature_id'] = [self.env.user.company_id.nomenclature_id.id]
         return pickings
+
+    def _get_picking_fields_to_read(self):
+        """ Return the default fields to read from the picking.
+        """
+        return [
+            'move_line_ids',
+            'picking_type_id',
+            'location_id',
+            'location_dest_id',
+            'name',
+            'state',
+            'picking_type_code',
+        ]
 
     @api.multi
     def get_po_to_split_from_barcode(self, barcode):

@@ -5,6 +5,7 @@
 # Translators:
 # Bagavathikumar Ramakrishnan <bagavathikumar@gmail.com>, 2019
 # Abul Hassan M I <miabulhassan@gmail.com>, 2019
+# Alagappan Karthikeyan <me@karthik.sg>, 2019
 # 
 msgid ""
 msgstr ""
@@ -12,7 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-15 15:18+0000\n"
 "PO-Revision-Date: 2018-08-24 11:36+0000\n"
-"Last-Translator: Abul Hassan M I <miabulhassan@gmail.com>, 2019\n"
+"Last-Translator: Alagappan Karthikeyan <me@karthik.sg>, 2019\n"
 "Language-Team: Tamil (https://www.transifex.com/odoo/teams/41243/ta/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -73,22 +74,22 @@ msgstr ""
 #. module: account_reports_followup
 #: model_terms:ir.ui.view,arch_db:account_reports_followup.view_account_followup_followup_line_form
 msgid ": Current Date"
-msgstr ""
+msgstr "இன்றைய தேதி"
 
 #. module: account_reports_followup
 #: model_terms:ir.ui.view,arch_db:account_reports_followup.view_account_followup_followup_line_form
 msgid ": Partner Name"
-msgstr ""
+msgstr ": கூட்டாளர் பெயர்"
 
 #. module: account_reports_followup
 #: model_terms:ir.ui.view,arch_db:account_reports_followup.view_account_followup_followup_line_form
 msgid ": User Name"
-msgstr ""
+msgstr ": பயனர் பெயர்"
 
 #. module: account_reports_followup
 #: model_terms:ir.ui.view,arch_db:account_reports_followup.view_account_followup_followup_line_form
 msgid ": User's Company Name"
-msgstr ""
+msgstr ": பயனர் நிறுவனத்தின் பெயர்"
 
 #. module: account_reports_followup
 #: model_terms:ir.ui.view,arch_db:account_reports_followup.view_account_followup_followup_kanban
@@ -98,22 +99,22 @@ msgstr ""
 #. module: account_reports_followup
 #: model:ir.model,name:account_reports_followup.model_account_followup_followup
 msgid "Account Follow-up"
-msgstr ""
+msgstr "கணக்கு பின்தொடர்"
 
 #. module: account_reports_followup
 #: model:ir.model.fields,field_description:account_reports_followup.field_account_followup_followup_line__manual_action_note
 msgid "Action To Do"
-msgstr ""
+msgstr "செய்ய நடவடிக்கை"
 
 #. module: account_reports_followup
 #: model_terms:ir.ui.view,arch_db:account_reports_followup.view_account_followup_followup_line_form
 msgid "After"
-msgstr ""
+msgstr "பிறகு"
 
 #. module: account_reports_followup
 #: model:ir.model.fields,field_description:account_reports_followup.field_account_followup_followup_line__manual_action_responsible_id
 msgid "Assign a Responsible"
-msgstr ""
+msgstr "ஒரு பொறுப்பு கொடுங்கள்"
 
 #. module: account_reports_followup
 #: model:ir.model.fields,field_description:account_reports_followup.field_account_followup_followup__company_id
@@ -123,12 +124,12 @@ msgstr "நிறுவனம்"
 #. module: account_reports_followup
 #: model:ir.model.fields,field_description:account_reports_followup.field_account_followup_followup__name
 msgid "Company Name"
-msgstr ""
+msgstr "நிறுவனத்தின் பெயர்"
 
 #. module: account_reports_followup
 #: model:ir.model,name:account_reports_followup.model_res_config_settings
 msgid "Config Settings"
-msgstr ""
+msgstr "கட்டமைப்பு அமைப்புகள்"
 
 #. module: account_reports_followup
 #: model:ir.model,name:account_reports_followup.model_res_partner
@@ -150,12 +151,12 @@ msgstr "உருவாக்கப்பட்ட தேதி"
 #. module: account_reports_followup
 #: sql_constraint:account_followup.followup.line:0
 msgid "Days of the follow-up levels must be different"
-msgstr ""
+msgstr "பின்தொடர் நிலைகளின் நாட்கள் வெவ்வேறாக இருக்க வேண்டும்"
 
 #. module: account_reports_followup
 #: model_terms:ir.actions.act_window,help:account_reports_followup.action_account_followup_definition_form
 msgid "Define follow-up levels and their related actions"
-msgstr ""
+msgstr "பின்தொடர் நிலைகள் மற்றும் அவற்றின் தொடர்புடைய செயல்களை வரையறுக்கவும்"
 
 #. module: account_reports_followup
 #: model:ir.model.fields,field_description:account_reports_followup.field_account_followup_followup__display_name
@@ -168,67 +169,67 @@ msgstr "காட்சி பெயர்"
 #: code:addons/account_reports_followup/static/src/xml/account_reports_followup_template.xml:19
 #, python-format
 msgid "Done"
-msgstr ""
+msgstr "முடிந்தது"
 
 #. module: account_reports_followup
 #: model:ir.model.fields,field_description:account_reports_followup.field_account_followup_followup_line__delay
 msgid "Due Days"
-msgstr ""
+msgstr "காரணமாக நாள்"
 
 #. module: account_reports_followup
 #: model:account_followup.followup.line,name:account_reports_followup.demo_followup_line1
 msgid "First reminder email"
-msgstr ""
+msgstr "முதல் நினைவூட்டல் மின்னஞ்சல்"
 
 #. module: account_reports_followup
 #: model:ir.model.fields,field_description:account_reports_followup.field_account_followup_followup_line__followup_id
 msgid "Follow Ups"
-msgstr ""
+msgstr "பின்பற்ற வேண்டியவைகள்"
 
 #. module: account_reports_followup
 #: model:ir.model.fields,field_description:account_reports_followup.field_account_followup_followup_line__name
 msgid "Follow-Up Action"
-msgstr ""
+msgstr "பின்தொடர்தல் செயல்"
 
 #. module: account_reports_followup
 #: model:ir.model.fields,field_description:account_reports_followup.field_account_followup_followup__followup_line_ids
 #: model_terms:ir.ui.view,arch_db:account_reports_followup.view_account_followup_followup_form
 #: model_terms:ir.ui.view,arch_db:account_reports_followup.view_account_followup_followup_tree
 msgid "Follow-up"
-msgstr ""
+msgstr "பின்தொடர்தல்"
 
 #. module: account_reports_followup
 #: model:ir.model,name:account_reports_followup.model_account_followup_followup_line
 msgid "Follow-up Criteria"
-msgstr ""
+msgstr "பின்தொடர்தல் வரையறைகள்"
 
 #. module: account_reports_followup
 #: model:ir.model.fields,field_description:account_reports_followup.field_account_move_line__followup_line_id
 msgid "Follow-up Level"
-msgstr ""
+msgstr "பின்தொடர் நிலை"
 
 #. module: account_reports_followup
 #: model:ir.ui.menu,name:account_reports_followup.account_followup_menu
 #: model_terms:ir.ui.view,arch_db:account_reports_followup.res_config_settings_view_form
 msgid "Follow-up Levels"
-msgstr ""
+msgstr "பின்தொடர் நிலைகள்"
 
 #. module: account_reports_followup
 #: model:ir.model,name:account_reports_followup.model_account_followup_report
 msgid "Follow-up Report"
-msgstr ""
+msgstr "பின்தொடர் அறிக்கை"
 
 #. module: account_reports_followup
 #: model:ir.model.fields,field_description:account_reports_followup.field_res_partner__payment_responsible_id
 #: model:ir.model.fields,field_description:account_reports_followup.field_res_users__payment_responsible_id
 msgid "Follow-up Responsible"
-msgstr ""
+msgstr "பின்தொடர் பொறுப்பு"
 
 #. module: account_reports_followup
 #: model_terms:ir.ui.view,arch_db:account_reports_followup.view_account_followup_followup_line_form
 #: model_terms:ir.ui.view,arch_db:account_reports_followup.view_account_followup_followup_line_tree
 msgid "Follow-up Steps"
-msgstr ""
+msgstr "பின்தொடர் படிகள்"
 
 #. module: account_reports_followup
 #: model_terms:ir.actions.act_window,help:account_reports_followup.action_account_followup_definition_form
@@ -237,11 +238,15 @@ msgid ""
 "                possible to use print and e-mail templates to send specific messages to\n"
 "                the customer."
 msgstr ""
+"ஒவ்வொரு படியிலும், நடவடிக்கைகளை எடுத்துக் கொள்ளவும், நாட்களில் தாமதிக்கவும். இது\n"
+"                 குறிப்பிட்ட செய்திகளை அனுப்ப அச்சு மற்றும் மின்னஞ்சல் டெம்ப்ளேட்களைப் பயன்படுத்த முடியும்\n"
+"                 வாடிக்கையாளர்."
 
 #. module: account_reports_followup
 #: model:ir.model.fields,help:account_reports_followup.field_account_followup_followup_line__sequence
 msgid "Gives the sequence order when displaying a list of follow-up lines."
 msgstr ""
+"பின்தொடர் கோடுகளின் பட்டியலைக் காண்பிக்கும் போது வரிசையை ஒழுங்கு அளிக்கிறது"
 
 #. module: account_reports_followup
 #: model:ir.model.fields,field_description:account_reports_followup.field_account_followup_followup__id
@@ -252,7 +257,7 @@ msgstr "ID"
 #. module: account_reports_followup
 #: model:ir.model,name:account_reports_followup.model_account_move_line
 msgid "Journal Item"
-msgstr ""
+msgstr "Journal Item"
 
 #. module: account_reports_followup
 #: model:ir.model.fields,field_description:account_reports_followup.field_account_followup_followup____last_update
@@ -275,7 +280,7 @@ msgstr "கடைசியாக புதுப்பிக்கப்பட�
 #. module: account_reports_followup
 #: model:ir.model.fields,field_description:account_reports_followup.field_account_move_line__followup_date
 msgid "Latest Follow-up"
-msgstr ""
+msgstr "சமீபத்திய பின்தொடர்"
 
 #. module: account_reports_followup
 #. openerp-web
@@ -284,18 +289,18 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:account_reports_followup.view_account_followup_followup_line_form
 #, python-format
 msgid "Manual Action"
-msgstr ""
+msgstr "கையேடு நடவடிக்கை"
 
 #. module: account_reports_followup
 #: model:ir.model.fields,field_description:account_reports_followup.field_account_followup_followup_line__manual_action_type_id
 msgid "Manual Action Type"
-msgstr ""
+msgstr "கையேடு அதிரடி வகை"
 
 #. module: account_reports_followup
 #: code:addons/account_reports_followup/models/account_followup_report.py:86
 #, python-format
 msgid "Manual action done"
-msgstr ""
+msgstr "கையேடு நடவடிக்கை செய்யப்பட்டது"
 
 #. module: account_reports_followup
 #. openerp-web
@@ -305,11 +310,13 @@ msgid ""
 "Odoo will remind you to take care of this follow-up on the next reminder "
 "date."
 msgstr ""
+"அடுத்த நினைவூட்டல் தேதியில் இந்த பின்தொடர்தலை கவனிப்பதை Odoo "
+"நினைவுபடுத்துகிறது."
 
 #. module: account_reports_followup
 #: sql_constraint:account_followup.followup:0
 msgid "Only one follow-up per company is allowed"
-msgstr ""
+msgstr "நிறுவனத்திற்கு ஒரு பின்தொடர் மட்டுமே அனுமதிக்கப்படுகிறது"
 
 #. module: account_reports_followup
 #: model:ir.model.fields,help:account_reports_followup.field_res_partner__payment_responsible_id
@@ -318,55 +325,57 @@ msgid ""
 "Optionally you can assign a user to this field, which will make him "
 "responsible for the action."
 msgstr ""
+"விருப்பமாக நீங்கள் இந்த துறையில் ஒரு பயனர் ஒதுக்க முடியும், இது அவரை "
+"நடவடிக்கை பொறுப்பு செய்யும்."
 
 #. module: account_reports_followup
 #: model_terms:ir.ui.view,arch_db:account_reports_followup.account_move_line_partner_tree
 msgid "Partner entries"
-msgstr ""
+msgstr "கூட்டாளர் உள்ளீடுகள்"
 
 #. module: account_reports_followup
 #: model:ir.actions.act_window,name:account_reports_followup.action_account_followup_definition_form
 msgid "Payment Follow-ups"
-msgstr ""
+msgstr "கொடுப்பனவு பின்தொடர்வுகள்"
 
 #. module: account_reports_followup
 #: model:ir.model.fields,field_description:account_reports_followup.field_account_followup_followup_line__print_letter
 msgid "Print a Letter"
-msgstr ""
+msgstr "ஒரு கடிதம் அச்சிட"
 
 #. module: account_reports_followup
 #. openerp-web
 #: code:addons/account_reports_followup/static/src/xml/account_reports_followup_template.xml:7
 #, python-format
 msgid "Print letter"
-msgstr ""
+msgstr "அச்சு கடிதம்"
 
 #. module: account_reports_followup
 #: model:ir.model.fields,field_description:account_reports_followup.field_account_followup_followup_line__description
 msgid "Printed Message"
-msgstr ""
+msgstr "Printed Message"
 
 #. module: account_reports_followup
 #. openerp-web
 #: code:addons/account_reports_followup/static/src/xml/account_reports_followup_template.xml:16
 #, python-format
 msgid "Remind me later"
-msgstr ""
+msgstr "பிறகு என்னிடம் ஞாபகபடுத்து"
 
 #. module: account_reports_followup
 #: model_terms:ir.ui.view,arch_db:account_reports_followup.view_account_followup_filter
 msgid "Search Follow-up"
-msgstr ""
+msgstr "தேடல் பின்தொடர்"
 
 #. module: account_reports_followup
 #: model:account_followup.followup.line,name:account_reports_followup.demo_followup_line2
 msgid "Second reminder letter and email"
-msgstr ""
+msgstr "இரண்டாவது நினைவூட்டல் கடிதம் மற்றும் மின்னஞ்சல்"
 
 #. module: account_reports_followup
 #: model_terms:ir.ui.view,arch_db:account_reports_followup.view_account_followup_followup_line_form
 msgid "Send a Letter or Email"
-msgstr ""
+msgstr "ஒரு கடிதம் அல்லது மின்னஞ்சல் அனுப்பவும்"
 
 #. module: account_reports_followup
 #: model:ir.model.fields,field_description:account_reports_followup.field_account_followup_followup_line__send_email
@@ -378,7 +387,7 @@ msgstr ""
 #: code:addons/account_reports_followup/static/src/xml/account_reports_followup_template.xml:10
 #, python-format
 msgid "Send by email"
-msgstr ""
+msgstr "மின்னஞ்சல் மூலம் அனுப்பவும்"
 
 #. module: account_reports_followup
 #: model:ir.model.fields,field_description:account_reports_followup.field_account_followup_followup_line__sequence
@@ -392,11 +401,14 @@ msgid ""
 "the reminder.  Could be negative if you want to send a polite alert "
 "beforehand."
 msgstr ""
+"நினைவூட்டலை அனுப்பும் முன் காத்திருக்கும் விலைப்பட்டியல் தேதி முடிந்த "
+"நாட்களின் எண்ணிக்கை. முன்பே எச்சரிக்கையுடன் அனுப்ப விரும்பினால், எதிர்மறையாக"
+" இருக்கலாம்."
 
 #. module: account_reports_followup
 #: model:account_followup.followup.line,name:account_reports_followup.demo_followup_line3
 msgid "Third reminder: phone the customer"
-msgstr ""
+msgstr "மூன்றாவது நினைவூட்டல்: தொலைபேசி வாடிக்கையாளர்"
 
 #. module: account_reports_followup
 #: model_terms:ir.ui.view,arch_db:account_reports_followup.view_account_followup_followup_form
@@ -410,36 +422,44 @@ msgid ""
 "                        same customer, the actions of the most \n"
 "                        overdue invoice will be executed."
 msgstr ""
+"வாடிக்கையாளர்களை அவர்களின் பொருள் செலுத்துவதை நினைவூட்டுவதற்கு, உங்களால் முடியும்\n"
+"                         எவ்வளவு கடுமையாகப் பொறுத்து வெவ்வேறு செயல்களை வரையறுக்க வேண்டும்\n"
+"                         வாடிக்கையாளரைக் கடக்க வேண்டும். இந்த நடவடிக்கைகள் தொகுக்கப்பட்டுள்ளன\n"
+"                         பின்வருபவற்றிற்கு காரணமாக இருக்கும் தூண்டுதலின் அளவுகளில்\n"
+"                         ஒரு விலைப்பட்டியல் தேதி ஒரு குறிப்பிட்ட கடந்துவிட்டது\n"
+"                         நாட்கள் எண்ணிக்கை. பிற தாமதமான பொருள் இருந்தால்\n"
+"                         அதே வாடிக்கையாளர், பெரும்பாலான செயல்கள்\n"
+"                         காலதாமதமான விலைப்பட்டியல் செயல்படுத்தப்படும்."
 
 #. module: account_reports_followup
 #: model_terms:ir.ui.view,arch_db:account_reports_followup.account_move_line_partner_tree
 msgid "Total credit"
-msgstr ""
+msgstr "மொத்த கடன்"
 
 #. module: account_reports_followup
 #: model_terms:ir.ui.view,arch_db:account_reports_followup.account_move_line_partner_tree
 msgid "Total debit"
-msgstr ""
+msgstr "மொத்த டெபிட்"
 
 #. module: account_reports_followup
 #: model:account_followup.followup.line,name:account_reports_followup.demo_followup_line4
 msgid "Urging reminder email"
-msgstr ""
+msgstr "நினைவூட்டல் மின்னஞ்சலை அகற்று"
 
 #. module: account_reports_followup
 #: model:account_followup.followup.line,name:account_reports_followup.demo_followup_line5
 msgid "Urging reminder letter"
-msgstr ""
+msgstr "நினைவூட்டல் கடிதத்தை அகற்றும்"
 
 #. module: account_reports_followup
 #: model:ir.model.fields,help:account_reports_followup.field_account_followup_followup_line__print_letter
 msgid "When processing, it will print a PDF"
-msgstr ""
+msgstr "When processing, it will print a PDF"
 
 #. module: account_reports_followup
 #: model:ir.model.fields,help:account_reports_followup.field_account_followup_followup_line__send_email
 msgid "When processing, it will send an email"
-msgstr ""
+msgstr "செயலாக்கப்படும் போது, அது ஒரு மின்னஞ்சலை அனுப்பும்"
 
 #. module: account_reports_followup
 #: model:ir.model.fields,help:account_reports_followup.field_account_followup_followup_line__manual_action
@@ -447,6 +467,7 @@ msgid ""
 "When processing, it will set the manual action to be taken for that "
 "customer. "
 msgstr ""
+"செயலாக்கப்படும் போது, அந்த வாடிக்கையாளருக்கு கையேடு நடவடிக்கை எடுக்கப்படும்."
 
 #. module: account_reports_followup
 #: model_terms:ir.ui.view,arch_db:account_reports_followup.view_account_followup_followup_line_form
@@ -457,6 +478,11 @@ msgid ""
 "                            forget to translate in all languages you installed\n"
 "                            using to top right icon."
 msgstr ""
+"கடிதத்தில் அறிமுகம் இங்கே எழுதவும்,\n"
+"                             பின்தொடரும் நிலைக்கு ஏற்ப. உன்னால் முடியும்\n"
+"                             உரையில் பின்வரும் சொற்களைப் பயன்படுத்தவும். வேண்டாம்\n"
+"                             நீங்கள் நிறுவியுள்ள அனைத்து மொழிகளிலும் மொழிபெயர்க்க மறக்காதீர்கள்\n"
+"                             மேல் வலது ஐகானைப் பயன்படுத்தி."
 
 #. module: account_reports_followup
 #: code:addons/account_reports_followup/models/account_followup.py:57
@@ -465,13 +491,16 @@ msgid ""
 "Your description is invalid, use the right legend or %% if you want to use "
 "the percent character."
 msgstr ""
+"உங்கள் விளக்கம் தவறானது, சரியான புராணத்தைப் பயன்படுத்தவும் அல்லது நீங்கள் "
+"சதவீத தன்மையை பயன்படுத்த விரும்பினால்."
 
 #. module: account_reports_followup
 #: model_terms:ir.ui.view,arch_db:account_reports_followup.view_account_followup_followup_line_form
 msgid "days overdue, do the following actions:"
-msgstr ""
+msgstr "நாட்கள் தாமதமாக, பின்வரும் செயல்களைச் செய்யுங்கள்:"
 
 #. module: account_reports_followup
 #: model_terms:ir.ui.view,arch_db:account_reports_followup.view_account_followup_followup_line_form
 msgid "e.g. Call the customer, check if it's paid, ..."
 msgstr ""
+"எ.கா. வாடிக்கையாளரை அழைக்கவும், பணம் செலுத்துகிறதா என சோதிக்கவும், ..."

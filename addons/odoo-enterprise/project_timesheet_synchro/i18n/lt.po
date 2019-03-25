@@ -256,7 +256,7 @@ msgstr "Įsiregistruoti su Odoo"
 #: code:addons/project_timesheet_synchro/static/src/xml/project_timesheet.xml:439
 #, python-format
 msgid "Logout"
-msgstr "Išsiregistruoti"
+msgstr "Atsijungti"
 
 #. module: project_timesheet_synchro
 #. openerp-web

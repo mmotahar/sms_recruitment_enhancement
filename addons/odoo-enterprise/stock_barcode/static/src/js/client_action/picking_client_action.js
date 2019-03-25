@@ -40,6 +40,7 @@ var PickingClientAction = ClientAction.extend({
             // Get the usage of the picking type of `this.picking_id` to chose the mode between
             // `receipt`, `internal`, `delivery`.
             var picking_type_code = self.currentState.picking_type_code;
+            var picking_state = self.currentState.state;
             if (picking_type_code === 'incoming') {
                 self.mode = 'receipt';
             } else if (picking_type_code === 'outgoing') {
@@ -52,11 +53,16 @@ var PickingClientAction = ClientAction.extend({
                 self.mode = 'no_multi_locations';
             }
 
-            if (self.currentState.state === 'done') {
+            if (picking_state === 'done') {
                 self.mode = 'done';
-            } else if (self.currentState.state === 'cancel') {
+            } else if (picking_state === 'cancel') {
                 self.mode = 'cancel';
             }
+            self.allow_scrap = (!(
+                ((picking_type_code !== 'incoming') && (['draft', 'cancel', 'waiting'].indexOf(picking_state) !== -1))
+                || ((picking_type_code === 'incoming') && (picking_state !== 'done'))
+            ))
+
         });
         return res;
     },
@@ -318,6 +324,10 @@ var PickingClientAction = ClientAction.extend({
      */
     _putInPack: function () {
         var self = this;
+        if (this.currentState.group_tracking_lot === false) {
+            this.do_warn(_t("Delivery Packages needs to be enabled in Inventory Settings to use packages"));
+            return;
+        }
         this.mutex.exec(function () {
             return self._save().then(function () {
                 return self._rpc({

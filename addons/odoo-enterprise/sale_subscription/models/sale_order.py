@@ -52,7 +52,7 @@ class SaleOrder(models.Model):
             'pricelist_id': self.pricelist_id.id,
             'company_id': self.company_id.id,
             'analytic_account_id': self.analytic_account_id.id,
-            'payment_token_id': self.transaction_ids.get_last_transaction().payment_token_id.id if template.payment_mode not in ['validate_send_payment', 'success_payment'] else False
+            'payment_token_id': self.transaction_ids.get_last_transaction().payment_token_id.id if template.payment_mode in ['validate_send_payment', 'success_payment'] else False
         }
         default_stage = self.env['sale.subscription.stage'].search([('in_progress', '=', True)], limit=1)
         if default_stage:

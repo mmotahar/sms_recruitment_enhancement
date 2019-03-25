@@ -7,7 +7,7 @@
 # Pavol Krnáč <pavol.krnac@ekoenergo.sk>, 2018
 # Jaroslav Bosansky <jaro.bosansky@ekoenergo.sk>, 2018
 # gebri <gebri@inmail.sk>, 2018
-# Jan Prokop, 2018
+# Jan Prokop, 2019
 # 
 msgid ""
 msgstr ""
@@ -15,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-19 09:13+0000\n"
 "PO-Revision-Date: 2018-08-24 11:48+0000\n"
-"Last-Translator: Jan Prokop, 2018\n"
+"Last-Translator: Jan Prokop, 2019\n"
 "Language-Team: Slovak (https://www.transifex.com/odoo/teams/41243/sk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -521,7 +521,7 @@ msgstr "Časové rozvrhy"
 #. module: timesheet_grid
 #: model:ir.model.fields,field_description:timesheet_grid.field_hr_employee__timesheet_validated
 msgid "Timesheets Validation Date"
-msgstr ""
+msgstr "Dátum overenia časových rozvrhov"
 
 #. module: timesheet_grid
 #. openerp-web
@@ -533,7 +533,7 @@ msgstr ""
 #. module: timesheet_grid
 #: model:ir.ui.menu,name:timesheet_grid.menu_timesheet_grid_validate
 msgid "To Validate"
-msgstr ""
+msgstr "K overeniu"
 
 #. module: timesheet_grid
 #. openerp-web
@@ -571,22 +571,22 @@ msgstr "Overiť"
 #. module: timesheet_grid
 #: model_terms:ir.ui.view,arch_db:timesheet_grid.timesheet_validation_view_form
 msgid "Validate Timesheets"
-msgstr ""
+msgstr "Overiť časové rozvrhy"
 
 #. module: timesheet_grid
 #: model_terms:ir.ui.view,arch_db:timesheet_grid.timesheet_validation_view_form
 msgid "Validate the timesheets of the selected employees up to"
-msgstr ""
+msgstr "Overte časové rozvrhy zvolených zamestnancov až do"
 
 #. module: timesheet_grid
 #: model:ir.model.fields,help:timesheet_grid.field_timesheet_validation_line__validate
 msgid "Validate this employee's timesheet up to the chosen date"
-msgstr ""
+msgstr "Overte časový rozvrh tohto zamestnanca až do zvoleného dátumu"
 
 #. module: timesheet_grid
 #: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_validation__validation_date
 msgid "Validate up to"
-msgstr ""
+msgstr "Overiť až do"
 
 #. module: timesheet_grid
 #: model_terms:ir.ui.view,arch_db:timesheet_grid.timesheet_view_search
@@ -597,12 +597,12 @@ msgstr "Overené"
 #: model:ir.actions.act_window,name:timesheet_grid.action_timesheet_previous_month
 #: model:ir.actions.act_window,name:timesheet_grid.action_timesheet_previous_week
 msgid "Validated Timesheets"
-msgstr ""
+msgstr "Overený časový rozvrh"
 
 #. module: timesheet_grid
 #: model:ir.model.fields,field_description:timesheet_grid.field_account_analytic_line__validated
 msgid "Validated line"
-msgstr ""
+msgstr "Overený riadok"
 
 #. module: timesheet_grid
 #: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_validation_line__validation_id
@@ -625,13 +625,13 @@ msgstr "Týždeň"
 #: selection:res.company,timesheet_mail_employee_interval:0
 #: selection:res.company,timesheet_mail_manager_interval:0
 msgid "after end of month"
-msgstr ""
+msgstr "po konci mesiaca"
 
 #. module: timesheet_grid
 #: selection:res.company,timesheet_mail_employee_interval:0
 #: selection:res.company,timesheet_mail_manager_interval:0
 msgid "after end of week"
-msgstr ""
+msgstr "po konci týždňa"
 
 #. module: timesheet_grid
 #: model_terms:ir.ui.view,arch_db:timesheet_grid.res_config_settings_view_form

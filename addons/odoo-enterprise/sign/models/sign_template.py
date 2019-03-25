@@ -39,7 +39,10 @@ class SignTemplate(models.Model):
     @api.depends('attachment_id.datas_fname')
     def _compute_extension(self):
         for template in self:
-            template.extension = '.' + template.attachment_id.datas_fname.split('.')[-1]
+            if template.attachment_id.datas_fname:
+                template.extension = '.' + template.attachment_id.datas_fname.split('.')[-1]
+            else:
+                template.extension = ''
 
     @api.depends('sign_item_ids.responsible_id')
     def _compute_responsible_count(self):
@@ -73,7 +76,10 @@ class SignTemplate(models.Model):
     def upload_template(self, name=None, dataURL=None, active=True):
         mimetype = dataURL[dataURL.find(':')+1:dataURL.find(',')]
         datas = dataURL[dataURL.find(',')+1:]
-        file_pdf = PdfFileReader(io.BytesIO(base64.b64decode(datas)), strict=False, overwriteWarnings=False)
+        try:
+            file_pdf = PdfFileReader(io.BytesIO(base64.b64decode(datas)), strict=False, overwriteWarnings=False)
+        except Exception as e:
+            raise UserError(_("This file cannot be read. Is it a valid PDF?"))
         if file_pdf.isEncrypted:
             raise UserError(_("Your PDF file shouldn't be encrypted with a password in order to be used as a signature template"))
         attachment = self.env['ir.attachment'].create({'name': name[:name.rfind('.')], 'datas_fname': name, 'datas': datas, 'mimetype': mimetype})

@@ -65,7 +65,7 @@ msgstr "Generico"
 #. module: account_sepa
 #: selection:res.company,sepa_pain_version:0
 msgid "German Version"
-msgstr "Versione Tedesca"
+msgstr "Versione tedesca"
 
 #. module: account_sepa
 #: model:ir.model.fields,field_description:account_sepa.field_res_company__sepa_orgid_id
@@ -106,7 +106,7 @@ msgstr "Registro"
 msgid ""
 "Name of the Creditor Reference Party. Usage Rule: Limited to 70 characters "
 "in length."
-msgstr "Nome del Creditore. Regola d'Uso: lunghezza limitata a 70 caratteri."
+msgstr "Nome del creditore. Regola d'uso: lunghezza limitata a 70 caratteri."
 
 #. module: account_sepa
 #: model_terms:ir.ui.view,arch_db:account_sepa.account_journal_dashboard_kanban_view_inherited
@@ -149,18 +149,18 @@ msgstr "Registra Pagamenti"
 #. module: account_sepa
 #: model:account.payment.method,name:account_sepa.account_payment_method_sepa_ct
 msgid "SEPA Credit Transfer"
-msgstr "Bonificio SEPA"
+msgstr "Bonifico SEPA"
 
 #. module: account_sepa
 #: model_terms:ir.ui.view,arch_db:account_sepa.view_sepa_credit_transfer_search
 msgid "SEPA Credit Transfer Payments To Send"
-msgstr "Bonifico SEPA Da Inviare"
+msgstr "Bonifico SEPA da inviare"
 
 #. module: account_sepa
 #: code:addons/account_sepa/models/account_journal_dashboard.py:23
 #, python-format
 msgid "SEPA Credit Transfers to Send"
-msgstr "Bonifico SEPA Da Inviare"
+msgstr "Bonifico SEPA da inviare"
 
 #. module: account_sepa
 #: model:ir.model.fields,field_description:account_sepa.field_res_company__sepa_pain_version
@@ -194,7 +194,7 @@ msgstr ""
 #. module: account_sepa
 #: selection:res.company,sepa_pain_version:0
 msgid "Swiss Version"
-msgstr "Versione Svizzera"
+msgstr "Versione svizzera"
 
 #. module: account_sepa
 #: model:ir.model.fields,help:account_sepa.field_account_batch_payment__sct_generic
@@ -206,9 +206,9 @@ msgid ""
 msgstr ""
 "Funzionalità tecnica utilizzata durante la creazione del file. Un messaggio "
 "SEPA è considerato \"generico\" se non può essere considerato un bonifico "
-"standard europeo. Questo avviene se il giornale della banca non è in €, una "
-"transazione non è in € o se un beneficiario non è identificato da un numero "
-"di conto IBAN e una banca BIC."
+"standard europeo. Questo avviene se il registro della banca non è in €, se "
+"una transazione non è in € o se un beneficiario non è identificato da un "
+"numero di conto IBAN e una banca BIC."
 
 #. module: account_sepa
 #: code:addons/account_sepa/models/account_batch_payment.py:353
@@ -217,7 +217,7 @@ msgid ""
 "The account %s, linked to partner '%s', is not of type IBAN.\n"
 "A valid IBAN account is required to use SEPA features."
 msgstr ""
-"Il conto %s, collegato al partner '%s', non è di tipo IBAN.\n"
+"Il conto %s, collegato al partner \"%s\", non è di tipo IBAN.\n"
 "Per usare le funzionalità SEPA è necessario un conto IBAN valido."
 
 #. module: account_sepa
@@ -227,7 +227,7 @@ msgid ""
 "The account %s, of journal '%s', is not of type IBAN.\n"
 "A valid IBAN account is required to use SEPA features."
 msgstr ""
-"Il conto %s, del giornale '%s', non è di tipo IBAN.\n"
+"Il conto %s, del registro \"%s\", non è di tipo IBAN.\n"
 "Per usare le funzionalità SEPA è necessario un conto IBAN valido."
 
 #. module: account_sepa
@@ -334,7 +334,7 @@ msgid ""
 "'%s'"
 msgstr ""
 "Non c'è nessun codice di identificazione della banca (BIC) registrato per il"
-" conto \"%s\" del sezionale \"%s\""
+" conto \"%s\" del registro \"%s\""
 
 #. module: account_sepa
 #: code:addons/account_sepa/models/account_batch_payment.py:189

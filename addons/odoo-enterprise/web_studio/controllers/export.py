@@ -148,9 +148,11 @@ def generate_module(module, data):
         # create the XML containing the generated record nodes
         nodes = []
         for record in records:
-            record_node, record_skipped = generate_record(record, get_xmlid)
-            nodes.append(record_node)
-            skipped.extend(record_skipped)
+            xmlid = get_xmlid(record)
+            if xmlid.split('.', 1)[0] != '__export__':
+                record_node, record_skipped = generate_record(record, get_xmlid)
+                nodes.append(record_node)
+                skipped.extend(record_skipped)
         root = E.odoo(*nodes)
         xml = etree.tostring(root, pretty_print=True, encoding='UTF-8', xml_declaration=True)
 

@@ -105,29 +105,28 @@ class AccountInvoice(models.Model):
                 if record.type in ["out_invoice", "out_refund"]:
                     return res
                 if record.extract_state == "no_extract_requested":
-                    if "attachment_ids" in kwargs:
-                        attachments = self.env["ir.attachment"].search([("id", "in", kwargs["attachment_ids"])])
-                        if attachments.exists():
-                            endpoint = self.env['ir.config_parameter'].sudo().get_param(
-                                'account_invoice_extract_endpoint', 'https://iap-extract.odoo.com') + '/iap/invoice_extract/parse'
-                            params = {
-                                'account_token': account_token.account_token,
-                                'version': CLIENT_OCR_VERSION,
-                                'dbuuid': self.env['ir.config_parameter'].sudo().get_param('database.uuid'),
-                                'documents': [x.datas.decode('utf-8') for x in attachments], 
-                                'file_names': [x.datas_fname for x in attachments],
-                            }
-                            try:
-                                result = jsonrpc(endpoint, params=params)
-                                if result[1] == "Not enough credits":
-                                    record.extract_state = 'not_enough_credit'
-                                elif result[0] == -1:
-                                    record.extract_state = 'error_status'
-                                else:
-                                    record.extract_remoteid = result[0]
-                                    record.extract_state = 'waiting_extraction'
-                            except AccessError:
+                    attachments = res.attachment_ids
+                    if attachments:
+                        endpoint = self.env['ir.config_parameter'].sudo().get_param(
+                            'account_invoice_extract_endpoint', 'https://iap-extract.odoo.com') + '/iap/invoice_extract/parse'
+                        params = {
+                            'account_token': account_token.account_token,
+                            'version': CLIENT_OCR_VERSION,
+                            'dbuuid': self.env['ir.config_parameter'].sudo().get_param('database.uuid'),
+                            'documents': [x.datas.decode('utf-8') for x in attachments],
+                            'file_names': [x.datas_fname for x in attachments],
+                        }
+                        try:
+                            result = jsonrpc(endpoint, params=params)
+                            if result[1] == "Not enough credits":
+                                record.extract_state = 'not_enough_credit'
+                            elif result[0] == -1:
                                 record.extract_state = 'error_status'
+                            else:
+                                record.extract_remoteid = result[0]
+                                record.extract_state = 'waiting_extraction'
+                        except AccessError:
+                            record.extract_state = 'error_status'
         for record in self:
             record._compute_show_resend_button()
         return res
@@ -422,24 +421,43 @@ class AccountInvoice(models.Model):
                 self.invoice_line_ids[0].price_unit = to_float(text)
                 self.invoice_line_ids[0].price_total = to_float(text)
             elif len(self.invoice_line_ids) == 0:
-                self.invoice_line_ids.create({'name': "/",
+                self.invoice_line_ids.with_context(set_default_account=True, journal_id=self.journal_id.id).create({'name': "/",
                     'invoice_id': self.id,
                     'price_unit': to_float(text),
                     'price_total': to_float(text),
                     'quantity': 1,
-                    'account_id': self.env["account.account"].search([(1, '=', 1)], limit=1).id,
                     })
+                if getattr(self.invoice_line_ids[0],'_predict_account', False):
+                    predicted_account_id = self.invoice_line_ids[0]._predict_account(text, self.invoice_line_ids[0].partner_id)
+                    # We only change the account if we manage to predict its value
+                    if predicted_account_id:
+                        self.invoice_line_ids[0].account_id = predicted_account_id
+                self.invoice_line_ids[0]._set_taxes()
+
         if field == "description":
             if len(self.invoice_line_ids) == 1:
                 self.invoice_line_ids[0].name = text
+                if getattr(self.invoice_line_ids[0],'_predict_account', False):
+                    predicted_account_id = self.invoice_line_ids[0]._predict_account(text, self.invoice_line_ids[0].partner_id)
+                    # We only change the account if we manage to predict its value
+                    if predicted_account_id:
+                        self.invoice_line_ids[0].account_id = predicted_account_id
+                self.invoice_line_ids[0]._set_taxes()
+
             elif len(self.invoice_line_ids) == 0:
-                self.invoice_line_ids.create({'name': text,
+                self.invoice_line_ids.with_context(set_default_account=True, journal_id=self.journal_id.id).create({'name': text,
                     'invoice_id': self.id,
                     'price_unit': 0,
                     'price_total': 0,
                     'quantity': 1,
-                    'account_id': self.env["account.account"].search([(1, '=', 1)], limit=1).id,
                     })
+                if getattr(self.invoice_line_ids[0],'_predict_account', False):
+                    predicted_account_id = self.invoice_line_ids[0]._predict_account(text, self.invoice_line_ids[0].partner_id)
+                    # We only change the account if we manage to predict its value
+                    if predicted_account_id:
+                        self.invoice_line_ids[0].account_id = predicted_account_id
+                self.invoice_line_ids[0]._set_taxes()
+
         if field == "date":
             self.date_invoice = text
         if field == "due_date":

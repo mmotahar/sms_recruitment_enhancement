@@ -527,7 +527,7 @@ msgstr ""
 #. module: website_crm_score
 #: model_terms:ir.ui.view,arch_db:website_crm_score.crm_score_pageview_filter
 msgid "Search PageViews"
-msgstr "Zoek paginaweergaves"
+msgstr "Zoek paginaweergaven"
 
 #. module: website_crm_score
 #: model:ir.ui.menu,name:website_crm_score.team

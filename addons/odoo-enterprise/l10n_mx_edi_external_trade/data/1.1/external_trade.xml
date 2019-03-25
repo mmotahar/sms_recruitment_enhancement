@@ -66,7 +66,7 @@
                        </t>
                        <cce11:Mercancias>
                            <t t-set="products" t-value="[]"/>
-                           <t t-foreach="record.invoice_line_ids" t-as="line">
+                           <t t-foreach="record.invoice_line_ids.filtered(lambda inv: not inv.display_type)" t-as="line">
                                <t t-if="line.product_id.id not in products">
                                    <cce11:Mercancia
                                        t-att-NoIdentificacion="record._get_string_cfdi(line.product_id.default_code or '') or None"
@@ -74,7 +74,7 @@
                                        t-att-CantidadAduana="'%.3f' % quantity_aduana(line.product_id, record)"
                                        t-att-UnidadAduana="line.l10n_mx_edi_umt_aduana_id.l10n_mx_edi_code_aduana"
                                        t-att-ValorUnitarioAduana="'%.2f' % unit_value_usd(line, record.currency_id, usd)"
-                                       t-att-ValorDolares="'%.2f' % round(quantity_aduana(line.product_id, record) * unit_value_usd(line, record.currency_id, usd), 2)">
+                                       t-att-ValorDolares="'%.2f' % valor_usd(line, usd, record.currency_id)">
                                    </cce11:Mercancia>
                                    <t t-set="products" t-value="products + [line.product_id.id]"/>
                                </t>

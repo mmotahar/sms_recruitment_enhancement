@@ -4,6 +4,7 @@
 # 
 # Translators:
 # Bagavathikumar Ramakrishnan <bagavathikumar@gmail.com>, 2019
+# Alagappan Karthikeyan <me@karthik.sg>, 2019
 # 
 msgid ""
 msgstr ""
@@ -11,7 +12,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-02 10:32+0000\n"
 "PO-Revision-Date: 2018-08-24 11:48+0000\n"
-"Last-Translator: Bagavathikumar Ramakrishnan <bagavathikumar@gmail.com>, 2019\n"
+"Last-Translator: Alagappan Karthikeyan <me@karthik.sg>, 2019\n"
 "Language-Team: Tamil (https://www.transifex.com/odoo/teams/41243/ta/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,7 +28,7 @@ msgstr ""
 #. module: stock_enterprise
 #: selection:stock.report,state:0
 msgid "Cancelled"
-msgstr ""
+msgstr "ரத்து"
 
 #. module: stock_enterprise
 #: model:ir.model.fields,field_description:stock_enterprise.field_stock_report__company_id
@@ -37,12 +38,12 @@ msgstr "நிறுவனம்"
 #. module: stock_enterprise
 #: model:ir.model.fields,field_description:stock_enterprise.field_stock_report__creation_date
 msgid "Creation Date"
-msgstr ""
+msgstr "உருவாக்கம் தேதி"
 
 #. module: stock_enterprise
 #: selection:stock.report,picking_type_code:0
 msgid "Customers"
-msgstr ""
+msgstr "வாடிக்கையாளர்கள்"
 
 #. module: stock_enterprise
 #: model_terms:ir.ui.view,arch_db:stock_enterprise.stock_report_form_view
@@ -57,7 +58,7 @@ msgstr ""
 #. module: stock_enterprise
 #: model_terms:ir.ui.view,arch_db:stock_enterprise.stock_report_form_view
 msgid "Day(s)"
-msgstr ""
+msgstr "நாட்களில்"
 
 #. module: stock_enterprise
 #: model_terms:ir.ui.view,arch_db:stock_enterprise.stock_report_form_view
@@ -101,7 +102,7 @@ msgstr "காட்சி பெயர்"
 #. module: stock_enterprise
 #: selection:stock.report,state:0
 msgid "Done"
-msgstr ""
+msgstr "முடிந்தது"
 
 #. module: stock_enterprise
 #: model_terms:ir.ui.view,arch_db:stock_enterprise.stock_report_search_view
@@ -121,7 +122,7 @@ msgstr ""
 #. module: stock_enterprise
 #: model:ir.model.fields,field_description:stock_enterprise.field_stock_report__scheduled_date
 msgid "Expected Date"
-msgstr ""
+msgstr "எதிர்பார்க்கப்படுகிறது தேதி"
 
 #. module: stock_enterprise
 #: model:ir.model.fields,field_description:stock_enterprise.field_stock_report__id
@@ -156,7 +157,7 @@ msgstr "கடைசியாக திருத்திய"
 #. module: stock_enterprise
 #: selection:stock.report,state:0
 msgid "New"
-msgstr ""
+msgstr "புதிய"
 
 #. module: stock_enterprise
 #: model:ir.model.fields,field_description:stock_enterprise.field_stock_report__operation_type
@@ -186,7 +187,7 @@ msgstr "தயாரிப்பு"
 #. module: stock_enterprise
 #: model:ir.model.fields,field_description:stock_enterprise.field_stock_report__categ_id
 msgid "Product Category"
-msgstr ""
+msgstr "தயாரிப்பு வகை"
 
 #. module: stock_enterprise
 #: model:ir.model.fields,field_description:stock_enterprise.field_stock_report__product_qty
@@ -206,7 +207,7 @@ msgstr ""
 #. module: stock_enterprise
 #: model:ir.model.fields,field_description:stock_enterprise.field_stock_report__reference
 msgid "Reference"
-msgstr ""
+msgstr "குறிப்பு"
 
 #. module: stock_enterprise
 #: model_terms:ir.ui.view,arch_db:stock_enterprise.stock_report_cohort_view
@@ -216,7 +217,7 @@ msgstr ""
 #. module: stock_enterprise
 #: model:ir.model.fields,field_description:stock_enterprise.field_stock_report__state
 msgid "Status"
-msgstr ""
+msgstr "நிலைமை"
 
 #. module: stock_enterprise
 #: model_terms:ir.ui.view,arch_db:stock_enterprise.stock_report_pivot_view

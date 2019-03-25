@@ -487,6 +487,7 @@
                 <field name="to_renew"/>
                 <field name="rating_ids"/>
                 <field name="activity_state" />
+                <field name="rating_last_value" />
                 <progressbar field="activity_state" colors='{"planned": "success", "today": "warning", "overdue": "danger"}' help="This bar allows to filter the opportunities based on scheduled activities."/>
                 <templates>
                     <t t-name="kanban-box">

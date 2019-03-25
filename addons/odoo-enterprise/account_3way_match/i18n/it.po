@@ -8,12 +8,13 @@
 # Paolo Valier, 2018
 # Léonie Bouchat <lbo@odoo.com>, 2018
 # Federico Castellano <castellano.federico@outlook.com>, 2018
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~11.5+e\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-18 10:05+0000\n"
-"PO-Revision-Date: 2018-09-18 10:05+0000\n"
+"PO-Revision-Date: 2018-08-24 11:36+0000\n"
 "Last-Translator: Federico Castellano <castellano.federico@outlook.com>, 2018\n"
 "Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
 "MIME-Version: 1.0\n"
@@ -61,8 +62,8 @@ msgid ""
 "Indicates whether the 'Can be paid' status is defined automatically or "
 "manually."
 msgstr ""
-"Indica se lo stato \"Can be paid\" (può essere pagato) è impostato "
-"automaticamente o manualmente. "
+"Indicare se lo stato \"Can be paid\" è impostato automaticamente o "
+"manualmente. "
 
 #. module: account_3way_match
 #: model:ir.model,name:account_3way_match.model_account_invoice
@@ -89,12 +90,12 @@ msgstr "N°"
 #. module: account_3way_match
 #: model:ir.model.fields,field_description:account_3way_match.field_account_invoice_line__can_be_paid
 msgid "Release to Pay"
-msgstr "Consegna da Pagare"
+msgstr "Consegna da pagare"
 
 #. module: account_3way_match
 #: model:ir.model.fields,field_description:account_3way_match.field_account_invoice__release_to_pay
 msgid "Should be paid"
-msgstr "Dovrebbe essere pagato"
+msgstr "Deve essere pagato"
 
 #. module: account_3way_match
 #: model:ir.model.fields,field_description:account_3way_match.field_account_invoice__release_to_pay_manual

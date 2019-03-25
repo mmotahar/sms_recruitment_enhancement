@@ -10,6 +10,7 @@ from uuid import uuid4
 
 from odoo import api, fields, models, _
 from odoo.exceptions import UserError, ValidationError
+from odoo.osv import expression
 from odoo.tools import format_date
 from odoo.tools.safe_eval import safe_eval
 
@@ -578,11 +579,11 @@ class SaleSubscription(models.Model):
     @api.model
     def _name_search(self, name, args=None, operator='ilike', limit=100, name_get_uid=None):
         args = args or []
-        domain = ['|', ('code', operator, name), ('name', operator, name)]
-        partner_ids = self.env['res.partner']._search([('name', operator, name)], access_rights_uid=name_get_uid)
-        if partner_ids:
-            domain = ['|'] + domain + [('partner_id', 'in', partner_ids)]
-        subscription_ids = self._search(domain + args, limit=limit, access_rights_uid=name_get_uid)
+        if operator == 'ilike' and not (name or '').strip():
+            domain = []
+        else:
+            domain = ['|', '|', ('code', operator, name), ('name', operator, name), ('partner_id.name', operator, name)]
+        subscription_ids = self._search(expression.AND([domain, args]), limit=limit, access_rights_uid=name_get_uid)
         return self.browse(subscription_ids).name_get()
 
     def wipe(self):
@@ -758,7 +759,7 @@ class SaleSubscription(models.Model):
                             _logger.error(error_message)
 
                     # invoice only
-                    elif subscription.template_id.payment_mode in ['draft_invoice', 'validate_send']:
+                    elif subscription.template_id.payment_mode in ['draft_invoice', 'manual', 'validate_send']:
                         try:
                             invoice_values = subscription.with_context(lang=subscription.partner_id.lang)._prepare_invoice()
                             new_invoice = self.env['account.invoice'].with_context(context_company).create(invoice_values)
@@ -1009,13 +1010,13 @@ class SaleSubscriptionTemplate(models.Model):
 
     @api.model
     def _name_search(self, name, args=None, operator='ilike', limit=100, name_get_uid=None):
-        # positive and negative operators behave differently
-        if operator in ('=', 'ilike', '=ilike', 'like', '=like'):
-            domain = ['|', ('code', operator, name), ('name', operator, name)]
-        else:
-            domain = ['&', ('code', operator, name), ('name', operator, name)]
         args = args or []
-        subscription_template_ids = self._search(domain + args, limit=limit, access_rights_uid=name_get_uid)
+        if operator == 'ilike' and not (name or '').strip():
+            domain = []
+        else:
+            connector = '&' if operator in expression.NEGATIVE_TERM_OPERATORS else '|'
+            domain = [connector, ('code', operator, name), ('name', operator, name)]
+        subscription_template_ids = self._search(expression.AND([domain, args]), limit=limit, access_rights_uid=name_get_uid)
         return self.browse(subscription_template_ids).name_get()
 
     def name_get(self):

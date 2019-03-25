@@ -144,8 +144,11 @@ class AccountFollowupReport(models.AbstractModel):
                 'class': '',
                 'unfoldable': False,
                 'level': 0,
-                'columns': [],
+                'columns': [{} for col in columns],
             })
+        # Remove the last empty line
+        if lines:
+            lines.pop()
         return lines
 
     def _get_default_summary(self, options):

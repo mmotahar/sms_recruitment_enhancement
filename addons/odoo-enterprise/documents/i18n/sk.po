@@ -905,7 +905,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:documents.share_view_form_popup
 #: model_terms:ir.ui.view,arch_db:documents.workflow_rule_form_view
 msgid "Log a note..."
-msgstr ""
+msgstr "Pridať poznámku..."
 
 #. module: documents
 #: model_terms:ir.ui.view,arch_db:documents.public_page_layout
@@ -1244,7 +1244,7 @@ msgstr "Zodpovedný"
 #: code:addons/documents/static/src/xml/documents_inspector.xml:162
 #, python-format
 msgid "Restore"
-msgstr ""
+msgstr "Obnoviť"
 
 #. module: documents
 #: model:documents.workflow.rule,name:documents.documents_Finance_validate_tr
@@ -1343,7 +1343,7 @@ msgstr "Zobraz všetky záznamy ktorých následná aktivita je pred dnešným d
 #. module: documents
 #: model:documents.tag,name:documents.documents_internal_template_sign
 msgid "Sign"
-msgstr ""
+msgstr "Podpísať"
 
 #. module: documents
 #: selection:documents.workflow.rule,create_model:0
@@ -1506,7 +1506,7 @@ msgstr "Dnešné aktivity"
 #: model:ir.model.fields,field_description:documents.field_documents_facet__tooltip
 #: model:ir.model.fields,field_description:documents.field_documents_workflow_rule__note
 msgid "Tooltip"
-msgstr ""
+msgstr "Pomôcka"
 
 #. module: documents
 #. openerp-web
@@ -1552,7 +1552,7 @@ msgstr "Počítadlo neprečítaných správ"
 #: model_terms:ir.ui.view,arch_db:documents.share_page
 #, python-format
 msgid "Upload"
-msgstr ""
+msgstr "Nahrať"
 
 #. module: documents
 #: model_terms:ir.actions.act_window,help:documents.document_action
@@ -1678,6 +1678,8 @@ msgid ""
 "You can either upload a file from your computer or copy/paste an internet "
 "link to your file."
 msgstr ""
+"Môžete nahrať súbor z počítača alebo kopírovať/vložiť internetový link k "
+"súboru."
 
 #. module: documents
 #. openerp-web

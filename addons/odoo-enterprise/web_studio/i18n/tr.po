@@ -11,11 +11,11 @@
 # Ramiz Deniz Öner <deniz@denizoner.com>, 2018
 # Gökhan Erdoğdu <gokhan.erdogdu@mechsoft.com.tr>, 2018
 # İlknur Püskül <ilknurpuskull@gmail.com>, 2018
-# Umur Akın <umura@projetgrup.com>, 2018
 # Buket Şeker <buket_skr@hotmail.com>, 2018
 # Murat Kaplan <muratk@projetgrup.com>, 2018
 # Martin Trigaux, 2018
 # Ediz Duman <neps1192@gmail.com>, 2018
+# Umur Akın <umura@projetgrup.com>, 2019
 # 
 msgid ""
 msgstr ""
@@ -23,7 +23,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-19 09:13+0000\n"
 "PO-Revision-Date: 2018-08-24 11:49+0000\n"
-"Last-Translator: Ediz Duman <neps1192@gmail.com>, 2018\n"
+"Last-Translator: Umur Akın <umura@projetgrup.com>, 2019\n"
 "Language-Team: Turkish (https://www.transifex.com/odoo/teams/41243/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -65,7 +65,7 @@ msgstr ""
 #: code:addons/web_studio/controllers/report.py:54
 #, python-format
 msgid "%s Report"
-msgstr ""
+msgstr "%s Çıktı"
 
 #. module: web_studio
 #. openerp-web
@@ -82,6 +82,8 @@ msgid ""
 "<div><p>The <strong>%s</strong> property is only applied to records matching"
 " this filter.</p></div>"
 msgstr ""
+"<div><p>Özellik <strong>%s</strong>yalnızca bu filtreyle eşleşen kayıtlara "
+"uygulanır..</p></div>"
 
 #. module: web_studio
 #: code:addons/web_studio/controllers/main.py:50
@@ -172,6 +174,8 @@ msgid ""
 "Add a <b>chatter widget</b> to allow discussions on your document: by email "
 "or inline."
 msgstr ""
+"Belgenizde  <b>konuşmalara izin vermek için </b> bir sohbet widget'ı "
+"ekleyin: e-posta veya satır içi olarak."
 
 #. module: web_studio
 #. openerp-web
@@ -269,7 +273,7 @@ msgstr ""
 #: code:addons/web_studio/static/src/js/views/view_editor_sidebar.js:520
 #, python-format
 msgid "Are you sure you want to remove this %s from the view?"
-msgstr ""
+msgstr "Görünümden bunu %s kaldırmak istediğinden emin misiniz?"
 
 #. module: web_studio
 #. openerp-web
@@ -433,7 +437,7 @@ msgstr "Resmi Değiştir"
 #: code:addons/web_studio/static/src/js/tour.js:24
 #, python-format
 msgid "Change the <b>background</b>, make it yours."
-msgstr ""
+msgstr "Arka planı  <b>değiştirin</b>, kendinizinkini yapın."
 
 #. module: web_studio
 #. openerp-web
@@ -805,6 +809,7 @@ msgstr "Domain"
 msgid ""
 "Drag & drop <b>another field</b>. Let’s try with a <i>selection field</i>."
 msgstr ""
+"Başka alanı <b>sürükle&bırak</b>. Seçilmiş bir alanda <i>deneyelim</i>."
 
 #. module: web_studio
 #. openerp-web
@@ -1168,7 +1173,7 @@ msgstr "Genel Görünümeler"
 #: code:addons/web_studio/static/src/js/views/new_view_dialog.js:29
 #, python-format
 msgid "Generate %s View"
-msgstr ""
+msgstr "Görünüm%s Oluştur"
 
 #. module: web_studio
 #. openerp-web
@@ -1183,6 +1188,8 @@ msgstr "Devam er, neredeyse bitti!"
 #, python-format
 msgid "Good job! To add more <b>fields</b>, come back to the <i>Add tab</i>."
 msgstr ""
+"İyi iş! Daha fazla için geri dönün<b>alan eklemek </b>, Ekle sekmesine  "
+"<i>geri dönün</i>."
 
 #. module: web_studio
 #. openerp-web
@@ -1276,6 +1283,8 @@ msgid ""
 "Here, you can <b>name</b> your field (e.g. Book reference, ISBN, Internal "
 "Note, etc.)."
 msgstr ""
+"Burada,  <b>alanınızı</b> adlandırabilirsiniz (örn. Kitap referansı, ISBN, "
+"Dahili Not, vb.)."
 
 #. module: web_studio
 #. openerp-web
@@ -1302,6 +1311,7 @@ msgstr "Saat"
 #, python-format
 msgid "How do you want to <b>name</b> your app? Library, Academy, …?"
 msgstr ""
+"Uygulamanı <b>nasıl</b> isimlendirmek istersin? Kütüphane, Akademi, …?"
 
 #. module: web_studio
 #. openerp-web
@@ -1309,6 +1319,8 @@ msgstr ""
 #, python-format
 msgid "How do you want to name your first <b>menu</b>? My books, My courses?"
 msgstr ""
+"İlk menünüzü nasıl isimlendirmek <b>isimlendirmek istersiniz</b>? "
+"Kitaplarım, Eğitimler?"
 
 #. module: web_studio
 #. openerp-web
@@ -1324,6 +1336,8 @@ msgstr "Html"
 msgid ""
 "I bet you can <b>build an app</b> in 5 minutes. Ready for the challenge?"
 msgstr ""
+"İddia ederim ki <b>5 dakikada</b> bir uygulama oluşturabilirsin. Meydan "
+"okumaya hazır mısın?"
 
 #. module: web_studio
 #: model:ir.model.fields,field_description:web_studio.field_studio_mixin__id
@@ -1474,6 +1488,8 @@ msgid ""
 "Let’s check the result. Close Odoo Studio to get an <b>overview of your "
 "app</b>."
 msgstr ""
+"Hadi sonuçları kontrol edelim. Uygulamanızı gözden geçirmek için,<b>Odoo "
+"Studio'yu kapatın</b>."
 
 #. module: web_studio
 #. openerp-web
@@ -1712,6 +1728,8 @@ msgid ""
 "Nicely done! Let’s build your screen now; <b>drag</b> a <i>text field</i> "
 "and <b>drop</b> it in your view, on the right."
 msgstr ""
+"Harika! Şimdi ekranınızı oluşturalım; <b>Bir metin </b> alanını  <i>text "
+"field</i> sürükleyin  <b>ve</b> sağdaki görünümünüze bırakın."
 
 #. module: web_studio
 #. openerp-web
@@ -1739,7 +1757,7 @@ msgstr "Notlar"
 #: code:addons/web_studio/static/src/js/tour.js:135
 #, python-format
 msgid "Now you’re on your own. Enjoy your <b>super power</b>."
-msgstr ""
+msgstr "Şimdi kendi başınasın. Süper gücünün <b>tadını çıkar</b>."
 
 #. module: web_studio
 #. openerp-web
@@ -2140,6 +2158,8 @@ msgid ""
 "Set an <b>email alias</b>. Then, try to send an email to this address; it "
 "will create a document automatically for you. Pretty cool, huh?"
 msgstr ""
+"Bir <b>email rumuzu ayarla</b>. Sonra bu adrese bir e-mail göndermeyi dene; "
+"bu, senin için otomatik bir belge oluşturacak. Oldukça havalı, ne dersin?"
 
 #. module: web_studio
 #. openerp-web
@@ -2291,7 +2311,7 @@ msgstr ""
 #: code:addons/web_studio/static/src/js/submenu.js:332
 #, python-format
 msgid "Subview "
-msgstr ""
+msgstr "Alt Görünüm"
 
 #. module: web_studio
 #. openerp-web
@@ -2376,7 +2396,7 @@ msgstr "Bir web uygulaması oluşturmak için en hızlı yol."
 #: code:addons/web_studio/controllers/main.py:1027
 #, python-format
 msgid "The field %s does not exist."
-msgstr ""
+msgstr "Alan %s mevcut değil."
 
 #. module: web_studio
 #: code:addons/web_studio/controllers/main.py:248
@@ -2395,7 +2415,7 @@ msgstr "Simge bir eke bağlanmamış"
 #: code:addons/web_studio/controllers/main.py:1019
 #, python-format
 msgid "The model %s does not exist."
-msgstr ""
+msgstr "Model %s mevcut değil."
 
 #. module: web_studio
 #. openerp-web
@@ -2417,7 +2437,7 @@ msgstr ""
 #: code:addons/web_studio/controllers/main.py:752
 #, python-format
 msgid "The related field of a button has to be a many2one to %s."
-msgstr ""
+msgstr "Bir butonun ilgili alanı many2one olmalı %s."
 
 #. module: web_studio
 #. openerp-web
@@ -2496,7 +2516,7 @@ msgstr ""
 #: code:addons/web_studio/static/src/js/tour.js:67
 #, python-format
 msgid "To <b>customize a field</b>, click on its <i>label</i>."
-msgstr ""
+msgstr "Bir<b>alanı özelleştirmek için</b>, onun etiketine <i>tıklayın</i>."
 
 #. module: web_studio
 #. openerp-web
@@ -2603,7 +2623,7 @@ msgstr ""
 #: code:addons/web_studio/static/src/js/tour.js:127
 #, python-format
 msgid "Want more fun? Let’s create more <b>views</b>."
-msgstr ""
+msgstr "Daha fazla eğlence? Hadi daha fazla görünüm <b>oluşturalım.</b>."
 
 #. module: web_studio
 #. openerp-web
@@ -2611,6 +2631,8 @@ msgstr ""
 #, python-format
 msgid "Want to customize the background? Let’s activate <b>Odoo Studio</b>."
 msgstr ""
+"Arka planı özelleştirmek mi istiyorsunuz? Hadi Odoo Studio'yu "
+"<b></b>etkinleştirelim."
 
 #. module: web_studio
 #. openerp-web
@@ -2639,7 +2661,7 @@ msgstr "Hoşgeldiniz"
 #: code:addons/web_studio/static/src/js/tour.js:131
 #, python-format
 msgid "What about a <b>Kanban view</b>?"
-msgstr ""
+msgstr "Peki ya <b>Kanban görünümü</b>?"
 
 #. module: web_studio
 #: model:ir.model.fields,help:web_studio.field_ir_model__abstract
@@ -2683,6 +2705,8 @@ msgid ""
 "Wow, nice! And I’m sure you can make it even better! Use this icon to open "
 "<b>Odoo Studio</b> and customize any screen."
 msgstr ""
+"Vov,güzel! Ve sen daha güzelini bile yapabilirsin! <b>Odoo Studio'yu</b> "
+"açmak için bu ikonu kullanın ve herhangi bir ekranınızı özelleştirin. "
 
 #. module: web_studio
 #. openerp-web
@@ -2704,7 +2728,7 @@ msgstr "Yıl"
 #: code:addons/web_studio/static/src/js/tour.js:58
 #, python-format
 msgid "You are just one click away from <b>generating your first app</b>."
-msgstr ""
+msgstr "İlk uygulamanızı oluşturmaya <b>bir tık uzaktasın</b>."
 
 #. module: web_studio
 #. openerp-web

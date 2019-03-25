@@ -77,7 +77,7 @@ msgstr "Svetainė"
 #. module: website_sale_coupon
 #: model_terms:ir.ui.view,arch_db:website_sale_coupon.sale_coupon_result
 msgid "You have successfully applied following promo code:"
-msgstr ""
+msgstr "Sėkmingai pritaikėte šį nuolaidos kodą:"
 
 #. module: website_sale_coupon
 #: model_terms:ir.ui.view,arch_db:website_sale_coupon.sale_coupon_result
@@ -87,4 +87,4 @@ msgstr ""
 #. module: website_sale_coupon
 #: model_terms:ir.ui.view,arch_db:website_sale_coupon.sale_coupon_result
 msgid "is available on a next order with this promo code:"
-msgstr ""
+msgstr "Galimas kitam užsakymui su šiuo nuolaidos kodu:"

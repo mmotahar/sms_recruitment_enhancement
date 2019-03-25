@@ -324,7 +324,7 @@ msgstr ""
 #. module: account_reports
 #: model:ir.model,name:account_reports.model_account_chart_template
 msgid "Account Chart Template"
-msgstr ""
+msgstr "Predložak kontnog plana"
 
 #. module: account_reports
 #: model:ir.model,name:account_reports.model_account_report
@@ -762,7 +762,7 @@ msgstr ""
 #. module: account_reports
 #: model:ir.model,name:account_reports.model_res_config_settings
 msgid "Config Settings"
-msgstr ""
+msgstr "Postavke"
 
 #. module: account_reports
 #: code:addons/account_reports/models/account_consolidated_journals.py:26

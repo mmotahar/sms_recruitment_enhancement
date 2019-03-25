@@ -11,9 +11,9 @@
             <th t-if="o.l10n_mx_edi_cfdi_uuid and external != None">Customs Unit</th>
         </xpath>
         <xpath expr="//table[@name='invoice_line_table']/tbody//tr[1]//td[last()]" position="after">
-            <td t-if="o.l10n_mx_edi_cfdi_uuid and external != None" class="text-right"><span t-field="l.product_id.l10n_mx_edi_tariff_fraction_id.code"/></td>
-            <td t-if="o.l10n_mx_edi_cfdi_uuid and external != None" class="text-right"><span t-field="l.l10n_mx_edi_qty_umt"/></td>
-            <td t-if="o.l10n_mx_edi_cfdi_uuid and external != None"><span t-field="l.product_id.l10n_mx_edi_umt_aduana_id.name"/></td>
+            <td t-if="o.l10n_mx_edi_cfdi_uuid and external != None" class="text-right"><span t-field="line.product_id.l10n_mx_edi_tariff_fraction_id.code"/></td>
+            <td t-if="o.l10n_mx_edi_cfdi_uuid and external != None" class="text-right"><span t-field="line.l10n_mx_edi_qty_umt"/></td>
+            <td t-if="o.l10n_mx_edi_cfdi_uuid and external != None"><span t-field="line.product_id.l10n_mx_edi_umt_aduana_id.name"/></td>
         </xpath>
         <xpath expr="//p[@t-if='o.comment']" position="before">
             <div class="row" id="external_trade">

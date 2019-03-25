@@ -25,47 +25,47 @@ msgstr ""
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_res_partner__signature_count
 msgid "# Signatures"
-msgstr ""
+msgstr "К-сть підписів"
 
 #. module: sign
 #: code:addons/sign/models/sign_request.py:249
 #, python-format
 msgid "%s : Signature request"
-msgstr ""
+msgstr "%s : Запит на підпис"
 
 #. module: sign
 #: code:addons/sign/controllers/main.py:200
 #, python-format
 msgid "%s couldn't sign the document due to an insufficient credit error."
-msgstr ""
+msgstr "%s не вдалося підписати документ через недостатню кредитну помилку."
 
 #. module: sign
 #: code:addons/sign/models/sign_request.py:290
 #: code:addons/sign/models/sign_request.py:311
 #, python-format
 msgid "%s has been signed"
-msgstr ""
+msgstr "%s був підписаний"
 
 #. module: sign
 #: code:addons/sign/controllers/main.py:207
 #, python-format
 msgid "%s validated the signature by SMS with the phone number %s."
-msgstr ""
+msgstr "%sперевірте підпис за допомогою SMS з номером телефону %s."
 
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.sign_template_mail_follower
 msgid ") has added you as a follower of the document"
-msgstr ""
+msgstr ") додав вас як підписника на документ"
 
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.sign_template_mail_request
 msgid ") has requested your signature on the document"
-msgstr ""
+msgstr ") зробив запит на ваш підпис на документі"
 
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign._doc_sign
 msgid "- <em>Waiting Signature</em>"
-msgstr ""
+msgstr "- <em>Очікування підпису</em>"
 
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign._doc_sign
@@ -79,11 +79,14 @@ msgid ""
 "there must be either no fields to fill or only one responsible for all the "
 "fields!</span>"
 msgstr ""
+"<span attrs=\"{'invisible': [('url', '!=', False)]}\">Щоб мати змогу спільно"
+" використовувати, необхідно заповнити поля або лише одне, яке відповідає за "
+"всі поля!</span>"
 
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.sign_request_view_form
 msgid "<span class=\"o_stat_text\"> Signed</span>"
-msgstr ""
+msgstr "<span class=\"o_stat_text\"> Підписано</span>"
 
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.res_partner_view_form
@@ -93,7 +96,7 @@ msgstr "<span class=\"o_stat_text\">Запит на підпис</span>"
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.sign_request_view_form
 msgid "<span class=\"o_stat_text\">View</span>"
-msgstr ""
+msgstr "<span class=\"o_stat_text\">Переглянути</span>"
 
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.sign_template_share_view_form
@@ -103,6 +106,10 @@ msgid ""
 "who clicks on the link. The link is private, only those that receive the "
 "link will be able to sign it.</span>"
 msgstr ""
+"<span class=\"text-muted\" attrs=\"{'invisible': [('url', '=', "
+"False)]}\">Надішліть це посилання, і Odoo створить новий документ для "
+"людини, яка натискає посилання. Посилання є приватним, тільки ті, хто "
+"отримає посилання, зможуть його підписати.</span>"
 
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.sign_item_type_view_form
@@ -116,6 +123,8 @@ msgid ""
 "<strong>Warning</strong> do not forward this email to other people!<br/>\n"
 "            They will be able to access this document and sign it as yourself."
 msgstr ""
+"<strong>Увага</strong> не пересилайте це повідомлення іншим людям!<br/>\n"
+"            Вони зможуть отримати доступ до цього документа та підписати його самостійно."
 
 #. module: sign
 #. openerp-web
@@ -125,6 +134,8 @@ msgid ""
 "A SMS will be sent to the following phone number. Please update it if it's "
 "not relevant."
 msgstr ""
+"SMS-повідомлення буде надіслано на цей номер телефону. Оновіть його, якщо "
+"він не актуальний."
 
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_sign_request__message_needaction
@@ -328,7 +339,7 @@ msgstr "Контакт"
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_sign_send_request__follower_ids
 msgid "Copy to"
-msgstr ""
+msgstr "Копіювати в"
 
 #. module: sign
 #. openerp-web
@@ -410,7 +421,7 @@ msgstr "Деталі"
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_res_users__sign_signature
 msgid "Digital Signature"
-msgstr ""
+msgstr "Цифровий підпис"
 
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.res_users_view_form
@@ -420,7 +431,7 @@ msgstr "Цифрові підписи"
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_res_users__sign_initials
 msgid "Digitial Initials"
-msgstr ""
+msgstr "Цифрові ініціали"
 
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.sign_request_send_copy_view_form
@@ -534,7 +545,7 @@ msgstr "Редагувати"
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.sign_template_view_kanban
 msgid "Edit Fields"
-msgstr ""
+msgstr "Редагувати поля"
 
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.sign_template_view_form
@@ -574,7 +585,7 @@ msgstr "Помилка"
 #: model:ir.model.fields,field_description:sign.field_sign_send_request__extension
 #: model:ir.model.fields,field_description:sign.field_sign_template__extension
 msgid "Extension"
-msgstr ""
+msgstr "Розширення"
 
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_sign_request__favorited_ids
@@ -599,7 +610,7 @@ msgstr "Типи поля"
 #. module: sign
 #: model:ir.model,name:sign.model_sign_item
 msgid "Fields to be sign on Document"
-msgstr ""
+msgstr "Поля, які мають бути підписані на документі"
 
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_sign_template__datas
@@ -707,7 +718,7 @@ msgstr "Якщо позначено, деякі повідомлення маю�
 #: model_terms:ir.ui.view,arch_db:sign.sign_request_view_kanban
 #: model_terms:ir.ui.view,arch_db:sign.sign_template_view_kanban
 msgid "In favorites, remove it"
-msgstr ""
+msgstr "У закладках, вилучити"
 
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.sign_item_view_form
@@ -732,17 +743,17 @@ msgstr "Стежить"
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_sign_template_share__is_one_responsible
 msgid "Is One Responsible"
-msgstr ""
+msgstr "Один відповідальний"
 
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_sign_send_request__is_user_signer
 msgid "Is User Signer"
-msgstr ""
+msgstr "Є підписом користувача"
 
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_sign_request__last_action_date
 msgid "Last Action Date"
-msgstr ""
+msgstr "Дата останньої дії"
 
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_sign_item____last_update
@@ -829,7 +840,7 @@ msgstr "Довгота"
 #: code:addons/sign/static/src/xml/sign_common.xml:105
 #, python-format
 msgid "Made with Odoo Sign"
-msgstr ""
+msgstr "Зроблено з Підписом Odoo"
 
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_sign_request__message_main_attachment_id
@@ -892,7 +903,7 @@ msgstr "Кілька запитів на підпис"
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.sign_request_view_search
 msgid "My Documents"
-msgstr ""
+msgstr "Мої документи"
 
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.sign_request_view_search
@@ -903,7 +914,7 @@ msgstr "Мої закладки"
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.sign_template_view_search
 msgid "My Templates"
-msgstr ""
+msgstr "Мої шаблони"
 
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_sign_item_role__name
@@ -916,12 +927,12 @@ msgstr "Назва"
 #: model_terms:ir.ui.view,arch_db:sign.sign_send_request_view_form
 #: model_terms:ir.ui.view,arch_db:sign.sign_template_view_form
 msgid "Name for the file"
-msgstr ""
+msgstr "Назва для файлу"
 
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.sign_send_request_view_form
 msgid "Name or email..."
-msgstr ""
+msgstr "Ім'я або email..."
 
 #. module: sign
 #. openerp-web
@@ -962,18 +973,18 @@ msgstr "Тип наступної дії"
 #. module: sign
 #: model_terms:ir.actions.act_window,help:sign.sign_request_action
 msgid "No documents to sign"
-msgstr ""
+msgstr "Немає документів на підпис"
 
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.sign_request_view_kanban
 #: model_terms:ir.ui.view,arch_db:sign.sign_template_view_kanban
 msgid "Not in favorites, add it"
-msgstr ""
+msgstr "Не в закладках, додати"
 
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.sign_template_view_kanban
 msgid "Not in favorites, set it"
-msgstr ""
+msgstr "Не у закладках, встановити"
 
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_sign_request__message_needaction_counter
@@ -1020,12 +1031,12 @@ msgstr "Відкрити"
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_sign_template__redirect_url
 msgid "Optional Link"
-msgstr ""
+msgstr "Необов'язкове посилання"
 
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.sign_send_request_view_form
 msgid "Optional Message..."
-msgstr ""
+msgstr "Необов'язкове повідомлення..."
 
 #. module: sign
 #: model:ir.model.fields,help:sign.field_sign_template__redirect_url
@@ -1033,11 +1044,13 @@ msgid ""
 "Optional link for redirection after signature instead of "
 "https://www.odoo.com/page/sign"
 msgstr ""
+"Необов'язкове посилання для перенаправлення після підпису замість "
+"https://www.odoo.com/page/sign"
 
 #. module: sign
 #: model_terms:ir.actions.act_window,help:sign.sign_template_action
 msgid "Or,"
-msgstr ""
+msgstr "Або,"
 
 #. module: sign
 #: selection:sign.request,activity_state:0
@@ -1065,7 +1078,7 @@ msgstr "Телефон"
 #: code:addons/sign/static/src/xml/sign_common.xml:87
 #, python-format
 msgid "Phone number..."
-msgstr ""
+msgstr "Телефонний номер..."
 
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_sign_item_type__placeholder
@@ -1087,7 +1100,7 @@ msgstr "Будь ласка, перегляньте та дійте на цьо�
 #: code:addons/sign/static/src/xml/sign_common.xml:92
 #, python-format
 msgid "Please enter the code received through SMS to complete your signature"
-msgstr ""
+msgstr "Введіть код, отриманий через SMS, щоб завершити підпис"
 
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_sign_item__posX
@@ -1139,6 +1152,8 @@ msgid ""
 "Request a signature to upload a template (or use an existing one)\n"
 "                to automate your signature process."
 msgstr ""
+"Запит на підпис для завантаження шаблону (або використання існуючого)\n"
+" для автоматизації процесу підпису."
 
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_sign_request__nb_total
@@ -1156,14 +1171,14 @@ msgstr "Обов'язкове"
 #: model_terms:ir.ui.view,arch_db:sign.sign_request_view_form
 #, python-format
 msgid "Resend"
-msgstr ""
+msgstr "Переслати"
 
 #. module: sign
 #. openerp-web
 #: code:addons/sign/static/src/js/sign_backend.js:998
 #, python-format
 msgid "Resend the invitation"
-msgstr "Повторно надіслати запрошення"
+msgstr "Переслати запрошення"
 
 #. module: sign
 #. openerp-web
@@ -1184,7 +1199,7 @@ msgstr "Відповідальний"
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_sign_template__responsible_count
 msgid "Responsible Count"
-msgstr ""
+msgstr "Підрахунок відповідальних"
 
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_sign_request__activity_user_id
@@ -1206,29 +1221,29 @@ msgstr "Роль"
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.sign_item_role_view_tree
 msgid "Role Name"
-msgstr ""
+msgstr "Назва ролі"
 
 #. module: sign
 #: model:ir.ui.menu,name:sign.sign_item_role_menu
 msgid "Roles"
-msgstr ""
+msgstr "Ролі"
 
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_sign_item_role__sms_authentification
 msgid "SMS Authentification"
-msgstr ""
+msgstr "Аутентифікація SMS "
 
 #. module: sign
 #. openerp-web
 #: code:addons/sign/static/src/xml/sign_common.xml:94
 #, python-format
 msgid "SMS Code"
-msgstr ""
+msgstr "Код SMS"
 
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_sign_request_item__sms_token
 msgid "SMS Token"
-msgstr ""
+msgstr "Токен SMS"
 
 #. module: sign
 #. openerp-web
@@ -1284,19 +1299,19 @@ msgstr "Надіслати запит на підпис"
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_sign_send_request__signer_id
 msgid "Send To"
-msgstr ""
+msgstr "Надіслати до"
 
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.sign_request_view_form
 msgid "Send a Copy"
-msgstr ""
+msgstr "Надіслати копію"
 
 #. module: sign
 #. openerp-web
 #: code:addons/sign/static/src/js/sign_backend.js:73
 #, python-format
 msgid "Send a Request"
-msgstr ""
+msgstr "Надіслати запит"
 
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_sign_request_send_copy__partner_ids
@@ -1346,7 +1361,7 @@ msgstr "Підписати"
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.sign_send_request_view_form
 msgid "Sign Directly"
-msgstr ""
+msgstr "Підписати безпосередньо"
 
 #. module: sign
 #. openerp-web
@@ -1359,37 +1374,37 @@ msgstr "Підписати документ"
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_sign_send_request_signer__sign_send_request_id
 msgid "Sign Send Request"
-msgstr ""
+msgstr "Підписати надісланий запит"
 
 #. module: sign
 #: model:ir.model,name:sign.model_sign_template_share
 msgid "Sign Share Template"
-msgstr ""
+msgstr "Підписати шаблон спільного доступу"
 
 #. module: sign
 #: model:ir.model,name:sign.model_sign_template_tag
 msgid "Sign Template Tag"
-msgstr ""
+msgstr "Підписати тег шаблону"
 
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.sign_template_mail_request
 msgid "Sign document now"
-msgstr ""
+msgstr "Підписати документ зараз"
 
 #. module: sign
 #: model:ir.model,name:sign.model_sign_send_request
 msgid "Sign send request"
-msgstr ""
+msgstr "Підписати надісланий запит"
 
 #. module: sign
 #: model:ir.model,name:sign.model_sign_request_send_copy
 msgid "Sign send request copy"
-msgstr ""
+msgstr "Підписати надіслану копію запиту"
 
 #. module: sign
 #: model:ir.model,name:sign.model_sign_send_request_signer
 msgid "Sign send request signer"
-msgstr ""
+msgstr "Підписати запит відправника запиту"
 
 #. module: sign
 #. openerp-web
@@ -1416,7 +1431,7 @@ msgstr "Сторона підпису"
 #. module: sign
 #: model:ir.actions.act_window,name:sign.sign_item_role_action
 msgid "Signature Item Role"
-msgstr ""
+msgstr "Роль елемента підпису"
 
 #. module: sign
 #: model:ir.actions.act_window,name:sign.sign_item_type_action
@@ -1427,7 +1442,7 @@ msgstr "Тип підпису"
 #. module: sign
 #: model:ir.model,name:sign.model_sign_item_value
 msgid "Signature Item Value"
-msgstr ""
+msgstr "Значення елемента підпису"
 
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_sign_template__sign_item_ids
@@ -1448,17 +1463,17 @@ msgstr "Запит на підпис"
 #: code:addons/sign/wizard/sign_send_request.py:17
 #, python-format
 msgid "Signature Request - %s"
-msgstr ""
+msgstr "Запит на підпис - %s"
 
 #. module: sign
 #: model:ir.model,name:sign.model_sign_request_item
 msgid "Signature Request Item"
-msgstr ""
+msgstr "Елемент запиту на підпис"
 
 #. module: sign
 #: model:ir.actions.act_window,name:sign.sign_request_item_action
 msgid "Signature Request Items"
-msgstr ""
+msgstr "Елемент запитів на підпис"
 
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_sign_template__sign_request_ids
@@ -1468,7 +1483,7 @@ msgstr "Запити на підпис"
 #. module: sign
 #: model:ir.ui.menu,name:sign.sign_request_item_menu
 msgid "Signature Requests Items"
-msgstr ""
+msgstr "Елементи запитів на підпис"
 
 #. module: sign
 #: model:ir.model,name:sign.model_sign_template
@@ -1480,20 +1495,20 @@ msgstr "Шаблон підпису"
 #: code:addons/sign/static/src/xml/sign_common.xml:21
 #, python-format
 msgid "Signature configuration"
-msgstr ""
+msgstr "Налаштування підпису"
 
 #. module: sign
 #: code:addons/sign/wizard/sign_send_request.py:68
 #, python-format
 msgid "Signature(s)"
-msgstr ""
+msgstr "Підпис(и)"
 
 #. module: sign
 #: model:ir.actions.act_window,name:sign.sign_request_action
 #: model:ir.ui.menu,name:sign.sign_request_menu
 #: model_terms:ir.ui.view,arch_db:sign.sign_template_view_form
 msgid "Signatures"
-msgstr ""
+msgstr "Підписи"
 
 #. module: sign
 #: selection:sign.request,state:0
@@ -1515,7 +1530,7 @@ msgstr "Підписаний на"
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.sign_request_view_search
 msgid "Signer Email"
-msgstr ""
+msgstr "Email підписувача"
 
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_sign_request__request_item_ids
@@ -1526,7 +1541,7 @@ msgstr "Підписувачі"
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_sign_send_request__signers_count
 msgid "Signers Count"
-msgstr ""
+msgstr "Підрахунок підписувачів"
 
 #. module: sign
 #. openerp-web
@@ -1609,7 +1624,7 @@ msgstr "Шаблон "
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.sign_request_view_search
 msgid "Template or Tag"
-msgstr ""
+msgstr "Шаблон або тег"
 
 #. module: sign
 #: model:ir.ui.menu,name:sign.sign_template_menu
@@ -1632,7 +1647,7 @@ msgstr "Дякуємо!"
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.sign_template_mail_completed
 msgid "The document"
-msgstr ""
+msgstr "Документ"
 
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.deleted_sign_request
@@ -1683,7 +1698,7 @@ msgstr "Тип"
 #: code:addons/sign/static/src/js/sign_backend.js:79
 #, python-format
 msgid "UPLOAD A PDF TEMPLATE"
-msgstr ""
+msgstr "ЗАВАНТАЖИТИ ШАБЛОН PDF"
 
 #. module: sign
 #. openerp-web
@@ -1692,6 +1707,7 @@ msgstr ""
 #, python-format
 msgid "Unable to send the SMS, please contact the sender of the document."
 msgstr ""
+"Неможливо надіслати SMS, будь ласка, зверніться до відправника документа."
 
 #. module: sign
 #: model:ir.model.fields,field_description:sign.field_sign_request__message_unread
@@ -1707,14 +1723,14 @@ msgstr "Кількість непрочитаних повідомлень"
 #: model_terms:ir.actions.act_window,help:sign.sign_template_action
 #: model_terms:ir.actions.act_window,help:sign.sign_template_with_archived_action
 msgid "Upload a PDF"
-msgstr ""
+msgstr "Завантажити PDF"
 
 #. module: sign
 #. openerp-web
 #: code:addons/sign/static/src/xml/sign_backend.xml:44
 #, python-format
 msgid "Used by a signature request."
-msgstr ""
+msgstr "Використовується запитом на підпис."
 
 #. module: sign
 #: model:ir.model,name:sign.model_res_users
@@ -1750,31 +1766,31 @@ msgstr "Значення"
 #: code:addons/sign/static/src/js/sign_common.js:846
 #, python-format
 msgid "Verify"
-msgstr ""
+msgstr "Перевірити"
 
 #. module: sign
 #. openerp-web
 #: code:addons/sign/static/src/xml/sign_common.xml:111
 #, python-format
 msgid "View External Document"
-msgstr ""
+msgstr "Переглянути зовнішній документ"
 
 #. module: sign
 #. openerp-web
 #: code:addons/sign/static/src/xml/sign_common.xml:116
 #, python-format
 msgid "View Signed document"
-msgstr ""
+msgstr "Переглянути підписаний документ"
 
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.sign_template_mail_completed
 msgid "View document now"
-msgstr ""
+msgstr "Переглянути документ зараз"
 
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.sign_template_mail_follower
 msgid "View signature request"
-msgstr ""
+msgstr "Переглянути запит на підпис"
 
 #. module: sign
 #: selection:sign.request.item,state:0
@@ -1820,7 +1836,7 @@ msgstr "Напишіть електронного листа або знайді
 #: code:addons/sign/static/src/xml/sign_common.xml:100
 #, python-format
 msgid "You can close the window and come back later."
-msgstr ""
+msgstr "Ви можете закрити вікно і повернутися пізніше."
 
 #. module: sign
 #: code:addons/sign/models/sign_template.py:65
@@ -1829,6 +1845,8 @@ msgid ""
 "You can't delete a template for which signature requests exist but you can "
 "archive it instead."
 msgstr ""
+"Ви не можете видалити шаблон, для якого існують запити на підпис, але ви "
+"можете архівувати його."
 
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.doc_sign
@@ -1839,7 +1857,7 @@ msgstr "Ви заповнили документ"
 #: model_terms:ir.ui.view,arch_db:sign.sign_template_mail_follower
 msgid ""
 "You will be notified once the document has been signed by everyone involved."
-msgstr ""
+msgstr "Ви будете повідомлені про підписання документу всіма учасниками."
 
 #. module: sign
 #: code:addons/sign/models/sign_template.py:78
@@ -1848,12 +1866,14 @@ msgid ""
 "Your PDF file shouldn't be encrypted with a password in order to be used as "
 "a signature template"
 msgstr ""
+"Ваш PDF-файл не повинен бути зашифрований паролем, щоб використовувати його "
+"як шаблон підпису"
 
 #. module: sign
 #: code:addons/sign/models/sign_request.py:557
 #, python-format
 msgid "Your confirmation code is %s"
-msgstr ""
+msgstr "Ваш код підтвердження %s"
 
 #. module: sign
 #. openerp-web
@@ -1893,7 +1913,7 @@ msgstr "заповнити"
 #. module: sign
 #: model_terms:ir.ui.view,arch_db:sign.sign_template_mail_completed
 msgid "has been completed and signed by everyone."
-msgstr ""
+msgstr "було завершено та підписано всіма користувачами."
 
 #. module: sign
 #: model_terms:ir.actions.act_window,help:sign.sign_template_action

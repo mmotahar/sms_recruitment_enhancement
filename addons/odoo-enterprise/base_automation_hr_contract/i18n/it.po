@@ -29,16 +29,16 @@ msgid ""
 "field as True to allow users to run this action. If it is set to False the "
 "action cannot be run through the website."
 msgstr ""
-"Un'azione del server di codice può essere eseguita dal sito Web con un "
-"controller. L'indirizzo è <base>/website/action/<website_path>. Imposta il "
-"valore di questo campo su Vero per consentire agli utenti di eseguire "
-"un'azione. Se questo campo è impostato su Falso, l'azione non può essere "
-"eseguita tramite il sito Web"
+"Un'azione server di codice può essere eseguita dal sito web con un "
+"controller. L'indirizzo è <base>/website/action/<website_path>. Impostare il"
+" valore di questo campo a Vero per consentire agli utenti di eseguire "
+"un'azione. Se questo campo è impostato a Falso, l'azione non può essere "
+"eseguita tramite il sito web."
 
 #. module: base_automation_hr_contract
 #: model:ir.model,name:base_automation_hr_contract.model_base_automation
 msgid "Automated Action"
-msgstr "Azione Automatica"
+msgstr "Azione automatica"
 
 #. module: base_automation_hr_contract
 #: model:ir.model.fields,field_description:base_automation_hr_contract.field_base_automation__website_published

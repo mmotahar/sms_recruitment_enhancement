@@ -6,6 +6,7 @@ from odoo import api, models, fields, _
 from odoo.exceptions import UserError, ValidationError
 
 from odoo.tools import float_round, float_repr, DEFAULT_SERVER_DATE_FORMAT
+from odoo.tools.misc import remove_accents
 
 import base64
 import random
@@ -68,7 +69,7 @@ class AccountBatchPayment(models.Model):
             communication = communication[1:]
         if communication.endswith('/'):
             communication = communication[:-1]
-        communication = re.sub('[^-A-Za-z0-9/?:().,\'+ ]', '', communication)
+        communication = re.sub('[^-A-Za-z0-9/?:().,\'+ ]', '', remove_accents(communication))
         return communication
 
     def _get_genericity_info(self):
@@ -222,7 +223,7 @@ class AccountBatchPayment(models.Model):
             DbtrAgt = etree.SubElement(PmtInf, "DbtrAgt")
             FinInstnId = etree.SubElement(DbtrAgt, "FinInstnId")
             BIC = etree.SubElement(FinInstnId, "BIC")
-            BIC.text = self.journal_id.bank_account_id.bank_bic
+            BIC.text = self.journal_id.bank_account_id.bank_bic.replace(' ', '')
 
             # One CdtTrfTxInf per transaction
             for payment in payments_list:
@@ -342,7 +343,7 @@ class AccountBatchPayment(models.Model):
         val_BIC = bank_account.bank_bic
         if val_BIC:
             BIC = etree.SubElement(FinInstnId, "BIC")
-            BIC.text = val_BIC
+            BIC.text = val_BIC.replace(' ', '')
         elif not self.sct_generic:
             raise UserError(_("There is no Bank Identifier Code recorded for bank account '%s'") % bank_account.acc_number)
 

@@ -58,7 +58,7 @@ msgstr "Отримати кредит"
 #. module: account_invoice_extract
 #: model:ir.model.fields,field_description:account_invoice_extract.field_account_invoice__extract_can_show_resend_button
 msgid "Can show the ocr resend button"
-msgstr "Може показувати повторно надіслану кнопку ocr"
+msgstr "Може показати пересилання кнопки ocr"
 
 #. module: account_invoice_extract
 #: model:ir.model.fields,field_description:account_invoice_extract.field_account_invoice__extract_can_show_send_button
@@ -189,7 +189,7 @@ msgstr "Обробляйте рахунки тільки за запитом"
 #. module: account_invoice_extract
 #: model_terms:ir.ui.view,arch_db:account_invoice_extract.invoice_supplier_form_inherit_ocr
 msgid "Resend File through OCR"
-msgstr "Надіслати повторно файл через OCR"
+msgstr "Переслати файл через OCR"
 
 #. module: account_invoice_extract
 #: model_terms:ir.ui.view,arch_db:account_invoice_extract.invoice_supplier_form_inherit_ocr

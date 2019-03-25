@@ -51,7 +51,7 @@
             <field name="name">[03] Retenciones</field>
             <field name="code">aeat_mod_115_03</field>
             <field name="parent_id" ref='mod_115_title_1'/>
-            <field name="domain" eval="[('tax_ids.tag_ids', '=', ref('l10n_es.mod_115_02_03'))]"/>
+            <field name="domain" eval="[('tax_line_id.tag_ids', '=', ref('l10n_es.mod_115_02_03'))]"/>
             <field name="formulas">balance = -sum.balance</field>
             <field name="groupby">account_id</field>
             <field name="sequence" eval="4"/>

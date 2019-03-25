@@ -5,6 +5,7 @@
 # Translators:
 # Bagavathikumar Ramakrishnan <bagavathikumar@gmail.com>, 2019
 # Abul Hassan M I <miabulhassan@gmail.com>, 2019
+# Alagappan Karthikeyan <me@karthik.sg>, 2019
 # 
 msgid ""
 msgstr ""
@@ -12,7 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-21 14:06+0000\n"
 "PO-Revision-Date: 2018-08-24 11:47+0000\n"
-"Last-Translator: Abul Hassan M I <miabulhassan@gmail.com>, 2019\n"
+"Last-Translator: Alagappan Karthikeyan <me@karthik.sg>, 2019\n"
 "Language-Team: Tamil (https://www.transifex.com/odoo/teams/41243/ta/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -44,7 +45,7 @@ msgstr ""
 #. module: project_forecast
 #: model:ir.model.fields,field_description:project_forecast.field_project_forecast__active
 msgid "Active"
-msgstr ""
+msgstr "செயலில்"
 
 #. module: project_forecast
 #: model:ir.model.fields,field_description:project_forecast.field_project_forecast__resource_time
@@ -70,7 +71,7 @@ msgstr ""
 #. module: project_forecast
 #: model_terms:ir.ui.view,arch_db:project_forecast.project_forecast_view_search
 msgid "Archived"
-msgstr ""
+msgstr "காப்பகப்படுத்தியவை"
 
 #. module: project_forecast
 #: model_terms:ir.ui.view,arch_db:project_forecast.project_forecast_view_form
@@ -90,7 +91,7 @@ msgstr ""
 #. module: project_forecast
 #: selection:res.company,forecast_span:0
 msgid "By day"
-msgstr ""
+msgstr "நாள்"
 
 #. module: project_forecast
 #: selection:res.company,forecast_span:0
@@ -120,7 +121,7 @@ msgstr "நிறுவனம்"
 #. module: project_forecast
 #: model:ir.model,name:project_forecast.model_res_config_settings
 msgid "Config Settings"
-msgstr ""
+msgstr "கட்டமைப்பு அமைப்புகள்"
 
 #. module: project_forecast
 #: model:ir.model.fields,field_description:project_forecast.field_project_forecast__create_uid
@@ -135,7 +136,7 @@ msgstr "உருவாக்கப்பட்ட தேதி"
 #. module: project_forecast
 #: selection:res.company,forecast_uom:0
 msgid "Days"
-msgstr ""
+msgstr "நாட்களில்"
 
 #. module: project_forecast
 #: model:ir.model.fields,field_description:project_forecast.field_project_forecast__display_name
@@ -146,7 +147,7 @@ msgstr "காட்சி பெயர்"
 #: model:ir.model.fields,field_description:project_forecast.field_project_forecast__employee_id
 #: model_terms:ir.ui.view,arch_db:project_forecast.project_forecast_view_search
 msgid "Employee"
-msgstr ""
+msgstr "பணியாளர்"
 
 #. module: project_forecast
 #: model:ir.model.fields,help:project_forecast.field_res_company__forecast_span
@@ -270,12 +271,12 @@ msgstr ""
 #. module: project_forecast
 #: model_terms:ir.ui.view,arch_db:project_forecast.project_forecast_view_search
 msgid "Group By"
-msgstr ""
+msgstr "மூலம் குழு"
 
 #. module: project_forecast
 #: selection:res.company,forecast_uom:0
 msgid "Hours"
-msgstr ""
+msgstr "மணி"
 
 #. module: project_forecast
 #: model:ir.model.fields,field_description:project_forecast.field_project_forecast__id
@@ -307,7 +308,7 @@ msgstr "மாதம்"
 #. module: project_forecast
 #: model_terms:ir.ui.view,arch_db:project_forecast.project_forecast_view_search
 msgid "My Activities"
-msgstr ""
+msgstr "எனது செயல்பாடுகள்"
 
 #. module: project_forecast
 #: model_terms:ir.ui.view,arch_db:project_forecast.project_forecast_view_search

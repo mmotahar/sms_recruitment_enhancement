@@ -22,7 +22,7 @@ msgstr ""
 #. module: ocn_client
 #: model:ir.model,name:ocn_client.model_res_config_settings
 msgid "Config Settings"
-msgstr ""
+msgstr "Postavke"
 
 #. module: ocn_client
 #: model:ir.model,name:ocn_client.model_res_partner

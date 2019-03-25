@@ -10,10 +10,10 @@
 # Osoul <baruni@osoul.ly>, 2018
 # Mohammed Albasha <m.albasha.ma@gmail.com>, 2018
 # Ghaith Gammar <g.gammar@saharaifs.net>, 2018
-# Mustafa Rawi <mustafa@cubexco.com>, 2018
 # Osama Ahmaro <osamaahmaro@gmail.com>, 2018
 # Ali Alrehawi <alrehawi@hotmail.com>, 2018
 # Shaima Safar <shaima.safar@open-inside.com>, 2018
+# Mustafa Rawi <mustafa@cubexco.com>, 2019
 # 
 msgid ""
 msgstr ""
@@ -21,7 +21,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-19 09:12+0000\n"
 "PO-Revision-Date: 2018-08-24 11:36+0000\n"
-"Last-Translator: Shaima Safar <shaima.safar@open-inside.com>, 2018\n"
+"Last-Translator: Mustafa Rawi <mustafa@cubexco.com>, 2019\n"
 "Language-Team: Arabic (https://www.transifex.com/odoo/teams/41243/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -35,37 +35,39 @@ msgid ""
 "<span class=\"fa fa-filter\"/>\n"
 "                Types:"
 msgstr ""
+"<span class=\"fa fa-filter\"/>\n"
+"                الأنواع:"
 
 #. module: account_intrastat
 #: model_terms:ir.ui.view,arch_db:account_intrastat.search_template_intrastat_extended
 msgid "<span class=\"fa fa-filter\"/> Options:"
-msgstr ""
+msgstr "<span class=\"fa fa-filter\"/> الخيارات:"
 
 #. module: account_intrastat
 #: code:addons/account_intrastat/models/account_intrastat_report.py:16
 #, python-format
 msgid "Arrival"
-msgstr ""
+msgstr "الوصول"
 
 #. module: account_intrastat
 #: model_terms:ir.ui.view,arch_db:account_intrastat.invoice_form_inherit_account_intrastat
 msgid "Arrival country"
-msgstr ""
+msgstr "بلد الوصول"
 
 #. module: account_intrastat
 #: model_terms:ir.ui.view,arch_db:account_intrastat.view_intrastat_code_search
 msgid "By country"
-msgstr ""
+msgstr "حسب الدولة"
 
 #. module: account_intrastat
 #: model_terms:ir.ui.view,arch_db:account_intrastat.view_intrastat_code_search
 msgid "By type"
-msgstr ""
+msgstr "حسب النوع"
 
 #. module: account_intrastat
 #: model_terms:ir.ui.view,arch_db:account_intrastat.view_intrastat_code_search
 msgid "Commodity"
-msgstr ""
+msgstr "سلعة"
 
 #. module: account_intrastat
 #: code:addons/account_intrastat/models/account_intrastat_report.py:33
@@ -73,7 +75,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_intrastat.field_product_template__intrastat_id
 #, python-format
 msgid "Commodity Code"
-msgstr ""
+msgstr "كود السلعة"
 
 #. module: account_intrastat
 #: model:ir.model,name:account_intrastat.model_res_company
@@ -83,7 +85,7 @@ msgstr "المؤسسات"
 #. module: account_intrastat
 #: model:ir.model.fields,field_description:account_intrastat.field_res_config_settings__company_country_id
 msgid "Company country"
-msgstr ""
+msgstr "بلد الشركة"
 
 #. module: account_intrastat
 #: model:ir.model,name:account_intrastat.model_res_config_settings
@@ -111,30 +113,30 @@ msgstr "التاريخ"
 #. module: account_intrastat
 #: model:ir.model.fields,field_description:account_intrastat.field_res_company__intrastat_transport_mode_id
 msgid "Default Transport Mode"
-msgstr ""
+msgstr "وسيلة النقل الافتراضية"
 
 #. module: account_intrastat
 #: model:ir.model.fields,field_description:account_intrastat.field_res_company__incoterm_id
 #: model:ir.model.fields,field_description:account_intrastat.field_res_config_settings__incoterm_id
 msgid "Default incoterm for Intrastat"
-msgstr ""
+msgstr "الشروط التجارية الافتراضية بنظام Intrastat"
 
 #. module: account_intrastat
 #: code:addons/account_intrastat/models/account_intrastat_report.py:17
 #, python-format
 msgid "Dispatch"
-msgstr ""
+msgstr "إرسال"
 
 #. module: account_intrastat
 #: model_terms:ir.ui.view,arch_db:account_intrastat.invoice_supplier_form_inherit_account_intrastat
 msgid "Dispatch country"
-msgstr ""
+msgstr "الدولة المُرسل منها"
 
 #. module: account_intrastat
 #: model:ir.model.fields,field_description:account_intrastat.field_account_intrastat_report__display_name
 #: model:ir.model.fields,field_description:account_intrastat.field_account_sales_report__display_name
 msgid "Display Name"
-msgstr "اسم العرض"
+msgstr "الاسم المعروض"
 
 #. module: account_intrastat
 #: code:addons/account_intrastat/models/account_sales_report.py:124
@@ -143,7 +145,7 @@ msgstr "اسم العرض"
 #: model:ir.ui.menu,name:account_intrastat.menu_action_account_report_sales
 #, python-format
 msgid "EC Sales List"
-msgstr ""
+msgstr "قائمة مبيعات EC"
 
 #. module: account_intrastat
 #: model_terms:ir.ui.view,arch_db:account_intrastat.search_template_intrastat_extended
@@ -153,7 +155,7 @@ msgstr "مدد"
 #. module: account_intrastat
 #: model_terms:ir.ui.view,arch_db:account_intrastat.search_template_intrastat_extended
 msgid "Extended Mode"
-msgstr ""
+msgstr "الوضع الممتد"
 
 #. module: account_intrastat
 #: model:ir.model.fields,field_description:account_intrastat.field_account_intrastat_report__id
@@ -165,7 +167,7 @@ msgstr "المعرف"
 #: code:addons/account_intrastat/models/account_intrastat_report.py:39
 #, python-format
 msgid "Incoterm Code"
-msgstr ""
+msgstr "كود الشروط التجارية"
 
 #. module: account_intrastat
 #: model:ir.model.fields,help:account_intrastat.field_res_company__incoterm_id
@@ -196,7 +198,7 @@ msgstr "رمز نظام Intrastat"
 #. module: account_intrastat
 #: model:ir.model.fields,field_description:account_intrastat.field_account_invoice__intrastat_country_id
 msgid "Intrastat Country"
-msgstr ""
+msgstr "دولة الشروط التجارية"
 
 #. module: account_intrastat
 #: code:addons/account_intrastat/models/account_intrastat_report.py:234
@@ -205,12 +207,12 @@ msgstr ""
 #: model:ir.ui.menu,name:account_intrastat.menu_action_account_report_intrastat
 #, python-format
 msgid "Intrastat Report"
-msgstr ""
+msgstr "تقرير الشروط التجارية"
 
 #. module: account_intrastat
 #: model:ir.model.fields,field_description:account_intrastat.field_account_invoice__intrastat_transport_mode_id
 msgid "Intrastat Transport Mode"
-msgstr ""
+msgstr "وسيلة نقل الشروط التجارية"
 
 #. module: account_intrastat
 #: model_terms:ir.ui.view,arch_db:account_intrastat.view_report_intrastat_code_tree
@@ -221,6 +223,8 @@ msgstr "كود نظام Intrastat"
 #: model:ir.model.fields,help:account_intrastat.field_account_invoice__intrastat_country_id
 msgid "Intrastat country, arrival for sales, dispatch for purchases"
 msgstr ""
+"الدولة المُطبق بها الشروط التجارية، بلد الوصول في حالة المبيعات، أو المُرسل "
+"منها في حالة المشتريات"
 
 #. module: account_intrastat
 #: model:ir.model.fields,field_description:account_intrastat.field_res_country__intrastat
@@ -230,7 +234,7 @@ msgstr "عضو نظام Intrastat"
 #. module: account_intrastat
 #: model:ir.model.fields,field_description:account_intrastat.field_res_company__intrastat_region_id
 msgid "Intrastat region"
-msgstr ""
+msgstr "منطقة الشروط التجارية"
 
 #. module: account_intrastat
 #: model:ir.model,name:account_intrastat.model_account_invoice
@@ -273,7 +277,7 @@ msgstr "منطقة"
 #: code:addons/account_intrastat/models/account_intrastat_report.py:32
 #, python-format
 msgid "Region Code"
-msgstr ""
+msgstr "كود المنطقة"
 
 #. module: account_intrastat
 #: model_terms:ir.ui.view,arch_db:account_intrastat.search_template_intrastat_extended
@@ -284,7 +288,7 @@ msgstr "قياسي"
 #: code:addons/account_intrastat/models/account_intrastat_report.py:29
 #, python-format
 msgid "System"
-msgstr ""
+msgstr "نظام"
 
 #. module: account_intrastat
 #: code:addons/account_intrastat/models/account_intrastat_report.py:224
@@ -302,23 +306,23 @@ msgstr "المعاملة"
 #: code:addons/account_intrastat/models/account_intrastat_report.py:31
 #, python-format
 msgid "Transaction Code"
-msgstr ""
+msgstr "كود المعاملة"
 
 #. module: account_intrastat
 #: model_terms:ir.ui.view,arch_db:account_intrastat.view_intrastat_code_search
 msgid "Transport"
-msgstr ""
+msgstr "نقل"
 
 #. module: account_intrastat
 #: code:addons/account_intrastat/models/account_intrastat_report.py:38
 #, python-format
 msgid "Transport Code"
-msgstr ""
+msgstr "كود النقل"
 
 #. module: account_intrastat
 #: sql_constraint:account.intrastat.code:0
 msgid "Triplet code/type/country_id must be unique."
-msgstr ""
+msgstr "يجب أن تكون معرفات الكود والنوع والدولة قيم فريدة."
 
 #. module: account_intrastat
 #: code:addons/account_intrastat/models/account_intrastat_report.py:34

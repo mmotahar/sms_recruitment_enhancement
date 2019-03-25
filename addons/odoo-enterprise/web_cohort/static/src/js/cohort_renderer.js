@@ -135,7 +135,7 @@ var CohortRenderer = AbstractRenderer.extend({
 
         var fullDomain = rowDomain.concat(cellDomain);
         if (cellDomain.length) {
-            fullDomain.unshift('&', '&');
+            fullDomain.unshift('&');
         }
         if (fullDomain.length) {
             this.trigger_up('row_clicked', {domain: fullDomain});

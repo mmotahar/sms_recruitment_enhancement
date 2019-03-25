@@ -145,7 +145,7 @@ msgstr "Останній день фінансового року"
 #. module: account_accountant
 #: model:ir.model.fields,field_description:account_accountant.field_res_config_settings__fiscalyear_last_month
 msgid "Fiscalyear Last Month"
-msgstr "Останній місяць фінансового року"
+msgstr "Останній місяць звітного періоду"
 
 #. module: account_accountant
 #: model:ir.model.fields,field_description:account_accountant.field_account_change_lock_date__id

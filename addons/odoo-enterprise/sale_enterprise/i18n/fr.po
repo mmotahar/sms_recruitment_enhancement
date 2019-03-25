@@ -3,6 +3,7 @@
 # * sale_enterprise
 # 
 # Translators:
+# Léonie Bouchat <lbo@odoo.com>, 2018
 # Eloïse Stilmant <est@odoo.com>, 2018
 # Martin Trigaux, 2019
 # Lucas Deliege <lud@odoo.com>, 2019
@@ -44,7 +45,7 @@ msgstr "Jours pour confirmer"
 #. module: sale_enterprise
 #: model_terms:ir.ui.view,arch_db:sale_enterprise.sale_report_view_dashboard
 msgid "Days to Confirm"
-msgstr "Jours à confirmer "
+msgstr "Jours pour confirmer "
 
 #. module: sale_enterprise
 #: model_terms:ir.ui.view,arch_db:sale_enterprise.view_order_product_search_inherit

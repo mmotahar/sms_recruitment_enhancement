@@ -39,7 +39,7 @@ msgid ""
 "                <br/>"
 msgstr ""
 "<b>Zodra uw account is aangemaakt, gaat u naar uw dashboard en klikt u op de pijl naast uw gebruikersnaam om uw providersaccounts te configureren.</b>\n"
-"                 <b>U kunt aan de rechterkant van dezelfde pagina nieuwe vervoerdersaccounts toevoegen.\n"
+"<b>U kunt aan de rechterkant van dezelfde pagina nieuwe vervoerdersaccounts toevoegen.\n"
 "</b>\n"
 "<br/>"
 

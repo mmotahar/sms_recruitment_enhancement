@@ -19,7 +19,7 @@
         <div class="o_barcode_settings flex-column h100 bg-700">
             <button t-if="widget.model == 'stock.picking'" class="btn-lg btn btn-dark text-uppercase o_print_picking">Print Picking Operations</button>
             <button t-if="widget.model == 'stock.picking'" class="btn-lg btn btn-dark text-uppercase o_print_delivery_slip">Print Delivery Slip</button>
-            <button t-if="widget.model == 'stock.picking' &amp;&amp; (widget.mode !== 'done' &amp;&amp; widget.mode !== 'cancel')" class="btn-lg btn btn-dark text-uppercase o_scrap">Scrap</button>
+            <button t-if="widget.model == 'stock.picking' &amp;&amp; widget.allow_scrap" class="btn-lg btn btn-dark text-uppercase o_scrap">Scrap</button>
             <button t-if="widget.model == 'stock.inventory'" class="btn-lg btn btn-dark text-uppercase o_print_inventory">Print Inventory</button>
             <button t-if="widget.mode !== 'done' &amp;&amp; widget.mode !== 'cancel'" class="btn-lg btn btn-dark text-uppercase o_validate">Validate</button>
             <button t-if="widget.mode !== 'done' &amp;&amp; widget.mode !== 'cancel'" class="btn-lg btn btn-dark text-uppercase o_cancel">Cancel</button>

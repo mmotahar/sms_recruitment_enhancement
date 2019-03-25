@@ -5,6 +5,7 @@
 # Translators:
 # Bagavathikumar Ramakrishnan <bagavathikumar@gmail.com>, 2019
 # Abul Hassan M I <miabulhassan@gmail.com>, 2019
+# Alagappan Karthikeyan <me@karthik.sg>, 2019
 # 
 msgid ""
 msgstr ""
@@ -12,7 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-19 09:12+0000\n"
 "PO-Revision-Date: 2018-08-24 11:37+0000\n"
-"Last-Translator: Abul Hassan M I <miabulhassan@gmail.com>, 2019\n"
+"Last-Translator: Alagappan Karthikeyan <me@karthik.sg>, 2019\n"
 "Language-Team: Tamil (https://www.transifex.com/odoo/teams/41243/ta/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,7 +24,7 @@ msgstr ""
 #. module: account_taxcloud
 #: model_terms:ir.ui.view,arch_db:account_taxcloud.res_config_settings_view_form
 msgid "<i class=\"fa fa-fw fa-arrow-right\"/>How to Get Credentials"
-msgstr ""
+msgstr "நற்சான்றிதழ் பெற எப்படி"
 
 #. module: account_taxcloud
 #: model_terms:ir.ui.view,arch_db:account_taxcloud.res_config_settings_view_form
@@ -35,12 +36,12 @@ msgstr ""
 #. module: account_taxcloud
 #: model_terms:ir.ui.view,arch_db:account_taxcloud.res_config_settings_view_form
 msgid "API ID"
-msgstr ""
+msgstr "API ஐடி"
 
 #. module: account_taxcloud
 #: model_terms:ir.ui.view,arch_db:account_taxcloud.res_config_settings_view_form
 msgid "API KEY"
-msgstr ""
+msgstr "API KEY"
 
 #. module: account_taxcloud
 #: model:ir.model,name:account_taxcloud.model_res_company
@@ -50,7 +51,7 @@ msgstr "நிறுவனங்கள்"
 #. module: account_taxcloud
 #: model:ir.model,name:account_taxcloud.model_res_config_settings
 msgid "Config Settings"
-msgstr ""
+msgstr "கட்டமைப்பு அமைப்புகள்"
 
 #. module: account_taxcloud
 #: model:ir.model.fields,field_description:account_taxcloud.field_product_tic_category__create_uid
@@ -65,13 +66,13 @@ msgstr "உருவாக்கப்பட்ட தேதி"
 #. module: account_taxcloud
 #: model_terms:ir.ui.view,arch_db:account_taxcloud.res_config_settings_view_form
 msgid "Default Category"
-msgstr ""
+msgstr "இயல்புநிலை பகுப்பு"
 
 #. module: account_taxcloud
 #: model:ir.model.fields,field_description:account_taxcloud.field_res_company__tic_category_id
 #: model:ir.model.fields,field_description:account_taxcloud.field_res_config_settings__tic_category_id
 msgid "Default TIC Code"
-msgstr ""
+msgstr "இயல்புநிலை TIC கோட்"
 
 #. module: account_taxcloud
 #: model:ir.model.fields,help:account_taxcloud.field_res_company__tic_category_id
@@ -80,6 +81,8 @@ msgid ""
 "Default TICs(Taxability information codes) code to get sales tax from "
 "TaxCloud by product category."
 msgstr ""
+"இயல்புநிலை TICs (Taxability தகவல் குறியீடுகள்) தயாரிப்பு வகை மூலம் வரிக் "
+"கலவையிலிருந்து விற்பனை வரி பெற குறியீடு."
 
 #. module: account_taxcloud
 #: model:ir.model.fields,field_description:account_taxcloud.field_product_tic_category__display_name
@@ -95,11 +98,15 @@ msgid ""
 "internal category of the product. If thereisn't any, the one on the product "
 "itself will be used. Only used in United States."
 msgstr ""
+"ஒவ்வொரு தயாரிப்பு அரசாங்கத்தின் முன்னுரிமையும் குறிப்பிட்ட வரிகளைக் கொண்ட "
+"வகையிலானது. இந்த அமைப்பு தயாரிப்புகளின் உள் வகை மீது வரி கிளவுட் வகைகளை "
+"அமைக்கும். எந்தவொரு இடத்திலும் இல்லை என்றால், தயாரிப்புகளில் ஒன்று "
+"பயன்படுத்தப்படும். அமெரிக்காவில் மட்டுமே பயன்படுத்தப்படுகிறது."
 
 #. module: account_taxcloud
 #: model:ir.model,name:account_taxcloud.model_account_fiscal_position
 msgid "Fiscal Position"
-msgstr ""
+msgstr "நிதி நிலை"
 
 #. module: account_taxcloud
 #: model:ir.model.fields,field_description:account_taxcloud.field_product_tic_category__id
@@ -129,17 +136,17 @@ msgstr "கடைசியாக புதுப்பிக்கப்பட�
 #. module: account_taxcloud
 #: model:ir.model,name:account_taxcloud.model_product_category
 msgid "Product Category"
-msgstr ""
+msgstr "தயாரிப்பு வகை"
 
 #. module: account_taxcloud
 #: model_terms:ir.ui.view,arch_db:account_taxcloud.account_taxcloud_tic_category_search
 msgid "Product TIC Categories"
-msgstr ""
+msgstr "தயாரிப்பு TIC வகைகள்"
 
 #. module: account_taxcloud
 #: model:ir.model,name:account_taxcloud.model_product_tic_category
 msgid "Product TIC Category"
-msgstr ""
+msgstr "தயாரிப்பு TIC வகை"
 
 #. module: account_taxcloud
 #: model:ir.model,name:account_taxcloud.model_product_template
@@ -149,44 +156,44 @@ msgstr "தயாரிப்பு டெம்ப்ளேட்"
 #. module: account_taxcloud
 #: model_terms:ir.ui.view,arch_db:account_taxcloud.account_taxcloud_tic_category_tree
 msgid "TIC Category"
-msgstr ""
+msgstr "TIC வகை"
 
 #. module: account_taxcloud
 #: model:ir.model.fields,field_description:account_taxcloud.field_product_tic_category__code
 msgid "TIC Category Code"
-msgstr ""
+msgstr "TIC வகை குறியீடு"
 
 #. module: account_taxcloud
 #: model:ir.model.fields,field_description:account_taxcloud.field_product_category__tic_category_id
 #: model_terms:ir.ui.view,arch_db:account_taxcloud.account_taxcloud_tic_category_search
 msgid "TIC Code"
-msgstr ""
+msgstr "TIC கோட்"
 
 #. module: account_taxcloud
 #: model:ir.model.fields,field_description:account_taxcloud.field_product_tic_category__description
 msgid "TIC Description"
-msgstr ""
+msgstr "TIC விவரம்"
 
 #. module: account_taxcloud
 #: model_terms:ir.ui.view,arch_db:account_taxcloud.product_category_view_form_inherit_account_taxcloud
 msgid "TaxCloud"
-msgstr ""
+msgstr "TaxCloud"
 
 #. module: account_taxcloud
 #: model:ir.model.fields,field_description:account_taxcloud.field_res_config_settings__taxcloud_api_id
 msgid "TaxCloud API ID"
-msgstr ""
+msgstr "TaxCloud API ஐடி"
 
 #. module: account_taxcloud
 #: model:ir.model.fields,field_description:account_taxcloud.field_res_config_settings__taxcloud_api_key
 msgid "TaxCloud API KEY"
-msgstr ""
+msgstr "TaxCloud API KEY"
 
 #. module: account_taxcloud
 #: model:ir.actions.act_window,name:account_taxcloud.account_taxcloud_tic_category_action
 #: model:ir.ui.menu,name:account_taxcloud.menu_taxcloud_tic_category_action
 msgid "TaxCloud Categories"
-msgstr ""
+msgstr "TaxCloud வகைகள்"
 
 #. module: account_taxcloud
 #: model:ir.model.fields,field_description:account_taxcloud.field_product_product__tic_category_id
@@ -194,7 +201,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:account_taxcloud.product_category_view_form_inherit_account_taxcloud
 #: model_terms:ir.ui.view,arch_db:account_taxcloud.product_template_taxcloud_inherit_form
 msgid "TaxCloud Category"
-msgstr ""
+msgstr "TaxCloud பகுப்பு"
 
 #. module: account_taxcloud
 #: model:ir.model.fields,help:account_taxcloud.field_product_category__tic_category_id
@@ -207,11 +214,19 @@ msgid ""
 "automatically assigns products to this TIC as a default, so unless you've "
 "changed an item's TIC in the past, it should already be set to 00000."
 msgstr ""
+"உங்கள் பட்டியல் ஒவ்வொரு உருப்படியை சரியான விகிதத்தில் (அல்லது வரி விலக்கு "
+"பொருள்களுக்கு வரி விதிக்கப்படவில்லை) வரி விதிப்பு வரிவிளம்பரத்தை "
+"பயன்படுத்துவது வரிவிதிப்பு தகவல் குறியீடுகள் (TIC) பயன்படுத்துகிறது, எனவே "
+"ஒவ்வொரு உருப்படியும் ஒரு TIC . உங்கள் பட்டியல் ஒரு உருப்படியை சரியான வரி வகை"
+" கண்டுபிடிக்க முடியவில்லை என்றால், நீங்கள் 'பொது பொருட்கள் மற்றும் சேவைகள்' "
+"டிஐசி, 00000 ஒதுக்க வேண்டும். TaxCloud தானாகவே ஒரு டிஏஐ ஒரு முன்னிருப்பாக "
+"பொருட்களை ஒதுக்க, எனவே நீங்கள் மாற்ற ஒரு உருப்படியின் TIC கடந்த காலத்தில், "
+"அது ஏற்கனவே 00000 க்கு அமைக்கப்பட வேண்டும்."
 
 #. module: account_taxcloud
 #: model:ir.model,name:account_taxcloud.model_account_fiscal_position_template
 msgid "Template for Fiscal Position"
-msgstr ""
+msgstr "நிதி நிலைக்கான டெம்ப்ளேட்"
 
 #. module: account_taxcloud
 #: code:addons/account_taxcloud/models/account_invoice.py:43
@@ -219,6 +234,7 @@ msgstr ""
 #, python-format
 msgid "The configuration of TaxCloud is in the Accounting app, Settings menu."
 msgstr ""
+"TaxCloud இன் கட்டமைப்பு கணக்கியல் பயன்பாட்டில் உள்ளது, அமைப்புகள் மெனு."
 
 #. module: account_taxcloud
 #: code:addons/account_taxcloud/models/account_invoice.py:115
@@ -227,6 +243,8 @@ msgid ""
 "The source document on the refund is not valid and thus the refunded cart "
 "won't be logged on your taxcloud account"
 msgstr ""
+"திரும்பப் பெறும் மூல ஆவணமானது செல்லுபடியாகாதது, இதனால் திருப்பிச் "
+"செலுத்தப்படும் வண்டி உங்கள் வரிக் கணக்கு கணக்கில் உள்நுழையப்படாது"
 
 #. module: account_taxcloud
 #: code:addons/account_taxcloud/models/account_invoice.py:85
@@ -234,24 +252,26 @@ msgstr ""
 msgid ""
 "The tax rates have been updated, you may want to check it before validation"
 msgstr ""
+"வரி விகிதங்கள் புதுப்பிக்கப்பட்டுள்ளன, சரிபார்க்கும் முன் நீங்கள் அதை "
+"சரிபார்க்க வேண்டும்"
 
 #. module: account_taxcloud
 #: code:addons/account_taxcloud/models/account_invoice.py:43
 #: code:addons/account_taxcloud/models/res_config_settings.py:23
 #, python-format
 msgid "Unable to retrieve taxes from TaxCloud: "
-msgstr ""
+msgstr "TaxCloud இலிருந்து வரிகளை மீட்டெடுக்க முடியவில்லை:"
 
 #. module: account_taxcloud
 #: model:ir.actions.server,name:account_taxcloud.action_account_invoice_update_taxes
 msgid "Update taxes with Taxcloud"
-msgstr ""
+msgstr "Taxcloud உடன் வரிகளை புதுப்பி"
 
 #. module: account_taxcloud
 #: model:ir.model.fields,field_description:account_taxcloud.field_account_fiscal_position__is_taxcloud
 #: model:ir.model.fields,field_description:account_taxcloud.field_account_fiscal_position_template__is_taxcloud
 msgid "Use TaxCloud API"
-msgstr ""
+msgstr "TaxCloud API ஐ பயன்படுத்தவும்"
 
 #. module: account_taxcloud
 #: code:addons/account_taxcloud/models/product.py:28

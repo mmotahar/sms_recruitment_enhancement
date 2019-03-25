@@ -435,10 +435,10 @@
                 <table style="width:600px;margin:0px auto;background:white;border:1px solid #e1e1e1;">
                     <tbody>
                         <tr><td style="padding:15px 20px 10px 20px;">
-                            <p>Dear %{object.partner_id.name}
+                            <p>Dear ${object.partner_id.name}
                                 % if object.partner_id.parent_id:
                                     (${object.partner_id.parent_id.name})
-                                % endif.
+                                % endif
                             </p>
                             <p>
                                 Here is, in attachment, your

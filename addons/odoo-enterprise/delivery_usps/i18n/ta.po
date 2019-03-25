@@ -2,12 +2,16 @@
 # This file contains the translation of the following modules:
 # * delivery_usps
 # 
+# Translators:
+# Alagappan Karthikeyan <me@karthik.sg>, 2019
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0+e\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-15 15:18+0000\n"
 "PO-Revision-Date: 2018-08-24 11:37+0000\n"
+"Last-Translator: Alagappan Karthikeyan <me@karthik.sg>, 2019\n"
 "Language-Team: Tamil (https://www.transifex.com/odoo/teams/41243/ta/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -197,7 +201,7 @@ msgstr ""
 #. module: delivery_usps
 #: selection:delivery.carrier,usps_mail_type:0
 msgid "Package"
-msgstr ""
+msgstr "தொகுப்பு"
 
 #. module: delivery_usps
 #: selection:delivery.carrier,usps_first_class_mail_type:0
@@ -282,12 +286,12 @@ msgstr ""
 #. module: delivery_usps
 #: selection:delivery.carrier,usps_service:0
 msgid "Priority"
-msgstr ""
+msgstr "முன்னுரிமை"
 
 #. module: delivery_usps
 #: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier__delivery_type
 msgid "Provider"
-msgstr ""
+msgstr "வழங்குநர்"
 
 #. module: delivery_usps
 #: code:addons/delivery_usps/models/usps_request.py:372

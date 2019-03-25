@@ -8,7 +8,7 @@
 # Arminas Grigonis <arminas@versada.lt>, 2018
 # UAB "Draugiški sprendimai" <transifex@draugiskisprendimai.lt>, 2018
 # Anatolij, 2018
-# Zygi Mantus <zygimantus@gmail.com>, 2018
+# Zygimantus <zygimantus@gmail.com>, 2018
 # Silvija Butko <silvija.butko@gmail.com>, 2018
 # Audrius Palenskis <audrius.palenskis@gmail.com>, 2018
 # Monika Raciunaite <monika.raciunaite@gmail.com>, 2018
@@ -74,7 +74,7 @@ msgstr "Portretas"
 #: code:addons/voip/static/src/xml/dialing_panel.xml:49
 #, python-format
 msgid "Backspace"
-msgstr ""
+msgstr "Grįžimo klavišas"
 
 #. module: voip
 #. openerp-web
@@ -227,7 +227,7 @@ msgstr "Data"
 #. module: voip
 #: selection:res.config.settings,mode:0
 msgid "Demo"
-msgstr ""
+msgstr "Demo"
 
 #. module: voip
 #. openerp-web
@@ -394,7 +394,7 @@ msgstr ""
 #: code:addons/voip/static/src/xml/voip_phonecall.xml:143
 #, python-format
 msgid "Log"
-msgstr "Žurnalas"
+msgstr "Registruoti"
 
 #. module: voip
 #: model_terms:ir.actions.act_window,help:voip.voip_phonecall_view

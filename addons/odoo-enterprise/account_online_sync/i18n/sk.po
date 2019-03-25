@@ -198,7 +198,7 @@ msgstr "Kontakt"
 #: code:addons/account_online_sync/models/online_sync.py:161
 #, python-format
 msgid "Create a Bank Account"
-msgstr ""
+msgstr "Vytvorte bankový účet."
 
 #. module: account_online_sync
 #: selection:account.online.link.wizard,action:0

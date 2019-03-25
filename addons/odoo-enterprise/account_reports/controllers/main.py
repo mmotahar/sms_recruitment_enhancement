@@ -53,7 +53,7 @@ class FinancialReportController(http.Controller):
                     content,
                     headers=[
                         ('Content-Type', 'application/vnd.sun.xml.writer'),
-                        ('Content-Disposition', 'attachment; filename=' + report_name + '.xaf;'),
+                        ('Content-Disposition', 'attachment; filename=' + content_disposition(report_name + '.xaf;')),
                         ('Content-Length', len(content))
                     ]
                 )
@@ -73,7 +73,7 @@ class FinancialReportController(http.Controller):
                     content,
                     headers=[
                         ('Content-Type', 'text/csv'),
-                        ('Content-Disposition', 'attachment; filename=' + report_name + '.csv;'),
+                        ('Content-Disposition', 'attachment; filename=' + content_disposition(report_name + '.csv;')),
                         ('Content-Length', len(content))
                     ]
                 )
@@ -83,7 +83,7 @@ class FinancialReportController(http.Controller):
                     content,
                     headers=[
                         ('Content-Type', 'application/zip'),
-                        ('Content-Disposition', 'attachment; filename=' + report_name + '.zip'),
+                        ('Content-Disposition', 'attachment; filename=' + content_disposition(report_name + '.zip')),
                     ]
                 )
                 # Adding direct_passthrough to the response and giving it a file

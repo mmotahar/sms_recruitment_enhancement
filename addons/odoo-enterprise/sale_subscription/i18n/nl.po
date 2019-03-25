@@ -64,7 +64,7 @@ msgstr ""
 #. module: sale_subscription
 #: model:mail.template,subject:sale_subscription.mail_template_subscription_invoice
 msgid "${object.company_id.name} Invoice (Ref ${object.number or 'n/a'})"
-msgstr "${object.company_id.name} Factuur (Ref ${object.number or 'n/a'})"
+msgstr "${object.company_id.name} Factuur (Ref ${object.number or 'n/b'})"
 
 #. module: sale_subscription
 #: model:mail.template,subject:sale_subscription.mail_template_subscription_alert
@@ -368,7 +368,7 @@ msgstr ""
 "                                                </td>\n"
 "                                                <td>\n"
 "                                                    <a href=\"/rating/${access_token}/5\">\n"
-"                                                        <img alt=\"Not satisfied\" src=\"/rating/static/src/img/rating_5.png\" title=\"Not satisfied\"/>\n"
+"                                                        <img alt=\"Niet tevreden\" src=\"/rating/static/src/img/rating_5.png\" title=\"Niet tevreden\"/>\n"
 "                                                    </a>\n"
 "                                                </td>\n"
 "                                                <td>\n"
@@ -399,8 +399,8 @@ msgid ""
 "<abbr title=\"You need to be logged in as this subscription's customer to "
 "change country\">Taxes</abbr>:<br/>"
 msgstr ""
-"<abbr title=\"You need to be logged in as this subscription's customer to "
-"change country\">Belastingen</abbr>:<br/>"
+"<abbr title=\"U moet zijn aangemeld als de klant van dit abonnement om van "
+"land te veranderen\">BTW </abbr>:<br/>"
 
 #. module: sale_subscription
 #: model_terms:ir.ui.view,arch_db:sale_subscription.sale_subscription_template_view_kanban
@@ -1098,7 +1098,7 @@ msgstr "Vereist actie"
 #. module: sale_subscription
 #: model:ir.model.fields,field_description:sale_subscription.field_sale_subscription_alert__state
 msgid "Action To Do"
-msgstr "Actie Te doen"
+msgstr "Uit te voeren actie"
 
 #. module: sale_subscription
 #: model:ir.model.fields,field_description:sale_subscription.field_sale_subscription_alert__type
@@ -1182,9 +1182,9 @@ msgid ""
 "              need their attention. It can be positive (upsell) or\n"
 "              negative (churn, invoice not paid...)."
 msgstr ""
-"Waarschuwingen worden gebruikt om de verkoper te informeren welke abonnementen\n"
-"               hun aandacht nodig hebben. Het kan positief zijn (upsell) of\n"
-"               negatief (churn, factuur niet betaald ...)."
+"Waarschuwingen worden gebruikt om de verkoper te informeren welke "
+"abonnementen hun aandacht nodig hebben. Het kan positief zijn (upsell) of "
+"negatief (churn, factuur niet betaald ...)."
 
 #. module: sale_subscription
 #: code:addons/sale_subscription/controllers/portal.py:44
@@ -1431,7 +1431,7 @@ msgstr "Instellingen"
 #: code:addons/sale_subscription/static/src/js/tour.js:18
 #, python-format
 msgid "Configure your subscription templates here"
-msgstr "Configureer uw abonnement sjablonen hier"
+msgstr "Configureer uw abonnementsjablonen hier"
 
 #. module: sale_subscription
 #: model_terms:ir.ui.view,arch_db:sale_subscription.subscription
@@ -3154,7 +3154,7 @@ msgstr "Abonnement sjabloon"
 #: model_terms:ir.ui.view,arch_db:sale_subscription.sale_subscription_template_view_list
 #: model_terms:ir.ui.view,arch_db:sale_subscription.sale_subscription_template_view_search
 msgid "Subscription Templates"
-msgstr "Abonnement sjablonen"
+msgstr "Abonnementsjablonen"
 
 #. module: sale_subscription
 #: model:ir.model,name:sale_subscription.model_sale_subscription_wizard_option
@@ -3279,7 +3279,7 @@ msgstr "BTW"
 #. module: sale_subscription
 #: model_terms:ir.ui.view,arch_db:sale_subscription.subscription
 msgid "Taxes:<br/>"
-msgstr "Belastingen: <br/>"
+msgstr "BTW: <br/>"
 
 #. module: sale_subscription
 #: model:ir.model.fields,field_description:sale_subscription.field_sale_subscription__team_user_id

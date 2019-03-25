@@ -5,7 +5,6 @@
 
 import time
 import re
-from stdnum.iso7064 import mod_97_10
 
 from odoo import models, tools, _
 from odoo.exceptions import UserError
@@ -51,7 +50,7 @@ class AccountBankStatementImport(models.TransientModel):
                     if line[1] == '0':  # Belgian bank account BBAN structure
                         statement['acc_number'] = rmspaces(line[5:17])
                         # '11' and '14' stand respecively for characters 'B' and 'E', it's a constant for Belgium, that we need to append to the account number before computing the check digits
-                        statement['acc_number'] = 'BE%s%s' % (mod_97_10.calc_check_digits(statement['acc_number'] + '1114'), statement['acc_number'])
+                        statement['acc_number'] = 'BE%02d' % (98 - int(statement['acc_number'] + '111400') % 97) + statement['acc_number']
                         statement['currency'] = rmspaces(line[18:21])
                     elif line[1] == '1':  # foreign bank account BBAN structure
                         raise UserError(_('Error') + ' R1001: ' + _('Foreign bank accounts with BBAN structure are not supported '))

@@ -38,7 +38,7 @@ class Base(models.AbstractModel):
         total_value = 0
         initial_churn_value = 0
         measure_is_many2one = self._fields.get(measure) and self._fields.get(measure).type == 'many2one'
-        for group in self._read_group_raw(domain=domain, fields=[date_start], groupby=date_start + ':' + interval):
+        for group in self.with_context(tz=False)._read_group_raw(domain=domain, fields=[date_start], groupby=date_start + ':' + interval):
             dates = group['%s:%s' % (date_start, interval)]
             if not dates:
                 continue
@@ -118,13 +118,22 @@ class Base(models.AbstractModel):
                     period = "%s - %s" % (col_start_date.strftime('%d %b'), (col_end_date - relativedelta(days=1)).strftime('%d %b'))
                 else:
                     period = col_start_date.strftime(DISPLAY_FORMATS[interval])
+
+                if mode == 'churn':
+                    domain = [
+                        (date_stop, '<', col_end_date.strftime(DEFAULT_SERVER_DATE_FORMAT)),
+                    ]
+                else:
+                    domain = ['|',
+                        (date_stop, '>=', col_end_date.strftime(DEFAULT_SERVER_DATE_FORMAT)),
+                        (date_stop, '=', False),
+                    ]
+
                 columns.append({
                     'value': col_remaining_value,
                     'churn_value': col_value + (columns[-1]['churn_value'] if col_index > 0 else initial_churn_value),
                     'percentage': percentage,
-                    'domain': [
-                        (date_stop, ">=", col_start_date.strftime(DEFAULT_SERVER_DATE_FORMAT)),
-                        (date_stop, "<", col_end_date.strftime(DEFAULT_SERVER_DATE_FORMAT))],
+                    'domain': domain,
                     'period': period,
                 })
 

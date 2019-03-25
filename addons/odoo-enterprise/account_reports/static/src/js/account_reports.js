@@ -235,19 +235,23 @@ var accountReportsWidget = AbstractAction.extend(ControlPanelMixin, {
      },
     filter_accounts: function(e) {
         var self = this;
-        var query = e.target.value.trim();
+        var query = e.target.value.trim().toLowerCase();
         this.filterOn = false;
         this.$('.o_account_reports_level2').each(function(index, el) {
             var $accountReportLineFoldable = $(el);
             var line_id = $accountReportLineFoldable.find('.o_account_report_line').data('id');
             var $childs = self.$('tr[data-parent-id="'+line_id+'"]');
             var lineText = $accountReportLineFoldable.find('.account_report_line_name')
-                .text()
+                // Only the direct text node, not text situated in other child nodes
+                .contents().get(0).nodeValue
                 .trim();
             var queryFound;
 
             if (query.match(/^[a-zA-Z]/)) {
-                queryFound = lineText.toLowerCase().indexOf(query.toLowerCase()) !== -1;
+                // The python does this too
+                queryFound = lineText.split(' ').some(function (str) {
+                    return str.toLowerCase().startsWith(query);
+                });
             } else {
                 queryFound = lineText.startsWith(query);
             }

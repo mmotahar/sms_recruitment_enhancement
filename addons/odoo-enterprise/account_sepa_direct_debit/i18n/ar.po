@@ -3,7 +3,6 @@
 # * account_sepa_direct_debit
 # 
 # Translators:
-# Mustafa Rawi <mustafa@cubexco.com>, 2018
 # Mustafa J. Kadhem <safi2266@gmail.com>, 2018
 # Akram Alfusayal <akram_ma@hotmail.com>, 2018
 # amrnegm <amrnegm.01@gmail.com>, 2018
@@ -14,13 +13,15 @@
 # Zuhair Hammadi <zuhair12@gmail.com>, 2018
 # Shaima Safar <shaima.safar@open-inside.com>, 2018
 # Ali Alrehawi <alrehawi@hotmail.com>, 2018
+# Mustafa Rawi <mustafa@cubexco.com>, 2019
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~11.5+e\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-21 14:06+0000\n"
-"PO-Revision-Date: 2018-09-21 14:06+0000\n"
-"Last-Translator: Ali Alrehawi <alrehawi@hotmail.com>, 2018\n"
+"PO-Revision-Date: 2018-08-24 11:37+0000\n"
+"Last-Translator: Mustafa Rawi <mustafa@cubexco.com>, 2019\n"
 "Language-Team: Arabic (https://www.transifex.com/odoo/teams/41243/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,12 +32,12 @@ msgstr ""
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "(if applicable)"
-msgstr ""
+msgstr "(إن كان قابلًا للتطبيق)"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "(optional)"
-msgstr ""
+msgstr "(اختياري)"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_account_payment_form
@@ -47,26 +48,30 @@ msgid ""
 "('state', '!=', 'draft')]}\" role=\"status\">Direct Debit collecting method "
 "available</span>"
 msgstr ""
+"<span class=\"alert alert-info\" attrs=\"{'invisible': ['|', '|', "
+"('sdd_mandate_usable', '!=', True), ('payment_type', '!=', 'inbound'), "
+"('state', '!=', 'draft')]}\" role=\"status\">طريقة الخصم المباشر لجمع "
+"المدفوعات متاحة</span>"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "<strong>Address:</strong>"
-msgstr ""
+msgstr "<strong>العنوان:</strong>"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "<strong>City:</strong>"
-msgstr ""
+msgstr "<strong>المدينة:</strong>"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "<strong>Country:</strong>"
-msgstr ""
+msgstr "<strong>الدولة:</strong>"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "<strong>Creditor identifier:</strong>"
-msgstr ""
+msgstr "<strong>مُعرف الدائن:</strong>"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
@@ -74,21 +79,22 @@ msgid ""
 "<strong>Date and place of signature:</strong> "
 "......................................"
 msgstr ""
+"<strong>تاريخ ومكان التوقيع:</strong> ......................................"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "<strong>IBAN account number:</strong>"
-msgstr ""
+msgstr "<strong>رقم IBAN للحساب:</strong>"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "<strong>Mail address:</strong>"
-msgstr ""
+msgstr "<strong>البريد الإلكتروني:</strong>"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "<strong>Mandate identifier:</strong>"
-msgstr ""
+msgstr "<strong>مُعرف التفويض:</strong>"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
@@ -96,6 +102,7 @@ msgid ""
 "<strong>Name of the reference party:</strong> "
 "......................................"
 msgstr ""
+"<strong>اسم الطرف المرجعي:</strong> ......................................"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
@@ -105,33 +112,33 @@ msgstr "<strong>اسم:</strong>"
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "<strong>Phone number:</strong>"
-msgstr ""
+msgstr "<strong>رقم الهاتف:</strong>"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "<strong>Signature:</strong>"
-msgstr ""
+msgstr "<strong>التوقيع:</strong>"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "<strong>Start date:</strong>"
-msgstr ""
+msgstr "<strong>تاريخ البدء:</strong>"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "<strong>Transaction type:</strong> recurrent"
-msgstr ""
+msgstr "<strong>نوع المعاملة:</strong> دورية"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "<strong>Zip:</strong>"
-msgstr ""
+msgstr "<strong>الرمز البريدي:</strong>"
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/sdd_mandate.py:80
 #, python-format
 msgid "A debtor account is required to validate a SEPA Direct Debit mandate."
-msgstr ""
+msgstr "مطلوب حساب مدين للتحقق من تفويض خصم SEPA المباشر."
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.actions.act_window,help:account_sepa_direct_debit.account_sepa_direct_debit_mandate_tree_act
@@ -139,11 +146,13 @@ msgid ""
 "A mandate represents the authorization you receive from a customer\n"
 "                    to automatically collect money on her account."
 msgstr ""
+"يمثل التفويض تصريحًا تستلمه من العميلة\n"
+"                    يسمح لك باستلام الأموال من حسابها أوتوماتيكيًا."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_sdd_mandate__partner_bank_id
 msgid "Account of the customer to collect payments from."
-msgstr ""
+msgstr "حساب العميل المُراد تلقي المدفوعات منه."
 
 #. module: account_sepa_direct_debit
 #: selection:sdd.mandate,state:0
@@ -153,12 +162,12 @@ msgstr "نشط"
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.account_sdd_mandate_search_view
 msgid "Active Mandates"
-msgstr ""
+msgstr "التفويضات النشطة"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model,name:account_sepa_direct_debit.model_account_batch_payment
 msgid "Batch Payment"
-msgstr ""
+msgstr "دفعة سداد"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.account_sepa_direct_debit_mandate_form
@@ -178,7 +187,7 @@ msgstr "مقفل"
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.account_sdd_mandate_search_view
 msgid "Closed Mandates"
-msgstr ""
+msgstr "التفويضات المغلقة"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model,name:account_sepa_direct_debit.model_res_company
@@ -193,7 +202,7 @@ msgstr "المؤسسة"
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_sdd_mandate__company_id
 msgid "Company for whose invoices the mandate can be used."
-msgstr ""
+msgstr "المؤسسة الممكن استخدام التفويض لإصدار فواتيرها."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model,name:account_sepa_direct_debit.model_res_config_settings
@@ -208,12 +217,12 @@ msgstr "جهة الاتصال"
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_account_payment__sdd_mandate_usable
 msgid "Could a SDD mandate be used?"
-msgstr ""
+msgstr "أيمكن استخدام تفويض SDD؟"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.actions.act_window,help:account_sepa_direct_debit.account_sepa_direct_debit_mandate_tree_act
 msgid "Create a new direct debit customer mandate"
-msgstr ""
+msgstr "إنشاء تفويض خصم مباشر جديد للعميل"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_sdd_mandate__create_uid
@@ -228,32 +237,32 @@ msgstr "أنشئ في"
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_res_config_settings__sdd_creditor_identifier
 msgid "Creditor Identifier"
-msgstr ""
+msgstr "مُعرف الدائن"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_res_config_settings__sdd_creditor_identifier
 msgid "Creditor identifier of your company within SEPA scheme."
-msgstr ""
+msgstr "مُعرف الدائن لمؤسستك في نظام SEPA."
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "Creditor information"
-msgstr ""
+msgstr "معلومات الدائن"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.account_sepa_direct_debit_mandate_form
 msgid "Customer mandate"
-msgstr ""
+msgstr "تفويض العميل"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_sdd_mandate__partner_id
 msgid "Customer whose payments are to be managed by this mandate."
-msgstr ""
+msgstr "العملاء الممكن إدارة مدفوعاتهم باستخدام هذا التفويض."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_sdd_mandate__start_date
 msgid "Date from which the mandate can be used (inclusive)."
-msgstr ""
+msgstr "التاريخ المُصرح باستخدام التفويض بدءً منه (ضمنًا)."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_sdd_mandate__end_date
@@ -261,31 +270,33 @@ msgid ""
 "Date until which the mandate can be used. It will automatically be closed "
 "after this date."
 msgstr ""
+"التاريخ المُتاح استخدام هذا التفويض إلى حينه. سيتم إغلاقه أوتوماتيكيًا بعد "
+"هذا التاريخ."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_account_batch_payment__sdd_required_collection_date
 msgid "Date when the company expects to receive the payments of this batch."
-msgstr ""
+msgstr "التاريخ المتوقع أن تتلقى فيه المؤسسة مدفوعات هذه الدفعة."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_sdd_mandate__partner_id
 msgid "Debtor"
-msgstr ""
+msgstr "المدين"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_sdd_mandate__partner_bank_id
 msgid "Debtor Account"
-msgstr ""
+msgstr "حساب المدين"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_sdd_mandate__debtor_id_code
 msgid "Debtor Identifier"
-msgstr ""
+msgstr "مُعرف المدين"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "Debtor information"
-msgstr ""
+msgstr "معلومات المدين"
 
 #. module: account_sepa_direct_debit
 #: model:ir.actions.act_window,name:account_sepa_direct_debit.account_sepa_direct_debit_mandate_tree_act
@@ -293,33 +304,33 @@ msgstr ""
 #: model:ir.ui.menu,name:account_sepa_direct_debit.account_sepa_direct_debit_customer_mandates_menu
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.account_sdd_res_partner_view
 msgid "Direct Debit Mandates"
-msgstr ""
+msgstr "تفويضات الخصم المباشر"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_account_journal_dashboard_kanban_view
 msgid "Direct Debit Payment to Collect"
-msgstr ""
+msgstr "دفعة الخصم المباشر المُراد تحصيلها"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_view_account_payment_search
 msgid "Direct Debit Payments To Collect"
-msgstr ""
+msgstr "دفعات الخصم المباشر المُراد تحصيلها"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_sdd_mandate__payments_to_collect_nber
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_account_journal_dashboard_kanban_view
 msgid "Direct Debit Payments to Collect"
-msgstr ""
+msgstr "دفعات الخصم المباشر المُراد تحصيلها"
 
 #. module: account_sepa_direct_debit
 #: model:ir.actions.act_window,name:account_sepa_direct_debit.action_sdd_payments_to_collect
 msgid "Direct debit payments to collect"
-msgstr ""
+msgstr "دفعات الخصم المباشر المُراد تحصيلها"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_sdd_mandate__display_name
 msgid "Display Name"
-msgstr "اسم العرض"
+msgstr "الاسم المعروض"
 
 #. module: account_sepa_direct_debit
 #: selection:sdd.mandate,state:0
@@ -329,7 +340,7 @@ msgstr "مسودة"
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.account_sdd_mandate_search_view
 msgid "Draft Mandates"
-msgstr ""
+msgstr "مسودات التفويض"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_sdd_mandate__end_date
@@ -345,44 +356,44 @@ msgstr "تاريخ النهاية"
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_res_partner__sdd_mandate_ids
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_res_users__sdd_mandate_ids
 msgid "Every mandate belonging to this partner."
-msgstr ""
+msgstr "كافة تفويضات هذا الشريك."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_sdd_mandate__original_doc_filename
 msgid "File name of original_doc."
-msgstr ""
+msgstr "اسم الملف original_doc."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_sdd_mandate__debtor_id_code
 msgid "Free reference identifying the debtor in your company."
-msgstr ""
+msgstr "رقم إشارة حر يُعرف المدين في مؤسستك."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_sdd_mandate__id
 msgid "ID"
-msgstr "المعرف"
+msgstr "المُعرف"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "Identification code"
-msgstr ""
+msgstr "كود التعريف"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_sdd_mandate__name
 msgid "Identifier"
-msgstr "المعرف"
+msgstr "المُعرف"
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/res_company.py:38
 #, python-format
 msgid "Invalid creditor identifier. Make sure you made no typo."
-msgstr ""
+msgstr "مُعرف الدائن غير صالح. تأكد من عدم الوقوع في أي خطأ مطبعي."
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/res_company.py:40
 #, python-format
 msgid "Invalid creditor identifier. Wrong format."
-msgstr ""
+msgstr "مُعرف الدائن غير صالح. تنسيق خاطئ."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model,name:account_sepa_direct_debit.model_account_invoice
@@ -392,23 +403,23 @@ msgstr "الفاتورة"
 #. module: account_sepa_direct_debit
 #: model:mail.message.subtype,description:account_sepa_direct_debit.sdd_mt_invoice_paid_with_mandate
 msgid "Invoice paid via direct debit."
-msgstr ""
+msgstr "تم دفع الفاتورة بالخصم المباشر."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_sdd_mandate__paid_invoice_ids
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.account_sepa_direct_debit_mandate_form
 msgid "Invoices Paid"
-msgstr ""
+msgstr "الفواتير المدفوعة"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_sdd_mandate__paid_invoice_ids
 msgid "Invoices paid using this mandate."
-msgstr ""
+msgstr "الفواتير المدفوعة باستخدام هذا التفويض."
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.account_sepa_direct_debit_mandate_form
 msgid "Invoices paid with this mandate."
-msgstr ""
+msgstr "الفواتير المدفوعة بهذا التفويض."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model,name:account_sepa_direct_debit.model_account_journal
@@ -418,13 +429,13 @@ msgstr "دفتر اليومية"
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_sdd_mandate__payment_journal_id
 msgid "Journal for Direct Debit Payments"
-msgstr ""
+msgstr "دفتر يومية مدفوعات الخصم المباشر"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_sdd_mandate__payment_journal_id
 msgid ""
 "Journal to use to receive SEPA Direct Debit payments from this mandate."
-msgstr ""
+msgstr "دفتر اليومية المستخدم لتلقي مدفوعات خصم SEPA المباشر من هذا التفويض."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_sdd_mandate____last_update
@@ -444,39 +455,39 @@ msgstr "آخر تحديث في"
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_view_account_payment_search
 msgid "Linked to a revoked direct debit mandate"
-msgstr ""
+msgstr "المرتبطة بتفويض خصم مباشر مفسوخ"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_view_account_invoice_search
 msgid "Linked to revoked mandate"
-msgstr ""
+msgstr "المرتبطة بتفويض مفسوخ"
 
 #. module: account_sepa_direct_debit
 #: model:ir.actions.report,name:account_sepa_direct_debit.sdd_mandate_form_report_main
 msgid "Mandate form"
-msgstr ""
+msgstr "نموذج التفويض"
 
 #. module: account_sepa_direct_debit
 #: sql_constraint:sdd.mandate:0
 msgid "Mandate identifier must be unique ! Please choose another one."
-msgstr ""
+msgstr "يجب أن يكون مُعرف التفويض قيمة فريدة! برجاء اختيار مُعرف آخر."
 
 #. module: account_sepa_direct_debit
 #: model:ir.actions.server,name:account_sepa_direct_debit.sdd_mandate_state_cron_ir_actions_server
 #: model:ir.cron,cron_name:account_sepa_direct_debit.sdd_mandate_state_cron
 #: model:ir.cron,name:account_sepa_direct_debit.sdd_mandate_state_cron
 msgid "Mandate state updater"
-msgstr ""
+msgstr "مُحدث حالة التفويض"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "Mandate validity"
-msgstr ""
+msgstr "صلاحية التفويض"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.actions.act_window,help:account_sepa_direct_debit.action_sdd_payments_to_collect
 msgid "No direct debit payment to collect"
-msgstr ""
+msgstr "لا يوجد دفعات خصم مباشر ليتم تحصيلها"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_sdd_mandate__payments_to_collect_nber
@@ -486,11 +497,14 @@ msgid ""
 "mandate and still needs their XML file to be generated and sent to the bank "
 "to debit the customer's account."
 msgstr ""
+"عدد دفعات الخصم المباشر الممكن تحصيلها باستخدام هذا التفويض، وهو عدد الدفعات"
+" التي تم إنشاءها وترحيلها باستخدام التفويض وتنتظر إنشاء ملف XML ليُرسل للبنك"
+" ويتم الخصم من حساب العميل."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_sdd_mandate__paid_invoices_nber
 msgid "Number of invoices paid with thid mandate."
-msgstr ""
+msgstr "عدد الفواتير المدفوعة باستخدام هذا التفويض."
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.actions.act_window,help:account_sepa_direct_debit.account_sepa_direct_debit_mandate_tree_act
@@ -501,6 +515,11 @@ msgid ""
 "                    then only have to generate a SEPA Direct Debit (SDD) XML file containing this operation\n"
 "                    and send it to your bank to effectively get paid."
 msgstr ""
+"بمجرد إنشاء فاتورة\n"
+"                    في أودو لعميل يمتلك تفويضًا نشطًا في تاريخ الفاتورة،\n"
+"                    سيفعل اعتمادها خاصية الدفع الآلي، ولن تحتاج بعد ذلك\n"
+"                    سوى لاستخراج ملف الـXML الخاص بخصم SEPA المباشر الذي يحتوي هذه العملية\n"
+"                    وترسله إلى بنكك لتُدفع قيمة الفاتورة."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_account_invoice__sdd_paying_mandate_id
@@ -508,11 +527,12 @@ msgid ""
 "Once this invoice has been paid with Direct Debit, contains the mandate that"
 " allowed the payment."
 msgstr ""
+"بمجرد دفع هذه الفاتورة بالخصم المباشر، تحتوي علي التفويض الذي يسمح بالدفع."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_sdd_mandate__one_off
 msgid "One-off Mandate"
-msgstr ""
+msgstr "تفويض لمرة واحدة"
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/sdd_mandate.py:143
@@ -521,6 +541,8 @@ msgid ""
 "Only IBAN account numbers can receive SEPA Direct Debit payments. Please "
 "select a journal associated to one."
 msgstr ""
+"لا يمكن استقبال مدفوعات نظام خصم SEPA المباشر سوى على حسابات تمتلك أرقام "
+"IBAN. برجاء اختيار دفتر يومية مرتبط بحساب مناسب."
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/sdd_mandate.py:94
@@ -528,21 +550,23 @@ msgstr ""
 msgid ""
 "Only mandates in draft state can be deleted from database when cancelled."
 msgstr ""
+"لا يمكن حذف التفويضات من قاعدة البيانات عند إلغاءهم إلا إذا كانوا في حالة "
+"المسودة."
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.account_sdd_res_partner_view
 msgid "Open this partner's mandates"
-msgstr ""
+msgstr "فتح تفويضات هذا العميل"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_sdd_mandate__original_doc
 msgid "Original Document"
-msgstr ""
+msgstr "المستند الأصلي"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_sdd_mandate__original_doc_filename
 msgid "Original Document File Name"
-msgstr ""
+msgstr "اسم ملف المستند الأصلي"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_sdd_mandate__original_doc
@@ -550,11 +574,12 @@ msgid ""
 "Original document into which the customer authorises the use of Direct Debit"
 " for his invoices."
 msgstr ""
+"المستند الأصلي الذي سمح العميل باستخدام الخصم المباشر لدفع فواتيره من خلاله."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_account_payment__sdd_mandate_id
 msgid "Originating SEPA mandate"
-msgstr ""
+msgstr "إنشاء تفويض SEPA"
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/sdd_mandate.py:116
@@ -565,12 +590,12 @@ msgstr "الفواتير المدفوعة"
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_sdd_mandate__paid_invoices_nber
 msgid "Paid Invoices Number"
-msgstr ""
+msgstr "رقم الفواتير المدفوعة"
 
 #. module: account_sepa_direct_debit
 #: model:mail.message.subtype,name:account_sepa_direct_debit.sdd_mt_invoice_paid_with_mandate
 msgid "Paid via direct debit"
-msgstr ""
+msgstr "تم الدفع بالخصم المباشر"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model,name:account_sepa_direct_debit.model_account_payment
@@ -581,24 +606,24 @@ msgstr "المدفوعات"
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.account_sepa_direct_debit_mandate_form
 msgid "Payments generated for this mandate that have not yet been collected."
-msgstr ""
+msgstr "لم يتم جمع المدفوعات الناشئة من هذا التفويض بعد."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_sdd_mandate__payment_ids
 msgid "Payments generated thanks to this mandate."
-msgstr ""
+msgstr "المدفوعات الناشئة من هذا التفويض."
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/sdd_mandate.py:126
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.account_sepa_direct_debit_mandate_form
 #, python-format
 msgid "Payments to Collect"
-msgstr ""
+msgstr "المدفوعات المُراد تحصيلها"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "Please complete your coordinates."
-msgstr ""
+msgstr "برجاء إكمال إحداثياتك."
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_report_invoice_document
@@ -606,6 +631,8 @@ msgid ""
 "Please do not pay it manually, the payment will be asked to your bank to be processed\n"
 "                        automatically."
 msgstr ""
+"برجاء عدم دفعها يدويًا، سيتم إرسال الدفعة إلى بنكك لتتم معالجتها\n"
+"                        أوتوماتيكيًا."
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.account_sepa_direct_debit_mandate_form
@@ -620,49 +647,49 @@ msgstr "تسجيل المدفوعات"
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_account_batch_payment__sdd_required_collection_date
 msgid "Required collection date"
-msgstr ""
+msgstr "تاريخ طلب الدفع"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.account_sepa_direct_debit_mandate_form
 msgid "Revoke"
-msgstr ""
+msgstr "فسخ"
 
 #. module: account_sepa_direct_debit
 #: selection:sdd.mandate,state:0
 msgid "Revoked"
-msgstr ""
+msgstr "مفسوخ"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model,name:account_sepa_direct_debit.model_sdd_mandate
 msgid "SDD Mandate"
-msgstr ""
+msgstr "تفويض SDD"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_res_partner__sdd_count
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_res_users__sdd_count
 msgid "SDD count"
-msgstr ""
+msgstr "عدد SDD"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_res_company__sdd_creditor_identifier
 msgid "SDD creditor identifier"
-msgstr ""
+msgstr "مُعرف دائن SDD"
 
 #. module: account_sepa_direct_debit
 #: model:account.payment.method,name:account_sepa_direct_debit.payment_method_sdd
 msgid "SEPA Direct Debit"
-msgstr ""
+msgstr "خصم SEPA المباشر"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
 msgid "SEPA Direct Debit Mandate"
-msgstr ""
+msgstr "تفويض خصم SEPA المباشر"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_res_company__sdd_creditor_identifier
 msgid ""
 "SEPA Direct Debit creditor identifier of the company, given by the bank."
-msgstr ""
+msgstr "مُعرف دائن خصم SEPA المباشر الممنوح من البنك."
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/sdd_mandate.py:82
@@ -671,17 +698,19 @@ msgid ""
 "SEPA Direct Debit scheme only accepts IBAN account numbers. Please select an"
 " IBAN-compliant debtor account for this mandate."
 msgstr ""
+"نظام خصم SEPA المباشر لا يقبل سوى أرقام حسابات IBAN. برجاء اختيار حساب مدين "
+"متوافق مع نظام IBAN لهذا التفويض."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_res_partner__sdd_mandate_ids
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_res_users__sdd_mandate_ids
 msgid "Sdd Mandate"
-msgstr ""
+msgstr "تفويض SDD"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_sepa_direct_debit.field_account_invoice__sdd_paying_mandate_id
 msgid "Sdd Paying Mandate"
-msgstr ""
+msgstr "تفويض دفع SDD"
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
@@ -704,6 +733,8 @@ msgid ""
 "Technical field used to inform the end user there is a SDD mandate that "
 "could be used to register that payment"
 msgstr ""
+"حقل تقني يُستخدم لإعلام المستخدم النهائي بوجود تفويض SDD يمكن استخدامه "
+"لتسجيل هذه الدفعة"
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/sdd_mandate.py:145
@@ -712,6 +743,8 @@ msgid ""
 "The bank account you select for payment must be related to a bank. Please "
 "fix it first."
 msgstr ""
+"يجب أن يكون الحساب البنكي الذي تختاره لسداد دفعة مرتبطًا ببنك. برجاء إصلاح "
+"هذا أولًا."
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/sdd_mandate.py:147
@@ -719,13 +752,13 @@ msgstr ""
 msgid ""
 "The bank your payment account is related to must have a BIC number. Please "
 "define one."
-msgstr ""
+msgstr "يجب أن يكون للبنك المرتبط به حساب دفعتك رقم BIC. برجاء تعريف رقم."
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/res_company.py:26
 #, python-format
 msgid "The creditor identifier exceeds the maximum length of 35 characters."
-msgstr ""
+msgstr "مُعرف الدائن الذي اخترته يتجاوز الحد الأقصى 35 حرف."
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/sdd_mandate.py:84
@@ -734,6 +767,8 @@ msgid ""
 "The debtor account must have a bank with a bic number in order to validate a"
 " SEPA Direct Debit mandate."
 msgstr ""
+"يجب أن يكون حساب المدين متصلًا ببنك يملك رقم BIC ليستطيع اعتماد تفويض خصم "
+"مباشر باستخدام SEPA."
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/sdd_mandate.py:153
@@ -742,18 +777,19 @@ msgid ""
 "The debtor identifier you specified exceeds the limitation of 35 characters "
 "imposed by SEPA regulation"
 msgstr ""
+"مُعرف المدين الذي اخترته يتجاوز الحد الأقصى 35 حرف الذي تنص عليه لائحة SEPA"
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/sdd_mandate.py:137
 #, python-format
 msgid ""
 "The end date of the mandate must be posterior or equal to its start date."
-msgstr ""
+msgstr "يجب أن يكون تاريخ انتهاء التفويض تالٍ لتاريخ بدايته أو مطابقًا له."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_account_payment__sdd_mandate_id
 msgid "The mandate used to generate this payment, if any."
-msgstr ""
+msgstr "التفويض المستخدم لإنشاء هذه الدفعة، إن وجد."
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
@@ -762,6 +798,9 @@ msgid ""
 "                    specified time range. If no end date is specified,\n"
 "                    you will have to contact us to stop its use."
 msgstr ""
+"سيتم استخدم التفويض لدفع الفواتير\n"
+"في النطاق الزمني المحدد فقط. إن لم يتم تحديد تاريخ انتهاء،\n"
+"عليك التواصل معنا لإبطال فعاليته."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_sdd_mandate__state
@@ -771,11 +810,16 @@ msgid ""
 "- 'active' means that this mandate can be used to pay invoices. \n"
 "- 'closed' designates a mandate that has been marked as not to use anymore without invalidating the previous transactions done with it.- 'revoked' means the mandate has been signaled as fraudulent by the customer. It cannot be used anymore, and should not ever have been. You will probably need to refund the related invoices, if any.\n"
 msgstr ""
+"حالة التفويض المختار.\n"
+"- 'مسودة' تعني أن هذا التفويض لا يزال بحاجة للتأكيد قبل أن يُستخدم.\n"
+"- 'نشط' تعني أن من الممكن استخدام هذا التفويض لدفع الفواتير.\n"
+"- 'مغلق' ترمز للتفويض الذي لم يعد من الممكن أن يُستخدم، بدون إبطال صلاحية المعاملات التي تمت من خلاله.\n"
+"- 'مفسوخ' تعني أن العميل أشار إلى التفويض كتفويض مزيف. لم يعد من الممكن استخدامه، ولم يكن ينبغي أن يُستخدم. ستحتاج لمراجعة قيم كل الفواتير المرتبطة به إذا وُجدت.\n"
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_sdd_mandate__name
 msgid "The unique identifier of this mandate."
-msgstr ""
+msgstr "مُعرف التفويض المختار الفريد."
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_mandate_form_document
@@ -783,6 +827,8 @@ msgid ""
 "This form grants our company the authorization to\n"
 "                    use direct debit to pay the invoices we send to you."
 msgstr ""
+"يمنح هذا النموذج مؤسستنا التصريح لاستخدام\n"
+"                    الخصم المباشر لسداد قيمة الفواتير التي نرسلها لك."
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/account_payment.py:219
@@ -792,6 +838,8 @@ msgid ""
 "This invoice cannot be paid via SEPA Direct Debit, as there is no valid "
 "mandate available for its customer at its creation date."
 msgstr ""
+"لا يمكن دفع هذه الفاتورة باستخدام نظام خصم SEPA المباشر، لعدم وجود تفويض "
+"صالح لهذا العميل."
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.sdd_report_invoice_document
@@ -799,6 +847,8 @@ msgid ""
 "This invoice will be paid using direct debit and is only\n"
 "                        sent for informative purposes."
 msgstr ""
+"سيتم دفع هذه الفاتورة باستخدام الخصم المباشر\n"
+"                        وهي مُرسلة فقط لإعلامكم."
 
 #. module: account_sepa_direct_debit
 #: model:ir.model.fields,help:account_sepa_direct_debit.field_sdd_mandate__one_off
@@ -807,6 +857,9 @@ msgid ""
 "will automatically go from 'active' to 'closed' after its first use in "
 "payment if this option is set.\n"
 msgstr ""
+"يأخذ القيمة صحيح فقط إذا كان استخدام هذا التفويض محدودًا على معاملة واحدة "
+"فقط. إذا تم تحديد هذا الاختيار، ستتحول قيمة التفويض تلقائيًا من 'نشط' "
+"لـ'مغلق' بعد استخدامه للدفع أول مرة.\n"
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/account_payment.py:150
@@ -815,6 +868,8 @@ msgid ""
 "Trying to generate a Direct Debit XML file containing payments from another "
 "company than that file's creditor."
 msgstr ""
+"نحاول إنشاء ملف XML للخصم المباشر لمدفوعات مؤسسة غير مؤسسة الدائن صاحب "
+"الملف."
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/account_payment.py:153
@@ -823,13 +878,15 @@ msgid ""
 "Trying to generate a Direct Debit XML for payments coming from another "
 "payment method than SEPA Direct Debit."
 msgstr ""
+"نحاول إنشاء ملف XML للخصم المباشر لمدفوعات اُستخدمت لها طريقة دفع أخرى غير "
+"خصم SEPA المباشر."
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/account_payment.py:201
 #, python-format
 msgid ""
 "Trying to register a payment on a mandate belonging to a different partner."
-msgstr ""
+msgstr "نحاول تسجيل دفعة على تفويض ينتمي لشريك آخر."
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/account_payment.py:66
@@ -839,6 +896,8 @@ msgid ""
 " %s for partner '%s'. Please create one before encoding a SEPA Direct Debit "
 "payment."
 msgstr ""
+"لم نستطع ترحيل الدفعة '%s' لعدم وجود تفويض صالح للاستعمال متاح في التاريخ %s"
+" للشريك '%s'. برجاء إنشاء تفويض قبل إجراء دفعة بنظام خصم SEPA المباشر."
 
 #. module: account_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_sepa_direct_debit.account_sepa_direct_debit_mandate_form
@@ -851,7 +910,7 @@ msgstr "اعتماد"
 msgid ""
 "You cannot generate a SEPA Direct Debit file with a required collection date"
 " in the past."
-msgstr ""
+msgstr "لا يمكنك إنشاء ملف خصم SEPA المباشر بتاريخ طلب دفع ماضي."
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/account_invoice.py:35
@@ -859,14 +918,14 @@ msgstr ""
 msgid ""
 "You cannot pay an invoice with a mandate that does not cover the moment when"
 " it was issued."
-msgstr ""
+msgstr "لا يمكنك سداد قيمة فاتورة بتفويض لا يشمل لحظة إصدارها."
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/sdd_mandate.py:86
 #, python-format
 msgid ""
 "You must register this mandate's original document before validating it."
-msgstr ""
+msgstr "يجب تسجيل المستند الأصلي الخاص بهذا التفويض قبل اعتماده."
 
 #. module: account_sepa_direct_debit
 #: code:addons/account_sepa_direct_debit/models/account_batch_payment.py:28
@@ -875,3 +934,5 @@ msgid ""
 "Your company must have a creditor identifier in order to issue SEPA Direct "
 "Debit payments requests. It can be defined in accounting module's settings."
 msgstr ""
+"يجب أن تمتلك مؤسستك مُعرف دائن لإنشاء طلبات سداد بنظام خصم SEPA المباشر. "
+"يمكنك ضبطه من إعدادات الموديول المحاسبية."

@@ -32,7 +32,7 @@ msgstr ""
 #. module: web_dashboard
 #: model:ir.model,name:web_dashboard.model_ir_actions_act_window_view
 msgid "Action Window View"
-msgstr ""
+msgstr "アクションウィンドウビュー"
 
 #. module: web_dashboard
 #: selection:ir.actions.act_window.view,view_mode:0

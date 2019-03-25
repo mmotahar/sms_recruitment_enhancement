@@ -5,6 +5,7 @@
 # Translators:
 # Bagavathikumar Ramakrishnan <bagavathikumar@gmail.com>, 2019
 # Abul Hassan M I <miabulhassan@gmail.com>, 2019
+# Alagappan Karthikeyan <me@karthik.sg>, 2019
 # 
 msgid ""
 msgstr ""
@@ -12,7 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-15 15:18+0000\n"
 "PO-Revision-Date: 2018-08-24 11:36+0000\n"
-"Last-Translator: Abul Hassan M I <miabulhassan@gmail.com>, 2019\n"
+"Last-Translator: Alagappan Karthikeyan <me@karthik.sg>, 2019\n"
 "Language-Team: Tamil (https://www.transifex.com/odoo/teams/41243/ta/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -41,27 +42,27 @@ msgstr ""
 #. module: account_accountant
 #: model:ir.model,name:account_accountant.model_account_chart_template
 msgid "Account Chart Template"
-msgstr ""
+msgstr "கணக்கு விளக்கப்படம் டெம்ப்ளேட்"
 
 #. module: account_accountant
 #: model:ir.ui.menu,name:account_accountant.menu_account_group
 msgid "Account Groups"
-msgstr ""
+msgstr "கணக்கு குழுக்கள்"
 
 #. module: account_accountant
 #: model:ir.model.fields,field_description:account_accountant.field_res_config_settings__module_account_predictive_bills
 msgid "Account Predictive Bills"
-msgstr ""
+msgstr "கணக்கு முன்கணிப்பு பில்கள்"
 
 #. module: account_accountant
 #: model:ir.ui.menu,name:account_accountant.account_tag_menu
 msgid "Account Tags"
-msgstr ""
+msgstr "கணக்கு குறிச்சொற்கள்"
 
 #. module: account_accountant
 #: model_terms:ir.ui.view,arch_db:account_accountant.res_config_settings_view_form
 msgid "Account used when transferring between banks"
-msgstr ""
+msgstr "வங்கிகளுக்கு இடையில் மாற்றும் போது பயன்படுத்தப்படும் கணக்கு"
 
 #. module: account_accountant
 #: model:ir.ui.menu,name:account_accountant.menu_accounting
@@ -73,12 +74,12 @@ msgstr "கணக்கு"
 #. module: account_accountant
 #: model:ir.model.fields,field_description:account_accountant.field_res_config_settings__use_anglo_saxon
 msgid "Anglo-Saxon Accounting"
-msgstr ""
+msgstr "ஆங்கிலோ-சாக்சன் பைனான்ஸ்"
 
 #. module: account_accountant
 #: model:ir.model.fields,field_description:account_accountant.field_digest_digest__kpi_account_bank_cash
 msgid "Bank & Cash Moves"
-msgstr ""
+msgstr "வங்கி & பண நகர்வு"
 
 #. module: account_accountant
 #: model_terms:ir.ui.view,arch_db:account_accountant.view_account_change_lock_date
@@ -88,12 +89,12 @@ msgstr "ரத்து"
 #. module: account_accountant
 #: model:ir.model,name:account_accountant.model_account_change_lock_date
 msgid "Change Lock Date"
-msgstr ""
+msgstr "பூட்டு தேதி மாற்றவும்"
 
 #. module: account_accountant
 #: model:ir.model,name:account_accountant.model_res_config_settings
 msgid "Config Settings"
-msgstr ""
+msgstr "கட்டமைப்பு அமைப்புகள்"
 
 #. module: account_accountant
 #: model:ir.model.fields,field_description:account_accountant.field_account_change_lock_date__create_uid
@@ -109,11 +110,12 @@ msgstr "உருவாக்கப்பட்ட தேதி"
 #: model_terms:ir.ui.view,arch_db:account_accountant.res_config_settings_view_form
 msgid "Define fiscal years of more or less than a year"
 msgstr ""
+"ஒரு வருடத்திற்கும் அதிகமாகவோ அல்லது குறைவாகவோ நிதி ஆண்டுகளை வரையறுக்கவும்"
 
 #. module: account_accountant
 #: model:ir.model,name:account_accountant.model_digest_digest
 msgid "Digest"
-msgstr ""
+msgstr "டைஜஸ்ட்"
 
 #. module: account_accountant
 #: model:ir.model.fields,field_description:account_accountant.field_account_change_lock_date__display_name
@@ -125,22 +127,23 @@ msgstr "காட்சி பெயர்"
 #, python-format
 msgid "Do not have access, skip this data for user's digest email"
 msgstr ""
+"அணுகல் இல்லை, பயனரின் டைஜெஸ்ட் மின்னஞ்சலுக்கு இந்தத் தரவைத் தவிர்க்கவும்"
 
 #. module: account_accountant
 #: model:ir.ui.menu,name:account_accountant.menu_account_fiscal_year
 #: model_terms:ir.ui.view,arch_db:account_accountant.res_config_settings_view_form
 msgid "Fiscal Years"
-msgstr ""
+msgstr "நிதி ஆண்டுகள்"
 
 #. module: account_accountant
 #: model:ir.model.fields,field_description:account_accountant.field_res_config_settings__fiscalyear_last_day
 msgid "Fiscalyear Last Day"
-msgstr ""
+msgstr "கடைசி நாள்"
 
 #. module: account_accountant
 #: model:ir.model.fields,field_description:account_accountant.field_res_config_settings__fiscalyear_last_month
 msgid "Fiscalyear Last Month"
-msgstr ""
+msgstr "நிதி ஆண்டு கடந்த மாதம்"
 
 #. module: account_accountant
 #: model:ir.model.fields,field_description:account_accountant.field_account_change_lock_date__id
@@ -153,16 +156,18 @@ msgid ""
 "Intermediary account used when moving money from a liquidity account to "
 "another"
 msgstr ""
+"பணப்புழக்கக் கணக்கிலிருந்து பணத்தை மற்றொரு இடத்திற்கு மாற்றும் போது "
+"இடைத்தரகர் கணக்கு பயன்படுத்தப்படுகிறது"
 
 #. module: account_accountant
 #: model:ir.model.fields,field_description:account_accountant.field_digest_digest__kpi_account_bank_cash_value
 msgid "Kpi Account Bank Cash Value"
-msgstr ""
+msgstr "Kpi கணக்கு வங்கி பண மதிப்பு"
 
 #. module: account_accountant
 #: model_terms:ir.ui.view,arch_db:account_accountant.res_config_settings_view_form
 msgid "Last Day"
-msgstr ""
+msgstr "கடைசி நாள்"
 
 #. module: account_accountant
 #: model:ir.model.fields,field_description:account_accountant.field_account_change_lock_date____last_update
@@ -182,36 +187,36 @@ msgstr "கடைசியாக புதுப்பிக்கப்பட�
 #. module: account_accountant
 #: model_terms:ir.ui.view,arch_db:account_accountant.res_config_settings_view_form
 msgid "Last day of your fiscal year, for automatic opening entries"
-msgstr ""
+msgstr "உங்கள் நிதி ஆண்டு கடைசி நாள், தானியங்கி திறப்பு உள்ளீடுகளை"
 
 #. module: account_accountant
 #. openerp-web
 #: code:addons/account_accountant/static/src/js/tour.js:130
 #, python-format
 msgid "Let's start with a new customer invoice."
-msgstr ""
+msgstr "புதிய வாடிக்கையாளர் விலைப்பட்டியல் மூலம் தொடங்கலாம்."
 
 #. module: account_accountant
 #: model:ir.model.fields,field_description:account_accountant.field_account_change_lock_date__fiscalyear_lock_date
 #: model:ir.model.fields,field_description:account_accountant.field_res_config_settings__fiscalyear_lock_date
 msgid "Lock Date for All Users"
-msgstr ""
+msgstr "எல்லா பயனர்களுக்கும் பூட்டு தேதி"
 
 #. module: account_accountant
 #: model:ir.model.fields,field_description:account_accountant.field_account_change_lock_date__period_lock_date
 #: model:ir.model.fields,field_description:account_accountant.field_res_config_settings__period_lock_date
 msgid "Lock Date for Non-Advisers"
-msgstr ""
+msgstr "அல்லாத ஆலோசகர்கள் தேதி பூட்டு"
 
 #. module: account_accountant
 #: model:ir.ui.menu,name:account_accountant.menu_action_change_lock_date
 msgid "Lock Dates"
-msgstr ""
+msgstr "பூட்டுத் தேதிகள்"
 
 #. module: account_accountant
 #: model:ir.actions.act_window,name:account_accountant.action_view_account_change_lock_date
 msgid "Lock your Fiscal Period"
-msgstr ""
+msgstr "உங்கள் நிதி காலம் பூட்டவும்"
 
 #. module: account_accountant
 #: model:ir.model.fields,help:account_accountant.field_account_change_lock_date__fiscalyear_lock_date
@@ -220,6 +225,9 @@ msgid ""
 "No users, including Advisers, can edit accounts prior to and inclusive of "
 "this date. Use it for fiscal year locking for example."
 msgstr ""
+"ஆலோசகர்கள் உள்ளிட்ட எந்த பயனர்களும், இந்த தேதிக்கு முந்தைய மற்றும் அதனுடன் "
+"தொடர்புடைய கணக்குகளை திருத்தலாம். உதாரணமாக நிதி ஆண்டு பூட்டுதல் அதை "
+"பயன்படுத்த."
 
 #. module: account_accountant
 #: model:ir.model.fields,help:account_accountant.field_res_config_settings__period_lock_date
@@ -228,6 +236,9 @@ msgid ""
 "of this date. Use it for period locking inside an open fiscal year, for "
 "example."
 msgstr ""
+"'ஆலோசகர்' பாத்திரத்துடன் மட்டுமே பயனர்கள் மட்டுமே இந்த தேதிக்கு முந்தைய "
+"மற்றும் அதனுடன் தொடர்புடைய கணக்குகளை திருத்த முடியும். ஒரு திறந்த "
+"நிதியாண்டில் கால பூட்டுதலுக்காக அதைப் பயன்படுத்தவும், உதாரணமாக."
 
 #. module: account_accountant
 #: model:ir.model.fields,help:account_accountant.field_account_change_lock_date__period_lock_date
@@ -236,16 +247,19 @@ msgid ""
 " this date. Use it for period locking inside an open fiscal year, for "
 "example."
 msgstr ""
+"ஆலோசனையின் பங்கு பயனர்களால் மட்டுமே இந்த தேதிக்கு முந்தைய மற்றும் அதனுடன் "
+"தொடர்புடைய கணக்குகளை திருத்த முடியும். ஒரு திறந்த நிதியாண்டில் கால "
+"பூட்டுதலுக்காக அதைப் பயன்படுத்தவும், உதாரணமாக."
 
 #. module: account_accountant
 #: model_terms:ir.ui.view,arch_db:account_accountant.res_config_settings_view_form
 msgid "Predict vendor bill accounts"
-msgstr ""
+msgstr "விற்பனையாளர் மசோதா கணக்குகளை முன்னறிவித்தல்"
 
 #. module: account_accountant
 #: model:ir.ui.menu,name:account_accountant.menu_product_product_categories
 msgid "Product Categories"
-msgstr ""
+msgstr "தயாரிப்பு வகைகள்"
 
 #. module: account_accountant
 #. openerp-web
@@ -255,16 +269,18 @@ msgid ""
 "Ready to discover your new favorite <b>accounting app</b>? Get started by "
 "clicking here."
 msgstr ""
+"உங்கள் புதிய பிடித்தமான கணக்கியல் பயன்பாட்டைக் கண்டறியத் தயாரா? இங்கே கிளிக்"
+" செய்வதன் மூலம் தொடங்கவும்."
 
 #. module: account_accountant
 #: model_terms:ir.ui.view,arch_db:account_accountant.res_config_settings_view_form
 msgid "Record cost of goods sold in your journal entries"
-msgstr ""
+msgstr "உங்கள் பத்திரிகை உள்ளீடுகளில் விற்கப்படும் பொருட்களின் பதிவு விலை"
 
 #. module: account_accountant
 #: model_terms:ir.ui.view,arch_db:account_accountant.view_account_change_lock_date
 msgid "Save"
-msgstr ""
+msgstr "சேமி"
 
 #. module: account_accountant
 #: model_terms:ir.ui.view,arch_db:account_accountant.res_config_settings_view_form
@@ -272,11 +288,13 @@ msgid ""
 "The system will try to predict vendor bill accounts based on history of "
 "previous bills."
 msgstr ""
+"கணினி முந்திய பில்கள் வரலாற்றின் அடிப்படையில் விற்பனையாளர் மசோதா கணக்குகளை "
+"கணிக்க முயற்சிக்கும்."
 
 #. module: account_accountant
 #: model:ir.model.fields,field_description:account_accountant.field_res_config_settings__transfer_account_id
 msgid "Transfer Account"
-msgstr ""
+msgstr "கணக்கை மாற்றவும்"
 
 #. module: account_accountant
 #. openerp-web
@@ -286,6 +304,8 @@ msgid ""
 "Use the path to quickly click back to <b>previous screens</b>, without "
 "reloading the page."
 msgstr ""
+"பக்கத்தை மீண்டும் ஏற்றாமல், விரைவாக முந்தைய திரைகளில் மீண்டும் கிளிக் செய்ய "
+"பாதையைப் பயன்படுத்தவும்."
 
 #. module: account_accountant
 #. openerp-web
@@ -295,3 +315,6 @@ msgid ""
 "Your reports are available in real time. <i>No need to close a fiscal year "
 "to get a Profit &amp; Loss statement or view the Balance Sheet.</i>"
 msgstr ""
+"உங்கள் அறிக்கைகள் உண்மையான நேரத்தில் கிடைக்கின்றன. லாபம் மற்றும் வருவாயைப் "
+"பெற ஒரு நிதி ஆண்டை மூட வேண்டிய அவசியம் இல்லை. இழப்பு அறிக்கை அல்லது "
+"இருப்புநிலைக் குறிப்பைக் காண்க."

@@ -1,7 +1,6 @@
 odoo.define('quality_mrp_iot.pedal_form', function(require) {
 "use strict";
 
-var basic_fields = require('web.basic_fields');
 var FormView = require('web.FormView');
 var FormController = require('web.FormController');
 var FormRenderer = require('web.FormRenderer');
@@ -89,8 +88,13 @@ var PedalController = FormController.extend({
             // Call IoT Boxes
             var promises = [];
             console.log(data);
+            var protocol = new URL(window.location.href).protocol;
+            var port = protocol === 'http' ? ':8069' : '';
+            _.each(self.triggers, function (trigger, triggerName) {
+                trigger.url = protocol + '//' + triggerName + port;
+            });
             for (var key in data) {
-                var url = key + '/hw_drivers/owner/check';
+                var url = data[key].url + '/hw_drivers/owner/check';
                 var devices = [];
                 for (var device in data[key]) {
                     devices.push(data[key][device][0]);
@@ -142,7 +146,7 @@ var PedalController = FormController.extend({
         this.renderer.showPedalStatusButton(true);
         var data = this.triggers;
         for (var key in data) {
-            var url = key + '/hw_drivers/owner/take';
+            var url = data[key].url + '/hw_drivers/owner/take';
             var devices = [];
             for (var device in data[key]) {
                 devices.push(data[key][device][0]);
@@ -171,7 +175,7 @@ var PedalController = FormController.extend({
         var self = this;
         var data = this.triggers;
         for (var box in data) {
-            var url = box + '/hw_drivers/owner/ping';
+            var url = data[box].url + '/hw_drivers/owner/ping';
             var devices = [];
             for (var device in data[box]) {
                 devices.push(data[box][device][0]);

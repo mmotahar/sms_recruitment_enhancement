@@ -592,7 +592,7 @@ msgstr "Patvirtinti"
 #: code:addons/mrp_workorder/static/src/xml/widget_template.xml:32
 #, python-format
 msgid "Viewer"
-msgstr ""
+msgstr "Žiūrėtojas"
 
 #. module: mrp_workorder
 #: code:addons/mrp_workorder/models/mrp_workorder.py:495

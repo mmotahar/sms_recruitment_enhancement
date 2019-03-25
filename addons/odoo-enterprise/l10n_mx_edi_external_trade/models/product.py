@@ -1,7 +1,7 @@
 # coding: utf-8
 
 from odoo import api, fields, models
-
+from odoo.osv import expression
 
 class ProductTemplate(models.Model):
     _inherit = 'product.template'
@@ -47,8 +47,11 @@ class L10nMXEdiTariffFraction(models.Model):
         return result
 
     @api.model
-    def name_search(self, name='', args=None, operator='ilike', limit=100):
+    def _name_search(self, name, args=None, operator='ilike', limit=100, name_get_uid=None):
         args = args or []
-        domain_name = ['|', ('name', 'ilike', name), ('code', 'ilike', name)]
-        recs = self.search(domain_name + args, limit=limit)
-        return recs.name_get()
+        if operator == 'ilike' and not (name or '').strip():
+            domain = []
+        else:
+            domain = ['|', ('name', 'ilike', name), ('code', 'ilike', name)]
+        ids = self._search(expression.AND([domain, args]), limit=limit, access_rights_uid=name_get_uid)
+        return self.browse(ids).name_get()

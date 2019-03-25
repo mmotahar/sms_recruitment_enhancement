@@ -61,14 +61,14 @@ class Tags(models.Model):
                     COUNT(rel.ir_attachment_id) AS __count
             FROM documents_tag
                 JOIN documents_facet facet ON documents_tag.facet_id = facet.id
-                    AND facet.folder_id IN %s
+                    AND facet.folder_id = ANY(%s)
                 LEFT JOIN document_tag_rel rel ON documents_tag.id = rel.documents_tag_id
                     AND rel.ir_attachment_id = ANY(%s)
             GROUP BY facet.sequence, facet.name, facet.id, facet.tooltip, documents_tag.sequence, documents_tag.name, documents_tag.id
             ORDER BY facet.sequence, facet.name, facet.id, facet.tooltip, documents_tag.sequence, documents_tag.name, documents_tag.id
         """
         params = [
-            tuple(folders.ids),
+            list(folders.ids),
             list(attachments.ids),  # using Postgresql's ANY() with a list to prevent empty list of attachments
         ]
         self.env.cr.execute(query, params)

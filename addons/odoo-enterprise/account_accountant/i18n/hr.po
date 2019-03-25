@@ -41,12 +41,12 @@ msgstr "<span class=\"o_form_label\">Fiscalna godina </span>"
 #. module: account_accountant
 #: model_terms:ir.ui.view,arch_db:account_accountant.res_config_settings_view_form
 msgid "<span class=\"o_form_label\">Inter-Banks Transfers</span>"
-msgstr ""
+msgstr "<span class=\"o_form_label\">Međubankovne transakcije</span>"
 
 #. module: account_accountant
 #: model:ir.model,name:account_accountant.model_account_chart_template
 msgid "Account Chart Template"
-msgstr ""
+msgstr "Predložak kontnog plana"
 
 #. module: account_accountant
 #: model:ir.ui.menu,name:account_accountant.menu_account_group
@@ -83,7 +83,7 @@ msgstr "Anglo-Saksonsko računovodstvo"
 #. module: account_accountant
 #: model:ir.model.fields,field_description:account_accountant.field_digest_digest__kpi_account_bank_cash
 msgid "Bank & Cash Moves"
-msgstr ""
+msgstr "Knjiženja Banke i gotovine"
 
 #. module: account_accountant
 #: model_terms:ir.ui.view,arch_db:account_accountant.view_account_change_lock_date
@@ -93,12 +93,12 @@ msgstr "Odustani"
 #. module: account_accountant
 #: model:ir.model,name:account_accountant.model_account_change_lock_date
 msgid "Change Lock Date"
-msgstr ""
+msgstr "Promijeni datum zaključavanja"
 
 #. module: account_accountant
 #: model:ir.model,name:account_accountant.model_res_config_settings
 msgid "Config Settings"
-msgstr ""
+msgstr "Postavke"
 
 #. module: account_accountant
 #: model:ir.model.fields,field_description:account_accountant.field_account_change_lock_date__create_uid

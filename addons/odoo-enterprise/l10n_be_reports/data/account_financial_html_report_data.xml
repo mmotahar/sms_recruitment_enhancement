@@ -462,7 +462,7 @@
             <field name="name">17/49 - Dettes</field>
             <field name="code">BE_17_49</field>
             <field name="parent_id" ref='account_financial_report_be_passif_title0'/>
-            <field name="formulas">balance = BE_17.balance + BE_42_48.balance + BE_492_3.balance; credit = BE_17.credit + BE_42_48.credit + BE_492_3.credit; debit = BE_17.debit + BE_42_48.debit + BE_492_3.debit</field>
+            <field name="formulas">balance = BE_17.balance + BE_42_48.balance + BE_49.balance; credit = BE_17.credit + BE_42_48.credit + BE_49.credit; debit = BE_17.debit + BE_42_48.debit + BE_49.debit</field>
             <field name="sequence" eval="3"/>
             <field name="level" eval="1" />
         </record>
@@ -664,15 +664,35 @@
             <field name="sequence" eval="6"/>
             <field name="level" eval="3" />
         </record>
+        <record id="account_financial_report_be_regularisation_attente0" model="account.financial.html.report.line">
+            <field name="name">49 - Comptes de régularisation et d'attente</field>
+            <field name="code">BE_49</field>
+            <field name="parent_id" ref='account_financial_report_be_dettes0'/>
+            <field name="groupby">account_id</field>
+            <field name="formulas">balance = BE_492_3.balance + BE_499.balance; debit = BE_492_3.debit + BE_499.debit; credit = BE_492_3.credit + BE_499.credit</field>
+            <field name="sequence" eval="3"/>
+            <field name="level" eval="2" />
+        </record>
         <record id="account_financial_report_be_regularisation1" model="account.financial.html.report.line">
             <field name="name">492/3 - Comptes de régularisation</field>
             <field name="code">BE_492_3</field>
-            <field name="parent_id" ref='account_financial_report_be_dettes0'/>
+            <field name="parent_id" ref='account_financial_report_be_regularisation_attente0'/>
             <field name="domain" eval="['|', ('account_id.code', '=like', '492%'), ('account_id.code', '=like', '493%')]" />
             <field name="groupby">account_id</field>
             <field name="formulas">balance = -sum.balance; credit = sum.credit; debit = sum.debit</field>
             <field name="sequence" eval="3"/>
-            <field name="level" eval="2" />
+            <field name="level" eval="3" />
+        </record>
+        <record id="account_financial_report_be_attente0" model="account.financial.html.report.line">
+            <field name="name">499 - Comptes d'attente</field>
+            <field name="code">BE_499</field>
+            <field name="parent_id" ref='account_financial_report_be_regularisation_attente0'/>
+            <field name="domain" eval="[('account_id.code', '=like', '499%')]" />
+            <field name="groupby">account_id</field>
+            <field name="formulas">balance = -sum.balance; credit = sum.credit; debit = sum.debit</field>
+            <field name="sequence" eval="4"/>
+            <field name="level" eval="3" />
+            <field name="hide_if_zero" eval="True" />
         </record>
 
         <!-- 

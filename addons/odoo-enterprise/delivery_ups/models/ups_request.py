@@ -249,7 +249,7 @@ class UPSRequest():
             elif hasattr(package, 'PackagingType'):
                 package.PackagingType.Code = p.packaging_type or packaging_type or ''
 
-            if p.dimension_unit:
+            if p.dimension_unit and any(p.dimension.values()):
                 package.Dimensions.UnitOfMeasurement.Code = p.dimension_unit or ''
                 package.Dimensions.Length = p.dimension['length'] or ''
                 package.Dimensions.Width = p.dimension['width'] or ''
@@ -482,13 +482,13 @@ class UPSRequest():
 
         request = client.factory.create('ns0:RequestType')
         request.TransactionReference.CustomerContext = "Cancle shipment"
-        voidshipment = client.factory.create('ns2:VoidShipment')
-        voidshipment.ShipmentIdentificationNumber = tracking_number or ''
+        voidshipment = client.factory.create('ns2:VoidShipmentRequest')
+        voidshipment.VoidShipment.ShipmentIdentificationNumber = tracking_number or ''
 
         result = {}
         try:
             response = client.service.ProcessVoid(
-                Request=request, VoidShipment=voidshipment
+                Request=request, VoidShipment=voidshipment.VoidShipment
             )
             if response.Response.ResponseStatus.Code == "1":
                 return result

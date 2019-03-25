@@ -64,7 +64,7 @@
                 <tr t-if="page['stub_cropped']"><td colspan="6" class="text-right">...</td></tr>
             </tbody>
         </table>
-        <div class="stub_total_amount">check Amount:
+        <div class="stub_total_amount">Check Amount:
             <t t-esc="page['amount']"/>
         </div>
     </div>

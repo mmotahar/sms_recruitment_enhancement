@@ -3,16 +3,16 @@
 # * account_plaid
 # 
 # Translators:
-# Mustafa J. Kadhem <safi2266@gmail.com>, 2018
 # Abd El-Rahman Ali <abdelrahman.ali.242@gmail.com>, 2018
-# Islam Eldeeb <islameldeb@gmail.com>, 2018
+# Mustafa Rawi <mustafa@cubexco.com>, 2019
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~11.5+e\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-21 14:06+0000\n"
-"PO-Revision-Date: 2018-09-21 14:06+0000\n"
-"Last-Translator: Islam Eldeeb <islameldeb@gmail.com>, 2018\n"
+"PO-Revision-Date: 2018-08-24 11:36+0000\n"
+"Last-Translator: Mustafa Rawi <mustafa@cubexco.com>, 2019\n"
 "Language-Team: Arabic (https://www.transifex.com/odoo/teams/41243/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,24 +23,24 @@ msgstr ""
 #. module: account_plaid
 #: model:ir.model.fields,help:account_plaid.field_account_online_provider__plaid_error_type
 msgid "Additional information on error"
-msgstr ""
+msgstr "معلومات إضافية عن الخطأ"
 
 #. module: account_plaid
 #: code:addons/account_plaid/models/plaid.py:55
 #, python-format
 msgid "Get %s status code for call to %s. Content message: %s"
-msgstr "الحصول على %s حالة الشيفرة بالاتصال  بـ %s. محتوى الرسالة: %s"
+msgstr "الحصول على كود حالة %s للاتصال بـ %s. محتوى الرسالة: %s"
 
 #. module: account_plaid
 #: model:ir.model,name:account_plaid.model_account_online_journal
 msgid "Interface for Online Account Journal"
-msgstr ""
+msgstr "واجهة دفتر اليومية الإلكترونية"
 
 #. module: account_plaid
 #: code:addons/account_plaid/models/plaid.py:136
 #, python-format
 msgid "Only an Accountant is allowed to perform this operation."
-msgstr ""
+msgstr "لا يُسمح بإجراء هذه العملية إلا لمحاسب."
 
 #. module: account_plaid
 #: selection:account.online.provider,provider_type:0
@@ -50,22 +50,22 @@ msgstr "Plaid"
 #. module: account_plaid
 #: model:ir.model.fields,field_description:account_plaid.field_account_online_provider__plaid_error_type
 msgid "Plaid Error Type"
-msgstr ""
+msgstr "نوع الخطأ في Plaid"
 
 #. module: account_plaid
 #: model:ir.model.fields,field_description:account_plaid.field_account_online_provider__plaid_item_id
 msgid "Plaid Item"
-msgstr ""
+msgstr "عنصر Plaid"
 
 #. module: account_plaid
 #: model:ir.model.fields,field_description:account_plaid.field_account_online_provider__provider_type
 msgid "Provider Type"
-msgstr ""
+msgstr "نوع Plaid"
 
 #. module: account_plaid
 #: model:ir.model,name:account_plaid.model_account_online_provider
 msgid "Provider for online account synchronization"
-msgstr "مزود لمزامنة الحساب عبر الإنترنت"
+msgstr "مزود لمزامنة الحساب"
 
 #. module: account_plaid
 #: code:addons/account_plaid/models/plaid.py:41
@@ -77,12 +77,17 @@ msgid ""
 "error type: %s,\n"
 "request id: %s}"
 msgstr ""
+"حدث خطأ بخدمات Plaid!\n"
+"{الرسالة: %s,\n"
+"كود الخطأ: %s,\n"
+"نوع الخطأ: %s,\n"
+"معرف الطلب: %s}"
 
 #. module: account_plaid
 #: code:addons/account_plaid/models/plaid.py:74
 #, python-format
 msgid "Timeout: the server did not reply within 60s"
-msgstr ""
+msgstr "خطأ: لم يصلنا رد من السيرفر لمدة 60 ثانية"
 
 #. module: account_plaid
 #: selection:account.online.provider,provider_type:0
@@ -92,4 +97,4 @@ msgstr "Yodlee"
 #. module: account_plaid
 #: model:ir.model.fields,help:account_plaid.field_account_online_provider__plaid_item_id
 msgid "item id in plaid database"
-msgstr ""
+msgstr "معرف العنصر في قاعدة بيانات Plaid"

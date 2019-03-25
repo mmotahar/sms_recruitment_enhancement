@@ -22,6 +22,9 @@ class WorkflowActionRuleAccount(models.Model):
                     'type': invoice_type,
                     'journal_id': journal.id,
                 }
+                if invoice_type != 'out_refund':
+                    create_values['comment'] = False
+
                 if self.partner_id:
                     create_values.update(partner_id=self.partner_id.id)
                 elif attachment.partner_id:

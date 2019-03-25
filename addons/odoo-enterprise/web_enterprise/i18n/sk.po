@@ -66,7 +66,7 @@ msgstr "Akcia"
 #: code:addons/web_enterprise/static/src/xml/base.xml:327
 #, python-format
 msgid "Alt"
-msgstr ""
+msgstr "Alt"
 
 #. module: web_enterprise
 #. openerp-web
@@ -116,7 +116,7 @@ msgstr "Kontrola"
 #: code:addons/web_enterprise/static/src/xml/base.xml:277
 #, python-format
 msgid "Create a new record"
-msgstr ""
+msgstr "Vytvoriť nový Záznam"
 
 #. module: web_enterprise
 #. openerp-web
@@ -137,14 +137,14 @@ msgstr "Popis"
 #: code:addons/web_enterprise/static/src/xml/base.xml:268
 #, python-format
 msgid "Discard a record modification"
-msgstr ""
+msgstr "Zrušiť zmenu záznamu"
 
 #. module: web_enterprise
 #. openerp-web
 #: code:addons/web_enterprise/static/src/xml/base.xml:259
 #, python-format
 msgid "Edit a record"
-msgstr ""
+msgstr "Úprava záznamu"
 
 #. module: web_enterprise
 #: model:ir.model,name:web_enterprise.model_ir_http
@@ -156,7 +156,7 @@ msgstr "HTTP smerovanie"
 #: code:addons/web_enterprise/static/src/js/widgets/user_menu.js:57
 #, python-format
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "Klávesové skratky"
 
 #. module: web_enterprise
 #. openerp-web
@@ -212,28 +212,28 @@ msgstr ""
 #: code:addons/web_enterprise/static/src/xml/base.xml:313
 #, python-format
 msgid "Open the next record"
-msgstr ""
+msgstr "Otvoriť nasledujúci záznam"
 
 #. module: web_enterprise
 #. openerp-web
 #: code:addons/web_enterprise/static/src/xml/base.xml:304
 #, python-format
 msgid "Open the previous record"
-msgstr ""
+msgstr "Otvoriť predchádzajúci záznam"
 
 #. module: web_enterprise
 #. openerp-web
 #: code:addons/web_enterprise/static/src/xml/base.xml:295
 #, python-format
 msgid "Open to kanban view"
-msgstr ""
+msgstr "Otvoriť v kanban zobrazení"
 
 #. module: web_enterprise
 #. openerp-web
 #: code:addons/web_enterprise/static/src/xml/base.xml:286
 #, python-format
 msgid "Open to list view"
-msgstr ""
+msgstr "Otvoriť v zobrazení zoznamu"
 
 #. module: web_enterprise
 #. openerp-web
@@ -276,7 +276,7 @@ msgstr "Obnoviť váš odber"
 #: code:addons/web_enterprise/static/src/xml/base.xml:250
 #, python-format
 msgid "Save a record"
-msgstr ""
+msgstr "Uložiť záznam"
 
 #. module: web_enterprise
 #. openerp-web
@@ -297,7 +297,7 @@ msgstr "Hľadať..."
 #: code:addons/web_enterprise/static/src/xml/base.xml:232
 #, python-format
 msgid "Shortcuts"
-msgstr ""
+msgstr "Skratky"
 
 #. module: web_enterprise
 #. openerp-web
@@ -370,7 +370,7 @@ msgstr ""
 #: code:addons/web_enterprise/static/src/xml/base.xml:244
 #, python-format
 msgid "Windows/Linux"
-msgstr ""
+msgstr "Windows/Linux"
 
 #. module: web_enterprise
 #. openerp-web

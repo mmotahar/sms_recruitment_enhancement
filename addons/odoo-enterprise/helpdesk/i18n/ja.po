@@ -1264,7 +1264,7 @@ msgstr "優先度低"
 #: model:ir.model.fields,field_description:helpdesk.field_helpdesk_team__message_main_attachment_id
 #: model:ir.model.fields,field_description:helpdesk.field_helpdesk_ticket__message_main_attachment_id
 msgid "Main Attachment"
-msgstr ""
+msgstr "主な添付"
 
 #. module: helpdesk
 #: model:res.groups,name:helpdesk.group_helpdesk_manager

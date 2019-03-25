@@ -6,12 +6,13 @@
 # Martin Trigaux, 2018
 # Hamed Mohammadi <hamed@dehongi.com>, 2018
 # Arash Sardari <arashss77@gmail.com>, 2018
+# 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~11.3+e\n"
+"Project-Id-Version: Odoo Server saas~11.5+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-25 08:34+0000\n"
-"PO-Revision-Date: 2018-06-25 08:34+0000\n"
+"POT-Creation-Date: 2018-09-18 10:05+0000\n"
+"PO-Revision-Date: 2018-08-24 11:36+0000\n"
 "Last-Translator: Arash Sardari <arashss77@gmail.com>, 2018\n"
 "Language-Team: Persian (https://www.transifex.com/odoo/teams/41243/fa/)\n"
 "MIME-Version: 1.0\n"
@@ -32,12 +33,12 @@ msgstr ""
 "*استثنا، بین مبلغ پرداخت شده و صورت حساب اختلاف وجود دارد."
 
 #. module: account_3way_match
-#: model:ir.ui.view,arch_db:account_3way_match.account_invoice_filter_inherit_account_3way_match
+#: model_terms:ir.ui.view,arch_db:account_3way_match.account_invoice_filter_inherit_account_3way_match
 msgid "Bills in Exception"
 msgstr "استثناء"
 
 #. module: account_3way_match
-#: model:ir.ui.view,arch_db:account_3way_match.account_invoice_filter_inherit_account_3way_match
+#: model_terms:ir.ui.view,arch_db:account_3way_match.account_invoice_filter_inherit_account_3way_match
 msgid "Bills to Pay"
 msgstr "پرداخت صورتحساب"
 
@@ -89,7 +90,6 @@ msgstr "آماده پرداخت"
 
 #. module: account_3way_match
 #: model:ir.model.fields,field_description:account_3way_match.field_account_invoice__release_to_pay
-#: model:ir.ui.view,arch_db:account_3way_match.account_invoice_form_inherit
 msgid "Should be paid"
 msgstr "باید پرداخت شود"
 

@@ -90,29 +90,34 @@ return KanbanRenderer.extend(EditorMixin, {
      * @returns {Deferred}
      */
     _render: function () {
-        this.$el.toggleClass('o_kanban_grouped', this.isGrouped);
-        this.$el.toggleClass('o_kanban_ungrouped', !this.isGrouped);
-
-        this.$el.empty();
+        var self = this;
         var fragment = document.createDocumentFragment();
+        this.defs = [];
         this._renderUngrouped(fragment);
+        var defs = this.defs;
+        delete this.defs;
+        return $.when.apply($, defs).then(function () {
+            self.$el.empty();
+            self.$el.toggleClass('o_kanban_grouped', self.isGrouped);
+            self.$el.toggleClass('o_kanban_ungrouped', !self.isGrouped);
 
-        if (this.isGrouped) {
-            var $group = $('<div>', {class: 'o_kanban_group'});
-            $group.append(fragment);
-            this.$el.append($group);
+            if (self.isGrouped) {
+                var $group = $('<div>', {class: 'o_kanban_group'});
+                $group.append(fragment);
+                self.$el.append($group);
 
-            // render a second empty column
-            var fragment_empty = document.createDocumentFragment();
-            this._renderDemoDivs(fragment_empty, 7);
-            this._renderGhostDivs(fragment_empty, 6);
-            var $group_empty = $('<div>', {class: 'o_kanban_group'});
-            $group_empty.append(fragment_empty);
-            this.$el.append($group_empty);
-        } else {
-            this.$el.append(fragment);
-        }
-        return $.when();
+                // render a second empty column
+                var fragment_empty = document.createDocumentFragment();
+                self._renderDemoDivs(fragment_empty, 7);
+                self._renderGhostDivs(fragment_empty, 6);
+                var $group_empty = $('<div>', {class: 'o_kanban_group'});
+                $group_empty.append(fragment_empty);
+                self.$el.append($group_empty);
+            } else {
+                self.$el.append(fragment);
+            }
+        });
+
     },
     /**
      * Renders empty demo divs in a document fragment.
@@ -139,7 +144,7 @@ return KanbanRenderer.extend(EditorMixin, {
         this.recordEditor = new KanbanRecordEditor(
             this, this.kanbanRecord, this.recordOptions, this.arch, isDashboard);
         this.widgets.push(this.recordEditor);
-        this.recordEditor.appendTo(fragment);
+        this.defs.push(this.recordEditor.appendTo(fragment));
 
         this._renderDemoDivs(fragment, 6);
         this._renderGhostDivs(fragment, 6);

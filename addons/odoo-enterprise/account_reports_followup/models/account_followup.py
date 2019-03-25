@@ -138,15 +138,16 @@ class ResPartner(models.Model):
 
         fups = self._compute_followup_lines()
         level = None
-        for aml in self.unreconciled_aml_ids:
-            if aml.company_id == self.env.user.company_id:
-                index = aml.followup_line_id.id or None
-                followup_date = fups[index][0]
-                next_level = fups[index][1]
-                delay = fups[index][2]
-                if (aml.date_maturity and aml.date_maturity <= followup_date) or (current_date <= followup_date):
-                    if level is None or level[1] < delay:
-                        level = (next_level, delay)
+        if fups:
+            for aml in self.unreconciled_aml_ids:
+                if aml.company_id == self.env.user.company_id:
+                    index = aml.followup_line_id.id or None
+                    followup_date = fups[index][0]
+                    next_level = fups[index][1]
+                    delay = fups[index][2]
+                    if (aml.date_maturity and aml.date_maturity <= followup_date) or (current_date <= followup_date):
+                        if level is None or level[1] < delay:
+                            level = (next_level, delay)
         return level
 
     @api.multi

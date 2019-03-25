@@ -10,17 +10,16 @@
 # Christian <chris@effeci.info>, 2018
 # Fabio Genovese <ing.fabiogenovese@gmail.com>, 2018
 # Cécile Collart <cco@odoo.com>, 2018
-# Sergio Zanchetta <primes2h@gmail.com>, 2018
 # Francesco Garganese <francesco.garganese@aeromnia.aero>, 2018
 # Luigi Di Naro <gigidn@gmail.com>, 2018
 # Simone Bernini <simone@aperturelabs.it>, 2018
 # Sebastiano Pistore <SebastianoPistore.info@protonmail.ch>, 2018
 # Giacomo Grasso <giacomo.grasso.82@gmail.com>, 2018
-# Paolo Caruccio <paolo.caruccio66@gmail.com>, 2018
 # Manuela Feliciani <mfeliciani@alice.it>, 2018
 # David Minneci <david@numeko.it>, 2018
 # Paolo Valier, 2018
 # Martin Trigaux, 2018
+# Sergio Zanchetta <primes2h@gmail.com>, 2018
 # Léonie Bouchat <lbo@odoo.com>, 2018
 # 
 msgid ""
@@ -1239,7 +1238,7 @@ msgstr "Numero di allegati"
 #. module: sale_subscription
 #: model:ir.model.fields,field_description:sale_subscription.field_sale_subscription_alert__automation_id
 msgid "Automated Action"
-msgstr "Azione Automatica"
+msgstr "Azione automatica"
 
 #. module: sale_subscription
 #: model:ir.model.fields,field_description:sale_subscription.field_sale_subscription_template__auto_close_limit
@@ -1924,8 +1923,8 @@ msgstr ""
 #: model:ir.model.fields,help:sale_subscription.field_sale_subscription__payment_token_id
 msgid "If not set, the default payment token of the partner will be used."
 msgstr ""
-"Se non selezionato, verrà usato il metodo di pagamento predefinito del "
-"partner."
+"Se questa opzione non è selezionata, verrà usato il token di pagamento "
+"predefinito del partner."
 
 #. module: sale_subscription
 #: model:ir.model.fields,help:sale_subscription.field_sale_subscription_alert__filter_domain
@@ -2335,7 +2334,7 @@ msgstr ""
 #. module: sale_subscription
 #: model:ir.model.fields,help:sale_subscription.field_sale_subscription_alert__model_id
 msgid "Model on which the server action runs."
-msgstr "Modello su cui viene eseguita l'azione del server."
+msgstr "Modello sul quale viene eseguita l'azione server."
 
 #. module: sale_subscription
 #: selection:sale.subscription.alert,trigger_condition:0
@@ -2361,7 +2360,7 @@ msgstr "Ricavi ricorrenti mensili"
 #: model_terms:ir.ui.view,arch_db:sale_subscription.sale_subscription_report_search
 #: model_terms:ir.ui.view,arch_db:sale_subscription.sale_subscription_view_search
 msgid "My Subscriptions"
-msgstr "I miei abbonamenti"
+msgstr "Abbonamenti"
 
 #. module: sale_subscription
 #: code:addons/sale_subscription/controllers/portal.py:41
@@ -2760,7 +2759,7 @@ msgstr "Ripeti ogni (giorno/settimana/mese/anno)"
 #. module: sale_subscription
 #: model:ir.ui.menu,name:sale_subscription.menu_sale_subscription_report
 msgid "Reporting"
-msgstr "Report"
+msgstr "Rendicontazione"
 
 #. module: sale_subscription
 #: model:ir.model.fields,field_description:sale_subscription.field_sale_subscription_alert__activity_user_id
@@ -2813,7 +2812,7 @@ msgstr "Faccia trista"
 #. module: sale_subscription
 #: model:ir.model,name:sale_subscription.model_sale_order
 msgid "Sale Order"
-msgstr "Ordini di Vendita"
+msgstr "Ordine di vendita"
 
 #. module: sale_subscription
 #: model:ir.model.fields,field_description:sale_subscription.field_sale_subscription__sale_order_count
@@ -2854,12 +2853,12 @@ msgstr "Vendite"
 #. module: sale_subscription
 #: selection:sale.subscription.alert,activity_user:0
 msgid "Sales Channel Leader"
-msgstr "Leader canale di vendita"
+msgstr "Capo canale di vendita"
 
 #. module: sale_subscription
 #: model:ir.model,name:sale_subscription.model_sale_order_line
 msgid "Sales Order Line"
-msgstr "Riga Ordine di Vendita"
+msgstr "Riga ordine di vendita"
 
 #. module: sale_subscription
 #: code:addons/sale_subscription/models/sale_subscription.py:149
@@ -2880,7 +2879,7 @@ msgstr "Team di vendita"
 #: model_terms:ir.ui.view,arch_db:sale_subscription.sale_subscription_report_search
 #: model_terms:ir.ui.view,arch_db:sale_subscription.sale_subscription_view_search
 msgid "Salesperson"
-msgstr "Rappresentante"
+msgstr "Addetto vendite"
 
 #. module: sale_subscription
 #. openerp-web
@@ -3583,9 +3582,9 @@ msgid ""
 "                work done, expenses and/or sales orders. Odoo will automatically manage\n"
 "                the alerts for the renewal of the subscriptions to the right salesperson."
 msgstr ""
-"Usa gli abbonamenti per seguire i compiti, i problemi, i timesheet o la fatturazione in base al \n"
+"Usare gli abbonamenti per seguire le attività, i problemi, i fogli ore o la fatturazione in base al \n"
 "                lavoro svolto, alle spese e/o agli ordini di vendita. Odoo gestirà automaticamente\n"
-"               le segnalazioni per il rinnovo degli abbonamenti del commerciale adeguato. "
+"               le segnalazioni per il rinnovo degli abbonamenti del venditore adeguato. "
 
 #. module: sale_subscription
 #: model:ir.model.fields,help:sale_subscription.field_sale_subscription_alert__trg_date_resource_field_id

@@ -393,6 +393,10 @@ class AccountReport(models.AbstractModel):
             if params.get('financial_group_line_id'):
                 parent_financial_report_line = self.env['account.financial.html.report.line'].browse(params['financial_group_line_id'])
                 domain = expression.AND([domain, safe_eval(parent_financial_report_line.domain)])
+
+            if not options.get('all_entries'):
+                ctx['search_default_posted'] = True
+
             action['domain'] = domain
         action['context'] = ctx
         return action
@@ -915,7 +919,7 @@ class AccountReport(models.AbstractModel):
         options_filter = options['date']['filter']
 
         date_from = None
-        date_to = fields.Date.today()
+        date_to = fields.Date.context_today(self)
         period_type = None
         if options_filter == 'custom':
             if self.has_single_date_filter(options):
@@ -1041,6 +1045,9 @@ class AccountReport(models.AbstractModel):
             header = self.env['ir.actions.report'].render_template("web.external_layout", values=rcontext)
             header = header.decode('utf-8') # Ensure that headers and footer are correctly encoded
             spec_paperformat_args = {}
+            # Default header and footer in case the user customized web.external_layout and removed the header/footer
+            headers = header.encode()
+            footer = b''
             # parse header as new header contains header, body and footer
             try:
                 root = lxml.html.fromstring(header)
@@ -1055,8 +1062,8 @@ class AccountReport(models.AbstractModel):
                     footer = self.env['ir.actions.report'].render_template("web.minimal_layout", values=dict(rcontext, subst=True, body=footer))
 
             except lxml.etree.XMLSyntaxError:
-                headers = header
-                footer = ''
+                headers = header.encode()
+                footer = b''
             header = headers
 
         landscape = False

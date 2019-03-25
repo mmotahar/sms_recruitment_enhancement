@@ -6,6 +6,7 @@
 # Martin Trigaux, 2018
 # krnkris, 2018
 # gezza <geza.nagy@oregional.hu>, 2018
+# Ákos Nagy <akos.nagy@oregional.hu>, 2019
 # 
 msgid ""
 msgstr ""
@@ -13,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-15 15:18+0000\n"
 "PO-Revision-Date: 2018-08-24 11:49+0000\n"
-"Last-Translator: gezza <geza.nagy@oregional.hu>, 2018\n"
+"Last-Translator: Ákos Nagy <akos.nagy@oregional.hu>, 2019\n"
 "Language-Team: Hungarian (https://www.transifex.com/odoo/teams/41243/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -47,7 +48,7 @@ msgstr "Leírás"
 #. module: website_helpdesk_form
 #: model:ir.model,name:website_helpdesk_form.model_helpdesk_team
 msgid "Helpdesk Team"
-msgstr ""
+msgstr "Helpdesk-csapat"
 
 #. module: website_helpdesk_form
 #: model_terms:ir.ui.view,arch_db:website_helpdesk_form.ticket_submit
@@ -78,7 +79,7 @@ msgstr ""
 #. module: website_helpdesk_form
 #: model:ir.model.fields,field_description:website_helpdesk_form.field_helpdesk_team__feature_form_url
 msgid "URL to Submit Issue"
-msgstr ""
+msgstr "Az ügy beküldésének webcíme"
 
 #. module: website_helpdesk_form
 #: model_terms:ir.ui.view,arch_db:website_helpdesk_form.ticket_submit

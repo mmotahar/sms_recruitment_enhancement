@@ -1,7 +1,11 @@
 # -*- coding: utf-8 -*-
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
+import logging
+
 from odoo.tests import TransactionCase, tagged
+
+_logger = logging.getLogger(__name__)
 
 @tagged('-standard', 'external')
 class TestDeliveryEasypost(TransactionCase):
@@ -95,6 +99,13 @@ class TestDeliveryEasypost(TransactionCase):
         picking_fedex.action_assign()
         picking_fedex.move_line_ids.write({'qty_done': 1})
         self.assertGreater(picking_fedex.weight, 0.0, "Picking weight should be positive.(ep-fedex)")
+
+        # Set a service in order to test rate request for a specific service.
+        self.easypost_fedex_carrier.easypost_default_service_id = self.env['easypost.service'].search([('name', '=', 'STANDARD_OVERNIGHT')]).id
+
+        if not self.easypost_fedex_carrier.easypost_default_service_id:
+            _logger.warning('"STANDARD_OVERNIGHT" is not anymore a fedex service, easypost default service is not tested.')
+
         picking_fedex.action_done()
         self.assertGreater(picking_fedex.carrier_price, 0.0, "Easypost carrying price is probably incorrect(fedex)")
         self.assertIsNot(picking_fedex.carrier_tracking_ref, False,

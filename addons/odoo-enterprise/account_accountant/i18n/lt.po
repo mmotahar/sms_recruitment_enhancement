@@ -120,7 +120,7 @@ msgstr ""
 #. module: account_accountant
 #: model:ir.model,name:account_accountant.model_digest_digest
 msgid "Digest"
-msgstr "Rinkinys"
+msgstr "Santrauka"
 
 #. module: account_accountant
 #: model:ir.model.fields,field_description:account_accountant.field_account_change_lock_date__display_name
@@ -132,13 +132,14 @@ msgstr "Rodomas pavadinimas"
 #, python-format
 msgid "Do not have access, skip this data for user's digest email"
 msgstr ""
-"Neturite prieigos, praleiskite šiuos duomenis vartotojo rinkinio el. paštui"
+"Neturite prieigos, praleiskite šiuos duomenis vartotojo santraukos el. "
+"paštui"
 
 #. module: account_accountant
 #: model:ir.ui.menu,name:account_accountant.menu_account_fiscal_year
 #: model_terms:ir.ui.view,arch_db:account_accountant.res_config_settings_view_form
 msgid "Fiscal Years"
-msgstr ""
+msgstr "Finansiniai metai"
 
 #. module: account_accountant
 #: model:ir.model.fields,field_description:account_accountant.field_res_config_settings__fiscalyear_last_day
@@ -240,7 +241,7 @@ msgid ""
 "of this date. Use it for period locking inside an open fiscal year, for "
 "example."
 msgstr ""
-"Tik apskaitininko rolę turintys naudotojai gali redaguoti sąskaitas iki ir "
+"Tik apskaitininko rolę turintys vartotojai gali redaguoti sąskaitas iki ir "
 "įskaitant šią datą. Pavyzdžiui, galite ją naudoti periodo uždarymui einamųjų"
 " finansinių metų intervale."
 
@@ -251,7 +252,7 @@ msgid ""
 " this date. Use it for period locking inside an open fiscal year, for "
 "example."
 msgstr ""
-"Tik apskaitininko rolę turintys naudotojai gali redaguoti sąskaitas iki ir "
+"Tik apskaitininko rolę turintys vartotojai gali redaguoti sąskaitas iki ir "
 "įskaitant šią datą. Naudokite ją periodo uždarymui einamųjų finansinių metų "
 "intervale, pavyzdžiui."
 
