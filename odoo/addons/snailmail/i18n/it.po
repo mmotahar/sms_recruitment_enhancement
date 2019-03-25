@@ -8,6 +8,7 @@
 # Giacomo Grasso <giacomo.grasso.82@gmail.com>, 2018
 # David Minneci <david@numeko.it>, 2018
 # Paolo Valier, 2018
+# Léonie Bouchat <lbo@odoo.com>, 2019
 # Sergio Zanchetta <primes2h@gmail.com>, 2019
 # 
 msgid ""
@@ -30,6 +31,8 @@ msgid ""
 "<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
 "specific.\"/>"
 msgstr ""
+"<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
+"specific.\"/>"
 
 #. module: snailmail
 #: code:addons/snailmail/models/snailmail_letter.py:249
@@ -211,7 +214,7 @@ msgstr "Stampa a colori"
 #. module: snailmail
 #: model:ir.model,name:snailmail.model_ir_qweb_field_contact
 msgid "Qweb Field Contact"
-msgstr ""
+msgstr "Campo qweb contatto"
 
 #. module: snailmail
 #: model:ir.model.fields,field_description:snailmail.field_snailmail_letter__partner_id
@@ -221,7 +224,7 @@ msgstr "Destinatario"
 #. module: snailmail
 #: model:ir.model,name:snailmail.model_ir_actions_report
 msgid "Report Action"
-msgstr ""
+msgstr "Azione rendiconto"
 
 #. module: snailmail
 #: model_terms:ir.ui.view,arch_db:snailmail.snailmail_letter_form

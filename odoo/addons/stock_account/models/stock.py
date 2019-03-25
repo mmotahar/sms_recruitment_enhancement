@@ -383,7 +383,7 @@ class StockMove(models.Model):
         tmpl_dict = defaultdict(lambda: 0.0)
         # adapt standard price on incomming moves if the product cost_method is 'average'
         std_price_update = {}
-        for move in self.filtered(lambda move: move.location_id.usage in ('supplier', 'production') and move.product_id.cost_method == 'average'):
+        for move in self.filtered(lambda move: move._is_in() and move.product_id.cost_method == 'average'):
             product_tot_qty_available = move.product_id.qty_available + tmpl_dict[move.product_id.id]
             rounding = move.product_id.uom_id.rounding
 
@@ -397,7 +397,7 @@ class StockMove(models.Model):
                 # Get the standard price
                 amount_unit = std_price_update.get((move.company_id.id, move.product_id.id)) or move.product_id.standard_price
                 qty = forced_qty or qty_done
-                new_std_price = ((amount_unit * product_tot_qty_available) + (move._get_price_unit() * qty)) / (product_tot_qty_available + qty_done)
+                new_std_price = ((amount_unit * product_tot_qty_available) + (move._get_price_unit() * qty)) / (product_tot_qty_available + qty)
 
             tmpl_dict[move.product_id.id] += qty_done
             # Write the standard price, as SUPERUSER_ID because a warehouse manager may not have the right to write on products

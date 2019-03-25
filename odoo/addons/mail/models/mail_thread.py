@@ -110,7 +110,7 @@ class MailThread(models.AbstractModel):
         'Number of error', compute='_compute_message_has_error',
         help="Number of messages with delivery error")
     message_attachment_count = fields.Integer('Attachment Count', compute='_compute_message_attachment_count')
-    message_main_attachment_id = fields.Many2one(string="Main Attachment", comodel_name='ir.attachment', index=True)
+    message_main_attachment_id = fields.Many2one(string="Main Attachment", comodel_name='ir.attachment', index=True, copy=False)
 
     @api.one
     @api.depends('message_follower_ids')
@@ -742,7 +742,9 @@ class MailThread(models.AbstractModel):
         access_link = self._notify_get_action_link('view')
 
         if message.model:
-            model_name = self.env['ir.model']._get(message.model).display_name
+            model = self.env['ir.model'].with_context(
+                lang=self.env.context.get('lang', self.env.user.lang))
+            model_name = model._get(message.model).display_name
             view_title = _('View %s') % model_name
         else:
             view_title = _('View')
@@ -1937,7 +1939,7 @@ class MailThread(models.AbstractModel):
                 if False/0, mail.message model will also be set as False
             :param str body: body of the message, usually raw HTML that will
                 be sanitized
-            :param str type: see mail_message.type field
+            :param str type: see mail_message.message_type field
             :param int parent_id: handle reply to a previous message by adding the
                 parent partners to the message in case of private discussion
             :param tuple(str,str) attachments or list id: list of attachment tuples in the form

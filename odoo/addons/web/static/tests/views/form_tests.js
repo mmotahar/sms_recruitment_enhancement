@@ -16,7 +16,6 @@ var Widget = require('web.Widget');
 
 var _t = core._t;
 var createView = testUtils.createView;
-var createActionManager = testUtils.createActionManager;
 var createAsyncView = testUtils.createAsyncView;
 var createActionManager = testUtils.createActionManager;
 
@@ -106,6 +105,14 @@ QUnit.module('Views', {
                 ]
             },
         };
+
+        this.actions = [{
+            id: 1,
+            name: 'Partners Action 1',
+            res_model: 'partner',
+            type: 'ir.actions.act_window',
+            views: [[false, 'kanban'], [false, 'form']],
+        }];
     }
 }, function () {
 
@@ -6208,6 +6215,66 @@ QUnit.module('Views', {
         form.destroy();
     });
 
+    QUnit.test('form view is not broken if save failed in readonly mode on field changed', function (assert) {
+        assert.expect(10);
+
+        var failFlag = false;
+
+        var form = createView({
+            View: FormView,
+            model: 'partner',
+            data: this.data,
+            arch: '<form>' +
+                    '<header><field name="trululu" widget="statusbar" clickable="True"/></header>' +
+                '</form>',
+            res_id: 1,
+            mockRPC: function (route, args) {
+                if (args.method === 'write') {
+                    assert.step('write');
+                    if (failFlag) {
+                        return $.Deferred().reject();
+                    }
+                } else if (args.method === 'read') {
+                    assert.step('read');
+                }
+                return this._super.apply(this, arguments);
+            },
+        });
+
+        var $selectedState = form.$('.o_statusbar_status button[data-value="4"]');
+        assert.ok($selectedState.hasClass('btn-primary') && $selectedState.hasClass('disabled'),
+            "selected status should be btn-primary and disabled");
+
+        failFlag = true;
+        var $clickableState = form.$('.o_statusbar_status button[data-value="1"]');
+        $clickableState.click();
+
+        var $lastActiveState = form.$('.o_statusbar_status button[data-value="4"]');
+        $selectedState = form.$('.o_statusbar_status button.btn-primary');
+        assert.strictEqual($selectedState[0], $lastActiveState[0],
+            "selected status is AAA record after save fail");
+
+        failFlag = false;
+        $clickableState = form.$('.o_statusbar_status button[data-value="1"]');
+        $clickableState.click();
+
+        var $lastClickedState = form.$('.o_statusbar_status button[data-value="1"]');
+        $selectedState = form.$('.o_statusbar_status button.btn-primary');
+        assert.strictEqual($selectedState[0], $lastClickedState[0],
+            "last clicked status should be active");
+
+        assert.verifySteps([
+            'read',
+            'write', // fails
+            'read', // must reload when saving fails
+            'write', // works
+            'read', // must reload when saving works
+            'read', // fixme: this read should not be necessary
+        ]);
+
+        form.destroy();
+    });
+
     QUnit.test('support password attribute', function (assert) {
         assert.expect(3);
 
@@ -6998,6 +7065,50 @@ QUnit.module('Views', {
         form.destroy();
     });
 
+    QUnit.test('Form view from ordered, grouped list view correct context', function (assert) {
+        assert.expect(10);
+        this.data.partner.records[0].timmy = [12];
+
+        var form = createView({
+            View: FormView,
+            model: 'partner',
+            data: this.data,
+            arch: '<form>' +
+                    '<field name="foo"/>' +
+                    '<field name="timmy"/>' +
+                '</form>',
+            archs: {
+                'partner_type,false,list':
+                    '<tree>' +
+                        '<field name="name"/>' +
+                    '</tree>',
+            },
+            viewOptions: {
+                // Simulates coming from a list view with a groupby and filter
+                context: {
+                    orderedBy: [{name: 'foo', asc:true}],
+                    group_by: ['foo'],
+                }
+            },
+            res_id: 1,
+            mockRPC: function (route, args) {
+                assert.step(args.model + ":" + args.method);
+                if (args.method === 'read') {
+                    assert.ok(args.kwargs.context, 'context is present');
+                    assert.notOk('orderedBy' in args.kwargs.context,
+                        'orderedBy not in context');
+                    assert.notOk('group_by' in args.kwargs.context,
+                        'group_by not in context');
+                }
+                return this._super.apply(this, arguments);
+            }
+        });
+
+        assert.verifySteps(['partner_type:load_views', 'partner:read', 'partner_type:read']);
+
+        form.destroy();
+    });
+
     QUnit.test('edition in form view on a "noCache" model', function (assert) {
         assert.expect(4);
 
@@ -7516,6 +7627,37 @@ QUnit.module('Views', {
         testUtils.fields.many2one.clickOpenDropdown('trululu');
 
         form.destroy();
+    });
+
+    QUnit.test('discard after a failed save', function (assert) {
+        assert.expect(2);
+
+        var actionManager = createActionManager({
+            data: this.data,
+            archs: {
+                'partner,false,form': '<form>' +
+                                        '<field name="date" required="true"/>' +
+                                        '<field name="foo" required="true"/>' +
+                                    '</form>',
+                'partner,false,kanban': '<kanban><templates><t t-name="kanban-box">' +
+                                        '</t></templates></kanban>',
+                'partner,false,search': '<search></search>',
+            },
+            actions: this.actions,
+        });
+
+        actionManager.doAction(1);
+
+        testUtils.dom.click('.o_control_panel .o-kanban-button-new');
+
+        //cannot save because there is a required field
+        testUtils.dom.click('.o_control_panel .o_form_button_save');
+        testUtils.dom.click('.o_control_panel .o_form_button_cancel');
+
+        assert.containsNone(actionManager, '.o_form_view');
+        assert.containsOnce(actionManager, '.o_kanban_view');
+
+        actionManager.destroy();
     });
 
     QUnit.module('FormViewTABMainButtons');

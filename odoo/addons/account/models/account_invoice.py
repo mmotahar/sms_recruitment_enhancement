@@ -127,7 +127,12 @@ class AccountInvoice(models.Model):
     def _get_outstanding_info_JSON(self):
         self.outstanding_credits_debits_widget = json.dumps(False)
         if self.state == 'open':
-            domain = [('account_id', '=', self.account_id.id), ('partner_id', '=', self.env['res.partner']._find_accounting_partner(self.partner_id).id), ('reconciled', '=', False), '|', ('amount_residual', '!=', 0.0), ('amount_residual_currency', '!=', 0.0)]
+            domain = [('account_id', '=', self.account_id.id),
+                      ('partner_id', '=', self.env['res.partner']._find_accounting_partner(self.partner_id).id),
+                      ('reconciled', '=', False),
+                      '|',
+                        '&', ('amount_residual_currency', '!=', 0.0), ('currency_id','!=', None),
+                        '&', ('amount_residual_currency', '=', 0.0), '&', ('currency_id','=', None), ('amount_residual', '!=', 0.0)]
             if self.type in ('out_invoice', 'in_refund'):
                 domain.extend([('credit', '>', 0), ('debit', '=', 0)])
                 type_payment = _('Outstanding credits')
@@ -561,12 +566,15 @@ class AccountInvoice(models.Model):
         if res.get('type', False) not in ('out_invoice', 'in_refund') or not 'company_id' in res:
             return res
 
-        company = self.env['res.company'].browse(res['company_id'])
-        if company.partner_id:
-            partner_bank_result = self.env['res.partner.bank'].search([('partner_id', '=', company.partner_id.id)], limit=1)
-            if partner_bank_result:
-                res['partner_bank_id'] = partner_bank_result.id
+        partner_bank_result = self._get_partner_bank_id(res['company_id'])
+        if partner_bank_result:
+            res['partner_bank_id'] = partner_bank_result.id
         return res
+
+    def _get_partner_bank_id(self, company_id):
+        company = self.env['res.company'].browse(company_id)
+        if company.partner_id:
+            return self.env['res.partner.bank'].search([('partner_id', '=', company.partner_id.id)], limit=1)
 
     @api.model
     def fields_view_get(self, view_id=None, view_type='form', toolbar=False, submenu=False):
@@ -1465,6 +1473,11 @@ class AccountInvoice(models.Model):
         values['payment_term_id'] = False
         values['refund_invoice_id'] = invoice.id
 
+        if values['type'] == 'in_refund':
+            partner_bank_result = self._get_partner_bank_id(values['company_id'])
+            if partner_bank_result:
+                values['partner_bank_id'] = partner_bank_result.id
+
         if date:
             values['date'] = date
         if description:
@@ -1554,12 +1567,14 @@ class AccountInvoice(models.Model):
             fmt = partial(formatLang, invoice.with_context(lang=invoice.partner_id.lang).env, currency_obj=currency)
             res = {}
             for line in invoice.tax_line_ids:
-                res.setdefault(line.tax_id.tax_group_id, {'base': 0.0, 'amount': 0.0})
-                res[line.tax_id.tax_group_id]['amount'] += line.amount_total
-                res[line.tax_id.tax_group_id]['base'] += line.base
-            res = sorted(res.items(), key=lambda l: l[0].sequence)
+                tax = line.tax_id
+                group_key = (tax.tax_group_id, tax.amount_type, tax.amount)
+                res.setdefault(group_key, {'base': 0.0, 'amount': 0.0})
+                res[group_key]['amount'] += line.amount_total
+                res[group_key]['base'] += line.base
+            res = sorted(res.items(), key=lambda l: l[0][0].sequence)
             invoice.amount_by_group = [(
-                r[0].name, r[1]['amount'], r[1]['base'],
+                r[0][0].name, r[1]['amount'], r[1]['base'],
                 fmt(r[1]['amount']), fmt(r[1]['base']),
                 len(res),
             ) for r in res]
@@ -1850,12 +1865,12 @@ class AccountInvoiceLine(models.Model):
         }
         return data
 
-    @api.model
-    def create(self, vals):
-        if vals.get('display_type', self.default_get(['display_type'])['display_type']):
-            vals.update(price_unit=0, account_id=False, quantity=0)
-
-        return super(AccountInvoiceLine, self).create(vals)
+    @api.model_create_multi
+    def create(self, vals_list):
+        for vals in vals_list:
+            if vals.get('display_type', self.default_get(['display_type'])['display_type']):
+                vals.update(price_unit=0, account_id=False, quantity=0)
+        return super(AccountInvoiceLine, self).create(vals_list)
 
     @api.multi
     def write(self, values):

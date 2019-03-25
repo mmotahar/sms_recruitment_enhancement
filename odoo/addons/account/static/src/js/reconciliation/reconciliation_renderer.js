@@ -255,7 +255,7 @@ var LineRenderer = Widget.extend(FieldManagerMixin, {
         'click .accounting_view thead td': '_onTogglePanel',
         'click .accounting_view tfoot td:not(.cell_left,.cell_right)': '_onShowPanel',
         'click tfoot .cell_left, tfoot .cell_right': '_onSearchBalanceAmount',
-        'input input.filter': '_onFilterChange',
+        'change input.filter': '_onFilterChange',
         'click .match .load-more a': '_onLoadMore',
         'click .match .mv_line td': '_onSelectMoveLine',
         'click .accounting_view tbody .mv_line td': '_onSelectProposition',
@@ -508,7 +508,7 @@ var LineRenderer = Widget.extend(FieldManagerMixin, {
         }
         return this.model.makeRecord('account.bank.statement.line', [field], {
             partner_id: {
-                domain: [["parent_id", "=", false], "|", ["customer", "=", true], ["supplier", "=", true]],
+                domain: ["|", ["is_company", "=", true], ["parent_id", "=", false], "|", ["customer", "=", true], ["supplier", "=", true]],
                 options: {
                     no_open: true
                 }

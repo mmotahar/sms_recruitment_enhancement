@@ -169,7 +169,7 @@ class account_journal(models.Model):
                            LEFT JOIN account_move move ON aml.move_id = move.id
                            WHERE aml.account_id in %%s
                            AND move.date <= %%s AND move.state = 'posted';""" % (amount_field,)
-                self.env.cr.execute(query, (account_ids, fields.Date.today(),))
+                self.env.cr.execute(query, (account_ids, fields.Date.context_today(self),))
                 query_results = self.env.cr.dictfetchall()
                 if query_results and query_results[0].get('sum') != None:
                     account_sum = query_results[0].get('sum')
@@ -257,7 +257,7 @@ class account_journal(models.Model):
             rslt_count += 1
             date = result.get('date_invoice') or fields.Date.today()
 
-            amount = result.get('amount_total', 0)
+            amount = result.get('amount_total', 0) or 0
             if cur != target_currency:
                 key = (cur, target_currency, company, date)
                 # Using setdefault will call _get_conversion_rate, so we explicitly check the
