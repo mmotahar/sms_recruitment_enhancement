@@ -2644,6 +2644,42 @@ QUnit.module('relational_fields', {
         form.destroy();
     });
 
+    QUnit.test('do not call name_get if display_name already known', function (assert) {
+        // default_get only returns the id for many2one fields
+        // onchange returns an array with the id and the display_name
+        // thus, when an onchange is performed, there is no need to call
+        // name_get as the display_name is alreay available
+        assert.expect(6);
+
+        this.data.partner.fields.product_id.default = 37;
+        this.data.partner.onchanges = {
+            trululu: function (obj) {
+                obj.trululu = [1, 'first record'];
+            },
+        };
+
+        var form = createView({
+            View: FormView,
+            model: 'partner',
+            data: this.data,
+            arch: '<form><field name="trululu"/><field name="product_id"/></form>',
+            mockRPC: function (route, args) {
+                assert.step(args.method + ' on ' + args.model);
+                return this._super.apply(this, arguments);
+            },
+        });
+
+        assert.strictEqual(form.$('.o_field_widget[name=trululu] input').val(), 'first record');
+        assert.strictEqual(form.$('.o_field_widget[name=product_id] input').val(), 'xphone');
+        assert.verifySteps([
+            'default_get on partner',
+            'onchange on partner',
+            'name_get on product',
+        ]);
+
+        form.destroy();
+    });
+
     QUnit.test('many2one in one2many: domain updated by an onchange', function (assert) {
         assert.expect(3);
 
@@ -3556,6 +3592,43 @@ QUnit.module('relational_fields', {
             "should still have the 3 rows in the new order");
 
         testUtils.unpatch(ListRenderer);
+
+        form.destroy();
+    });
+
+    QUnit.test('embedded readonly one2many with handle widget', function (assert) {
+        assert.expect(4);
+
+        this.data.partner.records[0].turtles = [1, 2, 3];
+
+        var form = createView({
+            View: FormView,
+            model: 'partner',
+            data: this.data,
+            arch:'<form string="Partners">' +
+                    '<sheet>' +
+                        '<field name="turtles" readonly="1">' +
+                            '<tree editable="top">' +
+                                '<field name="turtle_int" widget="handle"/>' +
+                                '<field name="turtle_foo"/>' +
+                            '</tree>' +
+                        '</field>' +
+                    '</sheet>' +
+                 '</form>',
+            res_id: 1,
+        });
+
+        assert.strictEqual(form.$('.o_row_handle').length, 3,
+            "there should be 3 handles (one for each row)");
+        assert.strictEqual(form.$('.o_row_handle:visible').length, 0,
+            "the handles should be hidden in readonly mode");
+
+        form.$buttons.find('.o_form_button_edit').click();
+
+        assert.strictEqual(form.$('.o_row_handle').length, 3,
+            "the handles should still be there");
+        assert.strictEqual(form.$('.o_row_handle:visible').length, 0,
+            "the handles should still be hidden (on readonly fields)");
 
         form.destroy();
     });
@@ -12645,6 +12718,30 @@ QUnit.module('relational_fields', {
         // (like refining the research, creating new tags...), but ui-autocomplete
         // makes it difficult to test
         form.destroy();
+    });
+
+    QUnit.test('fieldmany2many tags in tree view', function (assert) {
+        assert.expect(3);
+
+        this.data.partner.records[0].timmy = [12, 14];
+        var list = createView({
+            View: ListView,
+            model: 'partner',
+            data: this.data,
+            arch: '<tree string="Partners">' +
+                '<field name="timmy" widget="many2many_tags" options="{\'color_field\': \'color\'}"/>' +
+                '</tree>',
+        });
+        assert.containsN(list, '.o_field_many2manytags .badge', 2, "there should be 2 tags");
+        assert.containsNone(list, '.dropdown-toggle', "the tags should not be dropdowns");
+
+        testUtils.intercept(list, 'switch_view', function (event) {
+            assert.strictEqual(event.data.view_type, "form", "should switch to form view");
+        });
+        // click on the tag: should do nothing and open the form view
+        testUtils.dom.click(list.$('.o_field_many2manytags .badge:first'));
+
+        list.destroy();
     });
 
     QUnit.test('fieldmany2many tags view a domain', function (assert) {

@@ -867,7 +867,7 @@ msgstr ""
 #. module: mrp
 #: model_terms:ir.actions.act_window,help:mrp.mrp_production_action
 msgid "Create a new manufacturing order"
-msgstr ""
+msgstr "製造オーダを新規作成してください"
 
 #. module: mrp
 #: model_terms:ir.actions.act_window,help:mrp.mrp_routing_action
@@ -1753,7 +1753,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:mrp.field_mrp_unbuild__message_main_attachment_id
 #: model:ir.model.fields,field_description:mrp.field_mrp_workorder__message_main_attachment_id
 msgid "Main Attachment"
-msgstr ""
+msgstr "主な添付"
 
 #. module: mrp
 #: code:addons/mrp/models/mrp_production.py:465
@@ -3253,7 +3253,7 @@ msgstr "在庫移動"
 #. module: mrp
 #: model:ir.model,name:mrp.model_stock_rule
 msgid "Stock Rule"
-msgstr ""
+msgstr "在庫規則"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_stock_warehouse__sam_loc_id
@@ -3263,7 +3263,7 @@ msgstr ""
 #. module: mrp
 #: model:ir.model,name:mrp.model_report_stock_report_stock_rule
 msgid "Stock rule report"
-msgstr ""
+msgstr "在庫規則レポート"
 
 #. module: mrp
 #: code:addons/mrp/models/stock_warehouse.py:200
@@ -3605,7 +3605,7 @@ msgstr "起動予定"
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.stock_production_type_kanban
 msgid "To Process"
-msgstr ""
+msgstr "未処理"
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_production_workorder_form_view_inherit

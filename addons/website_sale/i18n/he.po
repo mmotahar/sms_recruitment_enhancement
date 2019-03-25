@@ -13,6 +13,7 @@
 # Leandro Noijovich <eliel.sorcerer@gmail.com>, 2018
 # Yihya Hugirat <hugirat@gmail.com>, 2018
 # hed shefetr <hed@laylinetech.com>, 2018
+# דודי מלכה <Dudimalka6@gmail.com>, 2019
 # 
 msgid ""
 msgstr ""
@@ -20,7 +21,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-09 10:31+0000\n"
 "PO-Revision-Date: 2018-08-24 09:35+0000\n"
-"Last-Translator: hed shefetr <hed@laylinetech.com>, 2018\n"
+"Last-Translator: דודי מלכה <Dudimalka6@gmail.com>, 2019\n"
 "Language-Team: Hebrew (https://www.transifex.com/odoo/teams/41243/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -638,7 +639,7 @@ msgstr ""
 #. module: website_sale
 #: model:product.public.category,name:website_sale.public_category_boxes
 msgid "Boxes"
-msgstr ""
+msgstr "קופסאות"
 
 #. module: website_sale
 #: model:product.public.category,name:website_sale.public_category_cabinets
@@ -771,7 +772,7 @@ msgstr "שם חברה"
 #. module: website_sale
 #: model:product.public.category,name:website_sale.Components
 msgid "Components"
-msgstr ""
+msgstr "רכיבים"
 
 #. module: website_sale
 #: model_terms:ir.ui.view,arch_db:website_sale.res_config_settings_view_form
@@ -781,27 +782,27 @@ msgstr ""
 #. module: website_sale
 #: model_terms:ir.ui.view,arch_db:website_sale.res_config_settings_view_form
 msgid "Compute shipping costs and ship with DHL"
-msgstr ""
+msgstr "חשב עלויות המשלוח ושלח באמצעות  DHL"
 
 #. module: website_sale
 #: model_terms:ir.ui.view,arch_db:website_sale.res_config_settings_view_form
 msgid "Compute shipping costs and ship with FedEx"
-msgstr ""
+msgstr "חשב עלויות המשלוח ושלח באמצעות FedEx"
 
 #. module: website_sale
 #: model_terms:ir.ui.view,arch_db:website_sale.res_config_settings_view_form
 msgid "Compute shipping costs and ship with UPS"
-msgstr ""
+msgstr "חשב עלויות המשלוח ושלח באמצעות UPS"
 
 #. module: website_sale
 #: model_terms:ir.ui.view,arch_db:website_sale.res_config_settings_view_form
 msgid "Compute shipping costs and ship with USPS"
-msgstr ""
+msgstr "חשב עלויות המשלוח ושלח באמצעות USPS"
 
 #. module: website_sale
 #: model_terms:ir.ui.view,arch_db:website_sale.res_config_settings_view_form
 msgid "Compute shipping costs and ship with bpost"
-msgstr ""
+msgstr "חשב עלויות המשלוח ושלח באמצעות bpost"
 
 #. module: website_sale
 #: model_terms:ir.ui.view,arch_db:website_sale.res_config_settings_view_form
@@ -970,7 +971,7 @@ msgstr "הגדרת סדר תצוגה לחנות באתר האינטרנט"
 #. module: website_sale
 #: model:ir.model,name:website_sale.model_digest_digest
 msgid "Digest"
-msgstr ""
+msgstr "תקציר"
 
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_res_config_settings__module_website_sale_digital
@@ -989,7 +990,7 @@ msgstr "השם המוצג"
 #: code:addons/website_sale/models/digest.py:16
 #, python-format
 msgid "Do not have access, skip this data for user's digest email"
-msgstr ""
+msgstr "אין לך גישה, לדלג על נתונים אלה עבור אל תקציר דוא\"ל של המשתמשים"
 
 #. module: website_sale
 #: selection:res.company,website_sale_onboarding_payment_acquirer_state:0
@@ -1900,6 +1901,11 @@ msgid "Restrict publishing to this website."
 msgstr ""
 
 #. module: website_sale
+#: model_terms:ir.ui.view,arch_db:website_sale.payment
+msgid "Return to Cart"
+msgstr ""
+
+#. module: website_sale
 #: model_terms:ir.ui.view,arch_db:website_sale.404
 msgid "Return to the product list."
 msgstr "חזרה לרשימת הפריטים."
@@ -1943,7 +1949,7 @@ msgstr "מכירות"
 #. module: website_sale
 #: model:ir.model,name:website_sale.model_sale_report
 msgid "Sales Analysis Report"
-msgstr ""
+msgstr "דוח ניתוח מכירות"
 
 #. module: website_sale
 #: model:ir.model,name:website_sale.model_crm_team

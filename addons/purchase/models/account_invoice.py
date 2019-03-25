@@ -124,7 +124,6 @@ class AccountInvoice(models.Model):
         purchase_ids = self.invoice_line_ids.mapped('purchase_id')
         if purchase_ids:
             self.origin = ', '.join(purchase_ids.mapped('name'))
-            self.reference = ', '.join(purchase_ids.filtered('partner_ref').mapped('partner_ref')) or self.reference
 
     @api.onchange('partner_id', 'company_id')
     def _onchange_partner_id(self):
@@ -146,6 +145,8 @@ class AccountInvoice(models.Model):
                 self.journal_id = default_journal_id
             if self.env.context.get('default_currency_id'):
                 self.currency_id = self.env.context['default_currency_id']
+            if self.partner_id.property_purchase_currency_id:
+                self.currency_id = self.partner_id.property_purchase_currency_id
         return res
 
     @api.model
