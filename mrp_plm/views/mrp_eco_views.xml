@@ -34,7 +34,7 @@
         <field name="view_type">form</field>
         <field name="view_mode">kanban,tree,calendar,pivot,graph,form</field>
         <field name="context">{'search_default_type_id': [active_id], 'default_type_id': active_id, 'search_default_toapprove_my': True}</field>
-        <field name="domain">[]</field>
+        <field name="domain">[('type_id', '=',active_id)]</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
               Create a new engineering change order
@@ -48,7 +48,7 @@
         <field name="view_type">form</field>
         <field name="view_mode">kanban,tree,calendar,pivot,graph,form</field>
         <field name="context">{'search_default_type_id': [active_id], 'default_type_id': active_id, 'search_default_toapprove': True}</field>
-        <field name="domain">[]</field>
+        <field name="domain">[('type_id', '=',active_id)]</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
               Create a new engineering change order
@@ -62,7 +62,7 @@
         <field name="view_type">form</field>
         <field name="view_mode">kanban,tree,calendar,pivot,graph,form</field>
         <field name="context">{'search_default_type_id': [active_id], 'default_type_id': active_id, 'search_default_changetoapply': True}</field>
-        <field name="domain">[]</field>
+        <field name="domain">[('type_id', '=',active_id)]</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
               Create a new engineering change order
@@ -292,7 +292,7 @@
                     <field name="stage_id" string="Stage" filter_domain="[('stage_id','ilike', self)]"/>
                     <filter name="mychange" string="My Change Orders" domain="[('user_id','=',uid)]"/>
                     <separator/>
-                    <filter name="toapprove_my" string="Waiting My Validation" domain="[('approval_ids.status','=','none')]"/>
+                    <filter name="toapprove_my" string="Waiting My Validation" domain="[('approval_ids.status','=','none'),('approval_ids.required_user_ids', '=', uid)]"/>
                     <filter name="toapprove" string="Waiting Any Validation" domain="[('approval_ids.status','=','none')]"/>
                     <filter name="changetoapply" string="To Apply" domain="[('stage_id.allow_apply_change','=',True), ('state', '=', 'progress')]"/>
                     <separator/>

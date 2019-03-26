@@ -596,7 +596,7 @@ class View(models.Model):
                 if 'name' not in sibling.attrib
             )
 
-            node_str = node.tag
+            node_str = '%s' % (node.tag,)
             # Only count no name node to avoid conflict with other studio change
             if num_prev_noname_node != len(same_tag_prev_siblings):
                 node_str += '[not(@name)]'
@@ -619,7 +619,9 @@ class View(models.Model):
         """
 
         def _is_valid_anchor(target_node):
-            if (target_node is None) or (target_node.tag in ['attribute', 'attributes']):
+            if (target_node is None) or not isinstance(target_node.tag, str):
+                return None
+            if target_node.tag in ['attribute', 'attributes']:
                 return None
             if target_node.tag == 'field' and target_node.get('name') in moved_fields:
                 # a moved field cannot be used as anchor

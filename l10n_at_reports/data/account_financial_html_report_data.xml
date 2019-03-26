@@ -18,11 +18,10 @@
     <record id="account_financial_report_l10n_at_tva_line2" model="account.financial.html.report.line">
         <field name="name">Steuern</field>
         <field name="code">ATTAXST</field>
-        <field name="formulas">balance = ATTAX10.balance + ATTAX18.balance + ATTAX36.balance</field>
         <field name="sequence" eval="1"/>
         <field name="parent_id" ref="account_financial_report_l10n_at_tva_line1"/>
         <field name="level" eval="1" />
-        <field name="formulas">balance = ATTAX065.balance+ATTAX01.balance+ATTAX02.balance</field>
+        <field name="formulas">balance = ATTAX065.balance+ATTAX01.balance+ATTAX03.balance</field>
         <field name="special_date_changer">strict_range</field>
     </record>
 
@@ -40,7 +39,6 @@
     <record id="account_financial_report_l10n_at_tva_line4" model="account.financial.html.report.line">
         <field name="name">Innergemeinschaftliche Erwerbe</field>
         <field name="code">ATTAX01</field>
-        <field name="formulas">balance = ATTAX20.balance</field>
         <field name="sequence" eval="2"/>
         <field name="parent_id" ref="account_financial_report_l10n_at_tva_line2"/>
         <field name="level" eval="2" />
@@ -51,7 +49,6 @@
     <record id="account_financial_report_l10n_at_tva_line5" model="account.financial.html.report.line">
         <field name="name">Steuerpflichtige Umsätze (Lieferungen, sonstige Leistungen und Eigenverbrauch)</field>
         <field name="code">ATTAX02</field>
-        <field name="formulas">balance = ATTAX22.balance + ATTAX24.balance</field>
         <field name="sequence" eval="1"/>
         <field name="parent_id" ref="account_financial_report_l10n_at_tva_line4"/>
         <field name="level" eval="3" />
@@ -110,7 +107,6 @@
     <record id="account_financial_report_l10n_at_tva_line8" model="account.financial.html.report.line">
         <field name="name">Lieferungen, sonstige Leistungen und Eigenverbrauch</field>
         <field name="code">ATTAX03</field>
-        <field name="formulas">balance = ATTAX12.balance</field>
         <field name="sequence" eval="1"/>
         <field name="parent_id" ref="account_financial_report_l10n_at_tva_line2"/>
         <field name="level" eval="2" />
@@ -165,7 +161,6 @@
     <record id="account_financial_report_l10n_at_tva_line13" model="account.financial.html.report.line">
         <field name="name">Steuern</field>
         <field name="code">ATTAXBMG</field>
-        <field name="formulas">balance = ATTAX19.balance + ATTAX31.balance</field>
         <field name="sequence" eval="2"/>
         <field name="parent_id" ref="account_financial_report_l10n_at_tva_line12"/>
         <field name="level" eval="1" />
@@ -176,7 +171,6 @@
     <record id="account_financial_report_l10n_at_tva_line14" model="account.financial.html.report.line">
         <field name="name">Lieferungen und sonstige Leistungen (einschließlich unentgeltlicher Wertabgaben)</field>
         <field name="code">ATTAX000</field>
-        <field name="formulas">balance = ATTAX32.balance</field>
         <field name="sequence" eval="3"/>
         <field name="parent_id" ref="account_financial_report_l10n_at_tva_line13"/>
         <field name="level" eval="2" />

@@ -1271,6 +1271,39 @@ class TestViewNormalization(TransactionCase):
               </data>
             ''')
 
+    # Added line adjacent to comment should be ignored when xpathing
+    def test_view_normalization_36(self):
+        self.view = self.base_view.create({
+            'arch_base':
+            '''
+              <data>
+                <!-- hello -->
+                <div />
+                <!-- world -->
+              </data>
+            ''',
+            'model': 'res.partner',
+            'type': 'form'})
+
+        # end result: orator:/hello/cruel/world/!?
+        self._test_view_normalization(
+            '''
+              <data>
+                <xpath expr="//div" position="before">
+                  <!-- , -->
+                  <div/>
+                </xpath>
+              </data>
+            ''',
+            '''
+              <data>
+                <xpath expr="//data[1]/div[1]" position="before">
+                  <!-- , -->
+                  <div name="studio_div_302a40"/>
+                </xpath>
+              </data>
+            ''')
+
     def tearDown(self):
         super(TestViewNormalization, self).tearDown()
         random.seed()

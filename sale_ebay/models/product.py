@@ -21,10 +21,10 @@ MAX_REVISE_CALLS = 150
 class ProductTemplate(models.Model):
     _inherit = "product.template"
 
-    ebay_id = fields.Char('eBay ID')
+    ebay_id = fields.Char('eBay ID', copy=False)
     ebay_use = fields.Boolean('Use eBay', default=False)
-    ebay_url = fields.Char('eBay url', readonly=True)
-    ebay_listing_status = fields.Char('eBay Status', default='Unlisted', readonly=True)
+    ebay_url = fields.Char('eBay url', readonly=True, copy=False)
+    ebay_listing_status = fields.Char('eBay Status', default='Unlisted', readonly=True, copy=False)
     ebay_title = fields.Char('Title', size=80,
         help='The title is restricted to 80 characters')
     ebay_subtitle = fields.Char('Subtitle', size=55,
@@ -62,11 +62,11 @@ class ProductTemplate(models.Model):
     ebay_sync_stock = fields.Boolean(string="Use Stock Quantity", default=False)
     ebay_best_offer = fields.Boolean(string="Allow Best Offer", default=False)
     ebay_private_listing = fields.Boolean(string="Private Listing", default=False)
-    ebay_start_date = fields.Datetime('Start Date', readonly=1)
-    ebay_quantity_sold = fields.Integer(related='product_variant_ids.ebay_quantity_sold', store=True, readonly=False)
+    ebay_start_date = fields.Datetime('Start Date', readonly=1, copy=False)
+    ebay_quantity_sold = fields.Integer(related='product_variant_ids.ebay_quantity_sold', store=True, readonly=False, copy=False)
     ebay_fixed_price = fields.Float(related='product_variant_ids.ebay_fixed_price', store=True, readonly=False)
     ebay_quantity = fields.Integer(related='product_variant_ids.ebay_quantity', store=True, readonly=False)
-    ebay_last_sync = fields.Datetime(string="Last update")
+    ebay_last_sync = fields.Datetime(string="Last update", copy=False)
     ebay_template_id = fields.Many2one('mail.template', string='Description Template',
         ondelete='set null',
         help='This field contains the template that will be used.')
