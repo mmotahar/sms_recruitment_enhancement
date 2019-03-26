@@ -82,7 +82,7 @@ class AccountBankStatementImport(models.TransientModel):
                     statementLine['amount'] = float(rmspaces(line[32:47])) / 1000
                     if statementLine['debit'] == '1':
                         statementLine['amount'] = - statementLine['amount']
-                    statementLine['transactionDate'] = time.strftime(tools.DEFAULT_SERVER_DATE_FORMAT, time.strptime(rmspaces(line[47:53]), '%d%m%y'))
+                    statementLine['transactionDate'] = time.strftime(tools.DEFAULT_SERVER_DATE_FORMAT, time.strptime(rmspaces(line[47:53]), '%d%m%y')) if rmspaces(line[47:53]) != '000000' else statement['date']
                     statementLine['transaction_type'] = int(rmspaces(line[53:54]))
                     statementLine['transaction_family'] = rmspaces(line[54:56])
                     statementLine['transaction_code'] = rmspaces(line[56:58])

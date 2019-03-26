@@ -478,7 +478,6 @@ class SaleSubscription(models.Model):
             'company_id': company.id,
             'comment': _("This invoice covers the following period: %s - %s") % (format_date(self.env, next_date), format_date(self.env, end_date)),
             'user_id': self.user_id.id,
-            'date_invoice': self.recurring_next_date,
         }
 
     def _prepare_invoice_line(self, line, fiscal_position):
