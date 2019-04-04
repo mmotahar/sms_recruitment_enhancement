@@ -1,47 +1,51 @@
+##############################################################################
+#    Copyright (C) Ioppolo and Associates (I&A) 2018 (<http://ioppolo.com.au>).
+##############################################################################
 {
-    'name': 'Project SMS installer',
-    'version': '1.0',
-    'category': 'Trobz Standard Modules',
-    'description': """
-This module will install all module dependencies of SMS.
+    "name": "SMS Recruitment Enhancement",
+    "version": "1.0",
+    "category": "Trobz Standard Modules",
+    "description": """
+This module aims to enhance the features of online recruitment
     """,
-    'author': 'Trobz',
-    'website': 'http://www.trobz.com',
-    'depends': [
-        'hr_recruitment_survey',
-        'sign'
+    "website": "http://ioppolo.com.au",
+    "author": "Ioppolo & Associates",
+    "category": "Ioppolo & Associates",
+    "depends": [
+        "hr_recruitment_survey",
+        "sign",
     ],
-    'data': [
+    "data": [
         # ============================================================
         # SECURITY SETTING - GROUP - PROFILE
         # ============================================================
-        # 'security/',
+        # "security/",
 
         # ============================================================
         # DATA
         # ============================================================
-        # 'data/',
+        # "data/",
 
         # ============================================================
         # VIEWS
         # ============================================================
-        # 'view/',
+        # "view/",
 
         # ============================================================
         # MENU
         # ============================================================
-        # 'menu/',
+        # "menu/",
 
         # ============================================================
         # FUNCTION USED TO UPDATE DATA LIKE POST OBJECT
         # ============================================================
-        # "data/lighting_update_functions_data.xml",
+        # "data/sms_update_functions_data.xml",
     ],
 
-    'test': [],
-    'demo': [],
+    "test": [],
+    "demo": [],
 
-    'installable': True,
-    'active': False,
-    'application': False,
+    "installable": True,
+    "active": False,
+    "application": False,
 }
