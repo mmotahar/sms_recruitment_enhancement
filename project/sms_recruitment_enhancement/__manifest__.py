@@ -29,8 +29,9 @@ This module aims to enhance the features of online recruitment
         # ============================================================
         # VIEWS
         # ============================================================
-        # "view/",
-
+        # "views/",
+        'views/survey_question_template.xml',
+        'views/survey_user_input_line_view.xml',
         # ============================================================
         # MENU
         # ============================================================
