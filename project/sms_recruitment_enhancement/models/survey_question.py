@@ -25,6 +25,12 @@ class SurveyQuestion(models.Model):
          ('link', 'Link')],
         string='Type of Question', default='free_text', required=True)
     url_link = fields.Char(string='URL')
+    help_msg = fields.Char(string='Help Message')
+    is_period = fields.Boolean(string='Is Period')
+    period = fields.Integer(string='Period')
+    uot = fields.Selection(
+        [('months', 'Months'), ('years', 'Years')],
+        string='Unit of Time', default='months')
 
     @api.multi
     def validate_upload_file(self, post, answer_tag):
@@ -52,3 +58,22 @@ class SurveyQuestion(models.Model):
                     raise ValidationError(
                         'The URL of the question [%s] is invalid. '
                         'Please check!' % question.question)
+
+    @api.multi
+    @api.constrains('period')
+    def validate_period(self):
+        for question in self:
+            if question.is_period and question.period <= 0:
+                raise ValidationError(
+                    'Period of the question [%s] should greater than 0. '
+                    'Please check!' % question.question)
+
+    @api.multi
+    @api.onchange('is_period')
+    def _onchange_is_period(self):
+        for question in self:
+            if question.is_period:
+                question.validation_min_date = False
+                question.validation_max_date = False
+            else:
+                question.period = 0

@@ -19,6 +19,7 @@
                         <span t-field='question.question' />
                         <span t-if="question.constr_mandatory" class="text-danger">*</span>
                     </h2>
+                    <div t-field='question.help_msg' style="font-style: italic; color: #00A09D; margin-bottom: 10px;"/>
                     <div t-field='question.description' class="text-muted oe_no_empty"/>
                     <t t-if="question.type == 'free_text'"><t t-call="survey.free_text"/></t>
                     <t t-if="question.type == 'textbox'"><t t-call="survey.textbox"/></t>
