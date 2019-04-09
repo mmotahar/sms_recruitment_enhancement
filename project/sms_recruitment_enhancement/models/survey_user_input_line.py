@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-from odoo import api, fields, models
 import base64
+from odoo import api, fields, models
 
 
 class SurveyUserInputLine(models.Model):

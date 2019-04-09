@@ -13,16 +13,16 @@ class SurveyQuestion(models.Model):
     _inherit = 'survey.question'
 
     question_attachment = fields.Binary('Question attachment')
-    type = fields.Selection([
-        ('free_text', 'Multiple Lines Text Box'),
-        ('textbox', 'Single Line Text Box'),
-        ('numerical_box', 'Numerical Value'),
-        ('date', 'Date'),
-        ('upload_file', 'Upload file'),
-        ('simple_choice', 'Multiple choice: only one answer'),
-        ('multiple_choice', 'Multiple choice: multiple answers allowed'),
-        ('matrix', 'Matrix'),
-        ('link', 'Link')],
+    type = fields.Selection(
+        [('free_text', 'Multiple Lines Text Box'),
+         ('textbox', 'Single Line Text Box'),
+         ('numerical_box', 'Numerical Value'),
+         ('date', 'Date'),
+         ('upload_file', 'Upload file'),
+         ('simple_choice', 'Multiple choice: only one answer'),
+         ('multiple_choice', 'Multiple choice: multiple answers allowed'),
+         ('matrix', 'Matrix'),
+         ('link', 'Link')],
         string='Type of Question', default='free_text', required=True)
     url_link = fields.Char(string='URL')
 
