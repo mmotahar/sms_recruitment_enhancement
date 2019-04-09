@@ -39,7 +39,6 @@ install/win32/meta.py
 
 .trobz/local.yml
 
-/config/*
 /log/*
 .settings/*
 /var/*

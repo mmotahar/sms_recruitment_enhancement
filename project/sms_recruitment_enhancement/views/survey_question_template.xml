@@ -28,6 +28,8 @@
                     <t t-if="question.type == 'multiple_choice'"><t t-call="survey.multiple_choice"/></t>
                     <t t-if="question.type == 'matrix'"><t t-call="survey.matrix"/></t>
                     <t t-if="question.type == 'upload_file'"><t t-call="sms_recruitment_enhancement.upload_file"/></t>
+                    <t t-if="question.type == 'link'">
+                        <t t-call="sms_recruitment_enhancement.url_link"/></t>
                     <div class="js_errzone alert alert-danger" style="display:none;"></div>
                 </div>
             </t>
@@ -88,6 +90,8 @@
                                         <t t-if="question.type == 'multiple_choice'"><t t-call="survey.multiple_choice"/></t>
                                         <t t-if="question.type == 'matrix'"><t t-call="survey.matrix"/></t>
                                         <t t-if="question.type == 'upload_file'"><t t-call="sms_recruitment_enhancement.upload_file"/></t>
+                                        <t t-if="question.type == 'link'">
+                                            <t t-call="sms_recruitment_enhancement.url_link"/></t>
                                         <div class="js_errzone alert alert-danger" style="display:none;"></div>
                                     </div>
                                 </t>
@@ -117,5 +121,11 @@
                 <br/>
             </t>
         </div>
+    </template>
+
+    <template id="url_link" name="URL">
+        <a t-att-href="question.url_link" target="_blank">
+            <t t-esc="question.url_link"/>
+        </a>
     </template>
 </odoo>
