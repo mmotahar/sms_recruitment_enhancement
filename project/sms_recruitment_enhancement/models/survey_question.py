@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
-from odoo import api, fields, models
+from datetime import datetime
+from dateutil.relativedelta import relativedelta
+from odoo.tools import DEFAULT_SERVER_DATE_FORMAT as DF
 from odoo.exceptions import ValidationError
+from odoo import api, fields, models, _
 try:
     # python2
     from urlparse import urlparse
@@ -31,6 +34,15 @@ class SurveyQuestion(models.Model):
     uot = fields.Selection(
         [('months', 'Months'), ('years', 'Years')],
         string='Unit of Time', default='months')
+    date_type = fields.Selection(
+        [('issued', 'Issued Date'), ('expired', 'Expired Date')],
+        string='Date Type', default='issued',
+        help='- Issued Date: you require the reply date as a issued date of '
+             'the licence / certificate. It is not exceed the set period '
+             'compared to the current date.\n'
+             '- Expired Date: you require the reply date as a expried date of '
+             'the licence / certificate. It is not exceed the set period '
+             'compared to the current date.')
 
     @api.multi
     def validate_upload_file(self, post, answer_tag):
@@ -77,3 +89,34 @@ class SurveyQuestion(models.Model):
                 question.validation_max_date = False
             else:
                 question.period = 0
+
+    @api.multi
+    def validate_date(self, post, answer_tag):
+        errors = super(SurveyQuestion, self).validate_date(post, answer_tag)
+        answer = post[answer_tag].strip()
+        if answer and self.is_period:
+            try:
+                dateanswer = fields.Date.from_string(answer)
+                to_date = datetime.now().date()
+                period = self.period if self.uot == 'months' else \
+                    self.period * 12
+                gap = relativedelta(to_date, dateanswer)
+                gap_months = gap.years * 12 + gap.months
+                if abs(gap_months) > period:
+                    msg = _('Please input the %s. It should be '
+                            'between %s and %s')
+                    err_msg = ''
+                    if self.date_type == 'issued':
+                        pre_date = to_date - relativedelta(months=period)
+                        err_msg = msg % ('issued date',
+                                         pre_date.strftime('%d-%m-%Y'),
+                                         to_date.strftime('%d-%m-%Y'))
+                    else:
+                        next_date = to_date + relativedelta(months=period)
+                        err_msg = msg % ('expired date', 
+                                         to_date.strftime('%d-%m-%Y'),
+                                         next_date.strftime('%d-%m-%Y'))
+                    errors.update({answer_tag: err_msg})
+            except ValueError:
+                pass
+        return errors
