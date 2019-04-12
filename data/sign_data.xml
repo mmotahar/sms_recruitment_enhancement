@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="attachment_sign_ioe" model="ir.attachment">
+        <field name="name">Expression of Interest HR-EMP-001-Rev 08 (2)</field>
+        <field name="datas_fname">Expression of Interest HR-EMP-001-Rev 08 (2).pdf</field>
+        <field name="datas" type="base64" file="sms_recruitment_enhancement/static/file_sample/Expression of Interest HR-EMP-001-Rev 08 (2).pdf"/>
+        <field name="mimetype">application/pdf;base64</field>
+    </record>
+
+    <record id="template_sign_eoi" model="sign.template">
+        <field name="attachment_id" ref="attachment_sign_ioe"/>
+        <field name="share_link">expression-of-interest-hr-emp-001-rev08</field>
+    </record>
+
+</odoo>
