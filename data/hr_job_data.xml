@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo >
+    <record model="hr.job" id="hr_job_supervisor">
+        <field name="name">Supervisor</field>
+    </record>
+    <record model="hr.job" id="hr_job_skilled_tradesmen">
+        <field name="name">Skilled Tradesmen</field>
+    </record>
+    <record model="hr.job" id="hr_job_scaffolder">
+        <field name="name">Scaffolder</field>
+    </record>
+    <record model="hr.job" id="hr_job_sentries">
+        <field name="name">Sentries</field>
+    </record>
+    <record model="hr.job" id="hr_job_trades_assistant">
+        <field name="name">Trades Assistant</field>
+    </record>
+    <record model="hr.job" id="hr_job_yards_person">
+        <field name="name">Yards Person</field>
+    </record>
+</odoo>

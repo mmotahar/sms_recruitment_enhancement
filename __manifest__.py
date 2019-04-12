@@ -25,7 +25,8 @@ This module aims to enhance the features of online recruitment
         # DATA
         # ============================================================
         # "data/",
-
+        'data/hr_job_data.xml',
+        'data/sign_data.xml',
         # ============================================================
         # VIEWS
         # ============================================================
@@ -46,7 +47,7 @@ This module aims to enhance the features of online recruitment
 
     "test": [],
     "demo": [],
-
+    "post_init_hook": "post_init_hook",
     "installable": True,
     "active": False,
     "application": False,
