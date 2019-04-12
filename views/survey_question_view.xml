@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Inherit Form View -->
+        <record id="view_survey_question_form_inherit" model="ir.ui.view">
+            <field name="name">view.survey.question.form.inherit</field>
+            <field name="model">survey.question</field>
+            <field name="inherit_id" ref="survey.survey_question_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//field[@name='labels_ids']" position="before">
+                    <label for="url_link" attrs="{'invisible': [('type', '!=', 'link')]}"/>
+                    <field name="url_link" attrs="{'invisible': [('type', '!=', 'link')], 'required': [('type', '=', 'link')]}" widget ="url"/>
+                </xpath>
+
+                <field name="constr_error_msg" position="after">
+                    <field name='help_msg' colspan="4"/>
+                </field>
+
+                <field name="validation_required" position="after">
+                    <field name='is_period' attrs="{'invisible': [('type', '!=', 'date')]}"/>
+                </field>
+
+                <xpath expr="//field[@name='validation_max_date']" position="after">
+                    <field name="date_type"  attrs="{'invisible': ['|', ('type', '!=', 'date'), ('is_period', '=', False)]}" colspan="4"/>
+                    <label for="period" string="Period" attrs="{'invisible': ['|', ('type', '!=', 'date'), ('is_period', '=', False)]}"/>
+                    <div attrs="{'invisible': ['|', ('type', '!=', 'date'), ('is_period', '=', False)]}">
+                        <field name="period" class="oe_inline"/>
+                        <field name="uot" class="oe_inline" style="margin-left: 10px;"/>
+                    </div>
+                </xpath>
+
+                <field name="validation_min_date" position="attributes">
+                    <attribute name="attrs">{'invisible': ['|', ('type', '!=', 'date'), ('is_period', '=', True)]}</attribute>
+                </field>
+
+                <field name="validation_max_date" position="attributes">
+                    <attribute name="attrs">{'invisible': ['|', ('type', '!=', 'date'), ('is_period', '=', True)]}</attribute>
+                </field>
+                
+            </field>
+        </record>
+    </data>
+</odoo>
