@@ -21,3 +21,10 @@ subtrees: !!python/object/new:emoi.config.repo.SubtreeCollection
         repository: git@gitlab.trobz.com:odoo/server-ux.git
         squash: true
         watch-contributions: false
+    - !!python/object:emoi.config.repo.Subtree
+        alias: sms_recruitment_enhancement
+        branch: '12.0'
+        prefix: project/sms_recruitment_enhancement
+        repository: git@gitlab.trobz.com:odoo-ia/sms_recruitment_enhancement.git
+        squash: true
+        watch-contributions: false
