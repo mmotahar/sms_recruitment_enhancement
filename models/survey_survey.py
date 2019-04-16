@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from odoo import api, fields, models
 from odoo.tools.safe_eval import safe_eval
 import logging
@@ -52,12 +53,17 @@ class Survey(models.Model):
     def _create_master_data_survey(self):
         # Check to ensure run this function one time
         IrConfig = self.env['ir.config_parameter']
-        created_master_data_survey = safe_eval(IrConfig.get_param(
-            'created_master_data_survey', 'False'))
-        if created_master_data_survey:
+        ran_functions = IrConfig.get_param(
+            'list_funct_generate_master_data_survey', '[]')
+        ran_functions = safe_eval(ran_functions)
+        if not isinstance(ran_functions, (list)):
+            ran_functions = []
+        if '_create_master_data_survey' in ran_functions:
             return True
         else:
-            IrConfig.set_param('created_master_data_survey', True)
+            ran_functions.append('_create_master_data_survey')
+            IrConfig.set_param(
+                'list_funct_generate_master_data_survey', str(ran_functions))
 
         _logger.info("=== START: _create_master_data_survey ====")
         applied_jobs = [

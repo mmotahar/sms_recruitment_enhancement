@@ -1,16 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-
+    <!-- TEMPLATE SIGN FOR EOI -->
     <record id="attachment_sign_ioe" model="ir.attachment">
-        <field name="name">Expression of Interest HR-EMP-001-Rev 08 (2)</field>
+        <field name="name">Expression of Interest</field>
         <field name="datas_fname">Expression of Interest HR-EMP-001-Rev 08 (2).pdf</field>
         <field name="datas" type="base64" file="sms_recruitment_enhancement/static/file_sample/Expression of Interest HR-EMP-001-Rev 08 (2).pdf"/>
         <field name="mimetype">application/pdf;base64</field>
     </record>
-
-    <record id="template_sign_eoi" model="sign.template">
-        <field name="attachment_id" ref="attachment_sign_ioe"/>
-        <field name="share_link">expression-of-interest-hr-emp-001-rev08</field>
+        <record id="template_sign_eoi" model="sign.template">
+            <field name="attachment_id" ref="attachment_sign_ioe"/>
+            <field name="share_link">expression-of-interest-hr-emp-001-rev08</field>
+        </record>
+    
+    <!-- TEMPLATE Offer of Employment Letter -->
+    <record id="attachment_sign_offer_letter" model="ir.attachment">
+        <field name="name">Offer of Employment Letter</field>
+        <field name="datas_fname">TEMPLATE Offer of Employment HR_EN.pdf</field>
+        <field name="datas" type="base64" file="sms_recruitment_enhancement/static/file_sample/TEMPLATE Offer of Employment HR_EN.pdf"/>
+        <field name="mimetype">application/pdf;base64</field>
     </record>
+        <record id="template_sign_offer_of_employee" model="sign.template">
+            <field name="attachment_id" ref="attachment_sign_offer_letter"/>
+            <field name="share_link">offer-of-employment-hr-en</field>
+        </record>
+    
+    <!-- TEMPLATE Payroll Information Form -->
+    <record id="attachment_sign_payroll_info" model="ir.attachment">
+        <field name="name">Payroll Information Form</field>
+        <field name="datas_fname">SMS Payroll Information Form HR-EMP-007 Rev 0 (Digital).pdf</field>
+        <field name="datas" type="base64" file="sms_recruitment_enhancement/static/file_sample/SMS Payroll Information Form HR-EMP-007 Rev 0 (Digital).pdf"/>
+        <field name="mimetype">application/pdf;base64</field>
+    </record>
+        <record id="template_sign_payroll_info" model="sign.template">
+            <field name="attachment_id" ref="attachment_sign_payroll_info"/>
+            <field name="share_link">sms-payroll-info-form-hr-emp-007-rev-0-digital</field>
+        </record>
+    
+    <!-- TEMPLATE Superannuation Choice Form (Digital) -->
+    <record id="attachment_sign_superannuation" model="ir.attachment">
+        <field name="name">Superannuation Choice Form (Digital)</field>
+        <field name="datas_fname">Superannuation Choice Form (Digital).pdf</field>
+        <field name="datas" type="base64" file="sms_recruitment_enhancement/static/file_sample/Superannuation Choice Form (Digital).pdf"/>
+        <field name="mimetype">application/pdf;base64</field>
+    </record>
+        <record id="template_sign_superannuation" model="sign.template">
+            <field name="attachment_id" ref="attachment_sign_superannuation"/>
+            <field name="share_link">superannuation-choice-form-digital</field>
+        </record>
+
+    <!-- TEMPLATE TFN-declaration-form (Digital) -->
+    <record id="attachment_sign_tax_declaration" model="ir.attachment">
+        <field name="name">TFN-declaration-form (Digital)</field>
+        <field name="datas_fname">TFN-declaration-form (Digital).pdf</field>
+        <field name="datas" type="base64" file="sms_recruitment_enhancement/static/file_sample/TFN-declaration-form (Digital).pdf"/>
+        <field name="mimetype">application/pdf;base64</field>
+    </record>
+        <record id="template_sign_tax_declaration" model="sign.template">
+            <field name="attachment_id" ref="attachment_sign_tax_declaration"/>
+            <field name="share_link">superannuation-choice-form-digital</field>
+        </record>
+    
+    <!-- TEMPLATE PPE Size Chart ADM-OPS-PPE-001-Rev 03 -->
+    <record id="attachment_sign_ppe_size_chart" model="ir.attachment">
+        <field name="name">PPE Size Chart ADM-OPS-PPE-001-Rev 03</field>
+        <field name="datas_fname">PPE Size Chart ADM-OPS-PPE-001-Rev 03.pdf</field>
+        <field name="datas" type="base64" file="sms_recruitment_enhancement/static/file_sample/PPE Size Chart ADM-OPS-PPE-001-Rev 03.pdf"/>
+        <field name="mimetype">application/pdf;base64</field>
+    </record>
+        <record id="template_sign_ppe_size_chart" model="sign.template">
+            <field name="attachment_id" ref="attachment_sign_ppe_size_chart"/>
+            <field name="share_link">PPE Size Chart ADM-OPS-PPE-001-Rev 03</field>
+        </record>
 
 </odoo>

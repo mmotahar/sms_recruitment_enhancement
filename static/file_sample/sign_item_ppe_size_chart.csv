@@ -1,0 +1,14 @@
+﻿"id","item_type","page","posX","posY","width","height","required","role_name"
+"102,201",sign_item_type_text,2,0.732,0.599,0.152,0.021,true,sign_item_role_customer
+"102,199",sign_item_type_text,1,0.698,0.207,0.242,0.018,true,sign_item_role_customer
+"102,200",sign_item_type_text,2,0.296,0.09,0.594,0.027,true,sign_item_role_customer
+"102,189",sign_item_type_text,1,0.252,0.24,0.265,0.018,true,sign_item_role_customer
+"102,191",sign_item_type_text,2,0.739,0.186,0.148,0.023,true,sign_item_role_customer
+"102,194",sign_item_type_text,1,0.253,0.208,0.263,0.018,true,sign_item_role_customer
+"102,195",sign_item_type_text,2,0.796,0.872,0.093,0.023,true,sign_item_role_customer
+"102,196",sign_item_type_text,1,0.28,0.985,0.013,0.015,true,sign_item_role_customer
+"102,197",sign_item_type_text,2,0.794,0.759,0.093,0.022,true,sign_item_role_customer
+"102,198",sign_item_type_text,1,0.696,0.239,0.245,0.017,true,sign_item_role_customer
+"102,193",sign_item_type_checkbox,1,0.914,0.272,0.015,0.015,true,sign_item_role_customer
+"102,192",sign_item_type_checkbox,1,0.843,0.272,0.015,0.015,true,sign_item_role_customer
+"102,190",sign_item_type_date,1,0.297,0.271,0.221,0.019,true,sign_item_role_customer
