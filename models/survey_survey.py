@@ -525,3 +525,15 @@ class Survey(models.Model):
                         seq_dr += 1
         _logger.info("=== END: _create_master_data_survey ====")
         return True
+
+    @api.model
+    def prepare_result(self, question, current_filters=None):
+        result_summary = super(Survey, self).prepare_result(
+            question, current_filters)
+        if question.type == 'upload_file':
+            result_summary = []
+            for input_line in question.user_input_line_ids:
+                if not(current_filters) or \
+                        input_line.user_input_id.id in current_filters:
+                    result_summary.append(input_line)
+        return result_summary

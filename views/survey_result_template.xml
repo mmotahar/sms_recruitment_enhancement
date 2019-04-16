@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+    <template id="survey.result" name="Survey Result">
+        <t t-call="survey.layout">
+            <div class="oe_structure" id="oe_structure_survey_result_1"/>
+            <div class="container js_surveyresult">
+                <t t-call="survey.back" />
+                <div class="jumbotron mt32">
+                    <h1><span t-field="survey.title" /> <span style="font-size:1.5em;" class="fa fa-bar-chart-o float-right " role="img" aria-label="Chart" title="Chart"/></h1>
+                    <div t-field="survey.description" class="oe_no_empty" />
+                </div>
+                <div class="card d-print-none">
+                    <div class="card-header"><span class="fa fa-filter"></span>  Filters <span t-if="filter_display_data" class="float-right text-primary clear_survey_filter"><i class="fa fa-times"></i> Clear All Filters</span></div>
+                    <div class="card-body">
+                        <span t-if="filter_finish == True">
+                            <span class="badge badge-secondary only_left_radius filter-all">All surveys</span><span class="badge badge-primary only_right_radius filter-finished">Finished surveys</span>
+                        </span>
+                        <span t-if="filter_finish == False">
+                            <span class="badge badge-primary only_left_radius filter-all">All surveys</span><span class="badge badge-secondary only_right_radius filter-finished">Finished surveys</span>
+                        </span>
+                        <span t-foreach="filter_display_data" t-as="filter_data">
+                            <span class="badge badge-primary only_left_radius"><i class="fa fa-filter" role="img" aria-label="Filter" title="Filter"></i></span><span class="badge badge-primary no_radius" t-esc="filter_data['question_text']"></span><span class="badge badge-success only_right_radius" t-esc="' > '.join(filter_data['labels'])"></span>
+                        </span>
+                    </div>
+                </div>
+                <div t-foreach="survey_dict['page_ids']" t-as='page_ids'>
+                    <t t-set="page" t-value="page_ids['page']"/>
+                    <h1 class="mt16" t-field='page.title'></h1>
+                    <div t-field="page.description" class="oe_no_empty" />
+                    <hr/>
+                    <div t-foreach="page_ids['question_ids']" t-as='question_ids' class="mt16">
+                        <t t-set="input_summary" t-value="question_ids['input_summary']"/>
+                        <t t-set="question" t-value="question_ids['question']"/>
+                        <t t-set="graph_data" t-value="question_ids['graph_data']"/>
+                        <t t-set="prepare_result" t-value="question_ids['prepare_result']"/>
+                        <h4>
+                            <b>Question </b>
+                            <span t-field='question.question'></span>
+                            <t t-if="question.type == 'matrix'">
+                                <small><span class="badge badge-secondary">Matrix: <span t-field='question.matrix_subtype'/></span></small>
+                            </t>
+                            <t t-if="question.type in ['simple_choice', 'multiple_choice']">
+                                <small><span t-field='question.type' class="badge badge-secondary"></span></small>
+                            </t>
+                            <span class="float-right">
+                                <span class="badge badge-success"><span t-esc="input_summary['answered']"></span> Answered</span>
+                                <span class="badge badge-danger"><span t-esc="input_summary['skipped']"></span> Skipped</span>
+                            </span>
+                        </h4>
+                        <t t-if="input_summary['answered'] != 0">
+                            <t t-if="question.description">
+                                <div class="text-muted oe_no_empty" t-field="question.description" />
+                            </t>
+                            <t t-if="question.type in ['textbox', 'free_text', 'date']">
+                                <t t-call="survey.result_text"></t>
+                            </t>
+                            <t t-if="question.type in ['simple_choice', 'multiple_choice']">
+                                <t t-call="survey.result_choice"></t>
+                            </t>
+                            <t t-if="question.type == 'matrix'">
+                                <t t-call="survey.result_matrix"></t>
+                            </t>
+                            <t t-if="question.type == 'numerical_box'">
+                                <t t-call="survey.result_number"></t>
+                            </t>
+                            <t t-if="question.type == 'upload_file'">
+                                <t t-call="sms_recruitment_enhancement.result_upload_file"></t>
+                            </t>
+                        </t>
+                        <t t-if="input_summary['answered'] == 0">
+                            <h2 style="padding-top:30px;padding-bottom:30px;text-align:center;" class="text-muted">Sorry, No one answered this question.</h2>
+                        </t>
+                    </div>
+                </div>
+            </div>
+            <div class="oe_structure" id="oe_structure_survey_result_2"/>
+        </t>
+    </template>
+
+
+    <!-- Result for upload_file -->
+    <template id="result_upload_file" name="File Result">
+        <table class="table table-hover table-sm" t-att-id="'table_question_%d' % question.id">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>User Responses</th>
+                </tr>
+            </thead>
+            <tbody>
+                <t t-set="upload_file_result" t-value="prepare_result"/>
+                <tr t-foreach="upload_file_result" t-as="user_input">
+                    <td><a t-att-href="'%s/%s' % (user_input.user_input_id.print_url, user_input.user_input_id.token)"><t t-esc="user_input_index + 1"></t></a></td>
+                    <td>
+                        <a t-attf-download="{{user_input.filename}}" t-att-href="'data:application/*;base64,%s' % to_text(user_input.file)" target="_blank">
+                            <t t-esc="user_input.filename"/>
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <t t-call="sms_recruitment_enhancement.pagination_sms" />
+    </template>
+
+    <!-- Pagination Element -->
+    <template id="pagination_sms" name="Survey Result">
+        <t t-set="record_limit" t-value="10"/><!-- Change This record_limit to change number of record  per page-->
+        <ul t-att-id="'pagination_%d' % question.id" class="pagination" t-att-data-question_id="question.id" t-att-data-record_limit="record_limit">
+            <t t-if="len(upload_file_result) > record_limit">
+                <li t-foreach="page_range(len(upload_file_result), record_limit)" t-as="num" class="page-item">
+                    <a href="#" class="page-link" t-esc="num"></a>
+                </li>
+            </t>
+        </ul>
+    </template>
+    
+</data>
+</odoo>
