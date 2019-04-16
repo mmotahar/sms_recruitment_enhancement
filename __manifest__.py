@@ -4,7 +4,6 @@
 {
     "name": "SMS Recruitment Enhancement",
     "version": "1.0",
-    "category": "Trobz Standard Modules",
     "description": """
 This module aims to enhance the features of online recruitment
     """,
