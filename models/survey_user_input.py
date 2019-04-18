@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+from datetime import datetime
+from dateutil.relativedelta import relativedelta
 from odoo import api, fields, models
 
 
@@ -34,4 +36,13 @@ class SurveyUserInput(models.Model):
         res = super(SurveyUserInput, self).write(vals)
         if vals.get('state', False) == 'done':
             self.create_applicant()
+        return res
+
+    @api.model
+    def create(self, vals):
+        res = super(SurveyUserInput, self).create(vals)
+        if not res.deadline:
+            # When the applicant start survey, the deadline
+            # is set from now plus 14 days
+            res.deadline = datetime.now() + relativedelta(days=14)
         return res
