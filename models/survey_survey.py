@@ -117,6 +117,11 @@ class Survey(models.Model):
                 'users_can_go_back': True
             })
             if survey:
+                # Link survey to job
+                linked_job = self.env.ref(
+                    'sms_recruitment_enhancement.hr_job_%s' % job, False)
+                if linked_job:
+                    linked_job.sudo().write({'survey_id': survey.id})
                 # Create survey page
                 # Page 1: Basic Information
                 page1 = SurveyPage.create({

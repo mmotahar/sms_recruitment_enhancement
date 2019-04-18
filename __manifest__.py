@@ -34,6 +34,7 @@ This module aims to enhance the features of online recruitment
         'views/survey_user_input_line_view.xml',
         'views/survey_question_view.xml',
         'views/survey_result_template.xml',
+        'views/hr_applicant_view.xml',
         # ============================================================
         # MENU
         # ============================================================
