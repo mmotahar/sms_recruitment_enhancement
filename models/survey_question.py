@@ -97,20 +97,20 @@ class SurveyQuestion(models.Model):
         if answer and self.is_period:
             try:
                 dateanswer = fields.Date.from_string(answer)
-                to_date = datetime.now().date()
+                today = datetime.now().date()
                 period = self.period if self.uot == 'months' else \
                     self.period * 12
-                gap = relativedelta(to_date, dateanswer)
-                gap_months = gap.years * 12 + gap.months
                 err_msg = ''
-                if self.date_type == 'issued' and (
-                        dateanswer > to_date or gap_months > period):
-                    err_msg = 'Date must be less than %s %s old.' % (
-                        str(self.period), self.uot)
-                elif self.date_type == 'expired' and (
-                        dateanswer < to_date or abs(gap_months) < period):
-                    err_msg = 'Date must be greater than %s %s old.' % (
-                        str(self.period), self.uot)
+                if self.date_type == 'issued':
+                    deadline_date = today - relativedelta(months=period)
+                    if dateanswer > today or dateanswer < deadline_date:
+                        err_msg = 'Date must be less than %s %s.' % (
+                            str(self.period), self.uot)
+                elif self.date_type == 'expired':
+                    deadline_date = today + relativedelta(months=period)
+                    if dateanswer < deadline_date:
+                        err_msg = 'Date must be greater than %s %s.' % (
+                            str(self.period), self.uot)
                 if err_msg:
                     errors.update({answer_tag: err_msg})
             except ValueError:
