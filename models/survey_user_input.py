@@ -10,7 +10,7 @@ class SurveyUserInput(models.Model):
         self.ensure_one()
         # Get some info from survey submission to create application
         survey_id = self.survey_id and self.survey_id.id or False
-        job = self.env['hr.job'].sudo().search(
+        job = self.env['hr.job'].search(
             [('survey_id', '=', survey_id)], limit=1)
         basic_info = {}
         for uil in self.user_input_line_ids:
@@ -20,7 +20,7 @@ class SurveyUserInput(models.Model):
                     value = uil.value_text \
                         if info != 'Address' else uil.value_free_text
                     basic_info.update({info: value})
-        self.env['hr.applicant'].sudo().create({
+        self.env['hr.applicant'].create({
             'name': job and job.name or '',
             'partner_name': basic_info.get('Full Name', False),
             'email_from': basic_info.get('Email Address', False),
