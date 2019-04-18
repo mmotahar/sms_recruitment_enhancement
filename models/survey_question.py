@@ -38,10 +38,10 @@ class SurveyQuestion(models.Model):
         [('issued', 'Issued Date'), ('expired', 'Expired Date')],
         string='Date Type', default='issued',
         help='- Issued Date: you require the reply date as a issued date of '
-             'the licence / certificate. It is not exceed the set period '
+             'the licence / certificate. It is less than period '
              'compared to the current date.\n'
              '- Expired Date: you require the reply date as a expried date of '
-             'the licence / certificate. It is not exceed the set period '
+             'the licence / certificate. It is greater than period '
              'compared to the current date.')
 
     @api.multi
@@ -102,20 +102,16 @@ class SurveyQuestion(models.Model):
                     self.period * 12
                 gap = relativedelta(to_date, dateanswer)
                 gap_months = gap.years * 12 + gap.months
-                if abs(gap_months) > period:
-                    msg = _('Please input the %s. It should be '
-                            'between %s and %s')
-                    err_msg = ''
-                    if self.date_type == 'issued':
-                        pre_date = to_date - relativedelta(months=period)
-                        err_msg = msg % ('issued date',
-                                         pre_date.strftime('%d-%m-%Y'),
-                                         to_date.strftime('%d-%m-%Y'))
-                    else:
-                        next_date = to_date + relativedelta(months=period)
-                        err_msg = msg % ('expired date', 
-                                         to_date.strftime('%d-%m-%Y'),
-                                         next_date.strftime('%d-%m-%Y'))
+                err_msg = ''
+                if self.date_type == 'issued' and (
+                        dateanswer > to_date or gap_months > period):
+                    err_msg = 'Date must be less than %s %s old.' % (
+                        str(self.period), self.uot)
+                elif self.date_type == 'expired' and (
+                        dateanswer < to_date or abs(gap_months) < period):
+                    err_msg = 'Date must be greater than %s %s old.' % (
+                        str(self.period), self.uot)
+                if err_msg:
                     errors.update({answer_tag: err_msg})
             except ValueError:
                 pass
