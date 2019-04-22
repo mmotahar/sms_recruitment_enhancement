@@ -7,7 +7,9 @@ from odoo import api, models
 class SurveyUserInput(models.Model):
     _inherit = 'survey.user_input'
 
+    @api.multi
     def create_applicant(self):
+        self.ensure_one()
         # Get some info from survey submission to create application
         survey_id = self.survey_id and self.survey_id.id or False
         job = self.env['hr.job'].search(
@@ -20,7 +22,7 @@ class SurveyUserInput(models.Model):
                     value = uil.value_text \
                         if info != 'Address' else uil.value_free_text
                     basic_info.update({info: value})
-        self.env['hr.applicant'].create({
+        return self.env['hr.applicant'].create({
             'name': job and job.name or '',
             'partner_name': basic_info.get('Full Name', False),
             'email_from': basic_info.get('Email Address', False),
@@ -28,7 +30,6 @@ class SurveyUserInput(models.Model):
             'job_id': job and job.id or False,
             'response_id': self.id
         })
-        return True
 
     @api.multi
     def write(self, vals):
