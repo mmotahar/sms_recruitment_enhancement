@@ -51,19 +51,6 @@ class Survey(models.Model):
 
     @api.model
     def _create_master_data_survey(self):
-        # Check to ensure run this function one time
-        IrConfig = self.env['ir.config_parameter']
-        ran_functions = IrConfig.get_param(
-            'list_funct_generate_master_data_survey', '[]')
-        ran_functions = safe_eval(ran_functions)
-        if not isinstance(ran_functions, (list)):
-            ran_functions = []
-        if '_create_master_data_survey' in ran_functions:
-            return True
-        else:
-            ran_functions.append('_create_master_data_survey')
-            IrConfig.set_param(
-                'list_funct_generate_master_data_survey', str(ran_functions))
 
         _logger.info("=== START: _create_master_data_survey ====")
         applied_jobs = [
@@ -149,7 +136,11 @@ class Survey(models.Model):
                             'constr_mandatory': True
                         }
                         if bq == 'email_address':
-                            vals1.update({'validation_email': True})
+                            vals1.update({
+                                'validation_email': True,
+                                'help_msg': 'Input must be an email'
+                                })
+
                         if bq == 'position_applied_for':
                             vals1.update({'display_mode': 'dropdown'})
                         ques1 = SurveyQuestion.create(vals1)
@@ -179,7 +170,8 @@ class Survey(models.Model):
                         'sequence': 5,
                         'question': 'Resume',
                         'type': 'upload_file',
-                        'constr_mandatory': True
+                        'constr_mandatory':
+                        True if job != 'yards_person' else False
                     })
                     SurveyQuestion.create({
                         'page_id': page2.id,
@@ -196,33 +188,33 @@ class Survey(models.Model):
                 })
                 if page3:
                     # Verification of Competency (VOC) Certificate
-                    SurveyQuestion.create({
-                        'page_id': page3.id,
-                        'sequence': 2,
-                        'question':
-                        'Verification of Competency (VOC) Certificate',
-                        'type': 'upload_file',
-                        'constr_mandatory':
-                        True if job in ['supervisor', 'skilled_tradesmen',
-                                        'scaffolder'] else False,
-                    })
-                    SurveyQuestion.create({
-                        'page_id': page3.id,
-                        'sequence': 4,
-                        'question': 'Date Completed',
-                        'type': 'date',
-                        'constr_mandatory':
-                        True if job in ['supervisor', 'skilled_tradesmen',
-                                        'scaffolder'] else False,
-                        'validation_required': True,
-                        'is_period': True,
-                        'period': 3,
-                        'uot': 'months',
-                        'date_type': 'issued',
-                        'help_msg': 'Issued Date of Verification of '
-                                    'Competency (VOC) Certificate',
-                    })
+                    # For job: Supervisor, Skilled Tradesmen, Scaffolder
+                    if job in ['supervisor', 'skilled_tradesmen',
+                               'scaffolder']:
+                        SurveyQuestion.create({
+                            'page_id': page3.id,
+                            'sequence': 2,
+                            'question':
+                            'Verification of Competency (VOC) Certificate',
+                            'type': 'upload_file',
+                            'constr_mandatory': True,
+                        })
+                        SurveyQuestion.create({
+                            'page_id': page3.id,
+                            'sequence': 4,
+                            'question': 'Date Completed',
+                            'type': 'date',
+                            'constr_mandatory': True,
+                            'validation_required': True,
+                            'is_period': True,
+                            'period': 3,
+                            'uot': 'months',
+                            'date_type': 'issued',
+                            'help_msg': 'Issued Date of Verification of '
+                                        'Competency (VOC) Certificate',
+                        })
                     # High Risk Work License (HRWL)
+                    # For job: All
                     SurveyQuestion.create({
                         'page_id': page3.id,
                         'sequence': 6,
@@ -236,6 +228,7 @@ class Survey(models.Model):
                         'question': 'Licence Number',
                         'type': 'textbox',
                         'constr_mandatory': True,
+                        'validation_required': True,
                         'validation_length_min': 12,
                         'validation_length_max': 12,
                         'validation_error_msg':
@@ -270,63 +263,65 @@ class Survey(models.Model):
                                 'value': c
                             })
                     # Working at Heights (WAH)
-                    SurveyQuestion.create({
-                        'page_id': page3.id,
-                        'sequence': 14,
-                        'question': 'Working at Heights (WAH)',
-                        'type': 'upload_file',
-                        'constr_mandatory':
-                        True if job in ['supervisor', 'skilled_tradesmen',
-                                        'scaffolder'] else False,
-                        'help_msg': 'Please ensure you have attached front '
-                                    'and back copies of your Working at '
-                                    'Heights certificate'
-                    })
-                    SurveyQuestion.create({
-                        'page_id': page3.id,
-                        'sequence': 16,
-                        'question': 'Date Issued',
-                        'type': 'date',
-                        'constr_mandatory':
-                        True if job in ['supervisor', 'skilled_tradesmen',
-                                        'scaffolder'] else False,
-                        'validation_required': True,
-                        'is_period': True,
-                        'period': 2,
-                        'uot': 'years',
-                        'date_type': 'issued',
-                        'help_msg': 'Issued Date of Working at Heights (WAH)'
-                    })
+                    # For job: Supervisor, Skilled Tradesmen, Scaffolder
+                    if job in ['supervisor', 'skilled_tradesmen',
+                               'scaffolder']:
+                        SurveyQuestion.create({
+                            'page_id': page3.id,
+                            'sequence': 14,
+                            'question': 'Working at Heights (WAH)',
+                            'type': 'upload_file',
+                            'constr_mandatory': True,
+                            'help_msg': 'Please ensure you have attached '
+                                        'front and back copies of your '
+                                        'Working at Heights certificate'
+                        })
+                        SurveyQuestion.create({
+                            'page_id': page3.id,
+                            'sequence': 16,
+                            'question': 'Date Issued',
+                            'type': 'date',
+                            'constr_mandatory': True,
+                            'validation_required': True,
+                            'is_period': True,
+                            'period': 2,
+                            'uot': 'years',
+                            'date_type': 'issued',
+                            'help_msg': 'Issued Date of Working at Heights'
+                        })
                     # Enter and Work in Confined Spaces (CSE)
-                    SurveyQuestion.create({
-                        'page_id': page3.id,
-                        'sequence': 18,
-                        'question': 'Enter and Work in Confined Spaces (CSE)',
-                        'type': 'upload_file',
-                        'constr_mandatory':
-                        True if job in ['supervisor', 'skilled_tradesmen',
-                                        'scaffolder', 'sentries'] else False,
-                        'help_msg': 'Please ensure you have attached front '
-                                    'and back copies of your Enter and Work '
-                                    'in Confined Spaces certificate'
-                    })
-                    SurveyQuestion.create({
-                        'page_id': page3.id,
-                        'sequence': 20,
-                        'question': 'Date Issued',
-                        'type': 'date',
-                        'constr_mandatory':
-                        True if job in ['supervisor', 'skilled_tradesmen',
-                                        'scaffolder', 'sentries'] else False,
-                        'validation_required': True,
-                        'is_period': True,
-                        'period': 2,
-                        'uot': 'years',
-                        'date_type': 'issued',
-                        'help_msg': 'Issued Date of Enter and Work in '
-                                    'Confined Spaces (CSE)'
-                    })
+                    # For job:
+                    # Supervisor, Skilled Tradesmen, Scaffolder, Sentries
+                    if job in ['supervisor', 'skilled_tradesmen',
+                               'scaffolder', 'sentries']:
+                        SurveyQuestion.create({
+                            'page_id': page3.id,
+                            'sequence': 18,
+                            'question':
+                            'Enter and Work in Confined Spaces (CSE)',
+                            'type': 'upload_file',
+                            'constr_mandatory': True,
+                            'help_msg': 'Please ensure you have attached '
+                                        'front and back copies of your Enter '
+                                        'and Work in Confined Spaces '
+                                        'certificate'
+                        })
+                        SurveyQuestion.create({
+                            'page_id': page3.id,
+                            'sequence': 20,
+                            'question': 'Date Issued',
+                            'type': 'date',
+                            'constr_mandatory': True,
+                            'validation_required': True,
+                            'is_period': True,
+                            'period': 2,
+                            'uot': 'years',
+                            'date_type': 'issued',
+                            'help_msg': 'Issued Date of Enter and Work in '
+                                        'Confined Spaces (CSE)'
+                        })
                     # Construction Card
+                    # For job: All
                     SurveyQuestion.create({
                         'page_id': page3.id,
                         'sequence': 22,
@@ -345,176 +340,178 @@ class Survey(models.Model):
                         'help_msg': 'Issued Date of Construction Card'
                     })
                     # Passport or Birth Certificate
-                    SurveyQuestion.create({
-                        'page_id': page3.id,
-                        'sequence': 26,
-                        'question': 'Passport or Birth Certificate',
-                        'type': 'upload_file',
-                        'constr_mandatory':
-                        True if job != 'yards_person' else False,
-                        'help_msg': "Please ensure you have attached a copy "
-                                    "of the picture page of your passport."
-                                    "\nIf you do not hold a passport, a copy "
-                                    "of your Australian birth certificate."
-                                    "\nIf uploading a birth certificate, "
-                                    "this must be supported by a valid "
-                                    "government issued ID, proof of age or "
-                                    "drivers' licence"
-                    })
-                    q_country = SurveyQuestion.create({
-                        'page_id': page3.id,
-                        'sequence': 28,
-                        'question': 'Country of issue',
-                        'type': 'simple_choice',
-                        'display_mode': 'dropdown',
-                        'constr_mandatory':
-                        True if job != 'yards_person' else False,
-                        'help_msg': 'Passport or Birth Certificate'
-                    })
-                    # Create country label
-                    if q_country:
-                        seq_c = 1
-                        for c_name in country_names:
-                            SurveyLabel.create({
-                                'question_id': q_country.id,
-                                'sequence': seq_c,
-                                'value': c_name
-                            })
-                            seq_c += 1
-                    q_yn = SurveyQuestion.create({
-                        'page_id': page3.id,
-                        'sequence': 30,
-                        'question':
-                        'Do you have full working rights in Australia?',
-                        'type': 'simple_choice',
-                        'constr_mandatory':
-                        True if job != 'yards_person' else False,
-                        'help_msg': 'Passport or Birth Certificate'
-                    })
-                    # Create Yes/No Label
-                    if q_yn:
-                        seq_yn = 1
-                        for y in ["Yes", "No"]:
-                            SurveyLabel.create({
-                                'question_id': q_yn.id,
-                                'sequence': seq_yn,
-                                'value': y
-                            })
-                            seq_yn += 1
-                    SurveyQuestion.create({
-                        'page_id': page3.id,
-                        'sequence': 32,
-                        'question': 'Passport Number',
-                        'type': 'textbox',
-                        'constr_mandatory':
-                        True if job != 'yards_person' else False,
-                        'validation_required': True,
-                        'validation_length_min': 10,
-                        'validation_length_max': 10,
-                        'validation_error_msg':
-                        'Passport Number should have 10 alphanumeric chars',
-                        'help_msg': 'Passport or Birth Certificate'
-                    })
-                    SurveyQuestion.create({
-                        'page_id': page3.id,
-                        'sequence': 34,
-                        'question': 'Birth Certificate Number',
-                        'type': 'textbox',
-                        'constr_mandatory':
-                        True if job != 'yards_person' else False,
-                        'validation_required': True,
-                        'validation_length_min': 15,
-                        'validation_length_max': 15,
-                        'validation_error_msg':
-                        'Birth Certificate Number should have 15 '
-                        'alphanumeric chars',
-                        'help_msg': 'Passport or Birth Certificate'
-                    })
+                    # For job: all except Yards Person
+                    if job != 'yards_person':
+                        SurveyQuestion.create({
+                            'page_id': page3.id,
+                            'sequence': 26,
+                            'question': 'Passport or Birth Certificate',
+                            'type': 'upload_file',
+                            'constr_mandatory': True,
+                            'help_msg': "Please ensure you have attached a "
+                                        "copy of the picture page of your "
+                                        "passport. If you do not hold a "
+                                        "passport, a copy of your Australian "
+                                        "birth certificate. If uploading a "
+                                        "birth certificate, this must be "
+                                        "supported by a valid government "
+                                        "issued ID, proof of age or "
+                                        "drivers' licence."
+                        })
+                        q_country = SurveyQuestion.create({
+                            'page_id': page3.id,
+                            'sequence': 28,
+                            'question': 'Country of issue',
+                            'type': 'simple_choice',
+                            'display_mode': 'dropdown',
+                            'constr_mandatory': True,
+                        })
+                        # Create country label
+                        if q_country:
+                            seq_c = 1
+                            for c_name in country_names:
+                                SurveyLabel.create({
+                                    'question_id': q_country.id,
+                                    'sequence': seq_c,
+                                    'value': c_name
+                                })
+                                seq_c += 1
+                        q_yn = SurveyQuestion.create({
+                            'page_id': page3.id,
+                            'sequence': 30,
+                            'question':
+                            'Do you have full working rights in Australia?',
+                            'type': 'simple_choice',
+                            'constr_mandatory': True,
+                        })
+                        # Create Yes/No Label
+                        if q_yn:
+                            seq_yn = 1
+                            for y in ["Yes", "No"]:
+                                SurveyLabel.create({
+                                    'question_id': q_yn.id,
+                                    'sequence': seq_yn,
+                                    'value': y
+                                })
+                                seq_yn += 1
+                        SurveyQuestion.create({
+                            'page_id': page3.id,
+                            'sequence': 32,
+                            'question': 'Passport Number',
+                            'type': 'textbox',
+                            'validation_required': True,
+                            'validation_length_min': 10,
+                            'validation_length_max': 10,
+                            'validation_error_msg':
+                            'Passport Number should have 10 '
+                            'alphanumeric chars',
+                        })
+                        SurveyQuestion.create({
+                            'page_id': page3.id,
+                            'sequence': 34,
+                            'question': 'Birth Certificate Number',
+                            'type': 'textbox',
+                            'validation_required': True,
+                            'validation_length_min': 15,
+                            'validation_length_max': 15,
+                            'validation_error_msg':
+                            'Birth Certificate Number should have 15 '
+                            'alphanumeric chars'
+                        })
                     # Section 44 Certificate
-                    SurveyQuestion.create({
-                        'page_id': page3.id,
-                        'sequence': 36,
-                        'question': 'Section 44 Certificate',
-                        'type': 'upload_file',
-                        'constr_mandatory':
-                        True if job == 'supervisor' else False,
-                        'help_msg': 'Please ensure you have attached a '
-                                    'copy of your Section 44 certificate'
-                    })
-                    SurveyQuestion.create({
-                        'page_id': page3.id,
-                        'sequence': 38,
-                        'question': 'Date Issued',
-                        'type': 'date',
-                        'constr_mandatory':
-                        True if job == 'supervisor' else False,
-                        'help_msg': 'Issued Date of Section 44 Certificate'
-                    })
+                    # For job: Supervisor
+                    if job == 'supervisor':
+                        SurveyQuestion.create({
+                            'page_id': page3.id,
+                            'sequence': 36,
+                            'question': 'Section 44 Certificate',
+                            'type': 'upload_file',
+                            'constr_mandatory': True,
+                            'help_msg': 'Please ensure you have attached a '
+                                        'copy of your Section 44 certificate'
+                        })
+                        SurveyQuestion.create({
+                            'page_id': page3.id,
+                            'sequence': 38,
+                            'question': 'Date Issued',
+                            'type': 'date',
+                            'constr_mandatory': True,
+                            'help_msg': 'Issued Date of Section 44 Certificate'
+                        })
                     # Official Trade Certificate / Qualification
-                    SurveyQuestion.create({
-                        'page_id': page3.id,
-                        'sequence': 40,
-                        'question':
-                        'Official Trade Certificate / Qualification',
-                        'type': 'upload_file',
-                        'constr_mandatory':
-                        True if job == 'skilled_tradesmen' else False,
-                        'help_msg': 'Please ensure you have attached a copy '
-                                    'of your Trade Certifications / '
-                                    'Qualifications'
-                    })
+                    # For job: skilled_tradesmen
+                    if job == 'skilled_tradesmen':
+                        SurveyQuestion.create({
+                            'page_id': page3.id,
+                            'sequence': 40,
+                            'question':
+                            'Official Trade Certificate / Qualification',
+                            'type': 'upload_file',
+                            'constr_mandatory': True,
+                            'help_msg': 'Please ensure you have attached a '
+                                        'copy of your Trade Certifications / '
+                                        'Qualifications'
+                        })
                     # Gas Test Certificate
-                    SurveyQuestion.create({
-                        'page_id': page3.id,
-                        'sequence': 42,
-                        'question': 'Gas Test Certificate',
-                        'type': 'upload_file',
-                        'constr_mandatory':
-                        True if job == 'sentries' else False,
-                        'help_msg': 'Please ensure you have attached front '
-                                    'and back copies of your Gas Test '
-                                    'Certificate'
-                    })
-                    SurveyQuestion.create({
-                        'page_id': page3.id,
-                        'sequence': 44,
-                        'question': 'Date Issued',
-                        'type': 'date',
-                        'constr_mandatory':
-                        True if job == 'sentries' else False,
-                        'help_msg': 'Issued Date of Gas Test Certificate'
-                    })
+                    # For job: Sentries
+                    if job == 'sentries':
+                        SurveyQuestion.create({
+                            'page_id': page3.id,
+                            'sequence': 42,
+                            'question': 'Gas Test Certificate',
+                            'type': 'upload_file',
+                            'constr_mandatory': True,
+                            'help_msg': 'Please ensure you have attached '
+                                        'front and back copies of your Gas '
+                                        'Test Certificate'
+                        })
+                        SurveyQuestion.create({
+                            'page_id': page3.id,
+                            'sequence': 44,
+                            'question': 'Date Issued',
+                            'type': 'date',
+                            'constr_mandatory': True,
+                            'help_msg': 'Issued Date of Gas Test Certificate'
+                        })
                     # Fork Lift License
-                    SurveyQuestion.create({
-                        'page_id': page3.id,
-                        'sequence': 46,
-                        'question': 'Fork Lift License',
-                        'type': 'upload_file',
-                        'constr_mandatory':
-                        True if job in ['sentries', 'yards_person'] else False,
-                        'help_msg': 'Please ensure you have attached front '
-                                    'and back copies of your Fork Lift Licence'
-                    })
-                    SurveyQuestion.create({
-                        'page_id': page3.id,
-                        'sequence': 48,
-                        'question': 'Date Issued',
-                        'type': 'date',
-                        'constr_mandatory':
-                        True if job in ['sentries', 'yards_person'] else False,
-                        'help_msg': 'Issued Date of Fork Lift License'
-                    })
+                    # For job: trades_assistant, yards_person
+                    if job in ['trades_assistant', 'yards_person']:
+                        SurveyQuestion.create({
+                            'page_id': page3.id,
+                            'sequence': 46,
+                            'question': 'Fork Lift License',
+                            'type': 'upload_file',
+                            'constr_mandatory': True,
+                            'help_msg': 'Please ensure you have attached '
+                                        'front and back copies of your Fork '
+                                        'Lift Licence'
+                        })
+                        SurveyQuestion.create({
+                            'page_id': page3.id,
+                            'sequence': 48,
+                            'question': 'Date Issued',
+                            'type': 'date',
+                            'constr_mandatory': True,
+                            'help_msg': 'Issued Date of Fork Lift License'
+                        })
                     # Drivers License
+                    # For job: optional
                     SurveyQuestion.create({
                         'page_id': page3.id,
                         'sequence': 50,
+                        'question': 'Drivers License',
+                        'type': 'upload_file'
+                    })
+                    SurveyQuestion.create({
+                        'page_id': page3.id,
+                        'sequence': 52,
                         'question': 'Expiry Date',
                         'type': 'date',
                         'help_msg': 'Expiry Date of Drivers License'
                     })
                     q_driver_class = SurveyQuestion.create({
                         'page_id': page3.id,
-                        'sequence': 52,
+                        'sequence': 54,
                         'question': 'Class of Licence',
                         'type': 'multiple_choice',
                         'help_msg': 'Class of Drivers Licence'
