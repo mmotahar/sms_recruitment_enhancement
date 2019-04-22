@@ -26,6 +26,7 @@ This module aims to enhance the features of online recruitment
         # "data/",
         'data/hr_job_data.xml',
         'data/sign_data.xml',
+        'data/survey_survey_data.xml',
         # ============================================================
         # VIEWS
         # ============================================================

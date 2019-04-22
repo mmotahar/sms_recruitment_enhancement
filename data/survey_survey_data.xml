@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo >
+    <delete model="survey.page" search="[('survey_id','=',ref('hr_recruitment_survey.recruitment_form'))]"/>
+    <delete model="survey.survey" search="[('id','=',ref('hr_recruitment_survey.recruitment_form'))]"/>
+</odoo>
