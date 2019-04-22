@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-from odoo import api, fields, models
-from os.path import join, dirname, realpath
+from odoo import api, models
 from odoo.modules.module import get_module_resource
 import csv
 from odoo.tools.safe_eval import safe_eval
@@ -225,7 +224,7 @@ class SignItem(models.Model):
                 continue
         _logger.info("=== END: _create_sign_item_tax_declaration ====")
         return True
-    
+
     @api.model
     def _create_sign_item_ppe_size_chart(self):
         # Check to ensure run this function one time

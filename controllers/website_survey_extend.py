@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
 import logging
 
-from odoo import fields, http, SUPERUSER_ID
+from odoo import http
 from odoo.http import request
-from odoo.tools import ustr
 from odoo.addons.survey.controllers.main import Survey
 from odoo.http import request
 

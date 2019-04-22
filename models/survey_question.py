@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
-from odoo.tools import DEFAULT_SERVER_DATE_FORMAT as DF
 from odoo.exceptions import ValidationError
-from odoo import api, fields, models, _
+from odoo import api, fields, models
 try:
     # python2
     from urlparse import urlparse

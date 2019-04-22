@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from odoo import api, fields, models
+from odoo import api, models
 from odoo.tools.safe_eval import safe_eval
 import logging
 import uuid

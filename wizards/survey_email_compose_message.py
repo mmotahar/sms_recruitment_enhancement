@@ -1,6 +1,5 @@
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
-from odoo.exceptions import Warning
 from odoo import api, fields, models
 
 
