@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+<odoo noupdate="1">
     <!-- TEMPLATE SIGN FOR EOI -->
     <record id="attachment_sign_ioe" model="ir.attachment">
         <field name="name">Expression of Interest</field>
