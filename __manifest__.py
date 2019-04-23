@@ -26,6 +26,7 @@ This module aims to enhance the features of online recruitment
         # "data/",
         'data/hr_job_data.xml',
         'data/sign_data.xml',
+        'data/survey_survey_data.xml',
         # ============================================================
         # VIEWS
         # ============================================================
@@ -34,6 +35,14 @@ This module aims to enhance the features of online recruitment
         'views/survey_user_input_line_view.xml',
         'views/survey_question_view.xml',
         'views/survey_result_template.xml',
+        'views/hr_applicant_view.xml',
+
+        # ============================================================
+        # Wizards
+        # ============================================================
+        # 'Wizards/',
+        'wizards/survey_email_compose_message.xml',
+
         # ============================================================
         # MENU
         # ============================================================

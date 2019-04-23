@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="survey_email_compose_message_form_inherit" model="ir.ui.view">
+            <field name="name">survey.email.compose.message.form.inherit</field>
+            <field name="model">survey.mail.compose.message</field>
+            <field name="inherit_id" ref="survey.survey_email_compose_message"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//field[@name='partner_ids']" position="attributes">
+                   <attribute name="attrs">{'invisible': [('public', 'in', ['email_public_link', 'email_private'])]}</attribute>
+                </xpath> 
+                
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-from odoo import api, fields, models
-from os.path import join, dirname, realpath
+from odoo import api, models
 from odoo.modules.module import get_module_resource
 import csv
 from odoo.tools.safe_eval import safe_eval
@@ -13,19 +12,6 @@ class SignItem(models.Model):
 
     @api.model
     def _create_sign_item_eoi(self):
-        # Check to ensure run this function one time
-        IrConfig = self.env['ir.config_parameter']
-        ran_functions = IrConfig.get_param(
-            'list_funct_generate_master_data_survey', '[]')
-        ran_functions = safe_eval(ran_functions)
-        if not isinstance(ran_functions, (list)):
-            ran_functions = []
-        if '_create_sign_item_eoi' in ran_functions:
-            return True
-        else:
-            ran_functions.append('_create_sign_item_eoi')
-            IrConfig.set_param(
-                'list_funct_generate_master_data_survey', str(ran_functions))
 
         _logger.info("=== START: _create_sign_item_eoi ====")
 
@@ -66,19 +52,6 @@ class SignItem(models.Model):
 
     @api.model
     def _create_sign_item_payroll_info(self):
-        # Check to ensure run this function one time
-        IrConfig = self.env['ir.config_parameter']
-        ran_functions = IrConfig.get_param(
-            'list_funct_generate_master_data_survey', '[]')
-        ran_functions = safe_eval(ran_functions)
-        if not isinstance(ran_functions, (list)):
-            ran_functions = []
-        if '_create_sign_item_payroll_info' in ran_functions:
-            return True
-        else:
-            ran_functions.append('_create_sign_item_payroll_info')
-            IrConfig.set_param(
-                'list_funct_generate_master_data_survey', str(ran_functions))
 
         _logger.info("=== START: _create_sign_item_payroll_info ====")
 
@@ -120,19 +93,6 @@ class SignItem(models.Model):
 
     @api.model
     def _create_sign_item_superannuation(self):
-        # Check to ensure run this function one time
-        IrConfig = self.env['ir.config_parameter']
-        ran_functions = IrConfig.get_param(
-            'list_funct_generate_master_data_survey', '[]')
-        ran_functions = safe_eval(ran_functions)
-        if not isinstance(ran_functions, (list)):
-            ran_functions = []
-        if '_create_sign_item_superannuation' in ran_functions:
-            return True
-        else:
-            ran_functions.append('_create_sign_item_superannuation')
-            IrConfig.set_param(
-                'list_funct_generate_master_data_survey', str(ran_functions))
 
         _logger.info("=== START: _create_sign_item_superannuation ====")
 
@@ -174,19 +134,6 @@ class SignItem(models.Model):
 
     @api.model
     def _create_sign_item_tax_declaration(self):
-        # Check to ensure run this function one time
-        IrConfig = self.env['ir.config_parameter']
-        ran_functions = IrConfig.get_param(
-            'list_funct_generate_master_data_survey', '[]')
-        ran_functions = safe_eval(ran_functions)
-        if not isinstance(ran_functions, (list)):
-            ran_functions = []
-        if '_create_sign_item_tax_declaration' in ran_functions:
-            return True
-        else:
-            ran_functions.append('_create_sign_item_tax_declaration')
-            IrConfig.set_param(
-                'list_funct_generate_master_data_survey', str(ran_functions))
 
         _logger.info("=== START: _create_sign_item_tax_declaration ====")
 
@@ -225,22 +172,9 @@ class SignItem(models.Model):
                 continue
         _logger.info("=== END: _create_sign_item_tax_declaration ====")
         return True
-    
+
     @api.model
     def _create_sign_item_ppe_size_chart(self):
-        # Check to ensure run this function one time
-        IrConfig = self.env['ir.config_parameter']
-        ran_functions = IrConfig.get_param(
-            'list_funct_generate_master_data_survey', '[]')
-        ran_functions = safe_eval(ran_functions)
-        if not isinstance(ran_functions, (list)):
-            ran_functions = []
-        if '_create_sign_item_ppe_size_chart' in ran_functions:
-            return True
-        else:
-            ran_functions.append('_create_sign_item_ppe_size_chart')
-            IrConfig.set_param(
-                'list_funct_generate_master_data_survey', str(ran_functions))
 
         _logger.info("=== START: _create_sign_item_ppe_size_chart ====")
 
